@@ -1,0 +1,11 @@
+{
+  "name": "smartresponsor/analytics-kernel",
+  "description": "SmartResponsor Analytics Kernel",
+  "type": "library",
+  "license": "proprietary",
+  "autoload": {
+    "psr-4": {
+      "SmartResponsor\\Analytics\\": "src/"
+    }
+  }
+}
