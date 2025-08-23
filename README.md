@@ -1,8 +1,16 @@
-# Domain: Analytics (Kernel)
+# AnalyticsKernel — Iteration 4.1 (Foundation)
 
-Standalone Analytics component for SmartResponsor.
-- Events, metrics, ingestion, aggregation
-- Order-domain adapters (checkout → paid → shipped → refund)
-- Consent-aware tracking
+Базовый модуль аналитики KPI и агрегатов SmartResponsor.
 
-Generated via Git fast-import (rebuilt version).
+## Состав
+- Entity: `MetricSnapshot`
+- Service: `AnalyticsCollector`
+- CLI: `app:analytics:refresh`
+- Config: `config/packages/analytics_kernel_iter_4_1.yaml`
+- Tests: `AnalyticsSmokeTest.php`
+
+## Пример
+```bash
+php bin/console app:analytics:refresh
+# → Refreshed 42 metric snapshots
+```
