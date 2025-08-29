@@ -1,0 +1,13 @@
+services:
+  App\Service\Analytics\ReportExporterService:
+    autowire: true
+    autoconfigure: true
+
+  App\Service\Analytics\ReportGeneratorService:
+    autowire: true
+    autoconfigure: true
+
+  App\Command\AnalyticsExportCommand:
+    autowire: true
+    autoconfigure: true
+    public: true
