@@ -1,16 +1,22 @@
-# AnalyticsKernel — Iteration 4.3 (Report Exporters)
+# AnalyticsKernel — Iteration 4.4 (Alerts & Monitoring)
 
-Экспорт аналитических отчётов CSV/XLSX (на текущем этапе XLSX — CSV-fallback; полноценный XLSX планируется через PhpSpreadsheet).
+Алерты по KPI и комплаенсу, доставщик уведомлений.
 
 ## Состав
-- Entity: `ExportJob`
-- Services: `ReportExporterService`, `ReportGeneratorService`
-- CLI: `app:analytics:export <from> <to> [--vendor=] [--currency=] [--format=csv|xlsx]`
-- Config: `config/packages/analytics_kernel_iter_4_3.yaml`
-- Tests: `ExportersSmokeTest.php`
+- Entities: `AlertRule`, `AlertLog`
+- Services: `AlertEvaluator`, `NotificationDispatcher`
+- CLI: `app:alerts:run`
+- Config: `config/packages/analytics_kernel_iter_4_4.yaml`
 
-## Примеры
+## Типовые правила
+- `negative_margin` (threshold = 0.0) — margin <= 0%
+- `high_risk` (threshold = 80.0) — риск >= 80
+- `limit_breach` (threshold = 1000000) — дневной оборот в minor-юнитах > порог
+
+## Пример использования
+1) Завести `AlertRule` записи в БД (миграцией или через админку).
+2) Запустить:
 ```bash
-php bin/console app:analytics:export 2025-09-01 2025-09-30 --currency=USD --format=csv
-php bin/console app:analytics:export 2025-09-01 2025-09-30 --vendor=501 --format=xlsx
+php bin/console app:alerts:run
+# Alerts evaluated. X alerts created.
 ```

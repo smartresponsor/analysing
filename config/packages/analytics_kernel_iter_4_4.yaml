@@ -1,0 +1,13 @@
+services:
+  App\Service\Alerts\NotificationDispatcher:
+    autowire: true
+    autoconfigure: true
+
+  App\Service\Alerts\AlertEvaluator:
+    autowire: true
+    autoconfigure: true
+
+  App\Command\AlertsRunCommand:
+    autowire: true
+    autoconfigure: true
+    public: true
