@@ -1,22 +1,22 @@
-# AnalyticsKernel — Iteration 4.4 (Alerts & Monitoring)
+# AnalyticsKernel — Iteration 4.5 (UI & Slack/Webhook hooks)
 
-Алерты по KPI и комплаенсу, доставщик уведомлений.
+Минимальный HTML-дашборд (Twig) + Slack/Webhook-хуки для алертов.
 
-## Состав
-- Entities: `AlertRule`, `AlertLog`
-- Services: `AlertEvaluator`, `NotificationDispatcher`
-- CLI: `app:alerts:run`
-- Config: `config/packages/analytics_kernel_iter_4_4.yaml`
+## Что добавлено
+- Controller: `DashboardPageController` → страница `/analytics` (добавь маршрут)
+- Template: `templates/analytics/index.html.twig` (Chart.js CDN)
+- Alerts: расширенный `NotificationDispatcher` с `webhook` и `slack_webhook`
+- Config: `config/packages/analytics_kernel_iter_4_5.yaml`
 
-## Типовые правила
-- `negative_margin` (threshold = 0.0) — margin <= 0%
-- `high_risk` (threshold = 80.0) — риск >= 80
-- `limit_breach` (threshold = 1000000) — дневной оборот в minor-юнитах > порог
+## Маршрут (routes.yaml)
+```yaml
+analytics_page:
+  path: /analytics
+  controller: App\Controller\Analytics\DashboardPageController::index
+```
 
-## Пример использования
-1) Завести `AlertRule` записи в БД (миграцией или через админку).
-2) Запустить:
-```bash
-php bin/console app:alerts:run
-# Alerts evaluated. X alerts created.
+## Пример использования Slack/Webhook
+```php
+$notify->send('High risk for vendor 501', ['slack_webhook' => 'https://hooks.slack.com/services/...']);
+$notify->send('Finance alert', ['webhook' => 'https://example.com/webhook']);
 ```

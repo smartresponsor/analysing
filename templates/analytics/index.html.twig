@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartResponsor — Analytics</title>
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 24px; }
+    header { display:flex; justify-content:space-between; align-items:center; margin-bottom: 16px; }
+    .kpi { display:flex; gap:16px; margin: 16px 0; }
+    .card { border:1px solid #e5e7eb; border-radius:10px; padding:12px 16px; min-width: 180px; box-shadow: 0 1px 2px rgba(0,0,0,0.04); }
+    table { border-collapse: collapse; width: 100%; margin-top: 16px; }
+    th, td { border-bottom: 1px solid #eee; padding: 8px; text-align:left; }
+    th { background: #fafafa; }
+    .filters { display:flex; gap:8px; }
+    .muted { color:#6b7280; font-size: 12px; }
+  </style>
+</head>
+<body>
+<header>
+  <h2>Analytics Dashboard</h2>
+  <form class="filters" method="get">
+    <input name="vendorId" placeholder="Vendor ID" value="{{ params.vendorId ?? '' }}"/>
+    <input name="currency" placeholder="Currency" value="{{ params.currency ?? '' }}"/>
+    <input name="from" type="date" value="{{ params.from ?? '' }}"/>
+    <input name="to" type="date" value="{{ params.to ?? '' }}"/>
+    <button type="submit">Apply</button>
+  </form>
+</header>
+
+<section class="kpi">
+  <div class="card">
+    <div class="muted">Gross (minor)</div>
+    <div style="font-size:22px; font-weight:700">{{ kpi.gross_minor }}</div>
+  </div>
+  <div class="card">
+    <div class="muted">Net (minor)</div>
+    <div style="font-size:22px; font-weight:700">{{ kpi.net_minor }}</div>
+  </div>
+  <div class="card">
+    <div class="muted">Margin</div>
+    <div style="font-size:22px; font-weight:700">{{ kpi.margin_pct }}%</div>
+  </div>
+</section>
+
+<canvas id="ts" height="120"></canvas>
+
+<h3>Top Vendors</h3>
+<table>
+  <thead><tr><th>Vendor</th><th>Gross</th><th>Net</th><th>Margin</th></tr></thead>
+  <tbody>
+  {% for r in top %}
+    <tr>
+      <td>{{ r.vendor_id }}</td>
+      <td>{{ r.gross_minor }}</td>
+      <td>{{ r.net_minor }}</td>
+      <td>{{ r.margin_pct }}%</td>
+    </tr>
+  {% else %}
+    <tr><td colspan="4" class="muted">No data</td></tr>
+  {% endfor %}
+  </tbody>
+</table>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  const labels = {{ series|map(s => s.date)|json_encode|raw }};
+  const gross = {{ series|map(s => s.gross_minor)|json_encode|raw }};
+  const net = {{ series|map(s => s.net_minor)|json_encode|raw }};
+
+  const ctx = document.getElementById('ts').getContext('2d');
+  new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels,
+      datasets: [
+        { label: 'Gross', data: gross },
+        { label: 'Net', data: net }
+      ]
+    },
+    options: {
+      responsive: true,
+      scales: { y: { beginAtZero: true } }
+    }
+  });
+</script>
+</body>
+</html>
