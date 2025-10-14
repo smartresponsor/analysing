@@ -1,0 +1,119 @@
+title = "Object Foundation — Secret Scan Policy"
+description = "Prevents accidental commit of credentials, keys, and tokens"
+version = 2
+
+[allowlist]
+# исключаем заведомо безопасные папки
+paths = [
+    "docs/",
+    "tests/",
+    "vendor/",
+    "dist/",
+    "public/",
+    "var/",
+    "node_modules/",
+    "examples/"
+]
+
+# допускаем заведомо ложные совпадения
+regexes = [
+    '''dummy-key''',
+    '''example-(token|api|key)''',
+    '''sample-(id|secret)'''
+]
+
+# Игнорировать комментарии (начинающиеся с # или //)
+comments = true
+
+[[rules]]
+id = "github-pat"
+description = "GitHub Personal Access Token"
+regex = '''ghp_[0-9A-Za-z]{36,}'''
+tags = ["github", "token"]
+
+[[rules]]
+id = "github-fine-grained"
+description = "GitHub Fine-grained token"
+regex = '''github_pat_[0-9A-Za-z_]{82,}'''
+tags = ["github", "token"]
+
+[[rules]]
+id = "aws-access-key"
+description = "AWS Access Key"
+regex = '''AKIA[0-9A-Z]{16}'''
+tags = ["aws", "key"]
+
+[[rules]]
+id = "aws-secret-key"
+description = "AWS Secret Key"
+regex = '''(?i)aws(.{0,20})?(?-i)['\"][0-9a-zA-Z\/+]{40}['\"]'''
+tags = ["aws", "secret"]
+
+[[rules]]
+id = "google-api-key"
+description = "Google API key"
+regex = '''AIza[0-9A-Za-z\-_]{35}'''
+tags = ["google", "key"]
+
+[[rules]]
+id = "slack-token"
+description = "Slack token"
+regex = '''xox[baprs]-[0-9A-Za-z]{10,48}'''
+tags = ["slack", "token"]
+
+[[rules]]
+id = "jwt"
+description = "JSON Web Token (JWT)"
+regex = '''eyJ[A-Za-z0-9_-]{10,}\.[A-Za-z0-9._-]{10,}\.[A-Za-z0-9._-]{10,}'''
+tags = ["jwt", "token"]
+
+[[rules]]
+id = "private-key"
+description = "Private RSA/DSA key"
+regex = '''-----BEGIN (RSA|DSA|EC|OPENSSH) PRIVATE KEY-----'''
+tags = ["ssh", "private-key"]
+
+[[rules]]
+id = "ssh-password"
+description = "SSH password or passphrase"
+regex = '''(?i)(ssh_pass|ssh_password|ssh_key_passphrase)\s*[:=]\s*["']?[A-Za-z0-9!@#$%^&*()_+={}[\]:;'"<>,.?/-]{6,}["']?'''
+tags = ["ssh", "password"]
+
+[[rules]]
+id = "generic-api-key"
+description = "Generic API or Secret Key"
+regex = '''(?i)(api_key|apikey|secret|token|access_token|private_key|password)\s*[:=]\s*["']?[A-Za-z0-9_\-]{16,}["']?'''
+tags = ["generic", "key"]
+
+[[rules]]
+id = "env-variable-secret"
+description = ".env style secrets"
+regex = '''(?i)^(SECRET|TOKEN|PASSWORD|KEY|ACCESS|PRIVATE|CREDENTIALS)=[A-Za-z0-9+/=_\-]{8,}'''
+tags = ["env", "secret"]
+
+[[rules]]
+id = "credit-card"
+description = "Credit card number (generic)"
+regex = '''\b(?:\d[ -]*?){13,16}\b'''
+tags = ["pii", "payment"]
+
+[[rules]]
+id = "email"
+description = "Email addresses (potential PII)"
+regex = '''[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}'''
+tags = ["pii", "email"]
+entropy = 4.0
+
+[[rules]]
+id = "high-entropy-string"
+description = "High entropy string detection"
+regex = '''([A-Za-z0-9+/]{32,}={0,2})'''
+entropy = 4.5
+tags = ["generic", "entropy"]
+
+[[rules]]
+id = "base64-encoded"
+description = "Potential base64 encoded secrets"
+regex = '''(?i)(secret|token|key|password)["'\s:=]+[A-Za-z0-9+/]{24,}={0,2}'''
+tags = ["generic", "base64"]
+entropy = 4.5

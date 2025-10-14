@@ -1,0 +1,8 @@
+parameters:
+  level: max
+  paths:
+    - src
+    - tests
+  checkGenericClassInNonGenericObjectType: true
+  checkMissingIterableValueType: true
+  inferPrivatePropertyTypeFromConstructor: true
