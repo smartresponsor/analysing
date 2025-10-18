@@ -9,6 +9,6 @@ final class AnalyticsSmokeTest extends TestCase
     public function testEntityConstruct(): void
     {
         $m = new MetricSnapshot(1, 'USD', 1000, 900, '42.5');
-        $this->assertTrue(true);
+        $this->assertTrue($m instanceof MetricSnapshot);
     }
 }
