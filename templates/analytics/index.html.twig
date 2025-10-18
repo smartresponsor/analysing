@@ -20,19 +20,11 @@
 <header>
   <h2>Analytics Dashboard</h2>
   <form class="filters" method="get">
-      <label>
-          <input name="vendorId" placeholder="Vendor ID" value="{{ params.vendorId ?? '' }}"/>
-      </label>
-      <label>
-          <input name="currency" placeholder="Currency" value="{{ params.currency ?? '' }}"/>
-      </label>
-      <label>
-          <input name="from" type="date" value="{{ params.from ?? '' }}"/>
-      </label>
-      <label>
-          <input name="to" type="date" value="{{ params.to ?? '' }}"/>
-      </label>
-      <button type="submit">Apply</button>
+    <input name="vendorId" placeholder="Vendor ID" value="{{ params.vendorId ?? '' }}"/>
+    <input name="currency" placeholder="Currency" value="{{ params.currency ?? '' }}"/>
+    <input name="from" type="date" value="{{ params.from ?? '' }}"/>
+    <input name="to" type="date" value="{{ params.to ?? '' }}"/>
+    <button type="submit">Apply</button>
   </form>
 </header>
 
