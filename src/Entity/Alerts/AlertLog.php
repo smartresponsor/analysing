@@ -3,7 +3,6 @@ declare(strict_types=1);
 
 namespace App\Entity\Alerts;
 
-use DateTimeImmutable;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity]
@@ -23,10 +22,10 @@ class AlertLog
     private string $message;
 
     #[ORM\Column(type: 'json', nullable: true)]
-    private ?array $context;
+    private ?array $context = null;
 
     #[ORM\Column(type: 'datetime_immutable')]
-    private DateTimeImmutable $createdAt;
+    private \DateTimeImmutable $createdAt;
 
     public function __construct(int $vendorId, string $type, string $message, array $context = [])
     {
@@ -34,6 +33,6 @@ class AlertLog
         $this->type = $type;
         $this->message = $message;
         $this->context = $context;
-        $this->createdAt = new DateTimeImmutable();
+        $this->createdAt = new \DateTimeImmutable();
     }
 }
