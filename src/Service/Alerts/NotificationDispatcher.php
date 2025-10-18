@@ -1,14 +1,20 @@
-<?php declare(strict_types=1);
+<?php
+declare(strict_types=1);
+
 namespace App\Service\Alerts;
-use App\Entity\Alerts\AlertRule;
+
 use Psr\Log\LoggerInterface;
 
 final class NotificationDispatcher
 {
     public function __construct(private readonly LoggerInterface $logger) {}
-    public function dispatch(AlertRule $rule, string $message): void
+
+    /**
+     * @param array{channels?:array,email?:string,webhook?:string,slack?:string} $opts
+     */
+    public function send(string $message, array $opts = []): void
     {
-        $channels = $rule->getChannels(); if (empty($channels)) { $channels=['log']; }
-        $this->logger->info('[ALERT] '.$message, ['rule'=>$rule->getCode(), 'channels'=>$channels]);
+        // Stub: log only. Integrate mailer/webhook/Slack in real env.
+        $this->logger->info('[ALERT] ' . $message, $opts);
     }
 }
