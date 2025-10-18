@@ -1,0 +1,10 @@
+feat(analytics): production-ready kernel pass — entities, services, commands, controllers
+
+- Doctrine entities: AlertRule, ExportJob, MetricSnapshot (indexes, attributes, timestamps)
+- Services: AnalyticsCollector, DashboardService, ReportGeneratorService, ReportExporterService
+- Alerts: AlertEvaluator + NotificationDispatcher (logger-backed)
+- Console: AlertsRunCommand, AnalyticsExportCommand, AnalyticsRefreshCommand (BaseCommand alias)
+- Web: DashboardController, DashboardPageController + Twig view
+- DTO: Analytics\KpiRequest
+- Strict types, App\ namespaces, park isolation inside layers
+- No composer changes (per request); relies on common Symfony/Doctrine components

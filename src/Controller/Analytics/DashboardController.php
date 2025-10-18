@@ -1,46 +1,18 @@
-<?php
-declare(strict_types=1);
-
+<?php declare(strict_types=1);
 namespace App\Controller\Analytics;
-
-use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpFoundation\JsonResponse;
 use App\Service\Analytics\DashboardService;
-use App\DTO\Analytics\KpiRequest;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Routing\Annotation\Route;
 
-final class DashboardController
+final class DashboardController extends AbstractController
 {
-    public function __construct(private readonly DashboardService $svc) {}
-
-    public function kpi(Request $req): JsonResponse
+    public function __construct(private readonly DashboardService $dashboard) {}
+    #[Route('/analytics/dashboard', name: 'analytics_dashboard')]
+    public function index(): Response
     {
-        $v = $req->query->get('vendorId');
-        $dto = new KpiRequest(
-            vendorId: $v !== null && $v !== '' ? (int)$v : null,
-            currency: $req->query->get('currency'),
-            from: $req->query->get('from'),
-            to: $req->query->get('to'),
-        );
-        return new JsonResponse($this->svc->kpi($dto));
-    }
-
-    public function timeseries(Request $req): JsonResponse
-    {
-        $v = $req->query->get('vendorId');
-        $dto = new KpiRequest(
-            vendorId: $v !== null && $v !== '' ? (int)$v : null,
-            currency: $req->query->get('currency'),
-            from: $req->query->get('from'),
-            to: $req->query->get('to'),
-        );
-        return new JsonResponse($this->svc->timeseries($dto));
-    }
-
-    public function topVendors(Request $req): JsonResponse
-    {
-        $currency = $req->query->get('currency');
-        $from = $req->query->get('from');
-        $to = $req->query->get('to');
-        return new JsonResponse($this->svc->byVendor($currency, $from, $to));
+        $from = new \DateTimeImmutable('-7 days'); $to = new \DateTimeImmutable('now');
+        $agg = $this->dashboard->aggregate('orders', $from, $to);
+        return $this->render('analytics/index.html.twig', ['agg'=>$agg]);
     }
 }
