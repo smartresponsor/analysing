@@ -1,0 +1,38 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Portability/Converter.php</file>
+  <line>43</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Portability/Converter.php" />
+  <problem_class id="PhpDocDuplicateTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type already exists in PHPDoc tag</problem_class>
+  <description>Duplicate type 'self::CASE_UPPER'</description>
+  <highlighted_element>self::CASE_UPPER</highlighted_element>
+  <language>PHP</language>
+  <offset>31</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Portability/Converter.php</file>
+  <line>194</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Portability/Converter.php" />
+  <problem_class id="PhpDocDuplicateTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type already exists in PHPDoc tag</problem_class>
+  <description>Duplicate type 'self::CASE_UPPER'</description>
+  <highlighted_element>self::CASE_UPPER</highlighted_element>
+  <language>PHP</language>
+  <offset>31</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Basic/BracesFixer.php</file>
+  <line>268</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Basic/BracesFixer.php" />
+  <problem_class id="PhpDocDuplicateTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type already exists in PHPDoc tag</problem_class>
+  <description>Duplicate type 'BracesPositionFixer::SAME_LINE'</description>
+  <highlighted_element>BracesPositionFixer::SAME_LINE</highlighted_element>
+  <language>PHP</language>
+  <offset>78</offset>
+  <length>30</length>
+</problem>
+</problems>

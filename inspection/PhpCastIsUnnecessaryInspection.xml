@@ -1,0 +1,26 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Tools/SchemaTool.php</file>
+  <line>341</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Tools/SchemaTool.php" />
+  <problem_class id="PhpCastIsUnnecessaryInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Type cast is unnecessary</problem_class>
+  <description>Type cast is redundant</description>
+  <highlighted_element>(array)</highlighted_element>
+  <language>PHP</language>
+  <offset>24</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/polyfill-mbstring/Mbstring.php</file>
+  <line>648</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/polyfill-mbstring/Mbstring.php" />
+  <problem_class id="PhpCastIsUnnecessaryInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Type cast is unnecessary</problem_class>
+  <description>Type cast is redundant</description>
+  <highlighted_element>(string)</highlighted_element>
+  <language>PHP</language>
+  <offset>19</offset>
+  <length>8</length>
+</problem>
+</problems>

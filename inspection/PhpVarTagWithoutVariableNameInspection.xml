@@ -1,0 +1,110 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/Output/ErrorOutput.php</file>
+  <line>123</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/Output/ErrorOutput.php" />
+  <problem_class id="PhpVarTagWithoutVariableNameInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type tag without variable name</problem_class>
+  <description>Doc tag without variable name doesn't provide type information for any expression</description>
+  <highlighted_element>@param array{ * function?: string, * line?: int, * file?: string, * ...</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>154</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/SelfUpdate/GithubClient.php</file>
+  <line>51</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/SelfUpdate/GithubClient.php" />
+  <problem_class id="PhpVarTagWithoutVariableNameInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type tag without variable name</problem_class>
+  <description>Doc tag without variable name doesn't provide type information for any expression</description>
+  <highlighted_element>@var list&lt;array{ * name: string, * zipball_url: string, ...</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>207</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/DocBlock/TypeExpression.php</file>
+  <line>360</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/DocBlock/TypeExpression.php" />
+  <problem_class id="PhpVarTagWithoutVariableNameInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type tag without variable name</problem_class>
+  <description>Doc tag without variable name doesn't provide type information for any expression</description>
+  <highlighted_element>@param \Closure(self, self): (-1|0|1) $compareCallback</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>54</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/ExecutorWithoutErrorHandler.php</file>
+  <line>39</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/ExecutorWithoutErrorHandler.php" />
+  <problem_class id="PhpVarTagWithoutVariableNameInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type tag without variable name</problem_class>
+  <description>Doc tag without variable name doesn't provide type information for any expression</description>
+  <highlighted_element>@var ?string</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/StringNotation/EscapeImplicitBackslashesFixer.php</file>
+  <line>114</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/StringNotation/EscapeImplicitBackslashesFixer.php" />
+  <problem_class id="PhpVarTagWithoutVariableNameInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type tag without variable name</problem_class>
+  <description>Doc tag without variable name doesn't provide type information for any expression</description>
+  <highlighted_element>@var StringImplicitBackslashesFixer</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>35</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/FixerFactory.php</file>
+  <line>88</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/FixerFactory.php" />
+  <problem_class id="PhpVarTagWithoutVariableNameInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type tag without variable name</problem_class>
+  <description>Doc tag without variable name doesn't provide type information for any expression</description>
+  <highlighted_element>@var list&lt;class-string&lt;FixerInterface&gt;&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>16</offset>
+  <length>39</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/FixerFactory.php</file>
+  <line>107</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/FixerFactory.php" />
+  <problem_class id="PhpVarTagWithoutVariableNameInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type tag without variable name</problem_class>
+  <description>Doc tag without variable name doesn't provide type information for any expression</description>
+  <highlighted_element>@var FixerInterface</highlighted_element>
+  <language>PHP</language>
+  <offset>16</offset>
+  <length>19</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/RuleSet/RuleSets.php</file>
+  <line>66</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/RuleSet/RuleSets.php" />
+  <problem_class id="PhpVarTagWithoutVariableNameInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type tag without variable name</problem_class>
+  <description>Doc tag without variable name doesn't provide type information for any expression</description>
+  <highlighted_element>@var RuleSetDefinitionInterface</highlighted_element>
+  <language>PHP</language>
+  <offset>20</offset>
+  <length>31</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/LazyProxy/Instantiator/InstantiatorInterface.php</file>
+  <line>29</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/LazyProxy/Instantiator/InstantiatorInterface.php" />
+  <problem_class id="PhpVarTagWithoutVariableNameInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type tag without variable name</problem_class>
+  <description>Doc tag without variable name doesn't provide type information for any expression</description>
+  <highlighted_element>@param callable(object=) $realInstantiator A callback that is capable of producing the real service ...</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>108</length>
+</problem>
+</problems>

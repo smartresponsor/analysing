@@ -1,0 +1,38 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/ConfigurationResolver.php</file>
+  <line>396</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/ConfigurationResolver.php" />
+  <problem_class id="PhpVariableIsUsedOnlyInClosureInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Variable is only used inside closure</problem_class>
+  <description>Variable is only used inside closure</description>
+  <highlighted_element>$filesystem</highlighted_element>
+  <language>PHP</language>
+  <offset>65</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/ControlStructure/EmptyLoopConditionFixer.php</file>
+  <line>102</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/ControlStructure/EmptyLoopConditionFixer.php" />
+  <problem_class id="PhpVariableIsUsedOnlyInClosureInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Variable is only used inside closure</problem_class>
+  <description>Variable is only used inside closure</description>
+  <highlighted_element>$replacement</highlighted_element>
+  <language>PHP</language>
+  <offset>97</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Import/OrderedImportsFixer.php</file>
+  <line>308</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Import/OrderedImportsFixer.php" />
+  <problem_class id="PhpVariableIsUsedOnlyInClosureInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Variable is only used inside closure</problem_class>
+  <description>Variable is only used inside closure</description>
+  <highlighted_element>$supportedSortTypes</highlighted_element>
+  <language>PHP</language>
+  <offset>73</offset>
+  <length>19</length>
+</problem>
+</problems>

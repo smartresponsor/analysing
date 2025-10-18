@@ -1,0 +1,914 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/pcre/src/PHPStan/InvalidRegexPatternRule.php</file>
+  <line>115</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/pcre/src/PHPStan/InvalidRegexPatternRule.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'prev'. The value of the variable is not used anywhere.</description>
+  <highlighted_element>$prev</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/semver/src/VersionParser.php</file>
+  <line>180</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/semver/src/VersionParser.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'e'. The value of the variable is not used anywhere.</description>
+  <highlighted_element>$e</highlighted_element>
+  <language>PHP</language>
+  <offset>32</offset>
+  <length>2</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/xdebug-handler/src/XdebugHandler.php</file>
+  <line>635</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/xdebug-handler/src/XdebugHandler.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'message'. The value of the variable is not used anywhere.</description>
+  <highlighted_element>$message</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Connection.php</file>
+  <line>481</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Connection.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'fallbackException'. The value of the variable is not used anywhere.</description>
+  <highlighted_element>$fallbackException</highlighted_element>
+  <language>PHP</language>
+  <offset>35</offset>
+  <length>18</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Connection.php</file>
+  <line>1299</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Connection.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'shouldRollback'. The value of the variable is overwritten immediately.</description>
+  <highlighted_element>$shouldRollback</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>15</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/Mysqli/Connection.php</file>
+  <line>123</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/Mysqli/Connection.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'e'. The value of the variable is not used anywhere.</description>
+  <highlighted_element>$e</highlighted_element>
+  <language>PHP</language>
+  <offset>38</offset>
+  <length>2</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/Mysqli/Connection.php</file>
+  <line>132</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/Mysqli/Connection.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'e'. The value of the variable is not used anywhere.</description>
+  <highlighted_element>$e</highlighted_element>
+  <language>PHP</language>
+  <offset>38</offset>
+  <length>2</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/SQLite3/Connection.php</file>
+  <line>75</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/SQLite3/Connection.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'e'. The value of the variable is not used anywhere.</description>
+  <highlighted_element>$e</highlighted_element>
+  <language>PHP</language>
+  <offset>28</offset>
+  <length>2</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/SQLite3/Connection.php</file>
+  <line>84</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/SQLite3/Connection.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'e'. The value of the variable is not used anywhere.</description>
+  <highlighted_element>$e</highlighted_element>
+  <language>PHP</language>
+  <offset>28</offset>
+  <length>2</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/SQLite3/Connection.php</file>
+  <line>93</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/SQLite3/Connection.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'e'. The value of the variable is not used anywhere.</description>
+  <highlighted_element>$e</highlighted_element>
+  <language>PHP</language>
+  <offset>28</offset>
+  <length>2</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Portability/Driver.php</file>
+  <line>56</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Portability/Driver.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'e'. The value of the variable is not used anywhere.</description>
+  <highlighted_element>$e</highlighted_element>
+  <language>PHP</language>
+  <offset>40</offset>
+  <length>2</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/AbstractSchemaManager.php</file>
+  <line>110</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/AbstractSchemaManager.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'e'. The value of the variable is not used anywhere.</description>
+  <highlighted_element>$e</highlighted_element>
+  <language>PHP</language>
+  <offset>27</offset>
+  <length>2</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/inflector/src/Rules/Patterns.php</file>
+  <line>27</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/inflector/src/Rules/Patterns.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'regs'. The value of the variable is not used anywhere.</description>
+  <highlighted_element>$regs</highlighted_element>
+  <language>PHP</language>
+  <offset>47</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/ClassMetadataFactory.php</file>
+  <line>459</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/ClassMetadataFactory.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'field'. The value of the variable is not used anywhere.</description>
+  <highlighted_element>$field</highlighted_element>
+  <language>PHP</language>
+  <offset>54</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/ClassMetadataFactory.php</file>
+  <line>556</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/ClassMetadataFactory.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'sequenceName'. The value of the variable is not used anywhere.</description>
+  <highlighted_element>$sequenceName</highlighted_element>
+  <language>PHP</language>
+  <offset>16</offset>
+  <length>13</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/ClassMetadataFactory.php</file>
+  <line>558</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/ClassMetadataFactory.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'platform'. The value of the variable is not used anywhere.</description>
+  <highlighted_element>$platform</highlighted_element>
+  <language>PHP</language>
+  <offset>16</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Collection/ManyToManyPersister.php</file>
+  <line>401</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Collection/ManyToManyPersister.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'columnName'. The value of the variable is not used anywhere.</description>
+  <highlighted_element>$columnName</highlighted_element>
+  <language>PHP</language>
+  <offset>57</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php</file>
+  <line>1030</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'association'. The value of the variable is overwritten immediately.</description>
+  <highlighted_element>$association</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php</file>
+  <line>1395</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'association'. The value of the variable is overwritten immediately.</description>
+  <highlighted_element>$association</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/Parser.php</file>
+  <line>1115</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/Parser.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'expression'. The value of the variable is overwritten immediately.</description>
+  <highlighted_element>$expression</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/Parser.php</file>
+  <line>1116</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/Parser.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'identVariable'. The value of the variable is overwritten immediately.</description>
+  <highlighted_element>$identVariable</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/Parser.php</file>
+  <line>1136</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/Parser.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'aliasResultVariable'. The value of the variable is overwritten immediately.</description>
+  <highlighted_element>$aliasResultVariable</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>20</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/Parser.php</file>
+  <line>1806</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/Parser.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'argFieldAlias'. The value of the variable is not used anywhere.</description>
+  <highlighted_element>$argFieldAlias</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/Parser.php</file>
+  <line>1888</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/Parser.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'expression'. The value of the variable is overwritten immediately.</description>
+  <highlighted_element>$expression</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/ResultSetMapping.php</file>
+  <line>253</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/ResultSetMapping.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'found'. The value of the variable is overwritten immediately.</description>
+  <highlighted_element>$found</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/ResultSetMapping.php</file>
+  <line>261</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/ResultSetMapping.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'found'. The value of the variable is not used anywhere.</description>
+  <highlighted_element>$found</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Tools/Pagination/LimitSubqueryOutputWalker.php</file>
+  <line>406</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Tools/Pagination/LimitSubqueryOutputWalker.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'sql'. The value of the variable is not used anywhere.</description>
+  <highlighted_element>$sql</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Tools/SchemaTool.php</file>
+  <line>220</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Tools/SchemaTool.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'fieldName'. The value of the variable is not used anywhere.</description>
+  <highlighted_element>$fieldName</highlighted_element>
+  <language>PHP</language>
+  <offset>50</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/AbstractFixer.php</file>
+  <line>39</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/AbstractFixer.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'e'. The value of the variable is not used anywhere.</description>
+  <highlighted_element>$e</highlighted_element>
+  <language>PHP</language>
+  <offset>57</offset>
+  <length>2</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/AbstractPhpdocToTypeDeclarationFixer.php</file>
+  <line>315</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/AbstractPhpdocToTypeDeclarationFixer.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'e'. The value of the variable is not used anywhere.</description>
+  <highlighted_element>$e</highlighted_element>
+  <language>PHP</language>
+  <offset>33</offset>
+  <length>2</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Cache/FileHandler.php</file>
+  <line>131</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Cache/FileHandler.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'exception'. The value of the variable is not used anywhere.</description>
+  <highlighted_element>$exception</highlighted_element>
+  <language>PHP</language>
+  <offset>43</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/Command/ListSetsCommand.php</file>
+  <line>86</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/Command/ListSetsCommand.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'e'. The value of the variable is not used anywhere.</description>
+  <highlighted_element>$e</highlighted_element>
+  <language>PHP</language>
+  <offset>43</offset>
+  <length>2</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/ConfigurationResolver.php</file>
+  <line>466</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/ConfigurationResolver.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'e'. The value of the variable is not used anywhere.</description>
+  <highlighted_element>$e</highlighted_element>
+  <language>PHP</language>
+  <offset>47</offset>
+  <length>2</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/ConfigurationResolver.php</file>
+  <line>930</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/ConfigurationResolver.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'e'. The value of the variable is not used anywhere.</description>
+  <highlighted_element>$e</highlighted_element>
+  <language>PHP</language>
+  <offset>28</offset>
+  <length>2</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/SelfUpdate/NewVersionChecker.php</file>
+  <line>94</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/SelfUpdate/NewVersionChecker.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'exception'. The value of the variable is not used anywhere.</description>
+  <highlighted_element>$exception</highlighted_element>
+  <language>PHP</language>
+  <offset>47</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Doctrine/Annotation/Tokens.php</file>
+  <line>54</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Doctrine/Annotation/Tokens.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'token'. The value of the variable is overwritten immediately.</description>
+  <highlighted_element>$token</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Error/SourceExceptionFactory.php</file>
+  <line>42</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Error/SourceExceptionFactory.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'e'. The value of the variable is not used anywhere.</description>
+  <highlighted_element>$e</highlighted_element>
+  <language>PHP</language>
+  <offset>28</offset>
+  <length>2</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Error/SourceExceptionFactory.php</file>
+  <line>64</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Error/SourceExceptionFactory.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'reflectionException'. The value of the variable is not used anywhere.</description>
+  <highlighted_element>$reflectionException</highlighted_element>
+  <language>PHP</language>
+  <offset>28</offset>
+  <length>20</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Alias/EregToPregFixer.php</file>
+  <line>159</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Alias/EregToPregFixer.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'e'. The value of the variable is not used anywhere.</description>
+  <highlighted_element>$e</highlighted_element>
+  <language>PHP</language>
+  <offset>31</offset>
+  <length>2</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Basic/PsrAutoloadingFixer.php</file>
+  <line>128</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Basic/PsrAutoloadingFixer.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'e'. The value of the variable is not used anywhere.</description>
+  <highlighted_element>$e</highlighted_element>
+  <language>PHP</language>
+  <offset>29</offset>
+  <length>2</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Comment/HeaderCommentFixer.php</file>
+  <line>285</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Comment/HeaderCommentFixer.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'exception'. The value of the variable is not used anywhere.</description>
+  <highlighted_element>$exception</highlighted_element>
+  <language>PHP</language>
+  <offset>47</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Import/SingleImportPerStatementFixer.php</file>
+  <line>132</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Import/SingleImportPerStatementFixer.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'groupOpenIndex'. The value of the variable is overwritten immediately.</description>
+  <highlighted_element>$groupOpenIndex</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>15</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/PhpUnit/PhpUnitNamespacedFixer.php</file>
+  <line>66</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/PhpUnit/PhpUnitNamespacedFixer.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'codeSample'. The value of the variable is not used anywhere.</description>
+  <highlighted_element>$codeSample</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Preg.php</file>
+  <line>191</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Preg.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'result'. The value of the variable is overwritten immediately.</description>
+  <highlighted_element>$result</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/RuleSet/Sets/AutoRiskySet.php</file>
+  <line>80</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/RuleSet/Sets/AutoRiskySet.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'unused'. The value of the variable is not used anywhere.</description>
+  <highlighted_element>$unused</highlighted_element>
+  <language>PHP</language>
+  <offset>63</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/RuleSet/Sets/AutoSet.php</file>
+  <line>81</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/RuleSet/Sets/AutoSet.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'unused'. The value of the variable is not used anywhere.</description>
+  <highlighted_element>$unused</highlighted_element>
+  <language>PHP</language>
+  <offset>63</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/sebastian/diff/src/Differ.php</file>
+  <line>79</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/sebastian/diff/src/Differ.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'fromToken'. The value of the variable is not used anywhere.</description>
+  <highlighted_element>$fromToken</highlighted_element>
+  <language>PHP</language>
+  <offset>20</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/sebastian/diff/src/Differ.php</file>
+  <line>83</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/sebastian/diff/src/Differ.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'toToken'. The value of the variable is not used anywhere.</description>
+  <highlighted_element>$toToken</highlighted_element>
+  <language>PHP</language>
+  <offset>20</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/sebastian/global-state/src/Snapshot.php</file>
+  <line>303</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/sebastian/global-state/src/Snapshot.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 't'. The value of the variable is not used anywhere.</description>
+  <highlighted_element>$t</highlighted_element>
+  <language>PHP</language>
+  <offset>35</offset>
+  <length>2</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/CheckTypeDeclarationsPass.php</file>
+  <line>236</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/CheckTypeDeclarationsPass.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'match'. The value of the variable is not used anywhere.</description>
+  <highlighted_element>$match</highlighted_element>
+  <language>PHP</language>
+  <offset>81</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/RegisterAutoconfigureAttributesPass.php</file>
+  <line>33</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/RegisterAutoconfigureAttributesPass.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'id'. The value of the variable is not used anywhere.</description>
+  <highlighted_element>$id</highlighted_element>
+  <language>PHP</language>
+  <offset>49</offset>
+  <length>3</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/ResolveDecoratorStackPass.php</file>
+  <line>112</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/ResolveDecoratorStackPass.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'k'. The value of the variable is not used anywhere.</description>
+  <highlighted_element>$k</highlighted_element>
+  <language>PHP</language>
+  <offset>37</offset>
+  <length>2</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/ContainerBuilder.php</file>
+  <line>828</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/ContainerBuilder.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'id'. The value of the variable is overwritten immediately.</description>
+  <highlighted_element>$id</highlighted_element>
+  <language>PHP</language>
+  <offset>39</offset>
+  <length>3</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/ContainerBuilder.php</file>
+  <line>1128</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/ContainerBuilder.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'initializer'. The value of the variable is not used anywhere.</description>
+  <highlighted_element>$initializer</highlighted_element>
+  <language>PHP</language>
+  <offset>16</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/ContainerBuilder.php</file>
+  <line>1407</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/ContainerBuilder.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'id'. The value of the variable is not used anywhere.</description>
+  <highlighted_element>$id</highlighted_element>
+  <language>PHP</language>
+  <offset>44</offset>
+  <length>3</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/ContainerBuilder.php</file>
+  <line>1687</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/ContainerBuilder.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'key'. The value of the variable is not used anywhere.</description>
+  <highlighted_element>$key</highlighted_element>
+  <language>PHP</language>
+  <offset>65</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Loader/PhpFileLoader.php</file>
+  <line>53</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Loader/PhpFileLoader.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'container'. The value of the variable is overwritten immediately.</description>
+  <highlighted_element>$container</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Loader/PhpFileLoader.php</file>
+  <line>54</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Loader/PhpFileLoader.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'loader'. The value of the variable is overwritten immediately.</description>
+  <highlighted_element>$loader</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Loader/PhpFileLoader.php</file>
+  <line>61</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Loader/PhpFileLoader.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'container'. The value of the variable is overwritten immediately.</description>
+  <highlighted_element>$container</highlighted_element>
+  <language>PHP</language>
+  <offset>59</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Loader/PhpFileLoader.php</file>
+  <line>61</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Loader/PhpFileLoader.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'loader'. The value of the variable is overwritten immediately.</description>
+  <highlighted_element>$loader</highlighted_element>
+  <language>PHP</language>
+  <offset>71</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Console/Descriptor/Descriptor.php</file>
+  <line>359</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Console/Descriptor/Descriptor.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'exception'. The value of the variable is not used anywhere.</description>
+  <highlighted_element>$exception</highlighted_element>
+  <language>PHP</language>
+  <offset>42</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/DependencyInjection/FrameworkExtension.php</file>
+  <line>1629</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/DependencyInjection/FrameworkExtension.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'name'. The value of the variable is overwritten immediately.</description>
+  <highlighted_element>$name</highlighted_element>
+  <language>PHP</language>
+  <offset>72</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/DependencyInjection/FrameworkExtension.php</file>
+  <line>2493</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/DependencyInjection/FrameworkExtension.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'name'. The value of the variable is not used anywhere.</description>
+  <highlighted_element>$name</highlighted_element>
+  <language>PHP</language>
+  <offset>42</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Secrets/SodiumVault.php</file>
+  <line>184</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Secrets/SodiumVault.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'k'. The value of the variable is not used anywhere.</description>
+  <highlighted_element>$k</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>2</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/HttpClientTestCase.php</file>
+  <line>88</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/HttpClientTestCase.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'data'. The value of the variable is not used anywhere.</description>
+  <highlighted_element>$data</highlighted_element>
+  <language>PHP</language>
+  <offset>27</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/HttpClientTestCase.php</file>
+  <line>305</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/HttpClientTestCase.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'chunk'. The value of the variable is not used anywhere.</description>
+  <highlighted_element>$chunk</highlighted_element>
+  <language>PHP</language>
+  <offset>47</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/HttpClientTestCase.php</file>
+  <line>648</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/HttpClientTestCase.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'chunk'. The value of the variable is overwritten immediately.</description>
+  <highlighted_element>$chunk</highlighted_element>
+  <language>PHP</language>
+  <offset>47</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/HttpClientTestCase.php</file>
+  <line>654</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/HttpClientTestCase.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'chunk'. The value of the variable is not used anywhere.</description>
+  <highlighted_element>$chunk</highlighted_element>
+  <language>PHP</language>
+  <offset>47</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/HttpClientTestCase.php</file>
+  <line>670</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/HttpClientTestCase.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'chunk'. The value of the variable is not used anywhere.</description>
+  <highlighted_element>$chunk</highlighted_element>
+  <language>PHP</language>
+  <offset>53</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/HttpClientTestCase.php</file>
+  <line>694</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/HttpClientTestCase.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'chunk'. The value of the variable is not used anywhere.</description>
+  <highlighted_element>$chunk</highlighted_element>
+  <language>PHP</language>
+  <offset>53</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/HttpClientTestCase.php</file>
+  <line>808</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/HttpClientTestCase.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'r'. The value of the variable is overwritten immediately.</description>
+  <highlighted_element>$r</highlighted_element>
+  <language>PHP</language>
+  <offset>28</offset>
+  <length>2</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/HttpClientTestCase.php</file>
+  <line>838</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/HttpClientTestCase.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'r'. The value of the variable is not used anywhere.</description>
+  <highlighted_element>$r</highlighted_element>
+  <language>PHP</language>
+  <offset>28</offset>
+  <length>2</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/HttpClientTestCase.php</file>
+  <line>888</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/HttpClientTestCase.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'responses'. The value of the variable is not used anywhere.</description>
+  <highlighted_element>$responses</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Handler/IdentityMarshaller.php</file>
+  <line>23</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Handler/IdentityMarshaller.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'key'. The value of the variable is not used anywhere.</description>
+  <highlighted_element>$key</highlighted_element>
+  <language>PHP</language>
+  <offset>28</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/polyfill-mbstring/Mbstring.php</file>
+  <line>1036</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/polyfill-mbstring/Mbstring.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'e'. The value of the variable is not used anywhere.</description>
+  <highlighted_element>$e</highlighted_element>
+  <language>PHP</language>
+  <offset>29</offset>
+  <length>2</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/theseer/tokenizer/src/Tokenizer.php</file>
+  <line>57</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/theseer/tokenizer/src/Tokenizer.php" />
+  <problem_class id="PhpUnusedLocalVariableInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local variable</problem_class>
+  <description>Unused local variable 'pos'. The value of the variable is not used anywhere.</description>
+  <highlighted_element>$pos</highlighted_element>
+  <language>PHP</language>
+  <offset>28</offset>
+  <length>4</length>
+</problem>
+</problems>

@@ -1,0 +1,14 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Dumper/PhpDumper.php</file>
+  <line>2213</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Dumper/PhpDumper.php" />
+  <problem_class id="PhpWrongStringConcatenationInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Wrong string concatenation</problem_class>
+  <description>Wrong string concatenation operator</description>
+  <highlighted_element>$matches[0][1] + \strlen($matches[0][0])</highlighted_element>
+  <language>PHP</language>
+  <offset>22</offset>
+  <length>40</length>
+</problem>
+</problems>

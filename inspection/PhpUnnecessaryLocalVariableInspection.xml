@@ -1,0 +1,110 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractMySQLPlatform.php</file>
+  <line>838</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractMySQLPlatform.php" />
+  <problem_class id="PhpUnnecessaryLocalVariableInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unnecessary local variable</problem_class>
+  <description>Unnecessary local variable</description>
+  <highlighted_element>$sql</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/Keywords/MariaDb117Keywords.php</file>
+  <line>42</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/Keywords/MariaDb117Keywords.php" />
+  <problem_class id="PhpUnnecessaryLocalVariableInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unnecessary local variable</problem_class>
+  <description>Unnecessary local variable</description>
+  <highlighted_element>$keywords</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/Keywords/MySQL80Keywords.php</file>
+  <line>39</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/Keywords/MySQL80Keywords.php" />
+  <problem_class id="PhpUnnecessaryLocalVariableInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unnecessary local variable</problem_class>
+  <description>Unnecessary local variable</description>
+  <highlighted_element>$keywords</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/Keywords/MySQL84Keywords.php</file>
+  <line>49</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/Keywords/MySQL84Keywords.php" />
+  <problem_class id="PhpUnnecessaryLocalVariableInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unnecessary local variable</problem_class>
+  <description>Unnecessary local variable</description>
+  <highlighted_element>$keywords</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/SqlitePlatform.php</file>
+  <line>893</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/SqlitePlatform.php" />
+  <problem_class id="PhpUnnecessaryLocalVariableInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unnecessary local variable</problem_class>
+  <description>Unnecessary local variable</description>
+  <highlighted_element>$tableName</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Tools/DsnParser.php</file>
+  <line>89</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Tools/DsnParser.php" />
+  <problem_class id="PhpUnnecessaryLocalVariableInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unnecessary local variable</problem_class>
+  <description>Unnecessary local variable</description>
+  <highlighted_element>$params</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/AbstractQuery.php</file>
+  <line>364</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/AbstractQuery.php" />
+  <problem_class id="PhpUnnecessaryLocalVariableInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unnecessary local variable</problem_class>
+  <description>Unnecessary local variable</description>
+  <highlighted_element>$value</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Proxy/ProxyFactory.php</file>
+  <line>471</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Proxy/ProxyFactory.php" />
+  <problem_class id="PhpUnnecessaryLocalVariableInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unnecessary local variable</problem_class>
+  <description>Unnecessary local variable</description>
+  <highlighted_element>$code</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/RuleSet/RuleSet.php</file>
+  <line>118</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/RuleSet/RuleSet.php" />
+  <problem_class id="PhpUnnecessaryLocalVariableInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unnecessary local variable</problem_class>
+  <description>Unnecessary local variable</description>
+  <highlighted_element>$resolvedRules</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>14</length>
+</problem>
+</problems>

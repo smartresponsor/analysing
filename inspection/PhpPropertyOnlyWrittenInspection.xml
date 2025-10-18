@@ -1,0 +1,122 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/Mysqli/Result.php</file>
+  <line>30</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/Mysqli/Result.php" />
+  <problem_class id="PhpPropertyOnlyWrittenInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Property usages have same access</problem_class>
+  <description>Property is only written but never read</description>
+  <highlighted_element>$statementReference = null</highlighted_element>
+  <language>PHP</language>
+  <offset>23</offset>
+  <length>26</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationUpdateCommand.php</file>
+  <line>21</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationUpdateCommand.php" />
+  <problem_class id="PhpPropertyOnlyWrittenInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Property usages have same access</problem_class>
+  <description>Property is only written but never read</description>
+  <highlighted_element>private TranslationWriterInterface $writer</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>42</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationUpdateCommand.php</file>
+  <line>22</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationUpdateCommand.php" />
+  <problem_class id="PhpPropertyOnlyWrittenInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Property usages have same access</problem_class>
+  <description>Property is only written but never read</description>
+  <highlighted_element>private TranslationReaderInterface $reader</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>42</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationUpdateCommand.php</file>
+  <line>23</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationUpdateCommand.php" />
+  <problem_class id="PhpPropertyOnlyWrittenInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Property usages have same access</problem_class>
+  <description>Property is only written but never read</description>
+  <highlighted_element>private ExtractorInterface $extractor</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>37</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationUpdateCommand.php</file>
+  <line>24</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationUpdateCommand.php" />
+  <problem_class id="PhpPropertyOnlyWrittenInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Property usages have same access</problem_class>
+  <description>Property is only written but never read</description>
+  <highlighted_element>private string $defaultLocale</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>29</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationUpdateCommand.php</file>
+  <line>25</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationUpdateCommand.php" />
+  <problem_class id="PhpPropertyOnlyWrittenInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Property usages have same access</problem_class>
+  <description>Property is only written but never read</description>
+  <highlighted_element>private ?string $defaultTransPath = null</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>40</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationUpdateCommand.php</file>
+  <line>26</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationUpdateCommand.php" />
+  <problem_class id="PhpPropertyOnlyWrittenInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Property usages have same access</problem_class>
+  <description>Property is only written but never read</description>
+  <highlighted_element>private ?string $defaultViewsPath = null</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>40</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationUpdateCommand.php</file>
+  <line>27</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationUpdateCommand.php" />
+  <problem_class id="PhpPropertyOnlyWrittenInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Property usages have same access</problem_class>
+  <description>Property is only written but never read</description>
+  <highlighted_element>private array $transPaths = []</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>30</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationUpdateCommand.php</file>
+  <line>28</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationUpdateCommand.php" />
+  <problem_class id="PhpPropertyOnlyWrittenInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Property usages have same access</problem_class>
+  <description>Property is only written but never read</description>
+  <highlighted_element>private array $codePaths = []</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>29</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationUpdateCommand.php</file>
+  <line>29</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationUpdateCommand.php" />
+  <problem_class id="PhpPropertyOnlyWrittenInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Property usages have same access</problem_class>
+  <description>Property is only written but never read</description>
+  <highlighted_element>private array $enabledLocales = []</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>34</length>
+</problem>
+</problems>

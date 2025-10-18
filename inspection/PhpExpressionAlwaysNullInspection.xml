@@ -1,0 +1,38 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Proxy/ProxyFactory.php</file>
+  <line>366</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Proxy/ProxyFactory.php" />
+  <problem_class id="PhpExpressionAlwaysNullInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Expression is always 'null'</problem_class>
+  <description>'self' is always 'null'</description>
+  <highlighted_element>self</highlighted_element>
+  <language>PHP</language>
+  <offset>21</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Loader/YamlFileLoader.php</file>
+  <line>800</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Loader/YamlFileLoader.php" />
+  <problem_class id="PhpExpressionAlwaysNullInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Expression is always 'null'</problem_class>
+  <description>'$content' is always 'null'</description>
+  <highlighted_element>$content</highlighted_element>
+  <language>PHP</language>
+  <offset>19</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-foundation/RequestStack.php</file>
+  <line>121</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-foundation/RequestStack.php" />
+  <problem_class id="PhpExpressionAlwaysNullInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Expression is always 'null'</problem_class>
+  <description>'self' is always 'null'</description>
+  <highlighted_element>self</highlighted_element>
+  <language>PHP</language>
+  <offset>64</offset>
+  <length>4</length>
+</problem>
+</problems>

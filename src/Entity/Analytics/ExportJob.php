@@ -3,6 +3,7 @@ declare(strict_types=1);
 
 namespace App\Entity\Analytics;
 
+use DateTimeImmutable;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity]
@@ -25,13 +26,13 @@ class ExportJob
     private ?string $filePath = null;
 
     #[ORM\Column(type: 'datetime_immutable')]
-    private \DateTimeImmutable $createdAt;
+    private DateTimeImmutable $createdAt;
 
     public function __construct(string $format, array $params)
     {
         $this->format = $format;
         $this->params = $params;
-        $this->createdAt = new \DateTimeImmutable();
+        $this->createdAt = new DateTimeImmutable();
     }
 
     public function markDone(string $path): void { $this->status = 'done'; $this->filePath = $path; }

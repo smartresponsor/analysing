@@ -1,0 +1,3626 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/InstalledVersions.php</file>
+  <line>36</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/InstalledVersions.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/xdebug-handler/src/XdebugHandler.php</file>
+  <line>496</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/xdebug-handler/src/XdebugHandler.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/xdebug-handler/src/XdebugHandler.php</file>
+  <line>497</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/xdebug-handler/src/XdebugHandler.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/collections/src/ArrayCollection.php</file>
+  <line>58</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/collections/src/ArrayCollection.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/collections/src/Expr/ClosureExpressionVisitor.php</file>
+  <line>39</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/collections/src/Expr/ClosureExpressionVisitor.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>21</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/collections/src/ExpressionBuilder.php</file>
+  <line>86</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/collections/src/ExpressionBuilder.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/collections/src/ExpressionBuilder.php</file>
+  <line>96</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/collections/src/ExpressionBuilder.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/collections/src/ReadableCollection.php</file>
+  <line>73</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/collections/src/ReadableCollection.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/collections/src/ReadableCollection.php</file>
+  <line>82</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/collections/src/ReadableCollection.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/collections/src/ReadableCollection.php</file>
+  <line>137</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/collections/src/ReadableCollection.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Connection.php</file>
+  <line>655</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Connection.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Connections/PrimaryReadReplicaConnection.php</file>
+  <line>263</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Connections/PrimaryReadReplicaConnection.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/AbstractOracleDriver/EasyConnectString.php</file>
+  <line>33</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/AbstractOracleDriver/EasyConnectString.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/AbstractOracleDriver/EasyConnectString.php</file>
+  <line>43</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/AbstractOracleDriver/EasyConnectString.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/AbstractOracleDriver/EasyConnectString.php</file>
+  <line>89</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/AbstractOracleDriver/EasyConnectString.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/IBMDB2/Statement.php</file>
+  <line>37</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/IBMDB2/Statement.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>13</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/Mysqli/Result.php</file>
+  <line>46</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/Mysqli/Result.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>13</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/Mysqli/Statement.php</file>
+  <line>42</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/Mysqli/Statement.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>13</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/Mysqli/Statement.php</file>
+  <line>50</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/Mysqli/Statement.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/Mysqli/Statement.php</file>
+  <line>238</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/Mysqli/Statement.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/PDO/MySQL/Driver.php</file>
+  <line>52</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/PDO/MySQL/Driver.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/PDO/OCI/Driver.php</file>
+  <line>52</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/PDO/OCI/Driver.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/PDO/SQLSrv/Driver.php</file>
+  <line>66</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/PDO/SQLSrv/Driver.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/Statement.php</file>
+  <line>72</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/Statement.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/DriverManager.php</file>
+  <line>240</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/DriverManager.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/DriverManager.php</file>
+  <line>243</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/DriverManager.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Event/SchemaColumnDefinitionEventArgs.php</file>
+  <line>20</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Event/SchemaColumnDefinitionEventArgs.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Event/SchemaColumnDefinitionEventArgs.php</file>
+  <line>33</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Event/SchemaColumnDefinitionEventArgs.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Event/SchemaColumnDefinitionEventArgs.php</file>
+  <line>64</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Event/SchemaColumnDefinitionEventArgs.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>16</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Event/SchemaCreateTableEventArgs.php</file>
+  <line>21</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Event/SchemaCreateTableEventArgs.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array[]'</description>
+  <highlighted_element>mixed[][]</highlighted_element>
+  <language>PHP</language>
+  <offset>13</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Event/SchemaCreateTableEventArgs.php</file>
+  <line>24</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Event/SchemaCreateTableEventArgs.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>13</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Event/SchemaCreateTableEventArgs.php</file>
+  <line>33</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Event/SchemaCreateTableEventArgs.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array[]'</description>
+  <highlighted_element>mixed[][]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Event/SchemaCreateTableEventArgs.php</file>
+  <line>34</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Event/SchemaCreateTableEventArgs.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Event/SchemaCreateTableEventArgs.php</file>
+  <line>50</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Event/SchemaCreateTableEventArgs.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array[]'</description>
+  <highlighted_element>mixed[][]</highlighted_element>
+  <language>PHP</language>
+  <offset>16</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Event/SchemaCreateTableEventArgs.php</file>
+  <line>56</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Event/SchemaCreateTableEventArgs.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>16</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Event/SchemaIndexDefinitionEventArgs.php</file>
+  <line>20</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Event/SchemaIndexDefinitionEventArgs.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Event/SchemaIndexDefinitionEventArgs.php</file>
+  <line>30</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Event/SchemaIndexDefinitionEventArgs.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Event/SchemaIndexDefinitionEventArgs.php</file>
+  <line>58</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Event/SchemaIndexDefinitionEventArgs.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>16</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Id/TableGenerator.php</file>
+  <line>64</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Id/TableGenerator.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array[]'</description>
+  <highlighted_element>mixed[][]</highlighted_element>
+  <language>PHP</language>
+  <offset>13</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractMySQLPlatform.php</file>
+  <line>569</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractMySQLPlatform.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractMySQLPlatform.php</file>
+  <line>630</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractMySQLPlatform.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractMySQLPlatform.php</file>
+  <line>1122</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractMySQLPlatform.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php</file>
+  <line>157</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php</file>
+  <line>166</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php</file>
+  <line>175</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php</file>
+  <line>184</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php</file>
+  <line>193</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php</file>
+  <line>226</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php</file>
+  <line>238</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php</file>
+  <line>267</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php</file>
+  <line>279</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php</file>
+  <line>320</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php</file>
+  <line>338</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php</file>
+  <line>378</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php</file>
+  <line>387</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php</file>
+  <line>2333</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array[]'</description>
+  <highlighted_element>mixed[][]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php</file>
+  <line>2334</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php</file>
+  <line>2716</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php</file>
+  <line>2958</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array[]'</description>
+  <highlighted_element>mixed[][]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php</file>
+  <line>3000</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php</file>
+  <line>3083</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php</file>
+  <line>3126</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php</file>
+  <line>3171</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array[]'</description>
+  <highlighted_element>mixed[][]</highlighted_element>
+  <language>PHP</language>
+  <offset>23</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php</file>
+  <line>3253</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php</file>
+  <line>3293</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php</file>
+  <line>3886</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php</file>
+  <line>3900</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php</file>
+  <line>3913</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php</file>
+  <line>3928</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php</file>
+  <line>3940</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/DB2Platform.php</file>
+  <line>723</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/DB2Platform.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/SQLServerPlatform.php</file>
+  <line>456</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/SQLServerPlatform.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/SqlitePlatform.php</file>
+  <line>466</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/SqlitePlatform.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array[]'</description>
+  <highlighted_element>mixed[][]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/SqlitePlatform.php</file>
+  <line>467</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/SqlitePlatform.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Query/QueryBuilder.php</file>
+  <line>90</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Query/QueryBuilder.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Query/QueryBuilder.php</file>
+  <line>1220</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Query/QueryBuilder.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Query/QueryBuilder.php</file>
+  <line>1344</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Query/QueryBuilder.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/AbstractSchemaManager.php</file>
+  <line>366</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/AbstractSchemaManager.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/AbstractSchemaManager.php</file>
+  <line>368</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/AbstractSchemaManager.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/AbstractSchemaManager.php</file>
+  <line>1267</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/AbstractSchemaManager.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/AbstractSchemaManager.php</file>
+  <line>1341</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/AbstractSchemaManager.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array[]'</description>
+  <highlighted_element>mixed[][]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/AbstractSchemaManager.php</file>
+  <line>1359</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/AbstractSchemaManager.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/AbstractSchemaManager.php</file>
+  <line>1377</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/AbstractSchemaManager.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array[]'</description>
+  <highlighted_element>mixed[][]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/AbstractSchemaManager.php</file>
+  <line>1425</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/AbstractSchemaManager.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/AbstractSchemaManager.php</file>
+  <line>1436</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/AbstractSchemaManager.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array[]'</description>
+  <highlighted_element>mixed[][]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/AbstractSchemaManager.php</file>
+  <line>1521</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/AbstractSchemaManager.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array[]'</description>
+  <highlighted_element>mixed[][]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/AbstractSchemaManager.php</file>
+  <line>1546</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/AbstractSchemaManager.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array[]'</description>
+  <highlighted_element>mixed[][]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/AbstractSchemaManager.php</file>
+  <line>1568</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/AbstractSchemaManager.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/AbstractSchemaManager.php</file>
+  <line>1578</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/AbstractSchemaManager.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array[]'</description>
+  <highlighted_element>mixed[][]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Column.php</file>
+  <line>45</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Column.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>13</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Column.php</file>
+  <line>57</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Column.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Column.php</file>
+  <line>65</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Column.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Column.php</file>
+  <line>77</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Column.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Column.php</file>
+  <line>203</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Column.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Column.php</file>
+  <line>287</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Column.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>16</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Column.php</file>
+  <line>415</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Column.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Column.php</file>
+  <line>435</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Column.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Column.php</file>
+  <line>448</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Column.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>16</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/ForeignKeyConstraint.php</file>
+  <line>52</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/ForeignKeyConstraint.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/ForeignKeyConstraint.php</file>
+  <line>63</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/ForeignKeyConstraint.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/ForeignKeyConstraint.php</file>
+  <line>340</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/ForeignKeyConstraint.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Index.php</file>
+  <line>44</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Index.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Index.php</file>
+  <line>54</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Index.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Index.php</file>
+  <line>331</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Index.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>16</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/MySQLSchemaManager.php</file>
+  <line>313</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/MySQLSchemaManager.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/SchemaConfig.php</file>
+  <line>25</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/SchemaConfig.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>13</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/SchemaConfig.php</file>
+  <line>104</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/SchemaConfig.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/SchemaConfig.php</file>
+  <line>112</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/SchemaConfig.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Table.php</file>
+  <line>41</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Table.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>13</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Table.php</file>
+  <line>57</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Table.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Table.php</file>
+  <line>140</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Table.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Table.php</file>
+  <line>160</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Table.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Table.php</file>
+  <line>219</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Table.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Table.php</file>
+  <line>306</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Table.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Table.php</file>
+  <line>334</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Table.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Table.php</file>
+  <line>355</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Table.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Table.php</file>
+  <line>375</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Table.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Table.php</file>
+  <line>413</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Table.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Table.php</file>
+  <line>930</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Table.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>16</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Table.php</file>
+  <line>990</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Table.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/UniqueConstraint.php</file>
+  <line>35</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/UniqueConstraint.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/UniqueConstraint.php</file>
+  <line>42</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/UniqueConstraint.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/UniqueConstraint.php</file>
+  <line>141</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/UniqueConstraint.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>16</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Statement.php</file>
+  <line>27</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Statement.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Statement.php</file>
+  <line>166</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Statement.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Statement.php</file>
+  <line>205</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Statement.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Statement.php</file>
+  <line>230</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Statement.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Tools/DsnParser.php</file>
+  <line>102</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Tools/DsnParser.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Tools/DsnParser.php</file>
+  <line>103</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Tools/DsnParser.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Tools/DsnParser.php</file>
+  <line>105</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Tools/DsnParser.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Tools/DsnParser.php</file>
+  <line>142</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Tools/DsnParser.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Tools/DsnParser.php</file>
+  <line>143</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Tools/DsnParser.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Tools/DsnParser.php</file>
+  <line>145</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Tools/DsnParser.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Tools/DsnParser.php</file>
+  <line>167</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Tools/DsnParser.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Tools/DsnParser.php</file>
+  <line>168</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Tools/DsnParser.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Tools/DsnParser.php</file>
+  <line>170</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Tools/DsnParser.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Tools/DsnParser.php</file>
+  <line>186</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Tools/DsnParser.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Tools/DsnParser.php</file>
+  <line>187</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Tools/DsnParser.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Tools/DsnParser.php</file>
+  <line>189</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Tools/DsnParser.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Types/Type.php</file>
+  <line>93</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Types/Type.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/deprecations/src/Deprecation.php</file>
+  <line>176</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/deprecations/src/Deprecation.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>115</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/AbstractQuery.php</file>
+  <line>298</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/AbstractQuery.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>30</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/AbstractQuery.php</file>
+  <line>417</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/AbstractQuery.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/AbstractQuery.php</file>
+  <line>419</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/AbstractQuery.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/AbstractQuery.php</file>
+  <line>697</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/AbstractQuery.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/AbstractQuery.php</file>
+  <line>709</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/AbstractQuery.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/AbstractQuery.php</file>
+  <line>721</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/AbstractQuery.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/CollectionHydrator.php</file>
+  <line>16</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/CollectionHydrator.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/CollectionHydrator.php</file>
+  <line>19</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/CollectionHydrator.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>16</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/DefaultQueryCache.php</file>
+  <line>298</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/DefaultQueryCache.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/Persister/Collection/AbstractCollectionPersister.php</file>
+  <line>35</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/Persister/Collection/AbstractCollectionPersister.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>13</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/Persister/Collection/CachedCollectionPersister.php</file>
+  <line>26</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/Persister/Collection/CachedCollectionPersister.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/Persister/Collection/CachedCollectionPersister.php</file>
+  <line>33</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/Persister/Collection/CachedCollectionPersister.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/Persister/Entity/AbstractEntityPersister.php</file>
+  <line>41</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/Persister/Entity/AbstractEntityPersister.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>13</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/QueryCache.php</file>
+  <line>17</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/QueryCache.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/QueryCache.php</file>
+  <line>21</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/QueryCache.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/QueryCache.php</file>
+  <line>23</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/QueryCache.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Configuration.php</file>
+  <line>44</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Configuration.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>13</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/EntityRepository.php</file>
+  <line>146</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/EntityRepository.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Event/PreUpdateEventArgs.php</file>
+  <line>26</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Event/PreUpdateEventArgs.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array[]'</description>
+  <highlighted_element>mixed[][]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Event/PreUpdateEventArgs.php</file>
+  <line>39</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Event/PreUpdateEventArgs.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array[]'</description>
+  <highlighted_element>mixed[][]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/Hydration/AbstractHydrator.php</file>
+  <line>64</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/Hydration/AbstractHydrator.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>26</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/Hydration/AbstractHydrator.php</file>
+  <line>223</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/Hydration/AbstractHydrator.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/Hydration/AbstractHydrator.php</file>
+  <line>224</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/Hydration/AbstractHydrator.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/Hydration/AbstractHydrator.php</file>
+  <line>247</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/Hydration/AbstractHydrator.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/Hydration/AbstractHydrator.php</file>
+  <line>385</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/Hydration/AbstractHydrator.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/Hydration/AbstractHydrator.php</file>
+  <line>399</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/Hydration/AbstractHydrator.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/Hydration/AbstractHydrator.php</file>
+  <line>402</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/Hydration/AbstractHydrator.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/Hydration/AbstractHydrator.php</file>
+  <line>437</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/Hydration/AbstractHydrator.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/Hydration/AbstractHydrator.php</file>
+  <line>563</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/Hydration/AbstractHydrator.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/Hydration/ArrayHydrator.php</file>
+  <line>24</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/Hydration/ArrayHydrator.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>13</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/Hydration/ArrayHydrator.php</file>
+  <line>27</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/Hydration/ArrayHydrator.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>13</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/Hydration/ArrayHydrator.php</file>
+  <line>235</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/Hydration/ArrayHydrator.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/Hydration/ObjectHydrator.php</file>
+  <line>31</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/Hydration/ObjectHydrator.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>13</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/Hydration/ObjectHydrator.php</file>
+  <line>34</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/Hydration/ObjectHydrator.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>13</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/Hydration/ObjectHydrator.php</file>
+  <line>37</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/Hydration/ObjectHydrator.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>13</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/Hydration/ObjectHydrator.php</file>
+  <line>42</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/Hydration/ObjectHydrator.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>13</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/Hydration/ObjectHydrator.php</file>
+  <line>45</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/Hydration/ObjectHydrator.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>13</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/Hydration/ObjectHydrator.php</file>
+  <line>51</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/Hydration/ObjectHydrator.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>13</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/Hydration/ObjectHydrator.php</file>
+  <line>318</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/Hydration/ObjectHydrator.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/Hydration/ObjectHydrator.php</file>
+  <line>319</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/Hydration/ObjectHydrator.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/Hydration/ObjectHydrator.php</file>
+  <line>576</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/Hydration/ObjectHydrator.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/HydrationCompleteHandler.php</file>
+  <line>19</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/HydrationCompleteHandler.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array[]'</description>
+  <highlighted_element>mixed[][]</highlighted_element>
+  <language>PHP</language>
+  <offset>13</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/AssociationMapping.php</file>
+  <line>99</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/AssociationMapping.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/Builder/AssociationBuilder.php</file>
+  <line>12</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/Builder/AssociationBuilder.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>13</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/Builder/AssociationBuilder.php</file>
+  <line>15</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/Builder/AssociationBuilder.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/Builder/EmbeddedBuilder.php</file>
+  <line>14</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/Builder/EmbeddedBuilder.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/Builder/FieldBuilder.php</file>
+  <line>19</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/Builder/FieldBuilder.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>13</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/Builder/FieldBuilder.php</file>
+  <line>24</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/Builder/FieldBuilder.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/Builder/ManyToManyAssociationBuilder.php</file>
+  <line>16</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/Builder/ManyToManyAssociationBuilder.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>13</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/ClassMetadata.php</file>
+  <line>368</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/ClassMetadata.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/ClassMetadata.php</file>
+  <line>407</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/ClassMetadata.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/ClassMetadata.php</file>
+  <line>516</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/ClassMetadata.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>13</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/ClassMetadata.php</file>
+  <line>1168</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/ClassMetadata.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/ClassMetadata.php</file>
+  <line>1529</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/ClassMetadata.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/ClassMetadata.php</file>
+  <line>2169</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/ClassMetadata.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>41</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/ClassMetadataFactory.php</file>
+  <line>60</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/ClassMetadataFactory.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>13</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/Driver/AttributeDriver.php</file>
+  <line>672</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/Driver/AttributeDriver.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/Driver/AttributeDriver.php</file>
+  <line>705</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/Driver/AttributeDriver.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/Driver/DatabaseDriver.php</file>
+  <line>76</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/Driver/DatabaseDriver.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>13</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/Driver/DatabaseDriver.php</file>
+  <line>79</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/Driver/DatabaseDriver.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>13</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/Driver/DatabaseDriver.php</file>
+  <line>394</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/Driver/DatabaseDriver.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/Driver/XmlDriver.php</file>
+  <line>668</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/Driver/XmlDriver.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/Driver/XmlDriver.php</file>
+  <line>703</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/Driver/XmlDriver.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/Driver/XmlDriver.php</file>
+  <line>747</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/Driver/XmlDriver.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>16</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/Driver/XmlDriver.php</file>
+  <line>838</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/Driver/XmlDriver.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/Exception/InvalidCustomGenerator.php</file>
+  <line>20</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/Exception/InvalidCustomGenerator.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/JoinTableMapping.php</file>
+  <line>35</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/JoinTableMapping.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/JoinTableMapping.php</file>
+  <line>84</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/JoinTableMapping.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>16</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/ManyToManyOwningSideMapping.php</file>
+  <line>39</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/ManyToManyOwningSideMapping.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/OneToManyAssociationMapping.php</file>
+  <line>10</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/OneToManyAssociationMapping.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/OneToManyAssociationMapping.php</file>
+  <line>43</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/OneToManyAssociationMapping.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/QuoteStrategy.php</file>
+  <line>27</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/QuoteStrategy.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/ToOneInverseSideMapping.php</file>
+  <line>10</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/ToOneInverseSideMapping.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/ToOneOwningSideMapping.php</file>
+  <line>75</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/ToOneOwningSideMapping.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/PersistentCollection.php</file>
+  <line>216</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/PersistentCollection.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/PersistentCollection.php</file>
+  <line>232</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/PersistentCollection.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/PersistentCollection.php</file>
+  <line>528</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/PersistentCollection.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Collection/CollectionPersister.php</file>
+  <line>34</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Collection/CollectionPersister.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Collection/CollectionPersister.php</file>
+  <line>56</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Collection/CollectionPersister.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Collection/ManyToManyPersister.php</file>
+  <line>449</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Collection/ManyToManyPersister.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Collection/ManyToManyPersister.php</file>
+  <line>498</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Collection/ManyToManyPersister.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Collection/ManyToManyPersister.php</file>
+  <line>510</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Collection/ManyToManyPersister.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Collection/ManyToManyPersister.php</file>
+  <line>555</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Collection/ManyToManyPersister.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Collection/ManyToManyPersister.php</file>
+  <line>645</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Collection/ManyToManyPersister.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Collection/ManyToManyPersister.php</file>
+  <line>714</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Collection/ManyToManyPersister.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array[]'</description>
+  <highlighted_element>mixed[][]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php</file>
+  <line>142</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php</file>
+  <line>152</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php</file>
+  <line>288</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php</file>
+  <line>305</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php</file>
+  <line>346</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php</file>
+  <line>395</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php</file>
+  <line>592</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array[]'</description>
+  <highlighted_element>mixed[][]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php</file>
+  <line>711</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array[]'</description>
+  <highlighted_element>mixed[][]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php</file>
+  <line>969</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php</file>
+  <line>987</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php</file>
+  <line>1872</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array[]'</description>
+  <highlighted_element>mixed[][]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php</file>
+  <line>1877</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array[]'</description>
+  <highlighted_element>mixed[][]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php</file>
+  <line>1961</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/EntityPersister.php</file>
+  <line>48</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/EntityPersister.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/EntityPersister.php</file>
+  <line>49</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/EntityPersister.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/EntityPersister.php</file>
+  <line>65</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/EntityPersister.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/EntityPersister.php</file>
+  <line>127</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/EntityPersister.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/EntityPersister.php</file>
+  <line>145</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/EntityPersister.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/EntityPersister.php</file>
+  <line>150</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/EntityPersister.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/EntityPersister.php</file>
+  <line>219</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/EntityPersister.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/EntityPersister.php</file>
+  <line>229</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/EntityPersister.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/EntityPersister.php</file>
+  <line>241</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/EntityPersister.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/EntityPersister.php</file>
+  <line>257</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/EntityPersister.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/EntityPersister.php</file>
+  <line>287</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/EntityPersister.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/SqlValueVisitor.php</file>
+  <line>17</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/SqlValueVisitor.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>13</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/SqlValueVisitor.php</file>
+  <line>20</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/SqlValueVisitor.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array[]'</description>
+  <highlighted_element>mixed[][]</highlighted_element>
+  <language>PHP</language>
+  <offset>13</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/SqlValueVisitor.php</file>
+  <line>65</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/SqlValueVisitor.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array[]'</description>
+  <highlighted_element>mixed[][]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/AST/ArithmeticTerm.php</file>
+  <line>16</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/AST/ArithmeticTerm.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/AST/CoalesceExpression.php</file>
+  <line>16</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/AST/CoalesceExpression.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/AST/ConditionalExpression.php</file>
+  <line>16</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/AST/ConditionalExpression.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/AST/ConditionalTerm.php</file>
+  <line>16</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/AST/ConditionalTerm.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/AST/FromClause.php</file>
+  <line>16</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/AST/FromClause.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/AST/GeneralCaseExpression.php</file>
+  <line>16</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/AST/GeneralCaseExpression.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/AST/GroupByClause.php</file>
+  <line>11</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/AST/GroupByClause.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/AST/IdentificationVariableDeclaration.php</file>
+  <line>16</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/AST/IdentificationVariableDeclaration.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/AST/NewObjectExpression.php</file>
+  <line>21</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/AST/NewObjectExpression.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/AST/PartialObjectExpression.php</file>
+  <line>9</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/AST/PartialObjectExpression.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/AST/SelectClause.php</file>
+  <line>16</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/AST/SelectClause.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/AST/SimpleArithmeticExpression.php</file>
+  <line>16</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/AST/SimpleArithmeticExpression.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/AST/SimpleCaseExpression.php</file>
+  <line>16</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/AST/SimpleCaseExpression.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/AST/SubselectFromClause.php</file>
+  <line>16</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/AST/SubselectFromClause.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/AST/UpdateClause.php</file>
+  <line>18</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/AST/UpdateClause.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/Exec/MultiTableUpdateExecutor.php</file>
+  <line>30</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/Exec/MultiTableUpdateExecutor.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>13</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/Expr/Func.php</file>
+  <line>18</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/Expr/Func.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>13</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/QueryExpressionVisitor.php</file>
+  <line>35</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/QueryExpressionVisitor.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/SqlWalker.php</file>
+  <line>88</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/SqlWalker.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>13</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/SqlWalker.php</file>
+  <line>184</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/SqlWalker.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/SqlWalker.php</file>
+  <line>1376</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/SqlWalker.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query.php</file>
+  <line>349</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array[]'</description>
+  <highlighted_element>mixed[][]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query.php</file>
+  <line>400</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Tools/Console/Command/SchemaTool/AbstractCommand.php</file>
+  <line>20</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Tools/Console/Command/SchemaTool/AbstractCommand.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Tools/Console/MetadataFilter.php</file>
+  <line>26</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Tools/Console/MetadataFilter.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>13</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Tools/Console/MetadataFilter.php</file>
+  <line>44</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Tools/Console/MetadataFilter.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Tools/Pagination/LimitSubqueryOutputWalker.php</file>
+  <line>355</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Tools/Pagination/LimitSubqueryOutputWalker.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Tools/Pagination/LimitSubqueryOutputWalker.php</file>
+  <line>379</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Tools/Pagination/LimitSubqueryOutputWalker.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Tools/Pagination/Paginator.php</file>
+  <line>248</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Tools/Pagination/Paginator.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Tools/Pagination/Paginator.php</file>
+  <line>250</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Tools/Pagination/Paginator.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Tools/ResolveTargetEntityListener.php</file>
+  <line>26</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Tools/ResolveTargetEntityListener.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array[]'</description>
+  <highlighted_element>mixed[][]</highlighted_element>
+  <language>PHP</language>
+  <offset>13</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Tools/SchemaTool.php</file>
+  <line>131</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Tools/SchemaTool.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Tools/SchemaTool.php</file>
+  <line>778</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Tools/SchemaTool.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>16</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Tools/SchemaTool.php</file>
+  <line>907</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Tools/SchemaTool.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/UnitOfWork.php</file>
+  <line>521</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/UnitOfWork.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array[]'</description>
+  <highlighted_element>mixed[][]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/UnitOfWork.php</file>
+  <line>942</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/UnitOfWork.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/UnitOfWork.php</file>
+  <line>1926</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/UnitOfWork.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/UnitOfWork.php</file>
+  <line>2357</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/UnitOfWork.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/UnitOfWork.php</file>
+  <line>2784</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/UnitOfWork.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/UnitOfWork.php</file>
+  <line>2810</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/UnitOfWork.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/UnitOfWork.php</file>
+  <line>2949</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/UnitOfWork.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/UnitOfWork.php</file>
+  <line>2950</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/UnitOfWork.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/UnitOfWork.php</file>
+  <line>3219</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/UnitOfWork.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Utility/IdentifierFlattener.php</file>
+  <line>40</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Utility/IdentifierFlattener.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Utility/IdentifierFlattener.php</file>
+  <line>42</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Utility/IdentifierFlattener.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/Mapping/Driver/FileDriver.php</file>
+  <line>31</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/Mapping/Driver/FileDriver.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/Mapping/Driver/FileDriver.php</file>
+  <line>140</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/Mapping/Driver/FileDriver.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-foundation/StreamedJsonResponse.php</file>
+  <line>50</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-foundation/StreamedJsonResponse.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/options-resolver/Debug/OptionsResolverIntrospector.php</file>
+  <line>72</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/options-resolver/Debug/OptionsResolverIntrospector.php" />
+  <problem_class id="PhpPluralMixedCanBeReplacedWithArrayInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'mixed' type can be replaced with 'array'</problem_class>
+  <description>Can be replaced with 'array'</description>
+  <highlighted_element>mixed[]</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+</problems>

@@ -22,7 +22,7 @@ class AlertRule
     private bool $active = true;
 
     #[ORM\Column(type: 'text', nullable: true)]
-    private ?string $message = null;
+    private ?string $message;
 
     public function __construct(string $type, string $threshold, ?string $message = null)
     {

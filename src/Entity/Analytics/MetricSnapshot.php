@@ -3,6 +3,7 @@ declare(strict_types=1);
 
 namespace App\Entity\Analytics;
 
+use DateTimeImmutable;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity]
@@ -28,7 +29,7 @@ class MetricSnapshot
     private string $riskScore;
 
     #[ORM\Column(type: 'date_immutable')]
-    private \DateTimeImmutable $date;
+    private DateTimeImmutable $date;
 
     public function __construct(int $vendorId, string $currency, int $grossMinor, int $netMinor, string $riskScore)
     {
@@ -37,6 +38,6 @@ class MetricSnapshot
         $this->grossMinor = $grossMinor;
         $this->netMinor = $netMinor;
         $this->riskScore = $riskScore;
-        $this->date = new \DateTimeImmutable('today');
+        $this->date = new DateTimeImmutable('today');
     }
 }

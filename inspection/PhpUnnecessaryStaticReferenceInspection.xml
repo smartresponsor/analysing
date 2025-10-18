@@ -1,0 +1,146 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/DiscriminatorColumnMapping.php</file>
+  <line>63</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/DiscriminatorColumnMapping.php" />
+  <problem_class id="PhpUnnecessaryStaticReferenceInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Redundant 'static' in final class</problem_class>
+  <description>Redundant 'static' in final class</description>
+  <highlighted_element>static</highlighted_element>
+  <language>PHP</language>
+  <offset>80</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/OneToManyAssociationMapping.php</file>
+  <line>31</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/OneToManyAssociationMapping.php" />
+  <problem_class id="PhpUnnecessaryStaticReferenceInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Redundant 'static' in final class</problem_class>
+  <description>Redundant 'static' in final class</description>
+  <highlighted_element>static</highlighted_element>
+  <language>PHP</language>
+  <offset>66</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/OneToManyAssociationMapping.php</file>
+  <line>64</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/OneToManyAssociationMapping.php" />
+  <problem_class id="PhpUnnecessaryStaticReferenceInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Redundant 'static' in final class</problem_class>
+  <description>Redundant 'static' in final class</description>
+  <highlighted_element>static</highlighted_element>
+  <language>PHP</language>
+  <offset>87</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/options-resolver/OptionConfigurator.php</file>
+  <line>32</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/options-resolver/OptionConfigurator.php" />
+  <problem_class id="PhpUnnecessaryStaticReferenceInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Redundant 'static' in final class</problem_class>
+  <description>Redundant 'static' in final class</description>
+  <highlighted_element>static</highlighted_element>
+  <language>PHP</language>
+  <offset>52</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/options-resolver/OptionConfigurator.php</file>
+  <line>48</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/options-resolver/OptionConfigurator.php" />
+  <problem_class id="PhpUnnecessaryStaticReferenceInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Redundant 'static' in final class</problem_class>
+  <description>Redundant 'static' in final class</description>
+  <highlighted_element>static</highlighted_element>
+  <language>PHP</language>
+  <offset>53</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/options-resolver/OptionConfigurator.php</file>
+  <line>62</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/options-resolver/OptionConfigurator.php" />
+  <problem_class id="PhpUnnecessaryStaticReferenceInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Redundant 'static' in final class</problem_class>
+  <description>Redundant 'static' in final class</description>
+  <highlighted_element>static</highlighted_element>
+  <language>PHP</language>
+  <offset>43</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/options-resolver/OptionConfigurator.php</file>
+  <line>86</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/options-resolver/OptionConfigurator.php" />
+  <problem_class id="PhpUnnecessaryStaticReferenceInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Redundant 'static' in final class</problem_class>
+  <description>Redundant 'static' in final class</description>
+  <highlighted_element>static</highlighted_element>
+  <language>PHP</language>
+  <offset>131</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/options-resolver/OptionConfigurator.php</file>
+  <line>100</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/options-resolver/OptionConfigurator.php" />
+  <problem_class id="PhpUnnecessaryStaticReferenceInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Redundant 'static' in final class</problem_class>
+  <description>Redundant 'static' in final class</description>
+  <highlighted_element>static</highlighted_element>
+  <language>PHP</language>
+  <offset>53</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/options-resolver/OptionConfigurator.php</file>
+  <line>114</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/options-resolver/OptionConfigurator.php" />
+  <problem_class id="PhpUnnecessaryStaticReferenceInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Redundant 'static' in final class</problem_class>
+  <description>Redundant 'static' in final class</description>
+  <highlighted_element>static</highlighted_element>
+  <language>PHP</language>
+  <offset>32</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/options-resolver/OptionConfigurator.php</file>
+  <line>128</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/options-resolver/OptionConfigurator.php" />
+  <problem_class id="PhpUnnecessaryStaticReferenceInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Redundant 'static' in final class</problem_class>
+  <description>Redundant 'static' in final class</description>
+  <highlighted_element>static</highlighted_element>
+  <language>PHP</language>
+  <offset>40</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/options-resolver/OptionConfigurator.php</file>
+  <line>140</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/options-resolver/OptionConfigurator.php" />
+  <problem_class id="PhpUnnecessaryStaticReferenceInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Redundant 'static' in final class</problem_class>
+  <description>Redundant 'static' in final class</description>
+  <highlighted_element>static</highlighted_element>
+  <language>PHP</language>
+  <offset>58</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/options-resolver/OptionConfigurator.php</file>
+  <line>154</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/options-resolver/OptionConfigurator.php" />
+  <problem_class id="PhpUnnecessaryStaticReferenceInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Redundant 'static' in final class</problem_class>
+  <description>Redundant 'static' in final class</description>
+  <highlighted_element>static</highlighted_element>
+  <language>PHP</language>
+  <offset>47</offset>
+  <length>6</length>
+</problem>
+</problems>

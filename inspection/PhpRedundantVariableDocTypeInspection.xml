@@ -1,0 +1,26 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractMySQLPlatform.php</file>
+  <line>1005</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractMySQLPlatform.php" />
+  <problem_class id="PhpRedundantVariableDocTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Redundant @var tag</problem_class>
+  <description>@var tag specifies the type already inferred from source code</description>
+  <highlighted_element>@var ForeignKeyConstraint[] $remainingForeignKeys</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>49</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/options-resolver/Debug/OptionsResolverIntrospector.php</file>
+  <line>30</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/options-resolver/Debug/OptionsResolverIntrospector.php" />
+  <problem_class id="PhpRedundantVariableDocTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Redundant @var tag</problem_class>
+  <description>@var tag specifies the type already inferred from source code</description>
+  <highlighted_element>@var OptionsResolver $this</highlighted_element>
+  <language>PHP</language>
+  <offset>16</offset>
+  <length>26</length>
+</problem>
+</problems>

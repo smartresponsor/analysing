@@ -1,0 +1,194 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Connection.php</file>
+  <line>1304</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Connection.php" />
+  <problem_class id="PhpRedundantCatchClauseInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Redundant catch clause</problem_class>
+  <description>Exception 'Exception' is never thrown in the corresponding 'try' block</description>
+  <highlighted_element>TheDriverException</highlighted_element>
+  <language>PHP</language>
+  <offset>17</offset>
+  <length>18</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/PgSQL/Driver.php</file>
+  <line>40</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/PgSQL/Driver.php" />
+  <problem_class id="PhpRedundantCatchClauseInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Redundant catch clause</problem_class>
+  <description>Exception 'ErrorException' is never thrown in the corresponding 'try' block</description>
+  <highlighted_element>ErrorException</highlighted_element>
+  <language>PHP</language>
+  <offset>17</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/AbstractQuery.php</file>
+  <line>388</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/AbstractQuery.php" />
+  <problem_class id="PhpRedundantCatchClauseInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Redundant catch clause</problem_class>
+  <description>Exception 'MappingException' is never thrown in the corresponding 'try' block</description>
+  <highlighted_element>MappingException</highlighted_element>
+  <language>PHP</language>
+  <offset>17</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/AbstractQuery.php</file>
+  <line>388</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/AbstractQuery.php" />
+  <problem_class id="PhpRedundantCatchClauseInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Redundant catch clause</problem_class>
+  <description>Exception 'MappingException' is never thrown in the corresponding 'try' block</description>
+  <highlighted_element>ORMMappingException</highlighted_element>
+  <language>PHP</language>
+  <offset>36</offset>
+  <length>19</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/ClassMetadataFactory.php</file>
+  <line>168</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/ClassMetadataFactory.php" />
+  <problem_class id="PhpRedundantCatchClauseInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Redundant catch clause</problem_class>
+  <description>Exception 'ReflectionException' is never thrown in the corresponding 'try' block</description>
+  <highlighted_element>ReflectionException</highlighted_element>
+  <language>PHP</language>
+  <offset>17</offset>
+  <length>19</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Tools/Console/Command/InfoCommand.php</file>
+  <line>65</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Tools/Console/Command/InfoCommand.php" />
+  <problem_class id="PhpRedundantCatchClauseInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Redundant catch clause</problem_class>
+  <description>Exception 'MappingException' is never thrown in the corresponding 'try' block</description>
+  <highlighted_element>MappingException</highlighted_element>
+  <language>PHP</language>
+  <offset>21</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Tools/Console/Command/MappingDescribeCommand.php</file>
+  <line>178</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Tools/Console/Command/MappingDescribeCommand.php" />
+  <problem_class id="PhpRedundantCatchClauseInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Redundant catch clause</problem_class>
+  <description>Exception 'MappingException' is never thrown in the corresponding 'try' block</description>
+  <highlighted_element>MappingException</highlighted_element>
+  <language>PHP</language>
+  <offset>17</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/ConfigurableFixerTrait.php</file>
+  <line>85</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/ConfigurableFixerTrait.php" />
+  <problem_class id="PhpRedundantCatchClauseInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Redundant catch clause</problem_class>
+  <description>Exception 'ExceptionInterface' is never thrown in the corresponding 'try' block</description>
+  <highlighted_element>ExceptionInterface</highlighted_element>
+  <language>PHP</language>
+  <offset>17</offset>
+  <length>18</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/sebastian/code-unit/src/Mapper.php</file>
+  <line>154</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/sebastian/code-unit/src/Mapper.php" />
+  <problem_class id="PhpRedundantCatchClauseInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Redundant catch clause</problem_class>
+  <description>Exception 'ReflectionException' is never thrown in the corresponding 'try' block</description>
+  <highlighted_element>\ReflectionException</highlighted_element>
+  <language>PHP</language>
+  <offset>17</offset>
+  <length>20</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/sebastian/code-unit/src/Mapper.php</file>
+  <line>176</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/sebastian/code-unit/src/Mapper.php" />
+  <problem_class id="PhpRedundantCatchClauseInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Redundant catch clause</problem_class>
+  <description>Exception 'ReflectionException' is never thrown in the corresponding 'try' block</description>
+  <highlighted_element>\ReflectionException</highlighted_element>
+  <language>PHP</language>
+  <offset>17</offset>
+  <length>20</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/sebastian/code-unit/src/Mapper.php</file>
+  <line>198</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/sebastian/code-unit/src/Mapper.php" />
+  <problem_class id="PhpRedundantCatchClauseInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Redundant catch clause</problem_class>
+  <description>Exception 'ReflectionException' is never thrown in the corresponding 'try' block</description>
+  <highlighted_element>\ReflectionException</highlighted_element>
+  <language>PHP</language>
+  <offset>17</offset>
+  <length>20</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/sebastian/code-unit/src/Mapper.php</file>
+  <line>220</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/sebastian/code-unit/src/Mapper.php" />
+  <problem_class id="PhpRedundantCatchClauseInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Redundant catch clause</problem_class>
+  <description>Exception 'ReflectionException' is never thrown in the corresponding 'try' block</description>
+  <highlighted_element>\ReflectionException</highlighted_element>
+  <language>PHP</language>
+  <offset>17</offset>
+  <length>20</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/sebastian/code-unit/src/Mapper.php</file>
+  <line>250</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/sebastian/code-unit/src/Mapper.php" />
+  <problem_class id="PhpRedundantCatchClauseInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Redundant catch clause</problem_class>
+  <description>Exception 'ReflectionException' is never thrown in the corresponding 'try' block</description>
+  <highlighted_element>\ReflectionException</highlighted_element>
+  <language>PHP</language>
+  <offset>17</offset>
+  <length>20</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/HttpClientTestCase.php</file>
+  <line>297</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/HttpClientTestCase.php" />
+  <problem_class id="PhpRedundantCatchClauseInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Redundant catch clause</problem_class>
+  <description>Exception 'TransportExceptionInterface' is never thrown in the corresponding 'try' block</description>
+  <highlighted_element>TransportExceptionInterface</highlighted_element>
+  <language>PHP</language>
+  <offset>17</offset>
+  <length>27</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/HttpClientTestCase.php</file>
+  <line>673</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/HttpClientTestCase.php" />
+  <problem_class id="PhpRedundantCatchClauseInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Redundant catch clause</problem_class>
+  <description>Exception 'TransportExceptionInterface' is never thrown in the corresponding 'try' block</description>
+  <highlighted_element>TransportExceptionInterface</highlighted_element>
+  <language>PHP</language>
+  <offset>17</offset>
+  <length>27</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/HttpClientTestCase.php</file>
+  <line>918</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/HttpClientTestCase.php" />
+  <problem_class id="PhpRedundantCatchClauseInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Redundant catch clause</problem_class>
+  <description>Exception 'TransportExceptionInterface' is never thrown in the corresponding 'try' block</description>
+  <highlighted_element>TransportExceptionInterface</highlighted_element>
+  <language>PHP</language>
+  <offset>25</offset>
+  <length>27</length>
+</problem>
+</problems>

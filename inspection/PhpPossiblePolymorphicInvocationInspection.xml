@@ -1,0 +1,1418 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/pcre/src/PHPStan/UnsafeStrictGroupsCallRule.php</file>
+  <line>43</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/pcre/src/PHPStan/UnsafeStrictGroupsCallRule.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>class</highlighted_element>
+  <language>PHP</language>
+  <offset>20</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/pcre/src/PHPStan/UnsafeStrictGroupsCallRule.php</file>
+  <line>46</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/pcre/src/PHPStan/UnsafeStrictGroupsCallRule.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>class</highlighted_element>
+  <language>PHP</language>
+  <offset>26</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/pcre/src/PHPStan/UnsafeStrictGroupsCallRule.php</file>
+  <line>47</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/pcre/src/PHPStan/UnsafeStrictGroupsCallRule.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>class</highlighted_element>
+  <language>PHP</language>
+  <offset>25</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/pcre/src/PHPStan/UnsafeStrictGroupsCallRule.php</file>
+  <line>51</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/pcre/src/PHPStan/UnsafeStrictGroupsCallRule.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>name</highlighted_element>
+  <language>PHP</language>
+  <offset>20</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/pcre/src/PHPStan/UnsafeStrictGroupsCallRule.php</file>
+  <line>51</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/pcre/src/PHPStan/UnsafeStrictGroupsCallRule.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>name</highlighted_element>
+  <language>PHP</language>
+  <offset>72</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/pcre/src/PHPStan/UnsafeStrictGroupsCallRule.php</file>
+  <line>55</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/pcre/src/PHPStan/UnsafeStrictGroupsCallRule.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>getArgs</highlighted_element>
+  <language>PHP</language>
+  <offset>23</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/pcre/src/PHPStan/UnsafeStrictGroupsCallRule.php</file>
+  <line>82</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/pcre/src/PHPStan/UnsafeStrictGroupsCallRule.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>name</highlighted_element>
+  <language>PHP</language>
+  <offset>136</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/pcre/src/PHPStan/UnsafeStrictGroupsCallRule.php</file>
+  <line>101</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/pcre/src/PHPStan/UnsafeStrictGroupsCallRule.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>name</highlighted_element>
+  <language>PHP</language>
+  <offset>31</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/MySQLSchemaManager.php</file>
+  <line>441</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/MySQLSchemaManager.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>getColumnTypeSQLSnippets</highlighted_element>
+  <language>PHP</language>
+  <offset>70</offset>
+  <length>24</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/MySQLSchemaManager.php</file>
+  <line>560</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/MySQLSchemaManager.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>fetchTableOptionsByTable</highlighted_element>
+  <language>PHP</language>
+  <offset>33</offset>
+  <length>24</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/OracleSchemaManager.php</file>
+  <line>336</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/OracleSchemaManager.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>getDropAutoincrementSql</highlighted_element>
+  <language>PHP</language>
+  <offset>33</offset>
+  <length>23</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/PostgreSQLSchemaManager.php</file>
+  <line>658</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/PostgreSQLSchemaManager.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>getDefaultColumnValueSQLSnippet</highlighted_element>
+  <language>PHP</language>
+  <offset>23</offset>
+  <length>31</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/DefaultEntityHydrator.php</file>
+  <line>156</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/DefaultEntityHydrator.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>getCacheRegion</highlighted_element>
+  <language>PHP</language>
+  <offset>47</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/DefaultQueryCache.php</file>
+  <line>130</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/DefaultQueryCache.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>class</highlighted_element>
+  <language>PHP</language>
+  <offset>73</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/DefaultQueryCache.php</file>
+  <line>130</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/DefaultQueryCache.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>resolveAssociationEntries</highlighted_element>
+  <language>PHP</language>
+  <offset>93</offset>
+  <length>25</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/DefaultQueryCache.php</file>
+  <line>158</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/DefaultQueryCache.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>class</highlighted_element>
+  <language>PHP</language>
+  <offset>69</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/DefaultQueryCache.php</file>
+  <line>158</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/DefaultQueryCache.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>resolveAssociationEntries</highlighted_element>
+  <language>PHP</language>
+  <offset>89</offset>
+  <length>25</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/DefaultQueryCache.php</file>
+  <line>305</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/DefaultQueryCache.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>getCacheRegion</highlighted_element>
+  <language>PHP</language>
+  <offset>43</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/DefaultQueryCache.php</file>
+  <line>314</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/DefaultQueryCache.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>storeEntityCache</highlighted_element>
+  <language>PHP</language>
+  <offset>39</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/DefaultQueryCache.php</file>
+  <line>335</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/DefaultQueryCache.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>storeEntityCache</highlighted_element>
+  <language>PHP</language>
+  <offset>39</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/Persister/Collection/AbstractCollectionPersister.php</file>
+  <line>148</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/Persister/Collection/AbstractCollectionPersister.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>identifiers</highlighted_element>
+  <language>PHP</language>
+  <offset>33</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/Persister/Collection/ReadWriteCachedCollectionPersister.php</file>
+  <line>65</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/Persister/Collection/ReadWriteCachedCollectionPersister.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>lock</highlighted_element>
+  <language>PHP</language>
+  <offset>34</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/Persister/Collection/ReadWriteCachedCollectionPersister.php</file>
+  <line>92</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/Persister/Collection/ReadWriteCachedCollectionPersister.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>lock</highlighted_element>
+  <language>PHP</language>
+  <offset>34</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/Persister/Entity/AbstractEntityPersister.php</file>
+  <line>201</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/Persister/Entity/AbstractEntityPersister.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>storeEntityCache</highlighted_element>
+  <language>PHP</language>
+  <offset>29</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/Persister/Entity/AbstractEntityPersister.php</file>
+  <line>381</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/Persister/Entity/AbstractEntityPersister.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>class</highlighted_element>
+  <language>PHP</language>
+  <offset>29</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/Persister/Entity/AbstractEntityPersister.php</file>
+  <line>382</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/Persister/Entity/AbstractEntityPersister.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>class</highlighted_element>
+  <language>PHP</language>
+  <offset>77</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/Persister/Entity/AbstractEntityPersister.php</file>
+  <line>480</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/Persister/Entity/AbstractEntityPersister.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>loadCollectionCache</highlighted_element>
+  <language>PHP</language>
+  <offset>31</offset>
+  <length>19</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/Persister/Entity/AbstractEntityPersister.php</file>
+  <line>483</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/Persister/Entity/AbstractEntityPersister.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>getCacheRegion</highlighted_element>
+  <language>PHP</language>
+  <offset>64</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/Persister/Entity/AbstractEntityPersister.php</file>
+  <line>490</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/Persister/Entity/AbstractEntityPersister.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>storeCollectionCache</highlighted_element>
+  <language>PHP</language>
+  <offset>20</offset>
+  <length>20</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/Persister/Entity/AbstractEntityPersister.php</file>
+  <line>492</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/Persister/Entity/AbstractEntityPersister.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>getCacheRegion</highlighted_element>
+  <language>PHP</language>
+  <offset>61</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/Persister/Entity/AbstractEntityPersister.php</file>
+  <line>511</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/Persister/Entity/AbstractEntityPersister.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>loadCollectionCache</highlighted_element>
+  <language>PHP</language>
+  <offset>31</offset>
+  <length>19</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/Persister/Entity/AbstractEntityPersister.php</file>
+  <line>514</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/Persister/Entity/AbstractEntityPersister.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>getCacheRegion</highlighted_element>
+  <language>PHP</language>
+  <offset>64</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/Persister/Entity/AbstractEntityPersister.php</file>
+  <line>521</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/Persister/Entity/AbstractEntityPersister.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>storeCollectionCache</highlighted_element>
+  <language>PHP</language>
+  <offset>20</offset>
+  <length>20</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/Persister/Entity/AbstractEntityPersister.php</file>
+  <line>523</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/Persister/Entity/AbstractEntityPersister.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>getCacheRegion</highlighted_element>
+  <language>PHP</language>
+  <offset>61</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/Persister/Entity/ReadWriteCachedEntityPersister.php</file>
+  <line>70</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/Persister/Entity/ReadWriteCachedEntityPersister.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>lock</highlighted_element>
+  <language>PHP</language>
+  <offset>34</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/Persister/Entity/ReadWriteCachedEntityPersister.php</file>
+  <line>92</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/Persister/Entity/ReadWriteCachedEntityPersister.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>lock</highlighted_element>
+  <language>PHP</language>
+  <offset>31</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/TimestampQueryCacheValidator.php</file>
+  <line>36</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/TimestampQueryCacheValidator.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>time</highlighted_element>
+  <language>PHP</language>
+  <offset>41</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/PersistentCollection.php</file>
+  <line>103</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/PersistentCollection.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>inversedBy</highlighted_element>
+  <language>PHP</language>
+  <offset>67</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/PersistentCollection.php</file>
+  <line>103</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/PersistentCollection.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>mappedBy</highlighted_element>
+  <language>PHP</language>
+  <offset>88</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Collection/ManyToManyPersister.php</file>
+  <line>48</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Collection/ManyToManyPersister.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>joinTable</highlighted_element>
+  <language>PHP</language>
+  <offset>27</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Collection/ManyToManyPersister.php</file>
+  <line>93</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Collection/ManyToManyPersister.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>inversedBy</highlighted_element>
+  <language>PHP</language>
+  <offset>24</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Collection/ManyToManyPersister.php</file>
+  <line>94</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Collection/ManyToManyPersister.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>mappedBy</highlighted_element>
+  <language>PHP</language>
+  <offset>24</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Collection/ManyToManyPersister.php</file>
+  <line>373</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Collection/ManyToManyPersister.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>joinTable</highlighted_element>
+  <language>PHP</language>
+  <offset>27</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Collection/ManyToManyPersister.php</file>
+  <line>393</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Collection/ManyToManyPersister.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>relationToSourceKeyColumns</highlighted_element>
+  <language>PHP</language>
+  <offset>28</offset>
+  <length>26</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Collection/ManyToManyPersister.php</file>
+  <line>401</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Collection/ManyToManyPersister.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>relationToSourceKeyColumns</highlighted_element>
+  <language>PHP</language>
+  <offset>27</offset>
+  <length>26</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Collection/ManyToManyPersister.php</file>
+  <line>426</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Collection/ManyToManyPersister.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>joinTable</highlighted_element>
+  <language>PHP</language>
+  <offset>27</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Collection/ManyToManyPersister.php</file>
+  <line>431</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Collection/ManyToManyPersister.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>joinTable</highlighted_element>
+  <language>PHP</language>
+  <offset>27</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Collection/ManyToManyPersister.php</file>
+  <line>473</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Collection/ManyToManyPersister.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>joinTable</highlighted_element>
+  <language>PHP</language>
+  <offset>27</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Collection/ManyToManyPersister.php</file>
+  <line>478</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Collection/ManyToManyPersister.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>joinTable</highlighted_element>
+  <language>PHP</language>
+  <offset>27</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Collection/ManyToManyPersister.php</file>
+  <line>520</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Collection/ManyToManyPersister.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>joinTableColumns</highlighted_element>
+  <language>PHP</language>
+  <offset>39</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Collection/ManyToManyPersister.php</file>
+  <line>531</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Collection/ManyToManyPersister.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>joinTableColumns</highlighted_element>
+  <language>PHP</language>
+  <offset>27</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Collection/ManyToManyPersister.php</file>
+  <line>541</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Collection/ManyToManyPersister.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>relationToSourceKeyColumns</highlighted_element>
+  <language>PHP</language>
+  <offset>78</offset>
+  <length>26</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Collection/ManyToManyPersister.php</file>
+  <line>546</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Collection/ManyToManyPersister.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>relationToTargetKeyColumns</highlighted_element>
+  <language>PHP</language>
+  <offset>74</offset>
+  <length>26</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Collection/ManyToManyPersister.php</file>
+  <line>585</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Collection/ManyToManyPersister.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>joinTable</highlighted_element>
+  <language>PHP</language>
+  <offset>48</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Collection/ManyToManyPersister.php</file>
+  <line>613</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Collection/ManyToManyPersister.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>joinTableColumns</highlighted_element>
+  <language>PHP</language>
+  <offset>27</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php</file>
+  <line>774</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>inversedBy</highlighted_element>
+  <language>PHP</language>
+  <offset>45</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php</file>
+  <line>774</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>inversedBy</highlighted_element>
+  <language>PHP</language>
+  <offset>122</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php</file>
+  <line>781</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>inversedBy</highlighted_element>
+  <language>PHP</language>
+  <offset>47</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php</file>
+  <line>788</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>inversedBy</highlighted_element>
+  <language>PHP</language>
+  <offset>56</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php</file>
+  <line>805</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>targetToSourceKeyColumns</highlighted_element>
+  <language>PHP</language>
+  <offset>31</offset>
+  <length>24</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php</file>
+  <line>1317</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>joinColumns</highlighted_element>
+  <language>PHP</language>
+  <offset>117</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php</file>
+  <line>1319</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>joinColumns</highlighted_element>
+  <language>PHP</language>
+  <offset>39</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php</file>
+  <line>1334</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>joinColumns</highlighted_element>
+  <language>PHP</language>
+  <offset>39</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php</file>
+  <line>1375</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>joinColumns</highlighted_element>
+  <language>PHP</language>
+  <offset>25</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php</file>
+  <line>1710</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>joinTable</highlighted_element>
+  <language>PHP</language>
+  <offset>36</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php</file>
+  <line>1711</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>joinTable</highlighted_element>
+  <language>PHP</language>
+  <offset>36</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/AST/Functions/DateAddFunction.php</file>
+  <line>29</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/AST/Functions/DateAddFunction.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>value</highlighted_element>
+  <language>PHP</language>
+  <offset>55</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/AST/Functions/DateSubFunction.php</file>
+  <line>22</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/AST/Functions/DateSubFunction.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>value</highlighted_element>
+  <language>PHP</language>
+  <offset>55</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Tools/Pagination/WhereInWalker.php</file>
+  <line>86</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Tools/Pagination/WhereInWalker.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>conditionalFactors</highlighted_element>
+  <language>PHP</language>
+  <offset>70</offset>
+  <length>18</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Tools/SchemaTool.php</file>
+  <line>163</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Tools/SchemaTool.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>joinColumns</highlighted_element>
+  <language>PHP</language>
+  <offset>37</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Attribute/Target.php</file>
+  <line>56</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Attribute/Target.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. ReflectionFunction does not have members in its hierarchy</description>
+  <highlighted_element>class</highlighted_element>
+  <language>PHP</language>
+  <offset>39</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/CheckTypeDeclarationsPass.php</file>
+  <line>129</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/CheckTypeDeclarationsPass.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. ReflectionFunction does not have members in its hierarchy</description>
+  <highlighted_element>class</highlighted_element>
+  <language>PHP</language>
+  <offset>180</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/CheckTypeDeclarationsPass.php</file>
+  <line>135</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/CheckTypeDeclarationsPass.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>getEnvPlaceholderUniquePrefix</highlighted_element>
+  <language>PHP</language>
+  <offset>151</offset>
+  <length>29</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/MergeExtensionConfigurationPass.php</file>
+  <line>84</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/MergeExtensionConfigurationPass.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>mergeEnvPlaceholders</highlighted_element>
+  <language>PHP</language>
+  <offset>51</offset>
+  <length>20</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/ResolveBindingsPass.php</file>
+  <line>225</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/ResolveBindingsPass.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. ReflectionFunction does not have members in its hierarchy</description>
+  <highlighted_element>class</highlighted_element>
+  <language>PHP</language>
+  <offset>185</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Config/ContainerParametersResourceChecker.php</file>
+  <line>35</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Config/ContainerParametersResourceChecker.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>getParameters</highlighted_element>
+  <language>PHP</language>
+  <offset>28</offset>
+  <length>13</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Loader/XmlFileLoader.php</file>
+  <line>199</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Loader/XmlFileLoader.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. DOMNode does not have members in its hierarchy</description>
+  <highlighted_element>setAttribute</highlighted_element>
+  <language>PHP</language>
+  <offset>23</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/AboutCommand.php</file>
+  <line>53</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/AboutCommand.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. Application does not have members in its hierarchy</description>
+  <highlighted_element>getKernel</highlighted_element>
+  <language>PHP</language>
+  <offset>43</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/AbstractConfigCommand.php</file>
+  <line>37</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/AbstractConfigCommand.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. Application does not have members in its hierarchy</description>
+  <highlighted_element>getKernel</highlighted_element>
+  <language>PHP</language>
+  <offset>44</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/AbstractConfigCommand.php</file>
+  <line>61</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/AbstractConfigCommand.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. Application does not have members in its hierarchy</description>
+  <highlighted_element>getKernel</highlighted_element>
+  <language>PHP</language>
+  <offset>43</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/AbstractConfigCommand.php</file>
+  <line>98</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/AbstractConfigCommand.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. Application does not have members in its hierarchy</description>
+  <highlighted_element>getKernel</highlighted_element>
+  <language>PHP</language>
+  <offset>43</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/AbstractConfigCommand.php</file>
+  <line>174</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/AbstractConfigCommand.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. Application does not have members in its hierarchy</description>
+  <highlighted_element>getKernel</highlighted_element>
+  <language>PHP</language>
+  <offset>43</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/AssetsInstallCommand.php</file>
+  <line>86</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/AssetsInstallCommand.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. Application does not have members in its hierarchy</description>
+  <highlighted_element>getKernel</highlighted_element>
+  <language>PHP</language>
+  <offset>43</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/BuildDebugContainerTrait.php</file>
+  <line>44</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/BuildDebugContainerTrait.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. ContainerDebugCommand does not have members in its hierarchy</description>
+  <highlighted_element>initializeBundles</highlighted_element>
+  <language>PHP</language>
+  <offset>23</offset>
+  <length>17</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/CacheClearCommand.php</file>
+  <line>74</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/CacheClearCommand.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. Application does not have members in its hierarchy</description>
+  <highlighted_element>getKernel</highlighted_element>
+  <language>PHP</language>
+  <offset>43</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/CacheClearCommand.php</file>
+  <line>235</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/CacheClearCommand.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. Application does not have members in its hierarchy</description>
+  <highlighted_element>getKernel</highlighted_element>
+  <language>PHP</language>
+  <offset>43</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/CacheClearCommand.php</file>
+  <line>244</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/CacheClearCommand.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. Application does not have members in its hierarchy</description>
+  <highlighted_element>getKernel</highlighted_element>
+  <language>PHP</language>
+  <offset>43</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/CachePoolClearCommand.php</file>
+  <line>65</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/CachePoolClearCommand.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. Application does not have members in its hierarchy</description>
+  <highlighted_element>getKernel</highlighted_element>
+  <language>PHP</language>
+  <offset>43</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/CacheWarmupCommand.php</file>
+  <line>60</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/CacheWarmupCommand.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. Application does not have members in its hierarchy</description>
+  <highlighted_element>getKernel</highlighted_element>
+  <language>PHP</language>
+  <offset>43</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/ConfigDebugCommand.php</file>
+  <line>144</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/ConfigDebugCommand.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. Application does not have members in its hierarchy</description>
+  <highlighted_element>getKernel</highlighted_element>
+  <language>PHP</language>
+  <offset>49</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/ConfigDebugCommand.php</file>
+  <line>228</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/ConfigDebugCommand.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. Application does not have members in its hierarchy</description>
+  <highlighted_element>getKernel</highlighted_element>
+  <language>PHP</language>
+  <offset>43</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/ConfigDebugCommand.php</file>
+  <line>241</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/ConfigDebugCommand.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. Application does not have members in its hierarchy</description>
+  <highlighted_element>getKernel</highlighted_element>
+  <language>PHP</language>
+  <offset>42</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/ConfigDumpReferenceCommand.php</file>
+  <line>96</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/ConfigDumpReferenceCommand.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. Application does not have members in its hierarchy</description>
+  <highlighted_element>getKernel</highlighted_element>
+  <language>PHP</language>
+  <offset>114</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/ConfigDumpReferenceCommand.php</file>
+  <line>164</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/ConfigDumpReferenceCommand.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. Application does not have members in its hierarchy</description>
+  <highlighted_element>getKernel</highlighted_element>
+  <language>PHP</language>
+  <offset>43</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/ConfigDumpReferenceCommand.php</file>
+  <line>178</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/ConfigDumpReferenceCommand.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. Application does not have members in its hierarchy</description>
+  <highlighted_element>getKernel</highlighted_element>
+  <language>PHP</language>
+  <offset>42</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/ConfigDumpReferenceCommand.php</file>
+  <line>193</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/ConfigDumpReferenceCommand.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. Application does not have members in its hierarchy</description>
+  <highlighted_element>getKernel</highlighted_element>
+  <language>PHP</language>
+  <offset>43</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/ContainerDebugCommand.php</file>
+  <line>123</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/ContainerDebugCommand.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. Application does not have members in its hierarchy</description>
+  <highlighted_element>getKernel</highlighted_element>
+  <language>PHP</language>
+  <offset>43</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/ContainerDebugCommand.php</file>
+  <line>223</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/ContainerDebugCommand.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. Application does not have members in its hierarchy</description>
+  <highlighted_element>getKernel</highlighted_element>
+  <language>PHP</language>
+  <offset>43</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/ContainerLintCommand.php</file>
+  <line>84</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/ContainerLintCommand.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. Application does not have members in its hierarchy</description>
+  <highlighted_element>getKernel</highlighted_element>
+  <language>PHP</language>
+  <offset>43</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/DebugAutowiringCommand.php</file>
+  <line>70</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/DebugAutowiringCommand.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. Application does not have members in its hierarchy</description>
+  <highlighted_element>getKernel</highlighted_element>
+  <language>PHP</language>
+  <offset>73</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/DebugAutowiringCommand.php</file>
+  <line>184</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/DebugAutowiringCommand.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. Application does not have members in its hierarchy</description>
+  <highlighted_element>getKernel</highlighted_element>
+  <language>PHP</language>
+  <offset>82</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/DebugAutowiringCommand.php</file>
+  <line>194</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/DebugAutowiringCommand.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. Application does not have members in its hierarchy</description>
+  <highlighted_element>getKernel</highlighted_element>
+  <language>PHP</language>
+  <offset>77</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/RouterDebugCommand.php</file>
+  <line>85</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/RouterDebugCommand.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. Application does not have members in its hierarchy</description>
+  <highlighted_element>getKernel</highlighted_element>
+  <language>PHP</language>
+  <offset>86</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationDebugCommand.php</file>
+  <line>121</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationDebugCommand.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. Application does not have members in its hierarchy</description>
+  <highlighted_element>getKernel</highlighted_element>
+  <language>PHP</language>
+  <offset>43</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationDebugCommand.php</file>
+  <line>255</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationDebugCommand.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. Application does not have members in its hierarchy</description>
+  <highlighted_element>getKernel</highlighted_element>
+  <language>PHP</language>
+  <offset>43</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationExtractCommand.php</file>
+  <line>146</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationExtractCommand.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. Application does not have members in its hierarchy</description>
+  <highlighted_element>getKernel</highlighted_element>
+  <language>PHP</language>
+  <offset>43</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationExtractCommand.php</file>
+  <line>301</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationExtractCommand.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. Application does not have members in its hierarchy</description>
+  <highlighted_element>getKernel</highlighted_element>
+  <language>PHP</language>
+  <offset>43</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Console/Descriptor/XmlDescriptor.php</file>
+  <line>529</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Console/Descriptor/XmlDescriptor.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. DOMNode does not have members in its hierarchy</description>
+  <highlighted_element>setAttribute</highlighted_element>
+  <language>PHP</language>
+  <offset>47</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/DependencyInjection/Configuration.php</file>
+  <line>407</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/DependencyInjection/Configuration.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>fixXmlConfig</highlighted_element>
+  <language>PHP</language>
+  <offset>34</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/DependencyInjection/Configuration.php</file>
+  <line>1336</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/DependencyInjection/Configuration.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>fixXmlConfig</highlighted_element>
+  <language>PHP</language>
+  <offset>34</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/DependencyInjection/Configuration.php</file>
+  <line>1453</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/DependencyInjection/Configuration.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>children</highlighted_element>
+  <language>PHP</language>
+  <offset>26</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/EventListener/SuggestMissingPackageSubscriber.php</file>
+  <line>65</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/EventListener/SuggestMissingPackageSubscriber.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>getAlternatives</highlighted_element>
+  <language>PHP</language>
+  <offset>20</offset>
+  <length>15</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/HttpCache/HttpCache.php</file>
+  <line>65</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/HttpCache/HttpCache.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>boot</highlighted_element>
+  <language>PHP</language>
+  <offset>28</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/HttpCache/HttpCache.php</file>
+  <line>66</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/HttpCache/HttpCache.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>getContainer</highlighted_element>
+  <language>PHP</language>
+  <offset>28</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/KernelBrowser.php</file>
+  <line>44</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/KernelBrowser.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>getContainer</highlighted_element>
+  <language>PHP</language>
+  <offset>36</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/KernelBrowser.php</file>
+  <line>144</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/KernelBrowser.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>boot</highlighted_element>
+  <language>PHP</language>
+  <offset>27</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/KernelBrowser.php</file>
+  <line>145</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/KernelBrowser.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>shutdown</highlighted_element>
+  <language>PHP</language>
+  <offset>27</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/KernelBrowser.php</file>
+  <line>153</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/KernelBrowser.php" />
+  <problem_class id="PhpPossiblePolymorphicInvocationInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Possible polymorphic call</problem_class>
+  <description>Potentially polymorphic call. The code may be inoperable depending on the actual class instance passed as the argument.</description>
+  <highlighted_element>boot</highlighted_element>
+  <language>PHP</language>
+  <offset>27</offset>
+  <length>4</length>
+</problem>
+</problems>

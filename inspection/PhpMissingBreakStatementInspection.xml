@@ -1,0 +1,62 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/UnitOfWork.php</file>
+  <line>2044</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/UnitOfWork.php" />
+  <problem_class id="PhpMissingBreakStatementInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing 'break' statement</problem_class>
+  <description>Missing 'break' statement</description>
+  <highlighted_element>case</highlighted_element>
+  <language>PHP</language>
+  <offset>16</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/UnitOfWork.php</file>
+  <line>2085</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/UnitOfWork.php" />
+  <problem_class id="PhpMissingBreakStatementInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing 'break' statement</problem_class>
+  <description>Missing 'break' statement</description>
+  <highlighted_element>case</highlighted_element>
+  <language>PHP</language>
+  <offset>16</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/UnitOfWork.php</file>
+  <line>2131</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/UnitOfWork.php" />
+  <problem_class id="PhpMissingBreakStatementInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing 'break' statement</problem_class>
+  <description>Missing 'break' statement</description>
+  <highlighted_element>case</highlighted_element>
+  <language>PHP</language>
+  <offset>16</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Handler/PdoSessionHandler.php</file>
+  <line>486</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Handler/PdoSessionHandler.php" />
+  <problem_class id="PhpMissingBreakStatementInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing 'break' statement</problem_class>
+  <description>Missing 'break' statement</description>
+  <highlighted_element>case</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Handler/SessionHandlerFactory.php</file>
+  <line>71</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Handler/SessionHandlerFactory.php" />
+  <problem_class id="PhpMissingBreakStatementInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing 'break' statement</problem_class>
+  <description>Missing 'break' statement</description>
+  <highlighted_element>case</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>4</length>
+</problem>
+</problems>

@@ -1,0 +1,26 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php</file>
+  <line>1652</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php" />
+  <problem_class id="PhpArraySearchInBooleanContextInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'array_search()' can be replaced with 'in_array()' call</problem_class>
+  <description>Can be replaced with 'in_array' call</description>
+  <highlighted_element>array_search</highlighted_element>
+  <language>PHP</language>
+  <offset>20</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Tools/SchemaValidator.php</file>
+  <line>285</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Tools/SchemaValidator.php" />
+  <problem_class id="PhpArraySearchInBooleanContextInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'array_search()' can be replaced with 'in_array()' call</problem_class>
+  <description>Can be replaced with '!in_array' call</description>
+  <highlighted_element>array_search</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>12</length>
+</problem>
+</problems>

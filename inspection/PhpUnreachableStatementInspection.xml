@@ -1,0 +1,62 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/Parser.php</file>
+  <line>827</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/Parser.php" />
+  <problem_class id="PhpUnreachableStatementInspection" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unreachable statement</problem_class>
+  <description>Unreachable statement</description>
+  <highlighted_element>break;</highlighted_element>
+  <language>PHP</language>
+  <offset>16</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/Parser.php</file>
+  <line>2899</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/Parser.php" />
+  <problem_class id="PhpUnreachableStatementInspection" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unreachable statement</problem_class>
+  <description>Unreachable statement</description>
+  <highlighted_element>break;</highlighted_element>
+  <language>PHP</language>
+  <offset>16</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/LanguageConstruct/SingleSpaceAroundConstructFixer.php</file>
+  <line>471</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/LanguageConstruct/SingleSpaceAroundConstructFixer.php" />
+  <problem_class id="PhpUnreachableStatementInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unreachable statement</problem_class>
+  <description>Unreachable statement</description>
+  <highlighted_element>return LogicException('Not reachable code was reached.');</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>57</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/Fixtures/web/index.php</file>
+  <line>155</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/Fixtures/web/index.php" />
+  <problem_class id="PhpUnreachableStatementInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unreachable statement</problem_class>
+  <description>Unreachable statement</description>
+  <highlighted_element>exit;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/Fixtures/web/index.php</file>
+  <line>180</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/Fixtures/web/index.php" />
+  <problem_class id="PhpUnreachableStatementInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unreachable statement</problem_class>
+  <description>Unreachable statement</description>
+  <highlighted_element>exit;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>5</length>
+</problem>
+</problems>

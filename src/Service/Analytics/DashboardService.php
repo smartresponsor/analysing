@@ -5,6 +5,7 @@ namespace App\Service\Analytics;
 
 use Doctrine\DBAL\Connection;
 use App\DTO\Analytics\KpiRequest;
+use Throwable;
 
 final class DashboardService
 {
@@ -30,7 +31,7 @@ final class DashboardService
 
         try {
             $row = $this->db->fetchAssociative($sql, $params) ?: ['gross'=>0,'net'=>0,'days'=>0];
-        } catch (\Throwable $e) {
+        } catch (Throwable $e) {
             $row = ['gross'=>0,'net'=>0,'days'=>0];
         }
 
@@ -64,7 +65,7 @@ final class DashboardService
               ORDER BY d ASC";
         try {
             $rows = $this->db->fetchAllAssociative($sql, $params);
-        } catch (\Throwable $e) {
+        } catch (Throwable $e) {
             $rows = [];
         }
 
@@ -88,7 +89,7 @@ final class DashboardService
 
         try {
             $rows = $this->db->fetchAllAssociative($sql, $params);
-        } catch (\Throwable $e) {
+        } catch (Throwable $e) {
             $rows = [];
         }
 

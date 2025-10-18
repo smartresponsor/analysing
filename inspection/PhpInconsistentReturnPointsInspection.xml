@@ -1,0 +1,38 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/PhpUnit/PhpUnitNamespacedFixer.php</file>
+  <line>73</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/PhpUnit/PhpUnitNamespacedFixer.php" />
+  <problem_class id="PhpInconsistentReturnPointsInspection" severity="ERROR" attribute_key="WRONG_REFERENCES_ATTRIBUTES">Inconsistent return points</problem_class>
+  <description>Missing 'return' statement</description>
+  <highlighted_element>}</highlighted_element>
+  <language>PHP</language>
+  <offset>16</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/sebastian/type/src/ReflectionMapper.php</file>
+  <line>92</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/sebastian/type/src/ReflectionMapper.php" />
+  <problem_class id="PhpInconsistentReturnPointsInspection" severity="ERROR" attribute_key="WRONG_REFERENCES_ATTRIBUTES">Inconsistent return points</problem_class>
+  <description>Missing 'return' statement</description>
+  <highlighted_element>}</highlighted_element>
+  <language>PHP</language>
+  <offset>4</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/CheckExceptionOnInvalidReferenceBehaviorPass.php</file>
+  <line>84</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/CheckExceptionOnInvalidReferenceBehaviorPass.php" />
+  <problem_class id="PhpInconsistentReturnPointsInspection" severity="ERROR" attribute_key="WRONG_REFERENCES_ATTRIBUTES">Inconsistent return points</problem_class>
+  <description>Missing 'return' statement</description>
+  <highlighted_element>}</highlighted_element>
+  <language>PHP</language>
+  <offset>4</offset>
+  <length>1</length>
+</problem>
+</problems>

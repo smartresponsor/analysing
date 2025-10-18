@@ -1,0 +1,198 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/pcre/src/Preg.php</file>
+  <line>417</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/pcre/src/Preg.php" />
+  <problem_class id="PhpSameParameterValueInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Parameter's value is always the same</problem_class>
+  <description>Parameter's value is always ''matchAll''</description>
+  <highlighted_element>$variantMethod</highlighted_element>
+  <language>PHP</language>
+  <offset>91</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/semver/src/VersionParser.php</file>
+  <line>543</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/semver/src/VersionParser.php" />
+  <problem_class id="PhpSameParameterValueInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Parameter's value is always the same</problem_class>
+  <description>Parameter's value is always ''0''</description>
+  <highlighted_element>$pad</highlighted_element>
+  <language>PHP</language>
+  <offset>88</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/SQLServerPlatform.php</file>
+  <line>85</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/SQLServerPlatform.php" />
+  <problem_class id="PhpSameParameterValueInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Parameter's value is always the same</problem_class>
+  <description>Parameter's value is always ''GETDATE()''</description>
+  <highlighted_element>$expression</highlighted_element>
+  <language>PHP</language>
+  <offset>53</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Portability/Converter.php</file>
+  <line>222</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Portability/Converter.php" />
+  <problem_class id="PhpSameParameterValueInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Parameter's value is always the same</problem_class>
+  <description>Parameter's value is always '[self::class, 'id']'</description>
+  <highlighted_element>$id</highlighted_element>
+  <language>PHP</language>
+  <offset>65</offset>
+  <length>3</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Portability/Converter.php</file>
+  <line>251</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Portability/Converter.php" />
+  <problem_class id="PhpSameParameterValueInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Parameter's value is always the same</problem_class>
+  <description>Parameter's value is always '[self::class, 'id']'</description>
+  <highlighted_element>$id</highlighted_element>
+  <language>PHP</language>
+  <offset>68</offset>
+  <length>3</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Visitor/Graphviz.php</file>
+  <line>126</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Visitor/Graphviz.php" />
+  <problem_class id="PhpSameParameterValueInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Parameter's value is always the same</problem_class>
+  <description>Parameter's value is always '[
+                'dir'       =&gt; 'back',
+                'arrowtail' =&gt; 'dot',
+                'arrowhead' =&gt; 'normal',
+            ]'</description>
+  <highlighted_element>$options</highlighted_element>
+  <language>PHP</language>
+  <offset>56</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Collection/ManyToManyPersister.php</file>
+  <line>565</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Collection/ManyToManyPersister.php" />
+  <problem_class id="PhpSameParameterValueInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Parameter's value is always the same</problem_class>
+  <description>Parameter's value is always 'true'</description>
+  <highlighted_element>$addFilters</highlighted_element>
+  <language>PHP</language>
+  <offset>13</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Collection/ManyToManyPersister.php</file>
+  <line>655</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Collection/ManyToManyPersister.php" />
+  <problem_class id="PhpSameParameterValueInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Parameter's value is always the same</problem_class>
+  <description>Parameter's value is always 'true'</description>
+  <highlighted_element>$addFilters</highlighted_element>
+  <language>PHP</language>
+  <offset>13</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/UnitOfWork.php</file>
+  <line>1932</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/UnitOfWork.php" />
+  <problem_class id="PhpSameParameterValueInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Parameter's value is always the same</problem_class>
+  <description>Parameter's value is always 'false'</description>
+  <highlighted_element>$noCascade</highlighted_element>
+  <language>PHP</language>
+  <offset>13</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/ComposerJsonReader.php</file>
+  <line>159</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/ComposerJsonReader.php" />
+  <problem_class id="PhpSameParameterValueInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Parameter's value is always the same</problem_class>
+  <description>Parameter's value is always ''phpunit/phpunit''</description>
+  <highlighted_element>$package</highlighted_element>
+  <language>PHP</language>
+  <offset>70</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Doctrine/Annotation/Tokens.php</file>
+  <line>278</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Doctrine/Annotation/Tokens.php" />
+  <problem_class id="PhpSameParameterValueInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Parameter's value is always the same</problem_class>
+  <description>Parameter's value is always '1'</description>
+  <highlighted_element>$direction</highlighted_element>
+  <language>PHP</language>
+  <offset>63</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Runner/FileFilterIterator.php</file>
+  <line>102</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Runner/FileFilterIterator.php" />
+  <problem_class id="PhpSameParameterValueInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Parameter's value is always the same</problem_class>
+  <description>Parameter's value is always 'FileProcessed::NAME'</description>
+  <highlighted_element>$name</highlighted_element>
+  <language>PHP</language>
+  <offset>42</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Runner/Parallel/ProcessUtils.php</file>
+  <line>79</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Runner/Parallel/ProcessUtils.php" />
+  <problem_class id="PhpSameParameterValueInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Parameter's value is always the same</problem_class>
+  <description>Parameter's value is always ''%''</description>
+  <highlighted_element>$char</highlighted_element>
+  <language>PHP</language>
+  <offset>63</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/sebastian/comparator/src/DOMNodeComparator.php</file>
+  <line>54</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/sebastian/comparator/src/DOMNodeComparator.php" />
+  <problem_class id="PhpSameParameterValueInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Parameter's value is always the same</problem_class>
+  <description>Parameter's value is always 'true'</description>
+  <highlighted_element>$canonicalize</highlighted_element>
+  <language>PHP</language>
+  <offset>52</offset>
+  <length>13</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Loader/YamlFileLoader.php</file>
+  <line>226</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Loader/YamlFileLoader.php" />
+  <problem_class id="PhpSameParameterValueInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Parameter's value is always the same</problem_class>
+  <description>Parameter's value is always 'true'</description>
+  <highlighted_element>$trackBindings</highlighted_element>
+  <language>PHP</language>
+  <offset>73</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationDebugCommand.php</file>
+  <line>316</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationDebugCommand.php" />
+  <problem_class id="PhpSameParameterValueInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Parameter's value is always the same</problem_class>
+  <description>Parameter's value is always '40'</description>
+  <highlighted_element>$length</highlighted_element>
+  <language>PHP</language>
+  <offset>56</offset>
+  <length>7</length>
+</problem>
+</problems>

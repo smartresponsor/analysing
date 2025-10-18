@@ -1,0 +1,974 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/ClassLoader.php</file>
+  <line>533</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/ClassLoader.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_starts_with()'</description>
+  <highlighted_element>0 === strpos($class, $prefix)</highlighted_element>
+  <language>PHP</language>
+  <offset>20</offset>
+  <length>29</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/pcre/src/PcreException.php</file>
+  <line>48</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/pcre/src/PcreException.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'substr()' call can be converted to 'str_ends_with()'</description>
+  <highlighted_element>substr($const, -6) === '_ERROR'</highlighted_element>
+  <language>PHP</language>
+  <offset>34</offset>
+  <length>31</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/semver/src/CompilingMatcher.php</file>
+  <line>92</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/semver/src/CompilingMatcher.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_starts_with()'</description>
+  <highlighted_element>strpos($version, 'dev-') === 0</highlighted_element>
+  <language>PHP</language>
+  <offset>73</offset>
+  <length>30</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/semver/src/Constraint/Constraint.php</file>
+  <line>210</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/semver/src/Constraint/Constraint.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_starts_with()'</description>
+  <highlighted_element>strpos($a, 'dev-') === 0</highlighted_element>
+  <language>PHP</language>
+  <offset>21</offset>
+  <length>24</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/semver/src/Constraint/Constraint.php</file>
+  <line>211</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/semver/src/Constraint/Constraint.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_starts_with()'</description>
+  <highlighted_element>strpos($b, 'dev-') === 0</highlighted_element>
+  <language>PHP</language>
+  <offset>21</offset>
+  <length>24</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/semver/src/Constraint/Constraint.php</file>
+  <line>234</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/semver/src/Constraint/Constraint.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_starts_with()'</description>
+  <highlighted_element>strpos($this-&gt;version, 'dev-') === 0</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>36</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/semver/src/Constraint/Constraint.php</file>
+  <line>327</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/semver/src/Constraint/Constraint.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_starts_with()'</description>
+  <highlighted_element>strpos($provider-&gt;version, 'dev-') === 0</highlighted_element>
+  <language>PHP</language>
+  <offset>82</offset>
+  <length>40</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/semver/src/Constraint/Constraint.php</file>
+  <line>331</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/semver/src/Constraint/Constraint.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_starts_with()'</description>
+  <highlighted_element>strpos($this-&gt;version, 'dev-') === 0</highlighted_element>
+  <language>PHP</language>
+  <offset>74</offset>
+  <length>36</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/semver/src/Constraint/Constraint.php</file>
+  <line>344</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/semver/src/Constraint/Constraint.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_starts_with()'</description>
+  <highlighted_element>strpos($this-&gt;version, 'dev-') === 0</highlighted_element>
+  <language>PHP</language>
+  <offset>21</offset>
+  <length>36</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/semver/src/Constraint/Constraint.php</file>
+  <line>344</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/semver/src/Constraint/Constraint.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_starts_with()'</description>
+  <highlighted_element>strpos($provider-&gt;version, 'dev-') === 0</highlighted_element>
+  <language>PHP</language>
+  <offset>61</offset>
+  <length>40</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/semver/src/Constraint/Constraint.php</file>
+  <line>401</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/semver/src/Constraint/Constraint.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_starts_with()'</description>
+  <highlighted_element>strpos($this-&gt;version, 'dev-') === 0</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>36</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/semver/src/Intervals.php</file>
+  <line>441</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/semver/src/Intervals.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_starts_with()'</description>
+  <highlighted_element>strpos($constraint-&gt;getVersion(), 'dev-') === 0</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>47</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/semver/src/VersionParser.php</file>
+  <line>56</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/semver/src/VersionParser.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_starts_with()'</description>
+  <highlighted_element>strpos($version, 'dev-') === 0</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>30</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/semver/src/VersionParser.php</file>
+  <line>56</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/semver/src/VersionParser.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'substr()' call can be converted to 'str_ends_with()'</description>
+  <highlighted_element>'-dev' === substr($version, -4)</highlighted_element>
+  <language>PHP</language>
+  <offset>46</offset>
+  <length>31</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/semver/src/VersionParser.php</file>
+  <line>177</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/semver/src/VersionParser.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_contains()'</description>
+  <highlighted_element>strpos($normalized, 'dev-') === false</highlighted_element>
+  <language>PHP</language>
+  <offset>20</offset>
+  <length>37</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/semver/src/VersionParser.php</file>
+  <line>345</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/semver/src/VersionParser.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_starts_with()'</description>
+  <highlighted_element>strpos($constraint, '~&gt;') === 0</highlighted_element>
+  <language>PHP</language>
+  <offset>16</offset>
+  <length>31</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/semver/src/VersionParser.php</file>
+  <line>497</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/semver/src/VersionParser.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'substr()' call can be converted to 'str_ends_with()'</description>
+  <highlighted_element>substr($matches[2], -4) === '-dev'</highlighted_element>
+  <language>PHP</language>
+  <offset>24</offset>
+  <length>34</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/semver/src/VersionParser.php</file>
+  <line>510</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/semver/src/VersionParser.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_starts_with()'</description>
+  <highlighted_element>strpos($matches[2], 'dev-') !== 0</highlighted_element>
+  <language>PHP</language>
+  <offset>28</offset>
+  <length>33</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/xdebug-handler/src/XdebugHandler.php</file>
+  <line>507</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/xdebug-handler/src/XdebugHandler.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_starts_with()'</description>
+  <highlighted_element>strpos($name, 'xdebug') === 0</highlighted_element>
+  <language>PHP</language>
+  <offset>19</offset>
+  <length>29</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/xdebug-handler/src/XdebugHandler.php</file>
+  <line>617</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/xdebug-handler/src/XdebugHandler.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_starts_with()'</description>
+  <highlighted_element>0 === strpos($workingDir, '\\\\')</highlighted_element>
+  <language>PHP</language>
+  <offset>16</offset>
+  <length>33</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/API/MySQL/ExceptionConverter.php</file>
+  <line>91</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/API/MySQL/ExceptionConverter.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_contains()'</description>
+  <highlighted_element>strpos($exception-&gt;getMessage(), 'Plugin \'mysql_native_password\' is not loaded') === false</highlighted_element>
+  <language>PHP</language>
+  <offset>20</offset>
+  <length>92</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/API/PostgreSQL/ExceptionConverter.php</file>
+  <line>40</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/API/PostgreSQL/ExceptionConverter.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_contains()'</description>
+  <highlighted_element>strpos($exception-&gt;getMessage(), 'truncate') !== false</highlighted_element>
+  <language>PHP</language>
+  <offset>20</offset>
+  <length>54</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/API/PostgreSQL/ExceptionConverter.php</file>
+  <line>83</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/API/PostgreSQL/ExceptionConverter.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_contains()'</description>
+  <highlighted_element>strpos($exception-&gt;getMessage(), 'SQLSTATE[08006]') !== false</highlighted_element>
+  <language>PHP</language>
+  <offset>43</offset>
+  <length>61</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/API/SQLite/ExceptionConverter.php</file>
+  <line>31</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/API/SQLite/ExceptionConverter.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_contains()'</description>
+  <highlighted_element>strpos($exception-&gt;getMessage(), 'database is locked') !== false</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>64</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/API/SQLite/ExceptionConverter.php</file>
+  <line>36</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/API/SQLite/ExceptionConverter.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_contains()'</description>
+  <highlighted_element>strpos($exception-&gt;getMessage(), 'must be unique') !== false</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>60</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/API/SQLite/ExceptionConverter.php</file>
+  <line>37</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/API/SQLite/ExceptionConverter.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_contains()'</description>
+  <highlighted_element>strpos($exception-&gt;getMessage(), 'is not unique') !== false</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>59</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/API/SQLite/ExceptionConverter.php</file>
+  <line>38</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/API/SQLite/ExceptionConverter.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_contains()'</description>
+  <highlighted_element>strpos($exception-&gt;getMessage(), 'are not unique') !== false</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>60</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/API/SQLite/ExceptionConverter.php</file>
+  <line>39</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/API/SQLite/ExceptionConverter.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_contains()'</description>
+  <highlighted_element>strpos($exception-&gt;getMessage(), 'UNIQUE constraint failed') !== false</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>70</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/API/SQLite/ExceptionConverter.php</file>
+  <line>45</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/API/SQLite/ExceptionConverter.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_contains()'</description>
+  <highlighted_element>strpos($exception-&gt;getMessage(), 'may not be NULL') !== false</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>61</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/API/SQLite/ExceptionConverter.php</file>
+  <line>46</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/API/SQLite/ExceptionConverter.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_contains()'</description>
+  <highlighted_element>strpos($exception-&gt;getMessage(), 'NOT NULL constraint failed') !== false</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>72</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/API/SQLite/ExceptionConverter.php</file>
+  <line>51</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/API/SQLite/ExceptionConverter.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_contains()'</description>
+  <highlighted_element>strpos($exception-&gt;getMessage(), 'no such table:') !== false</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>60</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/API/SQLite/ExceptionConverter.php</file>
+  <line>55</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/API/SQLite/ExceptionConverter.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_contains()'</description>
+  <highlighted_element>strpos($exception-&gt;getMessage(), 'already exists') !== false</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>60</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/API/SQLite/ExceptionConverter.php</file>
+  <line>59</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/API/SQLite/ExceptionConverter.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_contains()'</description>
+  <highlighted_element>strpos($exception-&gt;getMessage(), 'has no column named') !== false</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>65</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/API/SQLite/ExceptionConverter.php</file>
+  <line>63</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/API/SQLite/ExceptionConverter.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_contains()'</description>
+  <highlighted_element>strpos($exception-&gt;getMessage(), 'ambiguous column name') !== false</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>67</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/API/SQLite/ExceptionConverter.php</file>
+  <line>67</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/API/SQLite/ExceptionConverter.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_contains()'</description>
+  <highlighted_element>strpos($exception-&gt;getMessage(), 'syntax error') !== false</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>58</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/API/SQLite/ExceptionConverter.php</file>
+  <line>71</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/API/SQLite/ExceptionConverter.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_contains()'</description>
+  <highlighted_element>strpos($exception-&gt;getMessage(), 'attempt to write a readonly database') !== false</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>82</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/API/SQLite/ExceptionConverter.php</file>
+  <line>75</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/API/SQLite/ExceptionConverter.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_contains()'</description>
+  <highlighted_element>strpos($exception-&gt;getMessage(), 'unable to open database file') !== false</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>74</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/API/SQLite/ExceptionConverter.php</file>
+  <line>79</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/API/SQLite/ExceptionConverter.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_contains()'</description>
+  <highlighted_element>strpos($exception-&gt;getMessage(), 'FOREIGN KEY constraint failed') !== false</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>75</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/IBMDB2/DataSourceName.php</file>
+  <line>59</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/IBMDB2/DataSourceName.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_contains()'</description>
+  <highlighted_element>strpos($params['dbname'], '=') !== false</highlighted_element>
+  <language>PHP</language>
+  <offset>40</offset>
+  <length>40</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php</file>
+  <line>2646</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_contains()'</description>
+  <highlighted_element>strpos($str, '.') !== false</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>27</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/DB2Platform.php</file>
+  <line>838</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/DB2Platform.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_contains()'</description>
+  <highlighted_element>strpos($tableName, '.') !== false</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>33</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/OraclePlatform.php</file>
+  <line>1056</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/OraclePlatform.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_contains()'</description>
+  <highlighted_element>strpos($tableName, '.') !== false</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>33</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/OraclePlatform.php</file>
+  <line>1056</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/OraclePlatform.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_contains()'</description>
+  <highlighted_element>strpos($tableName, '.') !== false</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>33</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/PostgreSQLPlatform.php</file>
+  <line>431</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/PostgreSQLPlatform.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_contains()'</description>
+  <highlighted_element>strpos($table, '.') !== false</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>29</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/PostgreSQLPlatform.php</file>
+  <line>742</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/PostgreSQLPlatform.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_contains()'</description>
+  <highlighted_element>strpos($tableName, '.') !== false</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>33</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/PostgreSQLPlatform.php</file>
+  <line>840</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/PostgreSQLPlatform.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_contains()'</description>
+  <highlighted_element>strpos($tableName, '.') !== false</highlighted_element>
+  <language>PHP</language>
+  <offset>16</offset>
+  <length>33</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/SQLServerPlatform.php</file>
+  <line>432</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/SQLServerPlatform.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_contains()'</description>
+  <highlighted_element>strpos($tableName, '.') !== false</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>33</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/SQLServerPlatform.php</file>
+  <line>816</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/SQLServerPlatform.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_contains()'</description>
+  <highlighted_element>strpos($tableName, '.') !== false</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>33</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/SQLServerPlatform.php</file>
+  <line>852</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/SQLServerPlatform.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_contains()'</description>
+  <highlighted_element>strpos($tableName, '.') !== false</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>33</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/SQLServerPlatform.php</file>
+  <line>1125</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/SQLServerPlatform.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_contains()'</description>
+  <highlighted_element>strpos($table, '.') !== false</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>29</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/SqlitePlatform.php</file>
+  <line>965</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/SqlitePlatform.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_contains()'</description>
+  <highlighted_element>strpos($table, '.') !== false</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>29</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/SqlitePlatform.php</file>
+  <line>1154</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/SqlitePlatform.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_contains()'</description>
+  <highlighted_element>strpos($tableName, '.') !== false</highlighted_element>
+  <language>PHP</language>
+  <offset>16</offset>
+  <length>33</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/AbstractAsset.php</file>
+  <line>55</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/AbstractAsset.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_contains()'</description>
+  <highlighted_element>strpos($name, '.') !== false</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>28</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/MySQLSchemaManager.php</file>
+  <line>139</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/MySQLSchemaManager.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_contains()'</description>
+  <highlighted_element>strpos($v['index_type'], 'FULLTEXT') !== false</highlighted_element>
+  <language>PHP</language>
+  <offset>16</offset>
+  <length>46</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/MySQLSchemaManager.php</file>
+  <line>141</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/MySQLSchemaManager.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_contains()'</description>
+  <highlighted_element>strpos($v['index_type'], 'SPATIAL') !== false</highlighted_element>
+  <language>PHP</language>
+  <offset>22</offset>
+  <length>45</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/MySQLSchemaManager.php</file>
+  <line>146</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/MySQLSchemaManager.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_contains()'</description>
+  <highlighted_element>strpos($v['index_type'], 'SPATIAL') === false</highlighted_element>
+  <language>PHP</language>
+  <offset>16</offset>
+  <length>45</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/MySQLSchemaManager.php</file>
+  <line>262</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/MySQLSchemaManager.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_contains()'</description>
+  <highlighted_element>strpos($tableColumn['type'], 'unsigned') !== false</highlighted_element>
+  <language>PHP</language>
+  <offset>31</offset>
+  <length>50</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/MySQLSchemaManager.php</file>
+  <line>268</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/MySQLSchemaManager.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_contains()'</description>
+  <highlighted_element>strpos($tableColumn['extra'], 'auto_increment') !== false</highlighted_element>
+  <language>PHP</language>
+  <offset>31</offset>
+  <length>57</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/OracleSchemaManager.php</file>
+  <line>145</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/OracleSchemaManager.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_starts_with()'</description>
+  <highlighted_element>strpos($dbType, 'timestamp(') === 0</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>35</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/OracleSchemaManager.php</file>
+  <line>146</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/OracleSchemaManager.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_contains()'</description>
+  <highlighted_element>strpos($dbType, 'with time zone') !== false</highlighted_element>
+  <language>PHP</language>
+  <offset>16</offset>
+  <length>43</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/PostgreSQLSchemaManager.php</file>
+  <line>581</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/PostgreSQLSchemaManager.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_starts_with()'</description>
+  <highlighted_element>strpos($defaultValue, '(') === 0</highlighted_element>
+  <language>PHP</language>
+  <offset>38</offset>
+  <length>32</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/PostgreSQLSchemaManager.php</file>
+  <line>769</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/PostgreSQLSchemaManager.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_contains()'</description>
+  <highlighted_element>strpos($tableName, '.') !== false</highlighted_element>
+  <language>PHP</language>
+  <offset>16</offset>
+  <length>33</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/SQLServerSchemaManager.php</file>
+  <line>604</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/SQLServerSchemaManager.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_contains()'</description>
+  <highlighted_element>strpos($table, '.') !== false</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>29</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Schema.php</file>
+  <line>199</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Schema.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_contains()'</description>
+  <highlighted_element>strpos($name, '.') === false</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>28</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/SqliteSchemaManager.php</file>
+  <line>264</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/SqliteSchemaManager.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_starts_with()'</description>
+  <highlighted_element>strpos($tableIndex['name'], 'sqlite_') === 0</highlighted_element>
+  <language>PHP</language>
+  <offset>16</offset>
+  <length>44</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/SqliteSchemaManager.php</file>
+  <line>368</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/SqliteSchemaManager.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_contains()'</description>
+  <highlighted_element>strpos($dbType, ' unsigned') !== false</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>38</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/SqliteSchemaManager.php</file>
+  <line>406</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/SqliteSchemaManager.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_contains()'</description>
+  <highlighted_element>strpos($tableColumn['length'], ',') === false</highlighted_element>
+  <language>PHP</language>
+  <offset>24</offset>
+  <length>45</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Tools/DsnParser.php</file>
+  <line>121</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Tools/DsnParser.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_contains()'</description>
+  <highlighted_element>strpos($params['driver'], 'sqlite') !== false</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>45</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/deprecations/src/Deprecation.php</file>
+  <line>141</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/deprecations/src/Deprecation.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_contains()'</description>
+  <highlighted_element>strpos($backtrace[1]['file'], DIRECTORY_SEPARATOR . 'tests' . DIRECTORY_SEPARATOR) === false</highlighted_element>
+  <language>PHP</language>
+  <offset>67</offset>
+  <length>92</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/deprecations/src/Deprecation.php</file>
+  <line>144</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/deprecations/src/Deprecation.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_contains()'</description>
+  <highlighted_element>strpos($backtrace[0]['file'], $path) === false</highlighted_element>
+  <language>PHP</language>
+  <offset>16</offset>
+  <length>46</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/deprecations/src/Deprecation.php</file>
+  <line>148</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/deprecations/src/Deprecation.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_contains()'</description>
+  <highlighted_element>strpos($backtrace[1]['file'], $path) !== false</highlighted_element>
+  <language>PHP</language>
+  <offset>16</offset>
+  <length>46</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/ClassNotation/OrderedClassElementsFixer.php</file>
+  <line>325</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/ClassNotation/OrderedClassElementsFixer.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'substr()' call can be converted to 'str_starts_with()'</description>
+  <highlighted_element>'method:' === substr($value, 0, 7)</highlighted_element>
+  <language>PHP</language>
+  <offset>32</offset>
+  <length>34</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/PhpUnit/PhpUnitDataProviderNameFixer.php</file>
+  <line>209</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/PhpUnit/PhpUnitDataProviderNameFixer.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'substr()' call can be converted to 'str_ends_with()'</description>
+  <highlighted_element>'_' !== substr($this-&gt;configuration['prefix'], -1)</highlighted_element>
+  <language>PHP</language>
+  <offset>18</offset>
+  <length>50</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Phpdoc/PhpdocSummaryFixer.php</file>
+  <line>87</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Phpdoc/PhpdocSummaryFixer.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'substr()' call can be converted to 'str_ends_with()'</description>
+  <highlighted_element>':' !== substr(rtrim($doc-&gt;getLine(1)-&gt;getContent()), -1)</highlighted_element>
+  <language>PHP</language>
+  <offset>62</offset>
+  <length>57</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Semicolon/MultilineWhitespaceBeforeSemicolonsFixer.php</file>
+  <line>194</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Semicolon/MultilineWhitespaceBeforeSemicolonsFixer.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_contains()'</description>
+  <highlighted_element>false !== strstr($tokens[$index]-&gt;getContent(), $lineEnding)</highlighted_element>
+  <language>PHP</language>
+  <offset>16</offset>
+  <length>60</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/StringNotation/StringImplicitBackslashesFixer.php</file>
+  <line>134</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/StringNotation/StringImplicitBackslashesFixer.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'substr()' call can be converted to 'str_ends_with()'</description>
+  <highlighted_element>'\'' === substr(rtrim($tokens[$index - 1]-&gt;getContent()), -1)</highlighted_element>
+  <language>PHP</language>
+  <offset>67</offset>
+  <length>61</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Whitespace/NoWhitespaceInBlankLineFixer.php</file>
+  <line>80</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Whitespace/NoWhitespaceInBlankLineFixer.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'substr()' call can be converted to 'str_ends_with()'</description>
+  <highlighted_element>&quot;\n&quot; === substr($tokens[$index - 1]-&gt;getContent(), -1)</highlighted_element>
+  <language>PHP</language>
+  <offset>65</offset>
+  <length>54</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Runner/Parallel/ProcessUtils.php</file>
+  <line>62</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Runner/Parallel/ProcessUtils.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'substr()' call can be converted to 'str_ends_with()'</description>
+  <highlighted_element>'\\' === substr($part, -1)</highlighted_element>
+  <language>PHP</language>
+  <offset>24</offset>
+  <length>26</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Tokenizer/Analyzer/WhitespacesAnalyzer.php</file>
+  <line>43</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Tokenizer/Analyzer/WhitespacesAnalyzer.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'substr()' call can be converted to 'str_ends_with()'</description>
+  <highlighted_element>&quot;\n&quot; === substr($prevToken-&gt;getContent(), -1)</highlighted_element>
+  <language>PHP</language>
+  <offset>70</offset>
+  <length>45</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/polyfill-mbstring/Mbstring.php</file>
+  <line>97</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/polyfill-mbstring/Mbstring.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_contains()'</description>
+  <highlighted_element>false !== strpos($fromEncoding, ',')</highlighted_element>
+  <language>PHP</language>
+  <offset>67</offset>
+  <length>36</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/theseer/tokenizer/src/NamespaceUri.php</file>
+  <line>19</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/theseer/tokenizer/src/NamespaceUri.php" />
+  <problem_class id="PhpStrFunctionsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'str*()' calls can be replaced with PHP 8 'str_*()' calls</problem_class>
+  <description>'strpos()' call can be converted to 'str_contains()'</description>
+  <highlighted_element>\strpos($value, ':') === false</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>30</length>
+</problem>
+</problems>

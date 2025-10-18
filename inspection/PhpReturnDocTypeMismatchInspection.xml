@@ -1,0 +1,50 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Connection.php</file>
+  <line>740</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Connection.php" />
+  <problem_class id="PhpReturnDocTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Return type in PHPDoc comment does not match the actual return type</problem_class>
+  <description>Return type in PHPDoc does not match the actual return type</description>
+  <highlighted_element>TransactionIsolationLevel::*</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>28</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/OCI8/Result.php</file>
+  <line>117</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/OCI8/Result.php" />
+  <problem_class id="PhpReturnDocTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Return type in PHPDoc comment does not match the actual return type</problem_class>
+  <description>Return type in PHPDoc does not match the actual return type</description>
+  <highlighted_element>mixed|false</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/SQLSrv/Result.php</file>
+  <line>113</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/SQLSrv/Result.php" />
+  <problem_class id="PhpReturnDocTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Return type in PHPDoc comment does not match the actual return type</problem_class>
+  <description>Return type in PHPDoc does not match the actual return type</description>
+  <highlighted_element>mixed|false</highlighted_element>
+  <language>PHP</language>
+  <offset>16</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php</file>
+  <line>3954</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php" />
+  <problem_class id="PhpReturnDocTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Return type in PHPDoc comment does not match the actual return type</problem_class>
+  <description>Return type in PHPDoc does not match the actual return type</description>
+  <highlighted_element>TransactionIsolationLevel::*</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>28</length>
+</problem>
+</problems>

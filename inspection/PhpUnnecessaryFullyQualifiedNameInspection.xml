@@ -1,0 +1,230 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/autoload_real.php</file>
+  <line>28</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/autoload_real.php" />
+  <problem_class id="PhpUnnecessaryFullyQualifiedNameInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unnecessary fully qualified name</problem_class>
+  <description>Qualifier is unnecessary and can be removed</description>
+  <highlighted_element>\</highlighted_element>
+  <language>PHP</language>
+  <offset>69</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/autoload_real.php</file>
+  <line>37</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/autoload_real.php" />
+  <problem_class id="PhpUnnecessaryFullyQualifiedNameInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unnecessary fully qualified name</problem_class>
+  <description>Qualifier is unnecessary and can be removed</description>
+  <highlighted_element>\</highlighted_element>
+  <language>PHP</language>
+  <offset>23</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/platform_check.php</file>
+  <line>22</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/platform_check.php" />
+  <problem_class id="PhpUnnecessaryFullyQualifiedNameInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unnecessary fully qualified name</problem_class>
+  <description>Qualifier is unnecessary and can be removed</description>
+  <highlighted_element>\</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/deprecation-contracts/function.php</file>
+  <line>25</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/deprecation-contracts/function.php" />
+  <problem_class id="PhpUnnecessaryFullyQualifiedNameInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unnecessary fully qualified name</problem_class>
+  <description>Qualifier is unnecessary and can be removed</description>
+  <highlighted_element>\</highlighted_element>
+  <language>PHP</language>
+  <offset>129</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Resources/bin/check-unused-known-tags.php</file>
+  <line>12</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Resources/bin/check-unused-known-tags.php" />
+  <problem_class id="PhpUnnecessaryFullyQualifiedNameInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unnecessary fully qualified name</problem_class>
+  <description>Qualifier is unnecessary and can be removed</description>
+  <highlighted_element>\</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/Fixtures/web/index.php</file>
+  <line>3</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/Fixtures/web/index.php" />
+  <problem_class id="PhpUnnecessaryFullyQualifiedNameInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unnecessary fully qualified name</problem_class>
+  <description>Qualifier is unnecessary and can be removed</description>
+  <highlighted_element>\</highlighted_element>
+  <language>PHP</language>
+  <offset>21</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/Fixtures/web/index.php</file>
+  <line>5</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/Fixtures/web/index.php" />
+  <problem_class id="PhpUnnecessaryFullyQualifiedNameInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unnecessary fully qualified name</problem_class>
+  <description>Qualifier is unnecessary and can be removed</description>
+  <highlighted_element>\</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/Fixtures/web/index.php</file>
+  <line>38</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/Fixtures/web/index.php" />
+  <problem_class id="PhpUnnecessaryFullyQualifiedNameInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unnecessary fully qualified name</problem_class>
+  <description>Qualifier is unnecessary and can be removed</description>
+  <highlighted_element>\</highlighted_element>
+  <language>PHP</language>
+  <offset>27</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/Fixtures/web/index.php</file>
+  <line>38</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/Fixtures/web/index.php" />
+  <problem_class id="PhpUnnecessaryFullyQualifiedNameInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unnecessary fully qualified name</problem_class>
+  <description>Qualifier is unnecessary and can be removed</description>
+  <highlighted_element>\</highlighted_element>
+  <language>PHP</language>
+  <offset>48</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/Fixtures/web/index.php</file>
+  <line>38</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/Fixtures/web/index.php" />
+  <problem_class id="PhpUnnecessaryFullyQualifiedNameInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unnecessary fully qualified name</problem_class>
+  <description>Qualifier is unnecessary and can be removed</description>
+  <highlighted_element>\</highlighted_element>
+  <language>PHP</language>
+  <offset>74</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/Fixtures/web/index.php</file>
+  <line>40</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/Fixtures/web/index.php" />
+  <problem_class id="PhpUnnecessaryFullyQualifiedNameInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unnecessary fully qualified name</problem_class>
+  <description>Qualifier is unnecessary and can be removed</description>
+  <highlighted_element>\</highlighted_element>
+  <language>PHP</language>
+  <offset>40</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/Fixtures/web/index.php</file>
+  <line>45</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/Fixtures/web/index.php" />
+  <problem_class id="PhpUnnecessaryFullyQualifiedNameInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unnecessary fully qualified name</problem_class>
+  <description>Qualifier is unnecessary and can be removed</description>
+  <highlighted_element>\</highlighted_element>
+  <language>PHP</language>
+  <offset>53</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/Fixtures/web/index.php</file>
+  <line>45</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/Fixtures/web/index.php" />
+  <problem_class id="PhpUnnecessaryFullyQualifiedNameInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unnecessary fully qualified name</problem_class>
+  <description>Qualifier is unnecessary and can be removed</description>
+  <highlighted_element>\</highlighted_element>
+  <language>PHP</language>
+  <offset>79</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/Fixtures/web/index.php</file>
+  <line>128</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/Fixtures/web/index.php" />
+  <problem_class id="PhpUnnecessaryFullyQualifiedNameInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unnecessary fully qualified name</problem_class>
+  <description>Qualifier is unnecessary and can be removed</description>
+  <highlighted_element>\</highlighted_element>
+  <language>PHP</language>
+  <offset>86</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/Fixtures/web/index.php</file>
+  <line>128</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/Fixtures/web/index.php" />
+  <problem_class id="PhpUnnecessaryFullyQualifiedNameInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unnecessary fully qualified name</problem_class>
+  <description>Qualifier is unnecessary and can be removed</description>
+  <highlighted_element>\</highlighted_element>
+  <language>PHP</language>
+  <offset>107</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/Fixtures/web/index.php</file>
+  <line>128</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/Fixtures/web/index.php" />
+  <problem_class id="PhpUnnecessaryFullyQualifiedNameInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unnecessary fully qualified name</problem_class>
+  <description>Qualifier is unnecessary and can be removed</description>
+  <highlighted_element>\</highlighted_element>
+  <language>PHP</language>
+  <offset>133</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/polyfill-intl-grapheme/bootstrap.php</file>
+  <line>14</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/polyfill-intl-grapheme/bootstrap.php" />
+  <problem_class id="PhpUnnecessaryFullyQualifiedNameInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unnecessary fully qualified name</problem_class>
+  <description>Qualifier is unnecessary and can be removed</description>
+  <highlighted_element>\</highlighted_element>
+  <language>PHP</language>
+  <offset>4</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer/bootstrap.php</file>
+  <line>14</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer/bootstrap.php" />
+  <problem_class id="PhpUnnecessaryFullyQualifiedNameInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unnecessary fully qualified name</problem_class>
+  <description>Qualifier is unnecessary and can be removed</description>
+  <highlighted_element>\</highlighted_element>
+  <language>PHP</language>
+  <offset>4</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/polyfill-mbstring/bootstrap.php</file>
+  <line>14</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/polyfill-mbstring/bootstrap.php" />
+  <problem_class id="PhpUnnecessaryFullyQualifiedNameInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unnecessary fully qualified name</problem_class>
+  <description>Qualifier is unnecessary and can be removed</description>
+  <highlighted_element>\</highlighted_element>
+  <language>PHP</language>
+  <offset>4</offset>
+  <length>1</length>
+</problem>
+</problems>

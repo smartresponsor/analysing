@@ -1,0 +1,74 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/SQLServerPlatform.php</file>
+  <line>1125</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/SQLServerPlatform.php" />
+  <problem_class id="PhpIfWithCommonPartsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'if' with common parts</problem_class>
+  <description>'if' statement with common parts</description>
+  <highlighted_element>if</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>2</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/SQLServerSchemaManager.php</file>
+  <line>604</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/SQLServerSchemaManager.php" />
+  <problem_class id="PhpIfWithCommonPartsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'if' with common parts</problem_class>
+  <description>'if' statement with common parts</description>
+  <highlighted_element>if</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>2</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/Hydration/ObjectHydrator.php</file>
+  <line>381</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/Hydration/ObjectHydrator.php" />
+  <problem_class id="PhpIfWithCommonPartsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'if' with common parts</problem_class>
+  <description>'if' statement with common parts</description>
+  <highlighted_element>if</highlighted_element>
+  <language>PHP</language>
+  <offset>16</offset>
+  <length>2</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php</file>
+  <line>1315</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php" />
+  <problem_class id="PhpIfWithCommonPartsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'if' with common parts</problem_class>
+  <description>'if' statement with common parts</description>
+  <highlighted_element>if</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>2</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/SqlWalker.php</file>
+  <line>1920</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/SqlWalker.php" />
+  <problem_class id="PhpIfWithCommonPartsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'if' with common parts</problem_class>
+  <description>'if' statement with common parts</description>
+  <highlighted_element>if</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>2</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/ArrayNotation/YieldFromArrayToYieldsFixer.php</file>
+  <line>107</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/ArrayNotation/YieldFromArrayToYieldsFixer.php" />
+  <problem_class id="PhpIfWithCommonPartsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'if' with common parts</problem_class>
+  <description>'if' statement with common parts</description>
+  <highlighted_element>if</highlighted_element>
+  <language>PHP</language>
+  <offset>16</offset>
+  <length>2</length>
+</problem>
+</problems>

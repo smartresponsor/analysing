@@ -1,0 +1,38 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/Command/WorkerCommand.php</file>
+  <line>164</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/Command/WorkerCommand.php" />
+  <problem_class id="PhpArrayIsAlwaysEmptyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Array is always empty at the point of access</problem_class>
+  <description>Array is always empty at this point</description>
+  <highlighted_element>$this-&gt;events</highlighted_element>
+  <language>PHP</language>
+  <offset>45</offset>
+  <length>13</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/Command/WorkerCommand.php</file>
+  <line>175</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/Command/WorkerCommand.php" />
+  <problem_class id="PhpArrayIsAlwaysEmptyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Array is always empty at the point of access</problem_class>
+  <description>Array is always empty at this point</description>
+  <highlighted_element>$this-&gt;events</highlighted_element>
+  <language>PHP</language>
+  <offset>46</offset>
+  <length>13</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/Command/WorkerCommand.php</file>
+  <line>176</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/Command/WorkerCommand.php" />
+  <problem_class id="PhpArrayIsAlwaysEmptyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Array is always empty at the point of access</problem_class>
+  <description>Array is always empty at this point</description>
+  <highlighted_element>$this-&gt;events</highlighted_element>
+  <language>PHP</language>
+  <offset>44</offset>
+  <length>13</length>
+</problem>
+</problems>

@@ -1,0 +1,206 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/Driver/ReflectionBasedDriver.php</file>
+  <line>28</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/Driver/ReflectionBasedDriver.php" />
+  <problem_class id="PhpStrictTypeCheckingInspection" severity="ERROR" attribute_key="ERRORS_ATTRIBUTES">Strict type checking rules violation</problem_class>
+  <description>Parameter '$declaringClass' type is not compatible with declaration</description>
+  <highlighted_element>$declaringClass</highlighted_element>
+  <language>PHP</language>
+  <offset>31</offset>
+  <length>15</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/Driver/XmlDriver.php</file>
+  <line>84</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/Driver/XmlDriver.php" />
+  <problem_class id="PhpStrictTypeCheckingInspection" severity="ERROR" attribute_key="ERRORS_ATTRIBUTES">Strict type checking rules violation</problem_class>
+  <description>Parameter '$className' type is not compatible with declaration</description>
+  <highlighted_element>$className</highlighted_element>
+  <language>PHP</language>
+  <offset>37</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/Driver/XmlDriver.php</file>
+  <line>102</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/Driver/XmlDriver.php" />
+  <problem_class id="PhpStrictTypeCheckingInspection" severity="ERROR" attribute_key="ERRORS_ATTRIBUTES">Strict type checking rules violation</problem_class>
+  <description>Parameter '$className' type is not compatible with declaration</description>
+  <highlighted_element>$className</highlighted_element>
+  <language>PHP</language>
+  <offset>77</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/Driver/XmlDriver.php</file>
+  <line>190</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/Driver/XmlDriver.php" />
+  <problem_class id="PhpStrictTypeCheckingInspection" severity="ERROR" attribute_key="ERRORS_ATTRIBUTES">Strict type checking rules violation</problem_class>
+  <description>Parameter '$className' type is not compatible with declaration</description>
+  <highlighted_element>$className</highlighted_element>
+  <language>PHP</language>
+  <offset>24</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/Driver/XmlDriver.php</file>
+  <line>233</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/Driver/XmlDriver.php" />
+  <problem_class id="PhpStrictTypeCheckingInspection" severity="ERROR" attribute_key="ERRORS_ATTRIBUTES">Strict type checking rules violation</problem_class>
+  <description>Parameter '$className' type is not compatible with declaration</description>
+  <highlighted_element>$className</highlighted_element>
+  <language>PHP</language>
+  <offset>24</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/Parser.php</file>
+  <line>1829</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/Parser.php" />
+  <problem_class id="PhpStrictTypeCheckingInspection" severity="ERROR" attribute_key="ERRORS_ATTRIBUTES">Strict type checking rules violation</problem_class>
+  <description>Parameter '$className' type is not compatible with declaration</description>
+  <highlighted_element>$className</highlighted_element>
+  <language>PHP</language>
+  <offset>50</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/ResultSetMapping.php</file>
+  <line>260</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/ResultSetMapping.php" />
+  <problem_class id="PhpStrictTypeCheckingInspection" severity="ERROR" attribute_key="ERRORS_ATTRIBUTES">Strict type checking rules violation</problem_class>
+  <description>Parameter '$columnName' type is not compatible with declaration</description>
+  <highlighted_element>$columnName</highlighted_element>
+  <language>PHP</language>
+  <offset>44</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Tools/Console/Command/MappingDescribeCommand.php</file>
+  <line>183</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Tools/Console/Command/MappingDescribeCommand.php" />
+  <problem_class id="PhpStrictTypeCheckingInspection" severity="ERROR" attribute_key="ERRORS_ATTRIBUTES">Strict type checking rules violation</problem_class>
+  <description>Parameter '$mappedEntity' type is not compatible with declaration</description>
+  <highlighted_element>$mappedEntity</highlighted_element>
+  <language>PHP</language>
+  <offset>89</offset>
+  <length>13</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Tools/Console/Command/MappingDescribeCommand.php</file>
+  <line>201</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Tools/Console/Command/MappingDescribeCommand.php" />
+  <problem_class id="PhpStrictTypeCheckingInspection" severity="ERROR" attribute_key="ERRORS_ATTRIBUTES">Strict type checking rules violation</problem_class>
+  <description>Parameter 'current($matches)' type is not compatible with declaration</description>
+  <highlighted_element>current($matches)</highlighted_element>
+  <language>PHP</language>
+  <offset>48</offset>
+  <length>17</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Import/FullyQualifiedStrictTypesFixer.php</file>
+  <line>682</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Import/FullyQualifiedStrictTypesFixer.php" />
+  <problem_class id="PhpStrictTypeCheckingInspection" severity="ERROR" attribute_key="ERRORS_ATTRIBUTES">Strict type checking rules violation</problem_class>
+  <description>Parameter '$currentTypeValue' type is not compatible with declaration</description>
+  <highlighted_element>$currentTypeValue</highlighted_element>
+  <language>PHP</language>
+  <offset>53</offset>
+  <length>17</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Import/FullyQualifiedStrictTypesFixer.php</file>
+  <line>846</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Import/FullyQualifiedStrictTypesFixer.php" />
+  <problem_class id="PhpStrictTypeCheckingInspection" severity="ERROR" attribute_key="ERRORS_ATTRIBUTES">Strict type checking rules violation</problem_class>
+  <description>Parameter '$content' type is not compatible with declaration</description>
+  <highlighted_element>$content</highlighted_element>
+  <language>PHP</language>
+  <offset>47</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Import/FullyQualifiedStrictTypesFixer.php</file>
+  <line>872</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Import/FullyQualifiedStrictTypesFixer.php" />
+  <problem_class id="PhpStrictTypeCheckingInspection" severity="ERROR" attribute_key="ERRORS_ATTRIBUTES">Strict type checking rules violation</problem_class>
+  <description>Parameter '$content' type is not compatible with declaration</description>
+  <highlighted_element>$content</highlighted_element>
+  <language>PHP</language>
+  <offset>51</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Import/GlobalNamespaceImportFixer.php</file>
+  <line>417</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Import/GlobalNamespaceImportFixer.php" />
+  <problem_class id="PhpStrictTypeCheckingInspection" severity="ERROR" attribute_key="ERRORS_ATTRIBUTES">Strict type checking rules violation</problem_class>
+  <description>Parameter '$name' type is not compatible with declaration</description>
+  <highlighted_element>$name</highlighted_element>
+  <language>PHP</language>
+  <offset>40</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Import/GlobalNamespaceImportFixer.php</file>
+  <line>424</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Import/GlobalNamespaceImportFixer.php" />
+  <problem_class id="PhpStrictTypeCheckingInspection" severity="ERROR" attribute_key="ERRORS_ATTRIBUTES">Strict type checking rules violation</problem_class>
+  <description>Return value type is not compatible with declaration</description>
+  <highlighted_element>$name</highlighted_element>
+  <language>PHP</language>
+  <offset>83</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Import/GlobalNamespaceImportFixer.php</file>
+  <line>429</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Import/GlobalNamespaceImportFixer.php" />
+  <problem_class id="PhpStrictTypeCheckingInspection" severity="ERROR" attribute_key="ERRORS_ATTRIBUTES">Strict type checking rules violation</problem_class>
+  <description>Return value type is not compatible with declaration</description>
+  <highlighted_element>return $name;</highlighted_element>
+  <language>PHP</language>
+  <offset>16</offset>
+  <length>13</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Import/GlobalNamespaceImportFixer.php</file>
+  <line>456</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Import/GlobalNamespaceImportFixer.php" />
+  <problem_class id="PhpStrictTypeCheckingInspection" severity="ERROR" attribute_key="ERRORS_ATTRIBUTES">Strict type checking rules violation</problem_class>
+  <description>Parameter '$name' type is not compatible with declaration</description>
+  <highlighted_element>$name</highlighted_element>
+  <language>PHP</language>
+  <offset>61</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Tokenizer/Analyzer/ArgumentsAnalyzer.php</file>
+  <line>153</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Tokenizer/Analyzer/ArgumentsAnalyzer.php" />
+  <problem_class id="PhpStrictTypeCheckingInspection" severity="ERROR" attribute_key="ERRORS_ATTRIBUTES">Strict type checking rules violation</problem_class>
+  <description>Parameter '$info['type']' type is not compatible with declaration</description>
+  <highlighted_element>$info['type']</highlighted_element>
+  <language>PHP</language>
+  <offset>62</offset>
+  <length>13</length>
+</problem>
+</problems>

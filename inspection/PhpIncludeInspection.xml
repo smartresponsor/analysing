@@ -1,0 +1,26 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/php-cs-fixer</file>
+  <line>77</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/php-cs-fixer" />
+  <problem_class id="PhpIncludeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved include</problem_class>
+  <description>Can't resolve target of expression 'phar://php-cs-fixer.phar/vendor/autoload.php'</description>
+  <highlighted_element>require_once</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Resources/bin/check-unused-known-tags.php</file>
+  <line>16</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Resources/bin/check-unused-known-tags.php" />
+  <problem_class id="PhpIncludeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved include</problem_class>
+  <description>Can't resolve target of expression 'D:/PhpstormProjects/www/vendor/autoload.php'</description>
+  <highlighted_element>require</highlighted_element>
+  <language>PHP</language>
+  <offset>0</offset>
+  <length>7</length>
+</problem>
+</problems>

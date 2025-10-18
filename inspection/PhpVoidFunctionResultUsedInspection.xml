@@ -1,0 +1,38 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/xdebug-handler/src/XdebugHandler.php</file>
+  <line>694</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/xdebug-handler/src/XdebugHandler.php" />
+  <problem_class id="PhpVoidFunctionResultUsedInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Invalid function result used</problem_class>
+  <description>'void' function 'xdebug_info' result used</description>
+  <highlighted_element>xdebug_info('mode')</highlighted_element>
+  <language>PHP</language>
+  <offset>21</offset>
+  <length>19</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/polyfill-mbstring/bootstrap.php</file>
+  <line>25</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/polyfill-mbstring/bootstrap.php" />
+  <problem_class id="PhpVoidFunctionResultUsedInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Invalid function result used</problem_class>
+  <description>'void' method 'mb_encode_mimeheader' result used</description>
+  <highlighted_element>p\Mbstring::mb_encode_mimeheader($string, $charset, $transfer_encoding, $newline, $indent)</highlighted_element>
+  <language>PHP</language>
+  <offset>128</offset>
+  <length>90</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/polyfill-mbstring/bootstrap80.php</file>
+  <line>21</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/polyfill-mbstring/bootstrap80.php" />
+  <problem_class id="PhpVoidFunctionResultUsedInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Invalid function result used</problem_class>
+  <description>'void' method 'mb_encode_mimeheader' result used</description>
+  <highlighted_element>p\Mbstring::mb_encode_mimeheader((string) $string, $charset, $transfer_encoding, (string) $newline, ...</highlighted_element>
+  <language>PHP</language>
+  <offset>173</offset>
+  <length>114</length>
+</problem>
+</problems>

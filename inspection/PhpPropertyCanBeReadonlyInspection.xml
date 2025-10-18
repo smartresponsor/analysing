@@ -1,0 +1,2714 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/EntityManager.php</file>
+  <line>114</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/EntityManager.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$conn</highlighted_element>
+  <language>PHP</language>
+  <offset>27</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/EntityManager.php</file>
+  <line>115</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/EntityManager.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$config</highlighted_element>
+  <language>PHP</language>
+  <offset>30</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/LegacyReflectionFields.php</file>
+  <line>32</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/LegacyReflectionFields.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$classMetadata</highlighted_element>
+  <language>PHP</language>
+  <offset>54</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/LegacyReflectionFields.php</file>
+  <line>32</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/LegacyReflectionFields.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$reflectionService</highlighted_element>
+  <language>PHP</language>
+  <offset>96</offset>
+  <length>18</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/PropertyAccessors/EmbeddablePropertyAccessor.php</file>
+  <line>16</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/PropertyAccessors/EmbeddablePropertyAccessor.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$parent</highlighted_element>
+  <language>PHP</language>
+  <offset>33</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/PropertyAccessors/EmbeddablePropertyAccessor.php</file>
+  <line>17</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/PropertyAccessors/EmbeddablePropertyAccessor.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$child</highlighted_element>
+  <language>PHP</language>
+  <offset>33</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/PropertyAccessors/EmbeddablePropertyAccessor.php</file>
+  <line>19</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/PropertyAccessors/EmbeddablePropertyAccessor.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$embeddedClass</highlighted_element>
+  <language>PHP</language>
+  <offset>23</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/PropertyAccessors/EnumPropertyAccessor.php</file>
+  <line>18</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/PropertyAccessors/EnumPropertyAccessor.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$parent</highlighted_element>
+  <language>PHP</language>
+  <offset>57</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/PropertyAccessors/EnumPropertyAccessor.php</file>
+  <line>18</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/PropertyAccessors/EnumPropertyAccessor.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$enumType</highlighted_element>
+  <language>PHP</language>
+  <offset>81</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/PropertyAccessors/ObjectCastPropertyAccessor.php</file>
+  <line>33</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/PropertyAccessors/ObjectCastPropertyAccessor.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$reflectionProperty</highlighted_element>
+  <language>PHP</language>
+  <offset>60</offset>
+  <length>19</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/PropertyAccessors/ObjectCastPropertyAccessor.php</file>
+  <line>33</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/PropertyAccessors/ObjectCastPropertyAccessor.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$key</highlighted_element>
+  <language>PHP</language>
+  <offset>96</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/PropertyAccessors/RawValuePropertyAccessor.php</file>
+  <line>32</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/PropertyAccessors/RawValuePropertyAccessor.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$reflectionProperty</highlighted_element>
+  <language>PHP</language>
+  <offset>60</offset>
+  <length>19</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/PropertyAccessors/RawValuePropertyAccessor.php</file>
+  <line>32</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/PropertyAccessors/RawValuePropertyAccessor.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$key</highlighted_element>
+  <language>PHP</language>
+  <offset>96</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/PropertyAccessors/ReadonlyAccessor.php</file>
+  <line>16</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/PropertyAccessors/ReadonlyAccessor.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$parent</highlighted_element>
+  <language>PHP</language>
+  <offset>57</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/PropertyAccessors/ReadonlyAccessor.php</file>
+  <line>16</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/PropertyAccessors/ReadonlyAccessor.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$reflectionProperty</highlighted_element>
+  <language>PHP</language>
+  <offset>93</offset>
+  <length>19</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/PropertyAccessors/TypedNoDefaultPropertyAccessor.php</file>
+  <line>19</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/PropertyAccessors/TypedNoDefaultPropertyAccessor.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$parent</highlighted_element>
+  <language>PHP</language>
+  <offset>57</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/PropertyAccessors/TypedNoDefaultPropertyAccessor.php</file>
+  <line>19</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/PropertyAccessors/TypedNoDefaultPropertyAccessor.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$reflectionProperty</highlighted_element>
+  <language>PHP</language>
+  <offset>93</offset>
+  <length>19</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/Exec/SingleSelectSqlFinalizer.php</file>
+  <line>23</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/Exec/SingleSelectSqlFinalizer.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$sql</highlighted_element>
+  <language>PHP</language>
+  <offset>47</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/AbstractManagerRegistry.php</file>
+  <line>25</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/AbstractManagerRegistry.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$connections</highlighted_element>
+  <language>PHP</language>
+  <offset>22</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/AbstractManagerRegistry.php</file>
+  <line>26</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/AbstractManagerRegistry.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$managers</highlighted_element>
+  <language>PHP</language>
+  <offset>22</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/Mapping/Driver/ClassNames.php</file>
+  <line>14</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/Mapping/Driver/ClassNames.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$classNames</highlighted_element>
+  <language>PHP</language>
+  <offset>22</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/Mapping/Driver/FileClassLocator.php</file>
+  <line>41</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/Mapping/Driver/FileClassLocator.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$files</highlighted_element>
+  <language>PHP</language>
+  <offset>25</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Alias.php</file>
+  <line>23</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Alias.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$id</highlighted_element>
+  <language>PHP</language>
+  <offset>23</offset>
+  <length>3</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Argument/ServiceLocator.php</file>
+  <line>24</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Argument/ServiceLocator.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$factory</highlighted_element>
+  <language>PHP</language>
+  <offset>25</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Argument/ServiceLocator.php</file>
+  <line>25</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Argument/ServiceLocator.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$serviceMap</highlighted_element>
+  <language>PHP</language>
+  <offset>22</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Argument/TaggedIteratorArgument.php</file>
+  <line>35</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Argument/TaggedIteratorArgument.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$tag</highlighted_element>
+  <language>PHP</language>
+  <offset>23</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Argument/TaggedIteratorArgument.php</file>
+  <line>38</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Argument/TaggedIteratorArgument.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$needsIndexes</highlighted_element>
+  <language>PHP</language>
+  <offset>21</offset>
+  <length>13</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Argument/TaggedIteratorArgument.php</file>
+  <line>40</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Argument/TaggedIteratorArgument.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$exclude</highlighted_element>
+  <language>PHP</language>
+  <offset>22</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Argument/TaggedIteratorArgument.php</file>
+  <line>41</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Argument/TaggedIteratorArgument.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$excludeSelf</highlighted_element>
+  <language>PHP</language>
+  <offset>21</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/AnalyzeServiceReferencesPass.php</file>
+  <line>49</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/AnalyzeServiceReferencesPass.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$onlyConstructorArguments</highlighted_element>
+  <language>PHP</language>
+  <offset>21</offset>
+  <length>25</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/AnalyzeServiceReferencesPass.php</file>
+  <line>50</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/AnalyzeServiceReferencesPass.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$hasProxyDumper</highlighted_element>
+  <language>PHP</language>
+  <offset>21</offset>
+  <length>15</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/AutowirePass.php</file>
+  <line>51</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/AutowirePass.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$throwOnAutowiringException</highlighted_element>
+  <language>PHP</language>
+  <offset>21</offset>
+  <length>27</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/CheckArgumentsValidityPass.php</file>
+  <line>28</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/CheckArgumentsValidityPass.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$throwExceptions</highlighted_element>
+  <language>PHP</language>
+  <offset>21</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/CheckTypeDeclarationsPass.php</file>
+  <line>72</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/CheckTypeDeclarationsPass.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$autoload</highlighted_element>
+  <language>PHP</language>
+  <offset>21</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/CheckTypeDeclarationsPass.php</file>
+  <line>73</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/CheckTypeDeclarationsPass.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$skippedIds</highlighted_element>
+  <language>PHP</language>
+  <offset>22</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/InlineServiceDefinitionsPass.php</file>
+  <line>37</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/InlineServiceDefinitionsPass.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$analyzingPass</highlighted_element>
+  <language>PHP</language>
+  <offset>46</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/RegisterReverseContainerPass.php</file>
+  <line>26</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/RegisterReverseContainerPass.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$beforeRemoving</highlighted_element>
+  <language>PHP</language>
+  <offset>21</offset>
+  <length>15</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/ResolveParameterPlaceHoldersPass.php</file>
+  <line>31</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/ResolveParameterPlaceHoldersPass.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$resolveArrays</highlighted_element>
+  <language>PHP</language>
+  <offset>21</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/ResolveParameterPlaceHoldersPass.php</file>
+  <line>32</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/ResolveParameterPlaceHoldersPass.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$throwOnResolveException</highlighted_element>
+  <language>PHP</language>
+  <offset>21</offset>
+  <length>24</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/ServiceReferenceGraphEdge.php</file>
+  <line>24</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/ServiceReferenceGraphEdge.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$sourceNode</highlighted_element>
+  <language>PHP</language>
+  <offset>42</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/ServiceReferenceGraphEdge.php</file>
+  <line>25</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/ServiceReferenceGraphEdge.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$destNode</highlighted_element>
+  <language>PHP</language>
+  <offset>42</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/ServiceReferenceGraphEdge.php</file>
+  <line>26</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/ServiceReferenceGraphEdge.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$value</highlighted_element>
+  <language>PHP</language>
+  <offset>22</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/ServiceReferenceGraphEdge.php</file>
+  <line>27</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/ServiceReferenceGraphEdge.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$lazy</highlighted_element>
+  <language>PHP</language>
+  <offset>21</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/ServiceReferenceGraphEdge.php</file>
+  <line>28</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/ServiceReferenceGraphEdge.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$weak</highlighted_element>
+  <language>PHP</language>
+  <offset>21</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/ServiceReferenceGraphEdge.php</file>
+  <line>29</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/ServiceReferenceGraphEdge.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$byConstructor</highlighted_element>
+  <language>PHP</language>
+  <offset>21</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/ServiceReferenceGraphNode.php</file>
+  <line>30</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/ServiceReferenceGraphNode.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$id</highlighted_element>
+  <language>PHP</language>
+  <offset>23</offset>
+  <length>3</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/ServiceReferenceGraphNode.php</file>
+  <line>31</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/ServiceReferenceGraphNode.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$value</highlighted_element>
+  <language>PHP</language>
+  <offset>22</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Config/ContainerParametersResource.php</file>
+  <line>29</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Config/ContainerParametersResource.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$parameters</highlighted_element>
+  <language>PHP</language>
+  <offset>22</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Config/ContainerParametersResourceChecker.php</file>
+  <line>24</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Config/ContainerParametersResourceChecker.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$container</highlighted_element>
+  <language>PHP</language>
+  <offset>35</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/EnvVarProcessor.php</file>
+  <line>34</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/EnvVarProcessor.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$container</highlighted_element>
+  <language>PHP</language>
+  <offset>35</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Exception/AutowiringFailedException.php</file>
+  <line>22</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Exception/AutowiringFailedException.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$serviceId</highlighted_element>
+  <language>PHP</language>
+  <offset>23</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Exception/ParameterCircularReferenceException.php</file>
+  <line>22</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Exception/ParameterCircularReferenceException.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$parameters</highlighted_element>
+  <language>PHP</language>
+  <offset>22</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Exception/ParameterNotFoundException.php</file>
+  <line>32</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Exception/ParameterNotFoundException.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$key</highlighted_element>
+  <language>PHP</language>
+  <offset>23</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Exception/ParameterNotFoundException.php</file>
+  <line>36</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Exception/ParameterNotFoundException.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$alternatives</highlighted_element>
+  <language>PHP</language>
+  <offset>22</offset>
+  <length>13</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Exception/ParameterNotFoundException.php</file>
+  <line>37</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Exception/ParameterNotFoundException.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$nonNestedAlternative</highlighted_element>
+  <language>PHP</language>
+  <offset>24</offset>
+  <length>21</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Exception/ServiceCircularReferenceException.php</file>
+  <line>22</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Exception/ServiceCircularReferenceException.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$serviceId</highlighted_element>
+  <language>PHP</language>
+  <offset>23</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Exception/ServiceCircularReferenceException.php</file>
+  <line>23</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Exception/ServiceCircularReferenceException.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$path</highlighted_element>
+  <language>PHP</language>
+  <offset>22</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Exception/ServiceNotFoundException.php</file>
+  <line>24</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Exception/ServiceNotFoundException.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$id</highlighted_element>
+  <language>PHP</language>
+  <offset>23</offset>
+  <length>3</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Exception/ServiceNotFoundException.php</file>
+  <line>25</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Exception/ServiceNotFoundException.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$sourceId</highlighted_element>
+  <language>PHP</language>
+  <offset>24</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Exception/ServiceNotFoundException.php</file>
+  <line>27</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Exception/ServiceNotFoundException.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$alternatives</highlighted_element>
+  <language>PHP</language>
+  <offset>22</offset>
+  <length>13</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/ExpressionLanguageProvider.php</file>
+  <line>33</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/ExpressionLanguageProvider.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$getEnv</highlighted_element>
+  <language>PHP</language>
+  <offset>26</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/LazyProxy/PhpDumper/LazyServiceDumper.php</file>
+  <line>25</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/LazyProxy/PhpDumper/LazyServiceDumper.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$salt</highlighted_element>
+  <language>PHP</language>
+  <offset>23</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Loader/Configurator/ContainerConfigurator.php</file>
+  <line>38</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Loader/Configurator/ContainerConfigurator.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$container</highlighted_element>
+  <language>PHP</language>
+  <offset>33</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Loader/Configurator/ContainerConfigurator.php</file>
+  <line>39</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Loader/Configurator/ContainerConfigurator.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$loader</highlighted_element>
+  <language>PHP</language>
+  <offset>30</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Loader/Configurator/ContainerConfigurator.php</file>
+  <line>43</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Loader/Configurator/ContainerConfigurator.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$env</highlighted_element>
+  <language>PHP</language>
+  <offset>24</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Loader/Configurator/DefaultsConfigurator.php</file>
+  <line>32</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Loader/Configurator/DefaultsConfigurator.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$path</highlighted_element>
+  <language>PHP</language>
+  <offset>24</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Loader/Configurator/FromCallableConfigurator.php</file>
+  <line>35</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Loader/Configurator/FromCallableConfigurator.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$serviceConfigurator</highlighted_element>
+  <language>PHP</language>
+  <offset>36</offset>
+  <length>20</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Loader/Configurator/InstanceofConfigurator.php</file>
+  <line>38</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Loader/Configurator/InstanceofConfigurator.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$path</highlighted_element>
+  <language>PHP</language>
+  <offset>24</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Loader/Configurator/ParametersConfigurator.php</file>
+  <line>26</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Loader/Configurator/ParametersConfigurator.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$container</highlighted_element>
+  <language>PHP</language>
+  <offset>33</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Loader/Configurator/PrototypeConfigurator.php</file>
+  <line>48</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Loader/Configurator/PrototypeConfigurator.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$resource</highlighted_element>
+  <language>PHP</language>
+  <offset>23</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Loader/Configurator/PrototypeConfigurator.php</file>
+  <line>49</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Loader/Configurator/PrototypeConfigurator.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$allowParent</highlighted_element>
+  <language>PHP</language>
+  <offset>21</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Loader/Configurator/PrototypeConfigurator.php</file>
+  <line>50</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Loader/Configurator/PrototypeConfigurator.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$path</highlighted_element>
+  <language>PHP</language>
+  <offset>24</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Loader/Configurator/ServiceConfigurator.php</file>
+  <line>49</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Loader/Configurator/ServiceConfigurator.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$container</highlighted_element>
+  <language>PHP</language>
+  <offset>33</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Loader/Configurator/ServiceConfigurator.php</file>
+  <line>50</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Loader/Configurator/ServiceConfigurator.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$instanceof</highlighted_element>
+  <language>PHP</language>
+  <offset>22</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Loader/Configurator/ServiceConfigurator.php</file>
+  <line>51</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Loader/Configurator/ServiceConfigurator.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$allowParent</highlighted_element>
+  <language>PHP</language>
+  <offset>21</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Loader/Configurator/ServiceConfigurator.php</file>
+  <line>56</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Loader/Configurator/ServiceConfigurator.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$path</highlighted_element>
+  <language>PHP</language>
+  <offset>24</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Loader/Configurator/ServicesConfigurator.php</file>
+  <line>35</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Loader/Configurator/ServicesConfigurator.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$container</highlighted_element>
+  <language>PHP</language>
+  <offset>33</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Loader/Configurator/ServicesConfigurator.php</file>
+  <line>36</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Loader/Configurator/ServicesConfigurator.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$loader</highlighted_element>
+  <language>PHP</language>
+  <offset>30</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Loader/Configurator/ServicesConfigurator.php</file>
+  <line>38</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Loader/Configurator/ServicesConfigurator.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$path</highlighted_element>
+  <language>PHP</language>
+  <offset>24</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Loader/PhpFileLoader.php</file>
+  <line>44</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Loader/PhpFileLoader.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$generator</highlighted_element>
+  <language>PHP</language>
+  <offset>49</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Parameter.php</file>
+  <line>22</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Parameter.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$id</highlighted_element>
+  <language>PHP</language>
+  <offset>23</offset>
+  <length>3</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/ParameterBag/ContainerBag.php</file>
+  <line>22</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/ParameterBag/ContainerBag.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$container</highlighted_element>
+  <language>PHP</language>
+  <offset>26</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Reference.php</file>
+  <line>22</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Reference.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$id</highlighted_element>
+  <language>PHP</language>
+  <offset>23</offset>
+  <length>3</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Reference.php</file>
+  <line>23</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Reference.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$invalidBehavior</highlighted_element>
+  <language>PHP</language>
+  <offset>20</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/ReverseContainer.php</file>
+  <line>27</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/ReverseContainer.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$serviceContainer</highlighted_element>
+  <language>PHP</language>
+  <offset>26</offset>
+  <length>17</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/ReverseContainer.php</file>
+  <line>28</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/ReverseContainer.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$reversibleLocator</highlighted_element>
+  <language>PHP</language>
+  <offset>35</offset>
+  <length>18</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/ReverseContainer.php</file>
+  <line>29</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/ReverseContainer.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$tagName</highlighted_element>
+  <language>PHP</language>
+  <offset>23</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/StaticEnvVarLoader.php</file>
+  <line>18</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/StaticEnvVarLoader.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$envVarLoader</highlighted_element>
+  <language>PHP</language>
+  <offset>62</offset>
+  <length>13</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/TypedReference.php</file>
+  <line>32</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/TypedReference.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$type</highlighted_element>
+  <language>PHP</language>
+  <offset>23</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/TypedReference.php</file>
+  <line>35</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/TypedReference.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$attributes</highlighted_element>
+  <language>PHP</language>
+  <offset>22</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Variable.php</file>
+  <line>30</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Variable.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$name</highlighted_element>
+  <language>PHP</language>
+  <offset>23</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/event-dispatcher/Debug/TraceableEventDispatcher.php</file>
+  <line>42</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/event-dispatcher/Debug/TraceableEventDispatcher.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$dispatcher</highlighted_element>
+  <language>PHP</language>
+  <offset>41</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/event-dispatcher/Debug/TraceableEventDispatcher.php</file>
+  <line>45</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/event-dispatcher/Debug/TraceableEventDispatcher.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$requestStack</highlighted_element>
+  <language>PHP</language>
+  <offset>30</offset>
+  <length>13</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/event-dispatcher/Debug/WrappedListener.php</file>
+  <line>37</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/event-dispatcher/Debug/WrappedListener.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$stopwatch</highlighted_element>
+  <language>PHP</language>
+  <offset>26</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/event-dispatcher/Debug/WrappedListener.php</file>
+  <line>38</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/event-dispatcher/Debug/WrappedListener.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$dispatcher</highlighted_element>
+  <language>PHP</language>
+  <offset>42</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/event-dispatcher/DependencyInjection/AddEventAliasesPass.php</file>
+  <line>25</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/event-dispatcher/DependencyInjection/AddEventAliasesPass.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$eventAliases</highlighted_element>
+  <language>PHP</language>
+  <offset>22</offset>
+  <length>13</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/event-dispatcher/ImmutableEventDispatcher.php</file>
+  <line>22</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/event-dispatcher/ImmutableEventDispatcher.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$dispatcher</highlighted_element>
+  <language>PHP</language>
+  <offset>41</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/CacheWarmer/AbstractPhpFileCacheWarmer.php</file>
+  <line>26</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/CacheWarmer/AbstractPhpFileCacheWarmer.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$phpArrayFile</highlighted_element>
+  <language>PHP</language>
+  <offset>23</offset>
+  <length>13</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/CacheWarmer/CachePoolClearerCacheWarmer.php</file>
+  <line>32</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/CacheWarmer/CachePoolClearerCacheWarmer.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$poolClearer</highlighted_element>
+  <language>PHP</language>
+  <offset>33</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/CacheWarmer/CachePoolClearerCacheWarmer.php</file>
+  <line>33</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/CacheWarmer/CachePoolClearerCacheWarmer.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$pools</highlighted_element>
+  <language>PHP</language>
+  <offset>22</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/CacheWarmer/ConfigBuilderCacheWarmer.php</file>
+  <line>38</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/CacheWarmer/ConfigBuilderCacheWarmer.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$kernel</highlighted_element>
+  <language>PHP</language>
+  <offset>32</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/CacheWarmer/ConfigBuilderCacheWarmer.php</file>
+  <line>39</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/CacheWarmer/ConfigBuilderCacheWarmer.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$logger</highlighted_element>
+  <language>PHP</language>
+  <offset>33</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/CacheWarmer/RouterCacheWarmer.php</file>
+  <line>33</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/CacheWarmer/RouterCacheWarmer.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$container</highlighted_element>
+  <language>PHP</language>
+  <offset>35</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/CacheWarmer/SerializerCacheWarmer.php</file>
+  <line>36</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/CacheWarmer/SerializerCacheWarmer.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$loaders</highlighted_element>
+  <language>PHP</language>
+  <offset>22</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/CacheWarmer/TranslationsCacheWarmer.php</file>
+  <line>35</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/CacheWarmer/TranslationsCacheWarmer.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$container</highlighted_element>
+  <language>PHP</language>
+  <offset>35</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/CacheWarmer/ValidatorCacheWarmer.php</file>
+  <line>36</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/CacheWarmer/ValidatorCacheWarmer.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$validatorBuilder</highlighted_element>
+  <language>PHP</language>
+  <offset>33</offset>
+  <length>17</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/AssetsInstallCommand.php</file>
+  <line>45</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/AssetsInstallCommand.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$filesystem</highlighted_element>
+  <language>PHP</language>
+  <offset>27</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/AssetsInstallCommand.php</file>
+  <line>46</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/AssetsInstallCommand.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$projectDir</highlighted_element>
+  <language>PHP</language>
+  <offset>23</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/CacheClearCommand.php</file>
+  <line>43</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/CacheClearCommand.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$cacheClearer</highlighted_element>
+  <language>PHP</language>
+  <offset>38</offset>
+  <length>13</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/CachePoolClearCommand.php</file>
+  <line>39</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/CachePoolClearCommand.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$poolClearer</highlighted_element>
+  <language>PHP</language>
+  <offset>33</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/CachePoolClearCommand.php</file>
+  <line>40</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/CachePoolClearCommand.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$poolNames</highlighted_element>
+  <language>PHP</language>
+  <offset>23</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/CachePoolDeleteCommand.php</file>
+  <line>36</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/CachePoolDeleteCommand.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$poolClearer</highlighted_element>
+  <language>PHP</language>
+  <offset>33</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/CachePoolDeleteCommand.php</file>
+  <line>37</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/CachePoolDeleteCommand.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$poolNames</highlighted_element>
+  <language>PHP</language>
+  <offset>23</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/CachePoolInvalidateTagsCommand.php</file>
+  <line>36</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/CachePoolInvalidateTagsCommand.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$pools</highlighted_element>
+  <language>PHP</language>
+  <offset>41</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/CachePoolListCommand.php</file>
+  <line>32</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/CachePoolListCommand.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$poolNames</highlighted_element>
+  <language>PHP</language>
+  <offset>22</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/CachePoolPruneCommand.php</file>
+  <line>33</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/CachePoolPruneCommand.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$pools</highlighted_element>
+  <language>PHP</language>
+  <offset>25</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/CacheWarmupCommand.php</file>
+  <line>35</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/CacheWarmupCommand.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$cacheWarmer</highlighted_element>
+  <language>PHP</language>
+  <offset>37</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/DebugAutowiringCommand.php</file>
+  <line>38</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/DebugAutowiringCommand.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$fileLinkFormatter</highlighted_element>
+  <language>PHP</language>
+  <offset>35</offset>
+  <length>18</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/EventDispatcherDebugCommand.php</file>
+  <line>41</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/EventDispatcherDebugCommand.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$dispatchers</highlighted_element>
+  <language>PHP</language>
+  <offset>35</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/RouterDebugCommand.php</file>
+  <line>43</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/RouterDebugCommand.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$router</highlighted_element>
+  <language>PHP</language>
+  <offset>32</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/RouterDebugCommand.php</file>
+  <line>44</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/RouterDebugCommand.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$fileLinkFormatter</highlighted_element>
+  <language>PHP</language>
+  <offset>35</offset>
+  <length>18</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/RouterMatchCommand.php</file>
+  <line>40</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/RouterMatchCommand.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$router</highlighted_element>
+  <language>PHP</language>
+  <offset>32</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/RouterMatchCommand.php</file>
+  <line>41</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/RouterMatchCommand.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$expressionLanguageProviders</highlighted_element>
+  <language>PHP</language>
+  <offset>25</offset>
+  <length>28</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/SecretsDecryptToLocalCommand.php</file>
+  <line>32</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/SecretsDecryptToLocalCommand.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$vault</highlighted_element>
+  <language>PHP</language>
+  <offset>30</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/SecretsDecryptToLocalCommand.php</file>
+  <line>33</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/SecretsDecryptToLocalCommand.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$localVault</highlighted_element>
+  <language>PHP</language>
+  <offset>31</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/SecretsEncryptFromLocalCommand.php</file>
+  <line>31</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/SecretsEncryptFromLocalCommand.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$vault</highlighted_element>
+  <language>PHP</language>
+  <offset>30</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/SecretsEncryptFromLocalCommand.php</file>
+  <line>32</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/SecretsEncryptFromLocalCommand.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$localVault</highlighted_element>
+  <language>PHP</language>
+  <offset>31</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/SecretsGenerateKeysCommand.php</file>
+  <line>34</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/SecretsGenerateKeysCommand.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$vault</highlighted_element>
+  <language>PHP</language>
+  <offset>30</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/SecretsGenerateKeysCommand.php</file>
+  <line>35</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/SecretsGenerateKeysCommand.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$localVault</highlighted_element>
+  <language>PHP</language>
+  <offset>31</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/SecretsListCommand.php</file>
+  <line>35</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/SecretsListCommand.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$vault</highlighted_element>
+  <language>PHP</language>
+  <offset>30</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/SecretsListCommand.php</file>
+  <line>36</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/SecretsListCommand.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$localVault</highlighted_element>
+  <language>PHP</language>
+  <offset>31</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/SecretsRemoveCommand.php</file>
+  <line>36</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/SecretsRemoveCommand.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$vault</highlighted_element>
+  <language>PHP</language>
+  <offset>30</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/SecretsRemoveCommand.php</file>
+  <line>37</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/SecretsRemoveCommand.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$localVault</highlighted_element>
+  <language>PHP</language>
+  <offset>31</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/SecretsSetCommand.php</file>
+  <line>37</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/SecretsSetCommand.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$vault</highlighted_element>
+  <language>PHP</language>
+  <offset>30</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/SecretsSetCommand.php</file>
+  <line>38</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/SecretsSetCommand.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$localVault</highlighted_element>
+  <language>PHP</language>
+  <offset>31</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationDebugCommand.php</file>
+  <line>54</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationDebugCommand.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$translator</highlighted_element>
+  <language>PHP</language>
+  <offset>36</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationDebugCommand.php</file>
+  <line>55</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationDebugCommand.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$reader</highlighted_element>
+  <language>PHP</language>
+  <offset>43</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationDebugCommand.php</file>
+  <line>56</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationDebugCommand.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$extractor</highlighted_element>
+  <language>PHP</language>
+  <offset>35</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationDebugCommand.php</file>
+  <line>57</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationDebugCommand.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$defaultTransPath</highlighted_element>
+  <language>PHP</language>
+  <offset>24</offset>
+  <length>17</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationDebugCommand.php</file>
+  <line>58</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationDebugCommand.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$defaultViewsPath</highlighted_element>
+  <language>PHP</language>
+  <offset>24</offset>
+  <length>17</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationDebugCommand.php</file>
+  <line>59</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationDebugCommand.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$transPaths</highlighted_element>
+  <language>PHP</language>
+  <offset>22</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationDebugCommand.php</file>
+  <line>60</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationDebugCommand.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$codePaths</highlighted_element>
+  <language>PHP</language>
+  <offset>22</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationDebugCommand.php</file>
+  <line>61</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationDebugCommand.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$enabledLocales</highlighted_element>
+  <language>PHP</language>
+  <offset>22</offset>
+  <length>15</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationExtractCommand.php</file>
+  <line>52</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationExtractCommand.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$writer</highlighted_element>
+  <language>PHP</language>
+  <offset>43</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationExtractCommand.php</file>
+  <line>53</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationExtractCommand.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$reader</highlighted_element>
+  <language>PHP</language>
+  <offset>43</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationExtractCommand.php</file>
+  <line>54</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationExtractCommand.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$extractor</highlighted_element>
+  <language>PHP</language>
+  <offset>35</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationExtractCommand.php</file>
+  <line>55</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationExtractCommand.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$defaultLocale</highlighted_element>
+  <language>PHP</language>
+  <offset>23</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationExtractCommand.php</file>
+  <line>56</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationExtractCommand.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$defaultTransPath</highlighted_element>
+  <language>PHP</language>
+  <offset>24</offset>
+  <length>17</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationExtractCommand.php</file>
+  <line>57</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationExtractCommand.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$defaultViewsPath</highlighted_element>
+  <language>PHP</language>
+  <offset>24</offset>
+  <length>17</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationExtractCommand.php</file>
+  <line>58</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationExtractCommand.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$transPaths</highlighted_element>
+  <language>PHP</language>
+  <offset>22</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationExtractCommand.php</file>
+  <line>59</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationExtractCommand.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$codePaths</highlighted_element>
+  <language>PHP</language>
+  <offset>22</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationExtractCommand.php</file>
+  <line>60</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationExtractCommand.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$enabledLocales</highlighted_element>
+  <language>PHP</language>
+  <offset>22</offset>
+  <length>15</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationUpdateCommand.php</file>
+  <line>21</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationUpdateCommand.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$writer</highlighted_element>
+  <language>PHP</language>
+  <offset>43</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationUpdateCommand.php</file>
+  <line>22</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationUpdateCommand.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$reader</highlighted_element>
+  <language>PHP</language>
+  <offset>43</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationUpdateCommand.php</file>
+  <line>23</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationUpdateCommand.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$extractor</highlighted_element>
+  <language>PHP</language>
+  <offset>35</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationUpdateCommand.php</file>
+  <line>24</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationUpdateCommand.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$defaultLocale</highlighted_element>
+  <language>PHP</language>
+  <offset>23</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationUpdateCommand.php</file>
+  <line>25</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationUpdateCommand.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$defaultTransPath</highlighted_element>
+  <language>PHP</language>
+  <offset>24</offset>
+  <length>17</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationUpdateCommand.php</file>
+  <line>26</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationUpdateCommand.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$defaultViewsPath</highlighted_element>
+  <language>PHP</language>
+  <offset>24</offset>
+  <length>17</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationUpdateCommand.php</file>
+  <line>27</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationUpdateCommand.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$transPaths</highlighted_element>
+  <language>PHP</language>
+  <offset>22</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationUpdateCommand.php</file>
+  <line>28</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationUpdateCommand.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$codePaths</highlighted_element>
+  <language>PHP</language>
+  <offset>22</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationUpdateCommand.php</file>
+  <line>29</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/TranslationUpdateCommand.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$enabledLocales</highlighted_element>
+  <language>PHP</language>
+  <offset>22</offset>
+  <length>15</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/WorkflowDumpCommand.php</file>
+  <line>46</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/WorkflowDumpCommand.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$workflows</highlighted_element>
+  <language>PHP</language>
+  <offset>31</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Console/Application.php</file>
+  <line>37</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Console/Application.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$kernel</highlighted_element>
+  <language>PHP</language>
+  <offset>32</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Console/Descriptor/TextDescriptor.php</file>
+  <line>42</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Console/Descriptor/TextDescriptor.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$fileLinkFormatter</highlighted_element>
+  <language>PHP</language>
+  <offset>35</offset>
+  <length>18</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Controller/RedirectController.php</file>
+  <line>31</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Controller/RedirectController.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$router</highlighted_element>
+  <language>PHP</language>
+  <offset>39</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Controller/RedirectController.php</file>
+  <line>32</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Controller/RedirectController.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$httpPort</highlighted_element>
+  <language>PHP</language>
+  <offset>21</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Controller/RedirectController.php</file>
+  <line>33</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Controller/RedirectController.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$httpsPort</highlighted_element>
+  <language>PHP</language>
+  <offset>21</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Controller/TemplateController.php</file>
+  <line>27</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Controller/TemplateController.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$twig</highlighted_element>
+  <language>PHP</language>
+  <offset>29</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/HttpCache/HttpCache.php</file>
+  <line>41</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/HttpCache/HttpCache.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$surrogate</highlighted_element>
+  <language>PHP</language>
+  <offset>36</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Routing/DelegatingLoader.php</file>
+  <line>35</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Routing/DelegatingLoader.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$defaultOptions</highlighted_element>
+  <language>PHP</language>
+  <offset>22</offset>
+  <length>15</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Routing/DelegatingLoader.php</file>
+  <line>36</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Routing/DelegatingLoader.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$defaultRequirements</highlighted_element>
+  <language>PHP</language>
+  <offset>22</offset>
+  <length>20</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Routing/Router.php</file>
+  <line>45</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Routing/Router.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$container</highlighted_element>
+  <language>PHP</language>
+  <offset>35</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Secrets/SodiumVault.php</file>
+  <line>37</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Secrets/SodiumVault.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$derivedSecretEnvVar</highlighted_element>
+  <language>PHP</language>
+  <offset>24</offset>
+  <length>20</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Test/TestContainer.php</file>
+  <line>33</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Test/TestContainer.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$kernel</highlighted_element>
+  <language>PHP</language>
+  <offset>32</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Test/TestContainer.php</file>
+  <line>34</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Test/TestContainer.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$privateServicesLocatorId</highlighted_element>
+  <language>PHP</language>
+  <offset>23</offset>
+  <length>25</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Test/TestContainer.php</file>
+  <line>35</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Test/TestContainer.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$renamedIds</highlighted_element>
+  <language>PHP</language>
+  <offset>22</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Translation/Translator.php</file>
+  <line>80</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Translation/Translator.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$enabledLocales</highlighted_element>
+  <language>PHP</language>
+  <offset>22</offset>
+  <length>15</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-foundation/File/UploadedFile.php</file>
+  <line>68</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-foundation/File/UploadedFile.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$test</highlighted_element>
+  <language>PHP</language>
+  <offset>21</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-foundation/RequestMatcher/AttributesRequestMatcher.php</file>
+  <line>27</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-foundation/RequestMatcher/AttributesRequestMatcher.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$regexps</highlighted_element>
+  <language>PHP</language>
+  <offset>46</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-foundation/RequestMatcher/ExpressionRequestMatcher.php</file>
+  <line>27</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-foundation/RequestMatcher/ExpressionRequestMatcher.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$language</highlighted_element>
+  <language>PHP</language>
+  <offset>35</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-foundation/RequestMatcher/HostRequestMatcher.php</file>
+  <line>24</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-foundation/RequestMatcher/HostRequestMatcher.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$regexp</highlighted_element>
+  <language>PHP</language>
+  <offset>47</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-foundation/RequestMatcher/PathRequestMatcher.php</file>
+  <line>24</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-foundation/RequestMatcher/PathRequestMatcher.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$regexp</highlighted_element>
+  <language>PHP</language>
+  <offset>47</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-foundation/RequestMatcher/PortRequestMatcher.php</file>
+  <line>24</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-foundation/RequestMatcher/PortRequestMatcher.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$port</highlighted_element>
+  <language>PHP</language>
+  <offset>44</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Attribute/AttributeBag.php</file>
+  <line>29</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Attribute/AttributeBag.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$storageKey</highlighted_element>
+  <language>PHP</language>
+  <offset>23</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Flash/AutoExpireFlashBag.php</file>
+  <line>28</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Flash/AutoExpireFlashBag.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$storageKey</highlighted_element>
+  <language>PHP</language>
+  <offset>23</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Flash/FlashBag.php</file>
+  <line>28</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Flash/FlashBag.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$storageKey</highlighted_element>
+  <language>PHP</language>
+  <offset>23</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-foundation/Session/SessionFactory.php</file>
+  <line>28</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-foundation/Session/SessionFactory.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$requestStack</highlighted_element>
+  <language>PHP</language>
+  <offset>29</offset>
+  <length>13</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-foundation/Session/SessionFactory.php</file>
+  <line>29</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-foundation/Session/SessionFactory.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$storageFactory</highlighted_element>
+  <language>PHP</language>
+  <offset>47</offset>
+  <length>15</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Handler/MarshallingSessionHandler.php</file>
+  <line>22</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Handler/MarshallingSessionHandler.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$handler</highlighted_element>
+  <language>PHP</language>
+  <offset>39</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Handler/MarshallingSessionHandler.php</file>
+  <line>23</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Handler/MarshallingSessionHandler.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$marshaller</highlighted_element>
+  <language>PHP</language>
+  <offset>36</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Handler/MemcachedSessionHandler.php</file>
+  <line>44</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Handler/MemcachedSessionHandler.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$memcached</highlighted_element>
+  <language>PHP</language>
+  <offset>27</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Handler/RedisSessionHandler.php</file>
+  <line>43</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Handler/RedisSessionHandler.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$redis</highlighted_element>
+  <language>PHP</language>
+  <offset>79</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Handler/StrictSessionHandler.php</file>
+  <line>24</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Handler/StrictSessionHandler.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$handler</highlighted_element>
+  <language>PHP</language>
+  <offset>41</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/MetadataBag.php</file>
+  <line>39</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/MetadataBag.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$storageKey</highlighted_element>
+  <language>PHP</language>
+  <offset>23</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/MetadataBag.php</file>
+  <line>40</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/MetadataBag.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$updateThreshold</highlighted_element>
+  <language>PHP</language>
+  <offset>20</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/MockFileSessionStorageFactory.php</file>
+  <line>28</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/MockFileSessionStorageFactory.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$savePath</highlighted_element>
+  <language>PHP</language>
+  <offset>24</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/MockFileSessionStorageFactory.php</file>
+  <line>29</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/MockFileSessionStorageFactory.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$name</highlighted_element>
+  <language>PHP</language>
+  <offset>23</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/MockFileSessionStorageFactory.php</file>
+  <line>30</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/MockFileSessionStorageFactory.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$metaBag</highlighted_element>
+  <language>PHP</language>
+  <offset>29</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/NativeSessionStorageFactory.php</file>
+  <line>29</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/NativeSessionStorageFactory.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$options</highlighted_element>
+  <language>PHP</language>
+  <offset>22</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/NativeSessionStorageFactory.php</file>
+  <line>30</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/NativeSessionStorageFactory.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$handler</highlighted_element>
+  <language>PHP</language>
+  <offset>60</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/NativeSessionStorageFactory.php</file>
+  <line>31</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/NativeSessionStorageFactory.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$metaBag</highlighted_element>
+  <language>PHP</language>
+  <offset>29</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/NativeSessionStorageFactory.php</file>
+  <line>32</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/NativeSessionStorageFactory.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$secure</highlighted_element>
+  <language>PHP</language>
+  <offset>21</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/PhpBridgeSessionStorageFactory.php</file>
+  <line>26</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/PhpBridgeSessionStorageFactory.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$handler</highlighted_element>
+  <language>PHP</language>
+  <offset>60</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/PhpBridgeSessionStorageFactory.php</file>
+  <line>27</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/PhpBridgeSessionStorageFactory.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$metaBag</highlighted_element>
+  <language>PHP</language>
+  <offset>29</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/PhpBridgeSessionStorageFactory.php</file>
+  <line>28</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/PhpBridgeSessionStorageFactory.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$secure</highlighted_element>
+  <language>PHP</language>
+  <offset>21</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-foundation/StreamedJsonResponse.php</file>
+  <line>59</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-foundation/StreamedJsonResponse.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$encodingOptions</highlighted_element>
+  <language>PHP</language>
+  <offset>20</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-foundation/Test/Constraint/RequestAttributeValueSame.php</file>
+  <line>20</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-foundation/Test/Constraint/RequestAttributeValueSame.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$name</highlighted_element>
+  <language>PHP</language>
+  <offset>23</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-foundation/Test/Constraint/RequestAttributeValueSame.php</file>
+  <line>21</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-foundation/Test/Constraint/RequestAttributeValueSame.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$value</highlighted_element>
+  <language>PHP</language>
+  <offset>23</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-foundation/Test/Constraint/ResponseCookieValueSame.php</file>
+  <line>21</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-foundation/Test/Constraint/ResponseCookieValueSame.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$name</highlighted_element>
+  <language>PHP</language>
+  <offset>23</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-foundation/Test/Constraint/ResponseCookieValueSame.php</file>
+  <line>22</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-foundation/Test/Constraint/ResponseCookieValueSame.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$value</highlighted_element>
+  <language>PHP</language>
+  <offset>23</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-foundation/Test/Constraint/ResponseCookieValueSame.php</file>
+  <line>23</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-foundation/Test/Constraint/ResponseCookieValueSame.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$path</highlighted_element>
+  <language>PHP</language>
+  <offset>23</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-foundation/Test/Constraint/ResponseCookieValueSame.php</file>
+  <line>24</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-foundation/Test/Constraint/ResponseCookieValueSame.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$domain</highlighted_element>
+  <language>PHP</language>
+  <offset>24</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-foundation/Test/Constraint/ResponseFormatSame.php</file>
+  <line>26</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-foundation/Test/Constraint/ResponseFormatSame.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$request</highlighted_element>
+  <language>PHP</language>
+  <offset>24</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-foundation/Test/Constraint/ResponseFormatSame.php</file>
+  <line>27</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-foundation/Test/Constraint/ResponseFormatSame.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$format</highlighted_element>
+  <language>PHP</language>
+  <offset>24</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-foundation/Test/Constraint/ResponseHasCookie.php</file>
+  <line>21</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-foundation/Test/Constraint/ResponseHasCookie.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$name</highlighted_element>
+  <language>PHP</language>
+  <offset>23</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-foundation/Test/Constraint/ResponseHasCookie.php</file>
+  <line>22</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-foundation/Test/Constraint/ResponseHasCookie.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$path</highlighted_element>
+  <language>PHP</language>
+  <offset>23</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-foundation/Test/Constraint/ResponseHasCookie.php</file>
+  <line>23</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-foundation/Test/Constraint/ResponseHasCookie.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$domain</highlighted_element>
+  <language>PHP</language>
+  <offset>24</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-foundation/Test/Constraint/ResponseHasHeader.php</file>
+  <line>20</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-foundation/Test/Constraint/ResponseHasHeader.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$headerName</highlighted_element>
+  <language>PHP</language>
+  <offset>23</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-foundation/Test/Constraint/ResponseHeaderLocationSame.php</file>
+  <line>20</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-foundation/Test/Constraint/ResponseHeaderLocationSame.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$request</highlighted_element>
+  <language>PHP</language>
+  <offset>48</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-foundation/Test/Constraint/ResponseHeaderLocationSame.php</file>
+  <line>20</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-foundation/Test/Constraint/ResponseHeaderLocationSame.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$expectedValue</highlighted_element>
+  <language>PHP</language>
+  <offset>73</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-foundation/Test/Constraint/ResponseHeaderSame.php</file>
+  <line>20</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-foundation/Test/Constraint/ResponseHeaderSame.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$headerName</highlighted_element>
+  <language>PHP</language>
+  <offset>23</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-foundation/Test/Constraint/ResponseHeaderSame.php</file>
+  <line>21</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-foundation/Test/Constraint/ResponseHeaderSame.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$expectedValue</highlighted_element>
+  <language>PHP</language>
+  <offset>23</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-foundation/Test/Constraint/ResponseStatusCodeSame.php</file>
+  <line>20</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-foundation/Test/Constraint/ResponseStatusCodeSame.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$statusCode</highlighted_element>
+  <language>PHP</language>
+  <offset>20</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/options-resolver/OptionConfigurator.php</file>
+  <line>19</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/options-resolver/OptionConfigurator.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$name</highlighted_element>
+  <language>PHP</language>
+  <offset>23</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/options-resolver/OptionConfigurator.php</file>
+  <line>20</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/options-resolver/OptionConfigurator.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$resolver</highlighted_element>
+  <language>PHP</language>
+  <offset>32</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/service-contracts/ServiceLocatorTrait.php</file>
+  <line>36</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/service-contracts/ServiceLocatorTrait.php" />
+  <problem_class id="PhpPropertyCanBeReadonlyInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Property can be 'readonly'</problem_class>
+  <description>Property can be 'readonly'</description>
+  <highlighted_element>$factories</highlighted_element>
+  <language>PHP</language>
+  <offset>22</offset>
+  <length>10</length>
+</problem>
+</problems>

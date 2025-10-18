@@ -1,0 +1,62 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/collections/src/Expr/ClosureExpressionVisitor.php</file>
+  <line>116</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/collections/src/Expr/ClosureExpressionVisitor.php" />
+  <problem_class id="PhpMethodParametersCountMismatchInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Parameters number mismatch declaration</problem_class>
+  <description>Method call is provided 2 parameters, but the method signature uses 0 parameters</description>
+  <highlighted_element>$a, $b</highlighted_element>
+  <language>PHP</language>
+  <offset>29</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Tools/SchemaTool.php</file>
+  <line>932</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Tools/SchemaTool.php" />
+  <problem_class id="PhpMethodParametersCountMismatchInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Parameters number mismatch declaration</problem_class>
+  <description>Method call is provided 1 parameters, but the method signature uses 0 parameters</description>
+  <highlighted_element>(new ComparatorConfig())-&gt;withReportModifiedIndexes(false)</highlighted_element>
+  <language>PHP</language>
+  <offset>65</offset>
+  <length>58</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Loader/XmlFileLoader.php</file>
+  <line>85</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Loader/XmlFileLoader.php" />
+  <problem_class id="PhpMethodParametersCountMismatchInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Parameters number mismatch declaration</problem_class>
+  <description>Method call is provided 2 parameters, but the method signature uses 1 parameters</description>
+  <highlighted_element>$root</highlighted_element>
+  <language>PHP</language>
+  <offset>40</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/DependencyInjection/FrameworkExtension.php</file>
+  <line>2153</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/DependencyInjection/FrameworkExtension.php" />
+  <problem_class id="PhpMethodParametersCountMismatchInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Parameters number mismatch declaration</problem_class>
+  <description>Method call is provided 4 parameters, but the method signature uses 3 parameters</description>
+  <highlighted_element>true</highlighted_element>
+  <language>PHP</language>
+  <offset>171</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Test/BrowserKitAssertionsTrait.php</file>
+  <line>153</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Test/BrowserKitAssertionsTrait.php" />
+  <problem_class id="PhpMethodParametersCountMismatchInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Parameters number mismatch declaration</problem_class>
+  <description>Method call is provided 4 parameters, but the method signature uses 3 parameters</description>
+  <highlighted_element>$exception-&gt;getPrevious()</highlighted_element>
+  <language>PHP</language>
+  <offset>232</offset>
+  <length>25</length>
+</problem>
+</problems>

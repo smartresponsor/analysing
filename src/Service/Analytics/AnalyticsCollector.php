@@ -4,6 +4,7 @@ declare(strict_types=1);
 namespace App\Service\Analytics;
 
 use App\Entity\Analytics\MetricSnapshot;
+use DateTimeImmutable;
 use Doctrine\DBAL\Connection;
 use Doctrine\ORM\EntityManagerInterface;
 
@@ -13,7 +14,7 @@ final class AnalyticsCollector
 
     public function refresh(): int
     {
-        $today = new \DateTimeImmutable('today');
+        $today = new DateTimeImmutable('today');
         $sql = "SELECT l.reference_id AS vendor_id, 'USD' as currency,
                        SUM(CASE WHEN l.direction='credit' THEN l.amount_minor ELSE 0 END) as gross,
                        SUM(CASE WHEN l.direction='debit' THEN l.amount_minor ELSE 0 END) as net

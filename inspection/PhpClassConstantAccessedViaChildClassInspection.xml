@@ -1,0 +1,518 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/EntityManager.php</file>
+  <line>549</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/EntityManager.php" />
+  <problem_class id="PhpClassConstantAccessedViaChildClassInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Class constant referenced via child class</problem_class>
+  <description>Constant from base class '\Doctrine\ORM\AbstractQuery' referenced via child class</description>
+  <highlighted_element>Query</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/EntityManager.php</file>
+  <line>550</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/EntityManager.php" />
+  <problem_class id="PhpClassConstantAccessedViaChildClassInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Class constant referenced via child class</problem_class>
+  <description>Constant from base class '\Doctrine\ORM\AbstractQuery' referenced via child class</description>
+  <highlighted_element>Query</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/EntityManager.php</file>
+  <line>551</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/EntityManager.php" />
+  <problem_class id="PhpClassConstantAccessedViaChildClassInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Class constant referenced via child class</problem_class>
+  <description>Constant from base class '\Doctrine\ORM\AbstractQuery' referenced via child class</description>
+  <highlighted_element>Query</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/EntityManager.php</file>
+  <line>552</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/EntityManager.php" />
+  <problem_class id="PhpClassConstantAccessedViaChildClassInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Class constant referenced via child class</problem_class>
+  <description>Constant from base class '\Doctrine\ORM\AbstractQuery' referenced via child class</description>
+  <highlighted_element>Query</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/EntityManager.php</file>
+  <line>553</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/EntityManager.php" />
+  <problem_class id="PhpClassConstantAccessedViaChildClassInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Class constant referenced via child class</problem_class>
+  <description>Constant from base class '\Doctrine\ORM\AbstractQuery' referenced via child class</description>
+  <highlighted_element>Query</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/EntityManager.php</file>
+  <line>554</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/EntityManager.php" />
+  <problem_class id="PhpClassConstantAccessedViaChildClassInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Class constant referenced via child class</problem_class>
+  <description>Constant from base class '\Doctrine\ORM\AbstractQuery' referenced via child class</description>
+  <highlighted_element>Query</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Collection/ManyToManyPersister.php</file>
+  <line>277</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Collection/ManyToManyPersister.php" />
+  <problem_class id="PhpClassConstantAccessedViaChildClassInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Class constant referenced via child class</problem_class>
+  <description>Constant from base class '\Doctrine\ORM\AbstractQuery' referenced via child class</description>
+  <highlighted_element>Query</highlighted_element>
+  <language>PHP</language>
+  <offset>26</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php</file>
+  <line>747</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php" />
+  <problem_class id="PhpClassConstantAccessedViaChildClassInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Class constant referenced via child class</problem_class>
+  <description>Constant from base class '\Doctrine\ORM\AbstractQuery' referenced via child class</description>
+  <highlighted_element>Query</highlighted_element>
+  <language>PHP</language>
+  <offset>91</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php</file>
+  <line>747</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php" />
+  <problem_class id="PhpClassConstantAccessedViaChildClassInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Class constant referenced via child class</problem_class>
+  <description>Constant from base class '\Doctrine\ORM\AbstractQuery' referenced via child class</description>
+  <highlighted_element>Query</highlighted_element>
+  <language>PHP</language>
+  <offset>115</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php</file>
+  <line>857</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php" />
+  <problem_class id="PhpClassConstantAccessedViaChildClassInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Class constant referenced via child class</problem_class>
+  <description>Constant from base class '\Doctrine\ORM\AbstractQuery' referenced via child class</description>
+  <highlighted_element>Query</highlighted_element>
+  <language>PHP</language>
+  <offset>43</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php</file>
+  <line>891</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php" />
+  <problem_class id="PhpClassConstantAccessedViaChildClassInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Class constant referenced via child class</problem_class>
+  <description>Constant from base class '\Doctrine\ORM\AbstractQuery' referenced via child class</description>
+  <highlighted_element>Query</highlighted_element>
+  <language>PHP</language>
+  <offset>91</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php</file>
+  <line>891</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php" />
+  <problem_class id="PhpClassConstantAccessedViaChildClassInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Class constant referenced via child class</problem_class>
+  <description>Constant from base class '\Doctrine\ORM\AbstractQuery' referenced via child class</description>
+  <highlighted_element>Query</highlighted_element>
+  <language>PHP</language>
+  <offset>115</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php</file>
+  <line>944</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php" />
+  <problem_class id="PhpClassConstantAccessedViaChildClassInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Class constant referenced via child class</problem_class>
+  <description>Constant from base class '\Doctrine\ORM\AbstractQuery' referenced via child class</description>
+  <highlighted_element>Query</highlighted_element>
+  <language>PHP</language>
+  <offset>91</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php</file>
+  <line>944</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php" />
+  <problem_class id="PhpClassConstantAccessedViaChildClassInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Class constant referenced via child class</problem_class>
+  <description>Constant from base class '\Doctrine\ORM\AbstractQuery' referenced via child class</description>
+  <highlighted_element>Query</highlighted_element>
+  <language>PHP</language>
+  <offset>115</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php</file>
+  <line>981</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php" />
+  <problem_class id="PhpClassConstantAccessedViaChildClassInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Class constant referenced via child class</problem_class>
+  <description>Constant from base class '\Doctrine\ORM\AbstractQuery' referenced via child class</description>
+  <highlighted_element>Query</highlighted_element>
+  <language>PHP</language>
+  <offset>38</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php</file>
+  <line>1005</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php" />
+  <problem_class id="PhpClassConstantAccessedViaChildClassInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Class constant referenced via child class</problem_class>
+  <description>Constant from base class '\Doctrine\ORM\AbstractQuery' referenced via child class</description>
+  <highlighted_element>Query</highlighted_element>
+  <language>PHP</language>
+  <offset>38</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Proxy/ProxyFactory.php</file>
+  <line>318</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Proxy/ProxyFactory.php" />
+  <problem_class id="PhpClassConstantAccessedViaChildClassInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Class constant referenced via child class</problem_class>
+  <description>Constant from base class '\Doctrine\Persistence\Proxy' referenced via child class</description>
+  <highlighted_element>InternalProxy</highlighted_element>
+  <language>PHP</language>
+  <offset>82</offset>
+  <length>13</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/SqlWalker.php</file>
+  <line>675</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/SqlWalker.php" />
+  <problem_class id="PhpClassConstantAccessedViaChildClassInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Class constant referenced via child class</problem_class>
+  <description>Constant from base class '\Doctrine\ORM\AbstractQuery' referenced via child class</description>
+  <highlighted_element>Query</highlighted_element>
+  <language>PHP</language>
+  <offset>49</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/AutowirePass.php</file>
+  <line>121</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/AutowirePass.php" />
+  <problem_class id="PhpClassConstantAccessedViaChildClassInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Class constant referenced via child class</problem_class>
+  <description>Constant from base class '\Symfony\Component\DependencyInjection\ContainerInterface' referenced via child class</description>
+  <highlighted_element>ContainerBuilder</highlighted_element>
+  <language>PHP</language>
+  <offset>35</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/AutowirePass.php</file>
+  <line>130</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/AutowirePass.php" />
+  <problem_class id="PhpClassConstantAccessedViaChildClassInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Class constant referenced via child class</problem_class>
+  <description>Constant from base class '\Symfony\Component\DependencyInjection\ContainerInterface' referenced via child class</description>
+  <highlighted_element>ContainerBuilder</highlighted_element>
+  <language>PHP</language>
+  <offset>16</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/AutowirePass.php</file>
+  <line>286</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/AutowirePass.php" />
+  <problem_class id="PhpClassConstantAccessedViaChildClassInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Class constant referenced via child class</problem_class>
+  <description>Constant from base class '\Symfony\Component\DependencyInjection\ContainerInterface' referenced via child class</description>
+  <highlighted_element>ContainerBuilder</highlighted_element>
+  <language>PHP</language>
+  <offset>99</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/AutowirePass.php</file>
+  <line>319</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/AutowirePass.php" />
+  <problem_class id="PhpClassConstantAccessedViaChildClassInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Class constant referenced via child class</problem_class>
+  <description>Constant from base class '\Symfony\Component\DependencyInjection\ContainerInterface' referenced via child class</description>
+  <highlighted_element>ContainerBuilder</highlighted_element>
+  <language>PHP</language>
+  <offset>114</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/PriorityTaggedServiceTrait.php</file>
+  <line>121</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/PriorityTaggedServiceTrait.php" />
+  <problem_class id="PhpClassConstantAccessedViaChildClassInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Class constant referenced via child class</problem_class>
+  <description>Constant from base class '\Symfony\Component\DependencyInjection\ContainerInterface' referenced via child class</description>
+  <highlighted_element>ContainerBuilder</highlighted_element>
+  <language>PHP</language>
+  <offset>68</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/RemoveUnusedDefinitionsPass.php</file>
+  <line>83</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/RemoveUnusedDefinitionsPass.php" />
+  <problem_class id="PhpClassConstantAccessedViaChildClassInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Class constant referenced via child class</problem_class>
+  <description>Constant from base class '\Symfony\Component\DependencyInjection\ContainerInterface' referenced via child class</description>
+  <highlighted_element>ContainerBuilder</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/ResolveHotPathPass.php</file>
+  <line>58</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/ResolveHotPathPass.php" />
+  <problem_class id="PhpClassConstantAccessedViaChildClassInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Class constant referenced via child class</problem_class>
+  <description>Constant from base class '\Symfony\Component\DependencyInjection\ContainerInterface' referenced via child class</description>
+  <highlighted_element>ContainerBuilder</highlighted_element>
+  <language>PHP</language>
+  <offset>43</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/ResolveNoPreloadPass.php</file>
+  <line>65</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/ResolveNoPreloadPass.php" />
+  <problem_class id="PhpClassConstantAccessedViaChildClassInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Class constant referenced via child class</problem_class>
+  <description>Constant from base class '\Symfony\Component\DependencyInjection\ContainerInterface' referenced via child class</description>
+  <highlighted_element>ContainerBuilder</highlighted_element>
+  <language>PHP</language>
+  <offset>43</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Loader/Configurator/ServicesConfigurator.php</file>
+  <line>165</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Loader/Configurator/ServicesConfigurator.php" />
+  <problem_class id="PhpClassConstantAccessedViaChildClassInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Class constant referenced via child class</problem_class>
+  <description>Constant from base class '\Symfony\Component\DependencyInjection\Loader\Configurator\AbstractConfigurator' referenced via child class</description>
+  <highlighted_element>ReferenceConfigurator</highlighted_element>
+  <language>PHP</language>
+  <offset>224</offset>
+  <length>21</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/AboutCommand.php</file>
+  <line>112</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/AboutCommand.php" />
+  <problem_class id="PhpClassConstantAccessedViaChildClassInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Class constant referenced via child class</problem_class>
+  <description>Constant from base class '\FilesystemIterator' referenced via child class</description>
+  <highlighted_element>\RecursiveDirectoryIterator</highlighted_element>
+  <language>PHP</language>
+  <offset>91</offset>
+  <length>27</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/AboutCommand.php</file>
+  <line>112</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/AboutCommand.php" />
+  <problem_class id="PhpClassConstantAccessedViaChildClassInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Class constant referenced via child class</problem_class>
+  <description>Constant from base class '\FilesystemIterator' referenced via child class</description>
+  <highlighted_element>\RecursiveDirectoryIterator</highlighted_element>
+  <language>PHP</language>
+  <offset>132</offset>
+  <length>27</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/DependencyInjection/Compiler/TestServiceContainerWeakRefPass.php</file>
+  <line>35</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/DependencyInjection/Compiler/TestServiceContainerWeakRefPass.php" />
+  <problem_class id="PhpClassConstantAccessedViaChildClassInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Class constant referenced via child class</problem_class>
+  <description>Constant from base class '\Symfony\Component\DependencyInjection\ContainerInterface' referenced via child class</description>
+  <highlighted_element>ContainerBuilder</highlighted_element>
+  <language>PHP</language>
+  <offset>59</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/DependencyInjection/Compiler/TestServiceContainerWeakRefPass.php</file>
+  <line>47</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/DependencyInjection/Compiler/TestServiceContainerWeakRefPass.php" />
+  <problem_class id="PhpClassConstantAccessedViaChildClassInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Class constant referenced via child class</problem_class>
+  <description>Constant from base class '\Symfony\Component\DependencyInjection\ContainerInterface' referenced via child class</description>
+  <highlighted_element>ContainerBuilder</highlighted_element>
+  <language>PHP</language>
+  <offset>67</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/DependencyInjection/FrameworkExtension.php</file>
+  <line>3154</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/DependencyInjection/FrameworkExtension.php" />
+  <problem_class id="PhpClassConstantAccessedViaChildClassInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Class constant referenced via child class</problem_class>
+  <description>Constant from base class '\Symfony\Component\DependencyInjection\ContainerInterface' referenced via child class</description>
+  <highlighted_element>ContainerBuilder</highlighted_element>
+  <language>PHP</language>
+  <offset>71</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/DependencyInjection/FrameworkExtension.php</file>
+  <line>3155</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/DependencyInjection/FrameworkExtension.php" />
+  <problem_class id="PhpClassConstantAccessedViaChildClassInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Class constant referenced via child class</problem_class>
+  <description>Constant from base class '\Symfony\Component\DependencyInjection\ContainerInterface' referenced via child class</description>
+  <highlighted_element>ContainerBuilder</highlighted_element>
+  <language>PHP</language>
+  <offset>59</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/DependencyInjection/FrameworkExtension.php</file>
+  <line>3163</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/DependencyInjection/FrameworkExtension.php" />
+  <problem_class id="PhpClassConstantAccessedViaChildClassInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Class constant referenced via child class</problem_class>
+  <description>Constant from base class '\Symfony\Component\DependencyInjection\ContainerInterface' referenced via child class</description>
+  <highlighted_element>ContainerBuilder</highlighted_element>
+  <language>PHP</language>
+  <offset>61</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/DependencyInjection/FrameworkExtension.php</file>
+  <line>3164</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/DependencyInjection/FrameworkExtension.php" />
+  <problem_class id="PhpClassConstantAccessedViaChildClassInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Class constant referenced via child class</problem_class>
+  <description>Constant from base class '\Symfony\Component\DependencyInjection\ContainerInterface' referenced via child class</description>
+  <highlighted_element>ContainerBuilder</highlighted_element>
+  <language>PHP</language>
+  <offset>61</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/DependencyInjection/FrameworkExtension.php</file>
+  <line>3165</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/DependencyInjection/FrameworkExtension.php" />
+  <problem_class id="PhpClassConstantAccessedViaChildClassInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Class constant referenced via child class</problem_class>
+  <description>Constant from base class '\Symfony\Component\DependencyInjection\ContainerInterface' referenced via child class</description>
+  <highlighted_element>ContainerBuilder</highlighted_element>
+  <language>PHP</language>
+  <offset>64</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/DependencyInjection/FrameworkExtension.php</file>
+  <line>3166</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/DependencyInjection/FrameworkExtension.php" />
+  <problem_class id="PhpClassConstantAccessedViaChildClassInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Class constant referenced via child class</problem_class>
+  <description>Constant from base class '\Symfony\Component\DependencyInjection\ContainerInterface' referenced via child class</description>
+  <highlighted_element>ContainerBuilder</highlighted_element>
+  <language>PHP</language>
+  <offset>59</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/DependencyInjection/FrameworkExtension.php</file>
+  <line>3174</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/DependencyInjection/FrameworkExtension.php" />
+  <problem_class id="PhpClassConstantAccessedViaChildClassInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Class constant referenced via child class</problem_class>
+  <description>Constant from base class '\Symfony\Component\DependencyInjection\ContainerInterface' referenced via child class</description>
+  <highlighted_element>ContainerBuilder</highlighted_element>
+  <language>PHP</language>
+  <offset>61</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/DependencyInjection/FrameworkExtension.php</file>
+  <line>3175</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/DependencyInjection/FrameworkExtension.php" />
+  <problem_class id="PhpClassConstantAccessedViaChildClassInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Class constant referenced via child class</problem_class>
+  <description>Constant from base class '\Symfony\Component\DependencyInjection\ContainerInterface' referenced via child class</description>
+  <highlighted_element>ContainerBuilder</highlighted_element>
+  <language>PHP</language>
+  <offset>61</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/DependencyInjection/FrameworkExtension.php</file>
+  <line>3176</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/DependencyInjection/FrameworkExtension.php" />
+  <problem_class id="PhpClassConstantAccessedViaChildClassInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Class constant referenced via child class</problem_class>
+  <description>Constant from base class '\Symfony\Component\DependencyInjection\ContainerInterface' referenced via child class</description>
+  <highlighted_element>ContainerBuilder</highlighted_element>
+  <language>PHP</language>
+  <offset>64</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/DependencyInjection/FrameworkExtension.php</file>
+  <line>3177</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/DependencyInjection/FrameworkExtension.php" />
+  <problem_class id="PhpClassConstantAccessedViaChildClassInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Class constant referenced via child class</problem_class>
+  <description>Constant from base class '\Symfony\Component\DependencyInjection\ContainerInterface' referenced via child class</description>
+  <highlighted_element>ContainerBuilder</highlighted_element>
+  <language>PHP</language>
+  <offset>59</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/DependencyInjection/FrameworkExtension.php</file>
+  <line>3185</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/DependencyInjection/FrameworkExtension.php" />
+  <problem_class id="PhpClassConstantAccessedViaChildClassInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Class constant referenced via child class</problem_class>
+  <description>Constant from base class '\Symfony\Component\DependencyInjection\ContainerInterface' referenced via child class</description>
+  <highlighted_element>ContainerBuilder</highlighted_element>
+  <language>PHP</language>
+  <offset>53</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/DependencyInjection/VirtualRequestStackPass.php</file>
+  <line>27</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/DependencyInjection/VirtualRequestStackPass.php" />
+  <problem_class id="PhpClassConstantAccessedViaChildClassInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Class constant referenced via child class</problem_class>
+  <description>Constant from base class '\Symfony\Component\DependencyInjection\ContainerInterface' referenced via child class</description>
+  <highlighted_element>ContainerBuilder</highlighted_element>
+  <language>PHP</language>
+  <offset>115</offset>
+  <length>16</length>
+</problem>
+</problems>

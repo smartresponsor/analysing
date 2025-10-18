@@ -1,0 +1,386 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Query/QueryBuilder.php</file>
+  <line>433</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Query/QueryBuilder.php" />
+  <problem_class id="PhpUndefinedVariableInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Undefined variable</problem_class>
+  <description>Variable '$sql' is probably undefined</description>
+  <highlighted_element>$sql</highlighted_element>
+  <language>PHP</language>
+  <offset>23</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/PhpUnit/PhpUnitNamespacedFixer.php</file>
+  <line>81</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/PhpUnit/PhpUnitNamespacedFixer.php" />
+  <problem_class id="PhpUndefinedVariableInspection" severity="ERROR" attribute_key="ERRORS_ATTRIBUTES">Undefined variable</problem_class>
+  <description>Undefined variable '$codeSample'</description>
+  <highlighted_element>$codeSample</highlighted_element>
+  <language>PHP</language>
+  <offset>31</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/AutowirePass.php</file>
+  <line>427</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/AutowirePass.php" />
+  <problem_class id="PhpUndefinedVariableInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Undefined variable</problem_class>
+  <description>Variable '$index' is probably undefined</description>
+  <highlighted_element>$index</highlighted_element>
+  <language>PHP</language>
+  <offset>47</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/CheckTypeDeclarationsPass.php</file>
+  <line>177</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/CheckTypeDeclarationsPass.php" />
+  <problem_class id="PhpUndefinedVariableInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Undefined variable</problem_class>
+  <description>Variable '$e' is probably undefined</description>
+  <highlighted_element>$e</highlighted_element>
+  <language>PHP</language>
+  <offset>70</offset>
+  <length>2</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/InlineServiceDefinitionsPass.php</file>
+  <line>225</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/InlineServiceDefinitionsPass.php" />
+  <problem_class id="PhpUndefinedVariableInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Undefined variable</problem_class>
+  <description>Variable '$srcId' is probably undefined</description>
+  <highlighted_element>$srcId</highlighted_element>
+  <language>PHP</language>
+  <offset>57</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/ResolveBindingsPass.php</file>
+  <line>223</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/ResolveBindingsPass.php" />
+  <problem_class id="PhpUndefinedVariableInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Undefined variable</problem_class>
+  <description>Variable '$binding' is probably undefined</description>
+  <highlighted_element>$binding</highlighted_element>
+  <language>PHP</language>
+  <offset>47</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/ResolveDecoratorStackPass.php</file>
+  <line>61</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/ResolveDecoratorStackPass.php" />
+  <problem_class id="PhpUndefinedVariableInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Undefined variable</problem_class>
+  <description>Variable '$k' is probably undefined</description>
+  <highlighted_element>$k</highlighted_element>
+  <language>PHP</language>
+  <offset>47</offset>
+  <length>2</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/ResolveDecoratorStackPass.php</file>
+  <line>113</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/ResolveDecoratorStackPass.php" />
+  <problem_class id="PhpUndefinedVariableInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Undefined variable</problem_class>
+  <description>Variable '$decoratedId' is probably undefined</description>
+  <highlighted_element>$decoratedId</highlighted_element>
+  <language>PHP</language>
+  <offset>80</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/ResolveDecoratorStackPass.php</file>
+  <line>115</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/ResolveDecoratorStackPass.php" />
+  <problem_class id="PhpUndefinedVariableInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Undefined variable</problem_class>
+  <description>Variable '$definition' is probably undefined</description>
+  <highlighted_element>$definition</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/ResolveNamedArgumentsPass.php</file>
+  <line>87</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/ResolveNamedArgumentsPass.php" />
+  <problem_class id="PhpUndefinedVariableInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Undefined variable</problem_class>
+  <description>Variable '$class' is probably undefined</description>
+  <highlighted_element>$class</highlighted_element>
+  <language>PHP</language>
+  <offset>180</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/ResolveNamedArgumentsPass.php</file>
+  <line>91</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/ResolveNamedArgumentsPass.php" />
+  <problem_class id="PhpUndefinedVariableInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Undefined variable</problem_class>
+  <description>Variable '$class' is probably undefined</description>
+  <highlighted_element>$class</highlighted_element>
+  <language>PHP</language>
+  <offset>227</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/ResolveNamedArgumentsPass.php</file>
+  <line>104</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/ResolveNamedArgumentsPass.php" />
+  <problem_class id="PhpUndefinedVariableInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Undefined variable</problem_class>
+  <description>Variable '$class' is probably undefined</description>
+  <highlighted_element>$class</highlighted_element>
+  <language>PHP</language>
+  <offset>189</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Dumper/PhpDumper.php</file>
+  <line>613</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Dumper/PhpDumper.php" />
+  <problem_class id="PhpUndefinedVariableInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Undefined variable</problem_class>
+  <description>Variable '$code' is probably undefined</description>
+  <highlighted_element>$code</highlighted_element>
+  <language>PHP</language>
+  <offset>77</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Dumper/PhpDumper.php</file>
+  <line>917</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Dumper/PhpDumper.php" />
+  <problem_class id="PhpUndefinedVariableInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Undefined variable</problem_class>
+  <description>Variable '$factory' is probably undefined</description>
+  <highlighted_element>$factory</highlighted_element>
+  <language>PHP</language>
+  <offset>57</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Dumper/PhpDumper.php</file>
+  <line>950</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Dumper/PhpDumper.php" />
+  <problem_class id="PhpUndefinedVariableInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Undefined variable</problem_class>
+  <description>Variable '$factory' is probably undefined</description>
+  <highlighted_element>$factory</highlighted_element>
+  <language>PHP</language>
+  <offset>127</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Dumper/PhpDumper.php</file>
+  <line>1156</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Dumper/PhpDumper.php" />
+  <problem_class id="PhpUndefinedVariableInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Undefined variable</problem_class>
+  <description>Variable '$value' is probably undefined</description>
+  <highlighted_element>$value</highlighted_element>
+  <language>PHP</language>
+  <offset>104</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Loader/FileLoader.php</file>
+  <line>90</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Loader/FileLoader.php" />
+  <problem_class id="PhpUndefinedVariableInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Undefined variable</problem_class>
+  <description>Variable '$frame' is probably undefined</description>
+  <highlighted_element>$frame</highlighted_element>
+  <language>PHP</language>
+  <offset>29</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Loader/FileLoader.php</file>
+  <line>340</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Loader/FileLoader.php" />
+  <problem_class id="PhpUndefinedVariableInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Undefined variable</problem_class>
+  <description>Variable '$excludePattern' is probably undefined</description>
+  <highlighted_element>$excludePattern</highlighted_element>
+  <language>PHP</language>
+  <offset>220</offset>
+  <length>15</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Loader/XmlFileLoader.php</file>
+  <line>494</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Loader/XmlFileLoader.php" />
+  <problem_class id="PhpUndefinedVariableInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Undefined variable</problem_class>
+  <description>Variable '$dom' is probably undefined</description>
+  <highlighted_element>$dom</highlighted_element>
+  <language>PHP</language>
+  <offset>34</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/event-dispatcher/Debug/TraceableEventDispatcher.php</file>
+  <line>284</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/event-dispatcher/Debug/TraceableEventDispatcher.php" />
+  <problem_class id="PhpUndefinedVariableInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Undefined variable</problem_class>
+  <description>Variable '$context' is probably undefined</description>
+  <highlighted_element>$context</highlighted_element>
+  <language>PHP</language>
+  <offset>92</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/event-dispatcher/Debug/TraceableEventDispatcher.php</file>
+  <line>290</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/event-dispatcher/Debug/TraceableEventDispatcher.php" />
+  <problem_class id="PhpUndefinedVariableInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Undefined variable</problem_class>
+  <description>Variable '$context' is probably undefined</description>
+  <highlighted_element>$context</highlighted_element>
+  <language>PHP</language>
+  <offset>98</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/event-dispatcher/Debug/TraceableEventDispatcher.php</file>
+  <line>294</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/event-dispatcher/Debug/TraceableEventDispatcher.php" />
+  <problem_class id="PhpUndefinedVariableInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Undefined variable</problem_class>
+  <description>Variable '$context' is probably undefined</description>
+  <highlighted_element>$context</highlighted_element>
+  <language>PHP</language>
+  <offset>107</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/SecretsSetCommand.php</file>
+  <line>119</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Command/SecretsSetCommand.php" />
+  <problem_class id="PhpUndefinedVariableInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Undefined variable</problem_class>
+  <description>Variable '$value' is probably undefined</description>
+  <highlighted_element>$value</highlighted_element>
+  <language>PHP</language>
+  <offset>28</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/DependencyInjection/FrameworkExtension.php</file>
+  <line>2236</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/DependencyInjection/FrameworkExtension.php" />
+  <problem_class id="PhpUndefinedVariableInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Undefined variable</problem_class>
+  <description>Variable '$storeDefinitionId' is probably undefined</description>
+  <highlighted_element>$storeDefinitionId</highlighted_element>
+  <language>PHP</language>
+  <offset>65</offset>
+  <length>18</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/DependencyInjection/FrameworkExtension.php</file>
+  <line>2609</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/DependencyInjection/FrameworkExtension.php" />
+  <problem_class id="PhpUndefinedVariableInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Undefined variable</problem_class>
+  <description>Variable '$provider' is probably undefined</description>
+  <highlighted_element>$provider</highlighted_element>
+  <language>PHP</language>
+  <offset>58</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/DependencyInjection/FrameworkExtension.php</file>
+  <line>2612</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/DependencyInjection/FrameworkExtension.php" />
+  <problem_class id="PhpUndefinedVariableInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Undefined variable</problem_class>
+  <description>Variable '$adapter' is probably undefined</description>
+  <highlighted_element>$adapter</highlighted_element>
+  <language>PHP</language>
+  <offset>50</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/DependencyInjection/FrameworkExtension.php</file>
+  <line>2649</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/DependencyInjection/FrameworkExtension.php" />
+  <problem_class id="PhpUndefinedVariableInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Undefined variable</problem_class>
+  <description>Variable '$tagAwareId' is probably undefined</description>
+  <highlighted_element>$tagAwareId</highlighted_element>
+  <language>PHP</language>
+  <offset>53</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/HttpClientTestCase.php</file>
+  <line>301</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/HttpClientTestCase.php" />
+  <problem_class id="PhpUndefinedVariableInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Undefined variable</problem_class>
+  <description>Variable '$r' is probably undefined</description>
+  <highlighted_element>$r</highlighted_element>
+  <language>PHP</language>
+  <offset>37</offset>
+  <length>2</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/HttpClientTestCase.php</file>
+  <line>302</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/HttpClientTestCase.php" />
+  <problem_class id="PhpUndefinedVariableInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Undefined variable</problem_class>
+  <description>Variable '$chunk' is probably undefined</description>
+  <highlighted_element>$chunk</highlighted_element>
+  <language>PHP</language>
+  <offset>29</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/HttpClientTestCase.php</file>
+  <line>492</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/HttpClientTestCase.php" />
+  <problem_class id="PhpUndefinedVariableInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Undefined variable</problem_class>
+  <description>Variable '$r' is probably undefined</description>
+  <highlighted_element>$r</highlighted_element>
+  <language>PHP</language>
+  <offset>37</offset>
+  <length>2</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/HttpClientTestCase.php</file>
+  <line>534</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/HttpClientTestCase.php" />
+  <problem_class id="PhpUndefinedVariableInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Undefined variable</problem_class>
+  <description>Variable '$r2' is probably undefined</description>
+  <highlighted_element>$r2</highlighted_element>
+  <language>PHP</language>
+  <offset>32</offset>
+  <length>3</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/options-resolver/OptionsResolver.php</file>
+  <line>1034</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/options-resolver/OptionsResolver.php" />
+  <problem_class id="PhpUndefinedVariableInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Undefined variable</problem_class>
+  <description>Variable '$resolver' is probably undefined</description>
+  <highlighted_element>$resolver</highlighted_element>
+  <language>PHP</language>
+  <offset>16</offset>
+  <length>9</length>
+</problem>
+</problems>

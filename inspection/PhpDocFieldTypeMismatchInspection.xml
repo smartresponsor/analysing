@@ -1,0 +1,3326 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/collections/src/Criteria.php</file>
+  <line>30</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/collections/src/Criteria.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, Order&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>25</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/collections/src/Expr/CompositeExpression.php</file>
+  <line>20</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/collections/src/Expr/CompositeExpression.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var list&lt;Expression&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>21</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Cache/ArrayResult.php</file>
+  <line>15</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Cache/ArrayResult.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var list&lt;array&lt;string, mixed&gt;&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>31</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Connection.php</file>
+  <line>138</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Connection.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string,mixed&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>24</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/IBMDB2/Statement.php</file>
+  <line>44</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/IBMDB2/Statement.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;int,string|resource|null&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>36</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/Mysqli/Initializer/Options.php</file>
+  <line>15</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/Mysqli/Initializer/Options.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;int,mixed&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>21</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/Mysqli/Result.php</file>
+  <line>42</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/Mysqli/Result.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;int,string&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>22</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/OCI8/ConvertPositionalToNamedPlaceholders.php</file>
+  <line>20</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/OCI8/ConvertPositionalToNamedPlaceholders.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var list&lt;string&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>17</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/OCI8/ConvertPositionalToNamedPlaceholders.php</file>
+  <line>23</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/OCI8/ConvertPositionalToNamedPlaceholders.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;int,string&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>22</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/OCI8/Statement.php</file>
+  <line>34</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/OCI8/Statement.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;int,string&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>22</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/PgSQL/ConvertParameters.php</file>
+  <line>14</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/PgSQL/ConvertParameters.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var list&lt;string&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>17</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/PgSQL/Statement.php</file>
+  <line>40</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/PgSQL/Statement.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;int, mixed&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>22</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/PgSQL/Statement.php</file>
+  <line>43</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/PgSQL/Statement.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;int, int&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>20</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/SQLSrv/Statement.php</file>
+  <line>50</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/SQLSrv/Statement.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;int, mixed&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>22</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/SQLSrv/Statement.php</file>
+  <line>57</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/SQLSrv/Statement.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;int, int&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>20</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/DriverManager.php</file>
+  <line>100</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/DriverManager.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, string&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>26</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/ExpandArrayParameters.php</file>
+  <line>18</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/ExpandArrayParameters.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;int,mixed&gt;|array&lt;string,mixed&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>41</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/ExpandArrayParameters.php</file>
+  <line>21</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/ExpandArrayParameters.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;int,Type|int|string|null&gt;|array&lt;string,Type|int|string|null&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>71</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/ExpandArrayParameters.php</file>
+  <line>26</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/ExpandArrayParameters.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var list&lt;string&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>17</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/ExpandArrayParameters.php</file>
+  <line>29</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/ExpandArrayParameters.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var list&lt;mixed&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/ExpandArrayParameters.php</file>
+  <line>32</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/ExpandArrayParameters.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;int,Type|int|string|null&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>36</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Logging/Statement.php</file>
+  <line>23</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Logging/Statement.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;int,mixed&gt;|array&lt;string,mixed&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>41</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Logging/Statement.php</file>
+  <line>26</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Logging/Statement.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;int,int&gt;|array&lt;string,int&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>37</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Portability/Driver.php</file>
+  <line>18</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Portability/Driver.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var 0|ColumnCase::LOWER|ColumnCase::UPPER</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>42</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Portability/Middleware.php</file>
+  <line>15</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Portability/Middleware.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var 0|ColumnCase::LOWER|ColumnCase::UPPER</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>42</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Query/QueryBuilder.php</file>
+  <line>109</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Query/QueryBuilder.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;int, int|string|Type|null&gt;|array&lt;string, int|string|Type|null&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>73</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Tools/Console/Command/ReservedWordsCommand.php</file>
+  <line>41</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Tools/Console/Command/ReservedWordsCommand.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string,KeywordList&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>30</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Tools/DsnParser.php</file>
+  <line>25</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Tools/DsnParser.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, string|class-string&lt;Driver&gt;&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>47</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Types/TypeRegistry.php</file>
+  <line>17</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Types/TypeRegistry.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, Type&gt; Map of type names and their corresponding flyweight objects.</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>85</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Types/TypeRegistry.php</file>
+  <line>19</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Types/TypeRegistry.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;int, string&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>23</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/event-manager/src/EventManager.php</file>
+  <line>20</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/event-manager/src/EventManager.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, object[]&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>28</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/lexer/src/AbstractLexer.php</file>
+  <line>35</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/lexer/src/AbstractLexer.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var list&lt;Token&lt;T, V&gt;&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>22</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/lexer/src/AbstractLexer.php</file>
+  <line>66</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/lexer/src/AbstractLexer.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var non-empty-string|null</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>26</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/lexer/src/Token.php</file>
+  <line>21</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/lexer/src/Token.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var V</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/AbstractQuery.php</file>
+  <line>85</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/AbstractQuery.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var ArrayCollection|Parameter[]</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>32</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/CollectionCacheKey.php</file>
+  <line>20</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/CollectionCacheKey.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, mixed&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>25</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/DefaultCollectionHydrator.php</file>
+  <line>24</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/DefaultCollectionHydrator.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string,mixed&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>24</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/DefaultEntityHydrator.php</file>
+  <line>27</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/DefaultEntityHydrator.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string,mixed&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>24</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/DefaultQueryCache.php</file>
+  <line>40</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/DefaultQueryCache.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string,mixed&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>24</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/EntityCacheKey.php</file>
+  <line>20</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/EntityCacheKey.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, mixed&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>25</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/Logging/CacheLoggerChain.php</file>
+  <line>13</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/Logging/CacheLoggerChain.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, CacheLogger&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>31</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/Logging/StatisticsCacheLogger.php</file>
+  <line>18</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/Logging/StatisticsCacheLogger.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, int&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>23</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/Logging/StatisticsCacheLogger.php</file>
+  <line>21</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/Logging/StatisticsCacheLogger.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, int&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>23</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/Logging/StatisticsCacheLogger.php</file>
+  <line>24</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/Logging/StatisticsCacheLogger.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, int&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>23</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/RegionsConfiguration.php</file>
+  <line>12</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/RegionsConfiguration.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string,int&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>22</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/RegionsConfiguration.php</file>
+  <line>15</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Cache/RegionsConfiguration.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string,int&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>22</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/EntityRepository.php</file>
+  <line>38</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/EntityRepository.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var class-string&lt;T&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>20</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Event/PreUpdateEventArgs.php</file>
+  <line>22</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Event/PreUpdateEventArgs.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, array{mixed, mixed}|PersistentCollection&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>60</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/Hydration/AbstractHydrator.php</file>
+  <line>57</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/Hydration/AbstractHydrator.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, ClassMetadata&lt;object&gt;&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>41</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/Hydration/AbstractHydrator.php</file>
+  <line>64</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/Hydration/AbstractHydrator.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, mixed[]|null&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>32</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/Hydration/AbstractHydrator.php</file>
+  <line>76</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/Hydration/AbstractHydrator.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, mixed&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>25</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/Hydration/ArrayHydrator.php</file>
+  <line>19</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/Hydration/ArrayHydrator.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string,bool&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>23</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/Hydration/ArrayHydrator.php</file>
+  <line>30</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/Hydration/ArrayHydrator.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string,string&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>25</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/Hydration/ObjectHydrator.php</file>
+  <line>48</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/Hydration/ObjectHydrator.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, PersistentCollection&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>40</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/StronglyConnectedComponents.php</file>
+  <line>35</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/StronglyConnectedComponents.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;int, object&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>23</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/StronglyConnectedComponents.php</file>
+  <line>43</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/StronglyConnectedComponents.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;int, self::*&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>24</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/StronglyConnectedComponents.php</file>
+  <line>51</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/StronglyConnectedComponents.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;int, array&lt;int, bool&gt;&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>33</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/StronglyConnectedComponents.php</file>
+  <line>58</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/StronglyConnectedComponents.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;int, int&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>20</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/StronglyConnectedComponents.php</file>
+  <line>65</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/StronglyConnectedComponents.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;int, int&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>20</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/StronglyConnectedComponents.php</file>
+  <line>74</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/StronglyConnectedComponents.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;int, object&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>23</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/StronglyConnectedComponents.php</file>
+  <line>81</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/StronglyConnectedComponents.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var list&lt;int&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/TopologicalSort/CycleDetectedException.php</file>
+  <line>13</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/TopologicalSort/CycleDetectedException.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var list&lt;object&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>17</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/TopologicalSort.php</file>
+  <line>30</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/TopologicalSort.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;int, object&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>23</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/TopologicalSort.php</file>
+  <line>38</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/TopologicalSort.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;int, self::*&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>24</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/TopologicalSort.php</file>
+  <line>47</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/TopologicalSort.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;int, array&lt;int, bool&gt;&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>33</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/TopologicalSort.php</file>
+  <line>54</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/TopologicalSort.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var list&lt;object&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>17</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/AssociationMapping.php</file>
+  <line>23</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/AssociationMapping.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var list&lt;'persist'|'remove'|'detach'|'refresh'|'all'&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>54</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/AssociationMapping.php</file>
+  <line>30</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/AssociationMapping.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var ClassMetadata::FETCH_*|null</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>32</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/AssociationMapping.php</file>
+  <line>44</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/AssociationMapping.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var class-string|null</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>22</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/AssociationMapping.php</file>
+  <line>55</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/AssociationMapping.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var class-string|null</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>22</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/AssociationMapping.php</file>
+  <line>65</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/AssociationMapping.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var class-string|null</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>22</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/AssociationOverrides.php</file>
+  <line>19</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/AssociationOverrides.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var list&lt;AssociationOverride&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>30</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/AttributeOverrides.php</file>
+  <line>19</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/AttributeOverrides.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var list&lt;AttributeOverride&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>28</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/ChainTypedFieldMapper.php</file>
+  <line>14</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/ChainTypedFieldMapper.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var list&lt;TypedFieldMapper&gt; $typedFieldMappers</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>46</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/ClassMetadata.php</file>
+  <line>259</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/ClassMetadata.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, string&gt;|null</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>31</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/ClassMetadata.php</file>
+  <line>349</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/ClassMetadata.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, FieldMapping&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>32</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/ClassMetadata.php</file>
+  <line>390</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/ClassMetadata.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;int|string, string&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>30</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/ClassMetadata.php</file>
+  <line>488</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/ClassMetadata.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, mixed&gt;|null</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>30</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/ClassMetadata.php</file>
+  <line>545</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/ClassMetadata.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var LegacyReflectionFields|array&lt;string, ReflectionProperty&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>61</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/ClassMetadata.php</file>
+  <line>549</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/ClassMetadata.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, PropertyAccessors\PropertyAccessor&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>54</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/DiscriminatorColumnMapping.php</file>
+  <line>24</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/DiscriminatorColumnMapping.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var class-string&lt;BackedEnum&gt;|null</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>34</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/DiscriminatorColumnMapping.php</file>
+  <line>27</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/DiscriminatorColumnMapping.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, mixed&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>25</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/Driver/DatabaseDriver.php</file>
+  <line>67</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/Driver/DatabaseDriver.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string,Table&gt;|null</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>29</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/EmbeddedClassMapping.php</file>
+  <line>30</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/EmbeddedClassMapping.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var class-string|null</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>22</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/EmbeddedClassMapping.php</file>
+  <line>41</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/EmbeddedClassMapping.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var class-string|null</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>22</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/FieldMapping.php</file>
+  <line>31</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/FieldMapping.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var class-string&lt;BackedEnum&gt;|null</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>34</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/FieldMapping.php</file>
+  <line>48</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/FieldMapping.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var class-string|null This is set when the field is inherited by this</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>70</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/FieldMapping.php</file>
+  <line>59</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/FieldMapping.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var class-string|null</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>22</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/FieldMapping.php</file>
+  <line>64</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/FieldMapping.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var class-string|null This is set when the field does not appear for</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>69</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/JoinColumnMapping.php</file>
+  <line>24</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/JoinColumnMapping.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, mixed&gt;|null</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>30</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/JoinTableMapping.php</file>
+  <line>19</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/JoinTableMapping.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var list&lt;JoinColumnMapping&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>28</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/JoinTableMapping.php</file>
+  <line>22</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/JoinTableMapping.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var list&lt;JoinColumnMapping&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>28</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/JoinTableMapping.php</file>
+  <line>25</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/JoinTableMapping.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, mixed&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>25</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/LegacyReflectionFields.php</file>
+  <line>29</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/LegacyReflectionFields.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, ReflectionProperty|null&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>43</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/ManyToManyOwningSideMapping.php</file>
+  <line>20</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/ManyToManyOwningSideMapping.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var list&lt;mixed&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/ManyToManyOwningSideMapping.php</file>
+  <line>23</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/ManyToManyOwningSideMapping.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, string&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>26</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/ManyToManyOwningSideMapping.php</file>
+  <line>25</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/ManyToManyOwningSideMapping.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, string&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>26</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/ToManyAssociationMappingImplementation.php</file>
+  <line>25</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/ToManyAssociationMappingImplementation.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, 'asc'|'desc'&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>32</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/ToOneOwningSideMapping.php</file>
+  <line>16</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/ToOneOwningSideMapping.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, string&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>26</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/ToOneOwningSideMapping.php</file>
+  <line>19</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/ToOneOwningSideMapping.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, string&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>26</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/ToOneOwningSideMapping.php</file>
+  <line>22</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/ToOneOwningSideMapping.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var list&lt;JoinColumnMapping&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>28</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/ToOneOwningSideMapping.php</file>
+  <line>25</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/ToOneOwningSideMapping.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, string&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>26</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php</file>
+  <line>103</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string,string&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>25</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/Exec/AbstractSqlExecutor.php</file>
+  <line>25</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/Exec/AbstractSqlExecutor.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var list&lt;string&gt;|string</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>24</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/Expr/Base.php</file>
+  <line>30</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/Expr/Base.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var list&lt;class-string&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>23</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/Expr/Base.php</file>
+  <line>33</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/Expr/Base.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var list&lt;string|Stringable&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>28</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/FilterCollection.php</file>
+  <line>37</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/FilterCollection.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, SQLFilter&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>29</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/Parser.php</file>
+  <line>58</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/Parser.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, class-string&lt;Functions\FunctionNode&gt;&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>56</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/Parser.php</file>
+  <line>71</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/Parser.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, class-string&lt;Functions\FunctionNode&gt;&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>56</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/Parser.php</file>
+  <line>94</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/Parser.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, class-string&lt;Functions\FunctionNode&gt;&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>56</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/Parser.php</file>
+  <line>154</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/Parser.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var list&lt;class-string&lt;TreeWalker&gt;&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>35</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/QueryExpressionVisitor.php</file>
+  <line>32</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/QueryExpressionVisitor.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var list&lt;mixed&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/ResultSetMapping.php</file>
+  <line>41</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/ResultSetMapping.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, class-string&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>32</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/ResultSetMapping.php</file>
+  <line>144</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/ResultSetMapping.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, class-string&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>32</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/SqlWalker.php</file>
+  <line>101</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/SqlWalker.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, string&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>26</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/SqlWalker.php</file>
+  <line>108</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/SqlWalker.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, array&lt;string, string&gt;&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>41</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/TreeWalkerChain.php</file>
+  <line>22</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/TreeWalkerChain.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var list&lt;class-string&lt;TreeWalker&gt;&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>35</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query.php</file>
+  <line>127</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string,Type&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>23</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Tools/Pagination/LimitSubqueryOutputWalker.php</file>
+  <line>68</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Tools/Pagination/LimitSubqueryOutputWalker.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var list&lt;PathExpression&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>25</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/UnitOfWork.php</file>
+  <line>210</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/UnitOfWork.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;int, array{AssociationMapping, object}&gt; indexed by respective object spl_object_id()</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>95</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/UnitOfWork.php</file>
+  <line>287</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/UnitOfWork.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;int, true&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>21</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/UnitOfWork.php</file>
+  <line>298</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/UnitOfWork.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, array&lt;string, mixed&gt;&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>40</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/Event/PreUpdateEventArgs.php</file>
+  <line>20</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/Event/PreUpdateEventArgs.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, array&lt;int, mixed&gt;&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>37</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/Mapping/AbstractClassMetadataFactory.php</file>
+  <line>44</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/Mapping/AbstractClassMetadataFactory.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, ClassMetadata&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>33</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/Mapping/Driver/ColocatedMappingDriver.php</file>
+  <line>24</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/Mapping/Driver/ColocatedMappingDriver.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;int, string&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>23</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/Mapping/Driver/ColocatedMappingDriver.php</file>
+  <line>31</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/Mapping/Driver/ColocatedMappingDriver.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;int, string&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>23</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/Mapping/Driver/ColocatedMappingDriver.php</file>
+  <line>41</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/Mapping/Driver/ColocatedMappingDriver.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;int, string&gt;|null</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>28</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/Mapping/Driver/DefaultFileLocator.php</file>
+  <line>31</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/Mapping/Driver/DefaultFileLocator.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;int, string&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>23</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/Mapping/Driver/MappingDriverChain.php</file>
+  <line>25</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/Mapping/Driver/MappingDriverChain.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, MappingDriver&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>33</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/Mapping/Driver/StaticPHPDriver.php</file>
+  <line>29</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/Mapping/Driver/StaticPHPDriver.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;int, string&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>23</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/Mapping/Driver/StaticPHPDriver.php</file>
+  <line>36</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/Mapping/Driver/StaticPHPDriver.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;int, string&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>23</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/Mapping/Driver/SymfonyFileLocator.php</file>
+  <line>39</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/Mapping/Driver/SymfonyFileLocator.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;int, string&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>23</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/Mapping/Driver/SymfonyFileLocator.php</file>
+  <line>46</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/Mapping/Driver/SymfonyFileLocator.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, string&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>26</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/ObjectManagerDecorator.php</file>
+  <line>17</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/persistence/src/Persistence/ObjectManagerDecorator.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var TObjectManager</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>19</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/AbstractDoctrineAnnotationFixer.php</file>
+  <line>48</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/AbstractDoctrineAnnotationFixer.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;int, array{classIndex: int, token: Token, type: string}&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>67</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/AbstractPhpdocToTypeDeclarationFixer.php</file>
+  <line>59</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/AbstractPhpdocToTypeDeclarationFixer.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, int&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>23</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/AbstractPhpdocToTypeDeclarationFixer.php</file>
+  <line>70</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/AbstractPhpdocToTypeDeclarationFixer.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, bool&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>24</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/AbstractPhpdocToTypeDeclarationFixer.php</file>
+  <line>80</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/AbstractPhpdocToTypeDeclarationFixer.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, bool&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>24</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/AbstractProxyFixer.php</file>
+  <line>31</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/AbstractProxyFixer.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var non-empty-array&lt;string, FixerInterface&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>44</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Cache/Cache.php</file>
+  <line>31</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Cache/Cache.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, string&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>26</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Cache/Signature.php</file>
+  <line>37</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Cache/Signature.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, array&lt;string, mixed&gt;|bool&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>45</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Config.php</file>
+  <line>32</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Config.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var non-empty-string</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>21</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Config.php</file>
+  <line>37</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Config.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var list&lt;FixerInterface&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>25</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Config.php</file>
+  <line>42</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Config.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, RuleSetDefinitionInterface&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>46</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Config.php</file>
+  <line>56</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Config.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var non-empty-string</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>21</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Config.php</file>
+  <line>63</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Config.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var non-empty-string</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>21</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Config.php</file>
+  <line>76</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Config.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, array&lt;string, mixed&gt;|bool&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>45</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/Command/DescribeCommand.php</file>
+  <line>75</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/Command/DescribeCommand.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var ?list&lt;string&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>18</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/Command/DescribeCommand.php</file>
+  <line>82</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/Command/DescribeCommand.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var null|array&lt;string, FixerInterface&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>39</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/Command/DescribeCommand.php</file>
+  <line>577</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/Command/DescribeCommand.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var list&lt;'expand'&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>16</offset>
+  <length>19</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/Command/WorkerCommand.php</file>
+  <line>65</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/Command/WorkerCommand.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var list&lt;FileProcessed&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>24</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/ConfigurationResolver.php</file>
+  <line>122</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/ConfigurationResolver.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var null|list&lt;FixerInterface&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>30</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/ConfigurationResolver.php</file>
+  <line>131</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/ConfigurationResolver.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var _Options</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>13</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/ConfigurationResolver.php</file>
+  <line>169</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/ConfigurationResolver.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var null|list&lt;string&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>22</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/Report/FixReport/ReportSummary.php</file>
+  <line>29</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/Report/FixReport/ReportSummary.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, array{appliedFixers: list&lt;string&gt;, diff: string}&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>68</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/Report/FixReport/ReporterFactory.php</file>
+  <line>28</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/Report/FixReport/ReporterFactory.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, ReporterInterface&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>37</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/Report/ListSetsReport/ReportSummary.php</file>
+  <line>31</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/Report/ListSetsReport/ReportSummary.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var list&lt;RuleSetDefinitionInterface&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>37</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/Report/ListSetsReport/ReporterFactory.php</file>
+  <line>29</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/Report/ListSetsReport/ReporterFactory.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, ReporterInterface&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>37</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/SelfUpdate/NewVersionChecker.php</file>
+  <line>33</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/SelfUpdate/NewVersionChecker.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var null|list&lt;string&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>22</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/WarningsDetector.php</file>
+  <line>32</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/WarningsDetector.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var list&lt;string&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>17</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/DocBlock/Annotation.php</file>
+  <line>58</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/DocBlock/Annotation.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var non-empty-list&lt;Line&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>25</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/DocBlock/Annotation.php</file>
+  <line>85</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/DocBlock/Annotation.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var null|list&lt;string&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>22</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/DocBlock/Annotation.php</file>
+  <line>92</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/DocBlock/Annotation.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var list&lt;NamespaceUseAnalysis&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>31</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/DocBlock/DocBlock.php</file>
+  <line>33</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/DocBlock/DocBlock.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var list&lt;Line&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>15</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/DocBlock/DocBlock.php</file>
+  <line>38</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/DocBlock/DocBlock.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var null|list&lt;Annotation&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>26</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/DocBlock/DocBlock.php</file>
+  <line>45</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/DocBlock/DocBlock.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var list&lt;NamespaceUseAnalysis&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>31</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/DocBlock/TypeExpression.php</file>
+  <line>244</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/DocBlock/TypeExpression.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var list&lt;array{start_index: int, expression: self}&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>52</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/DocBlock/TypeExpression.php</file>
+  <line>249</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/DocBlock/TypeExpression.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var list&lt;NamespaceUseAnalysis&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>31</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Doctrine/Annotation/DocLexer.php</file>
+  <line>64</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Doctrine/Annotation/DocLexer.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, self::T_*&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>29</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Doctrine/Annotation/DocLexer.php</file>
+  <line>78</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Doctrine/Annotation/DocLexer.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var list&lt;Token&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Documentation/FixerDocumentGenerator.php</file>
+  <line>52</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Documentation/FixerDocumentGenerator.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, RuleSetDefinitionInterface&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>46</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Error/Error.php</file>
+  <line>45</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Error/Error.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var self::TYPE_*</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>17</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Error/Error.php</file>
+  <line>53</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Error/Error.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var list&lt;string&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>17</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Error/ErrorsManager.php</file>
+  <line>29</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Error/ErrorsManager.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var list&lt;Error&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/FileRemoval.php</file>
+  <line>32</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/FileRemoval.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, true&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>24</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Alias/NoAliasFunctionsFixer.php</file>
+  <line>174</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Alias/NoAliasFunctionsFixer.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, array{string, int}|string&gt; stores alias (key) - master (value) functions mapping</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>99</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Alias/NoMixedEchoPrintFixer.php</file>
+  <line>50</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Alias/NoMixedEchoPrintFixer.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var T_ECHO|T_PRINT</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>19</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Basic/NonPrintableCharacterFixer.php</file>
+  <line>65</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Basic/NonPrintableCharacterFixer.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, array{string, string}&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>41</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Casing/NativeTypeDeclarationCasingFixer.php</file>
+  <line>54</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Casing/NativeTypeDeclarationCasingFixer.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, true&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>24</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/ClassNotation/ClassAttributesSeparationFixer.php</file>
+  <line>80</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/ClassNotation/ClassAttributesSeparationFixer.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, string&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>26</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/ClassNotation/FinalPublicMethodForAbstractClassFixer.php</file>
+  <line>32</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/ClassNotation/FinalPublicMethodForAbstractClassFixer.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, true&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>24</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/ClassNotation/ModifierKeywordsFixer.php</file>
+  <line>61</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/ClassNotation/ModifierKeywordsFixer.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var list&lt;'const'|'method'|'promoted_property'|'property'&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>58</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/ClassNotation/OrderedClassElementsFixer.php</file>
+  <line>130</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/ClassNotation/OrderedClassElementsFixer.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, int&gt; Resolved configuration array (type =&gt; position)</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>71</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Comment/CommentToPhpdocFixer.php</file>
+  <line>53</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Comment/CommentToPhpdocFixer.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var list&lt;string&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>17</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/ConfigurableFixerTrait.php</file>
+  <line>41</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/ConfigurableFixerTrait.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var null|TFixerComputedConfig</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>30</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/ConstantNotation/NativeConstantInvocationFixer.php</file>
+  <line>60</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/ConstantNotation/NativeConstantInvocationFixer.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, true&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>24</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/ConstantNotation/NativeConstantInvocationFixer.php</file>
+  <line>65</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/ConstantNotation/NativeConstantInvocationFixer.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, true&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>24</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/ControlStructure/NoUnneededControlParenthesesFixer.php</file>
+  <line>157</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/ControlStructure/NoUnneededControlParenthesesFixer.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var list&lt;_PhpTokenPrototypePartial&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>36</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/ControlStructure/SimplifiedIfReturnFixer.php</file>
+  <line>34</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/ControlStructure/SimplifiedIfReturnFixer.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var list&lt;array{isNegative: bool, sequence: non-empty-list&lt;_PhpTokenPrototypePartial&gt;}&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>87</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/ControlStructure/SwitchContinueToBreakFixer.php</file>
+  <line>31</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/ControlStructure/SwitchContinueToBreakFixer.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var list&lt;int&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/ControlStructure/YodaStyleFixer.php</file>
+  <line>70</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/ControlStructure/YodaStyleFixer.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var list&lt;_PhpTokenKind&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>24</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/FunctionNotation/PhpdocToPropertyTypeFixer.php</file>
+  <line>50</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/FunctionNotation/PhpdocToPropertyTypeFixer.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, true&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>24</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/FunctionNotation/PhpdocToReturnTypeFixer.php</file>
+  <line>54</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/FunctionNotation/PhpdocToReturnTypeFixer.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var non-empty-list&lt;_PhpTokenArray&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>35</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/FunctionNotation/PhpdocToReturnTypeFixer.php</file>
+  <line>63</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/FunctionNotation/PhpdocToReturnTypeFixer.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, true&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>24</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Import/FullyQualifiedStrictTypesFixer.php</file>
+  <line>96</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Import/FullyQualifiedStrictTypesFixer.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;int&lt;0, max&gt;, array&lt;string, true&gt;&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>44</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Import/FullyQualifiedStrictTypesFixer.php</file>
+  <line>118</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Import/FullyQualifiedStrictTypesFixer.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var _Uses</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/LanguageConstruct/FunctionToConstantFixer.php</file>
+  <line>50</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/LanguageConstruct/FunctionToConstantFixer.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var null|array&lt;string, non-empty-list&lt;Token&gt;&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>46</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/LanguageConstruct/FunctionToConstantFixer.php</file>
+  <line>55</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/LanguageConstruct/FunctionToConstantFixer.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, non-empty-list&lt;Token&gt;&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>41</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/LanguageConstruct/SingleSpaceAroundConstructFixer.php</file>
+  <line>146</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/LanguageConstruct/SingleSpaceAroundConstructFixer.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, int&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>23</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/LanguageConstruct/SingleSpaceAroundConstructFixer.php</file>
+  <line>151</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/LanguageConstruct/SingleSpaceAroundConstructFixer.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, int&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>23</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/LanguageConstruct/SingleSpaceAroundConstructFixer.php</file>
+  <line>156</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/LanguageConstruct/SingleSpaceAroundConstructFixer.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, int&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>23</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Operator/BinaryOperatorSpacesFixer.php</file>
+  <line>188</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Operator/BinaryOperatorSpacesFixer.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, string&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>26</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Operator/BinaryOperatorSpacesFixer.php</file>
+  <line>193</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Operator/BinaryOperatorSpacesFixer.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, string&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>26</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Operator/LongToShorthandOperatorFixer.php</file>
+  <line>49</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Operator/LongToShorthandOperatorFixer.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var non-empty-list&lt;string&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>27</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Operator/OperatorLinebreakFixer.php</file>
+  <line>63</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Operator/OperatorLinebreakFixer.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var list&lt;_PhpTokenPrototypePartial&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>36</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/PhpUnit/PhpUnitAttributesFixer.php</file>
+  <line>56</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/PhpUnit/PhpUnitAttributesFixer.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, string&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>26</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/PhpUnit/PhpUnitDedicateAssertFixer.php</file>
+  <line>126</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/PhpUnit/PhpUnitDedicateAssertFixer.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var list&lt;string&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>17</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/PhpUnit/PhpUnitDedicateAssertInternalTypeFixer.php</file>
+  <line>50</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/PhpUnit/PhpUnitDedicateAssertInternalTypeFixer.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, string&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>26</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/PhpUnit/PhpUnitExpectationFixer.php</file>
+  <line>52</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/PhpUnit/PhpUnitExpectationFixer.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, string&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>26</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/PhpUnit/PhpUnitNamespacedFixer.php</file>
+  <line>60</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/PhpUnit/PhpUnitNamespacedFixer.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, string&gt; Class Mappings</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>41</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/PhpUnit/PhpUnitTestCaseStaticMethodCallsFixer.php</file>
+  <line>393</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/PhpUnit/PhpUnitTestCaseStaticMethodCallsFixer.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var non-empty-array&lt;string, non-empty-list&lt;_PhpTokenArray&gt;&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>60</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Phpdoc/AlignMultilineCommentFixer.php</file>
+  <line>52</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Phpdoc/AlignMultilineCommentFixer.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var null|non-empty-list&lt;int&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>29</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Phpdoc/PhpdocAnnotationWithoutDotFixer.php</file>
+  <line>34</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Phpdoc/PhpdocAnnotationWithoutDotFixer.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var non-empty-list&lt;string&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>27</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Phpdoc/PhpdocOrderFixer.php</file>
+  <line>53</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Phpdoc/PhpdocOrderFixer.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var list&lt;string&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>17</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Phpdoc/PhpdocSeparationFixer.php</file>
+  <line>69</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Phpdoc/PhpdocSeparationFixer.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var list&lt;list&lt;string&gt;&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>23</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Phpdoc/PhpdocToCommentFixer.php</file>
+  <line>55</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Phpdoc/PhpdocToCommentFixer.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var list&lt;string&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>17</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Phpdoc/PhpdocTypesFixer.php</file>
+  <line>85</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Phpdoc/PhpdocTypesFixer.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, true&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>24</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Phpdoc/PhpdocTypesFixer.php</file>
+  <line>85</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Phpdoc/PhpdocTypesFixer.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, true&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>24</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Whitespace/BlankLineBeforeStatementFixer.php</file>
+  <line>82</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Whitespace/BlankLineBeforeStatementFixer.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var list&lt;int&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Whitespace/NoExtraBlankLinesFixer.php</file>
+  <line>78</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Whitespace/NoExtraBlankLinesFixer.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;int, callable(int): void&gt; key is token id</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>52</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Whitespace/NoExtraBlankLinesFixer.php</file>
+  <line>83</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Whitespace/NoExtraBlankLinesFixer.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, callable(int): void&gt; key is token's content</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>62</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/FixerConfiguration/AllowedValueSubset.php</file>
+  <line>27</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/FixerConfiguration/AllowedValueSubset.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var non-empty-list&lt;string&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>27</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/FixerConfiguration/FixerConfigurationResolver.php</file>
+  <line>30</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/FixerConfiguration/FixerConfigurationResolver.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var list&lt;FixerOptionInterface&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>31</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/FixerConfiguration/FixerOption.php</file>
+  <line>36</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/FixerConfiguration/FixerOption.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var null|list&lt;string&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>22</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/FixerConfiguration/FixerOption.php</file>
+  <line>41</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/FixerConfiguration/FixerOption.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var null|non-empty-list&lt;null|(callable(mixed): bool)|scalar&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>61</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/FixerConfiguration/FixerOptionBuilder.php</file>
+  <line>34</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/FixerConfiguration/FixerOptionBuilder.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var null|list&lt;string&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>22</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/FixerConfiguration/FixerOptionBuilder.php</file>
+  <line>39</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/FixerConfiguration/FixerOptionBuilder.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var null|non-empty-list&lt;null|(callable(mixed): bool)|scalar&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>61</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/FixerDefinition/CodeSample.php</file>
+  <line>29</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/FixerDefinition/CodeSample.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var null|array&lt;string, mixed&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>30</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/FixerDefinition/FixerDefinition.php</file>
+  <line>29</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/FixerDefinition/FixerDefinition.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var list&lt;CodeSampleInterface&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>30</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/FixerFactory.php</file>
+  <line>45</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/FixerFactory.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var list&lt;FixerInterface&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>25</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/FixerFactory.php</file>
+  <line>50</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/FixerFactory.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, FixerInterface&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>34</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Future.php</file>
+  <line>27</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Future.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, true&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>24</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Linter/CachingLinter.php</file>
+  <line>31</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Linter/CachingLinter.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, LintingResultInterface&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>42</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/RuleSet/RuleSet.php</file>
+  <line>40</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/RuleSet/RuleSet.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, array&lt;string, mixed&gt;|true&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>45</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/RuleSet/RuleSets.php</file>
+  <line>30</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/RuleSet/RuleSets.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var null|array&lt;string, RuleSetDefinitionInterface&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>51</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/RuleSet/RuleSets.php</file>
+  <line>35</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/RuleSet/RuleSets.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, RuleSetDefinitionInterface&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>46</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Runner/Event/AnalysisStarted.php</file>
+  <line>34</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Runner/Event/AnalysisStarted.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var self::MODE_*</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>17</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Runner/Event/FileProcessed.php</file>
+  <line>44</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Runner/Event/FileProcessed.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var self::STATUS_*</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>19</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Runner/FileFilterIterator.php</file>
+  <line>39</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Runner/FileFilterIterator.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, bool&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>24</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Runner/Parallel/ProcessPool.php</file>
+  <line>44</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Runner/Parallel/ProcessPool.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, Process&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>27</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Runner/Runner.php</file>
+  <line>93</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Runner/Runner.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var list&lt;FixerInterface&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>25</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Tokenizer/Analyzer/Analysis/AttributeAnalysis.php</file>
+  <line>35</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Tokenizer/Analyzer/Analysis/AttributeAnalysis.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var _AttributeItems</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>20</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Tokenizer/Analyzer/Analysis/DataProviderAnalysis.php</file>
+  <line>33</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Tokenizer/Analyzer/Analysis/DataProviderAnalysis.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var non-empty-list&lt;array{int, int}&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>36</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Tokenizer/Analyzer/Analysis/EnumAnalysis.php</file>
+  <line>27</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Tokenizer/Analyzer/Analysis/EnumAnalysis.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var list&lt;CaseAnalysis&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>23</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Tokenizer/Analyzer/Analysis/NamespaceUseAnalysis.php</file>
+  <line>38</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Tokenizer/Analyzer/Analysis/NamespaceUseAnalysis.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var non-empty-string</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>21</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Tokenizer/Analyzer/Analysis/NamespaceUseAnalysis.php</file>
+  <line>45</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Tokenizer/Analyzer/Analysis/NamespaceUseAnalysis.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var non-empty-string</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>21</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Tokenizer/Analyzer/Analysis/NamespaceUseAnalysis.php</file>
+  <line>82</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Tokenizer/Analyzer/Analysis/NamespaceUseAnalysis.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var self::TYPE_*</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>17</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Tokenizer/Analyzer/Analysis/SwitchAnalysis.php</file>
+  <line>27</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Tokenizer/Analyzer/Analysis/SwitchAnalysis.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var list&lt;CaseAnalysis&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>23</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Tokenizer/Analyzer/FullyQualifiedNameAnalyzer.php</file>
+  <line>31</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Tokenizer/Analyzer/FullyQualifiedNameAnalyzer.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var list&lt;NamespaceAnalysis&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>28</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Tokenizer/Analyzer/FullyQualifiedNameAnalyzer.php</file>
+  <line>36</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Tokenizer/Analyzer/FullyQualifiedNameAnalyzer.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;int, list&lt;NamespaceUseAnalysis&gt;&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>43</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Tokenizer/Tokens.php</file>
+  <line>80</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Tokenizer/Tokens.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;int, int&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>20</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Tokenizer/Tokens.php</file>
+  <line>87</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Tokenizer/Tokens.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;int, int&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>20</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Tokenizer/Tokens.php</file>
+  <line>94</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Tokenizer/Tokens.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var ?non-empty-string</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>22</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Tokenizer/Tokens.php</file>
+  <line>101</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Tokenizer/Tokens.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var ?non-empty-string</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>22</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Tokenizer/Tokens.php</file>
+  <line>124</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Tokenizer/Tokens.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var null|list&lt;NamespaceAnalysis&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>33</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Tokenizer/Transformers.php</file>
+  <line>33</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Tokenizer/Transformers.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var list&lt;TransformerInterface&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>31</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/WhitespacesFixerConfig.php</file>
+  <line>26</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/WhitespacesFixerConfig.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var non-empty-string</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>21</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/WhitespacesFixerConfig.php</file>
+  <line>29</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/WhitespacesFixerConfig.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var non-empty-string</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>21</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/WordMatcher.php</file>
+  <line>29</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/WordMatcher.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var list&lt;string&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>17</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Attribute/AsAlias.php</file>
+  <line>23</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Attribute/AsAlias.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var list&lt;string&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>17</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/RemoveBuildParametersPass.php</file>
+  <line>19</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/RemoveBuildParametersPass.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, mixed&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>25</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/ContainerBuilder.php</file>
+  <line>62</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/ContainerBuilder.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, ExtensionInterface&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>38</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/ContainerBuilder.php</file>
+  <line>67</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/ContainerBuilder.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, ExtensionInterface&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>38</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/ContainerBuilder.php</file>
+  <line>72</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/ContainerBuilder.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, Definition&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>30</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/ContainerBuilder.php</file>
+  <line>77</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/ContainerBuilder.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, Alias&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>25</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/ContainerBuilder.php</file>
+  <line>82</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/ContainerBuilder.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, ResourceInterface&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>37</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/ContainerBuilder.php</file>
+  <line>87</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/ContainerBuilder.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, array&lt;array&lt;string, mixed&gt;&gt;&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>47</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/ContainerBuilder.php</file>
+  <line>122</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/ContainerBuilder.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, bool&gt; whether a path is in a vendor directory</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>64</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/ContainerBuilder.php</file>
+  <line>127</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/ContainerBuilder.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, ChildDefinition&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>35</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/ContainerBuilder.php</file>
+  <line>132</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/ContainerBuilder.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, callable[]&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>30</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/ContainerBuilder.php</file>
+  <line>137</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/ContainerBuilder.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, bool&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>24</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/ContainerBuilder.php</file>
+  <line>142</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/ContainerBuilder.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;int, bool&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>21</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/ContainerBuilder.php</file>
+  <line>169</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/ContainerBuilder.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, \ReflectionClass&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>36</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Loader/FileLoader.php</file>
+  <line>45</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Loader/FileLoader.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, Alias&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>25</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Translation/Translator.php</file>
+  <line>38</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Translation/Translator.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var list&lt;string&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>17</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-foundation/HeaderBag.php</file>
+  <line>27</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-foundation/HeaderBag.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, list&lt;string|null&gt;&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>37</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/options-resolver/OptionsResolver.php</file>
+  <line>70</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/options-resolver/OptionsResolver.php" />
+  <problem_class id="PhpDocFieldTypeMismatchInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Type doesn't match property's declared type</problem_class>
+  <description>Property type does not match</description>
+  <highlighted_element>@var array&lt;string, true&gt;</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>24</length>
+</problem>
+</problems>

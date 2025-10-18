@@ -1,0 +1,3446 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/ClassLoader.php</file>
+  <line>46</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/ClassLoader.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$includeFile</highlighted_element>
+  <language>PHP</language>
+  <offset>19</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/ClassLoader.php</file>
+  <line>49</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/ClassLoader.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$vendorDir</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/ClassLoader.php</file>
+  <line>55</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/ClassLoader.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$prefixLengthsPsr4</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>18</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/ClassLoader.php</file>
+  <line>59</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/ClassLoader.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$prefixDirsPsr4</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>15</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/ClassLoader.php</file>
+  <line>63</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/ClassLoader.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$fallbackDirsPsr4</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>17</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/ClassLoader.php</file>
+  <line>73</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/ClassLoader.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$prefixesPsr0</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>13</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/ClassLoader.php</file>
+  <line>77</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/ClassLoader.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$fallbackDirsPsr0</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>17</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/ClassLoader.php</file>
+  <line>80</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/ClassLoader.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$useIncludePath</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>15</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/ClassLoader.php</file>
+  <line>85</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/ClassLoader.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$classMap</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/ClassLoader.php</file>
+  <line>88</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/ClassLoader.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$classMapAuthoritative</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>22</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/ClassLoader.php</file>
+  <line>93</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/ClassLoader.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$missingClasses</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>15</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/ClassLoader.php</file>
+  <line>96</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/ClassLoader.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$apcuPrefix</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/ClassLoader.php</file>
+  <line>101</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/ClassLoader.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$registeredLoaders</highlighted_element>
+  <language>PHP</language>
+  <offset>19</offset>
+  <length>18</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/InstalledVersions.php</file>
+  <line>33</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/InstalledVersions.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$selfDir</highlighted_element>
+  <language>PHP</language>
+  <offset>19</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/InstalledVersions.php</file>
+  <line>39</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/InstalledVersions.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$installed</highlighted_element>
+  <language>PHP</language>
+  <offset>19</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/InstalledVersions.php</file>
+  <line>44</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/InstalledVersions.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$installedIsLocalDir</highlighted_element>
+  <language>PHP</language>
+  <offset>19</offset>
+  <length>20</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/InstalledVersions.php</file>
+  <line>49</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/InstalledVersions.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$canGetVendors</highlighted_element>
+  <language>PHP</language>
+  <offset>19</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/InstalledVersions.php</file>
+  <line>55</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/InstalledVersions.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$installedByVendor</highlighted_element>
+  <language>PHP</language>
+  <offset>19</offset>
+  <length>18</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/autoload_real.php</file>
+  <line>7</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/autoload_real.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$loader</highlighted_element>
+  <language>PHP</language>
+  <offset>19</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/pcre/src/MatchAllResult.php</file>
+  <line>22</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/pcre/src/MatchAllResult.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$matches</highlighted_element>
+  <language>PHP</language>
+  <offset>11</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/pcre/src/MatchAllResult.php</file>
+  <line>28</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/pcre/src/MatchAllResult.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$count</highlighted_element>
+  <language>PHP</language>
+  <offset>11</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/pcre/src/MatchAllResult.php</file>
+  <line>34</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/pcre/src/MatchAllResult.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$matched</highlighted_element>
+  <language>PHP</language>
+  <offset>11</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/pcre/src/MatchAllStrictGroupsResult.php</file>
+  <line>22</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/pcre/src/MatchAllStrictGroupsResult.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$matches</highlighted_element>
+  <language>PHP</language>
+  <offset>11</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/pcre/src/MatchAllStrictGroupsResult.php</file>
+  <line>28</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/pcre/src/MatchAllStrictGroupsResult.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$count</highlighted_element>
+  <language>PHP</language>
+  <offset>11</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/pcre/src/MatchAllStrictGroupsResult.php</file>
+  <line>34</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/pcre/src/MatchAllStrictGroupsResult.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$matched</highlighted_element>
+  <language>PHP</language>
+  <offset>11</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/pcre/src/MatchAllWithOffsetsResult.php</file>
+  <line>23</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/pcre/src/MatchAllWithOffsetsResult.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$matches</highlighted_element>
+  <language>PHP</language>
+  <offset>11</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/pcre/src/MatchAllWithOffsetsResult.php</file>
+  <line>29</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/pcre/src/MatchAllWithOffsetsResult.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$count</highlighted_element>
+  <language>PHP</language>
+  <offset>11</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/pcre/src/MatchAllWithOffsetsResult.php</file>
+  <line>35</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/pcre/src/MatchAllWithOffsetsResult.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$matched</highlighted_element>
+  <language>PHP</language>
+  <offset>11</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/pcre/src/MatchResult.php</file>
+  <line>22</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/pcre/src/MatchResult.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$matches</highlighted_element>
+  <language>PHP</language>
+  <offset>11</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/pcre/src/MatchResult.php</file>
+  <line>28</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/pcre/src/MatchResult.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$matched</highlighted_element>
+  <language>PHP</language>
+  <offset>11</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/pcre/src/MatchStrictGroupsResult.php</file>
+  <line>22</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/pcre/src/MatchStrictGroupsResult.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$matches</highlighted_element>
+  <language>PHP</language>
+  <offset>11</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/pcre/src/MatchStrictGroupsResult.php</file>
+  <line>28</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/pcre/src/MatchStrictGroupsResult.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$matched</highlighted_element>
+  <language>PHP</language>
+  <offset>11</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/pcre/src/MatchWithOffsetsResult.php</file>
+  <line>23</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/pcre/src/MatchWithOffsetsResult.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$matches</highlighted_element>
+  <language>PHP</language>
+  <offset>11</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/pcre/src/MatchWithOffsetsResult.php</file>
+  <line>29</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/pcre/src/MatchWithOffsetsResult.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$matched</highlighted_element>
+  <language>PHP</language>
+  <offset>11</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/pcre/src/PHPStan/PregMatchParameterOutTypeExtension.php</file>
+  <line>20</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/pcre/src/PHPStan/PregMatchParameterOutTypeExtension.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$regexShapeMatcher</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>18</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/pcre/src/PHPStan/PregMatchTypeSpecifyingExtension.php</file>
+  <line>25</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/pcre/src/PHPStan/PregMatchTypeSpecifyingExtension.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$typeSpecifier</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/pcre/src/PHPStan/PregMatchTypeSpecifyingExtension.php</file>
+  <line>30</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/pcre/src/PHPStan/PregMatchTypeSpecifyingExtension.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$regexShapeMatcher</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>18</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/pcre/src/PHPStan/PregReplaceCallbackClosureTypeExtension.php</file>
+  <line>26</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/pcre/src/PHPStan/PregReplaceCallbackClosureTypeExtension.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$regexShapeMatcher</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>18</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/pcre/src/PHPStan/UnsafeStrictGroupsCallRule.php</file>
+  <line>29</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/pcre/src/PHPStan/UnsafeStrictGroupsCallRule.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$regexShapeMatcher</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>18</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/pcre/src/ReplaceResult.php</file>
+  <line>20</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/pcre/src/ReplaceResult.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$result</highlighted_element>
+  <language>PHP</language>
+  <offset>11</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/pcre/src/ReplaceResult.php</file>
+  <line>26</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/pcre/src/ReplaceResult.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$count</highlighted_element>
+  <language>PHP</language>
+  <offset>11</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/pcre/src/ReplaceResult.php</file>
+  <line>32</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/pcre/src/ReplaceResult.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$matched</highlighted_element>
+  <language>PHP</language>
+  <offset>11</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/semver/src/CompilingMatcher.php</file>
+  <line>26</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/semver/src/CompilingMatcher.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$compiledCheckerCache</highlighted_element>
+  <language>PHP</language>
+  <offset>19</offset>
+  <length>21</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/semver/src/CompilingMatcher.php</file>
+  <line>31</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/semver/src/CompilingMatcher.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$resultCache</highlighted_element>
+  <language>PHP</language>
+  <offset>19</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/semver/src/CompilingMatcher.php</file>
+  <line>34</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/semver/src/CompilingMatcher.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$enabled</highlighted_element>
+  <language>PHP</language>
+  <offset>19</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/semver/src/CompilingMatcher.php</file>
+  <line>39</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/semver/src/CompilingMatcher.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$transOpInt</highlighted_element>
+  <language>PHP</language>
+  <offset>19</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/semver/src/Constraint/Bound.php</file>
+  <line>19</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/semver/src/Constraint/Bound.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$version</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/semver/src/Constraint/Bound.php</file>
+  <line>24</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/semver/src/Constraint/Bound.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$isInclusive</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/semver/src/Constraint/Constraint.php</file>
+  <line>43</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/semver/src/Constraint/Constraint.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$transOpStr</highlighted_element>
+  <language>PHP</language>
+  <offset>19</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/semver/src/Constraint/Constraint.php</file>
+  <line>60</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/semver/src/Constraint/Constraint.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$transOpInt</highlighted_element>
+  <language>PHP</language>
+  <offset>19</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/semver/src/Constraint/Constraint.php</file>
+  <line>73</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/semver/src/Constraint/Constraint.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$operator</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/semver/src/Constraint/Constraint.php</file>
+  <line>76</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/semver/src/Constraint/Constraint.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$version</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/semver/src/Constraint/Constraint.php</file>
+  <line>79</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/semver/src/Constraint/Constraint.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$prettyString</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>13</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/semver/src/Constraint/Constraint.php</file>
+  <line>82</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/semver/src/Constraint/Constraint.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$lowerBound</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/semver/src/Constraint/Constraint.php</file>
+  <line>85</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/semver/src/Constraint/Constraint.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$upperBound</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/semver/src/Constraint/MatchAllConstraint.php</file>
+  <line>22</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/semver/src/Constraint/MatchAllConstraint.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$prettyString</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>13</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/semver/src/Constraint/MatchNoneConstraint.php</file>
+  <line>20</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/semver/src/Constraint/MatchNoneConstraint.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$prettyString</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>13</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/semver/src/Constraint/MultiConstraint.php</file>
+  <line>23</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/semver/src/Constraint/MultiConstraint.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$constraints</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/semver/src/Constraint/MultiConstraint.php</file>
+  <line>26</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/semver/src/Constraint/MultiConstraint.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$prettyString</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>13</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/semver/src/Constraint/MultiConstraint.php</file>
+  <line>29</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/semver/src/Constraint/MultiConstraint.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$string</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/semver/src/Constraint/MultiConstraint.php</file>
+  <line>32</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/semver/src/Constraint/MultiConstraint.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$conjunctive</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/semver/src/Constraint/MultiConstraint.php</file>
+  <line>35</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/semver/src/Constraint/MultiConstraint.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$lowerBound</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/semver/src/Constraint/MultiConstraint.php</file>
+  <line>38</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/semver/src/Constraint/MultiConstraint.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$upperBound</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/semver/src/Interval.php</file>
+  <line>19</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/semver/src/Interval.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$start</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/semver/src/Interval.php</file>
+  <line>21</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/semver/src/Interval.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$end</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/semver/src/Intervals.php</file>
+  <line>37</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/semver/src/Intervals.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$intervalsCache</highlighted_element>
+  <language>PHP</language>
+  <offset>19</offset>
+  <length>15</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/semver/src/Intervals.php</file>
+  <line>42</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/semver/src/Intervals.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$opSortOrder</highlighted_element>
+  <language>PHP</language>
+  <offset>19</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/semver/src/Semver.php</file>
+  <line>22</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/semver/src/Semver.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$versionParser</highlighted_element>
+  <language>PHP</language>
+  <offset>19</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/semver/src/VersionParser.php</file>
+  <line>39</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/semver/src/VersionParser.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$modifierRegex</highlighted_element>
+  <language>PHP</language>
+  <offset>19</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/semver/src/VersionParser.php</file>
+  <line>42</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/semver/src/VersionParser.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$stabilitiesRegex</highlighted_element>
+  <language>PHP</language>
+  <offset>19</offset>
+  <length>17</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/xdebug-handler/src/Status.php</file>
+  <line>35</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/xdebug-handler/src/Status.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$debug</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/xdebug-handler/src/Status.php</file>
+  <line>38</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/xdebug-handler/src/Status.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$envAllowXdebug</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>15</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/xdebug-handler/src/Status.php</file>
+  <line>41</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/xdebug-handler/src/Status.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$loaded</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/xdebug-handler/src/Status.php</file>
+  <line>44</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/xdebug-handler/src/Status.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$logger</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/xdebug-handler/src/Status.php</file>
+  <line>47</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/xdebug-handler/src/Status.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$modeOff</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/xdebug-handler/src/Status.php</file>
+  <line>50</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/xdebug-handler/src/Status.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$time</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/xdebug-handler/src/XdebugHandler.php</file>
+  <line>33</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/xdebug-handler/src/XdebugHandler.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$tmpIni</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/xdebug-handler/src/XdebugHandler.php</file>
+  <line>36</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/xdebug-handler/src/XdebugHandler.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$inRestart</highlighted_element>
+  <language>PHP</language>
+  <offset>19</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/xdebug-handler/src/XdebugHandler.php</file>
+  <line>39</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/xdebug-handler/src/XdebugHandler.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$name</highlighted_element>
+  <language>PHP</language>
+  <offset>19</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/xdebug-handler/src/XdebugHandler.php</file>
+  <line>42</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/xdebug-handler/src/XdebugHandler.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$skipped</highlighted_element>
+  <language>PHP</language>
+  <offset>19</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/xdebug-handler/src/XdebugHandler.php</file>
+  <line>45</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/xdebug-handler/src/XdebugHandler.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$xdebugActive</highlighted_element>
+  <language>PHP</language>
+  <offset>19</offset>
+  <length>13</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/xdebug-handler/src/XdebugHandler.php</file>
+  <line>48</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/xdebug-handler/src/XdebugHandler.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$xdebugMode</highlighted_element>
+  <language>PHP</language>
+  <offset>19</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/xdebug-handler/src/XdebugHandler.php</file>
+  <line>51</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/xdebug-handler/src/XdebugHandler.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$xdebugVersion</highlighted_element>
+  <language>PHP</language>
+  <offset>19</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/xdebug-handler/src/XdebugHandler.php</file>
+  <line>54</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/xdebug-handler/src/XdebugHandler.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$cli</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/xdebug-handler/src/XdebugHandler.php</file>
+  <line>57</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/xdebug-handler/src/XdebugHandler.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$debug</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/xdebug-handler/src/XdebugHandler.php</file>
+  <line>60</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/xdebug-handler/src/XdebugHandler.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$envAllowXdebug</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>15</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/xdebug-handler/src/XdebugHandler.php</file>
+  <line>63</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/xdebug-handler/src/XdebugHandler.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$envOriginalInis</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/xdebug-handler/src/XdebugHandler.php</file>
+  <line>66</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/xdebug-handler/src/XdebugHandler.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$persistent</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/xdebug-handler/src/XdebugHandler.php</file>
+  <line>69</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/xdebug-handler/src/XdebugHandler.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$script</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/xdebug-handler/src/XdebugHandler.php</file>
+  <line>72</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/xdebug-handler/src/XdebugHandler.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$statusWriter</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>13</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Cache/QueryCacheProfile.php</file>
+  <line>31</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Cache/QueryCacheProfile.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$lifetime</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Cache/QueryCacheProfile.php</file>
+  <line>34</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Cache/QueryCacheProfile.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$cacheKey</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Configuration.php</file>
+  <line>33</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Configuration.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$sqlLogger</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Configuration.php</file>
+  <line>47</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Configuration.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$resultCacheImpl</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Configuration.php</file>
+  <line>61</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Configuration.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$autoCommit</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Connection.php</file>
+  <line>94</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Connection.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$_conn</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Connection.php</file>
+  <line>97</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Connection.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$_config</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Connection.php</file>
+  <line>104</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Connection.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$_eventManager</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Connection.php</file>
+  <line>111</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Connection.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$_expr</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Connection.php</file>
+  <line>128</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Connection.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$transactionIsolationLevel</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>26</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Connection.php</file>
+  <line>158</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Connection.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$_schemaManager</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>15</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Connection.php</file>
+  <line>165</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Connection.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$_driver</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Connections/PrimaryReadReplicaConnection.php</file>
+  <line>85</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Connections/PrimaryReadReplicaConnection.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$connections</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Connections/PrimaryReadReplicaConnection.php</file>
+  <line>93</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Connections/PrimaryReadReplicaConnection.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$keepReplica</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Event/Listeners/OracleSessionInit.php</file>
+  <line>32</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Event/Listeners/OracleSessionInit.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$_defaultSessionVars</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>20</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Event/Listeners/SQLSessionInit.php</file>
+  <line>18</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Event/Listeners/SQLSessionInit.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$sql</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Event/SchemaAlterTableRenameColumnEventArgs.php</file>
+  <line>21</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Event/SchemaAlterTableRenameColumnEventArgs.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$oldColumnName</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Event/SchemaColumnDefinitionEventArgs.php</file>
+  <line>22</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Event/SchemaColumnDefinitionEventArgs.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$tableColumn</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Event/SchemaColumnDefinitionEventArgs.php</file>
+  <line>25</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Event/SchemaColumnDefinitionEventArgs.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$table</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Event/SchemaColumnDefinitionEventArgs.php</file>
+  <line>28</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Event/SchemaColumnDefinitionEventArgs.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$database</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Event/SchemaDropTableEventArgs.php</file>
+  <line>16</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Event/SchemaDropTableEventArgs.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$table</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Event/SchemaDropTableEventArgs.php</file>
+  <line>21</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Event/SchemaDropTableEventArgs.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$sql</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Event/SchemaIndexDefinitionEventArgs.php</file>
+  <line>25</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Event/SchemaIndexDefinitionEventArgs.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$table</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Id/TableGenerator.php</file>
+  <line>62</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Id/TableGenerator.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$generatorTableName</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>19</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Id/TableGeneratorSchemaVisitor.php</file>
+  <line>18</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Id/TableGeneratorSchemaVisitor.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$generatorTableName</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>19</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Logging/DebugStack.php</file>
+  <line>21</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Logging/DebugStack.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$queries</highlighted_element>
+  <language>PHP</language>
+  <offset>11</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Logging/DebugStack.php</file>
+  <line>28</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Logging/DebugStack.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$enabled</highlighted_element>
+  <language>PHP</language>
+  <offset>11</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Logging/DebugStack.php</file>
+  <line>31</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Logging/DebugStack.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$start</highlighted_element>
+  <language>PHP</language>
+  <offset>11</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Logging/DebugStack.php</file>
+  <line>34</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Logging/DebugStack.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$currentQuery</highlighted_element>
+  <language>PHP</language>
+  <offset>11</offset>
+  <length>13</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php</file>
+  <line>82</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$doctrineTypeMapping</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>20</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php</file>
+  <line>92</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$doctrineTypeComments</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>21</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php</file>
+  <line>99</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$_eventManager</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php</file>
+  <line>106</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/AbstractPlatform.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$_keywords</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/MySQL/CollationMetadataProvider/CachingCollationMetadataProvider.php</file>
+  <line>15</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/MySQL/CollationMetadataProvider/CachingCollationMetadataProvider.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$collationMetadataProvider</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>26</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/MySQL/CollationMetadataProvider/CachingCollationMetadataProvider.php</file>
+  <line>18</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/MySQL/CollationMetadataProvider/CachingCollationMetadataProvider.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$cache</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/MySQL/CollationMetadataProvider/ConnectionCollationMetadataProvider.php</file>
+  <line>15</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/MySQL/CollationMetadataProvider/ConnectionCollationMetadataProvider.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$connection</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/MySQL/Comparator.php</file>
+  <line>23</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Platforms/MySQL/Comparator.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$collationMetadataProvider</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>26</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Query/Expression/CompositeExpression.php</file>
+  <line>33</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Query/Expression/CompositeExpression.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$type</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Query/QueryBuilder.php</file>
+  <line>104</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Query/QueryBuilder.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$params</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/AbstractAsset.php</file>
+  <line>29</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/AbstractAsset.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$_name</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/AbstractAsset.php</file>
+  <line>36</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/AbstractAsset.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$_namespace</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/AbstractAsset.php</file>
+  <line>39</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/AbstractAsset.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$_quoted</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/AbstractSchemaManager.php</file>
+  <line>43</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/AbstractSchemaManager.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$_conn</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/AbstractSchemaManager.php</file>
+  <line>50</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/AbstractSchemaManager.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$_platform</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Column.php</file>
+  <line>19</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Column.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$_type</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Column.php</file>
+  <line>22</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Column.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$_length</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Column.php</file>
+  <line>25</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Column.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$_precision</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Column.php</file>
+  <line>28</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Column.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$_scale</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Column.php</file>
+  <line>31</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Column.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$_unsigned</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Column.php</file>
+  <line>34</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Column.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$_fixed</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Column.php</file>
+  <line>37</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Column.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$_notnull</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Column.php</file>
+  <line>40</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Column.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$_default</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Column.php</file>
+  <line>43</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Column.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$_autoincrement</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>15</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Column.php</file>
+  <line>46</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Column.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$_platformOptions</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>17</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Column.php</file>
+  <line>49</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Column.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$_columnDefinition</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>18</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Column.php</file>
+  <line>52</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Column.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$_comment</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Column.php</file>
+  <line>59</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Column.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$_customSchemaOptions</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>21</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/ColumnDiff.php</file>
+  <line>19</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/ColumnDiff.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$oldColumnName</highlighted_element>
+  <language>PHP</language>
+  <offset>11</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/ColumnDiff.php</file>
+  <line>26</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/ColumnDiff.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$column</highlighted_element>
+  <language>PHP</language>
+  <offset>11</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/ColumnDiff.php</file>
+  <line>35</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/ColumnDiff.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$changedProperties</highlighted_element>
+  <language>PHP</language>
+  <offset>11</offset>
+  <length>18</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/ColumnDiff.php</file>
+  <line>42</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/ColumnDiff.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$fromColumn</highlighted_element>
+  <language>PHP</language>
+  <offset>11</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/ForeignKeyConstraint.php</file>
+  <line>24</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/ForeignKeyConstraint.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$_localTable</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/ForeignKeyConstraint.php</file>
+  <line>32</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/ForeignKeyConstraint.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$_localColumnNames</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>18</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/ForeignKeyConstraint.php</file>
+  <line>39</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/ForeignKeyConstraint.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$_foreignTableName</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>18</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/ForeignKeyConstraint.php</file>
+  <line>47</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/ForeignKeyConstraint.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$_foreignColumnNames</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>20</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/ForeignKeyConstraint.php</file>
+  <line>54</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/ForeignKeyConstraint.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$_options</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Index.php</file>
+  <line>24</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Index.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$_columns</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Index.php</file>
+  <line>27</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Index.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$_isUnique</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Index.php</file>
+  <line>30</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Index.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$_isPrimary</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Index.php</file>
+  <line>38</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Index.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$_flags</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Schema.php</file>
+  <line>51</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Schema.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$_tables</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Schema.php</file>
+  <line>54</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Schema.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$_sequences</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Schema.php</file>
+  <line>57</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Schema.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$_schemaConfig</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/SchemaConfig.php</file>
+  <line>17</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/SchemaConfig.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$hasExplicitForeignKeyIndexes</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>29</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/SchemaConfig.php</file>
+  <line>20</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/SchemaConfig.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$maxIdentifierLength</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>20</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/SchemaConfig.php</file>
+  <line>23</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/SchemaConfig.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$name</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/SchemaConfig.php</file>
+  <line>26</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/SchemaConfig.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$defaultTableOptions</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>20</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/SchemaDiff.php</file>
+  <line>25</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/SchemaDiff.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$fromSchema</highlighted_element>
+  <language>PHP</language>
+  <offset>11</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/SchemaDiff.php</file>
+  <line>34</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/SchemaDiff.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$newNamespaces</highlighted_element>
+  <language>PHP</language>
+  <offset>11</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/SchemaDiff.php</file>
+  <line>43</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/SchemaDiff.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$removedNamespaces</highlighted_element>
+  <language>PHP</language>
+  <offset>11</offset>
+  <length>18</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/SchemaDiff.php</file>
+  <line>52</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/SchemaDiff.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$newTables</highlighted_element>
+  <language>PHP</language>
+  <offset>11</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/SchemaDiff.php</file>
+  <line>61</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/SchemaDiff.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$changedTables</highlighted_element>
+  <language>PHP</language>
+  <offset>11</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/SchemaDiff.php</file>
+  <line>70</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/SchemaDiff.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$removedTables</highlighted_element>
+  <language>PHP</language>
+  <offset>11</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/SchemaDiff.php</file>
+  <line>77</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/SchemaDiff.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$newSequences</highlighted_element>
+  <language>PHP</language>
+  <offset>11</offset>
+  <length>13</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/SchemaDiff.php</file>
+  <line>84</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/SchemaDiff.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$changedSequences</highlighted_element>
+  <language>PHP</language>
+  <offset>11</offset>
+  <length>17</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/SchemaDiff.php</file>
+  <line>91</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/SchemaDiff.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$removedSequences</highlighted_element>
+  <language>PHP</language>
+  <offset>11</offset>
+  <length>17</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/SchemaDiff.php</file>
+  <line>98</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/SchemaDiff.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$orphanedForeignKeys</highlighted_element>
+  <language>PHP</language>
+  <offset>11</offset>
+  <length>20</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Sequence.php</file>
+  <line>17</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Sequence.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$allocationSize</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>15</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Sequence.php</file>
+  <line>20</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Sequence.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$initialValue</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>13</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Sequence.php</file>
+  <line>23</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Sequence.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$cache</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Table.php</file>
+  <line>27</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Table.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$_columns</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Table.php</file>
+  <line>30</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Table.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$_indexes</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Table.php</file>
+  <line>33</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Table.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$_primaryKeyName</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Table.php</file>
+  <line>36</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Table.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$uniqueConstraints</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>18</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Table.php</file>
+  <line>39</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Table.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$_fkConstraints</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>15</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Table.php</file>
+  <line>42</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Table.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$_options</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Table.php</file>
+  <line>47</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Table.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$_schemaConfig</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/TableDiff.php</file>
+  <line>22</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/TableDiff.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$name</highlighted_element>
+  <language>PHP</language>
+  <offset>11</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/TableDiff.php</file>
+  <line>29</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/TableDiff.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$newName</highlighted_element>
+  <language>PHP</language>
+  <offset>11</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/TableDiff.php</file>
+  <line>38</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/TableDiff.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$addedColumns</highlighted_element>
+  <language>PHP</language>
+  <offset>11</offset>
+  <length>13</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/TableDiff.php</file>
+  <line>47</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/TableDiff.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$changedColumns</highlighted_element>
+  <language>PHP</language>
+  <offset>11</offset>
+  <length>15</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/TableDiff.php</file>
+  <line>56</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/TableDiff.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$removedColumns</highlighted_element>
+  <language>PHP</language>
+  <offset>11</offset>
+  <length>15</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/TableDiff.php</file>
+  <line>65</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/TableDiff.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$renamedColumns</highlighted_element>
+  <language>PHP</language>
+  <offset>11</offset>
+  <length>15</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/TableDiff.php</file>
+  <line>74</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/TableDiff.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$addedIndexes</highlighted_element>
+  <language>PHP</language>
+  <offset>11</offset>
+  <length>13</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/TableDiff.php</file>
+  <line>83</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/TableDiff.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$changedIndexes</highlighted_element>
+  <language>PHP</language>
+  <offset>11</offset>
+  <length>15</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/TableDiff.php</file>
+  <line>92</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/TableDiff.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$removedIndexes</highlighted_element>
+  <language>PHP</language>
+  <offset>11</offset>
+  <length>15</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/TableDiff.php</file>
+  <line>101</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/TableDiff.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$renamedIndexes</highlighted_element>
+  <language>PHP</language>
+  <offset>11</offset>
+  <length>15</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/TableDiff.php</file>
+  <line>110</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/TableDiff.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$addedForeignKeys</highlighted_element>
+  <language>PHP</language>
+  <offset>11</offset>
+  <length>17</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/TableDiff.php</file>
+  <line>119</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/TableDiff.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$changedForeignKeys</highlighted_element>
+  <language>PHP</language>
+  <offset>11</offset>
+  <length>19</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/TableDiff.php</file>
+  <line>128</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/TableDiff.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$removedForeignKeys</highlighted_element>
+  <language>PHP</language>
+  <offset>11</offset>
+  <length>19</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/TableDiff.php</file>
+  <line>135</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/TableDiff.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$fromTable</highlighted_element>
+  <language>PHP</language>
+  <offset>11</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/UniqueConstraint.php</file>
+  <line>22</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/UniqueConstraint.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$columns</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/UniqueConstraint.php</file>
+  <line>30</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/UniqueConstraint.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$flags</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/View.php</file>
+  <line>11</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/View.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$sql</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Statement.php</file>
+  <line>22</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Statement.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$sql</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Statement.php</file>
+  <line>29</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Statement.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$params</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Statement.php</file>
+  <line>36</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Statement.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$types</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Statement.php</file>
+  <line>43</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Statement.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$stmt</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Statement.php</file>
+  <line>50</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Statement.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$platform</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Statement.php</file>
+  <line>57</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Statement.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$conn</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/deprecations/src/Deprecation.php</file>
+  <line>52</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/deprecations/src/Deprecation.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$type</highlighted_element>
+  <language>PHP</language>
+  <offset>19</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/deprecations/src/Deprecation.php</file>
+  <line>55</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/deprecations/src/Deprecation.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$logger</highlighted_element>
+  <language>PHP</language>
+  <offset>19</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/deprecations/src/Deprecation.php</file>
+  <line>58</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/deprecations/src/Deprecation.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$ignoredPackages</highlighted_element>
+  <language>PHP</language>
+  <offset>19</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/deprecations/src/Deprecation.php</file>
+  <line>61</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/deprecations/src/Deprecation.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$triggeredDeprecations</highlighted_element>
+  <language>PHP</language>
+  <offset>19</offset>
+  <length>22</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/deprecations/src/Deprecation.php</file>
+  <line>64</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/deprecations/src/Deprecation.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$ignoredLinks</highlighted_element>
+  <language>PHP</language>
+  <offset>19</offset>
+  <length>13</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/deprecations/src/Deprecation.php</file>
+  <line>67</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/deprecations/src/Deprecation.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$deduplication</highlighted_element>
+  <language>PHP</language>
+  <offset>19</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/deprecations/src/PHPUnit/VerifyDeprecations.php</file>
+  <line>16</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/deprecations/src/PHPUnit/VerifyDeprecations.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$doctrineDeprecationsExpectations</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>33</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/deprecations/src/PHPUnit/VerifyDeprecations.php</file>
+  <line>19</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/deprecations/src/PHPUnit/VerifyDeprecations.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$doctrineNoDeprecationsExpectations</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>35</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/inflector/src/CachedWordInflector.php</file>
+  <line>10</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/inflector/src/CachedWordInflector.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$wordInflector</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/inflector/src/CachedWordInflector.php</file>
+  <line>13</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/inflector/src/CachedWordInflector.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$cache</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/inflector/src/GenericLanguageInflectorFactory.php</file>
+  <line>14</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/inflector/src/GenericLanguageInflectorFactory.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$singularRulesets</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>17</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/inflector/src/GenericLanguageInflectorFactory.php</file>
+  <line>17</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/inflector/src/GenericLanguageInflectorFactory.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$pluralRulesets</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>15</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/inflector/src/Inflector.php</file>
+  <line>218</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/inflector/src/Inflector.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$singularizer</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>13</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/inflector/src/Inflector.php</file>
+  <line>221</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/inflector/src/Inflector.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$pluralizer</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/inflector/src/Rules/Pattern.php</file>
+  <line>12</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/inflector/src/Rules/Pattern.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$pattern</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/inflector/src/Rules/Pattern.php</file>
+  <line>15</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/inflector/src/Rules/Pattern.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$regex</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/inflector/src/Rules/Patterns.php</file>
+  <line>14</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/inflector/src/Rules/Patterns.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$regex</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/inflector/src/Rules/Ruleset.php</file>
+  <line>10</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/inflector/src/Rules/Ruleset.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$regular</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/inflector/src/Rules/Ruleset.php</file>
+  <line>13</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/inflector/src/Rules/Ruleset.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$uninflected</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/inflector/src/Rules/Ruleset.php</file>
+  <line>16</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/inflector/src/Rules/Ruleset.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$irregular</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/inflector/src/Rules/Substitution.php</file>
+  <line>10</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/inflector/src/Rules/Substitution.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$from</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/inflector/src/Rules/Substitution.php</file>
+  <line>13</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/inflector/src/Rules/Substitution.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$to</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>3</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/inflector/src/Rules/Substitutions.php</file>
+  <line>16</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/inflector/src/Rules/Substitutions.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$substitutions</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/inflector/src/Rules/Transformation.php</file>
+  <line>14</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/inflector/src/Rules/Transformation.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$pattern</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/inflector/src/Rules/Transformation.php</file>
+  <line>17</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/inflector/src/Rules/Transformation.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$replacement</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/inflector/src/Rules/Transformations.php</file>
+  <line>12</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/inflector/src/Rules/Transformations.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$transformations</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/inflector/src/Rules/Word.php</file>
+  <line>10</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/inflector/src/Rules/Word.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$word</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/inflector/src/RulesetInflector.php</file>
+  <line>23</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/inflector/src/RulesetInflector.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$rulesets</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/lexer/src/Token.php</file>
+  <line>31</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/lexer/src/Token.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$type</highlighted_element>
+  <language>PHP</language>
+  <offset>11</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Configuration.php</file>
+  <line>48</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Configuration.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$identityGenerationPreferences</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>30</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Proxy/ProxyFactory.php</file>
+  <line>129</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Proxy/ProxyFactory.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$autoGenerate</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>13</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/Parser.php</file>
+  <line>163</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/Parser.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$customOutputWalker</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>19</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/ResultSetMapping.php</file>
+  <line>90</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Query/ResultSetMapping.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$enumMappings</highlighted_element>
+  <language>PHP</language>
+  <offset>11</offset>
+  <length>13</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/evenement/evenement/src/EventEmitterTrait.php</file>
+  <line>25</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/evenement/evenement/src/EventEmitterTrait.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$listeners</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/evenement/evenement/src/EventEmitterTrait.php</file>
+  <line>26</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/evenement/evenement/src/EventEmitterTrait.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$onceListeners</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/Command/DescribeCommand.php</file>
+  <line>69</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/Command/DescribeCommand.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$defaultName</highlighted_element>
+  <language>PHP</language>
+  <offset>21</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/Command/DescribeCommand.php</file>
+  <line>72</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/Command/DescribeCommand.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$defaultDescription</highlighted_element>
+  <language>PHP</language>
+  <offset>21</offset>
+  <length>19</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/Command/DocumentationCommand.php</file>
+  <line>38</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/Command/DocumentationCommand.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$defaultName</highlighted_element>
+  <language>PHP</language>
+  <offset>21</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/Command/DocumentationCommand.php</file>
+  <line>41</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/Command/DocumentationCommand.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$defaultDescription</highlighted_element>
+  <language>PHP</language>
+  <offset>21</offset>
+  <length>19</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/Command/FixCommand.php</file>
+  <line>63</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/Command/FixCommand.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$defaultName</highlighted_element>
+  <language>PHP</language>
+  <offset>21</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/Command/FixCommand.php</file>
+  <line>66</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/Command/FixCommand.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$defaultDescription</highlighted_element>
+  <language>PHP</language>
+  <offset>21</offset>
+  <length>19</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/Command/HelpCommand.php</file>
+  <line>38</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/Command/HelpCommand.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$defaultName</highlighted_element>
+  <language>PHP</language>
+  <offset>21</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/Command/ListFilesCommand.php</file>
+  <line>39</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/Command/ListFilesCommand.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$defaultName</highlighted_element>
+  <language>PHP</language>
+  <offset>21</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/Command/ListFilesCommand.php</file>
+  <line>42</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/Command/ListFilesCommand.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$defaultDescription</highlighted_element>
+  <language>PHP</language>
+  <offset>21</offset>
+  <length>19</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/Command/ListSetsCommand.php</file>
+  <line>42</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/Command/ListSetsCommand.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$defaultName</highlighted_element>
+  <language>PHP</language>
+  <offset>21</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/Command/ListSetsCommand.php</file>
+  <line>45</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/Command/ListSetsCommand.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$defaultDescription</highlighted_element>
+  <language>PHP</language>
+  <offset>21</offset>
+  <length>19</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/Command/SelfUpdateCommand.php</file>
+  <line>43</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/Command/SelfUpdateCommand.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$defaultName</highlighted_element>
+  <language>PHP</language>
+  <offset>21</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/Command/SelfUpdateCommand.php</file>
+  <line>46</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/Command/SelfUpdateCommand.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$defaultDescription</highlighted_element>
+  <language>PHP</language>
+  <offset>21</offset>
+  <length>19</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/Command/WorkerCommand.php</file>
+  <line>55</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/Command/WorkerCommand.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$defaultName</highlighted_element>
+  <language>PHP</language>
+  <offset>21</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/Command/WorkerCommand.php</file>
+  <line>58</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/Command/WorkerCommand.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$defaultDescription</highlighted_element>
+  <language>PHP</language>
+  <offset>21</offset>
+  <length>19</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/ConfigurationResolver.php</file>
+  <line>176</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Console/ConfigurationResolver.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$progress</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/ArrayNotation/ArraySyntaxFixer.php</file>
+  <line>54</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/ArrayNotation/ArraySyntaxFixer.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$candidateTokenKind</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>19</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Phpdoc/PhpdocAlignFixer.php</file>
+  <line>125</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Phpdoc/PhpdocAlignFixer.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$spacing</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/FixerConfiguration/FixerOption.php</file>
+  <line>33</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/FixerConfiguration/FixerOption.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$default</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/FixerConfiguration/FixerOptionBuilder.php</file>
+  <line>29</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/FixerConfiguration/FixerOptionBuilder.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$default</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/AutowirePass.php</file>
+  <line>54</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/AutowirePass.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$value</highlighted_element>
+  <language>PHP</language>
+  <offset>19</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/AutowirePass.php</file>
+  <line>55</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/AutowirePass.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$names</highlighted_element>
+  <language>PHP</language>
+  <offset>19</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/AutowirePass.php</file>
+  <line>56</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Compiler/AutowirePass.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$bag</highlighted_element>
+  <language>PHP</language>
+  <offset>19</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer/Normalizer.php</file>
+  <line>35</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer/Normalizer.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$C</highlighted_element>
+  <language>PHP</language>
+  <offset>19</offset>
+  <length>2</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer/Normalizer.php</file>
+  <line>36</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer/Normalizer.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$D</highlighted_element>
+  <language>PHP</language>
+  <offset>19</offset>
+  <length>2</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer/Normalizer.php</file>
+  <line>37</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer/Normalizer.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$KD</highlighted_element>
+  <language>PHP</language>
+  <offset>19</offset>
+  <length>3</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer/Normalizer.php</file>
+  <line>38</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer/Normalizer.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$cC</highlighted_element>
+  <language>PHP</language>
+  <offset>19</offset>
+  <length>3</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer/Normalizer.php</file>
+  <line>39</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer/Normalizer.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$ulenMask</highlighted_element>
+  <language>PHP</language>
+  <offset>19</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer/Normalizer.php</file>
+  <line>40</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer/Normalizer.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$ASCII</highlighted_element>
+  <language>PHP</language>
+  <offset>19</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/polyfill-mbstring/Mbstring.php</file>
+  <line>82</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/polyfill-mbstring/Mbstring.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$encodingList</highlighted_element>
+  <language>PHP</language>
+  <offset>19</offset>
+  <length>13</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/polyfill-mbstring/Mbstring.php</file>
+  <line>83</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/polyfill-mbstring/Mbstring.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$language</highlighted_element>
+  <language>PHP</language>
+  <offset>19</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/polyfill-mbstring/Mbstring.php</file>
+  <line>84</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/polyfill-mbstring/Mbstring.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$internalEncoding</highlighted_element>
+  <language>PHP</language>
+  <offset>19</offset>
+  <length>17</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/theseer/tokenizer/src/NamespaceUri.php</file>
+  <line>7</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/theseer/tokenizer/src/NamespaceUri.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$value</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/theseer/tokenizer/src/Token.php</file>
+  <line>7</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/theseer/tokenizer/src/Token.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$line</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/theseer/tokenizer/src/Token.php</file>
+  <line>10</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/theseer/tokenizer/src/Token.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$name</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/theseer/tokenizer/src/Token.php</file>
+  <line>13</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/theseer/tokenizer/src/Token.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$value</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/theseer/tokenizer/src/TokenCollection.php</file>
+  <line>7</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/theseer/tokenizer/src/TokenCollection.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$tokens</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/theseer/tokenizer/src/TokenCollection.php</file>
+  <line>10</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/theseer/tokenizer/src/TokenCollection.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$pos</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/theseer/tokenizer/src/Tokenizer.php</file>
+  <line>11</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/theseer/tokenizer/src/Tokenizer.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$map</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/theseer/tokenizer/src/XMLSerializer.php</file>
+  <line>9</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/theseer/tokenizer/src/XMLSerializer.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$writer</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/theseer/tokenizer/src/XMLSerializer.php</file>
+  <line>12</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/theseer/tokenizer/src/XMLSerializer.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$previousToken</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/theseer/tokenizer/src/XMLSerializer.php</file>
+  <line>15</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/theseer/tokenizer/src/XMLSerializer.php" />
+  <problem_class id="PhpMissingFieldTypeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Missing property's type declaration</problem_class>
+  <description>Missing property's type declaration</description>
+  <highlighted_element>$xmlns</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>6</length>
+</problem>
+</problems>

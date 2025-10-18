@@ -6,6 +6,7 @@ namespace App\Service\Analytics;
 use App\DTO\Analytics\KpiRequest;
 use App\Entity\Analytics\ExportJob;
 use Doctrine\ORM\EntityManagerInterface;
+use Throwable;
 
 final class ReportGeneratorService
 {
@@ -61,7 +62,7 @@ final class ReportGeneratorService
 
             $path = $this->exporter->export($rows, $format);
             $job->markDone($path);
-        } catch (\Throwable $e) {
+        } catch (Throwable $e) {
             $job->markFailed();
         }
 

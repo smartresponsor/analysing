@@ -4,6 +4,7 @@ declare(strict_types=1);
 namespace App\Command;
 
 use App\Service\Analytics\ReportGeneratorService;
+use ReflectionProperty;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
@@ -29,6 +30,9 @@ final class AnalyticsExportCommand extends Command
             .addOption('format', null, InputOption::VALUE_REQUIRED, 'csv');
     }
 
+    /**
+     * @throws \ReflectionException
+     */
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $params = [
@@ -40,8 +44,8 @@ final class AnalyticsExportCommand extends Command
         ];
 
         $job = $this->generator->generate($params);
-        $output->writeln(sprintf('<info>Status:</info> %s', (new \ReflectionProperty($job, 'status'))->getValue($job)));
-        $fileProp = new \ReflectionProperty($job, 'filePath'); $fileProp->setAccessible(true);
+        $output->writeln(sprintf('<info>Status:</info> %s', (new ReflectionProperty($job, 'status'))->getValue($job)));
+        $fileProp = new ReflectionProperty($job, 'filePath'); $fileProp->setAccessible(true);
         $path = $fileProp->getValue($job);
         if ($path) {
             $output->writeln(sprintf('<info>File:</info> %s', $path));

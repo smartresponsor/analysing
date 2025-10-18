@@ -1,0 +1,194 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Connection.php</file>
+  <line>1716</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Connection.php" />
+  <problem_class id="PhpDocRedundantThrowsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Redundant @throws tag(s)</problem_class>
+  <description>Exception 'Exception' is never thrown in the function</description>
+  <highlighted_element>@throws Exception</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>17</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/AbstractSchemaManager.php</file>
+  <line>1441</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/AbstractSchemaManager.php" />
+  <problem_class id="PhpDocRedundantThrowsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Redundant @throws tag(s)</problem_class>
+  <description>Exception 'Exception' is never thrown in the function</description>
+  <highlighted_element>@throws Exception</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>17</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Comparator.php</file>
+  <line>240</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Comparator.php" />
+  <problem_class id="PhpDocRedundantThrowsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Redundant @throws tag(s)</problem_class>
+  <description>Exception 'SchemaException' is never thrown in the function</description>
+  <highlighted_element>@throws SchemaException</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>23</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Schema.php</file>
+  <line>455</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Schema.php" />
+  <problem_class id="PhpDocRedundantThrowsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Redundant @throws tag(s)</problem_class>
+  <description>Exception 'SchemaException' is never thrown in the function</description>
+  <highlighted_element>@throws SchemaException</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>23</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Schema.php</file>
+  <line>469</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Schema.php" />
+  <problem_class id="PhpDocRedundantThrowsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Redundant @throws tag(s)</problem_class>
+  <description>Exception 'SchemaException' is never thrown in the function</description>
+  <highlighted_element>@throws SchemaException</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>23</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Types/Type.php</file>
+  <line>67</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Types/Type.php" />
+  <problem_class id="PhpDocRedundantThrowsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Redundant @throws tag(s)</problem_class>
+  <description>Exception 'ConversionException' is never thrown in the function</description>
+  <highlighted_element>@throws ConversionException</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>27</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Types/Type.php</file>
+  <line>83</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Types/Type.php" />
+  <problem_class id="PhpDocRedundantThrowsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Redundant @throws tag(s)</problem_class>
+  <description>Exception 'ConversionException' is never thrown in the function</description>
+  <highlighted_element>@throws ConversionException</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>27</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/instantiator/src/Doctrine/Instantiator/Instantiator.php</file>
+  <line>139</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/instantiator/src/Doctrine/Instantiator/Instantiator.php" />
+  <problem_class id="PhpDocRedundantThrowsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Redundant @throws tag(s)</problem_class>
+  <description>Exception 'ReflectionException' is never thrown in the function</description>
+  <highlighted_element>@throws ReflectionException</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>27</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/EntityManager.php</file>
+  <line>261</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/EntityManager.php" />
+  <problem_class id="PhpDocRedundantThrowsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Redundant @throws tag(s)</problem_class>
+  <description>Exception 'OptimisticLockException' is never thrown in the function</description>
+  <highlighted_element>@throws OptimisticLockException If a version check on an entity that</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>68</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/EntityManager.php</file>
+  <line>263</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/EntityManager.php" />
+  <problem_class id="PhpDocRedundantThrowsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Redundant @throws tag(s)</problem_class>
+  <description>Exception 'ORMException' is never thrown in the function</description>
+  <highlighted_element>@throws ORMException</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>20</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/EntityManager.php</file>
+  <line>437</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/EntityManager.php" />
+  <problem_class id="PhpDocRedundantThrowsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Redundant @throws tag(s)</problem_class>
+  <description>Exception 'ORMException' is never thrown in the function</description>
+  <highlighted_element>@throws ORMException</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>20</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/EntityManager.php</file>
+  <line>453</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/EntityManager.php" />
+  <problem_class id="PhpDocRedundantThrowsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Redundant @throws tag(s)</problem_class>
+  <description>Exception 'ORMException' is never thrown in the function</description>
+  <highlighted_element>@throws ORMException</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>20</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/Hydration/ScalarColumnHydrator.php</file>
+  <line>22</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Internal/Hydration/ScalarColumnHydrator.php" />
+  <problem_class id="PhpDocRedundantThrowsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Redundant @throws tag(s)</problem_class>
+  <description>Exception 'Exception' is never thrown in the function</description>
+  <highlighted_element>@throws Exception</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>17</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php</file>
+  <line>1903</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Persisters/Entity/BasicEntityPersister.php" />
+  <problem_class id="PhpDocRedundantThrowsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Redundant @throws tag(s)</problem_class>
+  <description>Exception 'QueryException' is never thrown in the function</description>
+  <highlighted_element>@throws QueryException</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>22</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Tools/Pagination/LimitSubqueryOutputWalker.php</file>
+  <line>479</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Tools/Pagination/LimitSubqueryOutputWalker.php" />
+  <problem_class id="PhpDocRedundantThrowsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Redundant @throws tag(s)</problem_class>
+  <description>Exception 'OptimisticLockException' is never thrown in the function</description>
+  <highlighted_element>@throws OptimisticLockException</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>31</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Tools/Pagination/LimitSubqueryOutputWalker.php</file>
+  <line>480</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Tools/Pagination/LimitSubqueryOutputWalker.php" />
+  <problem_class id="PhpDocRedundantThrowsInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Redundant @throws tag(s)</problem_class>
+  <description>Exception 'QueryException' is never thrown in the function</description>
+  <highlighted_element>@throws QueryException</highlighted_element>
+  <language>PHP</language>
+  <offset>7</offset>
+  <length>22</length>
+</problem>
+</problems>

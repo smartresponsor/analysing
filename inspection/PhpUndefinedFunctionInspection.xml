@@ -1,0 +1,26 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/composer/xdebug-handler/src/XdebugHandler.php</file>
+  <line>601</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/composer/xdebug-handler/src/XdebugHandler.php" />
+  <problem_class id="PhpUndefinedFunctionInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Undefined function</problem_class>
+  <description>Undefined function 'uopz_allow_exit'</description>
+  <highlighted_element>uopz_allow_exit</highlighted_element>
+  <language>PHP</language>
+  <offset>17</offset>
+  <length>15</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/LanguageConstruct/SingleSpaceAroundConstructFixer.php</file>
+  <line>471</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/LanguageConstruct/SingleSpaceAroundConstructFixer.php" />
+  <problem_class id="PhpUndefinedFunctionInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Undefined function</problem_class>
+  <description>Undefined function 'LogicException'</description>
+  <highlighted_element>LogicException</highlighted_element>
+  <language>PHP</language>
+  <offset>15</offset>
+  <length>14</length>
+</problem>
+</problems>

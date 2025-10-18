@@ -1,0 +1,182 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/SQLSrv/Result.php</file>
+  <line>109</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/SQLSrv/Result.php" />
+  <problem_class id="PhpStatementHasEmptyBodyInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Statement has empty body</problem_class>
+  <description>Statement has empty body</description>
+  <highlighted_element>while</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Cache/FileHandler.php</file>
+  <line>67</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Cache/FileHandler.php" />
+  <problem_class id="PhpStatementHasEmptyBodyInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Statement has empty body</problem_class>
+  <description>Statement has empty body</description>
+  <highlighted_element>if</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>2</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Cache/FileHandler.php</file>
+  <line>94</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Cache/FileHandler.php" />
+  <problem_class id="PhpStatementHasEmptyBodyInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Statement has empty body</problem_class>
+  <description>Statement has empty body</description>
+  <highlighted_element>if</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>2</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/ClassNotation/OrderedClassElementsFixer.php</file>
+  <line>511</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/ClassNotation/OrderedClassElementsFixer.php" />
+  <problem_class id="PhpStatementHasEmptyBodyInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Statement has empty body</problem_class>
+  <description>Statement has empty body</description>
+  <highlighted_element>for</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>3</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Container.php</file>
+  <line>152</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Container.php" />
+  <problem_class id="PhpStatementHasEmptyBodyInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Statement has empty body</problem_class>
+  <description>Statement has empty body</description>
+  <highlighted_element>if</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>2</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Dumper/PhpDumper.php</file>
+  <line>1820</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Dumper/PhpDumper.php" />
+  <problem_class id="PhpStatementHasEmptyBodyInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Statement has empty body</problem_class>
+  <description>Statement has empty body</description>
+  <highlighted_element>elseif</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Exception/ServiceNotFoundException.php</file>
+  <line>30</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Exception/ServiceNotFoundException.php" />
+  <problem_class id="PhpStatementHasEmptyBodyInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Statement has empty body</problem_class>
+  <description>Statement has empty body</description>
+  <highlighted_element>if</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>2</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/ServiceLocator.php</file>
+  <line>129</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/ServiceLocator.php" />
+  <problem_class id="PhpStatementHasEmptyBodyInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Statement has empty body</problem_class>
+  <description>Statement has empty body</description>
+  <highlighted_element>if</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>2</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/DependencyInjection/FrameworkExtension.php</file>
+  <line>1653</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/DependencyInjection/FrameworkExtension.php" />
+  <problem_class id="PhpStatementHasEmptyBodyInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Statement has empty body</problem_class>
+  <description>Statement has empty body</description>
+  <highlighted_element>if</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>2</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/HttpClientTestCase.php</file>
+  <line>294</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/HttpClientTestCase.php" />
+  <problem_class id="PhpStatementHasEmptyBodyInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Statement has empty body</problem_class>
+  <description>Statement has empty body</description>
+  <highlighted_element>foreach</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/HttpClientTestCase.php</file>
+  <line>305</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/HttpClientTestCase.php" />
+  <problem_class id="PhpStatementHasEmptyBodyInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Statement has empty body</problem_class>
+  <description>Statement has empty body</description>
+  <highlighted_element>foreach</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/HttpClientTestCase.php</file>
+  <line>654</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/HttpClientTestCase.php" />
+  <problem_class id="PhpStatementHasEmptyBodyInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Statement has empty body</problem_class>
+  <description>Statement has empty body</description>
+  <highlighted_element>foreach</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/HttpClientTestCase.php</file>
+  <line>670</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/HttpClientTestCase.php" />
+  <problem_class id="PhpStatementHasEmptyBodyInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Statement has empty body</problem_class>
+  <description>Statement has empty body</description>
+  <highlighted_element>foreach</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/HttpClientTestCase.php</file>
+  <line>694</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/HttpClientTestCase.php" />
+  <problem_class id="PhpStatementHasEmptyBodyInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Statement has empty body</problem_class>
+  <description>Statement has empty body</description>
+  <highlighted_element>foreach</highlighted_element>
+  <language>PHP</language>
+  <offset>12</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/HttpClientTestCase.php</file>
+  <line>838</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-client-contracts/Test/HttpClientTestCase.php" />
+  <problem_class id="PhpStatementHasEmptyBodyInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Statement has empty body</problem_class>
+  <description>Statement has empty body</description>
+  <highlighted_element>foreach</highlighted_element>
+  <language>PHP</language>
+  <offset>8</offset>
+  <length>7</length>
+</problem>
+</problems>

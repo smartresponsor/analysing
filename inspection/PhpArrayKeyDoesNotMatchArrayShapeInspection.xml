@@ -1,0 +1,38 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Phpdoc/NoSuperfluousPhpdocTagsFixer.php</file>
+  <line>373</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Phpdoc/NoSuperfluousPhpdocTagsFixer.php" />
+  <problem_class id="PhpArrayKeyDoesNotMatchArrayShapeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Array key does not match array shape</problem_class>
+  <description>Value should be one of: &quot;type&quot;</description>
+  <highlighted_element>'index'</highlighted_element>
+  <language>PHP</language>
+  <offset>72</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Phpdoc/NoSuperfluousPhpdocTagsFixer.php</file>
+  <line>428</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Phpdoc/NoSuperfluousPhpdocTagsFixer.php" />
+  <problem_class id="PhpArrayKeyDoesNotMatchArrayShapeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Array key does not match array shape</problem_class>
+  <description>Value should be one of: &quot;type&quot;</description>
+  <highlighted_element>'types'</highlighted_element>
+  <language>PHP</language>
+  <offset>28</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Phpdoc/NoSuperfluousPhpdocTagsFixer.php</file>
+  <line>429</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Fixer/Phpdoc/NoSuperfluousPhpdocTagsFixer.php" />
+  <problem_class id="PhpArrayKeyDoesNotMatchArrayShapeInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Array key does not match array shape</problem_class>
+  <description>Value should be one of: &quot;type&quot;</description>
+  <highlighted_element>'types'</highlighted_element>
+  <language>PHP</language>
+  <offset>87</offset>
+  <length>7</length>
+</problem>
+</problems>

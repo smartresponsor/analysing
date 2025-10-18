@@ -1,0 +1,146 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/collections/src/ArrayCollection.php</file>
+  <line>60</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/collections/src/ArrayCollection.php" />
+  <problem_class id="PhpUnusedFieldDefaultValueInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Redundant property initializer</problem_class>
+  <description>Property initializer is redundant</description>
+  <highlighted_element>= []</highlighted_element>
+  <language>PHP</language>
+  <offset>27</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/AbstractException.php</file>
+  <line>20</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/AbstractException.php" />
+  <problem_class id="PhpUnusedFieldDefaultValueInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Redundant property initializer</problem_class>
+  <description>Property initializer is redundant</description>
+  <highlighted_element>= null</highlighted_element>
+  <language>PHP</language>
+  <offset>29</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/Mysqli/Result.php</file>
+  <line>30</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Driver/Mysqli/Result.php" />
+  <problem_class id="PhpUnusedFieldDefaultValueInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Redundant property initializer</problem_class>
+  <description>Property initializer is redundant</description>
+  <highlighted_element>= null</highlighted_element>
+  <language>PHP</language>
+  <offset>42</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Index.php</file>
+  <line>46</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/dbal/src/Schema/Index.php" />
+  <problem_class id="PhpUnusedFieldDefaultValueInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Redundant property initializer</problem_class>
+  <description>Property initializer is redundant</description>
+  <highlighted_element>= []</highlighted_element>
+  <language>PHP</language>
+  <offset>26</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/ClassMetadata.php</file>
+  <line>552</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Mapping/ClassMetadata.php" />
+  <problem_class id="PhpUnusedFieldDefaultValueInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Redundant property initializer</problem_class>
+  <description>Property initializer is redundant</description>
+  <highlighted_element>= null</highlighted_element>
+  <language>PHP</language>
+  <offset>52</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/doctrine/orm/src/Tools/Console/MetadataFilter.php</file>
+  <line>27</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/doctrine/orm/src/Tools/Console/MetadataFilter.php" />
+  <problem_class id="PhpUnusedFieldDefaultValueInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Redundant property initializer</problem_class>
+  <description>Property initializer is redundant</description>
+  <highlighted_element>= []</highlighted_element>
+  <language>PHP</language>
+  <offset>25</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/DocBlock/Annotation.php</file>
+  <line>89</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/DocBlock/Annotation.php" />
+  <problem_class id="PhpUnusedFieldDefaultValueInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Redundant property initializer</problem_class>
+  <description>Property initializer is redundant</description>
+  <highlighted_element>= null</highlighted_element>
+  <language>PHP</language>
+  <offset>41</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Runner/Runner.php</file>
+  <line>88</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer/src/Runner/Runner.php" />
+  <problem_class id="PhpUnusedFieldDefaultValueInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Redundant property initializer</problem_class>
+  <description>Property initializer is redundant</description>
+  <highlighted_element>= null</highlighted_element>
+  <language>PHP</language>
+  <offset>39</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Loader/Configurator/AbstractServiceConfigurator.php</file>
+  <line>19</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/dependency-injection/Loader/Configurator/AbstractServiceConfigurator.php" />
+  <problem_class id="PhpUnusedFieldDefaultValueInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Redundant property initializer</problem_class>
+  <description>Property initializer is redundant</description>
+  <highlighted_element>= []</highlighted_element>
+  <language>PHP</language>
+  <offset>30</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Secrets/SodiumVault.php</file>
+  <line>26</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Secrets/SodiumVault.php" />
+  <problem_class id="PhpUnusedFieldDefaultValueInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Redundant property initializer</problem_class>
+  <description>Property initializer is redundant</description>
+  <highlighted_element>= null</highlighted_element>
+  <language>PHP</language>
+  <offset>50</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-foundation/RequestMatcher/MethodRequestMatcher.php</file>
+  <line>27</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-foundation/RequestMatcher/MethodRequestMatcher.php" />
+  <problem_class id="PhpUnusedFieldDefaultValueInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Redundant property initializer</problem_class>
+  <description>Property initializer is redundant</description>
+  <highlighted_element>= []</highlighted_element>
+  <language>PHP</language>
+  <offset>26</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/http-foundation/StreamedResponse.php</file>
+  <line>32</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/http-foundation/StreamedResponse.php" />
+  <problem_class id="PhpUnusedFieldDefaultValueInspection" severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Redundant property initializer</problem_class>
+  <description>Property initializer is redundant</description>
+  <highlighted_element>= false</highlighted_element>
+  <language>PHP</language>
+  <offset>29</offset>
+  <length>8</length>
+</problem>
+</problems>

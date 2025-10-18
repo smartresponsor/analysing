@@ -5,6 +5,7 @@ namespace App\Service\Alerts;
 
 use Psr\Log\LoggerInterface;
 use Symfony\Contracts\HttpClient\HttpClientInterface;
+use Throwable;
 
 final class NotificationDispatcher
 {
@@ -29,7 +30,7 @@ final class NotificationDispatcher
         if (!$this->httpClient) { $this->logger->warning('HttpClient not available for webhook: ' . $url); return; }
         try {
             $this->httpClient->request('POST', $url, ['json' => $payload]);
-        } catch (\Throwable $e) {
+        } catch (Throwable $e) {
             $this->logger->error('Webhook send failed: ' . $e->getMessage());
         }
     }

@@ -1,0 +1,134 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/DependencyInjection/Configuration.php</file>
+  <line>524</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/DependencyInjection/Configuration.php" />
+  <problem_class id="PhpTooLongMemberReferenceChainInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Member reference chain is too long to analyze</problem_class>
+  <description>Call chain is too long to analyse. Break it into fragments of up to 100 calls</description>
+  <highlighted_element>example</highlighted_element>
+  <language>PHP</language>
+  <offset>54</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/DependencyInjection/Configuration.php</file>
+  <line>842</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/DependencyInjection/Configuration.php" />
+  <problem_class id="PhpTooLongMemberReferenceChainInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Member reference chain is too long to analyze</problem_class>
+  <description>Call chain is too long to analyse. Break it into fragments of up to 100 calls</description>
+  <highlighted_element>end</highlighted_element>
+  <language>PHP</language>
+  <offset>18</offset>
+  <length>3</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/DependencyInjection/Configuration.php</file>
+  <line>966</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/DependencyInjection/Configuration.php" />
+  <problem_class id="PhpTooLongMemberReferenceChainInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Member reference chain is too long to analyze</problem_class>
+  <description>Call chain is too long to analyse. Break it into fragments of up to 100 calls</description>
+  <highlighted_element>end</highlighted_element>
+  <language>PHP</language>
+  <offset>26</offset>
+  <length>3</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/DependencyInjection/Configuration.php</file>
+  <line>1053</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/DependencyInjection/Configuration.php" />
+  <problem_class id="PhpTooLongMemberReferenceChainInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Member reference chain is too long to analyze</problem_class>
+  <description>Call chain is too long to analyse. Break it into fragments of up to 100 calls</description>
+  <highlighted_element>stringNode</highlighted_element>
+  <language>PHP</language>
+  <offset>38</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/DependencyInjection/Configuration.php</file>
+  <line>1737</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/DependencyInjection/Configuration.php" />
+  <problem_class id="PhpTooLongMemberReferenceChainInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Member reference chain is too long to analyze</problem_class>
+  <description>Call chain is too long to analyse. Break it into fragments of up to 100 calls</description>
+  <highlighted_element>integerNode</highlighted_element>
+  <language>PHP</language>
+  <offset>46</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/DependencyInjection/Configuration.php</file>
+  <line>2010</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/DependencyInjection/Configuration.php" />
+  <problem_class id="PhpTooLongMemberReferenceChainInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Member reference chain is too long to analyze</problem_class>
+  <description>Call chain is too long to analyse. Break it into fragments of up to 100 calls</description>
+  <highlighted_element>normalizeKeys</highlighted_element>
+  <language>PHP</language>
+  <offset>38</offset>
+  <length>13</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/DependencyInjection/Configuration.php</file>
+  <line>2339</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/DependencyInjection/Configuration.php" />
+  <problem_class id="PhpTooLongMemberReferenceChainInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Member reference chain is too long to analyze</problem_class>
+  <description>Call chain is too long to analyse. Break it into fragments of up to 100 calls</description>
+  <highlighted_element>info</highlighted_element>
+  <language>PHP</language>
+  <offset>30</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/DependencyInjection/Configuration.php</file>
+  <line>2694</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/DependencyInjection/Configuration.php" />
+  <problem_class id="PhpTooLongMemberReferenceChainInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Member reference chain is too long to analyze</problem_class>
+  <description>Call chain is too long to analyse. Break it into fragments of up to 100 calls</description>
+  <highlighted_element>info</highlighted_element>
+  <language>PHP</language>
+  <offset>42</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Resources/config/cache.php</file>
+  <line>232</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Resources/config/cache.php" />
+  <problem_class id="PhpTooLongMemberReferenceChainInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Member reference chain is too long to analyze</problem_class>
+  <description>Call chain is too long to analyse. Break it into fragments of up to 100 calls</description>
+  <highlighted_element>tag</highlighted_element>
+  <language>PHP</language>
+  <offset>14</offset>
+  <length>3</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Resources/config/console.php</file>
+  <line>302</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Resources/config/console.php" />
+  <problem_class id="PhpTooLongMemberReferenceChainInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Member reference chain is too long to analyze</problem_class>
+  <description>Call chain is too long to analyse. Break it into fragments of up to 100 calls</description>
+  <highlighted_element>set</highlighted_element>
+  <language>PHP</language>
+  <offset>10</offset>
+  <length>3</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Resources/config/services.php</file>
+  <line>247</line>
+  <module>Analytics</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Resources/config/services.php" />
+  <problem_class id="PhpTooLongMemberReferenceChainInspection" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Member reference chain is too long to analyze</problem_class>
+  <description>Call chain is too long to analyse. Break it into fragments of up to 100 calls</description>
+  <highlighted_element>tag</highlighted_element>
+  <language>PHP</language>
+  <offset>43</offset>
+  <length>3</length>
+</problem>
+</problems>
