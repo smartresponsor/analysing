@@ -1,0 +1,3 @@
+analytics:
+  version: "4_22"
+  feature: "csv-importer"
