@@ -1,0 +1,3 @@
+analytics:
+  version: "4_25"
+  feature: "metrics-window-query"
