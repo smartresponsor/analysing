@@ -1,0 +1,3 @@
+analytics:
+  version: "4_12"
+  feature: "gzip-export-writer"
