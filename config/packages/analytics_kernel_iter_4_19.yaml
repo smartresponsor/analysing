@@ -1,0 +1,3 @@
+analytics:
+  version: "4_19"
+  feature: "cache-layer-local"
