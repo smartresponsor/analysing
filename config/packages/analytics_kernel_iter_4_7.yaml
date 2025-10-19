@@ -1,0 +1,3 @@
+analytics:
+  version: "4_7"
+  feature: "kpi-registry-and-contracts"
