@@ -1,0 +1,3 @@
+analytics:
+  version: "4_21"
+  feature: "healthcheck"
