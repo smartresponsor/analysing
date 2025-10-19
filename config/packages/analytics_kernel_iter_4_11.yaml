@@ -1,0 +1,3 @@
+analytics:
+  version: "4_11"
+  feature: "retention-and-pruning"
