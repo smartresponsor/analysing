@@ -1,16 +1,16 @@
-# AnalyticsKernel — Iteration 4.3 (Report Exporters)
+# AnalyticsKernel — Iteration 4.1 (Foundation)
 
-Экспорт аналитических отчётов CSV/XLSX (на текущем этапе XLSX — CSV-fallback; полноценный XLSX планируется через PhpSpreadsheet).
+Базовый модуль аналитики KPI и агрегатов SmartResponsor.
 
 ## Состав
-- Entity: `ExportJob`
-- Services: `ReportExporterService`, `ReportGeneratorService`
-- CLI: `app:analytics:export <from> <to> [--vendor=] [--currency=] [--format=csv|xlsx]`
-- Config: `config/packages/analytics_kernel_iter_4_3.yaml`
-- Tests: `ExportersSmokeTest.php`
+- Entity: `MetricSnapshot`
+- Service: `AnalyticsCollector`
+- CLI: `app:analytics:refresh`
+- Config: `config/packages/analytics_kernel_iter_4_1.yaml`
+- Tests: `AnalyticsSmokeTest.php`
 
-## Примеры
+## Пример
 ```bash
-php bin/console app:analytics:export 2025-09-01 2025-09-30 --currency=USD --format=csv
-php bin/console app:analytics:export 2025-09-01 2025-09-30 --vendor=501 --format=xlsx
+php bin/console app:analytics:refresh
+# → Refreshed 42 metric snapshots
 ```
