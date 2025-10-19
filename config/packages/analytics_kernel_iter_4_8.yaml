@@ -1,0 +1,3 @@
+analytics:
+  version: "4_8"
+  feature: "dimension-and-segment"

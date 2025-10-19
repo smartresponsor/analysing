@@ -1,3 +1,3 @@
-# analytics-backend-phase-4_7-kpi-registry-and-contracts
+# analytics-backend-phase-4_8-dimension-and-segment
 
-Generated 2025-10-18T19:27:23.417999Z
+Generated 2025-10-18T19:27:23.422817Z
