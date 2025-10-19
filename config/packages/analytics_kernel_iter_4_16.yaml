@@ -1,0 +1,3 @@
+analytics:
+  version: "4_16"
+  feature: "tenant-scope-basics"
