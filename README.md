@@ -1,25 +1,16 @@
-# AnalyticsKernel — Iteration 4.2 (Dashboard Engine)
+# AnalyticsKernel — Iteration 4.3 (Report Exporters)
 
-JSON-дашборды KPI: агрегаты, таймсерии, топ вендоров.
+Экспорт аналитических отчётов CSV/XLSX (на текущем этапе XLSX — CSV-fallback; полноценный XLSX планируется через PhpSpreadsheet).
 
 ## Состав
-- DTO: `KpiRequest`
-- Service: `DashboardService` (kpi, timeseries, byVendor)
-- Controller: `DashboardController` (JSON API)
-- Config: `config/packages/analytics_kernel_iter_4_2.yaml`
-- Tests: `DashboardSmokeTest.php`
+- Entity: `ExportJob`
+- Services: `ReportExporterService`, `ReportGeneratorService`
+- CLI: `app:analytics:export <from> <to> [--vendor=] [--currency=] [--format=csv|xlsx]`
+- Config: `config/packages/analytics_kernel_iter_4_3.yaml`
+- Tests: `ExportersSmokeTest.php`
 
-## Примеры маршрутов (routes.yaml)
-```yaml
-analytics_kpi:
-  path: /api/analytics/kpi
-  controller: App\Controller\Analytics\DashboardController::kpi
-
-analytics_timeseries:
-  path: /api/analytics/timeseries
-  controller: App\Controller\Analytics\DashboardController::timeseries
-
-analytics_top_vendors:
-  path: /api/analytics/top-vendors
-  controller: App\Controller\Analytics\DashboardController::topVendors
+## Примеры
+```bash
+php bin/console app:analytics:export 2025-09-01 2025-09-30 --currency=USD --format=csv
+php bin/console app:analytics:export 2025-09-01 2025-09-30 --vendor=501 --format=xlsx
 ```
