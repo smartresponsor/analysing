@@ -1,0 +1,3 @@
+analytics:
+  version: "4_13"
+  feature: "webhook-notify-channel"
