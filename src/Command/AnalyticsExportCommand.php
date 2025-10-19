@@ -1,27 +1,51 @@
-<?php declare(strict_types=1);
+<?php
+declare(strict_types=1);
+
 namespace App\Command;
-use App\Entity\Analytics\ExportJob;
-use App\Service\Analytics\DashboardService;
-use App\Service\Analytics\ReportExporterService;
+
 use App\Service\Analytics\ReportGeneratorService;
 use Symfony\Component\Console\Attribute\AsCommand;
-use Symfony\Component\Console\Command\Command as BaseCommand;
+use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
+use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 
-#[AsCommand(name: 'analytics:export:csv', description: 'Export KPI aggregates to CSV')]
-final class AnalyticsExportCommand extends BaseCommand
+#[AsCommand(name: 'app:analytics:export', description: 'Export analytics report to CSV/XLSX')]
+final class AnalyticsExportCommand extends Command
 {
-    public function __construct(private readonly DashboardService $dashboard, private readonly ReportGeneratorService $generator, private readonly ReportExporterService $exporter) { parent::__construct(); }
-    protected function configure(): void { $this->addArgument('path', InputArgument::REQUIRED, 'Target file path to write CSV'); }
+    public function __construct(private readonly ReportGeneratorService $generator)
+    {
+        parent::__construct();
+    }
+
+    protected function configure(): void
+    {
+        $this
+            .addArgument('from', InputArgument::REQUIRED)
+            .addArgument('to', InputArgument::REQUIRED)
+            .addOption('vendor', null, InputOption::VALUE_REQUIRED)
+            .addOption('currency', null, InputOption::VALUE_REQUIRED)
+            .addOption('format', null, InputOption::VALUE_REQUIRED, 'csv');
+    }
+
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
-        $path = (string)$input->getArgument('path');
-        $from = new \DateTimeImmutable('first day of this month 00:00:00'); $to = new \DateTimeImmutable('last day of this month 23:59:59');
-        $agg = [ $this->dashboard->aggregate('orders', $from, $to), $this->dashboard->aggregate('revenue', $from, $to) ];
-        $csv = $this->generator->generateCsv($agg);
-        $job = new ExportJob('csv', ['path'=>$path]); $this->exporter->exportCsv($job, $csv);
-        $output->writeln('<info>CSV exported to ' . $path . '</info>'); return self::SUCCESS;
+        $params = [
+            'from' => (string)$input->getArgument('from'),
+            'to' => (string)$input->getArgument('to'),
+            'vendorId' => $input->getOption('vendor') !== null ? (int)$input->getOption('vendor') : null,
+            'currency' => $input->getOption('currency') !== null ? (string)$input->getOption('currency') : null,
+            'format' => (string)$input->getOption('format'),
+        ];
+
+        $job = $this->generator->generate($params);
+        $output->writeln(sprintf('<info>Status:</info> %s', (new \ReflectionProperty($job, 'status'))->getValue($job)));
+        $fileProp = new \ReflectionProperty($job, 'filePath'); $fileProp->setAccessible(true);
+        $path = $fileProp->getValue($job);
+        if ($path) {
+            $output->writeln(sprintf('<info>File:</info> %s', $path));
+        }
+        return Command::SUCCESS;
     }
 }
