@@ -1,0 +1,3 @@
+analytics:
+  version: "4_14"
+  feature: "file-notify-channel"
