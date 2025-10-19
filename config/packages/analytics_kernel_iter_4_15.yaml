@@ -1,0 +1,3 @@
+analytics:
+  version: "4_15"
+  feature: "anomaly-zscore-detector"
