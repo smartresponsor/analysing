@@ -1,9 +1,0 @@
-services:
-  App\Service\Analytics\AnalyticsCollector:
-    autowire: true
-    autoconfigure: true
-
-  App\Command\AnalyticsRefreshCommand:
-    autowire: true
-    autoconfigure: true
-    public: true

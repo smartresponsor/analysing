@@ -1,4 +1,6 @@
 <?php
+declare(strict_types=1);
+declare(strict_types=1);
 $finder = PhpCsFixer\Finder::create()
     ->in(['src', 'tests'])
     ->exclude(['vendor', 'var', 'stubs']);

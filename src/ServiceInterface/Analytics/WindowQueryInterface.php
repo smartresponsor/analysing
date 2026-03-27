@@ -1,5 +1,15 @@
 <?php
 
-namespace SmartResponsor\Analytics\ServiceInterface\Analytics;
+declare(strict_types=1);
 
-interface WindowQueryInterface { public function window(array $rows, int $size): array; }
+namespace App\ServiceInterface\Analytics;
+
+interface WindowQueryInterface
+{
+    /**
+     * @param list<mixed> $rows
+     *
+     * @return list<list<mixed>>
+     */
+    public function window(array $rows, int $size): array;
+}

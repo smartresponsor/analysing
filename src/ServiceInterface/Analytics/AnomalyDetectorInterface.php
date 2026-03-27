@@ -1,5 +1,15 @@
 <?php
 
-namespace SmartResponsor\Analytics\ServiceInterface\Analytics;
+declare(strict_types=1);
 
-interface AnomalyDetectorInterface { public function zscore(array $values): array; }
+namespace App\ServiceInterface\Analytics;
+
+interface AnomalyDetectorInterface
+{
+    /**
+     * @param list<mixed> $values
+     *
+     * @return list<float>
+     */
+    public function zscore(array $values): array;
+}

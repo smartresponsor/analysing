@@ -1,5 +1,15 @@
 <?php
 
-namespace SmartResponsor\Analytics\ServiceInterface\Analytics;
+declare(strict_types=1);
 
-interface RetentionInterface { public function prune(array $rows, int $maxDays): array; }
+namespace App\ServiceInterface\Analytics;
+
+interface RetentionInterface
+{
+    /**
+     * @param list<array<string,mixed>> $rows
+     *
+     * @return list<array<string,mixed>>
+     */
+    public function prune(array $rows, int $maxDays): array;
+}

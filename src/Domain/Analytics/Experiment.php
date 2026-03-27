@@ -1,0 +1,124 @@
+<?php
+
+/*
+ * Owner: Marketing America Corp
+ * Author: Oleksandr Tishchenko <dev@highhopesamerica.com>
+ */
+
+declare(strict_types=1);
+
+namespace App\Domain\Analytics;
+
+use App\DomainInterface\Analytics\ClickhouseClientInterface;
+use App\DomainInterface\Analytics\ExperimentInterface;
+use Psr\Log\LoggerInterface;
+
+final class Experiment implements ExperimentInterface
+{
+    public function __construct(
+        private readonly ClickhouseClientInterface $client,
+        private readonly LoggerInterface $logger,
+        private readonly string $salt,
+    ) {
+    }
+
+    public function assign(array $param): array
+    {
+        $experimentId = $this->normalizeRequiredString($param, 'experiment_id');
+        $userId = $this->normalizeRequiredString($param, 'user_id');
+        $rollout = $this->normalizeRollout($param['rollout'] ?? 50);
+
+        $bucket = crc32($this->salt.'|'.$experimentId.'|'.$userId) % 100;
+        $variant = $bucket < $rollout ? 'treatment' : 'control';
+
+        $this->logger->info('Analytics experiment allocated subject.', [
+            'experiment_id' => $experimentId,
+            'user_id' => $userId,
+            'rollout' => $rollout,
+            'bucket' => $bucket,
+            'variant' => $variant,
+        ]);
+
+        return [
+            'experiment_id' => $experimentId,
+            'user_id' => $userId,
+            'variant' => $variant,
+            'bucket' => $bucket,
+            'rollout' => $rollout,
+        ];
+    }
+
+    public function expose(array $param): array
+    {
+        $userId = $this->normalizeRequiredString($param, 'user_id');
+        $tenantId = $this->normalizeRequiredString($param, 'tenant_id');
+        $experimentId = $this->normalizeRequiredString($param, 'experiment_id');
+        $variant = $this->normalizeVariant($param['variant'] ?? null);
+
+        $rows = [[
+            'event_name' => 'experiment_expose',
+            'event_type' => 'expose',
+            'user_id' => $userId,
+            'session_id' => '',
+            'tenant_id' => $tenantId,
+            'source' => 'api',
+            'timestamp' => (new \DateTimeImmutable())->format(DATE_ATOM),
+            'properties' => [
+                'experiment_id' => $experimentId,
+                'variant' => $variant,
+            ],
+        ]];
+
+        $this->client->insertJsonEachRow('event_raw', $rows);
+        $this->logger->info('Analytics experiment exposure recorded.', [
+            'experiment_id' => $experimentId,
+            'user_id' => $userId,
+            'tenant_id' => $tenantId,
+            'variant' => $variant,
+        ]);
+
+        return [
+            'accepted' => 1,
+            'experiment_id' => $experimentId,
+            'variant' => $variant,
+        ];
+    }
+
+    private function normalizeRequiredString(array $param, string $field): string
+    {
+        $value = trim((string) ($param[$field] ?? ''));
+        if ('' === $value) {
+            $this->logger->warning('Analytics experiment domain rejected an empty required field.', [
+                'field' => $field,
+            ]);
+            throw new \InvalidArgumentException(sprintf('%s must be a non-empty string.', $field));
+        }
+
+        return $value;
+    }
+
+    private function normalizeRollout(mixed $value): int
+    {
+        $rollout = filter_var($value, FILTER_VALIDATE_INT, ['options' => ['min_range' => 0, 'max_range' => 100]]);
+        if (!is_int($rollout)) {
+            $this->logger->warning('Analytics experiment domain rejected an invalid rollout value.', [
+                'value_type' => get_debug_type($value),
+                'value' => $value,
+            ]);
+            throw new \InvalidArgumentException('rollout must be an integer between 0 and 100.');
+        }
+
+        return $rollout;
+    }
+
+    private function normalizeVariant(mixed $value): string
+    {
+        $variant = trim((string) $value);
+        if ('' === $variant) {
+            $this->logger->warning('Analytics experiment domain rejected an empty variant.');
+            throw new \InvalidArgumentException('variant must be a non-empty string.');
+        }
+
+        return $variant;
+    }
+}

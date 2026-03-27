@@ -1,5 +1,30 @@
 <?php
 
-namespace SmartResponsor\Analytics\ValueObject\Analytics;
+declare(strict_types=1);
 
-final class Dimension { public function __construct(private string $name) {} public function name(): string { return $this->name; }}
+namespace App\ValueObject\Analytics;
+
+final class Dimension
+{
+    private string $name;
+
+    public function __construct(string $name)
+    {
+        $normalized = trim($name);
+        if ('' === $normalized) {
+            throw new \InvalidArgumentException('Analytics dimension name must not be empty.');
+        }
+
+        $this->name = $normalized;
+    }
+
+    public function name(): string
+    {
+        return $this->name;
+    }
+
+    public function __toString(): string
+    {
+        return $this->name;
+    }
+}

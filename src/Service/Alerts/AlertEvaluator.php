@@ -1,29 +1,144 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
+
 namespace App\Service\Alerts;
+
 use App\Entity\Alerts\AlertRule;
 use App\Entity\Analytics\MetricSnapshot;
+use App\ServiceInterface\Alerts\AlertEvaluatorInterface;
 use Doctrine\ORM\EntityManagerInterface;
 use Psr\Log\LoggerInterface;
 
-final class AlertEvaluator
+final class AlertEvaluator implements AlertEvaluatorInterface
 {
-    public function __construct(private readonly EntityManagerInterface $em, private readonly LoggerInterface $logger) {}
+    public function __construct(
+        private readonly EntityManagerInterface $em,
+        private readonly LoggerInterface $logger,
+    ) {
+    }
 
     /** @return array<array{rule: AlertRule, matched: bool, snapshot?: MetricSnapshot}> */
     public function evaluate(\DateTimeImmutable $from, \DateTimeImmutable $to): array
     {
-        $rules = $this->em->getRepository(AlertRule::class)->findBy(['is_active' => true]);
-        $out = [];
-        foreach ($rules as $rule) {
-            $c = $rule->getCondition();
-            $metric = $c['metric'] ?? null; $op = $c['operator'] ?? null; $val = $c['value'] ?? null;
-            if (!$metric || !$op || $val===null) { $this->logger->warning('Alert rule invalid', ['code'=>$rule->getCode()]); $out[]=['rule'=>$rule,'matched'=>false]; continue; }
-            $snap = $this->em->getRepository(MetricSnapshot::class)->findOneBy(['metric'=>$metric], ['created_at'=>'DESC']);
-            if (!$snap) { $out[]=['rule'=>$rule,'matched'=>false]; continue; }
-            $v = $snap->getValue();
-            $matched = match ($op) { '>' => $v>$val, '>='=>$v>=$val, '<'=>$v<$val, '<='=>$v<=$val, '=='=>$v==$val, '!='=>$v!=$val, default=>false };
-            $out.append({'rule':$rule, 'matched':$matched, 'snapshot':$snap})  # <-- placeholder typo to avoid PHP parser
+        if ($from > $to) {
+            throw new \InvalidArgumentException('Alert evaluation range is invalid.');
         }
+
+        try {
+            $rules = $this->em->getRepository(AlertRule::class)->findBy(['is_active' => true]);
+        } catch (\Throwable $exception) {
+            $this->logger->error('Analytics alert rules could not be loaded.', [
+                'exception' => $exception,
+                'from' => $from->format(DATE_ATOM),
+                'to' => $to->format(DATE_ATOM),
+            ]);
+
+            throw new \RuntimeException('Analytics alert rules are unavailable.', 0, $exception);
+        }
+
+        $out = [];
+
+        $matchedCount = 0;
+        $evaluatedCount = 0;
+
+        foreach ($rules as $rule) {
+            ++$evaluatedCount;
+            $condition = $rule->getCondition();
+            $metric = isset($condition['metric']) ? trim((string) $condition['metric']) : '';
+            $operator = isset($condition['operator']) ? trim((string) $condition['operator']) : '';
+            $threshold = $condition['value'] ?? null;
+
+            if ('' === $metric || '' === $operator || !is_numeric($threshold)) {
+                $this->logger->warning('Alert rule invalid.', [
+                    'code' => $rule->getCode(),
+                    'condition' => $condition,
+                ]);
+                $out[] = ['rule' => $rule, 'matched' => false];
+                continue;
+            }
+
+            if (!in_array($operator, ['>', '>=', '<', '<=', '==', '!='], true)) {
+                $this->logger->warning('Alert rule operator unsupported.', [
+                    'code' => $rule->getCode(),
+                    'operator' => $operator,
+                ]);
+                $out[] = ['rule' => $rule, 'matched' => false];
+                continue;
+            }
+
+            $snapshot = $this->findLatestSnapshotInRange($metric, $from, $to, $rule->getCode());
+            if (!$snapshot instanceof MetricSnapshot) {
+                $this->logger->info('Alert evaluation skipped because no snapshot matched the range.', [
+                    'code' => $rule->getCode(),
+                    'metric' => $metric,
+                    'from' => $from->format(DATE_ATOM),
+                    'to' => $to->format(DATE_ATOM),
+                ]);
+                $out[] = ['rule' => $rule, 'matched' => false];
+                continue;
+            }
+
+            $value = $snapshot->getValue();
+            $target = (float) $threshold;
+            $matched = match ($operator) {
+                '>' => $value > $target,
+                '>=' => $value >= $target,
+                '<' => $value < $target,
+                '<=' => $value <= $target,
+                '==' => $value == $target,
+                '!=' => $value != $target,
+            };
+
+            if ($matched) {
+                ++$matchedCount;
+            }
+
+            $out[] = ['rule' => $rule, 'matched' => $matched, 'snapshot' => $snapshot];
+        }
+
+        $this->logger->info('Analytics alert evaluation completed.', [
+            'from' => $from->format(DATE_ATOM),
+            'to' => $to->format(DATE_ATOM),
+            'evaluated_rules' => $evaluatedCount,
+            'matched_rules' => $matchedCount,
+        ]);
+
         return $out;
+    }
+
+    private function findLatestSnapshotInRange(string $metric, \DateTimeImmutable $from, \DateTimeImmutable $to, string $ruleCode): ?MetricSnapshot
+    {
+        try {
+            $qb = $this->em->createQueryBuilder();
+
+            $query = $qb
+                ->select('snapshot')
+                ->from(MetricSnapshot::class, 'snapshot')
+                ->andWhere('snapshot.metric = :metric')
+                ->andWhere('snapshot.period_start >= :from')
+                ->andWhere('snapshot.period_end <= :to')
+                ->orderBy('snapshot.period_end', 'DESC')
+                ->addOrderBy('snapshot.period_start', 'DESC')
+                ->setMaxResults(1)
+                ->setParameter('metric', $metric)
+                ->setParameter('from', $from)
+                ->setParameter('to', $to)
+                ->getQuery();
+
+            $result = $query->getOneOrNullResult();
+        } catch (\Throwable $exception) {
+            $this->logger->error('Analytics alert snapshot lookup failed.', [
+                'exception' => $exception,
+                'rule' => $ruleCode,
+                'metric' => $metric,
+                'from' => $from->format(DATE_ATOM),
+                'to' => $to->format(DATE_ATOM),
+            ]);
+
+            throw new \RuntimeException('Analytics alert snapshots are unavailable.', 0, $exception);
+        }
+
+        return $result instanceof MetricSnapshot ? $result : null;
     }
 }

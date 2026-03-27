@@ -1,5 +1,13 @@
 <?php
 
-namespace SmartResponsor\Analytics\ServiceInterface\Analytics;
+declare(strict_types=1);
 
-interface SloCalculatorInterface { public function availability(array $values): float; }
+namespace App\ServiceInterface\Analytics;
+
+interface SloCalculatorInterface
+{
+    /**
+     * @param list<mixed> $values
+     */
+    public function availability(array $values): float;
+}

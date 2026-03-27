@@ -48,6 +48,7 @@ Thumbs.db
 /coverage/
 /build/
 /reports/
+/report/
 /test-output/
 .cachegrind.out.*
 
@@ -73,8 +74,6 @@ Thumbs.db
 *.old
 *.orig
 *.log
-*.swp
-*.swo
 *~
 # PHP-CS-Fixer cache
 .php-cs-fixer.cache
@@ -141,3 +140,4 @@ Thumbs.db
 
 /archives/
 /Archives/
+/config/*

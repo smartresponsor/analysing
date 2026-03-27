@@ -1,9 +1,0 @@
-services:
-  App\Service\Analytics\DashboardService:
-    autowire: true
-    autoconfigure: true
-
-  App\Controller\Analytics\DashboardController:
-    autowire: true
-    autoconfigure: true
-    public: true

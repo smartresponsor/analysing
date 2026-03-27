@@ -1,9 +1,0 @@
-services:
-  App\Controller\Analytics\DashboardPageController:
-    autowire: true
-    autoconfigure: true
-    public: true
-
-  App\Service\Alerts\NotificationDispatcher:
-    autowire: true
-    autoconfigure: true

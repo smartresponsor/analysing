@@ -1,5 +1,10 @@
 <?php
 
-namespace SmartResponsor\Analytics\ServiceInterface\Analytics;
+declare(strict_types=1);
 
-interface RollupInterface { public function sum(array $rows, string $field): float|int; }
+namespace App\ServiceInterface\Analytics;
+
+interface RollupInterface
+{
+    public function sum(array $rows, string $field): float|int;
+}

@@ -1,2 +1,0 @@
-access:
-  allow: ["admin@example.com","ops@example.com"]

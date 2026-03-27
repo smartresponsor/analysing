@@ -1,5 +1,13 @@
 <?php
 
-namespace SmartResponsor\Analytics\ServiceInterface\Analytics;
+declare(strict_types=1);
 
-use SmartResponsor\Analytics\ValueObject\Analytics\Dimension; use SmartResponsor\Analytics\ValueObject\Analytics\Segment; interface SegmentationInterface { public function apply(array $rows, Dimension $dim, Segment $seg): array; }
+namespace App\ServiceInterface\Analytics;
+
+use App\ValueObject\Analytics\Dimension;
+use App\ValueObject\Analytics\Segment;
+
+interface SegmentationInterface
+{
+    public function apply(array $rows, Dimension $dim, Segment $seg): array;
+}

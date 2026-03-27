@@ -1,5 +1,10 @@
 <?php
 
-namespace SmartResponsor\Analytics\ServiceInterface\Analytics;
+declare(strict_types=1);
 
-interface AccessGuardInterface { public function allow(string $subject): bool; }
+namespace App\ServiceInterface\Analytics;
+
+interface AccessGuardInterface
+{
+    public function allow(string $subject): bool;
+}

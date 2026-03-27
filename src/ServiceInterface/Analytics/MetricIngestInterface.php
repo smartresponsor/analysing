@@ -1,5 +1,13 @@
 <?php
 
-namespace SmartResponsor\Analytics\ServiceInterface\Analytics;
+declare(strict_types=1);
 
-interface MetricIngestInterface { public function ingest(array $payload): void; }
+namespace App\ServiceInterface\Analytics;
+
+interface MetricIngestInterface
+{
+    /**
+     * @param array<string, scalar|list<scalar|null>|null> $payload
+     */
+    public function ingest(array $payload): void;
+}

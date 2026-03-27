@@ -1,5 +1,30 @@
 <?php
 
-namespace SmartResponsor\Analytics\ValueObject\Analytics;
+declare(strict_types=1);
 
-final class Segment { public function __construct(private string $code) {} public function code(): string { return $this->code; }}
+namespace App\ValueObject\Analytics;
+
+final class Segment
+{
+    private string $code;
+
+    public function __construct(string $code)
+    {
+        $normalized = trim($code);
+        if ('' === $normalized) {
+            throw new \InvalidArgumentException('Analytics segment code must not be empty.');
+        }
+
+        $this->code = $normalized;
+    }
+
+    public function code(): string
+    {
+        return $this->code;
+    }
+
+    public function __toString(): string
+    {
+        return $this->code;
+    }
+}

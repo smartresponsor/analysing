@@ -1,5 +1,13 @@
 <?php
 
-namespace SmartResponsor\Analytics\ServiceInterface\Analytics;
+declare(strict_types=1);
 
-interface NotifierInterface { public function send(string $endpoint, array $payload): bool; }
+namespace App\ServiceInterface\Analytics;
+
+interface NotifierInterface
+{
+    /**
+     * @param array<string,mixed> $payload
+     */
+    public function send(string $endpoint, array $payload): bool;
+}

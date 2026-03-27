@@ -1,5 +1,17 @@
 <?php
 
-namespace SmartResponsor\Analytics\ServiceInterface\Analytics;
+declare(strict_types=1);
 
-use SmartResponsor\Analytics\ValueObject\Analytics\KpiId; interface KpiRegistryInterface { public function list(): array; public function has(KpiId $id): bool; }
+namespace App\ServiceInterface\Analytics;
+
+use App\ValueObject\Analytics\KpiId;
+
+interface KpiRegistryInterface
+{
+    /**
+     * @return array<string,string>
+     */
+    public function list(): array;
+
+    public function has(KpiId $id): bool;
+}

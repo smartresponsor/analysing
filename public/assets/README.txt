@@ -1,1 +1,0 @@
-Static assets (if any) go here.

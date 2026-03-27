@@ -1,5 +1,13 @@
 <?php
 
-namespace SmartResponsor\Analytics\ServiceInterface\Analytics;
+declare(strict_types=1);
 
-interface GzipWriterInterface { public function write(string $path, array $rows): string; }
+namespace App\ServiceInterface\Analytics;
+
+interface GzipWriterInterface
+{
+    /**
+     * @param list<array<string,mixed>> $rows
+     */
+    public function write(string $path, array $rows): string;
+}
