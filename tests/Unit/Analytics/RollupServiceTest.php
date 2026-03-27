@@ -10,22 +10,22 @@ use Psr\Log\NullLogger;
 
 final class RollupServiceTest extends TestCase
 {
-    public function testRollupSumsNumericFieldValues(): void
+    public function testSumSumsNumericFieldValues(): void
     {
         $service = new RollupService(new NullLogger());
 
-        self::assertSame(3.5, $service->rollup([
+        self::assertSame(3.5, $service->sum([
             ['value' => 1],
             ['value' => '2.5'],
             ['value' => 'not-numeric'],
         ], 'value'));
     }
 
-    public function testRollupRejectsEmptyField(): void
+    public function testSumRejectsEmptyField(): void
     {
         $service = new RollupService(new NullLogger());
 
         $this->expectException(\InvalidArgumentException::class);
-        $service->rollup([], '   ');
+        $service->sum([], '   ');
     }
 }

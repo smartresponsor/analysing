@@ -1,0 +1,16 @@
+imports:
+  - { resource: 'vendor/rector/rector/config/set/php83.php' }
+
+parameters:
+  sets:
+    - 'dead-code'
+    - 'code-quality'
+    - 'type-declaration'
+    - 'early-return'
+    - 'coding-style'
+  paths:
+    - src
+  exclude_paths:
+    - 'vendor'
+    - 'tests/LegacyPort'
+  parallel: true

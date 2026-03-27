@@ -6,3 +6,8 @@ parameters:
   checkGenericClassInNonGenericObjectType: true
   checkMissingIterableValueType: true
   inferPrivatePropertyTypeFromConstructor: true
+  scanFiles:
+    - tools/phpstan/stubs/apiplatform.stub.php
+    - tools/phpstan/stubs/graphql.stub.php
+    - tools/phpstan/stubs/symfony_form.stub.php
+    - tools/phpstan/stubs/symfony_uid.stub.php

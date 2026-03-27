@@ -7,9 +7,9 @@ namespace App\Tests\Unit\Analytics;
 use App\Entity\Alerts\AlertRule;
 use App\Entity\Analytics\MetricSnapshot;
 use App\Service\Alerts\AlertEvaluator;
-use Doctrine\ORM\AbstractQuery;
 use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\ORM\EntityRepository;
+use Doctrine\ORM\Query;
 use Doctrine\ORM\QueryBuilder;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
@@ -30,7 +30,7 @@ final class AlertEvaluatorTest extends TestCase
         $repository = $this->createMock(EntityRepository::class);
         $repository->method('findBy')->with(['is_active' => true])->willReturn([$rule]);
 
-        $query = $this->createMock(AbstractQuery::class);
+        $query = $this->createMock(Query::class);
         $query->method('getOneOrNullResult')->willReturn($snapshot);
 
         $qb = $this->createMock(QueryBuilder::class);

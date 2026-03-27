@@ -36,7 +36,7 @@ final class AnalyticsExportCommandTest extends TestCase
         $command = new AnalyticsExportCommand($dashboard, $exporter, $this->createMock(LoggerInterface::class));
         $tester = new CommandTester($command);
 
-        $targetBase = sys_get_temp_dir().'/analytics-export-'.uniqid('', true);
+        $targetBase = sys_get_temp_dir().'/analytics-export-'.bin2hex(random_bytes(8));
         $status = $tester->execute(['path' => $targetBase]);
 
         $targetPath = $targetBase.'.csv';

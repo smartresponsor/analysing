@@ -10,11 +10,13 @@ final class GuardConfigConsistencyTest extends TestCase
 {
     public function testNamespaceGuardConfigsRemainSynchronized(): void
     {
-        $analytics = (string) file_get_contents(__DIR__.'/../../../config/guard/analytics-namespace-guard.json');
-        $default = (string) file_get_contents(__DIR__.'/../../../config/guard/namespace-guard.json');
+        $analytics = file_get_contents(__DIR__.'/../../../config/guard/analytics-namespace-guard.json');
+        $default = file_get_contents(__DIR__.'/../../../config/guard/namespace-guard.json');
 
+        self::assertIsString($analytics);
+        self::assertIsString($default);
         self::assertJson($analytics);
         self::assertJson($default);
-        self::assertSame(json_decode($analytics, true), json_decode($default, true));
+        self::assertEquals(json_decode($analytics, true), json_decode($default, true));
     }
 }

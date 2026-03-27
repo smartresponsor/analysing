@@ -33,6 +33,7 @@
 # ──────────────────────────────────────────────
 /vendor/** linguist-vendored
 /composer.lock linguist-vendored
+/archives/**
 
 # ──────────────────────────────────────────────
 #  🧰 Build / Distribution
@@ -58,12 +59,4 @@
 .DS_Store linguist-generated
 .idea/** linguist-generated
 .phpunit.cache/ export-ignore
-
-# ──────────────────────────────────────────────
-#  📦 Archive export hygiene
-# ──────────────────────────────────────────────
-/.git/ export-ignore
-/vendor/ export-ignore
-/report/ export-ignore
-/.php-cs-fixer.cache export-ignore
 
