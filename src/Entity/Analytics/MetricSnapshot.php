@@ -9,7 +9,7 @@ use Doctrine\ORM\Mapping as ORM;
 #[ORM\Entity]
 #[ORM\Table(name: 'analytics_metric_snapshot')]
 #[ORM\Index(name: 'idx_metric_period', columns: ['metric', 'period_start', 'period_end'])]
-class MetricSnapshot
+final class MetricSnapshot
 {
     #[ORM\Id]
     #[ORM\GeneratedValue]
@@ -85,11 +85,17 @@ class MetricSnapshot
         return $this->period_end;
     }
 
+    public function getCreatedAt(): \DateTimeImmutable
+    {
+        return $this->created_at;
+    }
+
     private function normalizeDimensions(array $dimensions): array
     {
         $normalized = [];
         foreach ($dimensions as $key => $value) {
-            if (!is_string($key) || '' === trim($key)) {
+            $name = trim((string) $key);
+            if ('' === $name) {
                 throw new \InvalidArgumentException('Metric snapshot dimension keys must be non-empty strings.');
             }
 
@@ -97,7 +103,7 @@ class MetricSnapshot
                 throw new \InvalidArgumentException('Metric snapshot dimension values must be scalar or null.');
             }
 
-            $normalized[$key] = $value;
+            $normalized[$name] = $value;
         }
 
         return $normalized;

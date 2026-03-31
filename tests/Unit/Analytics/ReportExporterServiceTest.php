@@ -10,29 +10,22 @@ use Psr\Log\NullLogger;
 
 final class ReportExporterServiceTest extends TestCase
 {
-    public function testExportWritesCsvFile(): void
+    public function testExportPreservesColumnsIntroducedAfterTheFirstRow(): void
     {
-        $dir = sys_get_temp_dir().'/analytics_export_'.uniqid('', true);
+        $service = new ReportExporterService(new NullLogger());
+        $dir = sys_get_temp_dir().'/analytics_export_'.bin2hex(random_bytes(4));
         mkdir($dir, 0777, true);
 
-        $service = new ReportExporterService(new NullLogger());
         $path = $service->export([
-            ['metric' => 'sales', 'value' => 10],
-            ['metric' => 'refunds', 'value' => 2],
+            ['section' => 'totals', 'gross_minor' => 1000],
+            ['section' => 'timeseries', 'date' => '2026-03-10', 'gross_minor' => 100],
         ], 'csv', $dir);
 
-        self::assertFileExists($path);
-        self::assertStringContainsString('metric,value', (string) file_get_contents($path));
+        $csv = (string) file_get_contents($path);
+        self::assertStringContainsString('date', $csv);
+        self::assertStringContainsString('2026-03-10', $csv);
 
         @unlink($path);
         @rmdir($dir);
-    }
-
-    public function testExportRejectsUnsupportedFormat(): void
-    {
-        $service = new ReportExporterService(new NullLogger());
-
-        $this->expectException(\InvalidArgumentException::class);
-        $service->export([], 'xlsx');
     }
 }

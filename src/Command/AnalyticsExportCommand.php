@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Command;
 
 use App\DTO\Analytics\KpiRequest;
+use App\Service\Analytics\ReportRowBuilder;
 use App\ServiceInterface\Analytics\DashboardServiceInterface;
 use App\ServiceInterface\Analytics\ReportExporterServiceInterface;
 use Psr\Log\LoggerInterface;
@@ -22,6 +23,7 @@ final class AnalyticsExportCommand extends BaseCommand
     public function __construct(
         private readonly DashboardServiceInterface $dashboard,
         private readonly ReportExporterServiceInterface $exporter,
+        private readonly ReportRowBuilder $rowBuilder,
         private readonly LoggerInterface $logger,
     ) {
         parent::__construct();
@@ -50,26 +52,7 @@ final class AnalyticsExportCommand extends BaseCommand
 
             $kpi = $this->dashboard->kpi($request);
             $series = $this->dashboard->timeseries($request);
-            $rows = [[
-                'section' => 'totals',
-                'from' => $request->from,
-                'to' => $request->to,
-                'vendor_id' => '',
-                'currency' => '',
-                'gross_minor' => $kpi['gross_minor'],
-                'net_minor' => $kpi['net_minor'],
-                'margin_pct' => $kpi['margin_pct'],
-                'days' => $kpi['days'],
-            ]];
-
-            foreach ($series as $point) {
-                $rows[] = [
-                    'section' => 'timeseries',
-                    'date' => $point['date'],
-                    'gross_minor' => $point['gross_minor'],
-                    'net_minor' => $point['net_minor'],
-                ];
-            }
+            $rows = $this->rowBuilder->build($request, $kpi, $series);
 
             $targetDir = dirname($normalizedPath);
             if ('' !== $targetDir && '.' !== $targetDir && !is_dir($targetDir) && !mkdir($targetDir, 0777, true) && !is_dir($targetDir)) {

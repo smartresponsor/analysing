@@ -1,1 +1,0 @@
-<?php echo 'analytics-oct30-final-winners';

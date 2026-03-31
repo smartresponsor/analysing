@@ -17,6 +17,7 @@ final class ReportGeneratorService implements ReportGeneratorServiceInterface
     public function __construct(
         private readonly DashboardServiceInterface $dashboard,
         private readonly ReportExporterServiceInterface $exporter,
+        private readonly ReportRowBuilder $rowBuilder,
         private readonly EntityManagerInterface $em,
         private readonly LoggerInterface $logger,
     ) {
@@ -58,26 +59,7 @@ final class ReportGeneratorService implements ReportGeneratorServiceInterface
 
             $kpi = $this->dashboard->kpi($dto);
             $series = $this->dashboard->timeseries($dto);
-            $rows = [[
-                'section' => 'totals',
-                'from' => $normalizedParams['from'],
-                'to' => $normalizedParams['to'],
-                'vendor_id' => $normalizedParams['vendorId'] ?? '',
-                'currency' => $normalizedParams['currency'] ?? '',
-                'gross_minor' => $kpi['gross_minor'],
-                'net_minor' => $kpi['net_minor'],
-                'margin_pct' => $kpi['margin_pct'],
-                'days' => $kpi['days'],
-            ]];
-
-            foreach ($series as $point) {
-                $rows[] = [
-                    'section' => 'timeseries',
-                    'date' => $point['date'],
-                    'gross_minor' => $point['gross_minor'],
-                    'net_minor' => $point['net_minor'],
-                ];
-            }
+            $rows = $this->rowBuilder->build($dto, $kpi, $series);
 
             if ([] === $rows) {
                 $this->logger->warning('Analytics report generation produced no rows before export.', [

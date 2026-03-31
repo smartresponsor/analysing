@@ -1,8 +1,0 @@
-{% extends 'base.html.twig' %}
-{% block title %}Analytics Dashboard{% endblock %}
-{% block body %}
-<h1>Analytics Dashboard</h1>
-<p>Metric: <strong>{{ agg.metric }}</strong></p>
-<p>Total: <strong>{{ agg.total }}</strong></p>
-<p>Period: {{ agg.from|date('Y-m-d H:i') }} → {{ agg.to|date('Y-m-d H:i') }}</p>
-{% endblock %}

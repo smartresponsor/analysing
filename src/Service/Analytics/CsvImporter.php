@@ -21,16 +21,11 @@ final class CsvImporter implements CsvImporterInterface
     {
         $rows = [];
         $rowCount = 0;
+        $headers = [];
         $delimiter = $this->normalizeDelimiter($delimiter);
 
         if (!is_file($csvPath)) {
             $this->logger->warning('Analytics CSV import file is missing.', ['path' => $csvPath]);
-
-            $this->logger->info('Analytics CSV import completed.', [
-                'path' => $csvPath,
-                'rows' => count($rows),
-                'columns' => [] === $rows ? 0 : count(array_keys($rows[0])),
-            ]);
 
             return $rows;
         }
@@ -44,6 +39,12 @@ final class CsvImporter implements CsvImporterInterface
         try {
             $headers = $this->readHeaders($handle, $csvPath, $delimiter);
             if ([] === $headers) {
+                $this->logger->info('Analytics CSV import completed.', [
+                    'path' => $csvPath,
+                    'rows' => 0,
+                    'columns' => 0,
+                ]);
+
                 return $rows;
             }
 
@@ -59,12 +60,18 @@ final class CsvImporter implements CsvImporterInterface
                     continue;
                 }
 
-                $rows[] = $this->mapRow($headers, $data, $csvPath);
                 ++$rowCount;
+                $rows[] = $this->mapRow($headers, $data, $csvPath, $rowCount + 1);
             }
         } finally {
             fclose($handle);
         }
+
+        $this->logger->info('Analytics CSV import completed.', [
+            'path' => $csvPath,
+            'rows' => count($rows),
+            'columns' => count($headers),
+        ]);
 
         return $rows;
     }
@@ -76,6 +83,12 @@ final class CsvImporter implements CsvImporterInterface
             $this->logger->warning('Analytics CSV import delimiter is empty. Falling back to comma delimiter.');
 
             return ',';
+        }
+
+        if (1 !== mb_strlen($delimiter)) {
+            $this->logger->warning('Analytics CSV import delimiter must be a single character. Falling back to the first character.', [
+                'delimiter' => $delimiter,
+            ]);
         }
 
         return mb_substr($delimiter, 0, 1);
@@ -133,18 +146,15 @@ final class CsvImporter implements CsvImporterInterface
      *
      * @return array<string, string>
      */
-    private function mapRow(array $headers, array $data, string $csvPath): array
+    private function mapRow(array $headers, array $data, string $csvPath, int $lineNumber): array
     {
         if (count($data) !== count($headers)) {
             $this->logger->warning('Analytics CSV row width does not match header width.', [
                 'path' => $csvPath,
+                'line' => $lineNumber,
                 'header_count' => count($headers),
                 'row_count' => count($data),
             ]);
-        }
-
-        if (count($headers) > self::MAX_COLUMNS) {
-            throw new \RuntimeException('Analytics CSV header exceeds the maximum supported column count.');
         }
 
         $row = [];
@@ -153,6 +163,7 @@ final class CsvImporter implements CsvImporterInterface
             if (mb_strlen($value) > self::MAX_FIELD_LENGTH) {
                 $this->logger->warning('Analytics CSV import truncated an overlong field value.', [
                     'path' => $csvPath,
+                    'line' => $lineNumber,
                     'column' => $name,
                     'max_length' => self::MAX_FIELD_LENGTH,
                 ]);

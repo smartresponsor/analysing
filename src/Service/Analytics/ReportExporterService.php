@@ -42,7 +42,7 @@ final class ReportExporterService implements ReportExporterServiceInterface
         $this->logger->info('Analytics report exporter wrote CSV export.', [
             'path' => $path,
             'rows' => count($rows),
-            'columns' => [] === $rows ? 0 : count(array_keys($rows[0])),
+            'columns' => [] === $rows ? 0 : count(array_keys($this->normalizeRows($rows, $path)[0] ?? [])),
         ]);
 
         return $path;
@@ -63,7 +63,8 @@ final class ReportExporterService implements ReportExporterServiceInterface
         }
 
         try {
-            $headers = $this->normalizeHeaders($rows, $path);
+            $normalizedRows = $this->normalizeRows($rows, $path);
+            $headers = $this->normalizeHeaders($normalizedRows);
             if ([] !== $headers && false === fputcsv($fh, $headers, $delimiter)) {
                 $this->logger->error('Analytics report exporter failed to write CSV header.', [
                     'path' => $path,
@@ -72,17 +73,7 @@ final class ReportExporterService implements ReportExporterServiceInterface
                 throw new \RuntimeException('Cannot write CSV header: '.$path);
             }
 
-            foreach ($rows as $index => $row) {
-                if (!is_array($row)) {
-                    $this->logger->error('Analytics report exporter rejected an invalid row shape.', [
-                        'path' => $path,
-                        'row_index' => $index,
-                        'row_type' => get_debug_type($row),
-                    ]);
-
-                    throw new \RuntimeException('Analytics report exporter row must be an array.');
-                }
-
+            foreach ($normalizedRows as $index => $row) {
                 $row = $this->alignRowToHeaders($row, $headers);
                 try {
                     $serializedRow = array_map(static function (mixed $value): string {
@@ -147,30 +138,69 @@ final class ReportExporterService implements ReportExporterServiceInterface
     /**
      * @param list<array<string,mixed>> $rows
      *
+     * @return list<array<string,mixed>>
+     */
+    private function normalizeRows(array $rows, string $path): array
+    {
+        $normalizedRows = [];
+
+        foreach ($rows as $index => $row) {
+            if (!is_array($row)) {
+                $this->logger->error('Analytics report exporter rejected an invalid row shape.', [
+                    'path' => $path,
+                    'row_index' => $index,
+                    'row_type' => get_debug_type($row),
+                ]);
+
+                throw new \RuntimeException('Analytics report exporter row must be an array.');
+            }
+
+            $normalized = [];
+            foreach ($row as $header => $value) {
+                $name = trim((string) $header);
+                if ('' === $name) {
+                    throw new \RuntimeException('Analytics report exporter header names must not be empty.');
+                }
+                if (mb_strlen($name) > self::MAX_COLUMN_NAME_LENGTH) {
+                    $this->logger->error('Analytics report exporter rejected an overlong header name.', [
+                        'path' => $path,
+                        'header' => $name,
+                        'max_length' => self::MAX_COLUMN_NAME_LENGTH,
+                    ]);
+
+                    throw new \RuntimeException('Analytics report exporter header name exceeds the maximum supported length.');
+                }
+                if (array_key_exists($name, $normalized)) {
+                    throw new \RuntimeException('Analytics report exporter row contains duplicate normalized header names.');
+                }
+
+                $normalized[$name] = $value;
+            }
+
+            $normalizedRows[] = $normalized;
+        }
+
+        return $normalizedRows;
+    }
+
+    /**
+     * @param list<array<string,mixed>> $rows
+     *
      * @return list<string>
      */
-    private function normalizeHeaders(array $rows, string $path): array
+    private function normalizeHeaders(array $rows): array
     {
         if ([] === $rows) {
             return [];
         }
 
         $headers = [];
-        foreach (array_keys($rows[0]) as $header) {
-            $name = trim((string) $header);
-            if ('' === $name) {
-                throw new \RuntimeException('Analytics report exporter header names must not be empty.');
+        foreach ($rows as $row) {
+            foreach (array_keys($row) as $name) {
+                if (!in_array($name, $headers, true)) {
+                    $headers[] = $name;
+                }
             }
-            if (mb_strlen($name) > self::MAX_COLUMN_NAME_LENGTH) {
-                $this->logger->error('Analytics report exporter rejected an overlong header name.', [
-                    'path' => $path,
-                    'header' => $name,
-                    'max_length' => self::MAX_COLUMN_NAME_LENGTH,
-                ]);
-
-                throw new \RuntimeException('Analytics report exporter header name exceeds the maximum supported length.');
-            }
-            $headers[] = $name;
         }
 
         if (count($headers) > self::MAX_COLUMNS) {

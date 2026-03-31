@@ -56,18 +56,19 @@ final class HealthService implements HealthServiceInterface
             if ([] !== $catalog) {
                 $catalogChecksum = hash('sha256', json_encode($catalog, JSON_THROW_ON_ERROR));
             }
-        } catch (\RuntimeException|\JsonException|\Throwable $exception) {
+        } catch (\Throwable $exception) {
             $this->logger->error('Analytics health service could not inspect the KPI catalog.', [
                 'exception' => $exception,
             ]);
         }
 
-        if (0 === $catalogCount) {
+        $catalogReady = $catalogCount > 0;
+        if (!$catalogReady) {
             $this->logger->warning('Analytics health service detected an empty KPI catalog.');
         }
 
         return [
-            'ok' => [] === $missingRequiredExtensions && $catalogCount > 0,
+            'ok' => [] === $missingRequiredExtensions,
             'component' => 'analytics',
             'time' => (new \DateTimeImmutable())->format(DATE_ATOM),
             'php_version' => PHP_VERSION,
@@ -76,6 +77,7 @@ final class HealthService implements HealthServiceInterface
             'missing_optional_extensions' => $missingOptionalExtensions,
             'kpi_catalog_count' => $catalogCount,
             'kpi_catalog_checksum' => $catalogChecksum,
+            'catalog_ready' => $catalogReady,
             'duration_ms' => (int) round((microtime(true) - $startedAt) * 1000),
         ];
     }

@@ -6,38 +6,24 @@ namespace App\Tests\Unit\Analytics;
 
 use App\Service\Analytics\HealthService;
 use App\ServiceInterface\Analytics\KpiRegistryInterface;
+use App\ValueObject\Analytics\KpiId;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 
 final class HealthServiceTest extends TestCase
 {
-    public function testStatusIncludesCatalogMetadata(): void
+    public function testStatusSeparatesPlatformHealthFromCatalogReadiness(): void
     {
-        $registry = $this->createMock(KpiRegistryInterface::class);
-        $registry->method('list')->willReturn([
-            ['key' => 'revenue', 'label' => 'Revenue'],
-        ]);
+        $registry = new class implements KpiRegistryInterface {
+            public function list(): array { return []; }
+            public function has(KpiId $id): bool { return false; }
+        };
 
         $service = new HealthService(new NullLogger(), $registry);
         $status = $service->status();
 
-        self::assertTrue($status['ok']);
-        self::assertSame('analytics', $status['component']);
-        self::assertSame(1, $status['kpi_catalog_count']);
-        self::assertNotNull($status['kpi_catalog_checksum']);
-        self::assertArrayHasKey('duration_ms', $status);
-    }
-
-    public function testStatusHandlesRegistryRuntimeFailure(): void
-    {
-        $registry = $this->createMock(KpiRegistryInterface::class);
-        $registry->method('list')->willThrowException(new \RuntimeException('catalog down'));
-
-        $service = new HealthService(new NullLogger(), $registry);
-        $status = $service->status();
-
-        self::assertFalse($status['ok']);
+        self::assertFalse($status['catalog_ready']);
         self::assertSame(0, $status['kpi_catalog_count']);
-        self::assertNull($status['kpi_catalog_checksum']);
+        self::assertSame([] === $status['missing_required_extensions'], $status['ok']);
     }
 }

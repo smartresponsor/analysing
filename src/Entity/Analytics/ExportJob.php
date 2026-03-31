@@ -149,7 +149,7 @@ final class ExportJob
                 throw new \InvalidArgumentException('Export job payload keys must be non-empty strings.');
             }
 
-            $normalized[$key] = $this->normalizePayloadValue($value);
+            $normalized[trim($key)] = $this->normalizePayloadValue($value);
         }
 
         return $normalized;
