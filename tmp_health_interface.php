@@ -15,7 +15,10 @@ interface HealthServiceInterface
      *   sapi: string,
      *   missing_required_extensions: list<string>,
      *   missing_optional_extensions: list<string>,
-     *   kpi_catalog_count: int
+     *   kpi_catalog_count: int,
+     *   kpi_catalog_checksum: ?string,
+     *   catalog_ready: bool,
+     *   duration_ms: int
      * }
      */
     public function status(): array;
