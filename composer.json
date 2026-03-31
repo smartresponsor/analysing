@@ -1,6 +1,6 @@
 {
-  "name": "smartresponsor/analytics",
-  "description": "Analytics — domain analytics, dashboards, alerts, and exporters for SmartResponsor ecosystem.",
+  "name": "analysing/analytics",
+  "description": "Analysing process app",
   "type": "project",
   "license": "proprietary",
   "authors": [
