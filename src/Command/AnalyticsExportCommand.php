@@ -38,8 +38,10 @@ final class AnalyticsExportCommand extends BaseCommand
     {
         $startedAt = microtime(true);
         $path = trim((string) $input->getArgument('path'));
+
         $from = new \DateTimeImmutable('first day of this month 00:00:00');
         $to = new \DateTimeImmutable('last day of this month 23:59:59');
+
         $request = new KpiRequest(
             vendorId: null,
             currency: null,
@@ -54,16 +56,7 @@ final class AnalyticsExportCommand extends BaseCommand
             $series = $this->dashboard->timeseries($request);
             $rows = $this->rowBuilder->build($request, $kpi, $series);
 
-            $targetDir = dirname($normalizedPath);
-            if ('' !== $targetDir && '.' !== $targetDir && !is_dir($targetDir) && !mkdir($targetDir, 0777, true) && !is_dir($targetDir)) {
-                throw new \RuntimeException('Cannot create export directory: '.$targetDir);
-            }
-            if ('' !== $targetDir && '.' !== $targetDir && is_dir($targetDir) && !is_writable($targetDir)) {
-                throw new \RuntimeException('Export directory is not writable: '.$targetDir);
-            }
-
-            $generatedPath = $this->exporter->export($rows, 'csv', '' === $targetDir ? null : $targetDir);
-            $this->moveExportToTarget($generatedPath, $normalizedPath);
+            $this->exporter->exportToPath($rows, $normalizedPath);
 
             $this->logger->info('Analytics CSV export completed.', [
                 'path' => $normalizedPath,
@@ -71,6 +64,7 @@ final class AnalyticsExportCommand extends BaseCommand
                 'series_rows' => count($series),
                 'duration_ms' => max(0, (int) round((microtime(true) - $startedAt) * 1000)),
             ]);
+
             $output->writeln('<info>CSV exported to '.$normalizedPath.'</info>');
 
             return self::SUCCESS;
@@ -88,98 +82,18 @@ final class AnalyticsExportCommand extends BaseCommand
 
     private function normalizeTargetPath(string $path): string
     {
-        if ('' === $path) {
+        if ($path === '') {
             throw new \InvalidArgumentException('Export path must not be empty.');
         }
+
         if (strlen($path) > self::MAX_TARGET_PATH_LENGTH) {
-            throw new \InvalidArgumentException('Export path exceeds the maximum supported length.');
+            throw new \InvalidArgumentException('Export path too long.');
         }
 
-        $normalized = $path;
-        $extension = strtolower(pathinfo($normalized, PATHINFO_EXTENSION));
-        if ('' === $extension) {
-            $normalized .= '.csv';
-            $extension = 'csv';
+        if (pathinfo($path, PATHINFO_EXTENSION) === '') {
+            $path .= '.csv';
         }
 
-        if ('csv' !== $extension) {
-            throw new \InvalidArgumentException('Analytics CSV export target path must use the .csv extension.');
-        }
-
-        return $normalized;
-    }
-
-    private function attemptRename(string $generatedPath, string $targetPath): bool
-    {
-        if (rename($generatedPath, $targetPath)) {
-            return true;
-        }
-
-        clearstatcache(true, $targetPath);
-        if (is_file($targetPath)) {
-            $this->logger->warning('Analytics CSV export rename reported failure but target file exists; continuing with target path.', [
-                'generated_path' => $generatedPath,
-                'target_path' => $targetPath,
-            ]);
-
-            if (is_file($generatedPath) && !unlink($generatedPath)) {
-                $this->logger->warning('Analytics CSV export could not remove generated file after rename fallback detection.', [
-                    'generated_path' => $generatedPath,
-                    'target_path' => $targetPath,
-                ]);
-            }
-
-            return true;
-        }
-
-        $this->logger->warning('Analytics CSV export rename failed; falling back to stream copy.', [
-            'generated_path' => $generatedPath,
-            'target_path' => $targetPath,
-        ]);
-
-        return false;
-    }
-
-    private function moveExportToTarget(string $generatedPath, string $targetPath): void
-    {
-        if ('' === $generatedPath || !is_file($generatedPath)) {
-            throw new \RuntimeException('Generated export file is missing: '.$generatedPath);
-        }
-
-        if (is_file($targetPath) && !is_writable($targetPath)) {
-            throw new \RuntimeException('Target export file is not writable: '.$targetPath);
-        }
-
-        if ($this->attemptRename($generatedPath, $targetPath)) {
-            return;
-        }
-
-        $source = fopen($generatedPath, 'r');
-        if (false === $source) {
-            throw new \RuntimeException('Cannot open generated export for reading: '.$generatedPath);
-        }
-
-        $target = fopen($targetPath, 'w');
-        if (false === $target) {
-            fclose($source);
-            throw new \RuntimeException('Cannot open target export for writing: '.$targetPath);
-        }
-
-        try {
-            $copied = stream_copy_to_stream($source, $target);
-            if (false === $copied) {
-                throw new \RuntimeException('Cannot copy generated export to target path: '.$targetPath);
-            }
-        } finally {
-            fclose($source);
-            fclose($target);
-        }
-
-        if (!unlink($generatedPath)) {
-            $this->logger->warning('Analytics CSV export could not remove temporary generated file.', [
-                'generated_path' => $generatedPath,
-                'target_path' => $targetPath,
-            ]);
-        }
+        return $path;
     }
 }

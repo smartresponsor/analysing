@@ -15,6 +15,7 @@ final class ExportJob
     public const STATUS_RUNNING = 'running';
     public const STATUS_DONE = 'done';
     public const STATUS_FAILED = 'failed';
+    public const MAX_ATTEMPTS = 3;
 
     #[ORM\Id]
     #[ORM\GeneratedValue]
@@ -99,6 +100,21 @@ final class ExportJob
     public function getAttempts(): int
     {
         return $this->attempts;
+    }
+
+    public function canRetry(): bool
+    {
+        return self::STATUS_FAILED === $this->status && $this->attempts < self::MAX_ATTEMPTS;
+    }
+
+    /**
+     * @param array<string,mixed> $payload
+     */
+    public function mergePayload(array $payload): void
+    {
+        $normalized = $this->normalizePayload($payload);
+        $current = $this->payload ?? [];
+        $this->payload = array_replace($current, $normalized);
     }
 
     public function start(): void
