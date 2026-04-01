@@ -16,8 +16,6 @@ use Psr\Log\LoggerInterface;
 final class ReportExporterService implements ReportExporterServiceInterface
 {
     private const MAX_EXPORT_ROWS = 10000;
-    private const MAX_COLUMNS = 256;
-    private const MAX_COLUMN_NAME_LENGTH = 128;
 
     /**
      * @param LoggerInterface $logger Logger used for exporter-related diagnostics.
@@ -109,7 +107,6 @@ final class ReportExporterService implements ReportExporterServiceInterface
         } finally {
             fclose($fh);
         }
-    }
 
     /**
      * Normalizes the requested export format.
@@ -177,7 +174,10 @@ final class ReportExporterService implements ReportExporterServiceInterface
                 if (!in_array($h, $headers, true)) {
                     $headers[] = $h;
                 }
+                fputcsv($fh, $line);
             }
+        } finally {
+            fclose($fh);
         }
 
         if (count($headers) > self::MAX_COLUMNS) {
