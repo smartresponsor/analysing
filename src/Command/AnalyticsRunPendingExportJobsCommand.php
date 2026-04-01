@@ -15,6 +15,8 @@ use Symfony\Component\Console\Output\OutputInterface;
 #[AsCommand(name: 'analytics:job:run-pending')]
 final class AnalyticsRunPendingExportJobsCommand extends Command
 {
+    private const MAX_JOBS_PER_RUN = 10;
+
     public function __construct(
         private readonly EntityManagerInterface $em,
         private readonly ExportJobRunner $runner,
@@ -24,10 +26,27 @@ final class AnalyticsRunPendingExportJobsCommand extends Command
 
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
-        $jobs = $this->em->getRepository(ExportJob::class)->findBy(['status' => ExportJob::STATUS_PENDING]);
+        $jobs = $this->em->getRepository(ExportJob::class)->findBy(
+            ['status' => ExportJob::STATUS_PENDING],
+            ['created_at' => 'ASC'],
+            self::MAX_JOBS_PER_RUN
+        );
 
         foreach ($jobs as $job) {
             $this->runner->run($job);
+        }
+
+        // retry failed
+        $failedJobs = $this->em->getRepository(ExportJob::class)->findBy(
+            ['status' => ExportJob::STATUS_FAILED],
+            ['created_at' => 'ASC'],
+            self::MAX_JOBS_PER_RUN
+        );
+
+        foreach ($failedJobs as $job) {
+            if ($job->canRetry()) {
+                $this->runner->run($job);
+            }
         }
 
         $output->writeln('done');
