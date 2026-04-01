@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Command;
 
 use App\Entity\Analytics\ExportJob;
+use App\Service\Analytics\ExportJobLockManager;
 use App\Service\Analytics\ExportJobRunner;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\Console\Attribute\AsCommand;
@@ -19,6 +20,7 @@ final class AnalyticsRunExportJobCommand extends Command
     public function __construct(
         private readonly EntityManagerInterface $em,
         private readonly ExportJobRunner $runner,
+        private readonly ExportJobLockManager $lockManager,
     ) {
         parent::__construct();
     }
@@ -35,10 +37,22 @@ final class AnalyticsRunExportJobCommand extends Command
 
         if (!$job instanceof ExportJob) {
             $output->writeln('Job not found');
+
             return self::FAILURE;
         }
 
-        $this->runner->run($job);
+        $lock = $this->lockManager->acquire($id);
+        if (null === $lock) {
+            $output->writeln('Job is already locked');
+
+            return self::SUCCESS;
+        }
+
+        try {
+            $this->runner->run($job);
+        } finally {
+            $this->lockManager->release($lock);
+        }
 
         $output->writeln('done');
 

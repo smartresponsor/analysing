@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Command;
 
 use App\Entity\Analytics\ExportJob;
+use App\Service\Analytics\ExportJobLockManager;
 use App\Service\Analytics\ExportJobRunner;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\Console\Attribute\AsCommand;
@@ -20,6 +21,7 @@ final class AnalyticsRunPendingExportJobsCommand extends Command
     public function __construct(
         private readonly EntityManagerInterface $em,
         private readonly ExportJobRunner $runner,
+        private readonly ExportJobLockManager $lockManager,
     ) {
         parent::__construct();
     }
@@ -33,10 +35,18 @@ final class AnalyticsRunPendingExportJobsCommand extends Command
         );
 
         foreach ($jobs as $job) {
-            $this->runner->run($job);
+            $lock = $this->lockManager->acquire($job->getId() ?? 0);
+            if (null === $lock) {
+                continue;
+            }
+
+            try {
+                $this->runner->run($job);
+            } finally {
+                $this->lockManager->release($lock);
+            }
         }
 
-        // retry failed
         $failedJobs = $this->em->getRepository(ExportJob::class)->findBy(
             ['status' => ExportJob::STATUS_FAILED],
             ['created_at' => 'ASC'],
@@ -44,8 +54,19 @@ final class AnalyticsRunPendingExportJobsCommand extends Command
         );
 
         foreach ($failedJobs as $job) {
-            if ($job->canRetry()) {
+            if (!$job->canRetry()) {
+                continue;
+            }
+
+            $lock = $this->lockManager->acquire($job->getId() ?? 0);
+            if (null === $lock) {
+                continue;
+            }
+
+            try {
                 $this->runner->run($job);
+            } finally {
+                $this->lockManager->release($lock);
             }
         }
 
