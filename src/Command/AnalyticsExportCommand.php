@@ -34,15 +34,64 @@ final class AnalyticsExportCommand extends BaseCommand
 
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
-        $path = (string) $input->getArgument('path');
+        $startedAt = microtime(true);
+        $path = trim((string) $input->getArgument('path'));
 
-        $request = new KpiRequest(null, null, null, null);
-        $rows = $this->rowBuilder->build($request, ['gross_minor'=>0,'net_minor'=>0,'days'=>0], []);
+        $from = new \DateTimeImmutable('first day of this month 00:00:00');
+        $to = new \DateTimeImmutable('last day of this month 23:59:59');
 
-        $this->exporter->exportToPath($rows, $path, 'csv');
+        $request = new KpiRequest(
+            vendorId: null,
+            currency: null,
+            from: $from->format('Y-m-d H:i:s'),
+            to: $to->format('Y-m-d H:i:s'),
+        );
 
-        $output->writeln('done');
+        try {
+            $normalizedPath = $this->normalizeTargetPath($path);
 
-        return self::SUCCESS;
+            $kpi = $this->dashboard->kpi($request);
+            $series = $this->dashboard->timeseries($request);
+            $rows = $this->rowBuilder->build($request, $kpi, $series);
+
+            $this->exporter->exportToPath($rows, $normalizedPath);
+
+            $this->logger->info('Analytics CSV export completed.', [
+                'path' => $normalizedPath,
+                'rows' => count($rows),
+                'series_rows' => count($series),
+                'duration_ms' => max(0, (int) round((microtime(true) - $startedAt) * 1000)),
+            ]);
+
+            $output->writeln('<info>CSV exported to '.$normalizedPath.'</info>');
+
+            return self::SUCCESS;
+        } catch (\Throwable $exception) {
+            $this->logger->error('Analytics CSV export failed.', [
+                'exception' => $exception,
+                'path' => $path,
+                'duration_ms' => max(0, (int) round((microtime(true) - $startedAt) * 1000)),
+            ]);
+            $output->writeln('<error>CSV export failed: '.$exception->getMessage().'</error>');
+
+            return self::FAILURE;
+        }
+    }
+
+    private function normalizeTargetPath(string $path): string
+    {
+        if ($path === '') {
+            throw new \InvalidArgumentException('Export path must not be empty.');
+        }
+
+        if (strlen($path) > self::MAX_TARGET_PATH_LENGTH) {
+            throw new \InvalidArgumentException('Export path too long.');
+        }
+
+        if (pathinfo($path, PATHINFO_EXTENSION) === '') {
+            $path .= '.csv';
+        }
+
+        return $path;
     }
 }

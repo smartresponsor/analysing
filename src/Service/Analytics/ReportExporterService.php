@@ -17,16 +17,25 @@ final class ReportExporterService implements ReportExporterServiceInterface
 
     public function export(array $rows, string $format = 'csv', ?string $dir = null): string
     {
-        $dir = $dir ?? sys_get_temp_dir();
-        $path = rtrim($dir, DIRECTORY_SEPARATOR).DIRECTORY_SEPARATOR.'analytics_report_'.(new \DateTimeImmutable())->format('Ymd_His').'.csv';
+        $format = $this->normalizeFormat($format);
+        if (count($rows) > self::MAX_EXPORT_ROWS) {
+            throw new \InvalidArgumentException('Analytics report export exceeds the maximum supported row count.');
+        }
 
-        return $this->exportToPath($rows, $path, $format);
+        $dir = $dir ?? sys_get_temp_dir();
+        $ts = (new \DateTimeImmutable())->format('Ymd_His');
+        $path = rtrim($dir, DIRECTORY_SEPARATOR).DIRECTORY_SEPARATOR."analytics_report_{$ts}.csv";
+
+        $this->writeCsv($rows, $path, ',');
+
+        return $path;
     }
 
     public function exportToPath(array $rows, string $targetPath, string $format = 'csv'): string
     {
+        $format = $this->normalizeFormat($format);
         if (count($rows) > self::MAX_EXPORT_ROWS) {
-            throw new \InvalidArgumentException('Too many rows');
+            throw new \InvalidArgumentException('Analytics report export exceeds the maximum supported row count.');
         }
 
         $dir = dirname($targetPath);
@@ -34,29 +43,80 @@ final class ReportExporterService implements ReportExporterServiceInterface
             throw new \RuntimeException('Cannot create export directory: '.$dir);
         }
 
-        $fh = fopen($targetPath, 'w');
+        $this->writeCsv($rows, $targetPath, ',');
+
+        return $targetPath;
+    }
+
+    private function writeCsv(array $rows, string $path, string $delimiter = ','): void
+    {
+        $fh = fopen($path, 'w');
         if (false === $fh) {
-            throw new \RuntimeException('Cannot open file: '.$targetPath);
+            throw new \RuntimeException('Cannot open file for writing: '.$path);
         }
 
         try {
-            $headers = [];
-            foreach ($rows as $row) {
-                foreach (array_keys($row) as $h) {
-                    if (!in_array($h, $headers, true)) {
-                        $headers[] = $h;
-                    }
-                }
-            }
+            $normalizedRows = $this->normalizeRows($rows, $path);
+            $headers = $this->normalizeHeaders($normalizedRows);
 
             if ([] !== $headers) {
-                fputcsv($fh, $headers);
+                fputcsv($fh, $headers, $delimiter);
             }
 
-            foreach ($rows as $row) {
-                $line = [];
+            foreach ($normalizedRows as $row) {
+                $aligned = [];
                 foreach ($headers as $h) {
-                    $line[] = (string)($row[$h] ?? '');
+                    $aligned[] = (string)($row[$h] ?? '');
+                }
+                fputcsv($fh, $aligned, $delimiter);
+            }
+        } finally {
+            fclose($fh);
+        }
+
+    private function normalizeFormat(string $format): string
+    {
+        $normalized = strtolower(trim($format));
+        if ($normalized === '' || $normalized === 'csv') {
+            return 'csv';
+        }
+
+        throw new \InvalidArgumentException('Unsupported export format');
+    }
+
+    private function normalizeRows(array $rows, string $path): array
+    {
+        $normalized = [];
+        foreach ($rows as $row) {
+            if (!is_array($row)) {
+                throw new \RuntimeException('Invalid row');
+            }
+
+            $clean = [];
+            foreach ($row as $k => $v) {
+                $key = trim((string)$k);
+                if ($key === '') {
+                    throw new \RuntimeException('Empty header');
+                }
+                if (mb_strlen($key) > self::MAX_COLUMN_NAME_LENGTH) {
+                    throw new \RuntimeException('Header too long');
+                }
+                $clean[$key] = $v;
+            }
+
+            $normalized[] = $clean;
+        }
+
+        return $normalized;
+    }
+
+    private function normalizeHeaders(array $rows): array
+    {
+        $headers = [];
+        foreach ($rows as $row) {
+            foreach (array_keys($row) as $h) {
+                if (!in_array($h, $headers, true)) {
+                    $headers[] = $h;
                 }
                 fputcsv($fh, $line);
             }
@@ -64,8 +124,10 @@ final class ReportExporterService implements ReportExporterServiceInterface
             fclose($fh);
         }
 
-        $this->logger->info('Export written', ['path' => $targetPath]);
+        if (count($headers) > self::MAX_COLUMNS) {
+            throw new \RuntimeException('Too many columns');
+        }
 
-        return $targetPath;
+        return $headers;
     }
 }
