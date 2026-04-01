@@ -10,8 +10,6 @@ use Psr\Log\LoggerInterface;
 final class ReportExporterService implements ReportExporterServiceInterface
 {
     private const MAX_EXPORT_ROWS = 10000;
-    private const MAX_COLUMNS = 256;
-    private const MAX_COLUMN_NAME_LENGTH = 128;
 
     public function __construct(private readonly LoggerInterface $logger)
     {
@@ -75,7 +73,6 @@ final class ReportExporterService implements ReportExporterServiceInterface
         } finally {
             fclose($fh);
         }
-    }
 
     private function normalizeFormat(string $format): string
     {
@@ -121,7 +118,10 @@ final class ReportExporterService implements ReportExporterServiceInterface
                 if (!in_array($h, $headers, true)) {
                     $headers[] = $h;
                 }
+                fputcsv($fh, $line);
             }
+        } finally {
+            fclose($fh);
         }
 
         if (count($headers) > self::MAX_COLUMNS) {

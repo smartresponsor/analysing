@@ -15,11 +15,9 @@ use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
-#[AsCommand(name: 'analytics:export:csv', description: 'Export KPI aggregates to CSV')]
+#[AsCommand(name: 'analytics:export:csv')]
 final class AnalyticsExportCommand extends BaseCommand
 {
-    private const MAX_TARGET_PATH_LENGTH = 4096;
-
     public function __construct(
         private readonly DashboardServiceInterface $dashboard,
         private readonly ReportExporterServiceInterface $exporter,
@@ -31,7 +29,7 @@ final class AnalyticsExportCommand extends BaseCommand
 
     protected function configure(): void
     {
-        $this->addArgument('path', InputArgument::REQUIRED, 'Target file path to write CSV');
+        $this->addArgument('path', InputArgument::REQUIRED);
     }
 
     protected function execute(InputInterface $input, OutputInterface $output): int
