@@ -11,6 +11,10 @@ final class ExportJobLockManager
      */
     public function acquire(int $jobId)
     {
+        if ($jobId <= 0) {
+            throw new \InvalidArgumentException('Export job id must be positive for locking.');
+        }
+
         $path = $this->getPath($jobId);
         $handle = fopen($path, 'c+');
         if (false === $handle) {
@@ -36,6 +40,18 @@ final class ExportJobLockManager
     {
         flock($handle, LOCK_UN);
         fclose($handle);
+    }
+
+    public function isLocked(int $jobId): bool
+    {
+        $handle = $this->acquire($jobId);
+        if (null === $handle) {
+            return true;
+        }
+
+        $this->release($handle);
+
+        return false;
     }
 
     private function getPath(int $jobId): string
