@@ -101,6 +101,16 @@ final class ExportJob
         return $this->attempts;
     }
 
+    /**
+     * @param array<string,mixed> $payload
+     */
+    public function mergePayload(array $payload): void
+    {
+        $normalized = $this->normalizePayload($payload);
+        $current = $this->payload ?? [];
+        $this->payload = array_replace($current, $normalized);
+    }
+
     public function start(): void
     {
         $this->status = self::STATUS_RUNNING;
