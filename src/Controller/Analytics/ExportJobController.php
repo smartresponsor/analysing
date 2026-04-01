@@ -12,15 +12,29 @@ use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
 
+/**
+ * Provides HTTP endpoints for interacting with analytics export jobs.
+ */
 final class ExportJobController
 {
+    /**
+     * @param EntityManagerInterface   $entityManager Doctrine entity manager for job retrieval.
+     * @param ExportJobMetricsService  $metrics       Service providing aggregated metrics.
+     */
     public function __construct(
         private readonly EntityManagerInterface $entityManager,
         private readonly ExportJobMetricsService $metrics,
     ) {
     }
 
-    #[Route('/api/analytics/export-jobs/{id<\d+>}', methods: ['GET'])]
+    /**
+     * Returns the current status of an export job.
+     *
+     * @param int $id Export job identifier.
+     *
+     * @return JsonResponse JSON representation of the export job.
+     */
+    #[Route('/api/analytics/export-jobs/{id<\\d+>}', methods: ['GET'])]
     public function status(int $id): JsonResponse
     {
         $job = $this->entityManager->getRepository(ExportJob::class)->find($id);
@@ -31,6 +45,11 @@ final class ExportJobController
         return new JsonResponse(ExportJobView::toArray($job));
     }
 
+    /**
+     * Returns aggregated export job metrics.
+     *
+     * @return JsonResponse Metrics snapshot payload.
+     */
     #[Route('/api/analytics/export-jobs/metrics', methods: ['GET'])]
     public function metrics(): JsonResponse
     {
