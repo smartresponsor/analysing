@@ -6,8 +6,31 @@ namespace App\Service\Analytics;
 
 use App\Entity\Analytics\ExportJob;
 
+/**
+ * Transforms an {@see ExportJob} entity into an API-friendly array payload.
+ *
+ * Keeping this mapping logic in a dedicated view helper avoids duplicating response-shaping code
+ * inside controllers and makes response contracts easier to evolve over time.
+ */
 final class ExportJobView
 {
+    /**
+     * Converts an export job into a normalized array representation.
+     *
+     * @param ExportJob $job The export job entity to normalize.
+     *
+     * @return array{
+     *   id:int|null,
+     *   type:string,
+     *   status:string,
+     *   attempts:int,
+     *   error:?string,
+     *   created_at:string,
+     *   finished_at:?string,
+     *   payload:array<string,mixed>,
+     *   download_url:?string
+     * }
+     */
     public static function toArray(ExportJob $job): array
     {
         $payload = $job->getPayload() ?? [];

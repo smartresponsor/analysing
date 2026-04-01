@@ -12,8 +12,21 @@ use App\ServiceInterface\Analytics\ReportGeneratorServiceInterface;
 use Doctrine\ORM\EntityManagerInterface;
 use Psr\Log\LoggerInterface;
 
+/**
+ * Generates analytics export jobs in a synchronous application flow.
+ *
+ * This service validates raw generation parameters, creates an {@see ExportJob}, computes KPI and
+ * timeseries data, exports the result and persists runtime metadata back to the job payload.
+ */
 final class ReportGeneratorService implements ReportGeneratorServiceInterface
 {
+    /**
+     * @param DashboardServiceInterface      $dashboard Service used to calculate KPIs and timeseries data.
+     * @param ReportExporterServiceInterface $exporter  Service used to persist generated exports.
+     * @param ReportRowBuilder               $rowBuilder Builder used to normalize export rows.
+     * @param EntityManagerInterface         $em        Entity manager used to persist export jobs.
+     * @param LoggerInterface                $logger    Logger reserved for future runtime diagnostics.
+     */
     public function __construct(
         private readonly DashboardServiceInterface $dashboard,
         private readonly ReportExporterServiceInterface $exporter,
@@ -23,6 +36,15 @@ final class ReportGeneratorService implements ReportGeneratorServiceInterface
     ) {
     }
 
+    /**
+     * Generates an export job from raw analytics parameters.
+     *
+     * @param array{from:string,to:string,vendorId?:int|string,currency?:string,format?:string} $params Raw report parameters.
+     *
+     * @return ExportJob A persisted export job enriched with execution metadata.
+     *
+     * @throws \RuntimeException If the export job cannot be initialized.
+     */
     public function generate(array $params): ExportJob
     {
         $startedAt = microtime(true);
@@ -75,6 +97,13 @@ final class ReportGeneratorService implements ReportGeneratorServiceInterface
         return $job;
     }
 
+    /**
+     * Validates and normalizes incoming report parameters.
+     *
+     * @param array<string,mixed> $params Raw user-provided parameters.
+     *
+     * @return array{from:string,to:string,vendorId?:int,currency?:string,format?:string}
+     */
     private function normalizeParams(array $params): array
     {
         $from = new \DateTimeImmutable($params['from']);
@@ -86,6 +115,13 @@ final class ReportGeneratorService implements ReportGeneratorServiceInterface
         ];
     }
 
+    /**
+     * Normalizes the requested export format.
+     *
+     * @param string $format User-provided format value.
+     *
+     * @return string Normalized export format.
+     */
     private function normalizeFormat(string $format): string
     {
         return 'csv';

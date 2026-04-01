@@ -7,14 +7,32 @@ namespace App\Service\Analytics;
 use App\ServiceInterface\Analytics\ReportExporterServiceInterface;
 use Psr\Log\LoggerInterface;
 
+/**
+ * Exports analytics report rows into CSV files.
+ *
+ * The exporter performs lightweight validation, normalizes headers across heterogeneous rows and
+ * writes the resulting CSV either to a generated temporary file or to a caller-provided path.
+ */
 final class ReportExporterService implements ReportExporterServiceInterface
 {
     private const MAX_EXPORT_ROWS = 10000;
 
+    /**
+     * @param LoggerInterface $logger Logger used for exporter-related diagnostics.
+     */
     public function __construct(private readonly LoggerInterface $logger)
     {
     }
 
+    /**
+     * Writes report rows into a generated CSV file inside the target directory.
+     *
+     * @param list<array<string,mixed>> $rows   Normalized or partially normalized export rows.
+     * @param string                    $format Output format. Only CSV is currently supported.
+     * @param string|null               $dir    Optional target directory for the generated file.
+     *
+     * @return string Absolute path to the generated export file.
+     */
     public function export(array $rows, string $format = 'csv', ?string $dir = null): string
     {
         $format = $this->normalizeFormat($format);
@@ -31,6 +49,15 @@ final class ReportExporterService implements ReportExporterServiceInterface
         return $path;
     }
 
+    /**
+     * Writes report rows directly to the requested file path.
+     *
+     * @param list<array<string,mixed>> $rows       Rows to serialize.
+     * @param string                    $targetPath Final target path for the generated file.
+     * @param string                    $format     Output format. Only CSV is supported.
+     *
+     * @return string The target path that was written.
+     */
     public function exportToPath(array $rows, string $targetPath, string $format = 'csv'): string
     {
         $format = $this->normalizeFormat($format);
@@ -48,6 +75,13 @@ final class ReportExporterService implements ReportExporterServiceInterface
         return $targetPath;
     }
 
+    /**
+     * Serializes rows as CSV using the provided delimiter.
+     *
+     * @param list<array<string,mixed>> $rows      Rows to serialize.
+     * @param string                    $path      File path to write.
+     * @param string                    $delimiter Delimiter used by fputcsv.
+     */
     private function writeCsv(array $rows, string $path, string $delimiter = ','): void
     {
         $fh = fopen($path, 'w');
@@ -74,6 +108,13 @@ final class ReportExporterService implements ReportExporterServiceInterface
             fclose($fh);
         }
 
+    /**
+     * Normalizes the requested export format.
+     *
+     * @param string $format User-provided export format.
+     *
+     * @return string Normalized export format.
+     */
     private function normalizeFormat(string $format): string
     {
         $normalized = strtolower(trim($format));
@@ -84,6 +125,14 @@ final class ReportExporterService implements ReportExporterServiceInterface
         throw new \InvalidArgumentException('Unsupported export format');
     }
 
+    /**
+     * Normalizes export rows and validates header keys.
+     *
+     * @param list<array<string,mixed>> $rows Source rows.
+     * @param string                    $path Target path used for diagnostics.
+     *
+     * @return list<array<string,mixed>>
+     */
     private function normalizeRows(array $rows, string $path): array
     {
         $normalized = [];
@@ -110,6 +159,13 @@ final class ReportExporterService implements ReportExporterServiceInterface
         return $normalized;
     }
 
+    /**
+     * Builds the full header set across all rows.
+     *
+     * @param list<array<string,mixed>> $rows Normalized rows.
+     *
+     * @return list<string>
+     */
     private function normalizeHeaders(array $rows): array
     {
         $headers = [];

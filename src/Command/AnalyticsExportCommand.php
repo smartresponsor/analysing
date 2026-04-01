@@ -32,6 +32,11 @@ final class AnalyticsExportCommand extends BaseCommand
         $this->addArgument('path', InputArgument::REQUIRED);
     }
 
+    /**
+     * Executes the export command.
+     *
+     * @return int Exit code.
+     */
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $startedAt = microtime(true);
@@ -56,23 +61,12 @@ final class AnalyticsExportCommand extends BaseCommand
 
             $this->exporter->exportToPath($rows, $normalizedPath);
 
-            $this->logger->info('Analytics CSV export completed.', [
-                'path' => $normalizedPath,
-                'rows' => count($rows),
-                'series_rows' => count($series),
-                'duration_ms' => max(0, (int) round((microtime(true) - $startedAt) * 1000)),
-            ]);
-
             $output->writeln('<info>CSV exported to '.$normalizedPath.'</info>');
 
             return self::SUCCESS;
         } catch (\Throwable $exception) {
-            $this->logger->error('Analytics CSV export failed.', [
-                'exception' => $exception,
-                'path' => $path,
-                'duration_ms' => max(0, (int) round((microtime(true) - $startedAt) * 1000)),
-            ]);
-            $output->writeln('<error>CSV export failed: '.$exception->getMessage().'</error>');
+            $this->logger->error('Analytics CSV export failed.', ['exception' => $exception]);
+            $output->writeln('<error>'.$exception->getMessage().'</error>');
 
             return self::FAILURE;
         }
