@@ -11,8 +11,21 @@ use App\ServiceInterface\Analytics\ReportExporterServiceInterface;
 use Doctrine\ORM\EntityManagerInterface;
 use Psr\Log\LoggerInterface;
 
+/**
+ * Executes export jobs in a worker-friendly context.
+ *
+ * The runner turns persisted export job payloads into concrete dashboard queries, generates the
+ * export artifact, and updates the job state with runtime metadata such as duration and output path.
+ */
 final class ExportJobRunner
 {
+    /**
+     * @param DashboardServiceInterface    $dashboard      Service used to compute KPI aggregates.
+     * @param ReportExporterServiceInterface $exporter     Service used to write the final export file.
+     * @param ReportRowBuilder             $rowBuilder     Builder that normalizes export rows.
+     * @param EntityManagerInterface       $entityManager  Entity manager used to persist job state transitions.
+     * @param LoggerInterface              $logger         Logger used for execution failures.
+     */
     public function __construct(
         private readonly DashboardServiceInterface $dashboard,
         private readonly ReportExporterServiceInterface $exporter,
@@ -22,6 +35,13 @@ final class ExportJobRunner
     ) {
     }
 
+    /**
+     * Runs the provided export job and persists its final state.
+     *
+     * @param ExportJob $job The job to execute.
+     *
+     * @return ExportJob The same job instance after it has been updated with result metadata.
+     */
     public function run(ExportJob $job): ExportJob
     {
         $startedAt = microtime(true);

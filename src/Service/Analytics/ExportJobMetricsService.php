@@ -7,12 +7,35 @@ namespace App\Service\Analytics;
 use App\Entity\Analytics\ExportJob;
 use Doctrine\ORM\EntityManagerInterface;
 
+/**
+ * Aggregates export job metrics for operational monitoring.
+ *
+ * This service scans a recent slice of export jobs and derives summary metrics that can be
+ * exposed through an API endpoint or fed into higher-level monitoring integrations.
+ */
 final class ExportJobMetricsService
 {
+    /**
+     * @param EntityManagerInterface $entityManager Doctrine entity manager used to read export jobs.
+     */
     public function __construct(private readonly EntityManagerInterface $entityManager)
     {
     }
 
+    /**
+     * Builds a metrics snapshot for recent export jobs.
+     *
+     * The resulting payload is intentionally scalar-heavy so it can be returned as JSON without
+     * additional normalization.
+     *
+     * @return array{
+     *   jobs_total:int,
+     *   status_counts:array{pending:int,running:int,done:int,failed:int},
+     *   retryable_failed_jobs:int,
+     *   avg_duration_ms:int,
+     *   exported_rows_total:int
+     * }
+     */
     public function snapshot(): array
     {
         $repository = $this->entityManager->getRepository(ExportJob::class);
