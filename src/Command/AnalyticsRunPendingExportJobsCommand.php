@@ -13,11 +13,22 @@ use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
+/**
+ * Processes pending and retryable export jobs in bounded batches.
+ *
+ * This command is intended for scheduled execution and runs two passes: first over jobs waiting in
+ * the pending state and then over failed jobs that are still eligible for retry.
+ */
 #[AsCommand(name: 'analytics:job:run-pending')]
 final class AnalyticsRunPendingExportJobsCommand extends Command
 {
     private const MAX_JOBS_PER_RUN = 10;
 
+    /**
+     * @param EntityManagerInterface $em          Entity manager used to query export jobs.
+     * @param ExportJobRunner        $runner      Runner that executes the actual export workflow.
+     * @param ExportJobLockManager   $lockManager Lock manager that prevents duplicate job execution.
+     */
     public function __construct(
         private readonly EntityManagerInterface $em,
         private readonly ExportJobRunner $runner,
@@ -26,6 +37,11 @@ final class AnalyticsRunPendingExportJobsCommand extends Command
         parent::__construct();
     }
 
+    /**
+     * Executes a single worker iteration for pending and retryable export jobs.
+     *
+     * @return int Console exit code.
+     */
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $jobs = $this->em->getRepository(ExportJob::class)->findBy(
