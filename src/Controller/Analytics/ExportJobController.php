@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Controller\Analytics;
 
 use App\Entity\Analytics\ExportJob;
+use App\Service\Analytics\ExportJobMetricsService;
 use App\Service\Analytics\ExportJobView;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;
@@ -13,8 +14,10 @@ use Symfony\Component\Routing\Attribute\Route;
 
 final class ExportJobController
 {
-    public function __construct(private readonly EntityManagerInterface $entityManager)
-    {
+    public function __construct(
+        private readonly EntityManagerInterface $entityManager,
+        private readonly ExportJobMetricsService $metrics,
+    ) {
     }
 
     #[Route('/api/analytics/export-jobs/{id<\d+>}', methods: ['GET'])]
@@ -26,5 +29,11 @@ final class ExportJobController
         }
 
         return new JsonResponse(ExportJobView::toArray($job));
+    }
+
+    #[Route('/api/analytics/export-jobs/metrics', methods: ['GET'])]
+    public function metrics(): JsonResponse
+    {
+        return new JsonResponse($this->metrics->snapshot());
     }
 }
