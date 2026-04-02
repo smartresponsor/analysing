@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<phpdoc>
+    <title>SmartResponsor Analytics Documentation</title>
+
+    <parser>
+        <target>build/docs</target>
+    </parser>
+
+    <transformer>
+        <target>build/docs</target>
+    </transformer>
+
+    <files>
+        <directory>src</directory>
+    </files>
+
+    <ignore>
+        <directory>vendor</directory>
+        <directory>var</directory>
+        <directory>build</directory>
+        <directory>tests</directory>
+    </ignore>
+</phpdoc>
