@@ -12,7 +12,9 @@ final class AccessGuardTest extends TestCase
 {
     public function testAllowListIsNormalizedAndApplied(): void
     {
-        $guard = new AccessGuard(new NullLogger(), ['  alpha  ', '', 'beta', ['ignored']]);
+        /** @var list<mixed> $allow */
+        $allow = ['  alpha  ', '', 'beta', ['ignored']];
+        $guard = new AccessGuard(new NullLogger(), $allow);
 
         self::assertTrue($guard->allow('alpha'));
         self::assertTrue($guard->allow('beta'));

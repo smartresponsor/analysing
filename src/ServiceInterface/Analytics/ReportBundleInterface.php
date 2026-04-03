@@ -9,11 +9,7 @@ interface ReportBundleInterface
     /**
      * @param array<string, list<array<string,mixed>>> $datasets
      *
-     * @return array{
-     *   datasets: array<string, array{rows:int,columns:list<string>}>,
-     *   dataset_count:int,
-     *   row_count:int
-     * }
+     * @return array<string, array{rows:int,columns:list<string>}>
      */
     public function pack(array $datasets): array;
 }

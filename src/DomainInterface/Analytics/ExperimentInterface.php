@@ -7,12 +7,7 @@ namespace App\DomainInterface\Analytics;
 interface ExperimentInterface
 {
     /**
-     * @param array{
-     *   experiment_id:mixed,
-     *   user_id:mixed,
-     *   rollout?:mixed,
-     *   variants?:mixed
-     * } $param
+     * @param array<string,mixed> $param
      *
      * @return array{
      *   experiment_id:string,
@@ -26,12 +21,7 @@ interface ExperimentInterface
     public function assign(array $param): array;
 
     /**
-     * @param array{
-     *   experiment_id:mixed,
-     *   tenant_id:mixed,
-     *   user_id:mixed,
-     *   variant:mixed
-     * } $param
+     * @param array<string,mixed> $param
      *
      * @return array{accepted:int,experiment_id:string,variant:string}
      */

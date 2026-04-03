@@ -45,7 +45,7 @@ final class ExperimentService implements ExperimentServiceInterface
 
         $total = array_sum($map);
         if ($total <= 0) {
-            $fallback = array_key_first($map) ?? 'A';
+            $fallback = (string) array_key_first($map);
             $this->logger->warning('Analytics experiment service fell back because weight total is not positive.', [
                 'experiment_key' => $experimentKey,
                 'fallback_variant' => $fallback,
@@ -64,7 +64,7 @@ final class ExperimentService implements ExperimentServiceInterface
             $pick -= $weight;
         }
 
-        return array_key_first($map) ?? 'A';
+        return (string) array_key_first($map);
     }
 
     public function record(string $experimentKey, string $variantKey, string $metric, float $value = 1.0): void

@@ -13,13 +13,6 @@ interface AsyncQueryServiceInterface
      */
     public function submit(array $query): string;
 
-    /**
-     * @return array{
-     *   id: string,
-     *   state: string,
-     *   submitted_at?: string,
-     *   result?: array<string,mixed>
-     * }
-     */
+    /** @return array<string,mixed> */
     public function status(string $id): array;
 }

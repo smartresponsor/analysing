@@ -38,6 +38,7 @@ final class FlagDomainTest extends TestCase
     public function testExposeWritesFlagExposureEvent(): void
     {
         $client = new class implements ClickhouseClientInterface {
+            /** @var list<array<string,mixed>> */
             public array $rows = [];
 
             public function query(string $sql, array $param = []): array
@@ -59,6 +60,7 @@ final class FlagDomainTest extends TestCase
             'enabled' => true,
         ]);
 
+        self::assertIsArray($client->rows[0]['properties']);
         self::assertSame('beta_ui', $client->rows[0]['properties']['flag_key']);
         self::assertTrue($result['enabled']);
     }

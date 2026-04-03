@@ -13,8 +13,6 @@ interface TokenServiceInterface
      */
     public function issue(array $scope, int $ttl = 3600): string;
 
-    /**
-     * @return array{scope?:array<string,mixed>, iat?:int, exp?:int}
-     */
+    /** @return array<string,mixed> */
     public function verify(string $token): array;
 }

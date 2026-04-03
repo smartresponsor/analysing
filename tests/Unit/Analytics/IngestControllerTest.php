@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace App\Tests\Unit\Analytics;
 
+use App\Tests\Support\JsonPayloadAssertionsTrait;
+
 use App\Controller\Analytics\IngestController;
 use App\DomainInterface\Analytics\ClickhouseClientInterface;
 use PHPUnit\Framework\TestCase;
@@ -12,6 +14,8 @@ use Symfony\Component\HttpFoundation\Request;
 
 final class IngestControllerTest extends TestCase
 {
+    use JsonPayloadAssertionsTrait;
+
     public function testIngestRudderReturnsAcceptedCounts(): void
     {
         $client = $this->createMock(ClickhouseClientInterface::class);
@@ -27,7 +31,7 @@ final class IngestControllerTest extends TestCase
         $request->headers->set('X-SR-TENANT', 'tenant-1');
 
         $response = $controller->ingestRudder($request);
-        $payload = json_decode((string) $response->getContent(), true, 512, JSON_THROW_ON_ERROR);
+        $payload = $this->decodeJsonResponse($response);
 
         self::assertSame(200, $response->getStatusCode());
         self::assertSame(1, $payload['accepted']);
@@ -40,7 +44,7 @@ final class IngestControllerTest extends TestCase
         $controller = new IngestController($client, $this->createMock(LoggerInterface::class));
 
         $response = $controller->ingestSegment(new Request([], [], [], [], [], [], '{bad'));
-        $payload = json_decode((string) $response->getContent(), true, 512, JSON_THROW_ON_ERROR);
+        $payload = $this->decodeJsonResponse($response);
 
         self::assertSame(400, $response->getStatusCode());
         self::assertSame('Invalid analytics ingest request.', $payload['error']);

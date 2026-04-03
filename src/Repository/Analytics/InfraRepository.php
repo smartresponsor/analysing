@@ -315,6 +315,11 @@ final class InfraRepository implements InfraRepositoryInterface
         return $value;
     }
 
+    /**
+     * @param list<string> $steps
+     *
+     * @return list<string>
+     */
     private function normalizeStepList(array $steps): array
     {
         $normalized = [];

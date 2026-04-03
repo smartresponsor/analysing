@@ -66,7 +66,8 @@ final class DashboardService implements DashboardServiceInterface
         }
 
         $mapped = array_map(function (array $row): array {
-            $date = trim((string) ($row['d'] ?? ''));
+            $dateValue = $row['d'] ?? '';
+            $date = is_scalar($dateValue) ? trim((string) $dateValue) : '';
             if ('' === $date) {
                 throw new \RuntimeException('Dashboard timeseries row is missing date.');
             }

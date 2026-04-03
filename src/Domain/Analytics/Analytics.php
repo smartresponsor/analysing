@@ -21,6 +21,11 @@ final class Analytics implements AnalyticsInterface
     ) {
     }
 
+    /**
+     * @param array<string,mixed> $param
+     *
+     * @return list<array<string,mixed>>
+     */
     public function runFunnel(array $param): array
     {
         $normalized = $this->normalizeRangeParams($param, true);
@@ -37,6 +42,11 @@ final class Analytics implements AnalyticsInterface
         return $validated;
     }
 
+    /**
+     * @param array<string,mixed> $param
+     *
+     * @return list<array<string,mixed>>
+     */
     public function runRetention(array $param): array
     {
         $normalized = $this->normalizeRangeParams($param, false);
@@ -57,6 +67,11 @@ final class Analytics implements AnalyticsInterface
         return $validated;
     }
 
+    /**
+     * @param array<string,mixed> $param
+     *
+     * @return list<array<string,mixed>>
+     */
     public function runCohort(array $param): array
     {
         $normalized = $this->normalizeRangeParams($param, true);
@@ -73,6 +88,11 @@ final class Analytics implements AnalyticsInterface
         return $validated;
     }
 
+    /**
+     * @param array<string,mixed> $param
+     *
+     * @return array<string,int|string>
+     */
     private function normalizeRangeParams(array $param, bool $requireSteps): array
     {
         $normalized = [
@@ -95,9 +115,13 @@ final class Analytics implements AnalyticsInterface
         return $normalized;
     }
 
+    /**
+     * @param array<string,mixed> $param
+     */
     private function normalizeNonEmptyString(array $param, string $field): string
     {
-        $value = trim((string) ($param[$field] ?? ''));
+        $raw = $param[$field] ?? '';
+        $value = is_scalar($raw) ? trim((string) $raw) : '';
         if ('' === $value) {
             throw new \InvalidArgumentException(sprintf('%s must be a non-empty string.', $field));
         }
@@ -105,9 +129,13 @@ final class Analytics implements AnalyticsInterface
         return $value;
     }
 
+    /**
+     * @param array<string,mixed> $param
+     */
     private function normalizeRequiredDateString(array $param, string $field): string
     {
-        $value = trim((string) ($param[$field] ?? ''));
+        $raw = $param[$field] ?? '';
+        $value = is_scalar($raw) ? trim((string) $raw) : '';
         if ('' === $value) {
             throw new \InvalidArgumentException(sprintf('%s must be a non-empty date/time string.', $field));
         }
@@ -119,6 +147,9 @@ final class Analytics implements AnalyticsInterface
         }
     }
 
+    /**
+     * @param array<string,mixed> $param
+     */
     private function normalizePositiveInteger(array $param, string $field): int
     {
         if (!array_key_exists($field, $param)) {
@@ -159,6 +190,9 @@ final class Analytics implements AnalyticsInterface
         return $bindings;
     }
 
+    /**
+     * @return list<string>
+     */
     private function normalizeStepList(mixed $steps): array
     {
         if (!is_array($steps)) {

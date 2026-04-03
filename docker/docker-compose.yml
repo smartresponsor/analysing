@@ -9,7 +9,7 @@ services:
     ports: [ "8080:80" ]
     volumes:
       - ./:/var/www/html
-      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./docker/nginx.conf:/etc/nginx/conf.d/default.conf:ro
   clickhouse:
     image: clickhouse/clickhouse-server:23.8
     ports: [ "8123:8123" ]

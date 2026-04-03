@@ -40,6 +40,7 @@ final class ExperimentDomainTest extends TestCase
     {
         $client = new class implements ClickhouseClientInterface {
             public string $table = '';
+            /** @var list<array<string,mixed>> */
             public array $rows = [];
 
             public function query(string $sql, array $param = []): array
@@ -63,6 +64,7 @@ final class ExperimentDomainTest extends TestCase
         ]);
 
         self::assertSame('event_raw', $client->table);
+        self::assertIsArray($client->rows[0]['properties']);
         self::assertSame('control', $client->rows[0]['properties']['variant']);
         self::assertSame(1, $result['accepted']);
     }

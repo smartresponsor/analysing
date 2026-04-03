@@ -85,8 +85,10 @@ final class NotificationDispatcher implements NotificationDispatcherInterface
             $target = null;
 
             if (is_array($channel)) {
-                $type = isset($channel['type']) ? trim((string) $channel['type']) : '';
-                $target = isset($channel['target']) ? trim((string) $channel['target']) : null;
+                $typeValue = $channel['type'] ?? '';
+                $type = is_scalar($typeValue) ? trim((string) $typeValue) : '';
+                $targetValue = $channel['target'] ?? null;
+                $target = is_scalar($targetValue) ? trim((string) $targetValue) : null;
                 if ('' === $target) {
                     $target = null;
                 }
@@ -99,7 +101,7 @@ final class NotificationDispatcher implements NotificationDispatcherInterface
                     $target = null;
                 }
             } else {
-                $type = trim((string) $channel);
+                $type = is_scalar($channel) ? trim((string) $channel) : '';
             }
 
             if ('' === $type) {

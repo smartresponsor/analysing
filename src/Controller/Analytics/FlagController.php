@@ -37,7 +37,7 @@ final class FlagController implements FlagControllerInterface
             $this->logger->info('Flag evaluation completed.', [
                 'operation' => 'evaluate',
                 'component' => self::COMPONENT,
-                'enabled' => $result['enabled'] ?? null,
+                'enabled' => $result['enabled'],
                 'duration_ms' => $this->durationMs($startedAt),
             ]);
 
@@ -71,6 +71,9 @@ final class FlagController implements FlagControllerInterface
         }
     }
 
+    /**
+     * @return array<string,mixed>
+     */
     private function decodeBody(Request $request): array
     {
         $content = trim($request->getContent());

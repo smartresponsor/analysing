@@ -4,13 +4,25 @@ declare(strict_types=1);
 
 namespace App\Tests\Unit\Analytics;
 
+use App\Tests\Support\JsonPayloadAssertionsTrait;
+
 use PHPUnit\Framework\TestCase;
 
 final class ComposerManifestTest extends TestCase
 {
+    use JsonPayloadAssertionsTrait;
+
     public function testComposerManifestKeepsCanonicalAutoloadAndCorePackages(): void
     {
-        $composer = json_decode((string) file_get_contents(__DIR__.'/../../../composer.json'), true, 512, JSON_THROW_ON_ERROR);
+        $composer = $this->decodeJsonFile(__DIR__.'/../../../composer.json');
+        self::assertIsArray($composer['autoload']);
+        self::assertIsArray($composer['autoload-dev']);
+        self::assertIsArray($composer['authors']);
+        self::assertIsArray($composer['require']);
+        self::assertIsArray($composer['require-dev']);
+        self::assertIsArray($composer['autoload']['psr-4']);
+        self::assertIsArray($composer['autoload-dev']['psr-4']);
+        self::assertIsArray($composer['authors'][0]);
 
         self::assertSame(['App\\' => 'src/'], $composer['autoload']['psr-4']);
         self::assertSame(['App\\Tests\\' => 'tests/'], $composer['autoload-dev']['psr-4']);

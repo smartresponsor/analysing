@@ -33,7 +33,7 @@ final class HealthController implements HealthControllerInterface
             $payload = $this->svc->status();
             $this->logger->info('Analytics health endpoint completed.', [
                 'component' => self::COMPONENT,
-                'ok' => $payload['ok'] ?? null,
+                'ok' => $payload['ok'],
                 'duration_ms' => $this->durationMs($startedAt),
             ]);
 

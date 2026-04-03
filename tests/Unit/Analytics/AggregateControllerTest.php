@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace App\Tests\Unit\Analytics;
 
+use App\Tests\Support\JsonPayloadAssertionsTrait;
+
 use App\Controller\Analytics\AggregateController;
 use App\ServiceInterface\Analytics\AggregateServiceInterface;
 use PHPUnit\Framework\TestCase;
@@ -12,6 +14,8 @@ use Symfony\Component\HttpFoundation\Request;
 
 final class AggregateControllerTest extends TestCase
 {
+    use JsonPayloadAssertionsTrait;
+
     public function testFunnelReturnsBadRequestWhenAppMissing(): void
     {
         $service = $this->createMock(AggregateServiceInterface::class);
@@ -24,7 +28,7 @@ final class AggregateControllerTest extends TestCase
         ], JSON_THROW_ON_ERROR));
 
         $response = $controller->funnel($request);
-        $payload = json_decode((string) $response->getContent(), true, 512, JSON_THROW_ON_ERROR);
+        $payload = $this->decodeJsonResponse($response);
 
         self::assertSame(400, $response->getStatusCode());
         self::assertSame('Invalid aggregate request.', $payload['error']);
@@ -45,7 +49,7 @@ final class AggregateControllerTest extends TestCase
         ], JSON_THROW_ON_ERROR));
 
         $response = $controller->path($request);
-        $payload = json_decode((string) $response->getContent(), true, 512, JSON_THROW_ON_ERROR);
+        $payload = $this->decodeJsonResponse($response);
 
         self::assertSame(503, $response->getStatusCode());
         self::assertSame('Aggregate data unavailable.', $payload['error']);

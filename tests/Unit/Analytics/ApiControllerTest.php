@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace App\Tests\Unit\Analytics;
 
+use App\Tests\Support\JsonPayloadAssertionsTrait;
+
 use App\Controller\Analytics\ApiController;
 use App\ServiceInterface\Analytics\KpiRegistryInterface;
 use PHPUnit\Framework\TestCase;
@@ -11,6 +13,8 @@ use Psr\Log\LoggerInterface;
 
 final class ApiControllerTest extends TestCase
 {
+    use JsonPayloadAssertionsTrait;
+
     public function testMetricsReturnsCatalogPayload(): void
     {
         $registry = $this->createMock(KpiRegistryInterface::class);
@@ -18,13 +22,15 @@ final class ApiControllerTest extends TestCase
 
         $controller = new ApiController($registry, $this->createMock(LoggerInterface::class));
         $response = $controller->metrics();
-        $payload = json_decode((string) $response->getContent(), true, 512, JSON_THROW_ON_ERROR);
+        $payload = $this->decodeJsonResponse($response);
 
         self::assertSame(200, $response->getStatusCode());
         self::assertTrue($payload['ok']);
         self::assertSame('analytics', $payload['component']);
         self::assertSame('metrics', $payload['operation']);
         self::assertSame(2, $payload['metric_count']);
+        self::assertIsArray($payload['metrics']);
+        self::assertIsArray($payload['metrics'][0]);
         self::assertSame('orders', $payload['metrics'][0]['key']);
     }
 
@@ -35,7 +41,7 @@ final class ApiControllerTest extends TestCase
 
         $controller = new ApiController($registry, $this->createMock(LoggerInterface::class));
         $response = $controller->metrics();
-        $payload = json_decode((string) $response->getContent(), true, 512, JSON_THROW_ON_ERROR);
+        $payload = $this->decodeJsonResponse($response);
 
         self::assertSame(503, $response->getStatusCode());
         self::assertFalse($payload['ok']);

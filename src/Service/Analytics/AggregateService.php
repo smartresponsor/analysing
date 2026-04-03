@@ -20,6 +20,11 @@ final class AggregateService implements AggregateServiceInterface
     ) {
     }
 
+    /**
+     * @param list<string> $steps
+     *
+     * @return list<array<string,mixed>>
+     */
     public function computeFunnel(string $app, string $env, array $steps, \DateTimeImmutable $from, \DateTimeImmutable $to): array
     {
         $app = $this->normalizeLabel($app, 'app');
@@ -43,6 +48,7 @@ final class AggregateService implements AggregateServiceInterface
         }
     }
 
+    /** @return list<array<string,mixed>> */
     public function computeRetention(string $app, string $env, \DateTimeImmutable $cohort, int $days): array
     {
         $app = $this->normalizeLabel($app, 'app');
@@ -67,6 +73,7 @@ final class AggregateService implements AggregateServiceInterface
         }
     }
 
+    /** @return list<array<string,mixed>> */
     public function computePath(string $app, string $env, \DateTimeImmutable $day, int $top): array
     {
         $app = $this->normalizeLabel($app, 'app');
@@ -171,6 +178,11 @@ final class AggregateService implements AggregateServiceInterface
         return $normalized;
     }
 
+    /**
+     * @param list<string> $steps
+     *
+     * @return list<string>
+     */
     private function normalizeSteps(array $steps): array
     {
         $normalized = [];

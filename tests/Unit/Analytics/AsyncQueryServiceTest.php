@@ -27,7 +27,13 @@ final class AsyncQueryServiceTest extends TestCase
         self::assertSame('done', $status['state']);
         self::assertArrayHasKey('query_checksum', $status);
         self::assertArrayHasKey('age_ms', $status);
-        self::assertSame('orders', $status['result']['query']['metric']);
+        self::assertArrayHasKey('result', $status);
+        $result = $status['result'];
+        self::assertIsArray($result);
+        self::assertArrayHasKey('query', $result);
+        $query = $result['query'];
+        self::assertIsArray($query);
+        self::assertSame('orders', $query['metric']);
     }
 
     public function testSubmitRejectsEmptyPayload(): void

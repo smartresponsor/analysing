@@ -7,7 +7,7 @@ namespace App\ServiceInterface\Analytics;
 interface ExperimentServiceInterface
 {
     /**
-     * @return non-empty-string
+     * @return string
      */
     public function choose(string $experimentKey, string $subjectId): string;
 

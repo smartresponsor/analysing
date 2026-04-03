@@ -14,6 +14,7 @@ final class AnalyticsDomainTest extends TestCase
     public function testRunFunnelBuildsScalarStepBindings(): void
     {
         $client = new class implements ClickhouseClientInterface {
+            /** @var list<array{sql:string,param:array<string,bool|float|int|string|null>}> */
             public array $queries = [];
 
             public function query(string $sql, array $param = []): array

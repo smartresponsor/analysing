@@ -7,14 +7,14 @@ namespace App\DomainInterface\Analytics;
 interface InsightInterface
 {
     /**
-     * @param array{tenant_id:mixed,event_name:mixed,days:mixed} $param
+     * @param array<string,mixed> $param
      *
      * @return array<string,mixed>
      */
     public function detectAnomaly(array $param): array;
 
     /**
-     * @param array{name:mixed} $param
+     * @param array<string,mixed> $param
      *
      * @return array{
      *   name:string,

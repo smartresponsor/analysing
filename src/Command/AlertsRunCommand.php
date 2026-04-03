@@ -51,11 +51,11 @@ final class AlertsRunCommand extends BaseCommand
                     continue;
                 }
 
-                if (($result['matched'] ?? false) !== true) {
+                if ($result['matched'] !== true) {
                     continue;
                 }
 
-                $rule = $result['rule'] ?? null;
+                $rule = $result['rule'];
                 $snapshot = $result['snapshot'] ?? null;
                 if (!$rule instanceof AlertRule || !$snapshot instanceof MetricSnapshot) {
                     ++$skippedMalformedCount;

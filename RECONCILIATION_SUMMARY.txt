@@ -1,0 +1,31 @@
+Analysing reconciliation summary
+================================
+
+Inputs:
+- Local current slice archive: Analysing.zip
+- GitHub/pull archive: Analysing-pull.zip
+
+Findings:
+- The local current repository HEAD is b4b58e7 on master and is clean.
+- origin/master in the repository is 5ed4a2e.
+- Commit b4b58e7 is an ancestor of 5ed4a2e.
+- Therefore GitHub history is newer than the local checked out commit.
+- However, the Analysing-pull.zip worktree is dirty and mixed:
+  - 29 tracked modified files
+  - 5466 untracked files
+- The local current slice is the only self-consistent worktree.
+
+Winner policy used:
+- Working tree winner: local current slice (Analysing.zip)
+- History reference kept: GitHub master at 5ed4a2e as archive/github-master
+- Active working branch: reconcile/local-rich-baseline
+
+Local helper branches:
+- archive/local-current -> b4b58e7
+- archive/github-master -> 5ed4a2e
+- reconcile/local-rich-baseline -> b4b58e7
+
+Recommendation:
+- Continue implementation from reconcile/local-rich-baseline.
+- Cherry-pick or selectively port commits from archive/github-master only after explicit review,
+  because GitHub master currently represents a reduced tracked surface compared with the richer local slice.

@@ -22,6 +22,11 @@ final class Flag implements FlagInterface
     ) {
     }
 
+    /**
+     * @param array<string,mixed> $param
+     *
+     * @return array{flag_key:string,user_id:string,enabled:bool,bucket:int,reason:string,rollout:int}
+     */
     public function evaluate(array $param): array
     {
         $flagKey = $this->normalizeRequiredString($param, 'flag_key');
@@ -39,12 +44,13 @@ final class Flag implements FlagInterface
                 'flag_key' => $flagKey,
                 'user_id' => $userId,
                 'enabled' => true,
+                'bucket' => 0,
                 'reason' => 'allow',
                 'rollout' => $rollout,
             ];
         }
 
-        $bucket = crc32($this->salt.'|'.$flagKey.'|'.$userId) % 100;
+        $bucket = (int) (abs(crc32($this->salt.'|'.$flagKey.'|'.$userId)) % 100);
         $enabled = $bucket < $rollout;
 
         $this->logger->info('Analytics flag evaluated by rollout.', [
@@ -101,9 +107,13 @@ final class Flag implements FlagInterface
         ];
     }
 
+    /**
+     * @param array<string,mixed> $param
+     */
     private function normalizeRequiredString(array $param, string $field): string
     {
-        $value = trim((string) ($param[$field] ?? ''));
+        $raw = $param[$field] ?? '';
+        $value = is_scalar($raw) ? trim((string) $raw) : '';
         if ('' === $value) {
             $this->logger->warning('Analytics flag domain rejected an empty required field.', [
                 'field' => $field,

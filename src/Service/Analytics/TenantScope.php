@@ -19,7 +19,7 @@ final class TenantScope implements TenantScopeInterface
 
     public function filter(array $rows, TenantId $tenant): array
     {
-        $tenantValue = trim((string) $tenant);
+        $tenantValue = trim($tenant->value());
         if ('' === $tenantValue) {
             $this->logger->warning('Analytics tenant scope rejected an empty tenant identifier.');
             throw new \InvalidArgumentException('Tenant scope requires a non-empty tenant identifier.');
@@ -46,7 +46,8 @@ final class TenantScope implements TenantScopeInterface
                 continue;
             }
 
-            $rowTenant = trim((string) ($row['tenant'] ?? ''));
+            $rowTenantValue = $row['tenant'] ?? '';
+            $rowTenant = is_scalar($rowTenantValue) ? trim((string) $rowTenantValue) : '';
             if ('' === $rowTenant) {
                 ++$skipped;
                 $this->logger->warning('Analytics tenant scope skipped row without tenant.', [

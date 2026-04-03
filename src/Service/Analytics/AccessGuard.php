@@ -15,6 +15,7 @@ final class AccessGuard implements AccessGuardInterface
     /** @var list<string> */
     private array $allow;
 
+    /** @param array<mixed> $allow */
     public function __construct(
         private readonly LoggerInterface $logger,
         array $allow = [],

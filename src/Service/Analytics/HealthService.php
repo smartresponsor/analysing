@@ -13,14 +13,17 @@ final class HealthService implements HealthServiceInterface
     public function __construct(
         private readonly LoggerInterface $logger,
         private readonly KpiRegistryInterface $registry,
+        private readonly string $storageDriver = 'unknown',
+        private readonly string $storageMode = 'unknown',
+        private readonly bool $storageAvailable = false,
     ) {
     }
 
     public function status(): array
     {
         $startedAt = microtime(true);
-        $requiredExtensions = ['json', 'pdo', 'mbstring'];
-        $optionalExtensions = ['curl', 'zlib'];
+        $requiredExtensions = ['json', 'pdo'];
+        $optionalExtensions = ['mbstring', 'curl', 'zlib'];
         $missingRequiredExtensions = [];
         $missingOptionalExtensions = [];
 
@@ -76,6 +79,9 @@ final class HealthService implements HealthServiceInterface
             'missing_optional_extensions' => $missingOptionalExtensions,
             'kpi_catalog_count' => $catalogCount,
             'kpi_catalog_checksum' => $catalogChecksum,
+            'storage_driver' => $this->storageDriver,
+            'storage_mode' => $this->storageMode,
+            'storage_available' => $this->storageAvailable,
             'duration_ms' => (int) round((microtime(true) - $startedAt) * 1000),
         ];
     }

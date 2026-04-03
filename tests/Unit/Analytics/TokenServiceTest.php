@@ -20,11 +20,22 @@ final class TokenServiceTest extends TestCase
         ], 60);
 
         $payload = $service->verify($token);
+        self::assertArrayHasKey('scope', $payload);
+        self::assertArrayHasKey('iat', $payload);
+        self::assertArrayHasKey('exp', $payload);
+        $scope = $payload['scope'];
+        $iat = $payload['iat'];
+        $exp = $payload['exp'];
+        self::assertIsArray($scope);
+        self::assertIsInt($iat);
+        self::assertIsInt($exp);
 
-        self::assertSame('acme', $payload['scope']['tenant']);
-        self::assertSame(['a' => 1, 'b' => 2], $payload['scope']['nested']);
-        self::assertIsInt($payload['iat']);
-        self::assertIsInt($payload['exp']);
+        self::assertSame('acme', $scope['tenant']);
+        self::assertArrayHasKey('nested', $scope);
+        self::assertIsArray($scope['nested']);
+        self::assertSame(['a' => 1, 'b' => 2], $scope['nested']);
+        self::assertIsInt($iat);
+        self::assertIsInt($exp);
     }
 
     public function testIssueRejectsTooLargeTtl(): void

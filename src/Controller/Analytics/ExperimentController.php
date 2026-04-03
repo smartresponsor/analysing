@@ -71,6 +71,9 @@ final class ExperimentController implements ExperimentControllerInterface
         }
     }
 
+    /**
+     * @return array<string,mixed>
+     */
     private function decodeBody(Request $request): array
     {
         $content = trim($request->getContent());

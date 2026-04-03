@@ -45,8 +45,10 @@ final class AlertEvaluator implements AlertEvaluatorInterface
         foreach ($rules as $rule) {
             ++$evaluatedCount;
             $condition = $rule->getCondition();
-            $metric = isset($condition['metric']) ? trim((string) $condition['metric']) : '';
-            $operator = isset($condition['operator']) ? trim((string) $condition['operator']) : '';
+            $metricValue = $condition['metric'] ?? '';
+            $metric = is_scalar($metricValue) ? trim((string) $metricValue) : '';
+            $operatorValue = $condition['operator'] ?? '';
+            $operator = is_scalar($operatorValue) ? trim((string) $operatorValue) : '';
             $threshold = $condition['value'] ?? null;
 
             if ('' === $metric || '' === $operator || !is_numeric($threshold)) {

@@ -112,6 +112,9 @@ final class AggregateController implements AggregateControllerInterface
         }
     }
 
+    /**
+     * @return array<string,mixed>
+     */
     private function decodeBody(Request $request): array
     {
         $content = trim($request->getContent());
@@ -136,9 +139,13 @@ final class AggregateController implements AggregateControllerInterface
         return $payload;
     }
 
+    /**
+     * @param array<string,mixed> $body
+     */
     private function requireNonEmptyString(array $body, string $field): string
     {
-        $value = trim((string) ($body[$field] ?? ''));
+        $raw = $body[$field] ?? '';
+        $value = is_scalar($raw) ? trim((string) $raw) : '';
         if ('' === $value) {
             throw new BadRequestHttpException(sprintf('Field "%s" is required.', $field));
         }
@@ -150,6 +157,11 @@ final class AggregateController implements AggregateControllerInterface
         return $value;
     }
 
+    /**
+     * @param array<string,mixed> $body
+     *
+     * @return list<string>
+     */
     private function requireStringList(array $body, string $field): array
     {
         $raw = $body[$field] ?? null;
@@ -177,6 +189,9 @@ final class AggregateController implements AggregateControllerInterface
         return array_values($items);
     }
 
+    /**
+     * @param array<string,mixed> $body
+     */
     private function requirePositiveInt(array $body, string $field): int
     {
         $value = $body[$field] ?? null;
@@ -195,9 +210,13 @@ final class AggregateController implements AggregateControllerInterface
         return $intValue;
     }
 
+    /**
+     * @param array<string,mixed> $body
+     */
     private function parseDateTime(array $body, string $field): \DateTimeImmutable
     {
-        $value = trim((string) ($body[$field] ?? ''));
+        $raw = $body[$field] ?? '';
+        $value = is_scalar($raw) ? trim((string) $raw) : '';
         if ('' === $value) {
             throw new BadRequestHttpException(sprintf('Field "%s" is required.', $field));
         }

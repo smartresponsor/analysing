@@ -40,6 +40,7 @@ final class ExperimentServiceTest extends TestCase
         }
 
         $property = new \ReflectionProperty($service, 'recorded');
+        /** @var list<array<string,mixed>> $recorded */
         $recorded = $property->getValue($service);
 
         self::assertCount(1000, $recorded);

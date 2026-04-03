@@ -7,7 +7,7 @@ namespace App\ServiceInterface\Analytics;
 interface MetricIngestInterface
 {
     /**
-     * @param array<string, scalar|list<scalar|null>|null> $payload
+     * @param array<string,mixed> $payload
      */
     public function ingest(array $payload): void;
 }

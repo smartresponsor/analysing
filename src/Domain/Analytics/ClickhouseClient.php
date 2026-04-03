@@ -72,6 +72,9 @@ final class ClickhouseClient implements ClickhouseClientInterface
 ');
     }
 
+    /**
+     * @param array<string,mixed> $row
+     */
     private function encodeInsertRow(array $row, int $index): string
     {
         foreach ($row as $key => $_) {
@@ -119,6 +122,9 @@ final class ClickhouseClient implements ClickhouseClientInterface
         return $identifier;
     }
 
+    /**
+     * @param array<string,bool|float|int|string|null> $param
+     */
     private function bind(string $sql, array $param): string
     {
         $query = $sql;
@@ -137,7 +143,7 @@ final class ClickhouseClient implements ClickhouseClientInterface
             throw new \RuntimeException('Unable to inspect ClickHouse query placeholders.');
         }
 
-        $missing = array_values(array_unique($matches[1] ?? []));
+        $missing = array_values(array_unique($matches[1]));
         if ([] !== $missing) {
             throw new \InvalidArgumentException('ClickHouse query has unresolved parameters: '.implode(', ', $missing));
         }

@@ -49,8 +49,8 @@ final class IngestController implements IngestControllerInterface
             $this->logger->info('Analytics ingest completed.', [
                 'source' => $source,
                 'component' => self::COMPONENT,
-                'accepted' => $result['accepted'] ?? null,
-                'skipped' => $result['skipped'] ?? null,
+                'accepted' => $result['accepted'],
+                'skipped' => $result['skipped'],
                 'duration_ms' => $this->durationMs($startedAt),
             ]);
 
@@ -86,6 +86,9 @@ final class IngestController implements IngestControllerInterface
         }
     }
 
+    /**
+     * @return array{accepted:int,skipped:int}
+     */
     private function ingestCommon(string $source, Request $request): array
     {
         $payload = $this->decodeBody($request);
@@ -107,7 +110,8 @@ final class IngestController implements IngestControllerInterface
             $type = $this->normalizeIdentifier((string) ($item['type'] ?? 'track'), 'event type');
             $event = $this->normalizeIdentifier((string) ($item['event'] ?? ('page' === $type ? 'page' : $type)), 'event name');
             $userId = $this->normalizeIdentifier((string) ($item['userId'] ?? $item['anonymousId'] ?? 'anon'), 'user id');
-            $sessionId = $this->normalizeOptionalIdentifier($item['context']['sessionId'] ?? null, 'session id');
+            $context = isset($item['context']) && is_array($item['context']) ? $item['context'] : [];
+            $sessionId = $this->normalizeOptionalIdentifier($context['sessionId'] ?? null, 'session id');
             $timestamp = $this->normalizeTimestamp($item['timestamp'] ?? null);
 
             $rows[] = [
@@ -131,6 +135,9 @@ final class IngestController implements IngestControllerInterface
         return ['accepted' => count($rows), 'skipped' => $skipped];
     }
 
+    /**
+     * @return array<string,mixed>
+     */
     private function decodeBody(Request $request): array
     {
         $content = trim($request->getContent());
@@ -173,6 +180,10 @@ final class IngestController implements IngestControllerInterface
     {
         if (null === $value || '' === $value) {
             return '';
+        }
+
+        if (!is_scalar($value)) {
+            throw new \InvalidArgumentException(sprintf('%s must be a scalar identifier.', ucfirst($field)));
         }
 
         return $this->normalizeIdentifier((string) $value, $field);
