@@ -21,6 +21,11 @@ final class Insight implements InsightInterface
     ) {
     }
 
+    /**
+     * @param array<string,mixed> $param
+     *
+     * @return array<string,mixed>
+     */
     public function detectAnomaly(array $param): array
     {
         $tenant = $this->normalizeNonEmptyString($param, 'tenant_id');
@@ -62,6 +67,11 @@ final class Insight implements InsightInterface
         return $result;
     }
 
+    /**
+     * @param array<string,mixed> $param
+     *
+     * @return array{name:string,nodes:list<array<string,mixed>>,edges:list<array{from:string,to:string}>}
+     */
     public function computeMetricTree(array $param): array
     {
         $treeJson = $this->loadMetricTreeCatalog();
@@ -133,7 +143,7 @@ final class Insight implements InsightInterface
             'edges' => count($edges),
         ]);
 
-        return ['nodes' => $nodes, 'edges' => $edges];
+        return ['name' => $name, 'nodes' => $nodes, 'edges' => $edges];
     }
 
     /**
@@ -196,9 +206,13 @@ final class Insight implements InsightInterface
         return $value;
     }
 
+    /**
+     * @param array<string,mixed> $param
+     */
     private function normalizeNonEmptyString(array $param, string $field): string
     {
-        $value = trim((string) ($param[$field] ?? ''));
+        $raw = $param[$field] ?? '';
+        $value = is_scalar($raw) ? trim((string) $raw) : '';
         if ('' === $value) {
             throw new \InvalidArgumentException(sprintf('%s must be a non-empty string.', $field));
         }
@@ -206,6 +220,9 @@ final class Insight implements InsightInterface
         return $value;
     }
 
+    /**
+     * @param array<string,mixed> $param
+     */
     private function normalizePositiveInteger(array $param, string $field): int
     {
         if (!array_key_exists($field, $param)) {

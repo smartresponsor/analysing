@@ -13,11 +13,11 @@ final class KpiRegistryTest extends TestCase
 {
     public function testRegistryKeepsOnlyValidEntries(): void
     {
-        $registry = new KpiRegistry([
+        $registry = new KpiRegistry(new NullLogger(), [
             'orders_per_day' => 'Orders',
             'bad id' => 'Should be ignored',
             'revenue_total' => '',
-        ], new NullLogger());
+        ]);
 
         self::assertSame([
             'orders_per_day' => 'Orders',

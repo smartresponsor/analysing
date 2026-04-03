@@ -22,6 +22,7 @@ class MetricSnapshot
     #[ORM\Column(type: 'float')]
     private float $value;
 
+    /** @var array<string,mixed>|null */
     #[ORM\Column(type: 'json', nullable: true)]
     private ?array $dimensions = null;
 
@@ -34,6 +35,7 @@ class MetricSnapshot
     #[ORM\Column(type: 'datetime_immutable')]
     private \DateTimeImmutable $created_at;
 
+    /** @param array<string,mixed>|null $dimensions */
     public function __construct(string $metric, float $value, \DateTimeImmutable $periodStart, \DateTimeImmutable $periodEnd, ?array $dimensions = null)
     {
         $normalizedMetric = trim($metric);
@@ -70,6 +72,7 @@ class MetricSnapshot
         return $this->value;
     }
 
+    /** @return array<string,mixed>|null */
     public function getDimensions(): ?array
     {
         return $this->dimensions;
@@ -85,6 +88,16 @@ class MetricSnapshot
         return $this->period_end;
     }
 
+    public function getCreatedAt(): \DateTimeImmutable
+    {
+        return $this->created_at;
+    }
+
+    /**
+     * @param array<string,mixed> $dimensions
+     *
+     * @return array<string,mixed>
+     */
     private function normalizeDimensions(array $dimensions): array
     {
         $normalized = [];

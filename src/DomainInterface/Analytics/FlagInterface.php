@@ -7,12 +7,7 @@ namespace App\DomainInterface\Analytics;
 interface FlagInterface
 {
     /**
-     * @param array{
-     *   flag_key:mixed,
-     *   user_id:mixed,
-     *   rollout?:mixed,
-     *   allow?:mixed
-     * } $param
+     * @param array<string,mixed> $param
      *
      * @return array{
      *   flag_key:string,
@@ -26,12 +21,7 @@ interface FlagInterface
     public function evaluate(array $param): array;
 
     /**
-     * @param array{
-     *   flag_key:mixed,
-     *   tenant_id:mixed,
-     *   user_id:mixed,
-     *   enabled:mixed
-     * } $param
+     * @param array<string,mixed> $param
      *
      * @return array{accepted:int,flag_key:string,enabled:bool}
      */

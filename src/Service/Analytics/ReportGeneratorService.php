@@ -79,15 +79,8 @@ final class ReportGeneratorService implements ReportGeneratorServiceInterface
                 ];
             }
 
-            if ([] === $rows) {
-                $this->logger->warning('Analytics report generation produced no rows before export.', [
-                    'params' => $normalizedParams,
-                    'format' => $format,
-                ]);
-            }
-
-            $exportPath = $this->exporter->export($rows, $format);
-            if ('' === $exportPath || !is_file($exportPath)) {
+                        $exportPath = $this->exporter->export($rows, $format);
+            if (!is_file($exportPath)) {
                 throw new \RuntimeException('Analytics report export path is missing after export.');
             }
             $job->done();
@@ -179,7 +172,7 @@ final class ReportGeneratorService implements ReportGeneratorServiceInterface
         }
 
         if (array_key_exists('format', $params)) {
-            $normalized['format'] = is_string($params['format']) ? trim($params['format']) : (string) $params['format'];
+            $normalized['format'] = is_scalar($params['format']) || null === $params['format'] ? trim((string) $params['format']) : '';
         }
 
         return $normalized;

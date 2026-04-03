@@ -9,7 +9,7 @@ use App\DTO\Analytics\KpiRequest;
 interface DashboardServiceInterface
 {
     /**
-     * @return array{gross_minor:int, net_minor:int, days:int}
+     * @return array{gross_minor:int, net_minor:int, margin_pct:float, days:int}
      */
     public function kpi(KpiRequest $req): array;
 
@@ -19,7 +19,7 @@ interface DashboardServiceInterface
     public function timeseries(KpiRequest $req): array;
 
     /**
-     * @return list<array{vendor_id:int, gross_minor:int, net_minor:int}>
+     * @return list<array{vendor_id:int, gross_minor:int, net_minor:int, margin_pct:float}>
      */
     public function byVendor(?string $currency = null, ?string $from = null, ?string $to = null): array;
 }

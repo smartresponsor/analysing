@@ -83,6 +83,9 @@ final class InsightController implements InsightControllerInterface
         }
     }
 
+    /**
+     * @return array<string,mixed>
+     */
     private function decodeBody(Request $request): array
     {
         $content = trim($request->getContent());

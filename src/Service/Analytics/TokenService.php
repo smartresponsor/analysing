@@ -43,11 +43,7 @@ final class TokenService implements TokenServiceInterface
         $normalizedScope = $this->normalizeScope($scope, 'scope');
         $issuedAt = $this->utcNow();
         $expiresAt = $issuedAt->modify(sprintf('+%d seconds', $ttl));
-        if (false === $expiresAt) {
-            throw new \RuntimeException('Token expiration could not be calculated.');
-        }
-
-        $payload = json_encode([
+                $payload = json_encode([
             'scope' => $normalizedScope,
             'iat' => $issuedAt->getTimestamp(),
             'exp' => $expiresAt->getTimestamp(),

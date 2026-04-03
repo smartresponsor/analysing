@@ -35,7 +35,11 @@ final class AnalyticsExportCommand extends BaseCommand
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $startedAt = microtime(true);
-        $path = trim((string) $input->getArgument('path'));
+        $pathArgument = $input->getArgument('path');
+        if (!is_string($pathArgument) && !is_int($pathArgument) && !is_float($pathArgument) && !is_bool($pathArgument) && null !== $pathArgument) {
+            throw new \InvalidArgumentException('Export path argument must be scalar.');
+        }
+        $path = trim((string) $pathArgument);
         $from = new \DateTimeImmutable('first day of this month 00:00:00');
         $to = new \DateTimeImmutable('last day of this month 23:59:59');
         $request = new KpiRequest(

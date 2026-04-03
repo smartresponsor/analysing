@@ -4,10 +4,14 @@ declare(strict_types=1);
 
 namespace App\Tests\Unit\Analytics;
 
+use App\Tests\Support\JsonPayloadAssertionsTrait;
+
 use PHPUnit\Framework\TestCase;
 
 final class GuardConfigConsistencyTest extends TestCase
 {
+    use JsonPayloadAssertionsTrait;
+
     public function testNamespaceGuardConfigsRemainSynchronized(): void
     {
         $analytics = file_get_contents(__DIR__.'/../../../config/guard/analytics-namespace-guard.json');

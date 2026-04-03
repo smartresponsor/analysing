@@ -22,9 +22,10 @@ final class KpiRegistry implements KpiRegistryInterface
     /** @var array<string, true> */
     private array $lookupMisses = [];
 
+    /** @param array<array-key,mixed> $map */
     public function __construct(
-        array $map = [],
         private readonly LoggerInterface $logger,
+        array $map = [],
     ) {
         $source = [] !== $map ? $map : $this->defaultMap();
         $normalized = $this->normalizeMap($source);
@@ -107,7 +108,7 @@ final class KpiRegistry implements KpiRegistryInterface
 
         foreach ($source as $key => $label) {
             $id = trim((string) $key);
-            $title = trim((string) $label);
+            $title = is_scalar($label) || null === $label ? trim((string) $label) : '';
             if ('' === $id || '' === $title) {
                 $this->logger->warning('Analytics KPI registry skipped invalid entry.', [
                     'key' => $key,

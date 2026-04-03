@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace App\Tests\Unit\Analytics;
 
+use App\Tests\Support\JsonPayloadAssertionsTrait;
+
 use App\Controller\Analytics\FlagController;
 use App\DomainInterface\Analytics\FlagInterface;
 use PHPUnit\Framework\TestCase;
@@ -12,6 +14,8 @@ use Symfony\Component\HttpFoundation\Request;
 
 final class FlagControllerTest extends TestCase
 {
+    use JsonPayloadAssertionsTrait;
+
     public function testEvaluateReturnsDomainPayload(): void
     {
         $domain = $this->createMock(FlagInterface::class);
@@ -26,7 +30,7 @@ final class FlagControllerTest extends TestCase
 
         $controller = new FlagController($domain, $this->createMock(LoggerInterface::class));
         $response = $controller->evaluate(new Request([], [], [], [], [], [], json_encode(['flag_key' => 'checkout', 'user_id' => 'u1'], JSON_THROW_ON_ERROR)));
-        $payload = json_decode((string) $response->getContent(), true, 512, JSON_THROW_ON_ERROR);
+        $payload = $this->decodeJsonResponse($response);
 
         self::assertSame(200, $response->getStatusCode());
         self::assertTrue($payload['enabled']);

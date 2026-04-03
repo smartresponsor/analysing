@@ -22,18 +22,24 @@ final class Experiment implements ExperimentInterface
     ) {
     }
 
+    /**
+     * @param array<string,mixed> $param
+     *
+     * @return array{experiment_id:string,user_id:string,variant:string,bucket:int,reason:string,rollout:int}
+     */
     public function assign(array $param): array
     {
         $experimentId = $this->normalizeRequiredString($param, 'experiment_id');
         $userId = $this->normalizeRequiredString($param, 'user_id');
         $rollout = $this->normalizeRollout($param['rollout'] ?? 50);
 
-        $bucket = crc32($this->salt.'|'.$experimentId.'|'.$userId) % 100;
+        $bucket = (int) (abs(crc32($this->salt.'|'.$experimentId.'|'.$userId)) % 100);
         $variant = $bucket < $rollout ? 'treatment' : 'control';
 
         $this->logger->info('Analytics experiment allocated subject.', [
             'experiment_id' => $experimentId,
             'user_id' => $userId,
+            'reason' => 'rollout',
             'rollout' => $rollout,
             'bucket' => $bucket,
             'variant' => $variant,
@@ -44,6 +50,7 @@ final class Experiment implements ExperimentInterface
             'user_id' => $userId,
             'variant' => $variant,
             'bucket' => $bucket,
+            'reason' => 'rollout',
             'rollout' => $rollout,
         ];
     }
@@ -84,9 +91,13 @@ final class Experiment implements ExperimentInterface
         ];
     }
 
+    /**
+     * @param array<string,mixed> $param
+     */
     private function normalizeRequiredString(array $param, string $field): string
     {
-        $value = trim((string) ($param[$field] ?? ''));
+        $raw = $param[$field] ?? '';
+        $value = is_scalar($raw) ? trim((string) $raw) : '';
         if ('' === $value) {
             $this->logger->warning('Analytics experiment domain rejected an empty required field.', [
                 'field' => $field,
@@ -113,7 +124,7 @@ final class Experiment implements ExperimentInterface
 
     private function normalizeVariant(mixed $value): string
     {
-        $variant = trim((string) $value);
+        $variant = is_string($value) || is_int($value) || is_float($value) || is_bool($value) || null === $value ? trim((string) $value) : '';
         if ('' === $variant) {
             $this->logger->warning('Analytics experiment domain rejected an empty variant.');
             throw new \InvalidArgumentException('variant must be a non-empty string.');

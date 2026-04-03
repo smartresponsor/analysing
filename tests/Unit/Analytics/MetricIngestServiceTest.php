@@ -14,10 +14,12 @@ final class MetricIngestServiceTest extends TestCase
     {
         $service = new MetricIngestService(new NullLogger());
 
-        $service->ingest([
+        /** @var array<string,mixed> $payload */
+        $payload = [
             'metric' => 'orders',
             'dimensions' => ['tenant' => 'acme'],
-        ]);
+        ];
+        $service->ingest($payload);
 
         $buffer = $service->dumpBuffer();
 

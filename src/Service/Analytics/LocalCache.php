@@ -43,10 +43,10 @@ final class LocalCache implements LocalCacheInterface
         $this->purgeExpired($now);
         $hit = $this->data[$key] ?? null;
 
-        if (is_array($hit) && ($hit['exp'] ?? 0) > $now) {
+        if (is_array($hit) && $hit['exp'] > $now) {
             $this->logger->info('Analytics local cache hit.', [
                 'key' => $key,
-                'ttl_remaining' => max(0, ($hit['exp'] ?? $now) - $now),
+                'ttl_remaining' => max(0, $hit['exp'] - $now),
             ]);
 
             return $hit['v'];
@@ -91,7 +91,7 @@ final class LocalCache implements LocalCacheInterface
     {
         $purged = 0;
         foreach ($this->data as $key => $item) {
-            if (($item['exp'] ?? 0) <= $now) {
+            if ($item['exp'] <= $now) {
                 unset($this->data[$key]);
                 ++$purged;
             }
@@ -140,7 +140,7 @@ final class LocalCache implements LocalCacheInterface
         $oldestKey = null;
         $oldestStoredAt = null;
         foreach ($this->data as $key => $item) {
-            $storedAt = $item['stored_at'] ?? 0;
+            $storedAt = $item['stored_at'];
             if (null === $oldestStoredAt || $storedAt < $oldestStoredAt) {
                 $oldestStoredAt = $storedAt;
                 $oldestKey = $key;

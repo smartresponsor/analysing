@@ -52,7 +52,10 @@ final class AlertEvaluatorTest extends TestCase
 
         self::assertCount(1, $result);
         self::assertTrue($result[0]['matched']);
-        self::assertSame($snapshot, $result[0]['snapshot']);
+        $entry = $result[0];
+        $matchedSnapshot = $entry['snapshot'] ?? null;
+        self::assertInstanceOf(MetricSnapshot::class, $matchedSnapshot);
+        self::assertSame($snapshot, $matchedSnapshot);
     }
 
     public function testEvaluateRejectsInvalidRange(): void

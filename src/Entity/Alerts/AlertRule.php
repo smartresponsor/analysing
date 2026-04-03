@@ -23,9 +23,11 @@ class AlertRule
     #[ORM\Column(type: 'string', length: 255)]
     private string $name;
 
+    /** @var array<string,mixed> */
     #[ORM\Column(type: 'json')]
     private array $condition = [];
 
+    /** @var list<mixed> */
     #[ORM\Column(type: 'json')]
     private array $channels = [];
 
@@ -38,6 +40,10 @@ class AlertRule
     #[ORM\Column(type: 'datetime_immutable')]
     private \DateTimeImmutable $updated_at;
 
+    /**
+     * @param array<string,mixed> $condition
+     * @param list<mixed> $channels
+     */
     public function __construct(string $code, string $name, array $condition, array $channels = [])
     {
         $this->code = $this->normalizeCode($code);
@@ -64,11 +70,13 @@ class AlertRule
         return $this->name;
     }
 
+    /** @return array<string,mixed> */
     public function getCondition(): array
     {
         return $this->condition;
     }
 
+    /** @return list<mixed> */
     public function getChannels(): array
     {
         return $this->channels;
@@ -79,18 +87,30 @@ class AlertRule
         return $this->is_active;
     }
 
+    public function getCreatedAt(): \DateTimeImmutable
+    {
+        return $this->created_at;
+    }
+
+    public function getUpdatedAt(): \DateTimeImmutable
+    {
+        return $this->updated_at;
+    }
+
     public function setActive(bool $active): void
     {
         $this->is_active = $active;
         $this->touch();
     }
 
+    /** @param list<mixed> $channels */
     public function setChannels(array $channels): void
     {
         $this->channels = $this->normalizeChannels($channels);
         $this->touch();
     }
 
+    /** @param array<string,mixed> $condition */
     public function setCondition(array $condition): void
     {
         $this->condition = $this->normalizeCondition($condition);
@@ -122,6 +142,11 @@ class AlertRule
         return $normalized;
     }
 
+    /**
+     * @param array<string,mixed> $condition
+     *
+     * @return array<string,mixed>
+     */
     private function normalizeCondition(array $condition): array
     {
         if ([] === $condition) {
@@ -149,6 +174,11 @@ class AlertRule
         return $normalized;
     }
 
+    /**
+     * @param list<mixed> $channels
+     *
+     * @return list<mixed>
+     */
     private function normalizeChannels(array $channels): array
     {
         $normalized = [];
@@ -174,6 +204,11 @@ class AlertRule
         return $normalized;
     }
 
+    /**
+     * @param array<mixed> $values
+     *
+     * @return array<mixed>
+     */
     private function normalizeNestedArray(array $values, string $context): array
     {
         $normalized = [];

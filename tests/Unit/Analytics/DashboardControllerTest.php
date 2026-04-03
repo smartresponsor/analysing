@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace App\Tests\Unit\Analytics;
 
+use App\Tests\Support\JsonPayloadAssertionsTrait;
+
 use App\Controller\Analytics\DashboardController;
 use App\ServiceInterface\Analytics\DashboardServiceInterface;
 use PHPUnit\Framework\TestCase;
@@ -12,13 +14,15 @@ use Symfony\Component\HttpFoundation\Request;
 
 final class DashboardControllerTest extends TestCase
 {
+    use JsonPayloadAssertionsTrait;
+
     public function testKpiReturnsBadRequestForInvalidVendorId(): void
     {
         $service = $this->createMock(DashboardServiceInterface::class);
         $controller = new DashboardController($service, $this->createMock(LoggerInterface::class));
 
         $response = $controller->kpi(new Request(['vendorId' => 'abc']));
-        $payload = json_decode((string) $response->getContent(), true, 512, JSON_THROW_ON_ERROR);
+        $payload = $this->decodeJsonResponse($response);
 
         self::assertSame(400, $response->getStatusCode());
         self::assertSame('Invalid dashboard request.', $payload['error']);
@@ -32,7 +36,7 @@ final class DashboardControllerTest extends TestCase
 
         $controller = new DashboardController($service, $this->createMock(LoggerInterface::class));
         $response = $controller->timeseries(new Request(['currency' => 'usd']));
-        $payload = json_decode((string) $response->getContent(), true, 512, JSON_THROW_ON_ERROR);
+        $payload = $this->decodeJsonResponse($response);
 
         self::assertSame(503, $response->getStatusCode());
         self::assertSame('Dashboard data unavailable.', $payload['error']);

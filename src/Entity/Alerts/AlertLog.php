@@ -24,12 +24,14 @@ class AlertLog
     #[ORM\Column(type: 'text')]
     private string $message;
 
+    /** @var array<string,mixed>|null */
     #[ORM\Column(type: 'json', nullable: true)]
     private ?array $context = null;
 
     #[ORM\Column(type: 'datetime_immutable')]
     private \DateTimeImmutable $createdAt;
 
+    /** @param array<string,mixed> $context */
     public function __construct(int $vendorId, string $type, string $message, array $context = [])
     {
         if ($vendorId <= 0) {
@@ -73,6 +75,7 @@ class AlertLog
         return $this->message;
     }
 
+    /** @return array<string,mixed>|null */
     public function getContext(): ?array
     {
         return $this->context;
@@ -83,6 +86,11 @@ class AlertLog
         return $this->createdAt;
     }
 
+    /**
+     * @param array<string,mixed> $context
+     *
+     * @return array<string,mixed>
+     */
     private function normalizeContext(array $context): array
     {
         $normalized = [];
@@ -106,6 +114,9 @@ class AlertLog
         return $normalized;
     }
 
+    /** @param array<string|int,mixed> $values
+     *  @return array<string|int,mixed>
+     */
     private function normalizeNestedArray(array $values): array
     {
         $normalized = [];

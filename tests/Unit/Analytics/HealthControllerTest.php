@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace App\Tests\Unit\Analytics;
 
+use App\Tests\Support\JsonPayloadAssertionsTrait;
+
 use App\Controller\Analytics\HealthController;
 use App\ServiceInterface\Analytics\HealthServiceInterface;
 use PHPUnit\Framework\TestCase;
@@ -11,6 +13,8 @@ use Psr\Log\LoggerInterface;
 
 final class HealthControllerTest extends TestCase
 {
+    use JsonPayloadAssertionsTrait;
+
     public function testPingReturnsHealthPayload(): void
     {
         $service = $this->createMock(HealthServiceInterface::class);
@@ -18,7 +22,7 @@ final class HealthControllerTest extends TestCase
 
         $controller = new HealthController($service, $this->createMock(LoggerInterface::class));
         $response = $controller->ping();
-        $payload = json_decode((string) $response->getContent(), true, 512, JSON_THROW_ON_ERROR);
+        $payload = $this->decodeJsonResponse($response);
 
         self::assertSame(200, $response->getStatusCode());
         self::assertTrue($payload['ok']);
@@ -31,7 +35,7 @@ final class HealthControllerTest extends TestCase
 
         $controller = new HealthController($service, $this->createMock(LoggerInterface::class));
         $response = $controller->ping();
-        $payload = json_decode((string) $response->getContent(), true, 512, JSON_THROW_ON_ERROR);
+        $payload = $this->decodeJsonResponse($response);
 
         self::assertSame(503, $response->getStatusCode());
         self::assertFalse($payload['ok']);

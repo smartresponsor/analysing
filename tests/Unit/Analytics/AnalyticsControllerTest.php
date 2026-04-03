@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace App\Tests\Unit\Analytics;
 
+use App\Tests\Support\JsonPayloadAssertionsTrait;
+
 use App\Controller\Analytics\AnalyticsController;
 use App\DomainInterface\Analytics\AnalyticsInterface;
 use PHPUnit\Framework\TestCase;
@@ -12,13 +14,15 @@ use Symfony\Component\HttpFoundation\Request;
 
 final class AnalyticsControllerTest extends TestCase
 {
+    use JsonPayloadAssertionsTrait;
+
     public function testStatusReturnsOkPayload(): void
     {
         $domain = $this->createMock(AnalyticsInterface::class);
         $controller = new AnalyticsController($domain, $this->createMock(LoggerInterface::class));
 
         $response = $controller->status();
-        $payload = json_decode((string) $response->getContent(), true, 512, JSON_THROW_ON_ERROR);
+        $payload = $this->decodeJsonResponse($response);
 
         self::assertSame(200, $response->getStatusCode());
         self::assertTrue($payload['ok']);
@@ -33,7 +37,7 @@ final class AnalyticsControllerTest extends TestCase
         $request = new Request([], [], [], [], [], [], '{bad json');
 
         $response = $controller->funnel($request);
-        $payload = json_decode((string) $response->getContent(), true, 512, JSON_THROW_ON_ERROR);
+        $payload = $this->decodeJsonResponse($response);
 
         self::assertSame(400, $response->getStatusCode());
         self::assertSame('Invalid analytics request.', $payload['error']);
@@ -57,7 +61,7 @@ final class AnalyticsControllerTest extends TestCase
         ], JSON_THROW_ON_ERROR));
 
         $response = $controller->retention($request);
-        $payload = json_decode((string) $response->getContent(), true, 512, JSON_THROW_ON_ERROR);
+        $payload = $this->decodeJsonResponse($response);
 
         self::assertSame(503, $response->getStatusCode());
         self::assertSame('Analytics data unavailable.', $payload['error']);

@@ -18,6 +18,11 @@ final class ReportBundle implements ReportBundleInterface
     {
     }
 
+    /**
+     * @param array<string, list<array<string,mixed>>> $datasets
+     *
+     * @return array<string, array{rows:int,columns:list<string>}>
+     */
     public function pack(array $datasets): array
     {
         if ([] === $datasets) {

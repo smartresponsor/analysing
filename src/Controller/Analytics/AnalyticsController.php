@@ -105,6 +105,9 @@ final class AnalyticsController implements AnalyticsControllerInterface
         }
     }
 
+    /**
+     * @return array<string,mixed>
+     */
     private function decodeBody(Request $request): array
     {
         $content = trim($request->getContent());

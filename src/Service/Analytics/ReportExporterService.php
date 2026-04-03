@@ -96,7 +96,14 @@ final class ReportExporterService implements ReportExporterServiceInterface
                             return json_encode($value, JSON_THROW_ON_ERROR | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
                         }
 
-                        return (string) $value;
+                        if (null === $value) {
+                            return '';
+                        }
+                        if (is_scalar($value)) {
+                            return (string) $value;
+                        }
+
+                        throw new \RuntimeException('CSV row values must be scalar, array, DateTimeInterface, or null.');
                     }, $row);
                 } catch (\JsonException $exception) {
                     $this->logger->error('Analytics report exporter failed to encode CSV row payload.', [

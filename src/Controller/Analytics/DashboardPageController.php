@@ -66,9 +66,9 @@ final class DashboardPageController implements DashboardPageControllerInterface
         $this->logger->info('Dashboard page controller completed.', [
             'component' => self::COMPONENT,
             'duration_ms' => $this->durationMs($startedAt),
-            'kpi_items' => is_countable($payload['kpi']) ? count($payload['kpi']) : null,
-            'series_rows' => is_countable($payload['series']) ? count($payload['series']) : null,
-            'top_rows' => is_countable($payload['top']) ? count($payload['top']) : null,
+            'kpi_items' => count($payload['kpi']),
+            'series_rows' => count($payload['series']),
+            'top_rows' => count($payload['top']),
         ]);
 
         return new Response($json, Response::HTTP_OK, ['Content-Type' => 'application/json']);

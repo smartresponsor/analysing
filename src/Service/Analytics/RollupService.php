@@ -62,7 +62,7 @@ final class RollupService implements RollupServiceInterface
                 continue;
             }
 
-            if (null === $value || '' === $value) {
+            if ('' === $value) {
                 continue;
             }
 

@@ -6,5 +6,6 @@ namespace App\ServiceInterface\Analytics;
 
 interface RollupInterface
 {
+    /** @param list<array<string,mixed>> $rows */
     public function sum(array $rows, string $field): float|int;
 }

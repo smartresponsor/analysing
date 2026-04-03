@@ -79,10 +79,11 @@ final class AsyncQueryService implements AsyncQueryServiceInterface
         $job['age_ms'] = is_int($submittedTs) ? max(0, ((new \DateTimeImmutable())->getTimestamp() - $submittedTs) * 1000) : null;
         $this->logger->info('Analytics async query status resolved.', [
             'id' => $id,
-            'state' => $job['state'] ?? 'unknown',
+            'state' => $job['state'],
             'age_ms' => $job['age_ms'],
         ]);
 
+        /** @var array{id:string,state:string,submitted_at?:string,result?:array<string,mixed>} $job */
         return $job;
     }
 
@@ -197,7 +198,7 @@ final class AsyncQueryService implements AsyncQueryServiceInterface
     {
         while (count($this->jobs) > self::MAX_JOBS) {
             $oldestId = array_key_first($this->jobs);
-            if (null === $oldestId) {
+            if (!is_string($oldestId)) {
                 break;
             }
 

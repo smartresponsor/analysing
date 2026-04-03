@@ -29,7 +29,7 @@ final class CsvImporter implements CsvImporterInterface
             $this->logger->info('Analytics CSV import completed.', [
                 'path' => $csvPath,
                 'rows' => count($rows),
-                'columns' => [] === $rows ? 0 : count(array_keys($rows[0])),
+                'columns' => 0,
             ]);
 
             return $rows;
