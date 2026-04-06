@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace App\Tests\Unit\Analytics;
 
+use App\Tests\Support\AnalyticsHttpFactoriesTrait;
 use App\Tests\Support\JsonPayloadAssertionsTrait;
-
 use App\Controller\Analytics\HealthController;
 use App\ServiceInterface\Analytics\HealthServiceInterface;
 use PHPUnit\Framework\TestCase;
@@ -13,6 +13,7 @@ use Psr\Log\LoggerInterface;
 
 final class HealthControllerTest extends TestCase
 {
+    use AnalyticsHttpFactoriesTrait;
     use JsonPayloadAssertionsTrait;
 
     public function testPingReturnsHealthPayload(): void
@@ -20,12 +21,19 @@ final class HealthControllerTest extends TestCase
         $service = $this->createMock(HealthServiceInterface::class);
         $service->method('status')->willReturn(['ok' => true, 'component' => 'analytics']);
 
-        $controller = new HealthController($service, $this->createMock(LoggerInterface::class));
+        $controller = new HealthController(
+            $service,
+            $this->createMock(LoggerInterface::class),
+            $this->createSuccessFactory(),
+            $this->createErrorFactory(),
+        );
         $response = $controller->ping();
         $payload = $this->decodeJsonResponse($response);
 
         self::assertSame(200, $response->getStatusCode());
         self::assertTrue($payload['ok']);
+        $data = $this->requireArrayAt($payload, 'data');
+        self::assertTrue((bool) $data['ok']);
     }
 
     public function testPingReturnsServiceUnavailableOnRuntimeFailure(): void
@@ -33,7 +41,12 @@ final class HealthControllerTest extends TestCase
         $service = $this->createMock(HealthServiceInterface::class);
         $service->method('status')->willThrowException(new \RuntimeException('broken'));
 
-        $controller = new HealthController($service, $this->createMock(LoggerInterface::class));
+        $controller = new HealthController(
+            $service,
+            $this->createMock(LoggerInterface::class),
+            $this->createSuccessFactory(),
+            $this->createErrorFactory(),
+        );
         $response = $controller->ping();
         $payload = $this->decodeJsonResponse($response);
 

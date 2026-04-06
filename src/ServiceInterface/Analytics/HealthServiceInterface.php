@@ -20,6 +20,19 @@ interface HealthServiceInterface
      *   storage_driver: string,
      *   storage_mode: string,
      *   storage_available: bool,
+     *   idempotency_enabled: bool,
+     *   idempotency_mode: string,
+     *   idempotency_required: bool,
+     *   auth_required: bool,
+     *   auth_public_read: bool,
+     *   rate_limit_enabled: bool,
+     *   rate_limit_mode: string,
+     *   rate_limit_window_seconds: int,
+     *   rate_limit_default_write_limit: int,
+     *   tenant_context_enabled: bool,
+     *   tenant: string,
+     *   storage_prepare_command: string,
+     *   storage_required_tables: list<string>,
      *   duration_ms: int
      * }
      */

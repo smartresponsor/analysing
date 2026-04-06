@@ -10,6 +10,8 @@ declare(strict_types=1);
 namespace App\Controller\Analytics;
 
 use App\ControllerInterface\Analytics\HealthControllerInterface;
+use App\Service\Http\AnalyticsErrorResponseFactory;
+use App\Service\Http\AnalyticsSuccessResponseFactory;
 use App\ServiceInterface\Analytics\HealthServiceInterface;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;
@@ -22,6 +24,8 @@ final class HealthController implements HealthControllerInterface
     public function __construct(
         private readonly HealthServiceInterface $svc,
         private readonly LoggerInterface $logger,
+        private readonly AnalyticsSuccessResponseFactory $successResponses,
+        private readonly AnalyticsErrorResponseFactory $errorResponses,
     ) {
     }
 
@@ -37,7 +41,7 @@ final class HealthController implements HealthControllerInterface
                 'duration_ms' => $this->durationMs($startedAt),
             ]);
 
-            return new JsonResponse($payload);
+            return $this->successResponses->create('health', $payload, $startedAt);
         } catch (\RuntimeException $exception) {
             $this->logger->error('Analytics health endpoint failed.', [
                 'component' => self::COMPONENT,
@@ -45,12 +49,14 @@ final class HealthController implements HealthControllerInterface
                 'exception' => $exception,
             ]);
 
-            return new JsonResponse([
-                'ok' => false,
-                'error' => 'Health data unavailable.',
-                'component' => self::COMPONENT,
-                'time' => (new \DateTimeImmutable())->format(DATE_ATOM),
-            ], Response::HTTP_SERVICE_UNAVAILABLE);
+            return $this->errorResponses->create(
+                'health',
+                'Health data unavailable.',
+                'analytics.health.unavailable',
+                Response::HTTP_SERVICE_UNAVAILABLE,
+                $startedAt,
+                true,
+            );
         }
     }
 

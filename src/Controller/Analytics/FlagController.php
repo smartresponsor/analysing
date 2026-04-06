@@ -1,16 +1,13 @@
 <?php
 
-/*
- * Owner: Marketing America Corp
- * Author: Oleksandr Tishchenko <dev@highhopesamerica.com>
- */
-
 declare(strict_types=1);
 
 namespace App\Controller\Analytics;
 
 use App\ControllerInterface\Analytics\FlagControllerInterface;
 use App\DomainInterface\Analytics\FlagInterface;
+use App\Service\Http\AnalyticsErrorResponseFactory;
+use App\Service\Http\AnalyticsSuccessResponseFactory;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
@@ -24,6 +21,8 @@ final class FlagController implements FlagControllerInterface
     public function __construct(
         private readonly FlagInterface $domain,
         private readonly LoggerInterface $logger,
+        private readonly AnalyticsSuccessResponseFactory $successResponses,
+        private readonly AnalyticsErrorResponseFactory $errorResponses,
     ) {
     }
 
@@ -41,7 +40,7 @@ final class FlagController implements FlagControllerInterface
                 'duration_ms' => $this->durationMs($startedAt),
             ]);
 
-            return new JsonResponse($result);
+            return $this->successResponses->create('evaluate', $result, $startedAt);
         } catch (\InvalidArgumentException $exception) {
             $this->logger->warning('Flag evaluation request is invalid.', [
                 'component' => self::COMPONENT,
@@ -49,12 +48,13 @@ final class FlagController implements FlagControllerInterface
                 'exception' => $exception,
             ]);
 
-            return new JsonResponse([
-                'error' => 'Invalid flag request.',
-                'operation' => 'evaluate',
-                'component' => self::COMPONENT,
-                'time' => (new \DateTimeImmutable())->format(DATE_ATOM),
-            ], Response::HTTP_BAD_REQUEST);
+            return $this->errorResponses->create(
+                'evaluate',
+                'Invalid flag request.',
+                'analytics.flag.invalid_request',
+                Response::HTTP_BAD_REQUEST,
+                $startedAt,
+            );
         } catch (\RuntimeException $exception) {
             $this->logger->error('Flag evaluation failed.', [
                 'component' => self::COMPONENT,
@@ -62,12 +62,14 @@ final class FlagController implements FlagControllerInterface
                 'exception' => $exception,
             ]);
 
-            return new JsonResponse([
-                'error' => 'Flag evaluation unavailable.',
-                'operation' => 'evaluate',
-                'component' => self::COMPONENT,
-                'time' => (new \DateTimeImmutable())->format(DATE_ATOM),
-            ], Response::HTTP_SERVICE_UNAVAILABLE);
+            return $this->errorResponses->create(
+                'evaluate',
+                'Flag evaluation unavailable.',
+                'analytics.flag.unavailable',
+                Response::HTTP_SERVICE_UNAVAILABLE,
+                $startedAt,
+                true,
+            );
         }
     }
 

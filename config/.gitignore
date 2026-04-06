@@ -48,7 +48,6 @@ Thumbs.db
 /coverage/
 /build/
 /reports/
-/report/
 /test-output/
 .cachegrind.out.*
 
@@ -74,6 +73,8 @@ Thumbs.db
 *.old
 *.orig
 *.log
+*.swp
+*.swo
 *~
 # PHP-CS-Fixer cache
 .php-cs-fixer.cache
@@ -140,11 +141,3 @@ Thumbs.db
 
 /archives/
 /Archives/
-
-# Analytics generated/runtime state
-/config/reference.php
-/var/analytics_idempotency/
-/var/analytics_rate_limit/
-/var/analytics_rate_limit_smoke/
-/var/*.sqlite
-/var/.php-cs-fixer.cache

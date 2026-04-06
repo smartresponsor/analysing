@@ -11,6 +11,8 @@ namespace App\Controller\Analytics;
 
 use App\ControllerInterface\Analytics\IngestControllerInterface;
 use App\DomainInterface\Analytics\ClickhouseClientInterface;
+use App\Service\Http\AnalyticsErrorResponseFactory;
+use App\Service\Http\AnalyticsSuccessResponseFactory;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
@@ -26,6 +28,8 @@ final class IngestController implements IngestControllerInterface
     public function __construct(
         private readonly ClickhouseClientInterface $client,
         private readonly LoggerInterface $logger,
+        private readonly AnalyticsSuccessResponseFactory $successResponses,
+        private readonly AnalyticsErrorResponseFactory $errorResponses,
     ) {
     }
 
@@ -54,7 +58,7 @@ final class IngestController implements IngestControllerInterface
                 'duration_ms' => $this->durationMs($startedAt),
             ]);
 
-            return new JsonResponse($result);
+            return $this->successResponses->create($source, array_merge(['source' => $source], $result), $startedAt);
         } catch (\InvalidArgumentException $exception) {
             $this->logger->warning('Analytics ingest request rejected.', [
                 'source' => $source,
@@ -63,12 +67,15 @@ final class IngestController implements IngestControllerInterface
                 'exception' => $exception,
             ]);
 
-            return new JsonResponse([
-                'error' => 'Invalid analytics ingest request.',
-                'source' => $source,
-                'component' => self::COMPONENT,
-                'time' => (new \DateTimeImmutable())->format(DATE_ATOM),
-            ], Response::HTTP_BAD_REQUEST);
+            return $this->errorResponses->create(
+                $source,
+                'Invalid analytics ingest request.',
+                'analytics.ingest.invalid_request',
+                Response::HTTP_BAD_REQUEST,
+                $startedAt,
+                false,
+                ['source' => $source],
+            );
         } catch (\RuntimeException $exception) {
             $this->logger->error('Analytics ingest failed.', [
                 'source' => $source,
@@ -77,12 +84,15 @@ final class IngestController implements IngestControllerInterface
                 'exception' => $exception,
             ]);
 
-            return new JsonResponse([
-                'error' => 'Analytics ingest unavailable.',
-                'source' => $source,
-                'component' => self::COMPONENT,
-                'time' => (new \DateTimeImmutable())->format(DATE_ATOM),
-            ], Response::HTTP_SERVICE_UNAVAILABLE);
+            return $this->errorResponses->create(
+                $source,
+                'Analytics ingest unavailable.',
+                'analytics.ingest.unavailable',
+                Response::HTTP_SERVICE_UNAVAILABLE,
+                $startedAt,
+                true,
+                ['source' => $source],
+            );
         }
     }
 
@@ -101,7 +111,7 @@ final class IngestController implements IngestControllerInterface
         $rows = [];
         $skipped = 0;
 
-        foreach ($batch as $index => $item) {
+        foreach ($batch as $item) {
             if (!is_array($item)) {
                 ++$skipped;
                 continue;

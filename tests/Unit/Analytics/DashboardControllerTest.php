@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace App\Tests\Unit\Analytics;
 
+use App\Tests\Support\AnalyticsHttpFactoriesTrait;
 use App\Tests\Support\JsonPayloadAssertionsTrait;
-
 use App\Controller\Analytics\DashboardController;
 use App\ServiceInterface\Analytics\DashboardServiceInterface;
 use PHPUnit\Framework\TestCase;
@@ -14,14 +14,21 @@ use Symfony\Component\HttpFoundation\Request;
 
 final class DashboardControllerTest extends TestCase
 {
+    use AnalyticsHttpFactoriesTrait;
     use JsonPayloadAssertionsTrait;
 
     public function testKpiReturnsBadRequestForInvalidVendorId(): void
     {
+        $request = new Request(['vendorId' => 'abc']);
         $service = $this->createMock(DashboardServiceInterface::class);
-        $controller = new DashboardController($service, $this->createMock(LoggerInterface::class));
+        $controller = new DashboardController(
+            $service,
+            $this->createMock(LoggerInterface::class),
+            $this->createSuccessFactory($request),
+            $this->createErrorFactory($request),
+        );
 
-        $response = $controller->kpi(new Request(['vendorId' => 'abc']));
+        $response = $controller->kpi($request);
         $payload = $this->decodeJsonResponse($response);
 
         self::assertSame(400, $response->getStatusCode());
@@ -31,11 +38,17 @@ final class DashboardControllerTest extends TestCase
 
     public function testTimeseriesReturnsServiceUnavailableWhenServiceFails(): void
     {
+        $request = new Request(['currency' => 'usd']);
         $service = $this->createMock(DashboardServiceInterface::class);
         $service->method('timeseries')->willThrowException(new \RuntimeException('db down'));
 
-        $controller = new DashboardController($service, $this->createMock(LoggerInterface::class));
-        $response = $controller->timeseries(new Request(['currency' => 'usd']));
+        $controller = new DashboardController(
+            $service,
+            $this->createMock(LoggerInterface::class),
+            $this->createSuccessFactory($request),
+            $this->createErrorFactory($request),
+        );
+        $response = $controller->timeseries($request);
         $payload = $this->decodeJsonResponse($response);
 
         self::assertSame(503, $response->getStatusCode());

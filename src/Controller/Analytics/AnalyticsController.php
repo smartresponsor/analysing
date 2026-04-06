@@ -11,6 +11,8 @@ namespace App\Controller\Analytics;
 
 use App\ControllerInterface\Analytics\AnalyticsControllerInterface;
 use App\DomainInterface\Analytics\AnalyticsInterface;
+use App\Service\Http\AnalyticsErrorResponseFactory;
+use App\Service\Http\AnalyticsSuccessResponseFactory;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
@@ -24,24 +26,23 @@ final class AnalyticsController implements AnalyticsControllerInterface
     public function __construct(
         private readonly AnalyticsInterface $domain,
         private readonly LoggerInterface $logger,
+        private readonly AnalyticsSuccessResponseFactory $successResponses,
+        private readonly AnalyticsErrorResponseFactory $errorResponses,
     ) {
     }
 
     public function status(): JsonResponse
     {
-        $payload = [
-            'ok' => true,
-            'component' => self::COMPONENT,
-            'status' => 'ok',
-            'time' => (new \DateTimeImmutable())->format(DATE_ATOM),
-        ];
+        $startedAt = microtime(true);
+        $payload = ['status' => 'ok'];
 
         $this->logger->info('Analytics status endpoint completed.', [
             'component' => self::COMPONENT,
             'status' => 'ok',
+            'duration_ms' => $this->durationMs($startedAt),
         ]);
 
-        return new JsonResponse($payload);
+        return $this->successResponses->create('status', $payload, $startedAt);
     }
 
     public function funnel(Request $request): JsonResponse
@@ -73,7 +74,7 @@ final class AnalyticsController implements AnalyticsControllerInterface
                 'duration_ms' => $this->durationMs($startedAt),
             ]);
 
-            return new JsonResponse($result);
+            return $this->successResponses->create($operation, $result, $startedAt);
         } catch (\InvalidArgumentException $exception) {
             $this->logger->warning('Analytics domain rejected request.', [
                 'operation' => $operation,
@@ -82,12 +83,13 @@ final class AnalyticsController implements AnalyticsControllerInterface
                 'exception' => $exception,
             ]);
 
-            return new JsonResponse([
-                'error' => 'Invalid analytics request.',
-                'operation' => $operation,
-                'component' => self::COMPONENT,
-                'time' => (new \DateTimeImmutable())->format(DATE_ATOM),
-            ], Response::HTTP_BAD_REQUEST);
+            return $this->errorResponses->create(
+                $operation,
+                'Invalid analytics request.',
+                'analytics.request.invalid',
+                Response::HTTP_BAD_REQUEST,
+                $startedAt,
+            );
         } catch (\RuntimeException $exception) {
             $this->logger->error('Analytics domain failed.', [
                 'operation' => $operation,
@@ -96,12 +98,14 @@ final class AnalyticsController implements AnalyticsControllerInterface
                 'exception' => $exception,
             ]);
 
-            return new JsonResponse([
-                'error' => 'Analytics data unavailable.',
-                'operation' => $operation,
-                'component' => self::COMPONENT,
-                'time' => (new \DateTimeImmutable())->format(DATE_ATOM),
-            ], Response::HTTP_SERVICE_UNAVAILABLE);
+            return $this->errorResponses->create(
+                $operation,
+                'Analytics data unavailable.',
+                'analytics.request.unavailable',
+                Response::HTTP_SERVICE_UNAVAILABLE,
+                $startedAt,
+                true,
+            );
         }
     }
 

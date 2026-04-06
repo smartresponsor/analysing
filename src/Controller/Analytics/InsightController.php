@@ -11,6 +11,8 @@ namespace App\Controller\Analytics;
 
 use App\ControllerInterface\Analytics\InsightControllerInterface;
 use App\DomainInterface\Analytics\InsightInterface;
+use App\Service\Http\AnalyticsErrorResponseFactory;
+use App\Service\Http\AnalyticsSuccessResponseFactory;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
@@ -24,6 +26,8 @@ final class InsightController implements InsightControllerInterface
     public function __construct(
         private readonly InsightInterface $domain,
         private readonly LoggerInterface $logger,
+        private readonly AnalyticsSuccessResponseFactory $successResponses,
+        private readonly AnalyticsErrorResponseFactory $errorResponses,
     ) {
     }
 
@@ -51,7 +55,7 @@ final class InsightController implements InsightControllerInterface
                 'duration_ms' => $this->durationMs($startedAt),
             ]);
 
-            return new JsonResponse($result);
+            return $this->successResponses->create($operation, $result, $startedAt);
         } catch (\InvalidArgumentException $exception) {
             $this->logger->warning('Insight request is invalid.', [
                 'operation' => $operation,
@@ -60,12 +64,13 @@ final class InsightController implements InsightControllerInterface
                 'exception' => $exception,
             ]);
 
-            return new JsonResponse([
-                'error' => 'Invalid insight request.',
-                'operation' => $operation,
-                'component' => self::COMPONENT,
-                'time' => (new \DateTimeImmutable())->format(DATE_ATOM),
-            ], Response::HTTP_BAD_REQUEST);
+            return $this->errorResponses->create(
+                $operation,
+                'Invalid insight request.',
+                'analytics.insight.invalid_request',
+                Response::HTTP_BAD_REQUEST,
+                $startedAt,
+            );
         } catch (\RuntimeException $exception) {
             $this->logger->error('Insight domain failed.', [
                 'operation' => $operation,
@@ -74,12 +79,14 @@ final class InsightController implements InsightControllerInterface
                 'exception' => $exception,
             ]);
 
-            return new JsonResponse([
-                'error' => 'Insight data unavailable.',
-                'operation' => $operation,
-                'component' => self::COMPONENT,
-                'time' => (new \DateTimeImmutable())->format(DATE_ATOM),
-            ], Response::HTTP_SERVICE_UNAVAILABLE);
+            return $this->errorResponses->create(
+                $operation,
+                'Insight data unavailable.',
+                'analytics.insight.unavailable',
+                Response::HTTP_SERVICE_UNAVAILABLE,
+                $startedAt,
+                true,
+            );
         }
     }
 

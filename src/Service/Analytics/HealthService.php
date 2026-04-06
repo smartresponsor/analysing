@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Service\Analytics;
 
+use App\Service\Http\TenantContext;
 use App\ServiceInterface\Analytics\HealthServiceInterface;
 use App\ServiceInterface\Analytics\KpiRegistryInterface;
 use Psr\Log\LoggerInterface;
@@ -16,6 +17,20 @@ final class HealthService implements HealthServiceInterface
         private readonly string $storageDriver = 'unknown',
         private readonly string $storageMode = 'unknown',
         private readonly bool $storageAvailable = false,
+        private readonly bool $idempotencyEnabled = false,
+        private readonly string $idempotencyMode = 'disabled',
+        private readonly bool $idempotencyRequired = false,
+        private readonly bool $authRequired = false,
+        private readonly bool $authPublicRead = true,
+        private readonly bool $rateLimitEnabled = false,
+        private readonly string $rateLimitMode = 'disabled',
+        private readonly int $rateLimitWindowSeconds = 60,
+        private readonly int $rateLimitDefaultWriteLimit = 60,
+        private readonly bool $tenantContextEnabled = true,
+        private readonly ?TenantContext $tenantContext = null,
+        private readonly string $storagePrepareCommand = 'php bin/console analytics:storage:prepare --seed',
+        /** @var list<string> */
+        private readonly array $storageRequiredTables = [],
     ) {
     }
 
@@ -82,6 +97,19 @@ final class HealthService implements HealthServiceInterface
             'storage_driver' => $this->storageDriver,
             'storage_mode' => $this->storageMode,
             'storage_available' => $this->storageAvailable,
+            'idempotency_enabled' => $this->idempotencyEnabled,
+            'idempotency_mode' => $this->idempotencyMode,
+            'idempotency_required' => $this->idempotencyRequired,
+            'auth_required' => $this->authRequired,
+            'auth_public_read' => $this->authPublicRead,
+            'rate_limit_enabled' => $this->rateLimitEnabled,
+            'rate_limit_mode' => $this->rateLimitMode,
+            'rate_limit_window_seconds' => $this->rateLimitWindowSeconds,
+            'rate_limit_default_write_limit' => $this->rateLimitDefaultWriteLimit,
+            'tenant_context_enabled' => $this->tenantContextEnabled,
+            'tenant' => $this->tenantContext?->current() ?? 'public',
+            'storage_prepare_command' => $this->storagePrepareCommand,
+            'storage_required_tables' => $this->storageRequiredTables,
             'duration_ms' => (int) round((microtime(true) - $startedAt) * 1000),
         ];
     }

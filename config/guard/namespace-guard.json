@@ -1,0 +1,10 @@
+{
+  "targetPrefix": "App\\",
+  "allowedRoot": [
+    "App"
+  ],
+  "bannedPrefix": [
+    "SmartResponsor\\",
+    "Analytics\\"
+  ]
+}

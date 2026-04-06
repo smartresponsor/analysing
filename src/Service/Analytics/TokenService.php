@@ -15,9 +15,11 @@ final class TokenService implements TokenServiceInterface
     private const MAX_KEY_LENGTH = 128;
     private const MAX_SCOPE_STRING_LENGTH = 2048;
     private const MAX_TOKEN_LENGTH = 32768;
+    private const MAX_SIGNATURE_LENGTH = 128;
 
     public function __construct(
         private readonly LoggerInterface $logger,
+        private readonly string $salt = 'analytics-default-salt',
     ) {
     }
 
@@ -43,13 +45,16 @@ final class TokenService implements TokenServiceInterface
         $normalizedScope = $this->normalizeScope($scope, 'scope');
         $issuedAt = $this->utcNow();
         $expiresAt = $issuedAt->modify(sprintf('+%d seconds', $ttl));
-                $payload = json_encode([
+        $payload = json_encode([
             'scope' => $normalizedScope,
             'iat' => $issuedAt->getTimestamp(),
             'exp' => $expiresAt->getTimestamp(),
         ], JSON_THROW_ON_ERROR);
 
-        $token = base64_encode($payload);
+        $encodedPayload = $this->base64UrlEncode($payload);
+        $signature = $this->sign($encodedPayload);
+        $token = $encodedPayload.'.'.$signature;
+
         $this->logger->info('Analytics token issued.', [
             'ttl' => $ttl,
             'token_length' => strlen($token),
@@ -77,9 +82,32 @@ final class TokenService implements TokenServiceInterface
             return [];
         }
 
-        $raw = base64_decode($trimmedToken, true);
-        if (false === $raw) {
-            $this->logger->warning('Analytics token verification rejected because token is not valid base64.');
+        $parts = explode('.', $trimmedToken, 2);
+        if (2 !== count($parts)) {
+            $this->logger->warning('Analytics token verification rejected because token format is invalid.');
+
+            return [];
+        }
+
+        [$encodedPayload, $signature] = $parts;
+        if ('' === $encodedPayload || '' === $signature || strlen($signature) > self::MAX_SIGNATURE_LENGTH || !ctype_xdigit($signature)) {
+            $this->logger->warning('Analytics token verification rejected because signature segment is invalid.', [
+                'signature_length' => strlen($signature),
+            ]);
+
+            return [];
+        }
+
+        $expectedSignature = $this->sign($encodedPayload);
+        if (!hash_equals($expectedSignature, $signature)) {
+            $this->logger->warning('Analytics token verification rejected because signature verification failed.');
+
+            return [];
+        }
+
+        $raw = $this->base64UrlDecode($encodedPayload);
+        if (null === $raw) {
+            $this->logger->warning('Analytics token verification rejected because payload encoding is invalid.');
 
             return [];
         }
@@ -224,6 +252,32 @@ final class TokenService implements TokenServiceInterface
         ksort($normalized);
 
         return $normalized;
+    }
+
+    private function sign(string $encodedPayload): string
+    {
+        return hash_hmac('sha256', $encodedPayload, $this->salt);
+    }
+
+    private function base64UrlEncode(string $value): string
+    {
+        return rtrim(strtr(base64_encode($value), '+/', '-_'), '=');
+    }
+
+    private function base64UrlDecode(string $value): ?string
+    {
+        if ('' === $value || preg_match('/^[A-Za-z0-9\-_]+$/', $value) !== 1) {
+            return null;
+        }
+
+        $padding = strlen($value) % 4;
+        if (0 !== $padding) {
+            $value .= str_repeat('=', 4 - $padding);
+        }
+
+        $decoded = base64_decode(strtr($value, '-_', '+/'), true);
+
+        return false === $decoded ? null : $decoded;
     }
 
     private function utcNow(): \DateTimeImmutable

@@ -5,6 +5,8 @@ declare(strict_types=1);
 namespace App\Controller\Analytics;
 
 use App\ControllerInterface\Analytics\AggregateControllerInterface;
+use App\Service\Http\AnalyticsErrorResponseFactory;
+use App\Service\Http\AnalyticsSuccessResponseFactory;
 use App\ServiceInterface\Analytics\AggregateServiceInterface;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;
@@ -22,6 +24,8 @@ final class AggregateController implements AggregateControllerInterface
     public function __construct(
         private readonly AggregateServiceInterface $service,
         private readonly LoggerInterface $logger,
+        private readonly AnalyticsSuccessResponseFactory $successResponses,
+        private readonly AnalyticsErrorResponseFactory $errorResponses,
     ) {
     }
 
@@ -80,7 +84,7 @@ final class AggregateController implements AggregateControllerInterface
                 'duration_ms' => $this->durationMs($startedAt),
             ]);
 
-            return new JsonResponse($result);
+            return $this->successResponses->create($operation, $result, $startedAt);
         } catch (BadRequestHttpException|\InvalidArgumentException $exception) {
             $this->logger->warning('Analytics aggregate request rejected.', [
                 'operation' => $operation,
@@ -89,12 +93,13 @@ final class AggregateController implements AggregateControllerInterface
                 'exception' => $exception,
             ]);
 
-            return new JsonResponse([
-                'error' => 'Invalid aggregate request.',
-                'operation' => $operation,
-                'component' => self::COMPONENT,
-                'time' => (new \DateTimeImmutable())->format(DATE_ATOM),
-            ], Response::HTTP_BAD_REQUEST);
+            return $this->errorResponses->create(
+                $operation,
+                'Invalid aggregate request.',
+                'analytics.aggregate.invalid_request',
+                Response::HTTP_BAD_REQUEST,
+                $startedAt,
+            );
         } catch (\RuntimeException $exception) {
             $this->logger->error('Analytics aggregate operation failed.', [
                 'operation' => $operation,
@@ -103,12 +108,14 @@ final class AggregateController implements AggregateControllerInterface
                 'exception' => $exception,
             ]);
 
-            return new JsonResponse([
-                'error' => 'Aggregate data unavailable.',
-                'operation' => $operation,
-                'component' => self::COMPONENT,
-                'time' => (new \DateTimeImmutable())->format(DATE_ATOM),
-            ], Response::HTTP_SERVICE_UNAVAILABLE);
+            return $this->errorResponses->create(
+                $operation,
+                'Aggregate data unavailable.',
+                'analytics.aggregate.unavailable',
+                Response::HTTP_SERVICE_UNAVAILABLE,
+                $startedAt,
+                true,
+            );
         }
     }
 
@@ -144,17 +151,21 @@ final class AggregateController implements AggregateControllerInterface
      */
     private function requireNonEmptyString(array $body, string $field): string
     {
-        $raw = $body[$field] ?? '';
-        $value = is_scalar($raw) ? trim((string) $raw) : '';
-        if ('' === $value) {
-            throw new BadRequestHttpException(sprintf('Field "%s" is required.', $field));
+        $value = $body[$field] ?? null;
+        if (!is_string($value)) {
+            throw new BadRequestHttpException(sprintf('Field "%s" must be a non-empty string.', $field));
         }
 
-        if (strlen($value) > self::MAX_STRING_LENGTH) {
+        $normalized = trim($value);
+        if ('' === $normalized) {
+            throw new BadRequestHttpException(sprintf('Field "%s" must be a non-empty string.', $field));
+        }
+
+        if (strlen($normalized) > self::MAX_STRING_LENGTH) {
             throw new BadRequestHttpException(sprintf('Field "%s" is too long.', $field));
         }
 
-        return $value;
+        return $normalized;
     }
 
     /**
@@ -164,29 +175,34 @@ final class AggregateController implements AggregateControllerInterface
      */
     private function requireStringList(array $body, string $field): array
     {
-        $raw = $body[$field] ?? null;
-        if (!is_array($raw) || [] === $raw) {
-            throw new BadRequestHttpException(sprintf('Field "%s" must be a non-empty array of strings.', $field));
+        $value = $body[$field] ?? null;
+        if (!is_array($value) || [] === $value) {
+            throw new BadRequestHttpException(sprintf('Field "%s" must be a non-empty list of strings.', $field));
         }
 
-        if (count($raw) > self::MAX_LIST_ITEMS) {
+        if (count($value) > self::MAX_LIST_ITEMS) {
             throw new BadRequestHttpException(sprintf('Field "%s" contains too many items.', $field));
         }
 
         $items = [];
-        foreach ($raw as $value) {
-            if (!is_string($value)) {
-                throw new BadRequestHttpException(sprintf('Field "%s" must contain only non-empty strings.', $field));
+        foreach ($value as $index => $item) {
+            if (!is_string($item)) {
+                throw new BadRequestHttpException(sprintf('Field "%s" item %d must be a string.', $field, $index));
             }
 
-            $normalized = trim($value);
-            if ('' === $normalized || strlen($normalized) > self::MAX_STRING_LENGTH) {
-                throw new BadRequestHttpException(sprintf('Field "%s" must contain only non-empty strings.', $field));
+            $normalized = trim($item);
+            if ('' === $normalized) {
+                throw new BadRequestHttpException(sprintf('Field "%s" item %d must not be empty.', $field, $index));
             }
+
+            if (strlen($normalized) > self::MAX_STRING_LENGTH) {
+                throw new BadRequestHttpException(sprintf('Field "%s" item %d is too long.', $field, $index));
+            }
+
             $items[] = $normalized;
         }
 
-        return array_values($items);
+        return $items;
     }
 
     /**
@@ -195,19 +211,11 @@ final class AggregateController implements AggregateControllerInterface
     private function requirePositiveInt(array $body, string $field): int
     {
         $value = $body[$field] ?? null;
-        if (is_int($value)) {
-            $intValue = $value;
-        } elseif (is_string($value) && 1 === preg_match('/^\d+$/', $value)) {
-            $intValue = (int) $value;
-        } else {
-            throw new BadRequestHttpException(sprintf('Field "%s" must be a positive integer.', $field));
+        if (is_int($value) && $value > 0) {
+            return $value;
         }
 
-        if ($intValue <= 0) {
-            throw new BadRequestHttpException(sprintf('Field "%s" must be a positive integer.', $field));
-        }
-
-        return $intValue;
+        throw new BadRequestHttpException(sprintf('Field "%s" must be a positive integer.', $field));
     }
 
     /**
@@ -215,10 +223,9 @@ final class AggregateController implements AggregateControllerInterface
      */
     private function parseDateTime(array $body, string $field): \DateTimeImmutable
     {
-        $raw = $body[$field] ?? '';
-        $value = is_scalar($raw) ? trim((string) $raw) : '';
-        if ('' === $value) {
-            throw new BadRequestHttpException(sprintf('Field "%s" is required.', $field));
+        $value = $body[$field] ?? null;
+        if (!is_string($value) || '' === trim($value)) {
+            throw new BadRequestHttpException(sprintf('Field "%s" must be a valid date/time string.', $field));
         }
 
         if (strlen($value) > self::MAX_STRING_LENGTH) {

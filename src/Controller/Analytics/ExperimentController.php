@@ -11,6 +11,8 @@ namespace App\Controller\Analytics;
 
 use App\ControllerInterface\Analytics\ExperimentControllerInterface;
 use App\DomainInterface\Analytics\ExperimentInterface;
+use App\Service\Http\AnalyticsErrorResponseFactory;
+use App\Service\Http\AnalyticsSuccessResponseFactory;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
@@ -24,6 +26,8 @@ final class ExperimentController implements ExperimentControllerInterface
     public function __construct(
         private readonly ExperimentInterface $domain,
         private readonly LoggerInterface $logger,
+        private readonly AnalyticsSuccessResponseFactory $successResponses,
+        private readonly AnalyticsErrorResponseFactory $errorResponses,
     ) {
     }
 
@@ -41,7 +45,7 @@ final class ExperimentController implements ExperimentControllerInterface
                 'duration_ms' => $this->durationMs($startedAt),
             ]);
 
-            return new JsonResponse($result);
+            return $this->successResponses->create('allocate', $result, $startedAt);
         } catch (\InvalidArgumentException $exception) {
             $this->logger->warning('Experiment allocation request is invalid.', [
                 'component' => self::COMPONENT,
@@ -49,12 +53,13 @@ final class ExperimentController implements ExperimentControllerInterface
                 'exception' => $exception,
             ]);
 
-            return new JsonResponse([
-                'error' => 'Invalid experiment request.',
-                'operation' => 'allocate',
-                'component' => self::COMPONENT,
-                'time' => (new \DateTimeImmutable())->format(DATE_ATOM),
-            ], Response::HTTP_BAD_REQUEST);
+            return $this->errorResponses->create(
+                'allocate',
+                'Invalid experiment request.',
+                'analytics.experiment.invalid_request',
+                Response::HTTP_BAD_REQUEST,
+                $startedAt,
+            );
         } catch (\RuntimeException $exception) {
             $this->logger->error('Experiment allocation failed.', [
                 'component' => self::COMPONENT,
@@ -62,12 +67,14 @@ final class ExperimentController implements ExperimentControllerInterface
                 'exception' => $exception,
             ]);
 
-            return new JsonResponse([
-                'error' => 'Experiment allocation unavailable.',
-                'operation' => 'allocate',
-                'component' => self::COMPONENT,
-                'time' => (new \DateTimeImmutable())->format(DATE_ATOM),
-            ], Response::HTTP_SERVICE_UNAVAILABLE);
+            return $this->errorResponses->create(
+                'allocate',
+                'Experiment allocation unavailable.',
+                'analytics.experiment.unavailable',
+                Response::HTTP_SERVICE_UNAVAILABLE,
+                $startedAt,
+                true,
+            );
         }
     }
 

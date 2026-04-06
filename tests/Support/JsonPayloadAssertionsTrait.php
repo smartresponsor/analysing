@@ -27,6 +27,21 @@ trait JsonPayloadAssertionsTrait
     }
 
     /**
+     * @param array<string,mixed> $payload
+     *
+     * @return array<string,mixed>
+     */
+    private function requireArrayAt(array $payload, string $key): array
+    {
+        $value = $payload[$key] ?? null;
+        if (!is_array($value)) {
+            throw new \RuntimeException(sprintf('Payload key "%s" must be an array.', $key));
+        }
+
+        return $value;
+    }
+
+    /**
      * @return array<string,mixed>
      */
     private function decodeJsonFile(string $path): array

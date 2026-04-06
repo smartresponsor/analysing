@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace App\Tests\Unit\Analytics;
 
+use App\Tests\Support\AnalyticsHttpFactoriesTrait;
 use App\Tests\Support\JsonPayloadAssertionsTrait;
-
 use App\Controller\Analytics\AnalyticsController;
 use App\DomainInterface\Analytics\AnalyticsInterface;
 use PHPUnit\Framework\TestCase;
@@ -14,12 +14,18 @@ use Symfony\Component\HttpFoundation\Request;
 
 final class AnalyticsControllerTest extends TestCase
 {
+    use AnalyticsHttpFactoriesTrait;
     use JsonPayloadAssertionsTrait;
 
     public function testStatusReturnsOkPayload(): void
     {
         $domain = $this->createMock(AnalyticsInterface::class);
-        $controller = new AnalyticsController($domain, $this->createMock(LoggerInterface::class));
+        $controller = new AnalyticsController(
+            $domain,
+            $this->createMock(LoggerInterface::class),
+            $this->createSuccessFactory(),
+            $this->createErrorFactory(),
+        );
 
         $response = $controller->status();
         $payload = $this->decodeJsonResponse($response);
@@ -27,14 +33,21 @@ final class AnalyticsControllerTest extends TestCase
         self::assertSame(200, $response->getStatusCode());
         self::assertTrue($payload['ok']);
         self::assertSame('analytics', $payload['component']);
-        self::assertSame('ok', $payload['status']);
+        $data = $this->requireArrayAt($payload, 'data');
+        self::assertSame('ok', $data['status']);
+        self::assertSame('status', $payload['operation']);
     }
 
     public function testFunnelReturnsBadRequestForInvalidJson(): void
     {
-        $domain = $this->createMock(AnalyticsInterface::class);
-        $controller = new AnalyticsController($domain, $this->createMock(LoggerInterface::class));
         $request = new Request([], [], [], [], [], [], '{bad json');
+        $domain = $this->createMock(AnalyticsInterface::class);
+        $controller = new AnalyticsController(
+            $domain,
+            $this->createMock(LoggerInterface::class),
+            $this->createSuccessFactory($request),
+            $this->createErrorFactory($request),
+        );
 
         $response = $controller->funnel($request);
         $payload = $this->decodeJsonResponse($response);
@@ -46,10 +59,6 @@ final class AnalyticsControllerTest extends TestCase
 
     public function testRetentionReturnsServiceUnavailableForRuntimeFailure(): void
     {
-        $domain = $this->createMock(AnalyticsInterface::class);
-        $domain->method('runRetention')->willThrowException(new \RuntimeException('db down'));
-
-        $controller = new AnalyticsController($domain, $this->createMock(LoggerInterface::class));
         $request = new Request([], [], [], [], [], [], json_encode([
             'tenant_id' => 'tenant',
             'app' => 'shop',
@@ -59,6 +68,15 @@ final class AnalyticsControllerTest extends TestCase
             'cohort' => '2026-01-01 00:00:00',
             'days' => 30,
         ], JSON_THROW_ON_ERROR));
+        $domain = $this->createMock(AnalyticsInterface::class);
+        $domain->method('runRetention')->willThrowException(new \RuntimeException('db down'));
+
+        $controller = new AnalyticsController(
+            $domain,
+            $this->createMock(LoggerInterface::class),
+            $this->createSuccessFactory($request),
+            $this->createErrorFactory($request),
+        );
 
         $response = $controller->retention($request);
         $payload = $this->decodeJsonResponse($response);

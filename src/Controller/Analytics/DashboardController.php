@@ -6,6 +6,8 @@ namespace App\Controller\Analytics;
 
 use App\ControllerInterface\Analytics\DashboardControllerInterface;
 use App\DTO\Analytics\KpiRequest;
+use App\Service\Http\AnalyticsErrorResponseFactory;
+use App\Service\Http\AnalyticsSuccessResponseFactory;
 use App\ServiceInterface\Analytics\DashboardServiceInterface;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;
@@ -21,6 +23,8 @@ final class DashboardController implements DashboardControllerInterface
     public function __construct(
         private readonly DashboardServiceInterface $svc,
         private readonly LoggerInterface $logger,
+        private readonly AnalyticsSuccessResponseFactory $successResponses,
+        private readonly AnalyticsErrorResponseFactory $errorResponses,
     ) {
     }
 
@@ -64,7 +68,7 @@ final class DashboardController implements DashboardControllerInterface
                 'duration_ms' => $this->durationMs($startedAt),
             ]);
 
-            return new JsonResponse($result);
+            return $this->successResponses->create($operation, $result, $startedAt);
         } catch (BadRequestHttpException $exception) {
             return $this->invalidDashboardRequestResponse($operation, $exception, $startedAt);
         } catch (\RuntimeException $exception) {
@@ -97,12 +101,13 @@ final class DashboardController implements DashboardControllerInterface
             'exception' => $exception,
         ]);
 
-        return new JsonResponse([
-            'error' => 'Invalid dashboard request.',
-            'operation' => $operation,
-            'component' => self::COMPONENT,
-            'time' => (new \DateTimeImmutable())->format(DATE_ATOM),
-        ], Response::HTTP_BAD_REQUEST);
+        return $this->errorResponses->create(
+            $operation,
+            'Invalid dashboard request.',
+            'analytics.dashboard.invalid_request',
+            Response::HTTP_BAD_REQUEST,
+            $startedAt,
+        );
     }
 
     private function dashboardUnavailableResponse(string $operation, \RuntimeException $exception, float $startedAt): JsonResponse
@@ -114,12 +119,14 @@ final class DashboardController implements DashboardControllerInterface
             'exception' => $exception,
         ]);
 
-        return new JsonResponse([
-            'error' => 'Dashboard data unavailable.',
-            'operation' => $operation,
-            'component' => self::COMPONENT,
-            'time' => (new \DateTimeImmutable())->format(DATE_ATOM),
-        ], Response::HTTP_SERVICE_UNAVAILABLE);
+        return $this->errorResponses->create(
+            $operation,
+            'Dashboard data unavailable.',
+            'analytics.dashboard.unavailable',
+            Response::HTTP_SERVICE_UNAVAILABLE,
+            $startedAt,
+            true,
+        );
     }
 
     private function parseVendorId(mixed $value): ?int

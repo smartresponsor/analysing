@@ -22,5 +22,7 @@ final class HealthServiceStorageMetadataTest extends TestCase
         self::assertSame('embedded_sample', $status['storage_driver']);
         self::assertSame('sample', $status['storage_mode']);
         self::assertTrue($status['storage_available']);
+        self::assertSame('php bin/console analytics:storage:prepare --seed', $status['storage_prepare_command']);
+        self::assertContains('aggregate_funnel_daily', $status['storage_required_tables']);
     }
 }

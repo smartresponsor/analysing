@@ -1,0 +1,94 @@
+analytics_status:
+  path: /status
+  controller: App\Controller\Analytics\AnalyticsController::status
+  methods: [GET]
+
+analytics_funnel:
+  path: /analytics/funnel
+  controller: App\Controller\Analytics\AnalyticsController::funnel
+  methods: [POST]
+
+analytics_retention:
+  path: /analytics/retention
+  controller: App\Controller\Analytics\AnalyticsController::retention
+  methods: [POST]
+
+analytics_cohort:
+  path: /analytics/cohort
+  controller: App\Controller\Analytics\AnalyticsController::cohort
+  methods: [POST]
+
+analytics_health:
+  path: /analytics/health
+  controller: App\Controller\Analytics\HealthController::ping
+  methods: [GET]
+
+analytics_metrics:
+  path: /analytics/metrics
+  controller: App\Controller\Analytics\ApiController::metrics
+  methods: [GET]
+
+analytics_dashboard_kpi:
+  path: /analytics/dashboard/kpi
+  controller: App\Controller\Analytics\DashboardController::kpi
+  methods: [GET]
+
+analytics_dashboard_timeseries:
+  path: /analytics/dashboard/timeseries
+  controller: App\Controller\Analytics\DashboardController::timeseries
+  methods: [GET]
+
+analytics_dashboard_top_vendors:
+  path: /analytics/dashboard/top-vendors
+  controller: App\Controller\Analytics\DashboardController::topVendors
+  methods: [GET]
+
+analytics_dashboard_page:
+  path: /analytics/dashboard
+  controller: App\Controller\Analytics\DashboardPageController::index
+  methods: [GET]
+
+analytics_aggregate_funnel:
+  path: /analytics/aggregate/funnel
+  controller: App\Controller\Analytics\AggregateController::funnel
+  methods: [POST]
+
+analytics_aggregate_retention:
+  path: /analytics/aggregate/retention
+  controller: App\Controller\Analytics\AggregateController::retention
+  methods: [POST]
+
+analytics_aggregate_path:
+  path: /analytics/aggregate/path
+  controller: App\Controller\Analytics\AggregateController::path
+  methods: [POST]
+
+analytics_ingest_rudder:
+  path: /analytics/ingest/rudder
+  controller: App\Controller\Analytics\IngestController::ingestRudder
+  methods: [POST]
+
+analytics_ingest_segment:
+  path: /analytics/ingest/segment
+  controller: App\Controller\Analytics\IngestController::ingestSegment
+  methods: [POST]
+
+analytics_experiment_allocate:
+  path: /analytics/experiment/allocate
+  controller: App\Controller\Analytics\ExperimentController::allocate
+  methods: [POST]
+
+analytics_flag_evaluate:
+  path: /analytics/flag/evaluate
+  controller: App\Controller\Analytics\FlagController::evaluate
+  methods: [POST]
+
+analytics_insight_anomaly:
+  path: /analytics/insight/anomaly
+  controller: App\Controller\Analytics\InsightController::anomaly
+  methods: [POST]
+
+analytics_insight_metric_tree:
+  path: /analytics/insight/metric-tree
+  controller: App\Controller\Analytics\InsightController::metricTree
+  methods: [POST]

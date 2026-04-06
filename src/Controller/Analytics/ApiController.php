@@ -10,6 +10,8 @@ declare(strict_types=1);
 namespace App\Controller\Analytics;
 
 use App\ControllerInterface\Analytics\ApiControllerInterface;
+use App\Service\Http\AnalyticsErrorResponseFactory;
+use App\Service\Http\AnalyticsSuccessResponseFactory;
 use App\ServiceInterface\Analytics\KpiRegistryInterface;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;
@@ -22,6 +24,8 @@ final class ApiController implements ApiControllerInterface
     public function __construct(
         private readonly KpiRegistryInterface $registry,
         private readonly LoggerInterface $logger,
+        private readonly AnalyticsSuccessResponseFactory $successResponses,
+        private readonly AnalyticsErrorResponseFactory $errorResponses,
     ) {
     }
 
@@ -38,13 +42,14 @@ final class ApiController implements ApiControllerInterface
                     'duration_ms' => $this->durationMs($startedAt),
                 ]);
 
-                return new JsonResponse([
-                    'ok' => false,
-                    'component' => self::COMPONENT,
-                    'operation' => self::OPERATION,
-                    'error' => 'Metrics catalog unavailable.',
-                    'time' => (new \DateTimeImmutable())->format(DATE_ATOM),
-                ], JsonResponse::HTTP_SERVICE_UNAVAILABLE);
+                return $this->errorResponses->create(
+                    self::OPERATION,
+                    'Metrics catalog unavailable.',
+                    'analytics.metrics.unavailable',
+                    JsonResponse::HTTP_SERVICE_UNAVAILABLE,
+                    $startedAt,
+                    true,
+                );
             }
 
             $metrics = [];
@@ -62,10 +67,6 @@ final class ApiController implements ApiControllerInterface
             }
 
             $response = [
-                'ok' => true,
-                'component' => self::COMPONENT,
-                'operation' => self::OPERATION,
-                'time' => (new \DateTimeImmutable())->format(DATE_ATOM),
                 'metric_count' => count($metrics),
                 'catalog_checksum' => $catalogChecksum,
                 'metrics' => $metrics,
@@ -79,7 +80,7 @@ final class ApiController implements ApiControllerInterface
                 'duration_ms' => $this->durationMs($startedAt),
             ]);
 
-            return new JsonResponse($response);
+            return $this->successResponses->create(self::OPERATION, $response, $startedAt);
         } catch (\InvalidArgumentException|\RuntimeException $exception) {
             $this->logger->error('Analytics API metrics endpoint failed.', [
                 'component' => self::COMPONENT,
@@ -88,13 +89,14 @@ final class ApiController implements ApiControllerInterface
                 'exception' => $exception,
             ]);
 
-            return new JsonResponse([
-                'ok' => false,
-                'component' => self::COMPONENT,
-                'operation' => self::OPERATION,
-                'error' => 'Metrics catalog unavailable.',
-                'time' => (new \DateTimeImmutable())->format(DATE_ATOM),
-            ], JsonResponse::HTTP_SERVICE_UNAVAILABLE);
+            return $this->errorResponses->create(
+                self::OPERATION,
+                'Metrics catalog unavailable.',
+                'analytics.metrics.unavailable',
+                JsonResponse::HTTP_SERVICE_UNAVAILABLE,
+                $startedAt,
+                true,
+            );
         }
     }
 

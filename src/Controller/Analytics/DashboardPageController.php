@@ -6,8 +6,12 @@ namespace App\Controller\Analytics;
 
 use App\ControllerInterface\Analytics\DashboardPageControllerInterface;
 use App\DTO\Analytics\KpiRequest;
+use App\Service\Analytics\DashboardHtmlRenderer;
+use App\Service\Http\AnalyticsErrorResponseFactory;
+use App\Service\Http\AnalyticsSuccessResponseFactory;
 use App\ServiceInterface\Analytics\DashboardServiceInterface;
 use Psr\Log\LoggerInterface;
+use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Exception\BadRequestHttpException;
@@ -15,17 +19,22 @@ use Symfony\Component\HttpKernel\Exception\BadRequestHttpException;
 final class DashboardPageController implements DashboardPageControllerInterface
 {
     private const COMPONENT = 'analytics';
+    private const OPERATION = 'dashboard_page';
     private const MAX_QUERY_VALUE_LENGTH = 255;
 
     public function __construct(
         private readonly DashboardServiceInterface $svc,
         private readonly LoggerInterface $logger,
+        private readonly DashboardHtmlRenderer $htmlRenderer,
+        private readonly AnalyticsSuccessResponseFactory $successResponses,
+        private readonly AnalyticsErrorResponseFactory $errorResponses,
     ) {
     }
 
     public function index(Request $req): Response
     {
         $startedAt = microtime(true);
+        $jsonResponseRequested = $this->wantsJson($req);
 
         try {
             $dto = $this->buildRequest($req);
@@ -42,36 +51,30 @@ final class DashboardPageController implements DashboardPageControllerInterface
                 ],
             ];
         } catch (BadRequestHttpException $exception) {
-            return $this->invalidDashboardRequestResponse($exception, $startedAt);
+            return $this->invalidDashboardRequestResponse($exception, $startedAt, $jsonResponseRequested);
         } catch (\RuntimeException $exception) {
-            return $this->dashboardUnavailableResponse($exception, $startedAt);
-        }
-
-        try {
-            $json = json_encode($payload, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_THROW_ON_ERROR);
-        } catch (\JsonException $exception) {
-            $this->logger->error('Unable to encode dashboard payload.', [
-                'component' => self::COMPONENT,
-                'duration_ms' => $this->durationMs($startedAt),
-                'exception' => $exception,
-            ]);
-
-            return new Response(
-                '{"error":"Dashboard payload unavailable.","component":"analytics","time":"'.(new \DateTimeImmutable())->format(DATE_ATOM).'"}',
-                Response::HTTP_INTERNAL_SERVER_ERROR,
-                ['Content-Type' => 'application/json']
-            );
+            return $this->dashboardUnavailableResponse($exception, $startedAt, $jsonResponseRequested);
         }
 
         $this->logger->info('Dashboard page controller completed.', [
             'component' => self::COMPONENT,
+            'operation' => self::OPERATION,
             'duration_ms' => $this->durationMs($startedAt),
             'kpi_items' => count($payload['kpi']),
             'series_rows' => count($payload['series']),
             'top_rows' => count($payload['top']),
+            'format' => $jsonResponseRequested ? 'json' : 'html',
         ]);
 
-        return new Response($json, Response::HTTP_OK, ['Content-Type' => 'application/json']);
+        if ($jsonResponseRequested) {
+            return $this->successResponses->create(self::OPERATION, $payload, $startedAt);
+        }
+
+        return new Response(
+            $this->htmlRenderer->renderDashboard($payload['kpi'], $payload['series'], $payload['top'], $payload['params']),
+            Response::HTTP_OK,
+            ['Content-Type' => 'text/html; charset=UTF-8']
+        );
     }
 
     private function buildRequest(Request $req): KpiRequest
@@ -90,33 +93,69 @@ final class DashboardPageController implements DashboardPageControllerInterface
         );
     }
 
-    private function invalidDashboardRequestResponse(BadRequestHttpException $exception, float $startedAt): Response
+    private function wantsJson(Request $request): bool
+    {
+        $format = strtolower(trim((string) $request->query->get('format', '')));
+        if ('json' === $format) {
+            return true;
+        }
+
+        $accept = strtolower(trim((string) $request->headers->get('Accept', '')));
+        return '' !== $accept && str_contains($accept, 'application/json');
+    }
+
+    private function invalidDashboardRequestResponse(BadRequestHttpException $exception, float $startedAt, bool $jsonResponseRequested): Response
     {
         $this->logger->warning('Dashboard page controller rejected request.', [
             'component' => self::COMPONENT,
+            'operation' => self::OPERATION,
             'duration_ms' => $this->durationMs($startedAt),
             'exception' => $exception,
+            'format' => $jsonResponseRequested ? 'json' : 'html',
         ]);
 
+        if ($jsonResponseRequested) {
+            return $this->errorResponses->create(
+                self::OPERATION,
+                'Invalid dashboard request.',
+                'analytics.dashboard.invalid_request',
+                JsonResponse::HTTP_BAD_REQUEST,
+                $startedAt,
+            );
+        }
+
         return new Response(
-            '{"error":"Invalid dashboard request.","component":"analytics","time":"'.(new \DateTimeImmutable())->format(DATE_ATOM).'"}',
+            $this->htmlRenderer->renderError('Invalid dashboard request', 'The dashboard query parameters are invalid for the current request.', Response::HTTP_BAD_REQUEST),
             Response::HTTP_BAD_REQUEST,
-            ['Content-Type' => 'application/json']
+            ['Content-Type' => 'text/html; charset=UTF-8']
         );
     }
 
-    private function dashboardUnavailableResponse(\RuntimeException $exception, float $startedAt): Response
+    private function dashboardUnavailableResponse(\RuntimeException $exception, float $startedAt, bool $jsonResponseRequested): Response
     {
         $this->logger->error('Dashboard page controller operation failed.', [
             'component' => self::COMPONENT,
+            'operation' => self::OPERATION,
             'duration_ms' => $this->durationMs($startedAt),
             'exception' => $exception,
+            'format' => $jsonResponseRequested ? 'json' : 'html',
         ]);
 
+        if ($jsonResponseRequested) {
+            return $this->errorResponses->create(
+                self::OPERATION,
+                'Dashboard data unavailable.',
+                'analytics.dashboard.unavailable',
+                JsonResponse::HTTP_SERVICE_UNAVAILABLE,
+                $startedAt,
+                true,
+            );
+        }
+
         return new Response(
-            '{"error":"Dashboard data unavailable.","component":"analytics","time":"'.(new \DateTimeImmutable())->format(DATE_ATOM).'"}',
+            $this->htmlRenderer->renderError('Dashboard unavailable', 'The analytics dashboard data is currently unavailable.', Response::HTTP_SERVICE_UNAVAILABLE),
             Response::HTTP_SERVICE_UNAVAILABLE,
-            ['Content-Type' => 'application/json']
+            ['Content-Type' => 'text/html; charset=UTF-8']
         );
     }
 
