@@ -16,10 +16,10 @@ use Symfony\Component\HttpKernel\Exception\BadRequestHttpException;
 
 final class AggregateController implements AggregateControllerInterface
 {
-    private const COMPONENT = 'analytics';
-    private const MAX_JSON_BYTES = 1048576;
-    private const MAX_LIST_ITEMS = 64;
-    private const MAX_STRING_LENGTH = 255;
+    private const string COMPONENT = 'analytics';
+    private const int MAX_JSON_BYTES = 1048576;
+    private const int MAX_LIST_ITEMS = 64;
+    private const int MAX_STRING_LENGTH = 255;
 
     public function __construct(
         private readonly AggregateServiceInterface $service,

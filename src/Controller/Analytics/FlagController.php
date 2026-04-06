@@ -15,8 +15,8 @@ use Symfony\Component\HttpFoundation\Response;
 
 final class FlagController implements FlagControllerInterface
 {
-    private const COMPONENT = 'analytics';
-    private const MAX_JSON_BYTES = 1048576;
+    private const string COMPONENT = 'analytics';
+    private const int MAX_JSON_BYTES = 1048576;
 
     public function __construct(
         private readonly FlagInterface $domain,

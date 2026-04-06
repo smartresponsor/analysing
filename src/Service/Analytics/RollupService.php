@@ -9,8 +9,8 @@ use Psr\Log\LoggerInterface;
 
 final class RollupService implements RollupServiceInterface
 {
-    private const MAX_FIELD_LENGTH = 128;
-    private const MAX_ROWS = 10000;
+    private const int MAX_FIELD_LENGTH = 128;
+    private const int MAX_ROWS = 10000;
 
     public function __construct(private readonly LoggerInterface $logger)
     {

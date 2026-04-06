@@ -9,9 +9,9 @@ use Symfony\Component\HttpFoundation\Request;
 
 final class TenantContextResolver implements TenantContextResolverInterface
 {
-    private const ATTRIBUTE = '_analytics_tenant';
-    private const TOKEN_TENANT_ATTRIBUTE = '_analytics_token_tenant';
-    private const HEADER = 'X-SR-TENANT';
+    private const string ATTRIBUTE = '_analytics_tenant';
+    private const string TOKEN_TENANT_ATTRIBUTE = '_analytics_token_tenant';
+    private const string HEADER = 'X-SR-TENANT';
 
     public function resolve(Request $request): string
     {

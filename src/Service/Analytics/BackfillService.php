@@ -9,7 +9,7 @@ use Psr\Log\LoggerInterface;
 
 final class BackfillService implements BackfillServiceInterface
 {
-    private const MAX_RANGE_SECONDS = 31536000;
+    private const int MAX_RANGE_SECONDS = 31536000;
 
     public function __construct(private readonly LoggerInterface $logger)
     {

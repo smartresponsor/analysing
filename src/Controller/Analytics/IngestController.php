@@ -20,10 +20,10 @@ use Symfony\Component\HttpFoundation\Response;
 
 final class IngestController implements IngestControllerInterface
 {
-    private const COMPONENT = 'analytics';
-    private const MAX_JSON_BYTES = 1048576;
-    private const MAX_BATCH_SIZE = 1000;
-    private const MAX_STRING_LENGTH = 255;
+    private const string COMPONENT = 'analytics';
+    private const int MAX_JSON_BYTES = 1048576;
+    private const int MAX_BATCH_SIZE = 1000;
+    private const int MAX_STRING_LENGTH = 255;
 
     public function __construct(
         private readonly ClickhouseClientInterface $client,

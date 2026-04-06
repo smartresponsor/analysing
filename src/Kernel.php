@@ -10,6 +10,7 @@ use Symfony\Component\Routing\Loader\Configurator\RoutingConfigurator;
 use Symfony\Component\HttpKernel\Bundle\BundleInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Kernel as BaseKernel;
+use Symfony\Component\Yaml\Yaml;
 
 final class Kernel extends BaseKernel
 {
@@ -43,7 +44,7 @@ final class Kernel extends BaseKernel
         $loader->load($configDir.'/packages/*.php', 'glob');
         $loader->load($configDir.'/services.php');
 
-        if (class_exists(\Symfony\Component\Yaml\Yaml::class)) {
+        if (class_exists(Yaml::class)) {
             $loader->load($configDir.'/packages/*.yaml', 'glob');
             $loader->load($configDir.'/services.yaml');
         }
@@ -55,7 +56,7 @@ final class Kernel extends BaseKernel
 
         $routes->import($configDir.'/routes.php');
 
-        if (class_exists(\Symfony\Component\Yaml\Yaml::class)) {
+        if (class_exists(Yaml::class)) {
             $routes->import($configDir.'/routes.yaml');
         }
     }

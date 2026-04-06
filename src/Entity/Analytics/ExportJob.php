@@ -11,10 +11,12 @@ use Doctrine\ORM\Mapping as ORM;
 #[ORM\Index(name: 'idx_export_job_status', columns: ['status'])]
 final class ExportJob
 {
-    public const STATUS_PENDING = 'pending';
-    public const STATUS_RUNNING = 'running';
-    public const STATUS_DONE = 'done';
-    public const STATUS_FAILED = 'failed';
+    public const string STATUS_PENDING = 'pending';
+    public const string STATUS_RUNNING = 'running';
+    public const string STATUS_DONE = 'done';
+    public const string STATUS_FAILED = 'failed';
+    public const int MAX_ATTEMPTS = 3;
+    public const int MAX_ATTEMPT_OVERFLOW = 32767;
 
     #[ORM\Id]
     #[ORM\GeneratedValue]
@@ -101,6 +103,20 @@ final class ExportJob
         return $this->attempts;
     }
 
+    /**
+     * @param array<string, mixed> $payload
+     */
+    public function mergePayload(array $payload): void
+    {
+        $currentPayload = $this->payload ?? [];
+        $this->payload = array_replace($currentPayload, $this->normalizePayload($payload));
+    }
+
+    public function canRetry(): bool
+    {
+        return $this->attempts < self::MAX_ATTEMPTS && self::STATUS_FAILED === $this->status;
+    }
+
     public function start(): void
     {
         $this->status = self::STATUS_RUNNING;
@@ -129,7 +145,7 @@ final class ExportJob
 
     public function incAttempts(): void
     {
-        if ($this->attempts >= 32767) {
+        if ($this->attempts >= self::MAX_ATTEMPT_OVERFLOW) {
             throw new \InvalidArgumentException('Export job attempts overflow.');
         }
 

@@ -9,9 +9,9 @@ use Psr\Log\LoggerInterface;
 
 final class CsvImporter implements CsvImporterInterface
 {
-    private const MAX_ROWS = 10000;
-    private const MAX_COLUMNS = 256;
-    private const MAX_FIELD_LENGTH = 4096;
+    private const int MAX_ROWS = 10000;
+    private const int MAX_COLUMNS = 256;
+    private const int MAX_FIELD_LENGTH = 4096;
 
     public function __construct(private readonly LoggerInterface $logger)
     {

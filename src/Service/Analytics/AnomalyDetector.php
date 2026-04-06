@@ -9,7 +9,7 @@ use Psr\Log\LoggerInterface;
 
 final class AnomalyDetector implements AnomalyDetectorInterface
 {
-    private const MAX_VALUES = 10000;
+    private const int MAX_VALUES = 10000;
 
     public function __construct(
         private readonly LoggerInterface $logger,

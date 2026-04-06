@@ -9,8 +9,8 @@ use Psr\Log\LoggerInterface;
 
 final class WebhookNotifier implements WebhookNotifierInterface
 {
-    private const MAX_ENDPOINT_LENGTH = 1024;
-    private const MAX_PAYLOAD_BYTES = 1048576;
+    private const int MAX_ENDPOINT_LENGTH = 1024;
+    private const int MAX_PAYLOAD_BYTES = 1048576;
 
     public function __construct(private readonly LoggerInterface $logger)
     {

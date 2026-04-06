@@ -9,11 +9,11 @@ use Psr\Log\LoggerInterface;
 
 final class MetricIngestService implements MetricIngestServiceInterface
 {
-    private const MAX_BUFFER_SIZE = 1000;
-    private const MAX_FIELDS = 128;
-    private const MAX_NESTED_ITEMS = 128;
-    private const MAX_KEY_LENGTH = 128;
-    private const MAX_STRING_LENGTH = 2048;
+    private const int MAX_BUFFER_SIZE = 1000;
+    private const int MAX_FIELDS = 128;
+    private const int MAX_NESTED_ITEMS = 128;
+    private const int MAX_KEY_LENGTH = 128;
+    private const int MAX_STRING_LENGTH = 2048;
 
     /** @var list<array<string,mixed>> */
     private array $buffer = [];

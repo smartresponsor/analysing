@@ -11,11 +11,11 @@ use Psr\Log\LoggerInterface;
 
 final class AnalyticsCollector implements AnalyticsCollectorInterface
 {
-    private const MAX_DIMENSIONS = 64;
-    private const MAX_DIMENSION_KEY_LENGTH = 128;
-    private const MAX_DIMENSION_VALUE_LENGTH = 512;
-    private const MAX_METRIC_LENGTH = 128;
-    private const MAX_RANGE_SECONDS = 31536000;
+    private const int MAX_DIMENSIONS = 64;
+    private const int MAX_DIMENSION_KEY_LENGTH = 128;
+    private const int MAX_DIMENSION_VALUE_LENGTH = 512;
+    private const int MAX_METRIC_LENGTH = 128;
+    private const int MAX_RANGE_SECONDS = 31536000;
 
     public function __construct(
         private readonly EntityManagerInterface $em,

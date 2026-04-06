@@ -10,9 +10,9 @@ use Symfony\Component\HttpFoundation\RequestStack;
 
 final class RequestCorrelationIdProvider implements RequestCorrelationIdProviderInterface
 {
-    private const ATTRIBUTE = '_analytics_correlation_id';
-    private const HEADER = 'X-Correlation-ID';
-    private const MAX_LENGTH = 128;
+    private const string ATTRIBUTE = '_analytics_correlation_id';
+    private const string HEADER = 'X-Correlation-ID';
+    private const int MAX_LENGTH = 128;
 
     private ?string $fallbackCorrelationId = null;
 

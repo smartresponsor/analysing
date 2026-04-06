@@ -10,11 +10,11 @@ use Psr\Log\LoggerInterface;
 
 final class KpiRegistry implements KpiRegistryInterface
 {
-    private const MAX_KPI_ENTRIES = 256;
-    private const MAX_ID_LENGTH = 128;
-    private const MAX_LABEL_LENGTH = 255;
-    private const MAX_LOOKUP_LOG_SAMPLES = 16;
-    private const KPI_ID_PATTERN = '/^[a-z0-9_]+$/';
+    private const int MAX_KPI_ENTRIES = 256;
+    private const int MAX_ID_LENGTH = 128;
+    private const int MAX_LABEL_LENGTH = 255;
+    private const int MAX_LOOKUP_LOG_SAMPLES = 16;
+    private const string KPI_ID_PATTERN = '/^[a-z0-9_]+$/';
 
     /** @var array<string, string> */
     private array $map;

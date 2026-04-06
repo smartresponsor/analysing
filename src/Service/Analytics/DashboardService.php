@@ -11,8 +11,8 @@ use Psr\Log\LoggerInterface;
 
 final class DashboardService implements DashboardServiceInterface
 {
-    private const MAX_TIMESERIES_ROWS = 366;
-    private const MAX_VENDOR_ROWS = 1000;
+    private const int MAX_TIMESERIES_ROWS = 366;
+    private const int MAX_VENDOR_ROWS = 1000;
 
     public function __construct(
         private readonly Connection $db,

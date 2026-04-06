@@ -17,7 +17,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 #[AsCommand(name: 'analytics:export:csv', description: 'Export KPI aggregates to CSV')]
 final class AnalyticsExportCommand extends BaseCommand
 {
-    private const MAX_TARGET_PATH_LENGTH = 4096;
+    private const int MAX_TARGET_PATH_LENGTH = 4096;
 
     public function __construct(
         private readonly DashboardServiceInterface $dashboard,

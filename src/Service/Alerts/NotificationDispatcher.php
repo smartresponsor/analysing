@@ -10,10 +10,10 @@ use Psr\Log\LoggerInterface;
 
 final class NotificationDispatcher implements NotificationDispatcherInterface
 {
-    private const MAX_MESSAGE_LENGTH = 2000;
-    private const MAX_CHANNELS = 32;
-    private const MAX_TARGET_LENGTH = 512;
-    private const ALLOWED_CHANNEL_TYPES = ['email', 'webhook', 'slack', 'log'];
+    private const int MAX_MESSAGE_LENGTH = 2000;
+    private const int MAX_CHANNELS = 32;
+    private const int MAX_TARGET_LENGTH = 512;
+    private const array ALLOWED_CHANNEL_TYPES = ['email', 'webhook', 'slack', 'log'];
 
     public function __construct(private readonly LoggerInterface $logger)
     {
@@ -64,7 +64,7 @@ final class NotificationDispatcher implements NotificationDispatcherInterface
     }
 
     /**
-     * @return list<array{type:string,target:?string}>
+     * @return list<array{type:string,'target':?string}>
      */
     private function normalizeChannels(AlertRule $rule): array
     {

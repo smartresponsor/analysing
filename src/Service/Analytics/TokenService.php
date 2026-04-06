@@ -9,13 +9,13 @@ use Psr\Log\LoggerInterface;
 
 final class TokenService implements TokenServiceInterface
 {
-    private const MAX_TTL = 604800;
-    private const MAX_SCOPE_ENTRIES = 128;
-    private const MAX_SCOPE_DEPTH = 5;
-    private const MAX_KEY_LENGTH = 128;
-    private const MAX_SCOPE_STRING_LENGTH = 2048;
-    private const MAX_TOKEN_LENGTH = 32768;
-    private const MAX_SIGNATURE_LENGTH = 128;
+    private const int MAX_TTL = 604800;
+    private const int MAX_SCOPE_ENTRIES = 128;
+    private const int MAX_SCOPE_DEPTH = 5;
+    private const int MAX_KEY_LENGTH = 128;
+    private const int MAX_SCOPE_STRING_LENGTH = 2048;
+    private const int MAX_TOKEN_LENGTH = 32768;
+    private const int MAX_SIGNATURE_LENGTH = 128;
 
     public function __construct(
         private readonly LoggerInterface $logger,
