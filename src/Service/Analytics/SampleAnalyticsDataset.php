@@ -5,8 +5,9 @@ declare(strict_types=1);
 namespace App\Service\Analytics;
 
 use App\DTO\Analytics\KpiRequest;
+use App\ServiceInterface\Analytics\SampleAnalyticsDatasetInterface;
 
-final class SampleAnalyticsDataset
+final class SampleAnalyticsDataset implements SampleAnalyticsDatasetInterface
 {
     /**
      * @return array{gross_minor:int,net_minor:int,margin_pct:float,days:int}

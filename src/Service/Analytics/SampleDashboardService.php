@@ -5,13 +5,14 @@ declare(strict_types=1);
 namespace App\Service\Analytics;
 
 use App\DTO\Analytics\KpiRequest;
-use App\ServiceInterface\Analytics\DashboardServiceInterface;
+use App\ServiceInterface\Analytics\SampleAnalyticsDatasetInterface;
+use App\ServiceInterface\Analytics\SampleDashboardServiceInterface;
 use Psr\Log\LoggerInterface;
 
-final class SampleDashboardService implements DashboardServiceInterface
+final class SampleDashboardService implements SampleDashboardServiceInterface
 {
     public function __construct(
-        private readonly SampleAnalyticsDataset $dataset,
+        private readonly SampleAnalyticsDatasetInterface $dataset,
         private readonly LoggerInterface $logger,
     ) {
     }

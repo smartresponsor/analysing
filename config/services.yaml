@@ -1,0 +1,107 @@
+parameters:
+  analytics.clickhouse.base: 'http://127.0.0.1:8123'
+  analytics.clickhouse.user: 'default'
+  analytics.clickhouse.pass: ''
+  analytics.runtime.salt: 'analytics-default-salt'
+
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+    bind:
+      string $base: '%analytics.clickhouse.base%'
+      string $user: '%analytics.clickhouse.user%'
+      string $pass: '%analytics.clickhouse.pass%'
+      string $salt: '%analytics.runtime.salt%'
+
+  App\Controller\:
+    resource: '../src/Controller/'
+    tags: ['controller.service_arguments']
+    public: true
+
+  App\:
+    resource: '../src/*'
+    exclude: '../src/{DependencyInjection,Entity,Migrations,Tests,Kernel.php}'
+
+  App\ControllerInterface\Analytics\AggregateControllerInterface: '@App\Controller\Analytics\AggregateController'
+  App\ControllerInterface\Analytics\AnalyticsControllerInterface: '@App\Controller\Analytics\AnalyticsController'
+  App\ControllerInterface\Analytics\ApiControllerInterface: '@App\Controller\Analytics\ApiController'
+  App\ControllerInterface\Analytics\DashboardControllerInterface: '@App\Controller\Analytics\DashboardController'
+  App\ControllerInterface\Analytics\DashboardPageControllerInterface: '@App\Controller\Analytics\DashboardPageController'
+  App\ControllerInterface\Analytics\ExperimentControllerInterface: '@App\Controller\Analytics\ExperimentController'
+  App\ControllerInterface\Analytics\FlagControllerInterface: '@App\Controller\Analytics\FlagController'
+  App\ControllerInterface\Analytics\HealthControllerInterface: '@App\Controller\Analytics\HealthController'
+  App\ControllerInterface\Analytics\IngestControllerInterface: '@App\Controller\Analytics\IngestController'
+  App\ControllerInterface\Analytics\InsightControllerInterface: '@App\Controller\Analytics\InsightController'
+
+  App\DomainInterface\Analytics\AnalyticsInterface: '@App\Domain\Analytics\Analytics'
+  App\DomainInterface\Analytics\ExperimentInterface: '@App\Domain\Analytics\Experiment'
+  App\DomainInterface\Analytics\FlagInterface: '@App\Domain\Analytics\Flag'
+  App\DomainInterface\Analytics\InsightInterface: '@App\Domain\Analytics\Insight'
+  App\DomainInterface\Analytics\ClickhouseClientInterface: '@App\Domain\Analytics\ClickhouseClient'
+
+
+  App\RepositoryInterface\Analytics\InfraRepositoryInterface: '@App\Repository\Analytics\InfraRepository'
+
+  App\ServiceInterface\Alerts\AlertEvaluatorInterface: '@App\Service\Alerts\AlertEvaluator'
+  App\ServiceInterface\Alerts\NotificationDispatcherInterface: '@App\Service\Alerts\NotificationDispatcher'
+  App\ServiceInterface\Analytics\AnalyticsCollectorInterface: '@App\Service\Analytics\AnalyticsCollector'
+  App\ServiceInterface\Analytics\ExperimentServiceInterface: '@App\Service\Analytics\ExperimentService'
+  App\ServiceInterface\Analytics\MetricIngestServiceInterface: '@App\Service\Analytics\MetricIngestService'
+  App\ServiceInterface\Analytics\RollupServiceInterface: '@App\Service\Analytics\RollupService'
+  App\ServiceInterface\Analytics\SegmentationServiceInterface: '@App\Service\Analytics\SegmentationService'
+  App\ServiceInterface\Analytics\CsvImporterInterface: '@App\Service\Analytics\CsvImporter'
+  App\ServiceInterface\Analytics\FileNotifierInterface: '@App\Service\Analytics\FileNotifier'
+  App\ServiceInterface\Analytics\GzipWriterInterface: '@App\Service\Analytics\GzipWriter'
+  App\ServiceInterface\Analytics\LocalCacheInterface: '@App\Service\Analytics\LocalCache'
+  App\ServiceInterface\Analytics\WebhookNotifierInterface: '@App\Service\Analytics\WebhookNotifier'
+  App\ServiceInterface\Analytics\AsyncQueryServiceInterface: '@App\Service\Analytics\AsyncQueryService'
+  App\ServiceInterface\Analytics\BackfillServiceInterface: '@App\Service\Analytics\BackfillService'
+  App\ServiceInterface\Analytics\ReportExporterServiceInterface: '@App\Service\Analytics\ReportExporterService'
+  App\ServiceInterface\Analytics\ReportGeneratorServiceInterface: '@App\Service\Analytics\ReportGeneratorService'
+  App\ServiceInterface\Analytics\RetentionServiceInterface: '@App\Service\Analytics\RetentionService'
+  App\ServiceInterface\Analytics\TokenServiceInterface: '@App\Service\Analytics\TokenService'
+
+
+  App\ServiceInterface\Analytics\AccessGuardInterface: '@App\Service\Analytics\AccessGuard'
+  App\ServiceInterface\Analytics\AggregateServiceInterface: '@App\Service\Analytics\AggregateService'
+  App\ServiceInterface\Analytics\AnomalyDetectorInterface: '@App\Service\Analytics\AnomalyDetector'
+  App\ServiceInterface\Analytics\CacheInterface: '@App\Service\Analytics\LocalCache'
+  App\ServiceInterface\Analytics\CsvImportInterface: '@App\Service\Analytics\CsvImporter'
+  App\ServiceInterface\Analytics\DashboardServiceInterface: '@App\Service\Analytics\DashboardService'
+  App\ServiceInterface\Analytics\HealthServiceInterface: '@App\Service\Analytics\HealthService'
+  App\ServiceInterface\Analytics\KpiRegistryInterface: '@App\Service\Analytics\KpiRegistry'
+  App\ServiceInterface\Analytics\MetricIngestInterface: '@App\Service\Analytics\MetricIngestService'
+  App\ServiceInterface\Analytics\NotifierInterface: '@App\Service\Analytics\WebhookNotifier'
+  App\ServiceInterface\Analytics\ReportBundleInterface: '@App\Service\Analytics\ReportBundle'
+  App\ServiceInterface\Analytics\RetentionInterface: '@App\Service\Analytics\RetentionService'
+  App\ServiceInterface\Analytics\RollupInterface: '@App\Service\Analytics\RollupService'
+  App\ServiceInterface\Analytics\SegmentationInterface: '@App\Service\Analytics\SegmentationService'
+  App\ServiceInterface\Analytics\SloCalculatorInterface: '@App\Service\Analytics\SloCalculator'
+  App\ServiceInterface\Analytics\TenantScopeInterface: '@App\Service\Analytics\TenantScope'
+  App\ServiceInterface\Analytics\TransformerInterface: '@App\Service\Analytics\Transformer'
+  App\ServiceInterface\Analytics\WindowQueryInterface: '@App\Service\Analytics\WindowQuery'
+
+  App\RepositoryInterface\Analytics\SampleInfraRepositoryInterface: '@App\Repository\Analytics\SampleInfraRepository'
+  App\ServiceInterface\Analytics\DashboardHtmlRendererInterface: '@App\Service\Analytics\DashboardHtmlRenderer'
+  App\ServiceInterface\Analytics\SampleAnalyticsDatasetInterface: '@App\Service\Analytics\SampleAnalyticsDataset'
+  App\ServiceInterface\Analytics\SampleDashboardServiceInterface: '@App\Service\Analytics\SampleDashboardService'
+  App\ServiceInterface\Http\AnalyticsErrorResponseFactoryInterface: '@App\Service\Http\AnalyticsErrorResponseFactory'
+  App\ServiceInterface\Http\AnalyticsIdempotencyRequestSubscriberInterface: '@App\Service\Http\AnalyticsIdempotencyRequestSubscriber'
+  App\ServiceInterface\Http\AnalyticsIdempotencyResponseSubscriberInterface: '@App\Service\Http\AnalyticsIdempotencyResponseSubscriber'
+  App\ServiceInterface\Http\AnalyticsIdempotencyStoreInterface: '@App\Service\Http\AnalyticsIdempotencyStore'
+  App\ServiceInterface\Http\AnalyticsRateLimitResponseSubscriberInterface: '@App\Service\Http\AnalyticsRateLimitResponseSubscriber'
+  App\ServiceInterface\Http\AnalyticsRequestAuthSubscriberInterface: '@App\Service\Http\AnalyticsRequestAuthSubscriber'
+  App\ServiceInterface\Http\AnalyticsRouteRateLimiterInterface: '@App\Service\Http\AnalyticsRouteRateLimiter'
+  App\ServiceInterface\Http\AnalyticsSuccessResponseFactoryInterface: '@App\Service\Http\AnalyticsSuccessResponseFactory'
+  App\ServiceInterface\Http\AnalyticsWriteRateLimitSubscriberInterface: '@App\Service\Http\AnalyticsWriteRateLimitSubscriber'
+  App\ServiceInterface\Http\RequestCorrelationIdProviderInterface: '@App\Service\Http\RequestCorrelationIdProvider'
+  App\ServiceInterface\Http\RequestCorrelationIdSubscriberInterface: '@App\Service\Http\RequestCorrelationIdSubscriber'
+  App\ServiceInterface\Http\TenantContextInterface: '@App\Service\Http\TenantContext'
+  App\ServiceInterface\Http\TenantContextResolverInterface: '@App\Service\Http\TenantContextResolver'
+  App\ServiceInterface\Http\TenantContextResponseSubscriberInterface: '@App\Service\Http\TenantContextResponseSubscriber'
+  App\ServiceInterface\Http\TenantContextSubscriberInterface: '@App\Service\Http\TenantContextSubscriber'
+
+  Psr\Log\NullLogger: ~
+  Psr\Log\LoggerInterface: '@Psr\Log\NullLogger'

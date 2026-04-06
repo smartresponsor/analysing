@@ -5,13 +5,14 @@ declare(strict_types=1);
 namespace App\Repository\Analytics;
 
 use App\RepositoryInterface\Analytics\InfraRepositoryInterface;
-use App\Service\Analytics\SampleAnalyticsDataset;
+use App\RepositoryInterface\Analytics\SampleInfraRepositoryInterface;
+use App\ServiceInterface\Analytics\SampleAnalyticsDatasetInterface;
 use Psr\Log\LoggerInterface;
 
-final class SampleInfraRepository implements InfraRepositoryInterface
+final class SampleInfraRepository implements SampleInfraRepositoryInterface
 {
     public function __construct(
-        private readonly SampleAnalyticsDataset $dataset,
+        private readonly SampleAnalyticsDatasetInterface $dataset,
         private readonly LoggerInterface $logger,
     ) {
     }
