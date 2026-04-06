@@ -17,8 +17,8 @@ use Symfony\Component\HttpKernel\Exception\BadRequestHttpException;
 
 final class DashboardController implements DashboardControllerInterface
 {
-    private const COMPONENT = 'analytics';
-    private const MAX_QUERY_VALUE_LENGTH = 255;
+    private const string COMPONENT = 'analytics';
+    private const int MAX_QUERY_VALUE_LENGTH = 255;
 
     public function __construct(
         private readonly DashboardServiceInterface $svc,

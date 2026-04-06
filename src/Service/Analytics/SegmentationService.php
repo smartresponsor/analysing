@@ -11,8 +11,8 @@ use Psr\Log\LoggerInterface;
 
 final class SegmentationService implements SegmentationServiceInterface
 {
-    private const MAX_IDENTIFIER_LENGTH = 128;
-    private const MAX_ROWS = 10000;
+    private const int MAX_IDENTIFIER_LENGTH = 128;
+    private const int MAX_ROWS = 10000;
 
     public function __construct(private readonly LoggerInterface $logger)
     {

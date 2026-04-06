@@ -9,10 +9,10 @@ use Psr\Log\LoggerInterface;
 
 final class LocalCache implements LocalCacheInterface
 {
-    private const MAX_TTL = 86400;
-    private const MAX_KEY_LENGTH = 256;
-    private const MAX_ENTRIES = 1000;
-    private const MAX_VALUE_BYTES = 65536;
+    private const int MAX_TTL = 86400;
+    private const int MAX_KEY_LENGTH = 256;
+    private const int MAX_ENTRIES = 1000;
+    private const int MAX_VALUE_BYTES = 65536;
 
     /** @var array<string, array{v:mixed,exp:int,stored_at:int}> */
     private array $data = [];

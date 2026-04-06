@@ -18,8 +18,8 @@ use Symfony\Component\HttpFoundation\JsonResponse;
 
 final class ApiController implements ApiControllerInterface
 {
-    private const COMPONENT = 'analytics';
-    private const OPERATION = 'metrics';
+    private const string COMPONENT = 'analytics';
+    private const string OPERATION = 'metrics';
 
     public function __construct(
         private readonly KpiRegistryInterface $registry,

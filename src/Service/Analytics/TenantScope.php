@@ -10,7 +10,7 @@ use Psr\Log\LoggerInterface;
 
 final class TenantScope implements TenantScopeInterface
 {
-    private const MAX_TENANT_LENGTH = 128;
+    private const int MAX_TENANT_LENGTH = 128;
 
     public function __construct(
         private readonly LoggerInterface $logger,

@@ -14,7 +14,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 #[AsCommand(name: 'analytics:refresh', description: 'Refresh basic KPI snapshots from latest events')]
 final class AnalyticsRefreshCommand extends BaseCommand
 {
-    private const METRIC = 'orders';
+    private const string METRIC = 'orders';
 
     public function __construct(
         private readonly AnalyticsCollectorInterface $collector,

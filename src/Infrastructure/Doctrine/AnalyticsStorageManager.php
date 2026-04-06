@@ -44,7 +44,7 @@ final class AnalyticsStorageManager
         return [
             'ready' => [] === $missingTables,
             'mode' => $this->detectMode($connection),
-            'path' => $this->detectPath($connection),
+            'path' => $this->connectionFactory->detectStoragePath(),
             'required_tables' => $requiredTables,
             'existing_tables' => $existingTables,
             'missing_tables' => $missingTables,
@@ -86,7 +86,7 @@ final class AnalyticsStorageManager
             $this->logger->error('Analytics storage preparation failed.', [
                 'exception' => $exception,
                 'mode' => $this->detectMode($connection),
-                'path' => $this->detectPath($connection),
+                'path' => $this->connectionFactory->detectStoragePath(),
             ]);
 
             throw new \RuntimeException('Analytics storage preparation failed: '.$exception->getMessage(), 0, $exception);
@@ -107,14 +107,6 @@ final class AnalyticsStorageManager
     private function detectMode(Connection $connection): string
     {
         return $connection->getDatabasePlatform()->getName();
-    }
-
-    private function detectPath(Connection $connection): ?string
-    {
-        $params = $connection->getParams();
-        $path = $params['path'] ?? null;
-
-        return is_string($path) && '' !== trim($path) ? $path : null;
     }
 
     private function seedIfEmpty(Connection $connection): void

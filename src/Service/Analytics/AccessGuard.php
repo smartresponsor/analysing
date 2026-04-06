@@ -9,8 +9,8 @@ use Psr\Log\LoggerInterface;
 
 final class AccessGuard implements AccessGuardInterface
 {
-    private const MAX_ALLOW_LIST_SIZE = 512;
-    private const MAX_SUBJECT_LENGTH = 255;
+    private const int MAX_ALLOW_LIST_SIZE = 512;
+    private const int MAX_SUBJECT_LENGTH = 255;
 
     /** @var list<string> */
     private array $allow;

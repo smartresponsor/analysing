@@ -9,10 +9,10 @@ use Psr\Log\LoggerInterface;
 
 final class ReportBundle implements ReportBundleInterface
 {
-    private const MAX_DATASETS = 64;
-    private const MAX_COLUMNS = 256;
-    private const MAX_DATASET_NAME_LENGTH = 128;
-    private const MAX_ROWS_PER_DATASET = 10000;
+    private const int MAX_DATASETS = 64;
+    private const int MAX_COLUMNS = 256;
+    private const int MAX_DATASET_NAME_LENGTH = 128;
+    private const int MAX_ROWS_PER_DATASET = 10000;
 
     public function __construct(private readonly LoggerInterface $logger)
     {

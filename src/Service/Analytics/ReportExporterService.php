@@ -9,9 +9,9 @@ use Psr\Log\LoggerInterface;
 
 final class ReportExporterService implements ReportExporterServiceInterface
 {
-    private const MAX_EXPORT_ROWS = 10000;
-    private const MAX_COLUMNS = 256;
-    private const MAX_COLUMN_NAME_LENGTH = 128;
+    private const int MAX_EXPORT_ROWS = 10000;
+    private const int MAX_COLUMNS = 256;
+    private const int MAX_COLUMN_NAME_LENGTH = 128;
 
     public function __construct(private readonly LoggerInterface $logger)
     {

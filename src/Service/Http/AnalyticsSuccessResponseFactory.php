@@ -11,7 +11,7 @@ use Symfony\Component\HttpFoundation\JsonResponse;
 
 final class AnalyticsSuccessResponseFactory implements AnalyticsSuccessResponseFactoryInterface
 {
-    private const COMPONENT = 'analytics';
+    private const string COMPONENT = 'analytics';
 
     public function __construct(
         private readonly RequestCorrelationIdProviderInterface $correlationIds,

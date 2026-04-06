@@ -19,7 +19,7 @@ use Symfony\Component\HttpFoundation\Response;
 
 final class HealthController implements HealthControllerInterface
 {
-    private const COMPONENT = 'analytics';
+    private const string COMPONENT = 'analytics';
 
     public function __construct(
         private readonly HealthServiceInterface $svc,

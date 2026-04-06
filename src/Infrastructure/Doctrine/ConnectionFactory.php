@@ -25,7 +25,10 @@ final class ConnectionFactory
 
         $this->assertSqliteDriverAvailable();
 
-        $path = dirname(__DIR__, 3).'/var/analytics.sqlite';
+        $path = $this->detectStoragePath();
+        if (null === $path) {
+            throw new \RuntimeException('Analytics storage path could not be resolved.');
+        }
         $directory = dirname($path);
         if (!is_dir($directory)) {
             mkdir($directory, 0775, true);
@@ -37,6 +40,19 @@ final class ConnectionFactory
         ], $this->createConfiguration());
     }
 
+
+    public function detectStoragePath(): ?string
+    {
+        $url = getenv('ANALYTICS_DATABASE_URL');
+        if (is_string($url) && '' !== trim($url)) {
+            $parsed = parse_url(trim($url));
+            $path = $parsed['path'] ?? null;
+
+            return is_string($path) && '' !== trim($path) ? $path : null;
+        }
+
+        return dirname(__DIR__, 3).'/var/analytics.sqlite';
+    }
 
     private function assertExternalDriverAvailable(string $url): void
     {

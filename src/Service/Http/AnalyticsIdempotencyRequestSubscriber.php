@@ -16,7 +16,7 @@ use Symfony\Component\HttpKernel\KernelEvents;
 final class AnalyticsIdempotencyRequestSubscriber implements AnalyticsIdempotencyRequestSubscriberInterface
 {
     /** @var list<string> */
-    private const WRITE_METHODS = ['POST', 'PUT', 'PATCH', 'DELETE'];
+    private const array WRITE_METHODS = ['POST', 'PUT', 'PATCH', 'DELETE'];
 
     public function __construct(
         private readonly AnalyticsIdempotencyStoreInterface $store,

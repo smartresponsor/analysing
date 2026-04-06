@@ -9,11 +9,11 @@ use Psr\Log\LoggerInterface;
 
 final class AsyncQueryService implements AsyncQueryServiceInterface
 {
-    private const MAX_JOBS = 256;
-    private const MAX_QUERY_FIELDS = 64;
-    private const MAX_ARRAY_ITEMS = 128;
-    private const MAX_KEY_LENGTH = 128;
-    private const MAX_SCALAR_STRING_LENGTH = 2048;
+    private const int MAX_JOBS = 256;
+    private const int MAX_QUERY_FIELDS = 64;
+    private const int MAX_ARRAY_ITEMS = 128;
+    private const int MAX_KEY_LENGTH = 128;
+    private const int MAX_SCALAR_STRING_LENGTH = 2048;
 
     /** @var array<string, array<string,mixed>> */
     private array $jobs = [];

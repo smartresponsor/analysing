@@ -9,7 +9,7 @@ use Psr\Log\LoggerInterface;
 
 final class Transformer implements TransformerInterface
 {
-    private const MAX_ROWS = 10000;
+    private const int MAX_ROWS = 10000;
 
     public function __construct(private readonly LoggerInterface $logger)
     {

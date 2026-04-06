@@ -54,4 +54,20 @@ final class ExportJobTest extends TestCase
         $this->expectException(\InvalidArgumentException::class);
         $job->incAttempts();
     }
+
+    public function testCanRetryOnlyForFailedJobsBelowLimit(): void
+    {
+        $job = new ExportJob('csv');
+
+        self::assertFalse($job->canRetry());
+
+        $job->fail('boom');
+        self::assertTrue($job->canRetry());
+
+        $job->incAttempts();
+        $job->incAttempts();
+        $job->incAttempts();
+
+        self::assertFalse($job->canRetry());
+    }
 }

@@ -9,8 +9,8 @@ use Psr\Log\LoggerInterface;
 
 final class WindowQuery implements WindowQueryInterface
 {
-    private const MAX_WINDOW_SIZE = 10000;
-    private const MAX_ROWS = 100000;
+    private const int MAX_WINDOW_SIZE = 10000;
+    private const int MAX_ROWS = 100000;
 
     public function __construct(private readonly LoggerInterface $logger)
     {

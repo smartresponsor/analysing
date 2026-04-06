@@ -24,7 +24,7 @@ final class ExportJobView
      *   type:string,
      *   status:string,
      *   attempts:int,
-     *   error:?string,
+     *   'error':?string,
      *   created_at:string,
      *   finished_at:?string,
      *   payload:array<string,mixed>,

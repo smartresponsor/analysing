@@ -22,7 +22,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 #[AsCommand(name: 'analytics:job:run-pending')]
 final class AnalyticsRunPendingExportJobsCommand extends Command
 {
-    private const MAX_JOBS_PER_RUN = 10;
+    private const int MAX_JOBS_PER_RUN = 10;
 
     /**
      * @param EntityManagerInterface $em          entity manager used to query export jobs

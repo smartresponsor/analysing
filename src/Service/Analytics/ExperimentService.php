@@ -9,9 +9,9 @@ use Psr\Log\LoggerInterface;
 
 final class ExperimentService implements ExperimentServiceInterface
 {
-    private const MAX_IDENTIFIER_LENGTH = 128;
-    private const MAX_VARIANTS_PER_EXPERIMENT = 32;
-    private const MAX_RECORDED_EVENTS = 1000;
+    private const int MAX_IDENTIFIER_LENGTH = 128;
+    private const int MAX_VARIANTS_PER_EXPERIMENT = 32;
+    private const int MAX_RECORDED_EVENTS = 1000;
 
     /** @var array<string, array<string, int>> */
     private array $weight = [];

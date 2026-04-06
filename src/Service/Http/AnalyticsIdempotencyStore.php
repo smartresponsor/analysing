@@ -10,7 +10,7 @@ use Symfony\Component\HttpFoundation\Response;
 
 final class AnalyticsIdempotencyStore implements AnalyticsIdempotencyStoreInterface
 {
-    private const MAX_KEY_LENGTH = 255;
+    private const int MAX_KEY_LENGTH = 255;
 
     public function __construct(
         private readonly LoggerInterface $logger,

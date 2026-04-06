@@ -20,7 +20,7 @@ final class DashboardHtmlRenderer implements DashboardHtmlRendererInterface
      * @param array{gross_minor:int, net_minor:int, margin_pct:float|int, days:int} $kpi
      * @param list<array{date:string, gross_minor:int, net_minor:int}> $series
      * @param list<array{vendor_id:int, gross_minor:int, net_minor:int, margin_pct:float|int}> $top
-     * @param array{vendorId:?int, currency:?string, from:?string, to:?string} $params
+     * @param array{'vendorId':?int, currency:?string, from:?string, to:?string} $params
      */
     public function renderDashboard(array $kpi, array $series, array $top, array $params): string
     {
