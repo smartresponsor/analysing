@@ -41,7 +41,11 @@
     "lint:canon": "php tools/analytics-scan-layer-map.php",
     "guard:interfaceinterface": "php tools/analytics-interfaceinterface-guard.php",
     "guard:namespace": "php tools/analytics-namespace-guard.php --mode=report",
-    "test": "phpunit",
+    "qa:env": "php tools/qa/AnalyticsQaEnvironmentCheck.php",
+    "test": [
+      "@qa:env",
+      "phpunit"
+    ],
     "analyse": "phpstan analyse src --level=max",
     "fix": "php-cs-fixer fix --allow-risky=yes",
     "clean:config-garbage": "php tools/analytics-config-garbage-clean.php",

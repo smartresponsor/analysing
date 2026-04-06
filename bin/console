@@ -1,0 +1,24 @@
+#!/usr/bin/env php
+<?php
+
+declare(strict_types=1);
+
+use App\Kernel;
+use Symfony\Bundle\FrameworkBundle\Console\Application;
+
+if (!is_file(dirname(__DIR__).'/vendor/autoload.php')) {
+    fwrite(STDERR, "vendor/autoload.php is missing. Run composer install before using bin/console in this snapshot.\n");
+    exit(1);
+}
+
+require_once dirname(__DIR__).'/vendor/autoload.php';
+require_once dirname(__DIR__).'/config/bootstrap.php';
+
+$env = (string) ($_SERVER['APP_ENV'] ?? $_ENV['APP_ENV'] ?? 'dev');
+$debugValue = (string) ($_SERVER['APP_DEBUG'] ?? $_ENV['APP_DEBUG'] ?? ('prod' !== $env ? '1' : '0'));
+$debug = '0' !== $debugValue && '' !== $debugValue;
+
+$kernel = new Kernel($env, $debug);
+$application = new Application($kernel);
+$application->setAutoExit(true);
+$application->run();
