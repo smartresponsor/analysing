@@ -25,12 +25,15 @@ final class AnalyticsRefreshCommand extends BaseCommand
 
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
-        $startedAt = new \DateTimeImmutable('now');
         $startedAtFloat = microtime(true);
-        $to = $startedAt;
-        $from = $to->modify('-1 minute');
+        $fromLabel = null;
+        $toLabel = null;
 
         try {
+            $to = new \DateTimeImmutable();
+            $from = $to->sub(new \DateInterval('PT1M'));
+            $fromLabel = $from->format(DATE_ATOM);
+            $toLabel = $to->format(DATE_ATOM);
             $this->collector->record(self::METRIC, 0.0, $from, $to, [
                 'refresh_source' => 'command',
                 'window_seconds' => $to->getTimestamp() - $from->getTimestamp(),
@@ -39,8 +42,8 @@ final class AnalyticsRefreshCommand extends BaseCommand
 
             $this->logger->info('Analytics refresh command completed.', [
                 'metric' => self::METRIC,
-                'from' => $from->format(DATE_ATOM),
-                'to' => $to->format(DATE_ATOM),
+                'from' => $fromLabel,
+                'to' => $toLabel,
                 'duration_ms' => max(0, (int) round((microtime(true) - $startedAtFloat) * 1000)),
             ]);
             $output->writeln('<info>Analytics refreshed.</info>');
@@ -50,8 +53,8 @@ final class AnalyticsRefreshCommand extends BaseCommand
             $this->logger->error('Analytics refresh failed.', [
                 'exception' => $exception,
                 'metric' => self::METRIC,
-                'from' => $from->format(DATE_ATOM),
-                'to' => $to->format(DATE_ATOM),
+                'from' => $fromLabel,
+                'to' => $toLabel,
                 'duration_ms' => max(0, (int) round((microtime(true) - $startedAtFloat) * 1000)),
             ]);
             $output->writeln('<error>Analytics refresh failed: '.$exception->getMessage().'</error>');

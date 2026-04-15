@@ -13,12 +13,12 @@ use App\DomainInterface\Analytics\ClickhouseClientInterface;
 use App\DomainInterface\Analytics\FlagInterface;
 use Psr\Log\LoggerInterface;
 
-final class Flag implements FlagInterface
+final readonly class Flag implements FlagInterface
 {
     public function __construct(
-        private readonly ClickhouseClientInterface $client,
-        private readonly LoggerInterface $logger,
-        private readonly string $salt,
+        private ClickhouseClientInterface $client,
+        private LoggerInterface $logger,
+        private string $salt,
     ) {
     }
 
@@ -50,7 +50,7 @@ final class Flag implements FlagInterface
             ];
         }
 
-        $bucket = (int) (abs(crc32($this->salt.'|'.$flagKey.'|'.$userId)) % 100);
+        $bucket = abs(crc32($this->salt.'|'.$flagKey.'|'.$userId)) % 100;
         $enabled = $bucket < $rollout;
 
         $this->logger->info('Analytics flag evaluated by rollout.', [
@@ -76,7 +76,7 @@ final class Flag implements FlagInterface
         $userId = $this->normalizeRequiredString($param, 'user_id');
         $tenantId = $this->normalizeRequiredString($param, 'tenant_id');
         $flagKey = $this->normalizeRequiredString($param, 'flag_key');
-        $enabled = $this->normalizeBool($param['enabled'] ?? null, 'enabled');
+        $enabled = $this->normalizeEnabled($param['enabled'] ?? null);
 
         $rows = [[
             'event_name' => 'flag_expose',
@@ -174,16 +174,16 @@ final class Flag implements FlagInterface
         return $rollout;
     }
 
-    private function normalizeBool(mixed $value, string $field): bool
+    private function normalizeEnabled(mixed $value): bool
     {
         $normalized = filter_var($value, FILTER_VALIDATE_BOOLEAN, FILTER_NULL_ON_FAILURE);
         if (!is_bool($normalized)) {
             $this->logger->warning('Analytics flag domain rejected an invalid boolean field.', [
-                'field' => $field,
+                'field' => 'enabled',
                 'value_type' => get_debug_type($value),
                 'value' => $value,
             ]);
-            throw new \InvalidArgumentException(sprintf('%s must be a boolean value.', $field));
+            throw new \InvalidArgumentException('enabled must be a boolean value.');
         }
 
         return $normalized;

@@ -9,11 +9,11 @@ use App\ServiceInterface\Analytics\SampleAnalyticsDatasetInterface;
 use App\ServiceInterface\Analytics\SampleDashboardServiceInterface;
 use Psr\Log\LoggerInterface;
 
-final class SampleDashboardService implements SampleDashboardServiceInterface
+final readonly class SampleDashboardService implements SampleDashboardServiceInterface
 {
     public function __construct(
-        private readonly SampleAnalyticsDatasetInterface $dataset,
-        private readonly LoggerInterface $logger,
+        private SampleAnalyticsDatasetInterface $dataset,
+        private LoggerInterface $logger,
     ) {
     }
 

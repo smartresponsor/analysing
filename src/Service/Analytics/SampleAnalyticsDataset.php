@@ -28,6 +28,8 @@ final class SampleAnalyticsDataset implements SampleAnalyticsDatasetInterface
 
     /**
      * @return list<array{date:string,gross_minor:int,net_minor:int}>
+     *
+     * @throws \Exception
      */
     public function timeseries(KpiRequest $request): array
     {
@@ -72,15 +74,21 @@ final class SampleAnalyticsDataset implements SampleAnalyticsDatasetInterface
                 'vendor_id' => $row['vendor_id'],
                 'gross_minor' => $gross,
                 'net_minor' => $net,
-                'margin_pct' => $gross > 0 ? round(($net / $gross) * 100, 2) : 0.0,
+                'margin_pct' => round(($net / $gross) * 100, 2),
             ];
         }, $rows);
     }
 
     /**
-     * @param list<string> $steps
+     * @param string             $app
+     * @param string             $env
+     * @param list<string>       $steps
+     * @param \DateTimeImmutable $from
+     * @param \DateTimeImmutable $to
      *
      * @return list<array{day:string,user_count:int}>
+     *
+     * @throws \DateMalformedStringException
      */
     public function funnel(string $app, string $env, array $steps, \DateTimeImmutable $from, \DateTimeImmutable $to): array
     {

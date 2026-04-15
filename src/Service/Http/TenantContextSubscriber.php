@@ -7,15 +7,14 @@ namespace App\Service\Http;
 use App\ServiceInterface\Http\TenantContextInterface;
 use App\ServiceInterface\Http\TenantContextResolverInterface;
 use App\ServiceInterface\Http\TenantContextSubscriberInterface;
-use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\HttpKernel\Event\RequestEvent;
 use Symfony\Component\HttpKernel\KernelEvents;
 
-final class TenantContextSubscriber implements TenantContextSubscriberInterface
+final readonly class TenantContextSubscriber implements TenantContextSubscriberInterface
 {
     public function __construct(
-        private readonly TenantContextResolverInterface $resolver,
-        private readonly TenantContextInterface $context,
+        private TenantContextResolverInterface $resolver,
+        private TenantContextInterface $context,
     ) {
     }
 

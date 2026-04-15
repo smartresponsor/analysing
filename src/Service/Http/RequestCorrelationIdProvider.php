@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Service\Http;
 
 use App\ServiceInterface\Http\RequestCorrelationIdProviderInterface;
+use Random\RandomException;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\RequestStack;
 
@@ -58,6 +59,10 @@ final class RequestCorrelationIdProvider implements RequestCorrelationIdProvider
 
     private function generate(): string
     {
-        return 'corr-'.bin2hex(random_bytes(8));
+        try {
+            return 'corr-'.bin2hex(random_bytes(8));
+        } catch (RandomException) {
+            return 'corr-'.substr(hash('sha256', uniqid('analytics-correlation-', true)), 0, 16);
+        }
     }
 }

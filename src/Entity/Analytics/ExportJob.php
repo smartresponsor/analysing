@@ -33,11 +33,11 @@ final class ExportJob
     #[ORM\Column(type: 'json', nullable: true)]
     private ?array $payload = null;
 
-    #[ORM\Column(type: 'datetime_immutable')]
-    private \DateTimeImmutable $created_at;
+    #[ORM\Column(name: 'created_at', type: 'datetime_immutable')]
+    private \DateTimeImmutable $createdAt;
 
-    #[ORM\Column(type: 'datetime_immutable', nullable: true)]
-    private ?\DateTimeImmutable $finished_at = null;
+    #[ORM\Column(name: 'finished_at', type: 'datetime_immutable', nullable: true)]
+    private ?\DateTimeImmutable $finishedAt = null;
 
     #[ORM\Column(type: 'text', nullable: true)]
     private ?string $error = null;
@@ -57,7 +57,7 @@ final class ExportJob
 
         $this->type = $normalizedType;
         $this->payload = null === $payload ? null : $this->normalizePayload($payload);
-        $this->created_at = new \DateTimeImmutable();
+        $this->createdAt = new \DateTimeImmutable();
     }
 
     public function getId(): ?int
@@ -85,12 +85,12 @@ final class ExportJob
 
     public function getCreatedAt(): \DateTimeImmutable
     {
-        return $this->created_at;
+        return $this->createdAt;
     }
 
     public function getFinishedAt(): ?\DateTimeImmutable
     {
-        return $this->finished_at;
+        return $this->finishedAt;
     }
 
     public function getError(): ?string
@@ -121,13 +121,13 @@ final class ExportJob
     {
         $this->status = self::STATUS_RUNNING;
         $this->error = null;
-        $this->finished_at = null;
+        $this->finishedAt = null;
     }
 
     public function done(): void
     {
         $this->status = self::STATUS_DONE;
-        $this->finished_at = new \DateTimeImmutable();
+        $this->finishedAt = new \DateTimeImmutable();
         $this->error = null;
     }
 
@@ -140,7 +140,7 @@ final class ExportJob
 
         $this->status = self::STATUS_FAILED;
         $this->error = $normalized;
-        $this->finished_at = new \DateTimeImmutable();
+        $this->finishedAt = new \DateTimeImmutable();
     }
 
     public function incAttempts(): void
@@ -165,7 +165,7 @@ final class ExportJob
                 throw new \InvalidArgumentException('Export job payload keys must be non-empty strings.');
             }
 
-            $normalized[$key] = $this->normalizePayloadValue($value);
+            $normalized[trim($key)] = $this->normalizePayloadValue($value);
         }
 
         return $normalized;
@@ -174,12 +174,9 @@ final class ExportJob
     private function normalizePayloadValue(mixed $value): mixed
     {
         if (is_array($value)) {
-            $normalized = [];
-            foreach ($value as $key => $nestedValue) {
-                $normalized[$key] = $this->normalizePayloadValue($nestedValue);
-            }
-
-            return $normalized;
+            return array_map(function ($nestedValue) {
+                return $this->normalizePayloadValue($nestedValue);
+            }, $value);
         }
 
         if (!is_scalar($value) && null !== $value) {

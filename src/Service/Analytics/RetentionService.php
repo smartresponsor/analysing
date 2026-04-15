@@ -7,9 +7,9 @@ namespace App\Service\Analytics;
 use App\ServiceInterface\Analytics\RetentionServiceInterface;
 use Psr\Log\LoggerInterface;
 
-final class RetentionService implements RetentionServiceInterface
+final readonly class RetentionService implements RetentionServiceInterface
 {
-    public function __construct(private readonly LoggerInterface $logger)
+    public function __construct(private LoggerInterface $logger)
     {
     }
 
@@ -23,7 +23,7 @@ final class RetentionService implements RetentionServiceInterface
             throw new \InvalidArgumentException('Retention maxDays must be positive.');
         }
 
-        $border = (new \DateTimeImmutable('-'.$maxDays.' days'))->getTimestamp();
+        $border = time() - ($maxDays * 86400);
         $pruned = [];
 
         foreach ($rows as $index => $row) {

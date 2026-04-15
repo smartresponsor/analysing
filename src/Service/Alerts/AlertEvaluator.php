@@ -10,11 +10,11 @@ use App\ServiceInterface\Alerts\AlertEvaluatorInterface;
 use Doctrine\ORM\EntityManagerInterface;
 use Psr\Log\LoggerInterface;
 
-final class AlertEvaluator implements AlertEvaluatorInterface
+final readonly class AlertEvaluator implements AlertEvaluatorInterface
 {
     public function __construct(
-        private readonly EntityManagerInterface $em,
-        private readonly LoggerInterface $logger,
+        private EntityManagerInterface $em,
+        private LoggerInterface $logger,
     ) {
     }
 

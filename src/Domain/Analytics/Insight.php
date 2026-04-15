@@ -13,11 +13,11 @@ use App\DomainInterface\Analytics\ClickhouseClientInterface;
 use App\DomainInterface\Analytics\InsightInterface;
 use Psr\Log\LoggerInterface;
 
-final class Insight implements InsightInterface
+final readonly class Insight implements InsightInterface
 {
     public function __construct(
-        private readonly ClickhouseClientInterface $client,
-        private readonly LoggerInterface $logger,
+        private ClickhouseClientInterface $client,
+        private LoggerInterface $logger,
     ) {
     }
 
@@ -30,7 +30,7 @@ final class Insight implements InsightInterface
     {
         $tenant = $this->normalizeNonEmptyString($param, 'tenant_id');
         $name = $this->normalizeNonEmptyString($param, 'event_name');
-        $days = $this->normalizePositiveInteger($param, 'days');
+        $days = $this->normalizeDays($param);
 
         $rows = $this->validateSeriesRows($this->client->query(
             $this->loadQuery('anomaly/series.sql'),
@@ -223,15 +223,15 @@ final class Insight implements InsightInterface
     /**
      * @param array<string,mixed> $param
      */
-    private function normalizePositiveInteger(array $param, string $field): int
+    private function normalizeDays(array $param): int
     {
-        if (!array_key_exists($field, $param)) {
-            throw new \InvalidArgumentException(sprintf('%s must be provided.', $field));
+        if (!array_key_exists('days', $param)) {
+            throw new \InvalidArgumentException('days must be provided.');
         }
 
-        $value = filter_var($param[$field], FILTER_VALIDATE_INT, ['options' => ['min_range' => 1]]);
+        $value = filter_var($param['days'], FILTER_VALIDATE_INT, ['options' => ['min_range' => 1]]);
         if (!is_int($value)) {
-            throw new \InvalidArgumentException(sprintf('%s must be a positive integer.', $field));
+            throw new \InvalidArgumentException('days must be a positive integer.');
         }
 
         return $value;

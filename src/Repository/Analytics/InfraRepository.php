@@ -13,11 +13,11 @@ use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\ParameterType;
 use Psr\Log\LoggerInterface;
 
-final class InfraRepository implements InfraRepositoryInterface
+final readonly class InfraRepository implements InfraRepositoryInterface
 {
     public function __construct(
-        private readonly Connection $connection,
-        private readonly LoggerInterface $logger,
+        private Connection $connection,
+        private LoggerInterface $logger,
     ) {
     }
 
@@ -26,7 +26,7 @@ final class InfraRepository implements InfraRepositoryInterface
         $app = $this->normalizeKey($app, 'app');
         $env = $this->normalizeKey($env, 'env');
         $steps = $this->normalizeStepList($steps);
-        $this->assertOrderedDateRange($from, $to, 'from', 'to');
+        $this->assertOrderedDateRange($from, $to);
 
         $conditions = [
             'app = :app',
@@ -322,23 +322,21 @@ final class InfraRepository implements InfraRepositoryInterface
      */
     private function normalizeStepList(array $steps): array
     {
-        $normalized = [];
+        $normalized = array_values(array_unique(array_map(
+            static function (mixed $step): string {
+                if (!is_scalar($step)) {
+                    throw new \InvalidArgumentException('steps must contain only scalar values.');
+                }
 
-        foreach ($steps as $step) {
-            if (!is_scalar($step)) {
-                throw new \InvalidArgumentException('steps must contain only scalar values.');
-            }
+                $value = trim((string) $step);
+                if ('' === $value) {
+                    throw new \InvalidArgumentException('steps must contain only non-empty values.');
+                }
 
-            $value = trim((string) $step);
-
-            if ('' === $value) {
-                throw new \InvalidArgumentException('steps must contain only non-empty values.');
-            }
-
-            $normalized[] = $value;
-        }
-
-        $normalized = array_values(array_unique($normalized));
+                return $value;
+            },
+            $steps,
+        )));
 
         if (count($normalized) < 2) {
             throw new \InvalidArgumentException('steps must contain at least two unique values.');
@@ -347,10 +345,10 @@ final class InfraRepository implements InfraRepositoryInterface
         return array_slice($normalized, 0, 4);
     }
 
-    private function assertOrderedDateRange(\DateTimeImmutable $from, \DateTimeImmutable $to, string $fromField, string $toField): void
+    private function assertOrderedDateRange(\DateTimeImmutable $from, \DateTimeImmutable $to): void
     {
         if ($from > $to) {
-            throw new \InvalidArgumentException(sprintf('%s must be earlier than or equal to %s.', $fromField, $toField));
+            throw new \InvalidArgumentException('from must be earlier than or equal to to.');
         }
     }
 }

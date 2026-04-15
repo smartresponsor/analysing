@@ -19,7 +19,7 @@ final class TokenServiceSignatureTest extends TestCase
         ], 300);
 
         self::assertNotSame('', $token);
-        self::assertNotSame(false, strpos($token, '.'));
+        self::assertNotFalse(strpos($token, '.'));
 
         $claims = $service->verify($token);
 
@@ -34,8 +34,12 @@ final class TokenServiceSignatureTest extends TestCase
     {
         $service = new TokenService(new NullLogger(), 'test-salt');
         $token = $service->issue(['admin' => true], 300);
-        $tampered = substr($token, 0, -1).'0';
+        [$payload, $signature] = explode('.', $token, 2);
+        $last = substr($signature, -1);
+        $replacement = 'A' === $last ? 'B' : 'A';
+        $tampered = $payload.'.'.substr($signature, 0, -1).$replacement;
 
+        self::assertNotSame($token, $tampered);
         self::assertSame([], $service->verify($tampered));
     }
 }

@@ -6,16 +6,14 @@ namespace App\Service\Http;
 
 use App\ServiceInterface\Http\AnalyticsIdempotencyResponseSubscriberInterface;
 use App\ServiceInterface\Http\AnalyticsIdempotencyStoreInterface;
-use App\ServiceInterface\Http\TenantContextInterface;
-use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\HttpKernel\Event\ResponseEvent;
 use Symfony\Component\HttpKernel\KernelEvents;
 
-final class AnalyticsIdempotencyResponseSubscriber implements AnalyticsIdempotencyResponseSubscriberInterface
+final readonly class AnalyticsIdempotencyResponseSubscriber implements AnalyticsIdempotencyResponseSubscriberInterface
 {
     public function __construct(
-        private readonly AnalyticsIdempotencyStoreInterface $store,
-        private readonly bool $enabled = true,
+        private AnalyticsIdempotencyStoreInterface $store,
+        private bool $enabled = true,
     ) {
     }
 

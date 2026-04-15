@@ -13,6 +13,7 @@ use App\ControllerInterface\Analytics\IngestControllerInterface;
 use App\DomainInterface\Analytics\ClickhouseClientInterface;
 use App\Service\Http\AnalyticsErrorResponseFactory;
 use App\Service\Http\AnalyticsSuccessResponseFactory;
+use App\Service\Http\JsonRequestBodyDecoder;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
@@ -21,7 +22,6 @@ use Symfony\Component\HttpFoundation\Response;
 final class IngestController implements IngestControllerInterface
 {
     private const string COMPONENT = 'analytics';
-    private const int MAX_JSON_BYTES = 1048576;
     private const int MAX_BATCH_SIZE = 1000;
     private const int MAX_STRING_LENGTH = 255;
 
@@ -30,6 +30,7 @@ final class IngestController implements IngestControllerInterface
         private readonly LoggerInterface $logger,
         private readonly AnalyticsSuccessResponseFactory $successResponses,
         private readonly AnalyticsErrorResponseFactory $errorResponses,
+        private readonly ?JsonRequestBodyDecoder $jsonDecoder = null,
     ) {
     }
 
@@ -102,7 +103,7 @@ final class IngestController implements IngestControllerInterface
     private function ingestCommon(string $source, Request $request): array
     {
         $payload = $this->decodeBody($request);
-        $tenant = $this->normalizeIdentifier((string) ($request->headers->get('X-SR-TENANT') ?? 'unknown'), 'tenant header');
+        $tenant = $this->normalizeIdentifier($request->headers->get('X-SR-TENANT') ?? 'unknown', 'tenant header');
         $batch = isset($payload['batch']) && is_array($payload['batch']) ? array_values($payload['batch']) : [$payload];
         if (count($batch) > self::MAX_BATCH_SIZE) {
             throw new \InvalidArgumentException('Ingest batch contains too many items.');
@@ -121,7 +122,7 @@ final class IngestController implements IngestControllerInterface
             $event = $this->normalizeIdentifier((string) ($item['event'] ?? ('page' === $type ? 'page' : $type)), 'event name');
             $userId = $this->normalizeIdentifier((string) ($item['userId'] ?? $item['anonymousId'] ?? 'anon'), 'user id');
             $context = isset($item['context']) && is_array($item['context']) ? $item['context'] : [];
-            $sessionId = $this->normalizeOptionalIdentifier($context['sessionId'] ?? null, 'session id');
+            $sessionId = $this->normalizeOptionalSessionIdentifier($context['sessionId'] ?? null);
             $timestamp = $this->normalizeTimestamp($item['timestamp'] ?? null);
 
             $rows[] = [
@@ -146,30 +147,11 @@ final class IngestController implements IngestControllerInterface
     }
 
     /**
-     * @return array<string,mixed>
+     * @return array<string, mixed>
      */
     private function decodeBody(Request $request): array
     {
-        $content = trim($request->getContent());
-        if ('' === $content) {
-            return [];
-        }
-
-        if (strlen($content) > self::MAX_JSON_BYTES) {
-            throw new \InvalidArgumentException('JSON payload is too large.');
-        }
-
-        try {
-            $payload = json_decode($content, true, 512, JSON_THROW_ON_ERROR);
-        } catch (\JsonException $exception) {
-            throw new \InvalidArgumentException('Invalid JSON payload.', 0, $exception);
-        }
-
-        if (!is_array($payload)) {
-            throw new \InvalidArgumentException('JSON payload must decode to an object or array.');
-        }
-
-        return $payload;
+        return ($this->jsonDecoder ?? new JsonRequestBodyDecoder())->decode($request);
     }
 
     private function normalizeIdentifier(string $value, string $field): string
@@ -186,17 +168,17 @@ final class IngestController implements IngestControllerInterface
         return $normalized;
     }
 
-    private function normalizeOptionalIdentifier(mixed $value, string $field): string
+    private function normalizeOptionalSessionIdentifier(mixed $value): string
     {
         if (null === $value || '' === $value) {
             return '';
         }
 
         if (!is_scalar($value)) {
-            throw new \InvalidArgumentException(sprintf('%s must be a scalar identifier.', ucfirst($field)));
+            throw new \InvalidArgumentException('Session id must be a scalar identifier.');
         }
 
-        return $this->normalizeIdentifier((string) $value, $field);
+        return $this->normalizeIdentifier((string) $value, 'session id');
     }
 
     private function normalizeTimestamp(mixed $value): string

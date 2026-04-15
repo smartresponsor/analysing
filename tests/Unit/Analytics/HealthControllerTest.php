@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace App\Tests\Unit\Analytics;
 
-use App\Tests\Support\AnalyticsHttpFactoriesTrait;
-use App\Tests\Support\JsonPayloadAssertionsTrait;
 use App\Controller\Analytics\HealthController;
 use App\ServiceInterface\Analytics\HealthServiceInterface;
+use App\Tests\Support\AnalyticsHttpFactoriesTrait;
+use App\Tests\Support\JsonPayloadAssertionsTrait;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 

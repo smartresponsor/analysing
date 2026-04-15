@@ -13,12 +13,12 @@ use Doctrine\ORM\EntityManagerInterface;
  * This service scans a recent slice of export jobs and derives summary metrics that can be
  * exposed through an API endpoint or fed into higher-level monitoring integrations.
  */
-final class ExportJobMetricsService
+final readonly class ExportJobMetricsService
 {
     /**
      * @param EntityManagerInterface $entityManager doctrine entity manager used to read export jobs
      */
-    public function __construct(private readonly EntityManagerInterface $entityManager)
+    public function __construct(private EntityManagerInterface $entityManager)
     {
     }
 

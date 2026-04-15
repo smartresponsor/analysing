@@ -8,7 +8,6 @@ use App\ServiceInterface\Http\AnalyticsErrorResponseFactoryInterface;
 use App\ServiceInterface\Http\AnalyticsIdempotencyRequestSubscriberInterface;
 use App\ServiceInterface\Http\AnalyticsIdempotencyStoreInterface;
 use App\ServiceInterface\Http\TenantContextResolverInterface;
-use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Event\RequestEvent;
 use Symfony\Component\HttpKernel\KernelEvents;
@@ -96,6 +95,7 @@ final class AnalyticsIdempotencyRequestSubscriber implements AnalyticsIdempotenc
         switch ($decision['status']) {
             case 'new':
                 $request->attributes->set('_analytics_idempotency_active', true);
+
                 return;
 
             case 'replay':
@@ -103,6 +103,7 @@ final class AnalyticsIdempotencyRequestSubscriber implements AnalyticsIdempotenc
                 $response->headers->set('X-Idempotency-Key', $key);
                 $response->headers->set('Idempotency-Status', 'replayed');
                 $event->setResponse($response);
+
                 return;
 
             case 'pending':
@@ -117,6 +118,7 @@ final class AnalyticsIdempotencyRequestSubscriber implements AnalyticsIdempotenc
                 );
                 $response->headers->set('X-Idempotency-Key', $key);
                 $event->setResponse($response);
+
                 return;
 
             case 'conflict':
@@ -131,6 +133,7 @@ final class AnalyticsIdempotencyRequestSubscriber implements AnalyticsIdempotenc
                 );
                 $response->headers->set('X-Idempotency-Key', $key);
                 $event->setResponse($response);
+
                 return;
         }
     }
@@ -139,5 +142,4 @@ final class AnalyticsIdempotencyRequestSubscriber implements AnalyticsIdempotenc
     {
         return str_starts_with($route, 'analytics_') && in_array(strtoupper($method), self::WRITE_METHODS, true);
     }
-
 }

@@ -8,6 +8,7 @@ use App\ServiceInterface\Http\AnalyticsSuccessResponseFactoryInterface;
 use App\ServiceInterface\Http\RequestCorrelationIdProviderInterface;
 use App\ServiceInterface\Http\TenantContextInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;
+use Symfony\Component\HttpFoundation\Response;
 
 final class AnalyticsSuccessResponseFactory implements AnalyticsSuccessResponseFactoryInterface
 {
@@ -19,12 +20,12 @@ final class AnalyticsSuccessResponseFactory implements AnalyticsSuccessResponseF
     ) {
     }
 
-    public function create(string $operation, mixed $data, float $startedAt, int $status = JsonResponse::HTTP_OK): JsonResponse
+    public function create(string $operation, mixed $data, float $startedAt, int $status = Response::HTTP_OK): JsonResponse
     {
         $payload = [
             'ok' => true,
             'component' => self::COMPONENT,
-            'time' => (new \DateTimeImmutable('now', new \DateTimeZone('UTC')))->format(DATE_ATOM),
+            'time' => $this->currentTime(),
             'data' => $data,
             'operation' => $operation,
             'duration_ms' => $this->durationMs($startedAt),
@@ -38,5 +39,10 @@ final class AnalyticsSuccessResponseFactory implements AnalyticsSuccessResponseF
     private function durationMs(float $startedAt): int
     {
         return (int) round((microtime(true) - $startedAt) * 1000);
+    }
+
+    private function currentTime(): string
+    {
+        return gmdate(DATE_ATOM);
     }
 }

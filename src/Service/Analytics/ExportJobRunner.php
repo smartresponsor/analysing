@@ -17,7 +17,7 @@ use Psr\Log\LoggerInterface;
  * The runner turns persisted export job payloads into concrete dashboard queries, generates the
  * export artifact, and updates the job state with runtime metadata such as duration and output path.
  */
-final class ExportJobRunner
+final readonly class ExportJobRunner
 {
     /**
      * @param DashboardServiceInterface      $dashboard     service used to compute KPI aggregates
@@ -27,11 +27,11 @@ final class ExportJobRunner
      * @param LoggerInterface                $logger        logger used for execution failures
      */
     public function __construct(
-        private readonly DashboardServiceInterface $dashboard,
-        private readonly ReportExporterServiceInterface $exporter,
-        private readonly ReportRowBuilder $rowBuilder,
-        private readonly EntityManagerInterface $entityManager,
-        private readonly LoggerInterface $logger,
+        private DashboardServiceInterface $dashboard,
+        private ReportExporterServiceInterface $exporter,
+        private ReportRowBuilder $rowBuilder,
+        private EntityManagerInterface $entityManager,
+        private LoggerInterface $logger,
     ) {
     }
 
@@ -46,7 +46,11 @@ final class ExportJobRunner
     {
         $startedAt = microtime(true);
         $payload = $job->getPayload() ?? [];
-        $format = strtolower(trim((string) ($payload['format'] ?? $job->getType())));
+        $rawFormat = $payload['format'] ?? $job->getType();
+        if (!is_scalar($rawFormat) && null !== $rawFormat) {
+            $rawFormat = $job->getType();
+        }
+        $format = strtolower(trim((string) $rawFormat));
         if ('' === $format) {
             $format = 'csv';
         }

@@ -11,15 +11,18 @@ namespace App\Domain\Analytics;
 
 use App\DomainInterface\Analytics\ClickhouseClientInterface;
 use Symfony\Component\HttpClient\HttpClient;
+use Symfony\Contracts\HttpClient\Exception\ClientExceptionInterface;
+use Symfony\Contracts\HttpClient\Exception\RedirectionExceptionInterface;
+use Symfony\Contracts\HttpClient\Exception\ServerExceptionInterface;
 use Symfony\Contracts\HttpClient\Exception\TransportExceptionInterface;
 use Symfony\Contracts\HttpClient\HttpClientInterface;
 
-final class ClickhouseClient implements ClickhouseClientInterface
+final readonly class ClickhouseClient implements ClickhouseClientInterface
 {
-    private readonly HttpClientInterface $http;
-    private readonly string $base;
-    private readonly string $user;
-    private readonly string $pass;
+    private HttpClientInterface $http;
+    private string $base;
+    private string $user;
+    private string $pass;
 
     public function __construct(string $base, string $user, string $pass, ?HttpClientInterface $http = null)
     {
@@ -102,6 +105,8 @@ final class ClickhouseClient implements ClickhouseClientInterface
             $content = $response->getContent(false);
         } catch (TransportExceptionInterface $exception) {
             throw new \RuntimeException('ClickHouse transport request failed.', 0, $exception);
+        } catch (ClientExceptionInterface|RedirectionExceptionInterface|ServerExceptionInterface $exception) {
+            throw new \RuntimeException('ClickHouse HTTP request failed.', 0, $exception);
         }
 
         if ($statusCode >= 400) {
@@ -139,7 +144,7 @@ final class ClickhouseClient implements ClickhouseClientInterface
             $query = str_replace('{ '.$key.' }', $replacement, $query);
         }
 
-        if (false === preg_match_all('/\{\s*([A-Za-z0-9_]+)\s*\}/', $query, $matches)) {
+        if (false === preg_match_all('/\{\s*([A-Za-z0-9_]+)\s*}/', $query, $matches)) {
             throw new \RuntimeException('Unable to inspect ClickHouse query placeholders.');
         }
 

@@ -14,6 +14,7 @@ use Doctrine\ORM\EntityManagerInterface;
 use Psr\Log\LoggerInterface;
 use Psr\Log\NullLogger;
 use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
+
 use function Symfony\Component\DependencyInjection\Loader\Configurator\param;
 use function Symfony\Component\DependencyInjection\Loader\Configurator\service;
 
@@ -155,7 +156,6 @@ return static function (ContainerConfigurator $container): void {
     $services->alias('App\\ServiceInterface\\Analytics\\TransformerInterface', 'App\\Service\\Analytics\\Transformer');
     $services->alias('App\\ServiceInterface\\Analytics\\WindowQueryInterface', 'App\\Service\\Analytics\\WindowQuery');
 
-
     $services->alias('App\RepositoryInterface\Analytics\SampleInfraRepositoryInterface', 'App\Repository\Analytics\SampleInfraRepository');
     $services->alias('App\ServiceInterface\Analytics\DashboardHtmlRendererInterface', 'App\Service\Analytics\DashboardHtmlRenderer');
     $services->alias('App\ServiceInterface\Analytics\SampleAnalyticsDatasetInterface', 'App\Service\Analytics\SampleAnalyticsDataset');
@@ -175,7 +175,6 @@ return static function (ContainerConfigurator $container): void {
     $services->alias('App\ServiceInterface\Http\TenantContextResolverInterface', 'App\Service\Http\TenantContextResolver');
     $services->alias('App\ServiceInterface\Http\TenantContextResponseSubscriberInterface', 'App\Service\Http\TenantContextResponseSubscriber');
     $services->alias('App\ServiceInterface\Http\TenantContextSubscriberInterface', 'App\Service\Http\TenantContextSubscriber');
-
 
     $services->set(AnalyticsIdempotencyStore::class)
         ->arg('$directory', param('analytics.idempotency.directory'))

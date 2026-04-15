@@ -13,12 +13,12 @@ use App\DomainInterface\Analytics\ClickhouseClientInterface;
 use App\DomainInterface\Analytics\ExperimentInterface;
 use Psr\Log\LoggerInterface;
 
-final class Experiment implements ExperimentInterface
+final readonly class Experiment implements ExperimentInterface
 {
     public function __construct(
-        private readonly ClickhouseClientInterface $client,
-        private readonly LoggerInterface $logger,
-        private readonly string $salt,
+        private ClickhouseClientInterface $client,
+        private LoggerInterface $logger,
+        private string $salt,
     ) {
     }
 
@@ -33,7 +33,7 @@ final class Experiment implements ExperimentInterface
         $userId = $this->normalizeRequiredString($param, 'user_id');
         $rollout = $this->normalizeRollout($param['rollout'] ?? 50);
 
-        $bucket = (int) (abs(crc32($this->salt.'|'.$experimentId.'|'.$userId)) % 100);
+        $bucket = abs(crc32($this->salt.'|'.$experimentId.'|'.$userId)) % 100;
         $variant = $bucket < $rollout ? 'treatment' : 'control';
 
         $this->logger->info('Analytics experiment allocated subject.', [

@@ -19,7 +19,6 @@ final class CsvImporter implements CsvImporterInterface
 
     public function read(string $csvPath, string $delimiter = ','): array
     {
-        $rows = [];
         $rowCount = 0;
         $delimiter = $this->normalizeDelimiter($delimiter);
 
@@ -28,11 +27,11 @@ final class CsvImporter implements CsvImporterInterface
 
             $this->logger->info('Analytics CSV import completed.', [
                 'path' => $csvPath,
-                'rows' => count($rows),
+                'rows' => 0,
                 'columns' => 0,
             ]);
 
-            return $rows;
+            return [];
         }
 
         $handle = fopen($csvPath, 'r');
@@ -41,10 +40,12 @@ final class CsvImporter implements CsvImporterInterface
             throw new \RuntimeException('Unable to open analytics CSV file.');
         }
 
+        $rows = [];
+
         try {
             $headers = $this->readHeaders($handle, $csvPath, $delimiter);
             if ([] === $headers) {
-                return $rows;
+                return [];
             }
 
             while (($data = fgetcsv($handle, 0, $delimiter)) !== false) {

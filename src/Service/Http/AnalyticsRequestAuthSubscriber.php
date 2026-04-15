@@ -8,7 +8,6 @@ use App\ServiceInterface\Analytics\TokenServiceInterface;
 use App\ServiceInterface\Http\AnalyticsErrorResponseFactoryInterface;
 use App\ServiceInterface\Http\AnalyticsRequestAuthSubscriberInterface;
 use Psr\Log\LoggerInterface;
-use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Event\RequestEvent;
@@ -17,13 +16,13 @@ use Symfony\Component\HttpKernel\KernelEvents;
 final class AnalyticsRequestAuthSubscriber implements AnalyticsRequestAuthSubscriberInterface
 {
     /** @var list<string> */
-    private const ALWAYS_PUBLIC_ROUTES = [
+    private const array ALWAYS_PUBLIC_ROUTES = [
         'analytics_status',
         'analytics_health',
     ];
 
     /** @var list<string> */
-    private const PUBLIC_READ_ROUTES = [
+    private const array PUBLIC_READ_ROUTES = [
         'analytics_metrics',
         'analytics_dashboard_kpi',
         'analytics_dashboard_timeseries',
@@ -164,13 +163,7 @@ final class AnalyticsRequestAuthSubscriber implements AnalyticsRequestAuthSubscr
             return false;
         }
 
-        foreach ($routes as $allowedRoute) {
-            if (is_scalar($allowedRoute) && trim((string) $allowedRoute) === $route) {
-                return true;
-            }
-        }
-
-        return false;
+        return array_any($routes, fn ($allowedRoute) => is_scalar($allowedRoute) && trim((string) $allowedRoute) === $route);
     }
 
     /**
@@ -199,8 +192,8 @@ final class AnalyticsRequestAuthSubscriber implements AnalyticsRequestAuthSubscr
         }
 
         $authorization = trim((string) $request->headers->get('Authorization', ''));
-        if (preg_match('/^Bearer\s+(.+)$/i', $authorization, $matches) === 1) {
-            $bearerToken = trim((string) $matches[1]);
+        if (1 === preg_match('/^Bearer\s+(.+)$/i', $authorization, $matches)) {
+            $bearerToken = trim($matches[1]);
             if ('' !== $bearerToken) {
                 return $bearerToken;
             }
@@ -217,6 +210,6 @@ final class AnalyticsRequestAuthSubscriber implements AnalyticsRequestAuthSubscr
             'error_code' => $errorCode,
         ]);
 
-        return $this->errors->create($route, $error, $errorCode, $status, $startedAt, false);
+        return $this->errors->create($route, $error, $errorCode, $status, $startedAt);
     }
 }

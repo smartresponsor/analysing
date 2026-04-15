@@ -15,7 +15,9 @@ final class ExportJobPayloadTest extends TestCase
 
         $job->mergePayload(['export_path' => '/tmp/file.csv']);
 
-        self::assertSame('/tmp/file.csv', $job->getPayload()['export_path']);
-        self::assertSame('2026-01-01', $job->getPayload()['from']);
+        $payload = $job->getPayload();
+        self::assertIsArray($payload);
+        self::assertSame('/tmp/file.csv', $payload['export_path']);
+        self::assertSame('2026-01-01', $payload['from']);
     }
 }

@@ -12,11 +12,11 @@ use App\RepositoryInterface\Analytics\InfraRepositoryInterface;
 use App\ServiceInterface\Analytics\AggregateServiceInterface;
 use Psr\Log\LoggerInterface;
 
-final class AggregateService implements AggregateServiceInterface
+final readonly class AggregateService implements AggregateServiceInterface
 {
     public function __construct(
-        private readonly InfraRepositoryInterface $repo,
-        private readonly LoggerInterface $logger,
+        private InfraRepositoryInterface $repo,
+        private LoggerInterface $logger,
     ) {
     }
 
@@ -30,7 +30,7 @@ final class AggregateService implements AggregateServiceInterface
         $app = $this->normalizeLabel($app, 'app');
         $env = $this->normalizeLabel($env, 'env');
         $steps = $this->normalizeSteps($steps);
-        $this->assertOrderedRange($from, $to, 'from', 'to');
+        $this->assertOrderedRange($from, $to);
 
         try {
             return $this->normalizeFunnelRows($this->repo->fetchFunnel($app, $env, $steps, $from, $to));
@@ -210,10 +210,10 @@ final class AggregateService implements AggregateServiceInterface
         return array_slice($normalized, 0, 4);
     }
 
-    private function assertOrderedRange(\DateTimeImmutable $from, \DateTimeImmutable $to, string $fromField, string $toField): void
+    private function assertOrderedRange(\DateTimeImmutable $from, \DateTimeImmutable $to): void
     {
         if ($from > $to) {
-            throw new \InvalidArgumentException(sprintf('%s must be earlier than or equal to %s.', $fromField, $toField));
+            throw new \InvalidArgumentException('from must be earlier than or equal to to.');
         }
     }
 }

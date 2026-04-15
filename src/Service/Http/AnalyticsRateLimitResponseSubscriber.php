@@ -4,9 +4,8 @@ declare(strict_types=1);
 
 namespace App\Service\Http;
 
-use App\ValueObject\Http\AnalyticsRateLimitDecision;
 use App\ServiceInterface\Http\AnalyticsRateLimitResponseSubscriberInterface;
-use Symfony\Component\EventDispatcher\EventSubscriberInterface;
+use App\ValueObject\Http\AnalyticsRateLimitDecision;
 use Symfony\Component\HttpKernel\Event\ResponseEvent;
 use Symfony\Component\HttpKernel\KernelEvents;
 

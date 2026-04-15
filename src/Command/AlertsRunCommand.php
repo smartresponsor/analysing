@@ -27,12 +27,15 @@ final class AlertsRunCommand extends BaseCommand
 
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
-        $startedAt = new \DateTimeImmutable('now');
         $startedAtFloat = microtime(true);
-        $from = $startedAt->modify('-15 minutes');
-        $to = $startedAt;
+        $fromLabel = null;
+        $toLabel = null;
 
         try {
+            $to = new \DateTimeImmutable();
+            $from = $to->sub(new \DateInterval('PT15M'));
+            $fromLabel = $from->format(DATE_ATOM);
+            $toLabel = $to->format(DATE_ATOM);
             $results = $this->evaluator->evaluate($from, $to);
             $matchedCount = 0;
             $dispatchedCount = 0;
@@ -51,7 +54,7 @@ final class AlertsRunCommand extends BaseCommand
                     continue;
                 }
 
-                if ($result['matched'] !== true) {
+                if (true !== $result['matched']) {
                     continue;
                 }
 
@@ -72,7 +75,7 @@ final class AlertsRunCommand extends BaseCommand
                     'Rule "%s" matched on %s=%s',
                     $rule->getCode(),
                     $snapshot->getMetric(),
-                    (string) $snapshot->getValue(),
+                    $snapshot->getValue(),
                 );
 
                 try {
@@ -89,8 +92,8 @@ final class AlertsRunCommand extends BaseCommand
             }
 
             $this->logger->info('Analytics alerts run completed.', [
-                'from' => $from->format(DATE_ATOM),
-                'to' => $to->format(DATE_ATOM),
+                'from' => $fromLabel,
+                'to' => $toLabel,
                 'evaluated' => $evaluatedCount,
                 'matched' => $matchedCount,
                 'dispatched' => $dispatchedCount,
@@ -110,8 +113,8 @@ final class AlertsRunCommand extends BaseCommand
         } catch (\Throwable $exception) {
             $this->logger->error('Analytics alerts run failed.', [
                 'exception' => $exception,
-                'from' => $from->format(DATE_ATOM),
-                'to' => $to->format(DATE_ATOM),
+                'from' => $fromLabel,
+                'to' => $toLabel,
                 'duration_ms' => max(0, (int) round((microtime(true) - $startedAtFloat) * 1000)),
             ]);
             $output->writeln('<error>Alerts evaluation failed: '.$exception->getMessage().'</error>');

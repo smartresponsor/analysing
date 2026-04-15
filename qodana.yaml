@@ -1,0 +1,78 @@
+version: "1.0"
+linter: qodana-php
+
+php:
+  version: "8.4"
+
+profile:
+  base:
+    name: qodana.recommended
+  inspections:
+    - inspection: PhpConstantNamingConventionInspection
+      options:
+        m_regex: "[A-Z][A-Z_\\d]*"
+        m_minLength: 4
+        m_maxLength: 37
+    - inspection: PhpMissingDocCommentInspection
+      enabled: false
+    - inspection: PhpEnforceDocCommentInspection
+      options:
+        CHECK_METHOD: false
+        CHECK_FUNCTION: false
+        CHECK_CLASS: false
+    - inspection: PhpGetterAndSetterCanBeReplacedWithPropertyHooksInspection
+      enabled: false
+    - inspection: PhpVariableNamingConventionInspection
+      options:
+        m_regex: "[a-z][A-Za-z\\d]*"
+        m_minLength: 1
+        m_maxLength: 37
+      ignore:
+        - "tests/**"
+    - inspection: PhpPropertyNamingConventionInspection
+      enabled: true
+      options:
+        m_regex: "[a-z][A-Za-z\\d]*"
+        m_minLength: 2
+        m_maxLength: 37   
+    - inspection: PhpMethodNamingConventionInspection
+      options:
+        m_minLength: 2
+        m_maxLength: 37
+      ignore:
+        - "tests/**"
+    - inspection: PhpClassNamingConventionInspection
+      options:
+        m_minLength: 3
+        m_maxLength: 57
+      ignore:
+        - "tests/**"
+        - "ValueObjectInterface/**"
+        - "ValueObject/**"
+    - inspection: PhpCSFixerValidationInspection
+      enabled: true
+    - inspection: IncorrectFormatting
+      enabled: false
+    - inspection: LongLine
+      enabled: false
+    - inspection: PhpFullyQualifiedNameUsageInspection
+      options:
+        IGNORE_GLOBAL_NAMESPACE: true
+
+exclude:
+  - name: All
+    paths:
+      - vendor
+      - var
+      - node_modules
+      - public/build
+      - build
+      - dist
+      - coverage
+      - archive
+      - docs/generated
+      - .git
+      - .idea
+      - .qodana
+      - composer.json
+      - qodana.yaml

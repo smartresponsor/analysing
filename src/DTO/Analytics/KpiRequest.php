@@ -4,12 +4,12 @@ declare(strict_types=1);
 
 namespace App\DTO\Analytics;
 
-final class KpiRequest
+final readonly class KpiRequest
 {
-    public readonly ?int $vendorId;
-    public readonly ?string $currency;
-    public readonly ?string $from;
-    public readonly ?string $to;
+    public ?int $vendorId;
+    public ?string $currency;
+    public ?string $from;
+    public ?string $to;
 
     public function __construct(
         ?int $vendorId = null,
@@ -79,7 +79,7 @@ final class KpiRequest
             return;
         }
 
-        if (new \DateTimeImmutable($from) > new \DateTimeImmutable($to)) {
+        if ($from > $to) {
             throw new \InvalidArgumentException('KPI request "from" must be earlier than or equal to "to".');
         }
     }

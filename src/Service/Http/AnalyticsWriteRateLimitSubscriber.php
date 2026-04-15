@@ -4,13 +4,12 @@ declare(strict_types=1);
 
 namespace App\Service\Http;
 
-use App\ValueObject\Http\AnalyticsRateLimitDecision;
 use App\ServiceInterface\Http\AnalyticsErrorResponseFactoryInterface;
 use App\ServiceInterface\Http\AnalyticsRouteRateLimiterInterface;
 use App\ServiceInterface\Http\AnalyticsWriteRateLimitSubscriberInterface;
 use App\ServiceInterface\Http\TenantContextInterface;
+use App\ValueObject\Http\AnalyticsRateLimitDecision;
 use Psr\Log\LoggerInterface;
-use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Event\RequestEvent;
@@ -74,7 +73,7 @@ final class AnalyticsWriteRateLimitSubscriber implements AnalyticsWriteRateLimit
             [
                 'rate_limit_limit' => $decision->limit,
                 'rate_limit_remaining' => $decision->remaining,
-                'rate_limit_reset_at' => (new \DateTimeImmutable('@'.$decision->resetAt))->setTimezone(new \DateTimeZone('UTC'))->format(DATE_ATOM),
+                'rate_limit_reset_at' => gmdate(DATE_ATOM, $decision->resetAt),
                 'retry_after_seconds' => $decision->retryAfterSeconds,
                 'rate_limit_scope' => $decision->scope,
                 'rate_limit_mode' => $decision->mode,
@@ -111,7 +110,7 @@ final class AnalyticsWriteRateLimitSubscriber implements AnalyticsWriteRateLimit
             return 'tenant:'.$tenant;
         }
 
-        $ip = trim((string) ($request->getClientIp() ?? 'unknown'));
+        $ip = trim($request->getClientIp() ?? 'unknown');
 
         return 'ip:'.('' !== $ip ? $ip : 'unknown');
     }

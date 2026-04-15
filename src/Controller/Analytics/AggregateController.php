@@ -35,10 +35,10 @@ final class AggregateController implements AggregateControllerInterface
             $body = $this->decodeBody($request);
             $app = $this->requireNonEmptyString($body, 'app');
             $env = $this->requireNonEmptyString($body, 'env');
-            $steps = $this->requireStringList($body, 'steps');
+            $steps = $this->requireStepsList($body);
             $from = $this->parseDateTime($body, 'from');
             $to = $this->parseDateTime($body, 'to');
-            $this->assertRange($from, $to, 'from', 'to');
+            $this->assertFunnelRange($from, $to);
 
             return $this->service->computeFunnel($app, $env, $steps, $from, $to);
         });
@@ -116,6 +116,22 @@ final class AggregateController implements AggregateControllerInterface
                 $startedAt,
                 true,
             );
+        } catch (\Throwable $exception) {
+            $this->logger->error('Analytics aggregate operation failed unexpectedly.', [
+                'operation' => $operation,
+                'component' => self::COMPONENT,
+                'duration_ms' => $this->durationMs($startedAt),
+                'exception' => $exception,
+            ]);
+
+            return $this->errorResponses->create(
+                $operation,
+                'Aggregate data unavailable.',
+                'analytics.aggregate.failed',
+                Response::HTTP_INTERNAL_SERVER_ERROR,
+                $startedAt,
+                true,
+            );
         }
     }
 
@@ -173,53 +189,36 @@ final class AggregateController implements AggregateControllerInterface
      *
      * @return list<string>
      */
-    private function requireStringList(array $body, string $field): array
+    private function requireStepsList(array $body): array
     {
-        $value = $body[$field] ?? null;
+        $value = $body['steps'] ?? null;
         if (!is_array($value) || [] === $value) {
-            throw new BadRequestHttpException(sprintf('Field "%s" must be a non-empty list of strings.', $field));
+            throw new BadRequestHttpException('Field "steps" must be a non-empty list of strings.');
         }
 
         if (count($value) > self::MAX_LIST_ITEMS) {
-            throw new BadRequestHttpException(sprintf('Field "%s" contains too many items.', $field));
+            throw new BadRequestHttpException('Field "steps" contains too many items.');
         }
 
         $items = [];
         foreach ($value as $index => $item) {
             if (!is_string($item)) {
-                throw new BadRequestHttpException(sprintf('Field "%s" item %d must be a string.', $field, $index));
+                throw new BadRequestHttpException(sprintf('Field "steps" item %d must be a string.', $index));
             }
 
             $normalized = trim($item);
             if ('' === $normalized) {
-                throw new BadRequestHttpException(sprintf('Field "%s" item %d must not be empty.', $field, $index));
-            }
-
-            if (strlen($normalized) > self::MAX_STRING_LENGTH) {
-                throw new BadRequestHttpException(sprintf('Field "%s" item %d is too long.', $field, $index));
+                throw new BadRequestHttpException(sprintf('Field "steps" item %d must not be empty.', $index));
             }
 
             $items[] = $normalized;
         }
 
-        return $items;
+        return array_values(array_unique($items));
     }
 
     /**
-     * @param array<string,mixed> $body
-     */
-    private function requirePositiveInt(array $body, string $field): int
-    {
-        $value = $body[$field] ?? null;
-        if (is_int($value) && $value > 0) {
-            return $value;
-        }
-
-        throw new BadRequestHttpException(sprintf('Field "%s" must be a positive integer.', $field));
-    }
-
-    /**
-     * @param array<string,mixed> $body
+     * @param array<string, mixed> $body
      */
     private function parseDateTime(array $body, string $field): \DateTimeImmutable
     {
@@ -239,10 +238,28 @@ final class AggregateController implements AggregateControllerInterface
         }
     }
 
-    private function assertRange(\DateTimeImmutable $from, \DateTimeImmutable $to, string $fromField, string $toField): void
+    /**
+     * @param array<string, mixed> $body
+     */
+    private function requirePositiveInt(array $body, string $field): int
+    {
+        $value = $body[$field] ?? null;
+        if (!is_int($value) && !(is_string($value) && ctype_digit($value))) {
+            throw new BadRequestHttpException(sprintf('Field "%s" must be a positive integer.', $field));
+        }
+
+        $normalized = (int) $value;
+        if ($normalized <= 0) {
+            throw new BadRequestHttpException(sprintf('Field "%s" must be a positive integer.', $field));
+        }
+
+        return $normalized;
+    }
+
+    private function assertFunnelRange(\DateTimeImmutable $from, \DateTimeImmutable $to): void
     {
         if ($from > $to) {
-            throw new BadRequestHttpException(sprintf('Field "%s" must be earlier than or equal to "%s".', $fromField, $toField));
+            throw new BadRequestHttpException('Field "from" must be earlier than or equal to "to".');
         }
     }
 

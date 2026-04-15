@@ -8,6 +8,7 @@ use App\ControllerInterface\Analytics\FlagControllerInterface;
 use App\DomainInterface\Analytics\FlagInterface;
 use App\Service\Http\AnalyticsErrorResponseFactory;
 use App\Service\Http\AnalyticsSuccessResponseFactory;
+use App\Service\Http\JsonRequestBodyDecoder;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
@@ -16,13 +17,13 @@ use Symfony\Component\HttpFoundation\Response;
 final class FlagController implements FlagControllerInterface
 {
     private const string COMPONENT = 'analytics';
-    private const int MAX_JSON_BYTES = 1048576;
 
     public function __construct(
         private readonly FlagInterface $domain,
         private readonly LoggerInterface $logger,
         private readonly AnalyticsSuccessResponseFactory $successResponses,
         private readonly AnalyticsErrorResponseFactory $errorResponses,
+        private readonly ?JsonRequestBodyDecoder $jsonDecoder = null,
     ) {
     }
 
@@ -70,34 +71,31 @@ final class FlagController implements FlagControllerInterface
                 $startedAt,
                 true,
             );
+        } catch (\Throwable $exception) {
+            $this->logger->error('Flag evaluation failed unexpectedly.', [
+                'operation' => 'evaluate',
+                'component' => self::COMPONENT,
+                'duration_ms' => $this->durationMs($startedAt),
+                'exception' => $exception,
+            ]);
+
+            return $this->errorResponses->create(
+                'evaluate',
+                'Flag evaluation unavailable.',
+                'analytics.flag.failed',
+                Response::HTTP_INTERNAL_SERVER_ERROR,
+                $startedAt,
+                true,
+            );
         }
     }
 
     /**
-     * @return array<string,mixed>
+     * @return array<string, mixed>
      */
     private function decodeBody(Request $request): array
     {
-        $content = trim($request->getContent());
-        if ('' === $content) {
-            return [];
-        }
-
-        if (strlen($content) > self::MAX_JSON_BYTES) {
-            throw new \InvalidArgumentException('JSON payload is too large.');
-        }
-
-        try {
-            $payload = json_decode($content, true, 512, JSON_THROW_ON_ERROR);
-        } catch (\JsonException $exception) {
-            throw new \InvalidArgumentException('Invalid JSON payload.', 0, $exception);
-        }
-
-        if (!is_array($payload)) {
-            throw new \InvalidArgumentException('JSON payload must decode to an object or array.');
-        }
-
-        return $payload;
+        return ($this->jsonDecoder ?? new JsonRequestBodyDecoder())->decode($request);
     }
 
     private function durationMs(float $startedAt): int

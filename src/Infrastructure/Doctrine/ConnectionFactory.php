@@ -11,6 +11,9 @@ use Doctrine\DBAL\Schema\DefaultSchemaManagerFactory;
 
 final class ConnectionFactory
 {
+    /**
+     * @throws \Throwable
+     */
     public function create(): Connection
     {
         $url = getenv('ANALYTICS_DATABASE_URL');
@@ -30,8 +33,8 @@ final class ConnectionFactory
             throw new \RuntimeException('Analytics storage path could not be resolved.');
         }
         $directory = dirname($path);
-        if (!is_dir($directory)) {
-            mkdir($directory, 0775, true);
+        if (!is_dir($directory) && !mkdir($directory, 0775, true) && !is_dir($directory)) {
+            throw new \RuntimeException('Analytics storage directory could not be created: '.$directory);
         }
 
         return DriverManager::getConnection([
@@ -39,7 +42,6 @@ final class ConnectionFactory
             'path' => $path,
         ], $this->createConfiguration());
     }
-
 
     public function detectStoragePath(): ?string
     {

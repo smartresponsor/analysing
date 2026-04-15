@@ -67,7 +67,7 @@ final class MetricIngestService implements MetricIngestServiceInterface
 
         $normalized = [];
         foreach ($payload as $key => $value) {
-            $normalizedKey = trim((string) $key);
+            $normalizedKey = trim($key);
             if (strlen($normalizedKey) > self::MAX_KEY_LENGTH) {
                 $this->logger->warning('Analytics metric ingest rejected because payload contains an overlong key.', [
                     'key' => $normalizedKey,

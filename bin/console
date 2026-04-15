@@ -21,4 +21,9 @@ $debug = '0' !== $debugValue && '' !== $debugValue;
 $kernel = new Kernel($env, $debug);
 $application = new Application($kernel);
 $application->setAutoExit(true);
-$application->run();
+try {
+    exit($application->run());
+} catch (Throwable $exception) {
+    fwrite(STDERR, $exception->getMessage().PHP_EOL);
+    exit(1);
+}

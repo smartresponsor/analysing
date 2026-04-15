@@ -25,24 +25,24 @@ class AlertRule
 
     /** @var array<string,mixed> */
     #[ORM\Column(type: 'json')]
-    private array $condition = [];
+    private array $condition;
 
     /** @var list<mixed> */
     #[ORM\Column(type: 'json')]
-    private array $channels = [];
+    private array $channels;
 
-    #[ORM\Column(type: 'boolean', options: ['default' => true])]
-    private bool $is_active = true;
+    #[ORM\Column(name: 'is_active', type: 'boolean', options: ['default' => true])]
+    private bool $isActive = true;
 
-    #[ORM\Column(type: 'datetime_immutable')]
-    private \DateTimeImmutable $created_at;
+    #[ORM\Column(name: 'created_at', type: 'datetime_immutable')]
+    private \DateTimeImmutable $createdAt;
 
-    #[ORM\Column(type: 'datetime_immutable')]
-    private \DateTimeImmutable $updated_at;
+    #[ORM\Column(name: 'updated_at', type: 'datetime_immutable')]
+    private \DateTimeImmutable $updatedAt;
 
     /**
      * @param array<string,mixed> $condition
-     * @param list<mixed> $channels
+     * @param list<mixed>         $channels
      */
     public function __construct(string $code, string $name, array $condition, array $channels = [])
     {
@@ -51,8 +51,8 @@ class AlertRule
         $this->condition = $this->normalizeCondition($condition);
         $this->channels = $this->normalizeChannels($channels);
         $now = new \DateTimeImmutable();
-        $this->created_at = $now;
-        $this->updated_at = $now;
+        $this->createdAt = $now;
+        $this->updatedAt = $now;
     }
 
     public function getId(): ?int
@@ -84,22 +84,22 @@ class AlertRule
 
     public function isActive(): bool
     {
-        return $this->is_active;
+        return $this->isActive;
     }
 
     public function getCreatedAt(): \DateTimeImmutable
     {
-        return $this->created_at;
+        return $this->createdAt;
     }
 
     public function getUpdatedAt(): \DateTimeImmutable
     {
-        return $this->updated_at;
+        return $this->updatedAt;
     }
 
     public function setActive(bool $active): void
     {
-        $this->is_active = $active;
+        $this->isActive = $active;
         $this->touch();
     }
 
@@ -119,7 +119,7 @@ class AlertRule
 
     private function touch(): void
     {
-        $this->updated_at = new \DateTimeImmutable();
+        $this->updatedAt = new \DateTimeImmutable();
     }
 
     private function normalizeCode(string $code): string
@@ -205,12 +205,13 @@ class AlertRule
     }
 
     /**
-     * @param array<mixed> $values
+     * @param array<array-key, mixed> $values
      *
-     * @return array<mixed>
+     * @return array<array-key, mixed>
      */
     private function normalizeNestedArray(array $values, string $context): array
     {
+        /** @var array<array-key, mixed> $normalized */
         $normalized = [];
         foreach ($values as $key => $value) {
             if (is_array($value)) {

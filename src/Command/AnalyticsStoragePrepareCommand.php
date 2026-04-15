@@ -52,7 +52,7 @@ final class AnalyticsStoragePrepareCommand extends BaseCommand
             $output->writeln('<info>Analytics storage prepared.</info>');
             $output->writeln('mode: '.$result['mode']);
             $output->writeln('path: '.($result['path'] ?? 'n/a'));
-            $output->writeln('executed_sql_count: '.(string) $result['executed_sql_count']);
+            $output->writeln('executed_sql_count: '.$result['executed_sql_count']);
             $output->writeln('seeded: '.($result['seeded'] ? 'yes' : 'no'));
             $output->writeln('missing_tables: '.([] === $result['missing_tables'] ? 'none' : implode(', ', $result['missing_tables'])));
 

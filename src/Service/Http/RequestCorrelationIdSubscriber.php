@@ -6,15 +6,14 @@ namespace App\Service\Http;
 
 use App\ServiceInterface\Http\RequestCorrelationIdProviderInterface;
 use App\ServiceInterface\Http\RequestCorrelationIdSubscriberInterface;
-use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\HttpKernel\Event\RequestEvent;
 use Symfony\Component\HttpKernel\Event\ResponseEvent;
 use Symfony\Component\HttpKernel\KernelEvents;
 
-final class RequestCorrelationIdSubscriber implements RequestCorrelationIdSubscriberInterface
+final readonly class RequestCorrelationIdSubscriber implements RequestCorrelationIdSubscriberInterface
 {
     public function __construct(
-        private readonly RequestCorrelationIdProviderInterface $provider,
+        private RequestCorrelationIdProviderInterface $provider,
     ) {
     }
 

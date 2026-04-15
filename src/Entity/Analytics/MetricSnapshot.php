@@ -26,14 +26,14 @@ class MetricSnapshot
     #[ORM\Column(type: 'json', nullable: true)]
     private ?array $dimensions = null;
 
-    #[ORM\Column(type: 'datetime_immutable')]
-    private \DateTimeImmutable $period_start;
+    #[ORM\Column(name: 'period_start', type: 'datetime_immutable')]
+    private \DateTimeImmutable $periodStart;
 
-    #[ORM\Column(type: 'datetime_immutable')]
-    private \DateTimeImmutable $period_end;
+    #[ORM\Column(name: 'period_end', type: 'datetime_immutable')]
+    private \DateTimeImmutable $periodEnd;
 
-    #[ORM\Column(type: 'datetime_immutable')]
-    private \DateTimeImmutable $created_at;
+    #[ORM\Column(name: 'created_at', type: 'datetime_immutable')]
+    private \DateTimeImmutable $createdAt;
 
     /** @param array<string,mixed>|null $dimensions */
     public function __construct(string $metric, float $value, \DateTimeImmutable $periodStart, \DateTimeImmutable $periodEnd, ?array $dimensions = null)
@@ -51,10 +51,10 @@ class MetricSnapshot
 
         $this->metric = $normalizedMetric;
         $this->value = $value;
-        $this->period_start = $periodStart;
-        $this->period_end = $periodEnd;
+        $this->periodStart = $periodStart;
+        $this->periodEnd = $periodEnd;
         $this->dimensions = null === $dimensions ? null : $this->normalizeDimensions($dimensions);
-        $this->created_at = new \DateTimeImmutable();
+        $this->createdAt = new \DateTimeImmutable();
     }
 
     public function getId(): ?int
@@ -80,17 +80,17 @@ class MetricSnapshot
 
     public function getPeriodStart(): \DateTimeImmutable
     {
-        return $this->period_start;
+        return $this->periodStart;
     }
 
     public function getPeriodEnd(): \DateTimeImmutable
     {
-        return $this->period_end;
+        return $this->periodEnd;
     }
 
     public function getCreatedAt(): \DateTimeImmutable
     {
-        return $this->created_at;
+        return $this->createdAt;
     }
 
     /**
@@ -110,7 +110,7 @@ class MetricSnapshot
                 throw new \InvalidArgumentException('Metric snapshot dimension values must be scalar or null.');
             }
 
-            $normalized[$key] = $value;
+            $normalized[trim($key)] = $value;
         }
 
         return $normalized;

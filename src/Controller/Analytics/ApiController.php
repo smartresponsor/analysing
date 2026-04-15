@@ -15,6 +15,7 @@ use App\Service\Http\AnalyticsSuccessResponseFactory;
 use App\ServiceInterface\Analytics\KpiRegistryInterface;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;
+use Symfony\Component\HttpFoundation\Response;
 
 final class ApiController implements ApiControllerInterface
 {
@@ -46,7 +47,7 @@ final class ApiController implements ApiControllerInterface
                     self::OPERATION,
                     'Metrics catalog unavailable.',
                     'analytics.metrics.unavailable',
-                    JsonResponse::HTTP_SERVICE_UNAVAILABLE,
+                    Response::HTTP_SERVICE_UNAVAILABLE,
                     $startedAt,
                     true,
                 );
@@ -93,7 +94,7 @@ final class ApiController implements ApiControllerInterface
                 self::OPERATION,
                 'Metrics catalog unavailable.',
                 'analytics.metrics.unavailable',
-                JsonResponse::HTTP_SERVICE_UNAVAILABLE,
+                Response::HTTP_SERVICE_UNAVAILABLE,
                 $startedAt,
                 true,
             );

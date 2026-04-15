@@ -8,25 +8,27 @@ use App\ServiceInterface\Analytics\DashboardHtmlRendererInterface;
 use App\ServiceInterface\Http\RequestCorrelationIdProviderInterface;
 use App\ServiceInterface\Http\TenantContextInterface;
 
-final class DashboardHtmlRenderer implements DashboardHtmlRendererInterface
+final readonly class DashboardHtmlRenderer implements DashboardHtmlRendererInterface
 {
     public function __construct(
-        private readonly RequestCorrelationIdProviderInterface $correlationIds,
-        private readonly TenantContextInterface $tenantContext,
+        private RequestCorrelationIdProviderInterface $correlationIds,
+        private TenantContextInterface $tenantContext,
     ) {
     }
 
     /**
-     * @param array{gross_minor:int, net_minor:int, margin_pct:float|int, days:int} $kpi
-     * @param list<array{date:string, gross_minor:int, net_minor:int}> $series
+     * @param array{gross_minor:int, net_minor:int, margin_pct:float|int, days:int}            $kpi
+     * @param list<array{date:string, gross_minor:int, net_minor:int}>                         $series
      * @param list<array{vendor_id:int, gross_minor:int, net_minor:int, margin_pct:float|int}> $top
-     * @param array{'vendorId':?int, currency:?string, from:?string, to:?string} $params
+     * @param array<string,int|string|null>                                                    $params
+     *
+     * @return string
      */
     public function renderDashboard(array $kpi, array $series, array $top, array $params): string
     {
         $correlationId = $this->correlationIds->current();
         $tenant = $this->tenantContext->current();
-        $generatedAt = (new \DateTimeImmutable('now', new \DateTimeZone('UTC')))->format(DATE_ATOM);
+        $generatedAt = gmdate(DATE_ATOM);
 
         $filters = [
             'Vendor' => null !== $params['vendorId'] ? (string) $params['vendorId'] : 'all',
@@ -74,7 +76,7 @@ final class DashboardHtmlRenderer implements DashboardHtmlRendererInterface
         $html[] = '        <span>Correlation ID: <strong>'.$this->escape($correlationId).'</strong></span>';
         $html[] = '        <span>Generated at: <strong>'.$this->escape($generatedAt).'</strong></span>';
         foreach ($filters as $label => $value) {
-            $html[] = '        <span>'.$this->escape($label).': <strong>'.$this->escape($value).'</strong></span>';
+            $html[] = '        <span>'.$this->escape((string) $label).': <strong>'.$this->escape((string) $value).'</strong></span>';
         }
         $html[] = '      </div>';
         $html[] = '    </section>';
@@ -156,7 +158,7 @@ final class DashboardHtmlRenderer implements DashboardHtmlRendererInterface
     {
         $correlationId = $this->correlationIds->current();
         $tenant = $this->tenantContext->current();
-        $generatedAt = (new \DateTimeImmutable('now', new \DateTimeZone('UTC')))->format(DATE_ATOM);
+        $generatedAt = gmdate(DATE_ATOM);
 
         return implode("\n", [
             '<!DOCTYPE html>',
@@ -186,12 +188,12 @@ final class DashboardHtmlRenderer implements DashboardHtmlRendererInterface
 
     private function metricCard(string $label, string $value): string
     {
-        return '<article class="card"><div class="label">'.$this->escape($label).'</div><div class="value">'.$this->escape($value).'</div></article>';
+        return '<article class="card"><div class="label">'.$this->escape((string) $label).'</div><div class="value">'.$this->escape((string) $value).'</div></article>';
     }
 
     private function formatMinor(int $amount): string
     {
-        return number_format($amount / 100, 2, '.', ',');
+        return number_format($amount / 100, 2);
     }
 
     private function formatPercent(float $value): string

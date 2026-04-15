@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace App\Tests\Unit\Analytics;
 
-use App\Tests\Support\AnalyticsHttpFactoriesTrait;
-use App\Tests\Support\JsonPayloadAssertionsTrait;
 use App\Controller\Analytics\IngestController;
 use App\DomainInterface\Analytics\ClickhouseClientInterface;
+use App\Tests\Support\AnalyticsHttpFactoriesTrait;
+use App\Tests\Support\JsonPayloadAssertionsTrait;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\HttpFoundation\Request;

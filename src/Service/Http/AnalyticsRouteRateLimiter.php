@@ -4,18 +4,18 @@ declare(strict_types=1);
 
 namespace App\Service\Http;
 
-use App\ValueObject\Http\AnalyticsRateLimitDecision;
 use App\ServiceInterface\Http\AnalyticsRouteRateLimiterInterface;
+use App\ValueObject\Http\AnalyticsRateLimitDecision;
 use Psr\Log\LoggerInterface;
 
-final class AnalyticsRouteRateLimiter implements AnalyticsRouteRateLimiterInterface
+final readonly class AnalyticsRouteRateLimiter implements AnalyticsRouteRateLimiterInterface
 {
     public function __construct(
-        private readonly LoggerInterface $logger,
-        private readonly string $directory,
-        private readonly int $windowSeconds = 60,
-        private readonly int $defaultWriteLimit = 60,
-        private readonly bool $enabled = true,
+        private LoggerInterface $logger,
+        private string $directory,
+        private int $windowSeconds = 60,
+        private int $defaultWriteLimit = 60,
+        private bool $enabled = true,
     ) {
     }
 
@@ -147,8 +147,10 @@ final class AnalyticsRouteRateLimiter implements AnalyticsRouteRateLimiterInterf
     }
 
     /**
-     * @param resource $handle
+     * @param resource  $handle
      * @param list<int> $hits
+     *
+     * @throws \JsonException
      */
     private function writeHits($handle, array $hits): void
     {

@@ -6,6 +6,7 @@ namespace App\Service\Analytics;
 
 use App\ServiceInterface\Analytics\AsyncQueryServiceInterface;
 use Psr\Log\LoggerInterface;
+use Random\RandomException;
 
 final class AsyncQueryService implements AsyncQueryServiceInterface
 {
@@ -26,8 +27,8 @@ final class AsyncQueryService implements AsyncQueryServiceInterface
     {
         $normalizedQuery = $this->normalizeQuery($query);
 
-        $id = bin2hex(random_bytes(8));
-        $submittedAt = (new \DateTimeImmutable())->format(DATE_ATOM);
+        $id = $this->newJobId();
+        $submittedAt = gmdate(DATE_ATOM);
         try {
             $queryChecksum = hash('sha256', json_encode($normalizedQuery, JSON_THROW_ON_ERROR));
         } catch (\JsonException $exception) {
@@ -76,7 +77,7 @@ final class AsyncQueryService implements AsyncQueryServiceInterface
 
         $job = $this->jobs[$id];
         $submittedTs = isset($job['submitted_at']) && is_string($job['submitted_at']) ? strtotime($job['submitted_at']) : false;
-        $job['age_ms'] = is_int($submittedTs) ? max(0, ((new \DateTimeImmutable())->getTimestamp() - $submittedTs) * 1000) : null;
+        $job['age_ms'] = is_int($submittedTs) ? max(0, (time() - $submittedTs) * 1000) : null;
         $this->logger->info('Analytics async query status resolved.', [
             'id' => $id,
             'state' => $job['state'],
@@ -85,6 +86,20 @@ final class AsyncQueryService implements AsyncQueryServiceInterface
 
         /** @var array{id:string,state:string,submitted_at?:string,result?:array<string,mixed>} $job */
         return $job;
+    }
+
+    /** @return non-empty-string */
+    private function newJobId(): string
+    {
+        try {
+            return bin2hex(random_bytes(8));
+        } catch (RandomException $exception) {
+            $this->logger->warning('Analytics async query id generation fell back to deterministic entropy.', [
+                'exception' => $exception,
+            ]);
+
+            return substr(hash('sha256', uniqid('analytics_async_', true)), 0, 16);
+        }
     }
 
     /**
@@ -109,7 +124,7 @@ final class AsyncQueryService implements AsyncQueryServiceInterface
 
         $normalized = [];
         foreach ($query as $key => $value) {
-            $normalizedKey = trim((string) $key);
+            $normalizedKey = trim($key);
             if (strlen($normalizedKey) > self::MAX_KEY_LENGTH) {
                 $this->logger->warning('Analytics async query submission rejected because a key is too long.', [
                     'key' => $normalizedKey,

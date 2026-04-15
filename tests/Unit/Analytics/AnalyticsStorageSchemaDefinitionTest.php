@@ -13,7 +13,10 @@ final class AnalyticsStorageSchemaDefinitionTest extends TestCase
     {
         $definition = new AnalyticsStorageSchemaDefinition();
         $schema = $definition->createSchema();
-        $tableNames = $schema->getTableNames();
+        $tableNames = array_map(
+            static fn (string $name): string => str_contains($name, '.') ? substr($name, (int) strrpos($name, '.') + 1) : $name,
+            $schema->getTableNames()
+        );
         sort($tableNames);
 
         $required = $definition->requiredTableNames();

@@ -12,13 +12,13 @@ use App\ServiceInterface\Analytics\ReportGeneratorServiceInterface;
 use Doctrine\ORM\EntityManagerInterface;
 use Psr\Log\LoggerInterface;
 
-final class ReportGeneratorService implements ReportGeneratorServiceInterface
+final readonly class ReportGeneratorService implements ReportGeneratorServiceInterface
 {
     public function __construct(
-        private readonly DashboardServiceInterface $dashboard,
-        private readonly ReportExporterServiceInterface $exporter,
-        private readonly EntityManagerInterface $em,
-        private readonly LoggerInterface $logger,
+        private DashboardServiceInterface $dashboard,
+        private ReportExporterServiceInterface $exporter,
+        private EntityManagerInterface $em,
+        private LoggerInterface $logger,
     ) {
     }
 
@@ -79,7 +79,7 @@ final class ReportGeneratorService implements ReportGeneratorServiceInterface
                 ];
             }
 
-                        $exportPath = $this->exporter->export($rows, $format);
+            $exportPath = $this->exporter->export($rows, $format);
             if (!is_file($exportPath)) {
                 throw new \RuntimeException('Analytics report export path is missing after export.');
             }

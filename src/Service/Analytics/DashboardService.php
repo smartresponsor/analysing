@@ -29,7 +29,7 @@ final class DashboardService implements DashboardServiceInterface
                   FROM metric_snapshot
                 $whereSql";
 
-        $row = $this->fetchAssociativeOrFail($sql, $params, 'Dashboard KPI query failed.');
+        $row = $this->fetchDashboardKpiRow($sql, $params);
         $gross = $this->readRequiredInt($row, 'gross');
         $net = $this->readRequiredInt($row, 'net');
         $days = $this->readRequiredInt($row, 'days');
@@ -235,22 +235,22 @@ final class DashboardService implements DashboardServiceInterface
      *
      * @return array<string, mixed>
      */
-    private function fetchAssociativeOrFail(string $sql, array $params, string $message): array
+    private function fetchDashboardKpiRow(string $sql, array $params): array
     {
         try {
             $row = $this->db->fetchAssociative($sql, $params);
         } catch (\Throwable $exception) {
-            $this->logger->error($message, [
+            $this->logger->error('Dashboard KPI query failed.', [
                 'exception' => $exception,
                 'sql' => $sql,
                 'params' => $params,
             ]);
 
-            throw new \RuntimeException($message, 0, $exception);
+            throw new \RuntimeException('Dashboard KPI query failed.', 0, $exception);
         }
 
         if (!is_array($row)) {
-            throw new \RuntimeException('Dashboard query did not return an associative row.');
+            throw new \RuntimeException('Dashboard KPI query failed.');
         }
 
         return $row;
@@ -275,17 +275,7 @@ final class DashboardService implements DashboardServiceInterface
             throw new \RuntimeException($message, 0, $exception);
         }
 
-        if (!is_array($rows)) {
-            throw new \RuntimeException('Dashboard query did not return a row set.');
-        }
-
-        foreach ($rows as $index => $row) {
-            if (!is_array($row)) {
-                throw new \RuntimeException(sprintf('Dashboard query returned an invalid row at index %d.', $index));
-            }
-        }
-
-        return array_values($rows);
+        return $rows;
     }
 
     /**

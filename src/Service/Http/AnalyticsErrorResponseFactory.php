@@ -20,7 +20,15 @@ final class AnalyticsErrorResponseFactory implements AnalyticsErrorResponseFacto
     }
 
     /**
+     * @param string              $operation
+     * @param string              $error
+     * @param string              $errorCode
+     * @param int                 $status
+     * @param float               $startedAt
+     * @param bool                $retryable
      * @param array<string,mixed> $extra
+     *
+     * @return JsonResponse
      */
     public function create(
         string $operation,
@@ -39,7 +47,7 @@ final class AnalyticsErrorResponseFactory implements AnalyticsErrorResponseFacto
             'retryable' => $retryable,
             'component' => self::COMPONENT,
             'operation' => $operation,
-            'time' => (new \DateTimeImmutable('now', new \DateTimeZone('UTC')))->format(DATE_ATOM),
+            'time' => $this->currentTime(),
             'duration_ms' => $this->durationMs($startedAt),
             'correlation_id' => $this->correlationIds->current(),
             'tenant' => $this->tenantContext->current(),
@@ -51,5 +59,10 @@ final class AnalyticsErrorResponseFactory implements AnalyticsErrorResponseFacto
     private function durationMs(float $startedAt): int
     {
         return (int) round((microtime(true) - $startedAt) * 1000);
+    }
+
+    private function currentTime(): string
+    {
+        return gmdate(DATE_ATOM);
     }
 }

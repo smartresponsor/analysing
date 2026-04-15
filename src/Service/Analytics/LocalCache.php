@@ -21,6 +21,9 @@ final class LocalCache implements LocalCacheInterface
     {
     }
 
+    /**
+     * @throws \Throwable
+     */
     public function get(string $key, callable $fallback, int $ttl = 60): mixed
     {
         $key = trim($key);
@@ -156,6 +159,9 @@ final class LocalCache implements LocalCacheInterface
         }
     }
 
+    /**
+     * @throws \Throwable
+     */
     private function runFallback(callable $fallback, string $key): mixed
     {
         try {
@@ -185,6 +191,6 @@ final class LocalCache implements LocalCacheInterface
 
     private function now(): int
     {
-        return (new \DateTimeImmutable())->getTimestamp();
+        return time();
     }
 }

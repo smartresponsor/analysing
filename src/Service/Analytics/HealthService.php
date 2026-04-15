@@ -9,28 +9,28 @@ use App\ServiceInterface\Analytics\HealthServiceInterface;
 use App\ServiceInterface\Analytics\KpiRegistryInterface;
 use Psr\Log\LoggerInterface;
 
-final class HealthService implements HealthServiceInterface
+final readonly class HealthService implements HealthServiceInterface
 {
     public function __construct(
-        private readonly LoggerInterface $logger,
-        private readonly KpiRegistryInterface $registry,
-        private readonly string $storageDriver = 'unknown',
-        private readonly string $storageMode = 'unknown',
-        private readonly bool $storageAvailable = false,
-        private readonly bool $idempotencyEnabled = false,
-        private readonly string $idempotencyMode = 'disabled',
-        private readonly bool $idempotencyRequired = false,
-        private readonly bool $authRequired = false,
-        private readonly bool $authPublicRead = true,
-        private readonly bool $rateLimitEnabled = false,
-        private readonly string $rateLimitMode = 'disabled',
-        private readonly int $rateLimitWindowSeconds = 60,
-        private readonly int $rateLimitDefaultWriteLimit = 60,
-        private readonly bool $tenantContextEnabled = true,
-        private readonly ?TenantContext $tenantContext = null,
-        private readonly string $storagePrepareCommand = 'php bin/console analytics:storage:prepare --seed',
+        private LoggerInterface $logger,
+        private KpiRegistryInterface $registry,
+        private string $storageDriver = 'unknown',
+        private string $storageMode = 'unknown',
+        private bool $storageAvailable = false,
+        private bool $idempotencyEnabled = false,
+        private string $idempotencyMode = 'disabled',
+        private bool $idempotencyRequired = false,
+        private bool $authRequired = false,
+        private bool $authPublicRead = true,
+        private bool $rateLimitEnabled = false,
+        private string $rateLimitMode = 'disabled',
+        private int $rateLimitWindowSeconds = 60,
+        private int $rateLimitDefaultWriteLimit = 60,
+        private bool $tenantContextEnabled = true,
+        private ?TenantContext $tenantContext = null,
+        private string $storagePrepareCommand = 'php bin/console analytics:storage:prepare --seed',
         /** @var list<string> */
-        private readonly array $storageRequiredTables = [],
+        private array $storageRequiredTables = ['aggregate_funnel_daily', 'retention_cohort_daily', 'path_transition_daily', 'experiment_metric_daily', 'analytics_alert_rule'],
     ) {
     }
 

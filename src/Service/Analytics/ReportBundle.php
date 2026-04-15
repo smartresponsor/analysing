@@ -41,7 +41,7 @@ final class ReportBundle implements ReportBundleInterface
         $manifest = [];
 
         foreach ($datasets as $name => $rows) {
-            $datasetName = trim((string) $name);
+            $datasetName = trim($name);
             if ('' === $datasetName) {
                 $this->logger->warning('Analytics report bundle rejected a dataset with an empty name.');
                 throw new \InvalidArgumentException('Dataset name must not be empty.');

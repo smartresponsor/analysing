@@ -6,9 +6,6 @@ namespace App\ServiceInterface\Analytics;
 
 interface ExperimentServiceInterface
 {
-    /**
-     * @return string
-     */
     public function choose(string $experimentKey, string $subjectId): string;
 
     public function record(string $experimentKey, string $variantKey, string $metric, float $value = 1.0): void;

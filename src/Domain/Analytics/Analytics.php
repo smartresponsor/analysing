@@ -13,11 +13,11 @@ use App\DomainInterface\Analytics\AnalyticsInterface;
 use App\DomainInterface\Analytics\ClickhouseClientInterface;
 use Psr\Log\LoggerInterface;
 
-final class Analytics implements AnalyticsInterface
+final readonly class Analytics implements AnalyticsInterface
 {
     public function __construct(
-        private readonly ClickhouseClientInterface $client,
-        private readonly LoggerInterface $logger,
+        private ClickhouseClientInterface $client,
+        private LoggerInterface $logger,
     ) {
     }
 
@@ -51,7 +51,7 @@ final class Analytics implements AnalyticsInterface
     {
         $normalized = $this->normalizeRangeParams($param, false);
         $normalized['cohort'] = $this->normalizeRequiredDateString($param, 'cohort');
-        $normalized['days'] = $this->normalizePositiveInteger($param, 'days');
+        $normalized['days'] = $this->normalizeDays($param);
 
         $rows = $this->client->query($this->loadQuery('retention.sql'), $normalized);
         $validated = $this->validateQueryRows($rows, ['day_offset', 'active_user'], 'retention');
@@ -150,15 +150,15 @@ final class Analytics implements AnalyticsInterface
     /**
      * @param array<string,mixed> $param
      */
-    private function normalizePositiveInteger(array $param, string $field): int
+    private function normalizeDays(array $param): int
     {
-        if (!array_key_exists($field, $param)) {
-            throw new \InvalidArgumentException(sprintf('%s must be provided.', $field));
+        if (!array_key_exists('days', $param)) {
+            throw new \InvalidArgumentException('days must be provided.');
         }
 
-        $value = filter_var($param[$field], FILTER_VALIDATE_INT, ['options' => ['min_range' => 1]]);
+        $value = filter_var($param['days'], FILTER_VALIDATE_INT, ['options' => ['min_range' => 1]]);
         if (!is_int($value)) {
-            throw new \InvalidArgumentException(sprintf('%s must be a positive integer.', $field));
+            throw new \InvalidArgumentException('days must be a positive integer.');
         }
 
         return $value;

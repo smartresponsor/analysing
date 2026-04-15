@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace App\Tests\Unit\Analytics;
 
 use App\Tests\Support\JsonPayloadAssertionsTrait;
-
 use PHPUnit\Framework\TestCase;
 
 final class GuardConfigConsistencyTest extends TestCase

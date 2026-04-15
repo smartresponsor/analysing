@@ -115,7 +115,7 @@ class AlertLog
     }
 
     /** @param array<string|int,mixed> $values
-     *  @return array<string|int,mixed>
+     * @return array<string|int,mixed>
      */
     private function normalizeNestedArray(array $values): array
     {

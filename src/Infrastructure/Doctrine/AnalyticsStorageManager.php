@@ -5,14 +5,17 @@ declare(strict_types=1);
 namespace App\Infrastructure\Doctrine;
 
 use Doctrine\DBAL\Connection;
+use Doctrine\DBAL\Exception;
+use Doctrine\DBAL\Schema\Comparator;
+use Doctrine\DBAL\Schema\SchemaException;
 use Psr\Log\LoggerInterface;
 
-final class AnalyticsStorageManager
+final readonly class AnalyticsStorageManager
 {
     public function __construct(
-        private readonly ConnectionFactory $connectionFactory,
-        private readonly AnalyticsStorageSchemaDefinition $definition,
-        private readonly LoggerInterface $logger,
+        private ConnectionFactory $connectionFactory,
+        private AnalyticsStorageSchemaDefinition $definition,
+        private LoggerInterface $logger,
     ) {
     }
 
@@ -25,6 +28,18 @@ final class AnalyticsStorageManager
      *   existing_tables: list<string>,
      *   missing_tables: list<string>
      * }
+     */
+    /**
+     * @return array{
+     *   ready: bool,
+     *   mode: string,
+     *   path: ?string,
+     *   required_tables: list<string>,
+     *   existing_tables: list<string>,
+     *   missing_tables: list<string> }
+     *
+     * @throws Exception
+     * @throws \Throwable
      */
     public function inspect(): array
     {
@@ -61,13 +76,30 @@ final class AnalyticsStorageManager
      *   missing_tables: list<string>
      * }
      */
+    /**
+     * @param bool $seed
+     *
+     * @return array{
+     *   mode: string,
+     *   path: ?string,
+     *   executed_sql_count: int,
+     *   seeded: bool,
+     *   created_tables: list<string>,
+     *   missing_tables: list<string> }
+     *
+     * @throws Exception
+     * @throws SchemaException
+     * @throws \Throwable
+     */
     public function prepare(bool $seed = false): array
     {
         $connection = $this->connectionFactory->create();
         $schemaManager = $connection->createSchemaManager();
         $currentSchema = $schemaManager->introspectSchema();
         $targetSchema = $this->definition->createSchema();
-        $sql = $currentSchema->getMigrateToSql($targetSchema, $connection->getDatabasePlatform());
+        $platform = $connection->getDatabasePlatform();
+        $schemaDiff = (new Comparator($platform))->compareSchemas($currentSchema, $targetSchema);
+        $sql = $schemaDiff->toSql($platform);
 
         $connection->beginTransaction();
 
@@ -104,11 +136,34 @@ final class AnalyticsStorageManager
         ];
     }
 
+    /**
+     * @throws Exception
+     */
     private function detectMode(Connection $connection): string
     {
-        return $connection->getDatabasePlatform()->getName();
+        $platformClass = $connection->getDatabasePlatform()::class;
+        $lower = strtolower($platformClass);
+
+        if (str_contains($lower, 'sqlite')) {
+            return 'sqlite';
+        }
+        if (str_contains($lower, 'postgres')) {
+            return 'postgresql';
+        }
+        if (str_contains($lower, 'mysql')) {
+            return 'mysql';
+        }
+
+        return $platformClass;
     }
 
+    /**
+     * @param Connection $connection
+     *
+     * @throws Exception
+     * @throws \JsonException
+     * @throws \DateMalformedStringException
+     */
     private function seedIfEmpty(Connection $connection): void
     {
         if (0 === $this->readCount($connection, 'aggregate_funnel_daily')) {
@@ -116,7 +171,7 @@ final class AnalyticsStorageManager
         }
 
         if (0 === $this->readCount($connection, 'analytics_alert_rule')) {
-            $now = (new \DateTimeImmutable('now', new \DateTimeZone('UTC')))->format('Y-m-d H:i:s');
+            $now = gmdate('Y-m-d H:i:s');
             $connection->insert('analytics_alert_rule', [
                 'code' => 'gross-drop',
                 'name' => 'Gross drop alert',
@@ -129,7 +184,9 @@ final class AnalyticsStorageManager
         }
     }
 
-
+    /**
+     * @throws Exception
+     */
     private function readCount(Connection $connection, string $table): int
     {
         $value = $connection->fetchOne(sprintf('SELECT COUNT(*) FROM %s', $table));
@@ -140,6 +197,12 @@ final class AnalyticsStorageManager
         return (int) $value;
     }
 
+    /**
+     * @param Connection $connection
+     *
+     * @throws Exception
+     * @throws \DateMalformedStringException
+     */
     private function seedAggregateTables(Connection $connection): void
     {
         $today = new \DateTimeImmutable('today', new \DateTimeZone('UTC'));
@@ -147,7 +210,6 @@ final class AnalyticsStorageManager
         for ($i = 6; $i >= 0; --$i) {
             $day = $today->modify(sprintf('-%d days', $i))->format('Y-m-d');
             $gross = 240 - ($i * 12);
-            $active = 120 - ($i * 2);
             $transition = 80 - ($i * 3);
 
             $connection->insert('aggregate_funnel_daily', [

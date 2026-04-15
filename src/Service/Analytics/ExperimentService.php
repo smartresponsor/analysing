@@ -14,7 +14,7 @@ final class ExperimentService implements ExperimentServiceInterface
     private const int MAX_RECORDED_EVENTS = 1000;
 
     /** @var array<string, array<string, int>> */
-    private array $weight = [];
+    private array $weight;
 
     /** @var list<array<string, scalar>> */
     private array $recorded = [];
@@ -104,7 +104,7 @@ final class ExperimentService implements ExperimentServiceInterface
         $normalized = [];
 
         foreach ($weightMap as $experimentKey => $rawVariants) {
-            $normalizedExperimentKey = trim((string) $experimentKey);
+            $normalizedExperimentKey = trim($experimentKey);
             if ('' === $normalizedExperimentKey) {
                 $this->logger->warning('Analytics experiment service ignored an empty experiment key in weight map.');
                 continue;

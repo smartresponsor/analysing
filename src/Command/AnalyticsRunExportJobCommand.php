@@ -32,7 +32,11 @@ final class AnalyticsRunExportJobCommand extends Command
 
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
-        $id = (int) $input->getArgument('id');
+        $idArgument = $input->getArgument('id');
+        if (!is_scalar($idArgument) && null !== $idArgument) {
+            throw new \InvalidArgumentException('Export job id must be scalar.');
+        }
+        $id = (int) $idArgument;
         $job = $this->em->getRepository(ExportJob::class)->find($id);
 
         if (!$job instanceof ExportJob) {

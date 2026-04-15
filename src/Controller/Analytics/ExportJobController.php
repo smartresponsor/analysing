@@ -15,15 +15,15 @@ use Symfony\Component\Routing\Attribute\Route;
 /**
  * Provides HTTP endpoints for interacting with analytics export jobs.
  */
-final class ExportJobController
+final readonly class ExportJobController
 {
     /**
      * @param EntityManagerInterface  $entityManager doctrine entity manager for job retrieval
      * @param ExportJobMetricsService $metrics       service providing aggregated metrics
      */
     public function __construct(
-        private readonly EntityManagerInterface $entityManager,
-        private readonly ExportJobMetricsService $metrics,
+        private EntityManagerInterface $entityManager,
+        private ExportJobMetricsService $metrics,
     ) {
     }
 

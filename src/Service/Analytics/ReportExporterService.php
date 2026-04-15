@@ -6,127 +6,85 @@ namespace App\Service\Analytics;
 
 use App\ServiceInterface\Analytics\ReportExporterServiceInterface;
 use Psr\Log\LoggerInterface;
+use Random\RandomException;
 
-final class ReportExporterService implements ReportExporterServiceInterface
+final readonly class ReportExporterService implements ReportExporterServiceInterface
 {
-    private const int MAX_EXPORT_ROWS = 10000;
-    private const int MAX_COLUMNS = 256;
-    private const int MAX_COLUMN_NAME_LENGTH = 128;
-
-    public function __construct(private readonly LoggerInterface $logger)
-    {
+    public function __construct(
+        private LoggerInterface $logger,
+    ) {
     }
 
-    /**
-     * @param list<array<string,mixed>> $rows
-     */
     public function export(array $rows, string $format = 'csv', ?string $dir = null): string
     {
-        $format = $this->normalizeFormat($format);
-        if (count($rows) > self::MAX_EXPORT_ROWS) {
-            throw new \InvalidArgumentException('Analytics report export exceeds the maximum supported row count.');
-        }
-        $dir = $dir ?? sys_get_temp_dir();
-        if (!is_dir($dir) && !mkdir($dir, 0777, true) && !is_dir($dir)) {
-            $this->logger->error('Analytics report exporter could not create export directory.', [
-                'directory' => $dir,
-                'format' => $format,
-            ]);
-
-            throw new \RuntimeException('Cannot create export directory: '.$dir);
+        $targetDir = null === $dir || '' === trim($dir) ? sys_get_temp_dir() : trim($dir);
+        if (!is_dir($targetDir) && !mkdir($targetDir, 0777, true) && !is_dir($targetDir)) {
+            throw new \RuntimeException('Unable to create analytics export directory: '.$targetDir);
         }
 
-        $ts = (new \DateTimeImmutable())->format('Ymd_His');
-        $path = rtrim($dir, DIRECTORY_SEPARATOR).DIRECTORY_SEPARATOR."analytics_report_{$ts}.csv";
-        $this->writeCsv($rows, $path, ',');
-        $this->logger->info('Analytics report exporter wrote CSV export.', [
-            'path' => $path,
-            'rows' => count($rows),
-            'columns' => [] === $rows ? 0 : count(array_keys($rows[0])),
-        ]);
+        $path = rtrim($targetDir, DIRECTORY_SEPARATOR).DIRECTORY_SEPARATOR.'analytics_export_'.$this->randomExportToken().'.'.$this->normalizeFormat($format);
 
-        return $path;
+        return $this->exportToPath($rows, $path, $format);
     }
 
     /**
      * @param list<array<string,mixed>> $rows
+     *
+     * @return non-empty-string
      */
-    private function writeCsv(array $rows, string $path, string $delimiter = ','): void
+    public function exportToPath(array $rows, string $targetPath, string $format = 'csv'): string
     {
-        $fh = fopen($path, 'w');
-        if (false === $fh) {
-            $this->logger->error('Analytics report exporter could not open target file.', [
-                'path' => $path,
-            ]);
+        $normalizedPath = trim($targetPath);
+        if ('' === $normalizedPath) {
+            throw new \InvalidArgumentException('Analytics export target path must not be empty.');
+        }
 
-            throw new \RuntimeException('Cannot open file for writing: '.$path);
+        $this->normalizeFormat($format);
+
+        $dir = dirname($normalizedPath);
+        if (!is_dir($dir) && !mkdir($dir, 0777, true) && !is_dir($dir)) {
+            throw new \RuntimeException('Unable to create analytics export target directory: '.$dir);
+        }
+
+        $handle = fopen($normalizedPath, 'w');
+        if (false === $handle) {
+            throw new \RuntimeException('Unable to open analytics export target path: '.$normalizedPath);
         }
 
         try {
-            $headers = $this->normalizeHeaders($rows, $path);
-            if ([] !== $headers && false === fputcsv($fh, $headers, $delimiter)) {
-                $this->logger->error('Analytics report exporter failed to write CSV header.', [
-                    'path' => $path,
-                ]);
-
-                throw new \RuntimeException('Cannot write CSV header: '.$path);
-            }
-
-            foreach ($rows as $index => $row) {
-                if (!is_array($row)) {
-                    $this->logger->error('Analytics report exporter rejected an invalid row shape.', [
-                        'path' => $path,
-                        'row_index' => $index,
-                        'row_type' => get_debug_type($row),
-                    ]);
-
-                    throw new \RuntimeException('Analytics report exporter row must be an array.');
-                }
-
-                $row = $this->alignRowToHeaders($row, $headers);
-                try {
-                    $serializedRow = array_map(static function (mixed $value): string {
-                        if (is_bool($value)) {
-                            return $value ? 'true' : 'false';
-                        }
-                        if ($value instanceof \DateTimeInterface) {
-                            return $value->format(DATE_ATOM);
-                        }
-                        if (is_array($value)) {
-                            return json_encode($value, JSON_THROW_ON_ERROR | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
-                        }
-
-                        if (null === $value) {
-                            return '';
-                        }
-                        if (is_scalar($value)) {
-                            return (string) $value;
-                        }
-
-                        throw new \RuntimeException('CSV row values must be scalar, array, DateTimeInterface, or null.');
-                    }, $row);
-                } catch (\JsonException $exception) {
-                    $this->logger->error('Analytics report exporter failed to encode CSV row payload.', [
-                        'path' => $path,
-                        'row_index' => $index,
-                        'exception' => $exception,
-                    ]);
-
-                    throw new \RuntimeException('Cannot encode CSV row payload.', 0, $exception);
-                }
-
-                $result = fputcsv($fh, $serializedRow, $delimiter);
-                if (false === $result) {
-                    $this->logger->error('Analytics report exporter failed to write CSV row.', [
-                        'path' => $path,
-                        'row_index' => $index,
-                    ]);
-
-                    throw new \RuntimeException('Cannot write CSV row: '.$path);
+            $headers = $this->collectHeaders($rows);
+            if ([] !== $headers) {
+                fputcsv($handle, $headers);
+                foreach ($rows as $row) {
+                    $record = [];
+                    foreach ($headers as $header) {
+                        $record[] = self::normalizeCell($row[$header] ?? null);
+                    }
+                    fputcsv($handle, $record);
                 }
             }
         } finally {
-            fclose($fh);
+            fclose($handle);
+        }
+
+        $this->logger->info('Analytics export written.', [
+            'path' => $normalizedPath,
+            'rows' => count($rows),
+        ]);
+
+        return $normalizedPath;
+    }
+
+    private function randomExportToken(): string
+    {
+        try {
+            return bin2hex(random_bytes(6));
+        } catch (RandomException $exception) {
+            $this->logger->warning('Analytics export token generation fell back to deterministic entropy.', [
+                'exception' => $exception,
+            ]);
+
+            return substr(hash('sha256', uniqid('analytics_export_', true)), 0, 12);
         }
     }
 
@@ -134,18 +92,10 @@ final class ReportExporterService implements ReportExporterServiceInterface
     {
         $normalized = strtolower(trim($format));
         if ('' === $normalized) {
-            $this->logger->warning('Analytics report exporter received an empty format. Falling back to csv.');
-
-            return 'csv';
+            $normalized = 'csv';
         }
-
         if ('csv' !== $normalized) {
-            $this->logger->error('Analytics report exporter received an unsupported format.', [
-                'format' => $format,
-                'normalized' => $normalized,
-            ]);
-
-            throw new \InvalidArgumentException('Unsupported export format: '.$format);
+            throw new \InvalidArgumentException('Unsupported report format: '.$format);
         }
 
         return $normalized;
@@ -156,50 +106,40 @@ final class ReportExporterService implements ReportExporterServiceInterface
      *
      * @return list<string>
      */
-    private function normalizeHeaders(array $rows, string $path): array
+    private function collectHeaders(array $rows): array
     {
-        if ([] === $rows) {
-            return [];
-        }
-
         $headers = [];
-        foreach (array_keys($rows[0]) as $header) {
-            $name = trim((string) $header);
-            if ('' === $name) {
-                throw new \RuntimeException('Analytics report exporter header names must not be empty.');
+        foreach ($rows as $row) {
+            foreach ($row as $key => $_value) {
+                if (!is_string($key) || '' === $key || isset($headers[$key])) {
+                    continue;
+                }
+                $headers[$key] = $key;
             }
-            if (mb_strlen($name) > self::MAX_COLUMN_NAME_LENGTH) {
-                $this->logger->error('Analytics report exporter rejected an overlong header name.', [
-                    'path' => $path,
-                    'header' => $name,
-                    'max_length' => self::MAX_COLUMN_NAME_LENGTH,
-                ]);
-
-                throw new \RuntimeException('Analytics report exporter header name exceeds the maximum supported length.');
-            }
-            $headers[] = $name;
         }
 
-        if (count($headers) > self::MAX_COLUMNS) {
-            throw new \RuntimeException('Analytics report exporter exceeds the maximum supported column count.');
-        }
-
-        return $headers;
+        return array_values($headers);
     }
 
-    /**
-     * @param array<string,mixed> $row
-     * @param list<string>        $headers
-     *
-     * @return array<string,mixed>
-     */
-    private function alignRowToHeaders(array $row, array $headers): array
+    private static function normalizeCell(mixed $value): string|int|float
     {
-        $aligned = [];
-        foreach ($headers as $header) {
-            $aligned[$header] = $row[$header] ?? null;
+        if (null === $value) {
+            return '';
+        }
+        if (is_int($value) || is_float($value)) {
+            return $value;
+        }
+        if (is_bool($value)) {
+            return $value ? '1' : '0';
+        }
+        if (is_scalar($value)) {
+            return (string) $value;
         }
 
-        return $aligned;
+        try {
+            return json_encode($value, JSON_THROW_ON_ERROR);
+        } catch (\JsonException) {
+            return '[unencodable]';
+        }
     }
 }

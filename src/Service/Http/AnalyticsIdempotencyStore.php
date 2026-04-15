@@ -106,11 +106,12 @@ final class AnalyticsIdempotencyStore implements AnalyticsIdempotencyStoreInterf
             $statusCode = $response->getStatusCode();
             if ($statusCode >= 500 || Response::HTTP_TOO_MANY_REQUESTS === $statusCode) {
                 $this->truncateHandle($handle);
+
                 return;
             }
 
             $record['state'] = 'completed';
-            $record['completed_at'] = (new \DateTimeImmutable())->format(DATE_ATOM);
+            $record['completed_at'] = gmdate(DATE_ATOM);
             $record['response'] = [
                 'status' => $statusCode,
                 'content_type' => $response->headers->get('Content-Type', 'application/json'),
@@ -118,6 +119,8 @@ final class AnalyticsIdempotencyStore implements AnalyticsIdempotencyStoreInterf
             ];
 
             $this->writeToHandle($handle, $record);
+        } catch (\JsonException) {
+            $this->truncateHandle($handle);
         } finally {
             flock($handle, LOCK_UN);
             fclose($handle);
@@ -172,7 +175,6 @@ final class AnalyticsIdempotencyStore implements AnalyticsIdempotencyStoreInterf
         return rtrim($this->directory, '/').'/'.$hash.'.json';
     }
 
-    /** @return array<string,mixed>|null */
     /**
      * @param resource $handle
      *
@@ -212,19 +214,20 @@ final class AnalyticsIdempotencyStore implements AnalyticsIdempotencyStoreInterf
             return true;
         }
 
-        try {
-            $expiration = new \DateTimeImmutable($expiresAt);
-        } catch (\Exception) {
+        $expiration = strtotime($expiresAt);
+        if (false === $expiration) {
             return true;
         }
 
-        return $expiration <= new \DateTimeImmutable();
+        return $expiration <= time();
     }
 
-    /** @return array<string,mixed> */
+    /**
+     * @return array{version:int,state:string,route:string,tenant:string,key:string,request_fingerprint:string,created_at:string,expires_at:string}
+     */
     private function newPendingRecord(string $route, string $tenant, string $key, string $requestFingerprint): array
     {
-        $now = new \DateTimeImmutable();
+        $now = time();
 
         return [
             'version' => 1,
@@ -233,15 +236,16 @@ final class AnalyticsIdempotencyStore implements AnalyticsIdempotencyStoreInterf
             'tenant' => $tenant,
             'key' => $key,
             'request_fingerprint' => $requestFingerprint,
-            'created_at' => $now->format(DATE_ATOM),
-            'expires_at' => $now->modify(sprintf('+%d seconds', $this->ttlSeconds))->format(DATE_ATOM),
+            'created_at' => gmdate(DATE_ATOM, $now),
+            'expires_at' => gmdate(DATE_ATOM, $now + $this->ttlSeconds),
         ];
     }
 
-    /** @param array<string,mixed> $record */
     /**
-     * @param resource $handle
+     * @param resource            $handle
      * @param array<string,mixed> $record
+     *
+     * @throws \JsonException
      */
     private function writeToHandle($handle, array $record): void
     {
