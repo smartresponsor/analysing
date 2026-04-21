@@ -49,6 +49,6 @@ final readonly class RetentionService implements RetentionServiceInterface
             }
         }
 
-        return array_values($pruned);
+        return $pruned;
     }
 }

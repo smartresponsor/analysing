@@ -10,6 +10,6 @@ final class DashboardSmokeTest extends TestCase
 {
     public function testDummy(): void
     {
-        $this->assertTrue(true);
+        self::expectNotToPerformAssertions();
     }
 }

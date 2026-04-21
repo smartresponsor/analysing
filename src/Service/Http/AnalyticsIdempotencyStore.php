@@ -203,7 +203,20 @@ final class AnalyticsIdempotencyStore implements AnalyticsIdempotencyStoreInterf
             return null;
         }
 
-        return is_array($decoded) ? $decoded : null;
+        if (!is_array($decoded)) {
+            return null;
+        }
+
+        $normalized = [];
+        foreach ($decoded as $key => $value) {
+            if (!is_string($key)) {
+                return null;
+            }
+
+            $normalized[$key] = $value;
+        }
+
+        return $normalized;
     }
 
     /** @param array<string,mixed> $record */

@@ -118,9 +118,9 @@ final class IngestController implements IngestControllerInterface
                 continue;
             }
 
-            $type = $this->normalizeIdentifier((string) ($item['type'] ?? 'track'), 'event type');
-            $event = $this->normalizeIdentifier((string) ($item['event'] ?? ('page' === $type ? 'page' : $type)), 'event name');
-            $userId = $this->normalizeIdentifier((string) ($item['userId'] ?? $item['anonymousId'] ?? 'anon'), 'user id');
+            $type = $this->normalizeIdentifier($item['type'] ?? 'track', 'event type');
+            $event = $this->normalizeIdentifier($item['event'] ?? ('page' === $type ? 'page' : $type), 'event name');
+            $userId = $this->normalizeIdentifier($item['userId'] ?? $item['anonymousId'] ?? 'anon', 'user id');
             $context = isset($item['context']) && is_array($item['context']) ? $item['context'] : [];
             $sessionId = $this->normalizeOptionalSessionIdentifier($context['sessionId'] ?? null);
             $timestamp = $this->normalizeTimestamp($item['timestamp'] ?? null);
@@ -154,9 +154,13 @@ final class IngestController implements IngestControllerInterface
         return ($this->jsonDecoder ?? new JsonRequestBodyDecoder())->decode($request);
     }
 
-    private function normalizeIdentifier(string $value, string $field): string
+    private function normalizeIdentifier(mixed $value, string $field): string
     {
-        $normalized = trim($value);
+        if (!is_scalar($value)) {
+            throw new \InvalidArgumentException(sprintf('%s must be a non-empty string.', ucfirst($field)));
+        }
+
+        $normalized = is_string($value) ? trim($value) : trim((string) $value);
         if ('' === $normalized) {
             throw new \InvalidArgumentException(sprintf('%s must be a non-empty string.', ucfirst($field)));
         }

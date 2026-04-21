@@ -21,7 +21,7 @@ final class ExportJob
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column(type: 'integer')]
-    private ?int $id = null;
+    private int $id = 0;
 
     #[ORM\Column(type: 'string', length: 64)]
     private string $type;
@@ -60,7 +60,7 @@ final class ExportJob
         $this->createdAt = new \DateTimeImmutable();
     }
 
-    public function getId(): ?int
+    public function getId(): int
     {
         return $this->id;
     }

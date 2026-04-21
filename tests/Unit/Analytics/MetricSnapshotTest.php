@@ -21,7 +21,6 @@ final class MetricSnapshotTest extends TestCase
 
         self::assertSame('revenue', $snapshot->getMetric());
         self::assertSame(['region' => 'us', 'channel' => 'ads'], $snapshot->getDimensions());
-        self::assertNotNull($snapshot->getCreatedAt());
     }
 
     public function testRejectsInvalidPeriodOrder(): void

@@ -111,6 +111,8 @@ final class AnalyticsRequestAuthSubscriber implements AnalyticsRequestAuthSubscr
             return;
         }
 
+        $scope = $this->normalizeAssociativeArray($scope);
+
         if (!$this->isRouteAllowed($route, $scope)) {
             $event->setResponse($this->reject(
                 'Analytics authorization scope does not allow this route.',
@@ -211,5 +213,24 @@ final class AnalyticsRequestAuthSubscriber implements AnalyticsRequestAuthSubscr
         ]);
 
         return $this->errors->create($route, $error, $errorCode, $status, $startedAt);
+    }
+
+    /**
+     * @param array<array-key, mixed> $scope
+     *
+     * @return array<string, mixed>
+     */
+    private function normalizeAssociativeArray(array $scope): array
+    {
+        $normalized = [];
+        foreach ($scope as $key => $value) {
+            if (!is_string($key)) {
+                throw new \InvalidArgumentException('Analytics authorization scope is invalid.');
+            }
+
+            $normalized[$key] = $value;
+        }
+
+        return $normalized;
     }
 }

@@ -189,14 +189,6 @@ final readonly class InfraRepository implements InfraRepositoryInterface
     private function normalizeFunnelRows(array $rows): array
     {
         return array_map(function (mixed $row, int $index): array {
-            if (!is_array($row)) {
-                $this->logger->error('Analytics infra repository funnel query returned an invalid row.', [
-                    'row_index' => $index,
-                    'row_type' => get_debug_type($row),
-                ]);
-                throw new \RuntimeException(sprintf('Aggregate funnel repository returned an invalid row at index %d.', $index));
-            }
-
             return [
                 'day' => $this->readRequiredString($row, 'day', 'funnel', $index),
                 'user_count' => $this->readRequiredInt($row, 'user_count', 'funnel', $index),
@@ -212,14 +204,6 @@ final readonly class InfraRepository implements InfraRepositoryInterface
     private function normalizeRetentionRows(array $rows): array
     {
         return array_map(function (mixed $row, int $index): array {
-            if (!is_array($row)) {
-                $this->logger->error('Analytics infra repository retention query returned an invalid row.', [
-                    'row_index' => $index,
-                    'row_type' => get_debug_type($row),
-                ]);
-                throw new \RuntimeException(sprintf('Aggregate retention repository returned an invalid row at index %d.', $index));
-            }
-
             return [
                 'day_offset' => $this->readRequiredInt($row, 'day_offset', 'retention', $index),
                 'active_user' => $this->readRequiredInt($row, 'active_user', 'retention', $index),
@@ -235,14 +219,6 @@ final readonly class InfraRepository implements InfraRepositoryInterface
     private function normalizePathRows(array $rows): array
     {
         return array_map(function (mixed $row, int $index): array {
-            if (!is_array($row)) {
-                $this->logger->error('Analytics infra repository path query returned an invalid row.', [
-                    'row_index' => $index,
-                    'row_type' => get_debug_type($row),
-                ]);
-                throw new \RuntimeException(sprintf('Aggregate path repository returned an invalid row at index %d.', $index));
-            }
-
             return [
                 'from_event' => $this->readRequiredString($row, 'from_event', 'path', $index),
                 'to_event' => $this->readRequiredString($row, 'to_event', 'path', $index),
@@ -323,12 +299,8 @@ final readonly class InfraRepository implements InfraRepositoryInterface
     private function normalizeStepList(array $steps): array
     {
         $normalized = array_values(array_unique(array_map(
-            static function (mixed $step): string {
-                if (!is_scalar($step)) {
-                    throw new \InvalidArgumentException('steps must contain only scalar values.');
-                }
-
-                $value = trim((string) $step);
+            static function (string $step): string {
+                $value = trim($step);
                 if ('' === $value) {
                     throw new \InvalidArgumentException('steps must contain only non-empty values.');
                 }

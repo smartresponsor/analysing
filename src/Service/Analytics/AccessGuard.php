@@ -103,6 +103,6 @@ final class AccessGuard implements AccessGuardInterface
             }
         }
 
-        return array_values(array_keys($normalized));
+        return array_keys($normalized);
     }
 }

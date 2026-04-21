@@ -10,6 +10,6 @@ final class DashboardPageSmokeTest extends TestCase
 {
     public function testTrue(): void
     {
-        $this->assertTrue(true);
+        self::expectNotToPerformAssertions();
     }
 }

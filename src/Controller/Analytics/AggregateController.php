@@ -159,7 +159,26 @@ final class AggregateController implements AggregateControllerInterface
             throw new BadRequestHttpException('JSON payload must decode to an object or array.');
         }
 
-        return $payload;
+        return $this->normalizeAssociativePayload($payload);
+    }
+
+    /**
+     * @param array<array-key, mixed> $payload
+     *
+     * @return array<string, mixed>
+     */
+    private function normalizeAssociativePayload(array $payload): array
+    {
+        $normalized = [];
+        foreach ($payload as $key => $value) {
+            if (!is_string($key)) {
+                throw new BadRequestHttpException('JSON payload must decode to an object with string keys.');
+            }
+
+            $normalized[$key] = $value;
+        }
+
+        return $normalized;
     }
 
     /**

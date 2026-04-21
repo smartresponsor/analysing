@@ -15,7 +15,7 @@ class AlertRule
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column(type: 'integer')]
-    private ?int $id = null;
+    private int $id = 0;
 
     #[ORM\Column(type: 'string', length: 190)]
     private string $code;
@@ -55,7 +55,7 @@ class AlertRule
         $this->updatedAt = $now;
     }
 
-    public function getId(): ?int
+    public function getId(): int
     {
         return $this->id;
     }

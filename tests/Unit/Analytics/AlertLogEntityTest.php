@@ -17,7 +17,6 @@ final class AlertLogEntityTest extends TestCase
         self::assertSame('delivery', $log->getType());
         self::assertSame('sent', $log->getMessage());
         self::assertSame(['channel' => 'email', 'meta' => ['attempt' => 1]], $log->getContext());
-        self::assertNotNull($log->getCreatedAt());
     }
 
     public function testRejectsInvalidVendorId(): void

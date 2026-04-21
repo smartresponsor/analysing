@@ -14,7 +14,7 @@ final class KernelStructureTest extends TestCase
 
         self::assertStringContainsString('yield new FrameworkBundle();', $php);
         self::assertStringContainsString('yield new AnalysingBundle();', $php);
-        self::assertStringContainsString("\$loader->load(\$configDir.'/component/services.yaml');", $php);
-        self::assertStringContainsString("\$routes->import(\$configDir.'/component/routes.yaml');", $php);
+        self::assertStringContainsString("\$loader->load(\$configDir.'/services.php');", $php);
+        self::assertStringContainsString("\$routes->import(\$configDir.'/routes.php');", $php);
     }
 }

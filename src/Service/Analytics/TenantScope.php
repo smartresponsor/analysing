@@ -78,6 +78,6 @@ final class TenantScope implements TenantScopeInterface
             'skipped_rows' => $skipped,
         ]);
 
-        return array_values($filtered);
+        return $filtered;
     }
 }

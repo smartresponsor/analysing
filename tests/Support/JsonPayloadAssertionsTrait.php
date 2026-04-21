@@ -23,7 +23,7 @@ trait JsonPayloadAssertionsTrait
             throw new \RuntimeException('JSON response payload must decode to an array.');
         }
 
-        return $payload;
+        return $this->normalizeAssociativeArray($payload);
     }
 
     /**
@@ -38,7 +38,7 @@ trait JsonPayloadAssertionsTrait
             throw new \RuntimeException(sprintf('Payload key "%s" must be an array.', $key));
         }
 
-        return $value;
+        return $this->normalizeAssociativeArray($value);
     }
 
     /**
@@ -56,6 +56,25 @@ trait JsonPayloadAssertionsTrait
             throw new \RuntimeException('JSON file payload must decode to an array.');
         }
 
-        return $payload;
+        return $this->normalizeAssociativeArray($payload);
+    }
+
+    /**
+     * @param array<array-key, mixed> $payload
+     *
+     * @return array<string, mixed>
+     */
+    private function normalizeAssociativeArray(array $payload): array
+    {
+        $normalized = [];
+        foreach ($payload as $key => $value) {
+            if (!is_string($key)) {
+                throw new \RuntimeException('JSON payload must decode to an object with string keys.');
+            }
+
+            $normalized[$key] = $value;
+        }
+
+        return $normalized;
     }
 }

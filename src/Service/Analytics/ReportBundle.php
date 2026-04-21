@@ -127,7 +127,7 @@ final class ReportBundle implements ReportBundleInterface
             }
         }
 
-        $columnList = array_values(array_keys($columns));
+        $columnList = array_keys($columns);
         sort($columnList);
 
         return [

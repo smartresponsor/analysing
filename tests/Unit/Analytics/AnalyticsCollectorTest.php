@@ -28,8 +28,6 @@ final class AnalyticsCollectorTest extends TestCase
             new \DateTimeImmutable('2026-01-01 01:00:00'),
             ['tenant' => 'acme'],
         );
-
-        self::assertTrue(true);
     }
 
     public function testRecordRejectsInvalidMetricName(): void

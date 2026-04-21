@@ -6,7 +6,6 @@ namespace App\Analysing\Infrastructure\Doctrine;
 
 use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\Exception;
-use Doctrine\DBAL\Schema\Comparator;
 use Doctrine\DBAL\Schema\SchemaException;
 use Psr\Log\LoggerInterface;
 
@@ -45,10 +44,10 @@ final readonly class AnalyticsStorageManager
     {
         $connection = $this->connectionFactory->create();
         $schemaManager = $connection->createSchemaManager();
-        $existingTables = array_values(array_map(
+        $existingTables = array_map(
             static fn (string $name): string => strtolower($name),
             $schemaManager->listTableNames(),
-        ));
+        );
         sort($existingTables);
 
         $requiredTables = $this->definition->requiredTableNames();
@@ -95,11 +94,24 @@ final readonly class AnalyticsStorageManager
     {
         $connection = $this->connectionFactory->create();
         $schemaManager = $connection->createSchemaManager();
-        $currentSchema = $schemaManager->introspectSchema();
         $targetSchema = $this->definition->createSchema();
         $platform = $connection->getDatabasePlatform();
-        $schemaDiff = (new Comparator($platform))->compareSchemas($currentSchema, $targetSchema);
-        $sql = $schemaDiff->toSql($platform);
+        $existingTables = array_map(
+            static fn (string $name): string => strtolower($name),
+            $schemaManager->listTableNames(),
+        );
+        $missingTables = array_values(array_diff($this->definition->requiredTableNames(), $existingTables));
+        $sql = [];
+        if ([] !== $missingTables) {
+            foreach ($targetSchema->toSql($platform) as $statement) {
+                foreach ($missingTables as $tableName) {
+                    if (str_contains($statement, $tableName)) {
+                        $sql[] = $statement;
+                        break;
+                    }
+                }
+            }
+        }
 
         $connection->beginTransaction();
 

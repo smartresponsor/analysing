@@ -34,8 +34,6 @@ final class TokenServiceTest extends TestCase
         self::assertArrayHasKey('nested', $scope);
         self::assertIsArray($scope['nested']);
         self::assertSame(['a' => 1, 'b' => 2], $scope['nested']);
-        self::assertIsInt($iat);
-        self::assertIsInt($exp);
     }
 
     public function testIssueRejectsTooLargeTtl(): void

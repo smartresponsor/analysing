@@ -105,6 +105,10 @@ final class RollupService implements RollupServiceInterface
             'total' => $total,
         ]);
 
+        if ($total === (float) (int) $total) {
+            return (int) $total;
+        }
+
         return $total;
     }
 }

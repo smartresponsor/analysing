@@ -18,6 +18,8 @@ final class AnalyticsSmokeTest extends TestCase
             new \DateTimeImmutable('2026-01-31 23:59:59'),
             ['currency' => 'USD']
         );
-        $this->assertTrue($m instanceof MetricSnapshot);
+
+        self::assertSame('gmv', $m->getMetric());
+        self::assertSame(42.5, $m->getValue());
     }
 }

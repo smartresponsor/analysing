@@ -47,7 +47,7 @@ final readonly class ExportJobRunner
         $startedAt = microtime(true);
         $payload = $job->getPayload() ?? [];
         $rawFormat = $payload['format'] ?? $job->getType();
-        if (!is_scalar($rawFormat) && null !== $rawFormat) {
+        if (!is_scalar($rawFormat)) {
             $rawFormat = $job->getType();
         }
         $format = strtolower(trim((string) $rawFormat));

@@ -26,7 +26,7 @@ final class NotificationDispatcherTest extends TestCase
         $dispatcher = new NotificationDispatcher(new NullLogger());
         $dispatcher->dispatch($rule, 'Alert payload');
 
-        self::assertTrue(true);
+        self::assertSame('sales-high', $rule->getCode());
     }
 
     public function testDispatchRejectsEmptyMessage(): void

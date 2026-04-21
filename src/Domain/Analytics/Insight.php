@@ -108,9 +108,9 @@ final readonly class Insight implements InsightInterface
                 throw new \RuntimeException(sprintf('Metric tree %s contains an invalid node definition.', $name));
             }
 
-            $nodeId = trim((string) ($node['id'] ?? ''));
-            $title = trim((string) ($node['title'] ?? ''));
-            $sqlFile = trim((string) ($node['sql'] ?? ''));
+            $nodeId = $this->normalizeNodeString($node['id'] ?? null, 'node id', $name);
+            $title = $this->normalizeNodeString($node['title'] ?? null, 'node title', $name);
+            $sqlFile = $this->normalizeNodeString($node['sql'] ?? null, 'node sql file', $name);
             if ('' === $nodeId || '' === $title || '' === $sqlFile) {
                 throw new \RuntimeException(sprintf('Metric tree %s contains an incomplete node definition.', $name));
             }
@@ -127,8 +127,8 @@ final readonly class Insight implements InsightInterface
                 throw new \RuntimeException(sprintf('Metric tree %s contains an invalid edge definition.', $name));
             }
 
-            $from = trim((string) ($edge['from'] ?? ''));
-            $to = trim((string) ($edge['to'] ?? ''));
+            $from = $this->normalizeNodeString($edge['from'] ?? null, 'edge from', $name);
+            $to = $this->normalizeNodeString($edge['to'] ?? null, 'edge to', $name);
             if ('' === $from || '' === $to) {
                 throw new \RuntimeException(sprintf('Metric tree %s contains an incomplete edge definition.', $name));
             }
@@ -156,7 +156,7 @@ final readonly class Insight implements InsightInterface
         $validated = [];
 
         foreach ($rows as $index => $row) {
-            if (!is_array($row) || !array_key_exists('user_count', $row)) {
+            if (!array_key_exists('user_count', $row)) {
                 $this->logger->error('Insight anomaly query returned an invalid row.', [
                     'row_index' => $index,
                     'row_type' => get_debug_type($row),
@@ -235,6 +235,15 @@ final readonly class Insight implements InsightInterface
         }
 
         return $value;
+    }
+
+    private function normalizeNodeString(mixed $value, string $field, string $treeName): string
+    {
+        if (!is_scalar($value)) {
+            throw new \RuntimeException(sprintf('Metric tree %s contains an invalid %s definition.', $treeName, $field));
+        }
+
+        return trim((string) $value);
     }
 
     private function loadQuery(string $relativePath): string

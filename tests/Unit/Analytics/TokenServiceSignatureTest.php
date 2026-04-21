@@ -23,7 +23,7 @@ final class TokenServiceSignatureTest extends TestCase
 
         $claims = $service->verify($token);
 
-        self::assertIsArray($claims['scope'] ?? null);
+        self::assertArrayHasKey('scope', $claims);
         $scope = $claims['scope'];
         self::assertIsArray($scope);
         self::assertSame('acme', $scope['tenant'] ?? null);

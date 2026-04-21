@@ -51,7 +51,7 @@ final class AnalyticsRunPendingExportJobsCommand extends Command
         );
 
         foreach ($jobs as $job) {
-            $lock = $this->lockManager->acquire($job->getId() ?? 0);
+            $lock = $this->lockManager->acquire($job->getId());
             if (null === $lock) {
                 continue;
             }
@@ -74,7 +74,7 @@ final class AnalyticsRunPendingExportJobsCommand extends Command
                 continue;
             }
 
-            $lock = $this->lockManager->acquire($job->getId() ?? 0);
+            $lock = $this->lockManager->acquire($job->getId());
             if (null === $lock) {
                 continue;
             }

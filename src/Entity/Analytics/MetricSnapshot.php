@@ -14,7 +14,7 @@ class MetricSnapshot
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column(type: 'integer')]
-    private ?int $id = null;
+    private int $id = 0;
 
     #[ORM\Column(type: 'string', length: 128)]
     private string $metric;
@@ -57,7 +57,7 @@ class MetricSnapshot
         $this->createdAt = new \DateTimeImmutable();
     }
 
-    public function getId(): ?int
+    public function getId(): int
     {
         return $this->id;
     }

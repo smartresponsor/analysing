@@ -73,7 +73,20 @@ final class TokenService implements TokenServiceInterface
             return [];
         }
 
-        return is_array($payload) ? $payload : [];
+        if (!is_array($payload)) {
+            return [];
+        }
+
+        $normalizedPayload = [];
+        foreach ($payload as $key => $value) {
+            if (!is_string($key)) {
+                return [];
+            }
+
+            $normalizedPayload[$key] = $value;
+        }
+
+        return $normalizedPayload;
     }
 
     private function normalizeValue(mixed $value): mixed

@@ -16,7 +16,7 @@ use Symfony\Component\HttpKernel\Bundle\Bundle;
  */
 final class AnalysingBundle extends Bundle
 {
-    public function getContainerExtension(): ?ExtensionInterface
+    public function getContainerExtension(): ExtensionInterface
     {
         return new AnalysingExtension();
     }

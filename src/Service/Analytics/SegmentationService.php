@@ -108,6 +108,6 @@ final class SegmentationService implements SegmentationServiceInterface
             'skipped_rows' => $skipped,
         ]);
 
-        return array_values($matched);
+        return $matched;
     }
 }

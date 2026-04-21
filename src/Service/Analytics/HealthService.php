@@ -74,7 +74,7 @@ final readonly class HealthService implements HealthServiceInterface
             if ([] !== $catalog) {
                 $catalogChecksum = hash('sha256', json_encode($catalog, JSON_THROW_ON_ERROR));
             }
-        } catch (\RuntimeException|\JsonException|\Throwable $exception) {
+        } catch (\Throwable $exception) {
             $this->logger->error('Analytics health service could not inspect the KPI catalog.', [
                 'exception' => $exception,
             ]);

@@ -50,7 +50,29 @@ final readonly class ClickhouseClient implements ClickhouseClientInterface
             throw new \RuntimeException('Invalid JSON response from ClickHouse query.');
         }
 
-        return isset($json['data']) && is_array($json['data']) ? $json['data'] : [];
+        if (!isset($json['data']) || !is_array($json['data'])) {
+            return [];
+        }
+
+        $rows = [];
+        foreach ($json['data'] as $index => $row) {
+            if (!is_array($row)) {
+                throw new \RuntimeException(sprintf('ClickHouse query returned an invalid row at index %d.', (int) $index));
+            }
+
+            $normalizedRow = [];
+            foreach ($row as $key => $value) {
+                if (!is_string($key)) {
+                    throw new \RuntimeException(sprintf('ClickHouse query returned an invalid field name at index %d.', (int) $index));
+                }
+
+                $normalizedRow[$key] = $value;
+            }
+
+            $rows[] = $normalizedRow;
+        }
+
+        return $rows;
     }
 
     public function insertJsonEachRow(string $table, array $rows): void
@@ -61,7 +83,7 @@ final readonly class ClickhouseClient implements ClickhouseClientInterface
 
         $payloadLines = [];
         foreach ($rows as $index => $row) {
-            if (!is_array($row) || [] === $row) {
+            if ([] === $row) {
                 throw new \InvalidArgumentException(sprintf('ClickHouse insert row at index %d must be a non-empty array.', (int) $index));
             }
 
@@ -81,7 +103,7 @@ final readonly class ClickhouseClient implements ClickhouseClientInterface
     private function encodeInsertRow(array $row, int $index): string
     {
         foreach ($row as $key => $_) {
-            if (!is_string($key) || '' === trim($key)) {
+            if ('' === trim($key)) {
                 throw new \InvalidArgumentException(sprintf('ClickHouse insert row at index %d contains an invalid field name.', $index));
             }
         }
@@ -134,7 +156,7 @@ final readonly class ClickhouseClient implements ClickhouseClientInterface
     {
         $query = $sql;
         foreach ($param as $key => $value) {
-            if (!is_string($key) || 1 !== preg_match('/^[A-Za-z0-9_]+$/', $key)) {
+            if (1 !== preg_match('/^[A-Za-z0-9_]+$/', $key)) {
                 continue;
             }
 

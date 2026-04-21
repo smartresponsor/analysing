@@ -44,10 +44,6 @@ final class CsvImporter implements CsvImporterInterface
 
         try {
             $headers = $this->readHeaders($handle, $csvPath, $delimiter);
-            if ([] === $headers) {
-                return [];
-            }
-
             while (($data = fgetcsv($handle, 0, $delimiter)) !== false) {
                 if ($rowCount >= self::MAX_ROWS) {
                     $this->logger->warning('Analytics CSV import stopped at the maximum supported row count.', [
@@ -56,7 +52,7 @@ final class CsvImporter implements CsvImporterInterface
                     ]);
                     break;
                 }
-                if ($data === [null] || [] === $data) {
+                if ($data === [null]) {
                     continue;
                 }
 

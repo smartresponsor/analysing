@@ -201,6 +201,10 @@ final readonly class Analytics implements AnalyticsInterface
 
         $normalized = [];
         foreach ($steps as $step) {
+            if (!is_scalar($step)) {
+                throw new \InvalidArgumentException('steps must contain only scalar values.');
+            }
+
             $value = trim((string) $step);
             if ('' === $value) {
                 throw new \InvalidArgumentException('steps must contain only non-empty values.');
@@ -228,15 +232,6 @@ final readonly class Analytics implements AnalyticsInterface
         $validated = [];
 
         foreach ($rows as $index => $row) {
-            if (!is_array($row)) {
-                $this->logger->error('Analytics query returned a non-array row.', [
-                    'operation' => $operation,
-                    'row_index' => $index,
-                    'row_type' => get_debug_type($row),
-                ]);
-                throw new \RuntimeException(sprintf('Analytics %s query returned an invalid row.', $operation));
-            }
-
             foreach ($requiredFields as $field) {
                 if (!array_key_exists($field, $row)) {
                     $this->logger->error('Analytics query returned a row with a missing field.', [
