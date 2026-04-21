@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\ValueObject\Http;
+namespace App\Analysing\ValueObject\Http;
 
 final readonly class AnalyticsRateLimitDecision
 {

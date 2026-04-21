@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\Service\Http;
+namespace App\Analysing\Service\Http;
 
-use App\ServiceInterface\Http\TenantContextResolverInterface;
+use App\Analysing\ServiceInterface\Http\TenantContextResolverInterface;
 use Symfony\Component\HttpFoundation\Request;
 
 final class TenantContextResolver implements TenantContextResolverInterface

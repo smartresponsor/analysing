@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace App\Service\Alerts;
+namespace App\Analysing\Service\Alerts;
 
-use App\Entity\Alerts\AlertRule;
-use App\ServiceInterface\Alerts\NotificationDispatcherInterface;
+use App\Analysing\Entity\Alerts\AlertRule;
+use App\Analysing\ServiceInterface\Alerts\NotificationDispatcherInterface;
 use Psr\Log\LoggerInterface;
 
 final readonly class NotificationDispatcher implements NotificationDispatcherInterface

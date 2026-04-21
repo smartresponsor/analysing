@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\ServiceInterface\Http;
+namespace App\Analysing\ServiceInterface\Http;
 
 interface TenantContextInterface
 {

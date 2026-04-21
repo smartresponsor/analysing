@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\Unit\Analytics;
+namespace App\Analysing\Tests\Unit\Analytics;
 
-use App\Service\Http\TenantContext;
-use App\Service\Http\TenantContextResolver;
-use App\Service\Http\TenantContextResponseSubscriber;
-use App\Service\Http\TenantContextSubscriber;
+use App\Analysing\Service\Http\TenantContext;
+use App\Analysing\Service\Http\TenantContextResolver;
+use App\Analysing\Service\Http\TenantContextResponseSubscriber;
+use App\Analysing\Service\Http\TenantContextSubscriber;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\Service\Analytics;
+namespace App\Analysing\Service\Analytics;
 
-use App\ServiceInterface\Analytics\AccessGuardInterface;
+use App\Analysing\ServiceInterface\Analytics\AccessGuardInterface;
 use Psr\Log\LoggerInterface;
 
 final class AccessGuard implements AccessGuardInterface

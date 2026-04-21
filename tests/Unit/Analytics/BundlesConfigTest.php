@@ -2,18 +2,22 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\Unit\Analytics;
+namespace App\Analysing\Tests\Unit\Analytics;
 
+use App\Analysing\AnalysingBundle;
+use App\Analysing\DependencyInjection\AnalysingExtension;
 use PHPUnit\Framework\TestCase;
-use Symfony\Bundle\FrameworkBundle\FrameworkBundle;
 
 final class BundlesConfigTest extends TestCase
 {
-    public function testBundlesConfigRegistersFrameworkBundle(): void
+    public function testBundleSurfacePointsToAnalysingNamespace(): void
     {
-        $bundles = require __DIR__.'/../../../config/bundles.php';
+        $bundle = new AnalysingBundle();
+        $metadata = (string) file_get_contents(__DIR__.'/../../../config/component/component.yaml');
 
-        self::assertArrayHasKey(FrameworkBundle::class, $bundles);
-        self::assertSame(['all' => true], $bundles[FrameworkBundle::class]);
+        self::assertInstanceOf(AnalysingExtension::class, $bundle->getContainerExtension());
+        self::assertStringContainsString('namespace: App\\Analysing', $metadata);
+        self::assertStringContainsString('class: App\\Analysing\\AnalysingBundle', $metadata);
+        self::assertStringContainsString('extension: App\\Analysing\\DependencyInjection\\AnalysingExtension', $metadata);
     }
 }

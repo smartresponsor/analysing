@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\Unit\Analytics;
+namespace App\Analysing\Tests\Unit\Analytics;
 
-use App\Service\Http\AnalyticsIdempotencyStore;
+use App\Analysing\Service\Http\AnalyticsIdempotencyStore;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 use Symfony\Component\HttpFoundation\JsonResponse;

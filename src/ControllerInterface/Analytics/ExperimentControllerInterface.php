@@ -7,7 +7,7 @@
 
 declare(strict_types=1);
 
-namespace App\ControllerInterface\Analytics;
+namespace App\Analysing\ControllerInterface\Analytics;
 
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;

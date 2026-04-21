@@ -8,11 +8,11 @@
         <server name="APP_ENV" value="test" force="true"/>
         <server name="APP_DEBUG" value="1" force="true"/>
         <server name="SHELL_VERBOSITY" value="-1"/>
-        <server name="KERNEL_CLASS" value="App\Kernel"/>
+        <server name="KERNEL_CLASS" value="App\Analysing\Tests\Support\TestKernel"/>
     </php>
 
     <testsuites>
-        <testsuite name="Catalog">
+        <testsuite name="Analysing">
             <directory>tests</directory>
         </testsuite>
     </testsuites>

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Entity\Analytics;
+namespace App\Analysing\Entity\Analytics;
 
 use Doctrine\ORM\Mapping as ORM;
 

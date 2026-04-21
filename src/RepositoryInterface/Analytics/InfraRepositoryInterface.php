@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\RepositoryInterface\Analytics;
+namespace App\Analysing\RepositoryInterface\Analytics;
 
 interface InfraRepositoryInterface
 {

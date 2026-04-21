@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App;
+namespace App\Analysing;
 
-use App\DependencyInjection\AnalysingExtension;
+use App\Analysing\DependencyInjection\AnalysingExtension;
 use Symfony\Component\DependencyInjection\Extension\ExtensionInterface;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

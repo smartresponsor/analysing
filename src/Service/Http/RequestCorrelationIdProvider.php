@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\Service\Http;
+namespace App\Analysing\Service\Http;
 
-use App\ServiceInterface\Http\RequestCorrelationIdProviderInterface;
+use App\Analysing\ServiceInterface\Http\RequestCorrelationIdProviderInterface;
 use Random\RandomException;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\RequestStack;

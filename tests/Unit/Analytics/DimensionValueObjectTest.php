@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\Unit\Analytics;
+namespace App\Analysing\Tests\Unit\Analytics;
 
-use App\ValueObject\Analytics\Dimension;
+use App\Analysing\ValueObject\Analytics\Dimension;
 use PHPUnit\Framework\TestCase;
 
 final class DimensionValueObjectTest extends TestCase

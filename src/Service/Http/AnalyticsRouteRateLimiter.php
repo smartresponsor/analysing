@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace App\Service\Http;
+namespace App\Analysing\Service\Http;
 
-use App\ServiceInterface\Http\AnalyticsRouteRateLimiterInterface;
-use App\ValueObject\Http\AnalyticsRateLimitDecision;
+use App\Analysing\ServiceInterface\Http\AnalyticsRouteRateLimiterInterface;
+use App\Analysing\ValueObject\Http\AnalyticsRateLimitDecision;
 use Psr\Log\LoggerInterface;
 
 final readonly class AnalyticsRouteRateLimiter implements AnalyticsRouteRateLimiterInterface

@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\Unit\Analytics;
+namespace App\Analysing\Tests\Unit\Analytics;
 
-use App\Entity\Alerts\AlertRule;
-use App\Entity\Analytics\MetricSnapshot;
-use App\Service\Alerts\AlertEvaluator;
+use App\Analysing\Entity\Alerts\AlertRule;
+use App\Analysing\Entity\Analytics\MetricSnapshot;
+use App\Analysing\Service\Alerts\AlertEvaluator;
 use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\ORM\EntityRepository;
 use Doctrine\ORM\Query;

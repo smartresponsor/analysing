@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\Service\Analytics;
+namespace App\Analysing\Service\Analytics;
 
-use App\ServiceInterface\Analytics\ReportExporterServiceInterface;
+use App\Analysing\ServiceInterface\Analytics\ReportExporterServiceInterface;
 use Psr\Log\LoggerInterface;
 use Random\RandomException;
 

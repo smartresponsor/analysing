@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace App\Service\Http;
+namespace App\Analysing\Service\Http;
 
-use App\ServiceInterface\Http\AnalyticsRateLimitResponseSubscriberInterface;
-use App\ValueObject\Http\AnalyticsRateLimitDecision;
+use App\Analysing\ServiceInterface\Http\AnalyticsRateLimitResponseSubscriberInterface;
+use App\Analysing\ValueObject\Http\AnalyticsRateLimitDecision;
 use Symfony\Component\HttpKernel\Event\ResponseEvent;
 use Symfony\Component\HttpKernel\KernelEvents;
 

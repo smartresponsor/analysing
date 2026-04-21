@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\Service\Analytics;
+namespace App\Analysing\Service\Analytics;
 
-use App\DTO\Analytics\KpiRequest;
+use App\Analysing\DTO\Analytics\KpiRequest;
 
 /**
  * Builds report rows for KPIs and timeseries data.

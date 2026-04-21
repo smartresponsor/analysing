@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\Service\Http;
+namespace App\Analysing\Service\Http;
 
-use App\ServiceInterface\Http\TenantContextInterface;
+use App\Analysing\ServiceInterface\Http\TenantContextInterface;
 
 final class TenantContext implements TenantContextInterface
 {

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\Service\Analytics;
+namespace App\Analysing\Service\Analytics;
 
-use App\ServiceInterface\Analytics\FileNotifierInterface;
+use App\Analysing\ServiceInterface\Analytics\FileNotifierInterface;
 use Psr\Log\LoggerInterface;
 
 final class FileNotifier implements FileNotifierInterface

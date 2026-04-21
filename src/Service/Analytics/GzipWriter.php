@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\Service\Analytics;
+namespace App\Analysing\Service\Analytics;
 
-use App\ServiceInterface\Analytics\GzipWriterInterface;
+use App\Analysing\ServiceInterface\Analytics\GzipWriterInterface;
 use Psr\Log\LoggerInterface;
 
 final class GzipWriter implements GzipWriterInterface

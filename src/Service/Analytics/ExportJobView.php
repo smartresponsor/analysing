@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\Service\Analytics;
+namespace App\Analysing\Service\Analytics;
 
-use App\Entity\Analytics\ExportJob;
+use App\Analysing\Entity\Analytics\ExportJob;
 
 /**
  * Transforms an {@see ExportJob} entity into an API-friendly array payload.

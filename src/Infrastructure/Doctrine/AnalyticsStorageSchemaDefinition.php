@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Infrastructure\Doctrine;
+namespace App\Analysing\Infrastructure\Doctrine;
 
 use Doctrine\DBAL\Exception;
 use Doctrine\DBAL\Schema\Schema;

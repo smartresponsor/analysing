@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\Unit\Analytics;
+namespace App\Analysing\Tests\Unit\Analytics;
 
-use App\Command\AlertsRunCommand;
-use App\Entity\Alerts\AlertRule;
-use App\Entity\Analytics\MetricSnapshot;
-use App\ServiceInterface\Alerts\AlertEvaluatorInterface;
-use App\ServiceInterface\Alerts\NotificationDispatcherInterface;
+use App\Analysing\Command\AlertsRunCommand;
+use App\Analysing\Entity\Alerts\AlertRule;
+use App\Analysing\Entity\Analytics\MetricSnapshot;
+use App\Analysing\ServiceInterface\Alerts\AlertEvaluatorInterface;
+use App\Analysing\ServiceInterface\Alerts\NotificationDispatcherInterface;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\Console\Tester\CommandTester;

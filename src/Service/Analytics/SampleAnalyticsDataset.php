@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace App\Service\Analytics;
+namespace App\Analysing\Service\Analytics;
 
-use App\DTO\Analytics\KpiRequest;
-use App\ServiceInterface\Analytics\SampleAnalyticsDatasetInterface;
+use App\Analysing\DTO\Analytics\KpiRequest;
+use App\Analysing\ServiceInterface\Analytics\SampleAnalyticsDatasetInterface;
 
 final class SampleAnalyticsDataset implements SampleAnalyticsDatasetInterface
 {

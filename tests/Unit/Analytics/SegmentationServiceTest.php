@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\Unit\Analytics;
+namespace App\Analysing\Tests\Unit\Analytics;
 
-use App\Service\Analytics\SegmentationService;
-use App\ValueObject\Analytics\Dimension;
-use App\ValueObject\Analytics\Segment;
+use App\Analysing\Service\Analytics\SegmentationService;
+use App\Analysing\ValueObject\Analytics\Dimension;
+use App\Analysing\ValueObject\Analytics\Segment;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 

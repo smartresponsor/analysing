@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\Support;
+namespace App\Analysing\Tests\Support;
 
-use App\Service\Http\AnalyticsErrorResponseFactory;
-use App\Service\Http\AnalyticsSuccessResponseFactory;
-use App\Service\Http\RequestCorrelationIdProvider;
-use App\Service\Http\TenantContext;
+use App\Analysing\Service\Http\AnalyticsErrorResponseFactory;
+use App\Analysing\Service\Http\AnalyticsSuccessResponseFactory;
+use App\Analysing\Service\Http\RequestCorrelationIdProvider;
+use App\Analysing\Service\Http\TenantContext;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\RequestStack;
 

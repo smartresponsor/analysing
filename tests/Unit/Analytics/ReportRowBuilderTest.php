@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\Unit\Analytics;
+namespace App\Analysing\Tests\Unit\Analytics;
 
-use App\DTO\Analytics\KpiRequest;
-use App\Service\Analytics\ReportRowBuilder;
+use App\Analysing\DTO\Analytics\KpiRequest;
+use App\Analysing\Service\Analytics\ReportRowBuilder;
 use PHPUnit\Framework\TestCase;
 
 final class ReportRowBuilderTest extends TestCase

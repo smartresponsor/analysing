@@ -6,9 +6,9 @@ declare(strict_types=1);
  * Comments in English only. Singular naming.
  */
 
-namespace App\Repository\Analytics;
+namespace App\Analysing\Repository\Analytics;
 
-use App\RepositoryInterface\Analytics\InfraRepositoryInterface;
+use App\Analysing\RepositoryInterface\Analytics\InfraRepositoryInterface;
 use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\ParameterType;
 use Psr\Log\LoggerInterface;

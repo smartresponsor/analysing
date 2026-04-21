@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\Service\Analytics;
+namespace App\Analysing\Service\Analytics;
 
-use App\ServiceInterface\Analytics\ExperimentServiceInterface;
+use App\Analysing\ServiceInterface\Analytics\ExperimentServiceInterface;
 use Psr\Log\LoggerInterface;
 
 final class ExperimentService implements ExperimentServiceInterface

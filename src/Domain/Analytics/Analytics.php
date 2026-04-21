@@ -7,10 +7,10 @@
 
 declare(strict_types=1);
 
-namespace App\Domain\Analytics;
+namespace App\Analysing\Domain\Analytics;
 
-use App\DomainInterface\Analytics\AnalyticsInterface;
-use App\DomainInterface\Analytics\ClickhouseClientInterface;
+use App\Analysing\DomainInterface\Analytics\AnalyticsInterface;
+use App\Analysing\DomainInterface\Analytics\ClickhouseClientInterface;
 use Psr\Log\LoggerInterface;
 
 final readonly class Analytics implements AnalyticsInterface

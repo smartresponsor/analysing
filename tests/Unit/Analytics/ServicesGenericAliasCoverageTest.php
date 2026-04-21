@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\Unit\Analytics;
+namespace App\Analysing\Tests\Unit\Analytics;
 
 use PHPUnit\Framework\TestCase;
 
@@ -10,27 +10,27 @@ final class ServicesGenericAliasCoverageTest extends TestCase
 {
     public function testGenericAnalyticsServiceInterfacesAreAliasedInServicesYaml(): void
     {
-        $yaml = (string) file_get_contents(__DIR__.'/../../../config/services.yaml');
+        $yaml = (string) file_get_contents(__DIR__.'/../../../config/component/services.yaml');
 
         $expected = [
-            "App\\ServiceInterface\\Analytics\\AccessGuardInterface: '@App\\Service\\Analytics\\AccessGuard'",
-            "App\\ServiceInterface\\Analytics\\AggregateServiceInterface: '@App\\Service\\Analytics\\AggregateService'",
-            "App\\ServiceInterface\\Analytics\\AnomalyDetectorInterface: '@App\\Service\\Analytics\\AnomalyDetector'",
-            "App\\ServiceInterface\\Analytics\\CacheInterface: '@App\\Service\\Analytics\\LocalCache'",
-            "App\\ServiceInterface\\Analytics\\CsvImportInterface: '@App\\Service\\Analytics\\CsvImporter'",
-            "App\\ServiceInterface\\Analytics\\DashboardServiceInterface: '@App\\Service\\Analytics\\DashboardService'",
-            "App\\ServiceInterface\\Analytics\\HealthServiceInterface: '@App\\Service\\Analytics\\HealthService'",
-            "App\\ServiceInterface\\Analytics\\KpiRegistryInterface: '@App\\Service\\Analytics\\KpiRegistry'",
-            "App\\ServiceInterface\\Analytics\\MetricIngestInterface: '@App\\Service\\Analytics\\MetricIngestService'",
-            "App\\ServiceInterface\\Analytics\\NotifierInterface: '@App\\Service\\Analytics\\WebhookNotifier'",
-            "App\\ServiceInterface\\Analytics\\ReportBundleInterface: '@App\\Service\\Analytics\\ReportBundle'",
-            "App\\ServiceInterface\\Analytics\\RetentionInterface: '@App\\Service\\Analytics\\RetentionService'",
-            "App\\ServiceInterface\\Analytics\\RollupInterface: '@App\\Service\\Analytics\\RollupService'",
-            "App\\ServiceInterface\\Analytics\\SegmentationInterface: '@App\\Service\\Analytics\\SegmentationService'",
-            "App\\ServiceInterface\\Analytics\\SloCalculatorInterface: '@App\\Service\\Analytics\\SloCalculator'",
-            "App\\ServiceInterface\\Analytics\\TenantScopeInterface: '@App\\Service\\Analytics\\TenantScope'",
-            "App\\ServiceInterface\\Analytics\\TransformerInterface: '@App\\Service\\Analytics\\Transformer'",
-            "App\\ServiceInterface\\Analytics\\WindowQueryInterface: '@App\\Service\\Analytics\\WindowQuery'",
+            "App\Analysing\\ServiceInterface\\Analytics\\AccessGuardInterface: '@App\Analysing\\Service\\Analytics\\AccessGuard'",
+            "App\Analysing\\ServiceInterface\\Analytics\\AggregateServiceInterface: '@App\Analysing\\Service\\Analytics\\AggregateService'",
+            "App\Analysing\\ServiceInterface\\Analytics\\AnomalyDetectorInterface: '@App\Analysing\\Service\\Analytics\\AnomalyDetector'",
+            "App\Analysing\\ServiceInterface\\Analytics\\CacheInterface: '@App\Analysing\\Service\\Analytics\\LocalCache'",
+            "App\Analysing\\ServiceInterface\\Analytics\\CsvImportInterface: '@App\Analysing\\Service\\Analytics\\CsvImporter'",
+            "App\Analysing\\ServiceInterface\\Analytics\\DashboardServiceInterface: '@App\Analysing\\Service\\Analytics\\DashboardService'",
+            "App\Analysing\\ServiceInterface\\Analytics\\HealthServiceInterface: '@App\Analysing\\Service\\Analytics\\HealthService'",
+            "App\Analysing\\ServiceInterface\\Analytics\\KpiRegistryInterface: '@App\Analysing\\Service\\Analytics\\KpiRegistry'",
+            "App\Analysing\\ServiceInterface\\Analytics\\MetricIngestInterface: '@App\Analysing\\Service\\Analytics\\MetricIngestService'",
+            "App\Analysing\\ServiceInterface\\Analytics\\NotifierInterface: '@App\Analysing\\Service\\Analytics\\WebhookNotifier'",
+            "App\Analysing\\ServiceInterface\\Analytics\\ReportBundleInterface: '@App\Analysing\\Service\\Analytics\\ReportBundle'",
+            "App\Analysing\\ServiceInterface\\Analytics\\RetentionInterface: '@App\Analysing\\Service\\Analytics\\RetentionService'",
+            "App\Analysing\\ServiceInterface\\Analytics\\RollupInterface: '@App\Analysing\\Service\\Analytics\\RollupService'",
+            "App\Analysing\\ServiceInterface\\Analytics\\SegmentationInterface: '@App\Analysing\\Service\\Analytics\\SegmentationService'",
+            "App\Analysing\\ServiceInterface\\Analytics\\SloCalculatorInterface: '@App\Analysing\\Service\\Analytics\\SloCalculator'",
+            "App\Analysing\\ServiceInterface\\Analytics\\TenantScopeInterface: '@App\Analysing\\Service\\Analytics\\TenantScope'",
+            "App\Analysing\\ServiceInterface\\Analytics\\TransformerInterface: '@App\Analysing\\Service\\Analytics\\Transformer'",
+            "App\Analysing\\ServiceInterface\\Analytics\\WindowQueryInterface: '@App\Analysing\\Service\\Analytics\\WindowQuery'",
             "Psr\\Log\\LoggerInterface: '@Psr\\Log\\NullLogger'",
         ];
 

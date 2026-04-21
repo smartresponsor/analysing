@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Service\Analytics;
+namespace App\Analysing\Service\Analytics;
 
 /**
  * Manages file-based locks for export jobs.

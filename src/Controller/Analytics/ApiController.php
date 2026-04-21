@@ -7,12 +7,12 @@
 
 declare(strict_types=1);
 
-namespace App\Controller\Analytics;
+namespace App\Analysing\Controller\Analytics;
 
-use App\ControllerInterface\Analytics\ApiControllerInterface;
-use App\Service\Http\AnalyticsErrorResponseFactory;
-use App\Service\Http\AnalyticsSuccessResponseFactory;
-use App\ServiceInterface\Analytics\KpiRegistryInterface;
+use App\Analysing\ControllerInterface\Analytics\ApiControllerInterface;
+use App\Analysing\Service\Http\AnalyticsErrorResponseFactory;
+use App\Analysing\Service\Http\AnalyticsSuccessResponseFactory;
+use App\Analysing\ServiceInterface\Analytics\KpiRegistryInterface;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;

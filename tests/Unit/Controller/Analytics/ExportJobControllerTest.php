@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\Unit\Controller\Analytics;
+namespace App\Analysing\Tests\Unit\Controller\Analytics;
 
-use App\Controller\Analytics\ExportJobController;
-use App\Entity\Analytics\ExportJob;
-use App\Service\Analytics\ExportJobMetricsService;
+use App\Analysing\Controller\Analytics\ExportJobController;
+use App\Analysing\Entity\Analytics\ExportJob;
+use App\Analysing\Service\Analytics\ExportJobMetricsService;
 use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\ORM\EntityRepository;
 use PHPUnit\Framework\TestCase;

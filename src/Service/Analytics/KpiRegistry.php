@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace App\Service\Analytics;
+namespace App\Analysing\Service\Analytics;
 
-use App\ServiceInterface\Analytics\KpiRegistryInterface;
-use App\ValueObject\Analytics\KpiId;
+use App\Analysing\ServiceInterface\Analytics\KpiRegistryInterface;
+use App\Analysing\ValueObject\Analytics\KpiId;
 use Psr\Log\LoggerInterface;
 
 final class KpiRegistry implements KpiRegistryInterface

@@ -6,10 +6,10 @@ declare(strict_types=1);
  * Comments in English only. Singular naming.
  */
 
-namespace App\Service\Analytics;
+namespace App\Analysing\Service\Analytics;
 
-use App\RepositoryInterface\Analytics\InfraRepositoryInterface;
-use App\ServiceInterface\Analytics\AggregateServiceInterface;
+use App\Analysing\RepositoryInterface\Analytics\InfraRepositoryInterface;
+use App\Analysing\ServiceInterface\Analytics\AggregateServiceInterface;
 use Psr\Log\LoggerInterface;
 
 final readonly class AggregateService implements AggregateServiceInterface

@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\Unit\Analytics;
+namespace App\Analysing\Tests\Unit\Analytics;
 
-use App\Controller\Analytics\IngestController;
-use App\DomainInterface\Analytics\ClickhouseClientInterface;
-use App\Tests\Support\AnalyticsHttpFactoriesTrait;
-use App\Tests\Support\JsonPayloadAssertionsTrait;
+use App\Analysing\Controller\Analytics\IngestController;
+use App\Analysing\DomainInterface\Analytics\ClickhouseClientInterface;
+use App\Analysing\Tests\Support\AnalyticsHttpFactoriesTrait;
+use App\Analysing\Tests\Support\JsonPayloadAssertionsTrait;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\HttpFoundation\Request;

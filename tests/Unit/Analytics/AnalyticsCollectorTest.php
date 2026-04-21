@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\Unit\Analytics;
+namespace App\Analysing\Tests\Unit\Analytics;
 
-use App\Entity\Analytics\MetricSnapshot;
-use App\Service\Analytics\AnalyticsCollector;
+use App\Analysing\Entity\Analytics\MetricSnapshot;
+use App\Analysing\Service\Analytics\AnalyticsCollector;
 use Doctrine\ORM\EntityManagerInterface;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;

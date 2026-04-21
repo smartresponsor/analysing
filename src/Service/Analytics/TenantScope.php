@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace App\Service\Analytics;
+namespace App\Analysing\Service\Analytics;
 
-use App\ServiceInterface\Analytics\TenantScopeInterface;
-use App\ValueObject\Analytics\TenantId;
+use App\Analysing\ServiceInterface\Analytics\TenantScopeInterface;
+use App\Analysing\ValueObject\Analytics\TenantId;
 use Psr\Log\LoggerInterface;
 
 final class TenantScope implements TenantScopeInterface

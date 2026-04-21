@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\ServiceInterface\Analytics;
+namespace App\Analysing\ServiceInterface\Analytics;
 
-use App\ValueObject\Analytics\KpiId;
+use App\Analysing\ValueObject\Analytics\KpiId;
 
 interface KpiRegistryInterface
 {

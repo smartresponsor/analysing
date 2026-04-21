@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\Unit\Analytics;
+namespace App\Analysing\Tests\Unit\Analytics;
 
-use App\Tests\Support\JsonPayloadAssertionsTrait;
+use App\Analysing\Tests\Support\JsonPayloadAssertionsTrait;
 use PHPUnit\Framework\TestCase;
 
 final class GuardConfigConsistencyTest extends TestCase

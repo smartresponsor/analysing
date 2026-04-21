@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace App\Service\Analytics;
+namespace App\Analysing\Service\Analytics;
 
-use App\DTO\Analytics\KpiRequest;
-use App\ServiceInterface\Analytics\SampleAnalyticsDatasetInterface;
-use App\ServiceInterface\Analytics\SampleDashboardServiceInterface;
+use App\Analysing\DTO\Analytics\KpiRequest;
+use App\Analysing\ServiceInterface\Analytics\SampleAnalyticsDatasetInterface;
+use App\Analysing\ServiceInterface\Analytics\SampleDashboardServiceInterface;
 use Psr\Log\LoggerInterface;
 
 final readonly class SampleDashboardService implements SampleDashboardServiceInterface

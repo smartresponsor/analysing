@@ -1,7 +1,7 @@
 {
     "name": "analysing/analytics",
-    "description": "Analysing process app",
-    "type": "symfony-bundle",
+    "description": "Analysing process package",
+    "type": "library",
     "license": "proprietary",
     "authors": [
         {
@@ -29,12 +29,12 @@
     },
     "autoload": {
         "psr-4": {
-            "App\\": "src/"
+            "App\\Analysing\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "App\\Tests\\": "tests/"
+            "App\\Analysing\\Tests\\": "tests/"
         }
     },
     "scripts": {

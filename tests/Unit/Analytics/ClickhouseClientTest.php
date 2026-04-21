@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\Unit\Analytics;
+namespace App\Analysing\Tests\Unit\Analytics;
 
-use App\Domain\Analytics\ClickhouseClient;
+use App\Analysing\Domain\Analytics\ClickhouseClient;
 use PHPUnit\Framework\TestCase;
 
 final class ClickhouseClientTest extends TestCase

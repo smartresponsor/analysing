@@ -4,7 +4,7 @@ component:
   title: Analysing
   package: analysing/analytics
   status: rc
-  namespace: App
+  namespace: App\Analysing
   responsibility: "analytics and decision-support application surfaces"
   export_contract:
     services: config/component/services.yaml
@@ -23,7 +23,7 @@ component:
     entities_as_transport_contracts: false
 
   symfony_bundle:
-    class: App\AnalysingBundle
-    extension: App\DependencyInjection\AnalysingExtension
+    class: App\Analysing\AnalysingBundle
+    extension: App\Analysing\DependencyInjection\AnalysingExtension
     services_loaded_by_extension: config/component/services.yaml
     routes_import_required_by_host: config/component/routes.yaml

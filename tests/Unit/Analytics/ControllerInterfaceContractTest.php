@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\Unit\Analytics;
+namespace App\Analysing\Tests\Unit\Analytics;
 
 use PHPUnit\Framework\TestCase;
 
@@ -11,16 +11,16 @@ final class ControllerInterfaceContractTest extends TestCase
     public function testControllersImplementTheirInterfaces(): void
     {
         $map = [
-            'App\\Controller\\Analytics\\AggregateController' => 'App\\ControllerInterface\\Analytics\\AggregateControllerInterface',
-            'App\\Controller\\Analytics\\AnalyticsController' => 'App\\ControllerInterface\\Analytics\\AnalyticsControllerInterface',
-            'App\\Controller\\Analytics\\ApiController' => 'App\\ControllerInterface\\Analytics\\ApiControllerInterface',
-            'App\\Controller\\Analytics\\DashboardController' => 'App\\ControllerInterface\\Analytics\\DashboardControllerInterface',
-            'App\\Controller\\Analytics\\DashboardPageController' => 'App\\ControllerInterface\\Analytics\\DashboardPageControllerInterface',
-            'App\\Controller\\Analytics\\ExperimentController' => 'App\\ControllerInterface\\Analytics\\ExperimentControllerInterface',
-            'App\\Controller\\Analytics\\FlagController' => 'App\\ControllerInterface\\Analytics\\FlagControllerInterface',
-            'App\\Controller\\Analytics\\HealthController' => 'App\\ControllerInterface\\Analytics\\HealthControllerInterface',
-            'App\\Controller\\Analytics\\IngestController' => 'App\\ControllerInterface\\Analytics\\IngestControllerInterface',
-            'App\\Controller\\Analytics\\InsightController' => 'App\\ControllerInterface\\Analytics\\InsightControllerInterface',
+            'App\Analysing\\Controller\\Analytics\\AggregateController' => 'App\Analysing\\ControllerInterface\\Analytics\\AggregateControllerInterface',
+            'App\Analysing\\Controller\\Analytics\\AnalyticsController' => 'App\Analysing\\ControllerInterface\\Analytics\\AnalyticsControllerInterface',
+            'App\Analysing\\Controller\\Analytics\\ApiController' => 'App\Analysing\\ControllerInterface\\Analytics\\ApiControllerInterface',
+            'App\Analysing\\Controller\\Analytics\\DashboardController' => 'App\Analysing\\ControllerInterface\\Analytics\\DashboardControllerInterface',
+            'App\Analysing\\Controller\\Analytics\\DashboardPageController' => 'App\Analysing\\ControllerInterface\\Analytics\\DashboardPageControllerInterface',
+            'App\Analysing\\Controller\\Analytics\\ExperimentController' => 'App\Analysing\\ControllerInterface\\Analytics\\ExperimentControllerInterface',
+            'App\Analysing\\Controller\\Analytics\\FlagController' => 'App\Analysing\\ControllerInterface\\Analytics\\FlagControllerInterface',
+            'App\Analysing\\Controller\\Analytics\\HealthController' => 'App\Analysing\\ControllerInterface\\Analytics\\HealthControllerInterface',
+            'App\Analysing\\Controller\\Analytics\\IngestController' => 'App\Analysing\\ControllerInterface\\Analytics\\IngestControllerInterface',
+            'App\Analysing\\Controller\\Analytics\\InsightController' => 'App\Analysing\\ControllerInterface\\Analytics\\InsightControllerInterface',
         ];
 
         foreach ($map as $controller => $interface) {

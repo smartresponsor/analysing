@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\DomainInterface\Analytics;
+namespace App\Analysing\DomainInterface\Analytics;
 
 interface FlagInterface
 {

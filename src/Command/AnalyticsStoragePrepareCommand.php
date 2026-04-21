@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\Command;
+namespace App\Analysing\Command;
 
-use App\Infrastructure\Doctrine\AnalyticsStorageManager;
+use App\Analysing\Infrastructure\Doctrine\AnalyticsStorageManager;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command as BaseCommand;

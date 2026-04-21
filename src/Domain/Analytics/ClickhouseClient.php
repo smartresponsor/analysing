@@ -7,9 +7,9 @@
 
 declare(strict_types=1);
 
-namespace App\Domain\Analytics;
+namespace App\Analysing\Domain\Analytics;
 
-use App\DomainInterface\Analytics\ClickhouseClientInterface;
+use App\Analysing\DomainInterface\Analytics\ClickhouseClientInterface;
 use Symfony\Component\HttpClient\HttpClient;
 use Symfony\Contracts\HttpClient\Exception\ClientExceptionInterface;
 use Symfony\Contracts\HttpClient\Exception\RedirectionExceptionInterface;

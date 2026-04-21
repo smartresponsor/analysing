@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\ServiceInterface\Http;
+namespace App\Analysing\ServiceInterface\Http;
 
-use App\ValueObject\Http\AnalyticsRateLimitDecision;
+use App\Analysing\ValueObject\Http\AnalyticsRateLimitDecision;
 
 interface AnalyticsRouteRateLimiterInterface
 {

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\Unit\Analytics;
+namespace App\Analysing\Tests\Unit\Analytics;
 
-use App\ValueObject\Analytics\TenantId;
+use App\Analysing\ValueObject\Analytics\TenantId;
 use PHPUnit\Framework\TestCase;
 
 final class TenantIdValueObjectTest extends TestCase

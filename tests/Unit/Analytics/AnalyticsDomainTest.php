@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\Unit\Analytics;
+namespace App\Analysing\Tests\Unit\Analytics;
 
-use App\Domain\Analytics\Analytics;
-use App\DomainInterface\Analytics\ClickhouseClientInterface;
+use App\Analysing\Domain\Analytics\Analytics;
+use App\Analysing\DomainInterface\Analytics\ClickhouseClientInterface;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 

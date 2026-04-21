@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace App\Command;
+namespace App\Analysing\Command;
 
-use App\Entity\Alerts\AlertRule;
-use App\Entity\Analytics\MetricSnapshot;
-use App\ServiceInterface\Alerts\AlertEvaluatorInterface;
-use App\ServiceInterface\Alerts\NotificationDispatcherInterface;
+use App\Analysing\Entity\Alerts\AlertRule;
+use App\Analysing\Entity\Analytics\MetricSnapshot;
+use App\Analysing\ServiceInterface\Alerts\AlertEvaluatorInterface;
+use App\Analysing\ServiceInterface\Alerts\NotificationDispatcherInterface;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command as BaseCommand;

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\Unit\Analytics;
+namespace App\Analysing\Tests\Unit\Analytics;
 
-use App\Entity\Analytics\ExportJob;
+use App\Analysing\Entity\Analytics\ExportJob;
 use PHPUnit\Framework\TestCase;
 
 final class ExportJobPayloadTest extends TestCase

@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace App\DependencyInjection;
+namespace App\Analysing\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\Extension;
-use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
+use Symfony\Component\DependencyInjection\Loader\PhpFileLoader;
 
 /**
- * Loads the Symfony-native service export for the Analysing RC component.
+ * Loads the Symfony-native service export for the Analysing package without a YAML dependency.
  */
 final class AnalysingExtension extends Extension
 {
@@ -21,14 +21,23 @@ final class AnalysingExtension extends Extension
     {
         unset($configs);
 
-        $configDirectory = __DIR__.'/../../config/component';
-        $servicesFile = $configDirectory.'/services.yaml';
+        $projectRoot = \dirname(__DIR__, 2);
 
-        if (!is_file($servicesFile)) {
+        $candidates = [
+            $projectRoot.'/config/component/services.php',
+            $projectRoot.'/config/services.php',
+        ];
+
+        $loader = new PhpFileLoader($container, new FileLocator($projectRoot));
+
+        foreach ($candidates as $candidate) {
+            if (!\is_file($candidate)) {
+                continue;
+            }
+
+            $loader->load($candidate);
+
             return;
         }
-
-        $loader = new YamlFileLoader($container, new FileLocator($configDirectory));
-        $loader->load('services.yaml');
     }
 }

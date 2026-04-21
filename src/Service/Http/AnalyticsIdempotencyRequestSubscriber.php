@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace App\Service\Http;
+namespace App\Analysing\Service\Http;
 
-use App\ServiceInterface\Http\AnalyticsErrorResponseFactoryInterface;
-use App\ServiceInterface\Http\AnalyticsIdempotencyRequestSubscriberInterface;
-use App\ServiceInterface\Http\AnalyticsIdempotencyStoreInterface;
-use App\ServiceInterface\Http\TenantContextResolverInterface;
+use App\Analysing\ServiceInterface\Http\AnalyticsErrorResponseFactoryInterface;
+use App\Analysing\ServiceInterface\Http\AnalyticsIdempotencyRequestSubscriberInterface;
+use App\Analysing\ServiceInterface\Http\AnalyticsIdempotencyStoreInterface;
+use App\Analysing\ServiceInterface\Http\TenantContextResolverInterface;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Event\RequestEvent;
 use Symfony\Component\HttpKernel\KernelEvents;

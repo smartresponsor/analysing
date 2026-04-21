@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\Unit\Analytics;
+namespace App\Analysing\Tests\Unit\Analytics;
 
-use App\Controller\Analytics\ApiController;
-use App\ServiceInterface\Analytics\KpiRegistryInterface;
-use App\Tests\Support\AnalyticsHttpFactoriesTrait;
-use App\Tests\Support\JsonPayloadAssertionsTrait;
+use App\Analysing\Controller\Analytics\ApiController;
+use App\Analysing\ServiceInterface\Analytics\KpiRegistryInterface;
+use App\Analysing\Tests\Support\AnalyticsHttpFactoriesTrait;
+use App\Analysing\Tests\Support\JsonPayloadAssertionsTrait;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 

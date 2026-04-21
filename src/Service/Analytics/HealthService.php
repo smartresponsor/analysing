@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace App\Service\Analytics;
+namespace App\Analysing\Service\Analytics;
 
-use App\Service\Http\TenantContext;
-use App\ServiceInterface\Analytics\HealthServiceInterface;
-use App\ServiceInterface\Analytics\KpiRegistryInterface;
+use App\Analysing\Service\Http\TenantContext;
+use App\Analysing\ServiceInterface\Analytics\HealthServiceInterface;
+use App\Analysing\ServiceInterface\Analytics\KpiRegistryInterface;
 use Psr\Log\LoggerInterface;
 
 final readonly class HealthService implements HealthServiceInterface

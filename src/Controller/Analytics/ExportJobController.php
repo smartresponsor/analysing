@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace App\Controller\Analytics;
+namespace App\Analysing\Controller\Analytics;
 
-use App\Entity\Analytics\ExportJob;
-use App\Service\Analytics\ExportJobMetricsService;
-use App\Service\Analytics\ExportJobView;
+use App\Analysing\Entity\Analytics\ExportJob;
+use App\Analysing\Service\Analytics\ExportJobMetricsService;
+use App\Analysing\Service\Analytics\ExportJobView;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;

@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\Unit\Analytics;
+namespace App\Analysing\Tests\Unit\Analytics;
 
-use App\DTO\Analytics\KpiRequest;
-use App\Service\Analytics\DashboardService;
+use App\Analysing\DTO\Analytics\KpiRequest;
+use App\Analysing\Service\Analytics\DashboardService;
 use Doctrine\DBAL\Connection;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;

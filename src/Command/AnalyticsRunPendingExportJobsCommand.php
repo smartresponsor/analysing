@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace App\Command;
+namespace App\Analysing\Command;
 
-use App\Entity\Analytics\ExportJob;
-use App\Service\Analytics\ExportJobLockManager;
-use App\Service\Analytics\ExportJobRunner;
+use App\Analysing\Entity\Analytics\ExportJob;
+use App\Analysing\Service\Analytics\ExportJobLockManager;
+use App\Analysing\Service\Analytics\ExportJobRunner;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;

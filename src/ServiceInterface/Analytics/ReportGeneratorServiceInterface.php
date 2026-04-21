@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\ServiceInterface\Analytics;
+namespace App\Analysing\ServiceInterface\Analytics;
 
-use App\Entity\Analytics\ExportJob;
+use App\Analysing\Entity\Analytics\ExportJob;
 
 interface ReportGeneratorServiceInterface
 {

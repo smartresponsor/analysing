@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\Service\Http;
+namespace App\Analysing\Service\Http;
 
-use App\ServiceInterface\Http\AnalyticsIdempotencyStoreInterface;
+use App\Analysing\ServiceInterface\Http\AnalyticsIdempotencyStoreInterface;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\HttpFoundation\Response;
 

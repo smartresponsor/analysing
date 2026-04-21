@@ -2,9 +2,10 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\Unit\Analytics;
+namespace App\Analysing\Tests\Unit\Analytics;
 
-use App\Infrastructure\Doctrine\AnalyticsStorageSchemaDefinition;
+use App\Analysing\Infrastructure\Doctrine\AnalyticsStorageSchemaDefinition;
+use Doctrine\DBAL\Schema\Table;
 use PHPUnit\Framework\TestCase;
 
 final class AnalyticsStorageSchemaDefinitionTest extends TestCase
@@ -14,8 +15,10 @@ final class AnalyticsStorageSchemaDefinitionTest extends TestCase
         $definition = new AnalyticsStorageSchemaDefinition();
         $schema = $definition->createSchema();
         $tableNames = array_map(
-            static fn (string $name): string => str_contains($name, '.') ? substr($name, (int) strrpos($name, '.') + 1) : $name,
-            $schema->getTableNames()
+            static fn (Table $table): string => str_contains($table->getName(), '.')
+                ? substr($table->getName(), (int) strrpos($table->getName(), '.') + 1)
+                : $table->getName(),
+            $schema->getTables()
         );
         sort($tableNames);
 

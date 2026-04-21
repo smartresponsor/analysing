@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\Unit\Analytics;
+namespace App\Analysing\Tests\Unit\Analytics;
 
-use App\Entity\Alerts\AlertRule;
+use App\Analysing\Entity\Alerts\AlertRule;
 use PHPUnit\Framework\TestCase;
 
 final class AlertRuleEntityTest extends TestCase

@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\Unit\Command;
+namespace App\Analysing\Tests\Unit\Command;
 
-use App\Command\AnalyticsExportCommand;
-use App\ServiceInterface\Analytics\DashboardServiceInterface;
-use App\ServiceInterface\Analytics\ReportExporterServiceInterface;
+use App\Analysing\Command\AnalyticsExportCommand;
+use App\Analysing\ServiceInterface\Analytics\DashboardServiceInterface;
+use App\Analysing\ServiceInterface\Analytics\ReportExporterServiceInterface;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 use Symfony\Component\Console\Tester\CommandTester;

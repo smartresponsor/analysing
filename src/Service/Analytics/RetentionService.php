@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\Service\Analytics;
+namespace App\Analysing\Service\Analytics;
 
-use App\ServiceInterface\Analytics\RetentionServiceInterface;
+use App\Analysing\ServiceInterface\Analytics\RetentionServiceInterface;
 use Psr\Log\LoggerInterface;
 
 final readonly class RetentionService implements RetentionServiceInterface

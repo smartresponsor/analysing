@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\DTO\Analytics;
+namespace App\Analysing\DTO\Analytics;
 
 final readonly class KpiRequest
 {

@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace App\Service\Http;
+namespace App\Analysing\Service\Http;
 
-use App\ServiceInterface\Http\AnalyticsIdempotencyResponseSubscriberInterface;
-use App\ServiceInterface\Http\AnalyticsIdempotencyStoreInterface;
+use App\Analysing\ServiceInterface\Http\AnalyticsIdempotencyResponseSubscriberInterface;
+use App\Analysing\ServiceInterface\Http\AnalyticsIdempotencyStoreInterface;
 use Symfony\Component\HttpKernel\Event\ResponseEvent;
 use Symfony\Component\HttpKernel\KernelEvents;
 

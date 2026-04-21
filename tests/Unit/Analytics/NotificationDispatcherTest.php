@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\Unit\Analytics;
+namespace App\Analysing\Tests\Unit\Analytics;
 
-use App\Entity\Alerts\AlertRule;
-use App\Service\Alerts\NotificationDispatcher;
+use App\Analysing\Entity\Alerts\AlertRule;
+use App\Analysing\Service\Alerts\NotificationDispatcher;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 

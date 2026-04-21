@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace App\Service\Analytics;
+namespace App\Analysing\Service\Analytics;
 
-use App\ServiceInterface\Analytics\DashboardHtmlRendererInterface;
-use App\ServiceInterface\Http\RequestCorrelationIdProviderInterface;
-use App\ServiceInterface\Http\TenantContextInterface;
+use App\Analysing\ServiceInterface\Analytics\DashboardHtmlRendererInterface;
+use App\Analysing\ServiceInterface\Http\RequestCorrelationIdProviderInterface;
+use App\Analysing\ServiceInterface\Http\TenantContextInterface;
 
 final readonly class DashboardHtmlRenderer implements DashboardHtmlRendererInterface
 {

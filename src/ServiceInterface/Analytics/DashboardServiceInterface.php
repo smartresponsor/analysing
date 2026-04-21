@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\ServiceInterface\Analytics;
+namespace App\Analysing\ServiceInterface\Analytics;
 
-use App\DTO\Analytics\KpiRequest;
+use App\Analysing\DTO\Analytics\KpiRequest;
 
 interface DashboardServiceInterface
 {

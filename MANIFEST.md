@@ -47,7 +47,7 @@ Docs
 - docs/analytics-core-doc-namespace-target.md
 
 Composer
-- composer.json autoload now maps App\\, SmartResponsor\\ and Analytics\\ to src/ for temporary compatibility.
+- composer.json autoload now maps App\Analysing\\, SmartResponsor\\ and Analytics\\ to src/ for temporary compatibility.
 - Added composer script: composer run guard:namespace.
 
 Reports

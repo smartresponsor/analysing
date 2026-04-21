@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\Unit\Analytics;
+namespace App\Analysing\Tests\Unit\Analytics;
 
-use App\Service\Analytics\KpiRegistry;
-use App\ValueObject\Analytics\KpiId;
+use App\Analysing\Service\Analytics\KpiRegistry;
+use App\Analysing\ValueObject\Analytics\KpiId;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 

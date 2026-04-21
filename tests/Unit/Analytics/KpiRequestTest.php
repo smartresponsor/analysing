@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\Unit\Analytics;
+namespace App\Analysing\Tests\Unit\Analytics;
 
-use App\DTO\Analytics\KpiRequest;
+use App\Analysing\DTO\Analytics\KpiRequest;
 use PHPUnit\Framework\TestCase;
 
 final class KpiRequestTest extends TestCase

@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace App\Controller\Analytics;
+namespace App\Analysing\Controller\Analytics;
 
-use App\ControllerInterface\Analytics\DashboardControllerInterface;
-use App\Service\Analytics\DashboardRequestFactory;
-use App\Service\Http\AnalyticsErrorResponseFactory;
-use App\Service\Http\AnalyticsSuccessResponseFactory;
-use App\ServiceInterface\Analytics\DashboardServiceInterface;
+use App\Analysing\ControllerInterface\Analytics\DashboardControllerInterface;
+use App\Analysing\Service\Analytics\DashboardRequestFactory;
+use App\Analysing\Service\Http\AnalyticsErrorResponseFactory;
+use App\Analysing\Service\Http\AnalyticsSuccessResponseFactory;
+use App\Analysing\ServiceInterface\Analytics\DashboardServiceInterface;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;

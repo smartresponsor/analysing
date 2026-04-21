@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\Unit\Analytics;
+namespace App\Analysing\Tests\Unit\Analytics;
 
 use PHPUnit\Framework\TestCase;
 
@@ -10,14 +10,14 @@ final class ServiceAliasConfigTest extends TestCase
 {
     public function testCriticalServiceAliasesExistInServicesYaml(): void
     {
-        $yaml = (string) file_get_contents(__DIR__.'/../../../config/services.yaml');
+        $yaml = (string) file_get_contents(__DIR__.'/../../../config/component/services.yaml');
 
         $expectedAliases = [
-            "App\\DomainInterface\\Analytics\\AnalyticsInterface: '@App\\Domain\\Analytics\\Analytics'",
-            "App\\DomainInterface\\Analytics\\ClickhouseClientInterface: '@App\\Domain\\Analytics\\ClickhouseClient'",
-            "App\\RepositoryInterface\\Analytics\\InfraRepositoryInterface: '@App\\Repository\\Analytics\\InfraRepository'",
-            "App\\ServiceInterface\\Analytics\\DashboardServiceInterface: '@App\\Service\\Analytics\\DashboardService'",
-            "App\\ServiceInterface\\Analytics\\ReportGeneratorServiceInterface: '@App\\Service\\Analytics\\ReportGeneratorService'",
+            "App\Analysing\\DomainInterface\\Analytics\\AnalyticsInterface: '@App\Analysing\\Domain\\Analytics\\Analytics'",
+            "App\Analysing\\DomainInterface\\Analytics\\ClickhouseClientInterface: '@App\Analysing\\Domain\\Analytics\\ClickhouseClient'",
+            "App\Analysing\\RepositoryInterface\\Analytics\\InfraRepositoryInterface: '@App\Analysing\\Repository\\Analytics\\InfraRepository'",
+            "App\Analysing\\ServiceInterface\\Analytics\\DashboardServiceInterface: '@App\Analysing\\Service\\Analytics\\DashboardService'",
+            "App\Analysing\\ServiceInterface\\Analytics\\ReportGeneratorServiceInterface: '@App\Analysing\\Service\\Analytics\\ReportGeneratorService'",
             "Psr\\Log\\LoggerInterface: '@Psr\\Log\\NullLogger'",
         ];
 

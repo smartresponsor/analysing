@@ -66,7 +66,7 @@ Next envelopes (not yet applied)
   Inputs: composer.json + scan report
   Outputs: docs decision + composer autoload adjustment proposal
   Acceptance Criteria: decision documented; follow-up buckets become mechanical
-  Notes: recommend one root (App\ or SmartResponsor\Analytics\) and migrate consistently
+  Notes: recommend one root (App\Analysing\ or SmartResponsor\Analytics\) and migrate consistently
 
 - SK9-B3 namespace alignment for Controller layer
   Goal: align Controller namespaces with folder and composer autoload

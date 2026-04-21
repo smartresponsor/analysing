@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace App\Repository\Analytics;
+namespace App\Analysing\Repository\Analytics;
 
-use App\RepositoryInterface\Analytics\SampleInfraRepositoryInterface;
-use App\ServiceInterface\Analytics\SampleAnalyticsDatasetInterface;
+use App\Analysing\RepositoryInterface\Analytics\SampleInfraRepositoryInterface;
+use App\Analysing\ServiceInterface\Analytics\SampleAnalyticsDatasetInterface;
 use Psr\Log\LoggerInterface;
 
 final readonly class SampleInfraRepository implements SampleInfraRepositoryInterface

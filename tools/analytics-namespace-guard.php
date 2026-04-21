@@ -25,9 +25,9 @@ final class AnalyticsNamespaceGuard
         $path = $this->rootDir . '/config/guard/analytics-namespace-guard.json';
         if (!is_file($path)) {
             return [
-                'targetPrefix' => 'SmartResponsor\\Analytics\\',
+                'targetPrefix' => 'App\\Analysing\\',
                 'allowedRoot' => ['App'],
-                'bannedPrefix' => ['SmartResponsor\\Http\\', 'Analytics\\Bootstrap\\'],
+                'bannedPrefix' => ['SmartResponsor\\', 'Analytics\\'],
             ];
         }
 
@@ -38,7 +38,7 @@ final class AnalyticsNamespaceGuard
         }
 
         return [
-            'targetPrefix' => (string) ($data['targetPrefix'] ?? 'SmartResponsor\\Analytics\\'),
+            'targetPrefix' => (string) ($data['targetPrefix'] ?? 'App\\Analysing\\'),
             'allowedRoot' => array_values(array_map('strval', (array) ($data['allowedRoot'] ?? []))),
             'bannedPrefix' => array_values(array_map('strval', (array) ($data['bannedPrefix'] ?? []))),
         ];

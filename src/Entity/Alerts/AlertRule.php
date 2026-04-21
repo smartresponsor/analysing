@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Entity\Alerts;
+namespace App\Analysing\Entity\Alerts;
 
 use Doctrine\ORM\Mapping as ORM;
 

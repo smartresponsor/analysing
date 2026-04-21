@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace App\Service\Analytics;
+namespace App\Analysing\Service\Analytics;
 
-use App\DTO\Analytics\KpiRequest;
-use App\Entity\Analytics\ExportJob;
-use App\ServiceInterface\Analytics\DashboardServiceInterface;
-use App\ServiceInterface\Analytics\ReportExporterServiceInterface;
+use App\Analysing\DTO\Analytics\KpiRequest;
+use App\Analysing\Entity\Analytics\ExportJob;
+use App\Analysing\ServiceInterface\Analytics\DashboardServiceInterface;
+use App\Analysing\ServiceInterface\Analytics\ReportExporterServiceInterface;
 use Doctrine\ORM\EntityManagerInterface;
 use Psr\Log\LoggerInterface;
 

@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-use App\Infrastructure\Doctrine\ConnectionFactory;
-use App\Infrastructure\Doctrine\EntityManagerFactory;
-use App\Repository\Analytics\SampleInfraRepository;
-use App\Service\Analytics\HealthService;
-use App\Service\Analytics\SampleDashboardService;
-use App\Service\Http\AnalyticsIdempotencyStore;
-use App\Service\Http\AnalyticsRouteRateLimiter;
+use App\Analysing\Infrastructure\Doctrine\ConnectionFactory;
+use App\Analysing\Infrastructure\Doctrine\EntityManagerFactory;
+use App\Analysing\Repository\Analytics\SampleInfraRepository;
+use App\Analysing\Service\Analytics\HealthService;
+use App\Analysing\Service\Analytics\SampleDashboardService;
+use App\Analysing\Service\Http\AnalyticsIdempotencyStore;
+use App\Analysing\Service\Http\AnalyticsRouteRateLimiter;
 use Doctrine\DBAL\Connection;
 use Doctrine\ORM\EntityManagerInterface;
 use Psr\Log\LoggerInterface;
@@ -81,15 +81,15 @@ return static function (ContainerConfigurator $container): void {
         ->bind('string $pass', param('analytics.clickhouse.pass'))
         ->bind('string $salt', param('analytics.runtime.salt'));
 
-    $services->load('App\\Controller\\', '../src/Controller/')
+    $services->load('App\Analysing\\Controller\\', '../src/Controller/')
         ->tag('controller.service_arguments')
         ->public();
 
-    $services->load('App\\Command\\', '../src/Command/');
-    $services->load('App\\Domain\\', '../src/Domain/');
-    $services->load('App\\Infrastructure\\', '../src/Infrastructure/');
-    $services->load('App\\Repository\\', '../src/Repository/');
-    $services->load('App\\Service\\', '../src/Service/');
+    $services->load('App\Analysing\\Command\\', '../src/Command/');
+    $services->load('App\Analysing\\Domain\\', '../src/Domain/');
+    $services->load('App\Analysing\\Infrastructure\\', '../src/Infrastructure/');
+    $services->load('App\Analysing\\Repository\\', '../src/Repository/');
+    $services->load('App\Analysing\\Service\\', '../src/Service/');
 
     $services->set(ConnectionFactory::class);
     $services->set(Connection::class)
@@ -100,81 +100,81 @@ return static function (ContainerConfigurator $container): void {
         ->factory([service(EntityManagerFactory::class), 'create'])
         ->args([service(Connection::class)]);
 
-    $services->alias('App\\ControllerInterface\\Analytics\\AggregateControllerInterface', 'App\\Controller\\Analytics\\AggregateController');
-    $services->alias('App\\ControllerInterface\\Analytics\\AnalyticsControllerInterface', 'App\\Controller\\Analytics\\AnalyticsController');
-    $services->alias('App\\ControllerInterface\\Analytics\\ApiControllerInterface', 'App\\Controller\\Analytics\\ApiController');
-    $services->alias('App\\ControllerInterface\\Analytics\\DashboardControllerInterface', 'App\\Controller\\Analytics\\DashboardController');
-    $services->alias('App\\ControllerInterface\\Analytics\\DashboardPageControllerInterface', 'App\\Controller\\Analytics\\DashboardPageController');
-    $services->alias('App\\ControllerInterface\\Analytics\\ExperimentControllerInterface', 'App\\Controller\\Analytics\\ExperimentController');
-    $services->alias('App\\ControllerInterface\\Analytics\\FlagControllerInterface', 'App\\Controller\\Analytics\\FlagController');
-    $services->alias('App\\ControllerInterface\\Analytics\\HealthControllerInterface', 'App\\Controller\\Analytics\\HealthController');
-    $services->alias('App\\ControllerInterface\\Analytics\\IngestControllerInterface', 'App\\Controller\\Analytics\\IngestController');
-    $services->alias('App\\ControllerInterface\\Analytics\\InsightControllerInterface', 'App\\Controller\\Analytics\\InsightController');
+    $services->alias('App\Analysing\\ControllerInterface\\Analytics\\AggregateControllerInterface', 'App\Analysing\\Controller\\Analytics\\AggregateController');
+    $services->alias('App\Analysing\\ControllerInterface\\Analytics\\AnalyticsControllerInterface', 'App\Analysing\\Controller\\Analytics\\AnalyticsController');
+    $services->alias('App\Analysing\\ControllerInterface\\Analytics\\ApiControllerInterface', 'App\Analysing\\Controller\\Analytics\\ApiController');
+    $services->alias('App\Analysing\\ControllerInterface\\Analytics\\DashboardControllerInterface', 'App\Analysing\\Controller\\Analytics\\DashboardController');
+    $services->alias('App\Analysing\\ControllerInterface\\Analytics\\DashboardPageControllerInterface', 'App\Analysing\\Controller\\Analytics\\DashboardPageController');
+    $services->alias('App\Analysing\\ControllerInterface\\Analytics\\ExperimentControllerInterface', 'App\Analysing\\Controller\\Analytics\\ExperimentController');
+    $services->alias('App\Analysing\\ControllerInterface\\Analytics\\FlagControllerInterface', 'App\Analysing\\Controller\\Analytics\\FlagController');
+    $services->alias('App\Analysing\\ControllerInterface\\Analytics\\HealthControllerInterface', 'App\Analysing\\Controller\\Analytics\\HealthController');
+    $services->alias('App\Analysing\\ControllerInterface\\Analytics\\IngestControllerInterface', 'App\Analysing\\Controller\\Analytics\\IngestController');
+    $services->alias('App\Analysing\\ControllerInterface\\Analytics\\InsightControllerInterface', 'App\Analysing\\Controller\\Analytics\\InsightController');
 
-    $services->alias('App\\DomainInterface\\Analytics\\AnalyticsInterface', 'App\\Domain\\Analytics\\Analytics');
-    $services->alias('App\\DomainInterface\\Analytics\\ExperimentInterface', 'App\\Domain\\Analytics\\Experiment');
-    $services->alias('App\\DomainInterface\\Analytics\\FlagInterface', 'App\\Domain\\Analytics\\Flag');
-    $services->alias('App\\DomainInterface\\Analytics\\InsightInterface', 'App\\Domain\\Analytics\\Insight');
-    $services->alias('App\\DomainInterface\\Analytics\\ClickhouseClientInterface', 'App\\Domain\\Analytics\\ClickhouseClient');
+    $services->alias('App\Analysing\\DomainInterface\\Analytics\\AnalyticsInterface', 'App\Analysing\\Domain\\Analytics\\Analytics');
+    $services->alias('App\Analysing\\DomainInterface\\Analytics\\ExperimentInterface', 'App\Analysing\\Domain\\Analytics\\Experiment');
+    $services->alias('App\Analysing\\DomainInterface\\Analytics\\FlagInterface', 'App\Analysing\\Domain\\Analytics\\Flag');
+    $services->alias('App\Analysing\\DomainInterface\\Analytics\\InsightInterface', 'App\Analysing\\Domain\\Analytics\\Insight');
+    $services->alias('App\Analysing\\DomainInterface\\Analytics\\ClickhouseClientInterface', 'App\Analysing\\Domain\\Analytics\\ClickhouseClient');
 
-    $services->alias('App\RepositoryInterface\Analytics\InfraRepositoryInterface', $sampleRuntime ? SampleInfraRepository::class : 'App\Repository\Analytics\InfraRepository');
+    $services->alias('App\Analysing\RepositoryInterface\Analytics\InfraRepositoryInterface', $sampleRuntime ? SampleInfraRepository::class : 'App\Analysing\Repository\Analytics\InfraRepository');
 
-    $services->alias('App\\ServiceInterface\\Alerts\\AlertEvaluatorInterface', 'App\\Service\\Alerts\\AlertEvaluator');
-    $services->alias('App\\ServiceInterface\\Alerts\\NotificationDispatcherInterface', 'App\\Service\\Alerts\\NotificationDispatcher');
-    $services->alias('App\\ServiceInterface\\Analytics\\AnalyticsCollectorInterface', 'App\\Service\\Analytics\\AnalyticsCollector');
-    $services->alias('App\\ServiceInterface\\Analytics\\ExperimentServiceInterface', 'App\\Service\\Analytics\\ExperimentService');
-    $services->alias('App\\ServiceInterface\\Analytics\\MetricIngestServiceInterface', 'App\\Service\\Analytics\\MetricIngestService');
-    $services->alias('App\\ServiceInterface\\Analytics\\RollupServiceInterface', 'App\\Service\\Analytics\\RollupService');
-    $services->alias('App\\ServiceInterface\\Analytics\\SegmentationServiceInterface', 'App\\Service\\Analytics\\SegmentationService');
-    $services->alias('App\\ServiceInterface\\Analytics\\CsvImporterInterface', 'App\\Service\\Analytics\\CsvImporter');
-    $services->alias('App\\ServiceInterface\\Analytics\\FileNotifierInterface', 'App\\Service\\Analytics\\FileNotifier');
-    $services->alias('App\\ServiceInterface\\Analytics\\GzipWriterInterface', 'App\\Service\\Analytics\\GzipWriter');
-    $services->alias('App\\ServiceInterface\\Analytics\\LocalCacheInterface', 'App\\Service\\Analytics\\LocalCache');
-    $services->alias('App\\ServiceInterface\\Analytics\\WebhookNotifierInterface', 'App\\Service\\Analytics\\WebhookNotifier');
-    $services->alias('App\\ServiceInterface\\Analytics\\AsyncQueryServiceInterface', 'App\\Service\\Analytics\\AsyncQueryService');
-    $services->alias('App\\ServiceInterface\\Analytics\\BackfillServiceInterface', 'App\\Service\\Analytics\\BackfillService');
-    $services->alias('App\\ServiceInterface\\Analytics\\ReportExporterServiceInterface', 'App\\Service\\Analytics\\ReportExporterService');
-    $services->alias('App\\ServiceInterface\\Analytics\\ReportGeneratorServiceInterface', 'App\\Service\\Analytics\\ReportGeneratorService');
-    $services->alias('App\\ServiceInterface\\Analytics\\RetentionServiceInterface', 'App\\Service\\Analytics\\RetentionService');
-    $services->alias('App\\ServiceInterface\\Analytics\\TokenServiceInterface', 'App\\Service\\Analytics\\TokenService');
-    $services->alias('App\\ServiceInterface\\Analytics\\AccessGuardInterface', 'App\\Service\\Analytics\\AccessGuard');
-    $services->alias('App\\ServiceInterface\\Analytics\\AggregateServiceInterface', 'App\\Service\\Analytics\\AggregateService');
-    $services->alias('App\\ServiceInterface\\Analytics\\AnomalyDetectorInterface', 'App\\Service\\Analytics\\AnomalyDetector');
-    $services->alias('App\\ServiceInterface\\Analytics\\CacheInterface', 'App\\Service\\Analytics\\LocalCache');
-    $services->alias('App\\ServiceInterface\\Analytics\\CsvImportInterface', 'App\\Service\\Analytics\\CsvImporter');
-    $services->alias('App\ServiceInterface\Analytics\DashboardServiceInterface', $sampleRuntime ? SampleDashboardService::class : 'App\Service\Analytics\DashboardService');
-    $services->alias('App\\ServiceInterface\\Analytics\\HealthServiceInterface', 'App\\Service\\Analytics\\HealthService');
-    $services->alias('App\\ServiceInterface\\Analytics\\KpiRegistryInterface', 'App\\Service\\Analytics\\KpiRegistry');
-    $services->alias('App\\ServiceInterface\\Analytics\\MetricIngestInterface', 'App\\Service\\Analytics\\MetricIngestService');
-    $services->alias('App\\ServiceInterface\\Analytics\\NotifierInterface', 'App\\Service\\Analytics\\WebhookNotifier');
-    $services->alias('App\\ServiceInterface\\Analytics\\ReportBundleInterface', 'App\\Service\\Analytics\\ReportBundle');
-    $services->alias('App\\ServiceInterface\\Analytics\\RetentionInterface', 'App\\Service\\Analytics\\RetentionService');
-    $services->alias('App\\ServiceInterface\\Analytics\\RollupInterface', 'App\\Service\\Analytics\\RollupService');
-    $services->alias('App\\ServiceInterface\\Analytics\\SegmentationInterface', 'App\\Service\\Analytics\\SegmentationService');
-    $services->alias('App\\ServiceInterface\\Analytics\\SloCalculatorInterface', 'App\\Service\\Analytics\\SloCalculator');
-    $services->alias('App\\ServiceInterface\\Analytics\\TenantScopeInterface', 'App\\Service\\Analytics\\TenantScope');
-    $services->alias('App\\ServiceInterface\\Analytics\\TransformerInterface', 'App\\Service\\Analytics\\Transformer');
-    $services->alias('App\\ServiceInterface\\Analytics\\WindowQueryInterface', 'App\\Service\\Analytics\\WindowQuery');
+    $services->alias('App\Analysing\\ServiceInterface\\Alerts\\AlertEvaluatorInterface', 'App\Analysing\\Service\\Alerts\\AlertEvaluator');
+    $services->alias('App\Analysing\\ServiceInterface\\Alerts\\NotificationDispatcherInterface', 'App\Analysing\\Service\\Alerts\\NotificationDispatcher');
+    $services->alias('App\Analysing\\ServiceInterface\\Analytics\\AnalyticsCollectorInterface', 'App\Analysing\\Service\\Analytics\\AnalyticsCollector');
+    $services->alias('App\Analysing\\ServiceInterface\\Analytics\\ExperimentServiceInterface', 'App\Analysing\\Service\\Analytics\\ExperimentService');
+    $services->alias('App\Analysing\\ServiceInterface\\Analytics\\MetricIngestServiceInterface', 'App\Analysing\\Service\\Analytics\\MetricIngestService');
+    $services->alias('App\Analysing\\ServiceInterface\\Analytics\\RollupServiceInterface', 'App\Analysing\\Service\\Analytics\\RollupService');
+    $services->alias('App\Analysing\\ServiceInterface\\Analytics\\SegmentationServiceInterface', 'App\Analysing\\Service\\Analytics\\SegmentationService');
+    $services->alias('App\Analysing\\ServiceInterface\\Analytics\\CsvImporterInterface', 'App\Analysing\\Service\\Analytics\\CsvImporter');
+    $services->alias('App\Analysing\\ServiceInterface\\Analytics\\FileNotifierInterface', 'App\Analysing\\Service\\Analytics\\FileNotifier');
+    $services->alias('App\Analysing\\ServiceInterface\\Analytics\\GzipWriterInterface', 'App\Analysing\\Service\\Analytics\\GzipWriter');
+    $services->alias('App\Analysing\\ServiceInterface\\Analytics\\LocalCacheInterface', 'App\Analysing\\Service\\Analytics\\LocalCache');
+    $services->alias('App\Analysing\\ServiceInterface\\Analytics\\WebhookNotifierInterface', 'App\Analysing\\Service\\Analytics\\WebhookNotifier');
+    $services->alias('App\Analysing\\ServiceInterface\\Analytics\\AsyncQueryServiceInterface', 'App\Analysing\\Service\\Analytics\\AsyncQueryService');
+    $services->alias('App\Analysing\\ServiceInterface\\Analytics\\BackfillServiceInterface', 'App\Analysing\\Service\\Analytics\\BackfillService');
+    $services->alias('App\Analysing\\ServiceInterface\\Analytics\\ReportExporterServiceInterface', 'App\Analysing\\Service\\Analytics\\ReportExporterService');
+    $services->alias('App\Analysing\\ServiceInterface\\Analytics\\ReportGeneratorServiceInterface', 'App\Analysing\\Service\\Analytics\\ReportGeneratorService');
+    $services->alias('App\Analysing\\ServiceInterface\\Analytics\\RetentionServiceInterface', 'App\Analysing\\Service\\Analytics\\RetentionService');
+    $services->alias('App\Analysing\\ServiceInterface\\Analytics\\TokenServiceInterface', 'App\Analysing\\Service\\Analytics\\TokenService');
+    $services->alias('App\Analysing\\ServiceInterface\\Analytics\\AccessGuardInterface', 'App\Analysing\\Service\\Analytics\\AccessGuard');
+    $services->alias('App\Analysing\\ServiceInterface\\Analytics\\AggregateServiceInterface', 'App\Analysing\\Service\\Analytics\\AggregateService');
+    $services->alias('App\Analysing\\ServiceInterface\\Analytics\\AnomalyDetectorInterface', 'App\Analysing\\Service\\Analytics\\AnomalyDetector');
+    $services->alias('App\Analysing\\ServiceInterface\\Analytics\\CacheInterface', 'App\Analysing\\Service\\Analytics\\LocalCache');
+    $services->alias('App\Analysing\\ServiceInterface\\Analytics\\CsvImportInterface', 'App\Analysing\\Service\\Analytics\\CsvImporter');
+    $services->alias('App\Analysing\ServiceInterface\Analytics\DashboardServiceInterface', $sampleRuntime ? SampleDashboardService::class : 'App\Analysing\Service\Analytics\DashboardService');
+    $services->alias('App\Analysing\\ServiceInterface\\Analytics\\HealthServiceInterface', 'App\Analysing\\Service\\Analytics\\HealthService');
+    $services->alias('App\Analysing\\ServiceInterface\\Analytics\\KpiRegistryInterface', 'App\Analysing\\Service\\Analytics\\KpiRegistry');
+    $services->alias('App\Analysing\\ServiceInterface\\Analytics\\MetricIngestInterface', 'App\Analysing\\Service\\Analytics\\MetricIngestService');
+    $services->alias('App\Analysing\\ServiceInterface\\Analytics\\NotifierInterface', 'App\Analysing\\Service\\Analytics\\WebhookNotifier');
+    $services->alias('App\Analysing\\ServiceInterface\\Analytics\\ReportBundleInterface', 'App\Analysing\\Service\\Analytics\\ReportBundle');
+    $services->alias('App\Analysing\\ServiceInterface\\Analytics\\RetentionInterface', 'App\Analysing\\Service\\Analytics\\RetentionService');
+    $services->alias('App\Analysing\\ServiceInterface\\Analytics\\RollupInterface', 'App\Analysing\\Service\\Analytics\\RollupService');
+    $services->alias('App\Analysing\\ServiceInterface\\Analytics\\SegmentationInterface', 'App\Analysing\\Service\\Analytics\\SegmentationService');
+    $services->alias('App\Analysing\\ServiceInterface\\Analytics\\SloCalculatorInterface', 'App\Analysing\\Service\\Analytics\\SloCalculator');
+    $services->alias('App\Analysing\\ServiceInterface\\Analytics\\TenantScopeInterface', 'App\Analysing\\Service\\Analytics\\TenantScope');
+    $services->alias('App\Analysing\\ServiceInterface\\Analytics\\TransformerInterface', 'App\Analysing\\Service\\Analytics\\Transformer');
+    $services->alias('App\Analysing\\ServiceInterface\\Analytics\\WindowQueryInterface', 'App\Analysing\\Service\\Analytics\\WindowQuery');
 
-    $services->alias('App\RepositoryInterface\Analytics\SampleInfraRepositoryInterface', 'App\Repository\Analytics\SampleInfraRepository');
-    $services->alias('App\ServiceInterface\Analytics\DashboardHtmlRendererInterface', 'App\Service\Analytics\DashboardHtmlRenderer');
-    $services->alias('App\ServiceInterface\Analytics\SampleAnalyticsDatasetInterface', 'App\Service\Analytics\SampleAnalyticsDataset');
-    $services->alias('App\ServiceInterface\Analytics\SampleDashboardServiceInterface', 'App\Service\Analytics\SampleDashboardService');
-    $services->alias('App\ServiceInterface\Http\AnalyticsErrorResponseFactoryInterface', 'App\Service\Http\AnalyticsErrorResponseFactory');
-    $services->alias('App\ServiceInterface\Http\AnalyticsIdempotencyRequestSubscriberInterface', 'App\Service\Http\AnalyticsIdempotencyRequestSubscriber');
-    $services->alias('App\ServiceInterface\Http\AnalyticsIdempotencyResponseSubscriberInterface', 'App\Service\Http\AnalyticsIdempotencyResponseSubscriber');
-    $services->alias('App\ServiceInterface\Http\AnalyticsIdempotencyStoreInterface', 'App\Service\Http\AnalyticsIdempotencyStore');
-    $services->alias('App\ServiceInterface\Http\AnalyticsRateLimitResponseSubscriberInterface', 'App\Service\Http\AnalyticsRateLimitResponseSubscriber');
-    $services->alias('App\ServiceInterface\Http\AnalyticsRequestAuthSubscriberInterface', 'App\Service\Http\AnalyticsRequestAuthSubscriber');
-    $services->alias('App\ServiceInterface\Http\AnalyticsRouteRateLimiterInterface', 'App\Service\Http\AnalyticsRouteRateLimiter');
-    $services->alias('App\ServiceInterface\Http\AnalyticsSuccessResponseFactoryInterface', 'App\Service\Http\AnalyticsSuccessResponseFactory');
-    $services->alias('App\ServiceInterface\Http\AnalyticsWriteRateLimitSubscriberInterface', 'App\Service\Http\AnalyticsWriteRateLimitSubscriber');
-    $services->alias('App\ServiceInterface\Http\RequestCorrelationIdProviderInterface', 'App\Service\Http\RequestCorrelationIdProvider');
-    $services->alias('App\ServiceInterface\Http\RequestCorrelationIdSubscriberInterface', 'App\Service\Http\RequestCorrelationIdSubscriber');
-    $services->alias('App\ServiceInterface\Http\TenantContextInterface', 'App\Service\Http\TenantContext');
-    $services->alias('App\ServiceInterface\Http\TenantContextResolverInterface', 'App\Service\Http\TenantContextResolver');
-    $services->alias('App\ServiceInterface\Http\TenantContextResponseSubscriberInterface', 'App\Service\Http\TenantContextResponseSubscriber');
-    $services->alias('App\ServiceInterface\Http\TenantContextSubscriberInterface', 'App\Service\Http\TenantContextSubscriber');
+    $services->alias('App\Analysing\RepositoryInterface\Analytics\SampleInfraRepositoryInterface', 'App\Analysing\Repository\Analytics\SampleInfraRepository');
+    $services->alias('App\Analysing\ServiceInterface\Analytics\DashboardHtmlRendererInterface', 'App\Analysing\Service\Analytics\DashboardHtmlRenderer');
+    $services->alias('App\Analysing\ServiceInterface\Analytics\SampleAnalyticsDatasetInterface', 'App\Analysing\Service\Analytics\SampleAnalyticsDataset');
+    $services->alias('App\Analysing\ServiceInterface\Analytics\SampleDashboardServiceInterface', 'App\Analysing\Service\Analytics\SampleDashboardService');
+    $services->alias('App\Analysing\ServiceInterface\Http\AnalyticsErrorResponseFactoryInterface', 'App\Analysing\Service\Http\AnalyticsErrorResponseFactory');
+    $services->alias('App\Analysing\ServiceInterface\Http\AnalyticsIdempotencyRequestSubscriberInterface', 'App\Analysing\Service\Http\AnalyticsIdempotencyRequestSubscriber');
+    $services->alias('App\Analysing\ServiceInterface\Http\AnalyticsIdempotencyResponseSubscriberInterface', 'App\Analysing\Service\Http\AnalyticsIdempotencyResponseSubscriber');
+    $services->alias('App\Analysing\ServiceInterface\Http\AnalyticsIdempotencyStoreInterface', 'App\Analysing\Service\Http\AnalyticsIdempotencyStore');
+    $services->alias('App\Analysing\ServiceInterface\Http\AnalyticsRateLimitResponseSubscriberInterface', 'App\Analysing\Service\Http\AnalyticsRateLimitResponseSubscriber');
+    $services->alias('App\Analysing\ServiceInterface\Http\AnalyticsRequestAuthSubscriberInterface', 'App\Analysing\Service\Http\AnalyticsRequestAuthSubscriber');
+    $services->alias('App\Analysing\ServiceInterface\Http\AnalyticsRouteRateLimiterInterface', 'App\Analysing\Service\Http\AnalyticsRouteRateLimiter');
+    $services->alias('App\Analysing\ServiceInterface\Http\AnalyticsSuccessResponseFactoryInterface', 'App\Analysing\Service\Http\AnalyticsSuccessResponseFactory');
+    $services->alias('App\Analysing\ServiceInterface\Http\AnalyticsWriteRateLimitSubscriberInterface', 'App\Analysing\Service\Http\AnalyticsWriteRateLimitSubscriber');
+    $services->alias('App\Analysing\ServiceInterface\Http\RequestCorrelationIdProviderInterface', 'App\Analysing\Service\Http\RequestCorrelationIdProvider');
+    $services->alias('App\Analysing\ServiceInterface\Http\RequestCorrelationIdSubscriberInterface', 'App\Analysing\Service\Http\RequestCorrelationIdSubscriber');
+    $services->alias('App\Analysing\ServiceInterface\Http\TenantContextInterface', 'App\Analysing\Service\Http\TenantContext');
+    $services->alias('App\Analysing\ServiceInterface\Http\TenantContextResolverInterface', 'App\Analysing\Service\Http\TenantContextResolver');
+    $services->alias('App\Analysing\ServiceInterface\Http\TenantContextResponseSubscriberInterface', 'App\Analysing\Service\Http\TenantContextResponseSubscriber');
+    $services->alias('App\Analysing\ServiceInterface\Http\TenantContextSubscriberInterface', 'App\Analysing\Service\Http\TenantContextSubscriber');
 
     $services->set(AnalyticsIdempotencyStore::class)
         ->arg('$directory', param('analytics.idempotency.directory'))
@@ -202,20 +202,20 @@ return static function (ContainerConfigurator $container): void {
         ->arg('$storagePrepareCommand', param('analytics.storage.prepare_command'))
         ->arg('$storageRequiredTables', param('analytics.storage.required_tables'));
 
-    $services->set('App\Service\Http\AnalyticsRequestAuthSubscriber')
+    $services->set('App\Analysing\Service\Http\AnalyticsRequestAuthSubscriber')
         ->arg('$required', param('analytics.auth.required'))
         ->arg('$publicRead', param('analytics.auth.public_read'));
 
-    $services->set('App\Service\Http\AnalyticsIdempotencyRequestSubscriber')
+    $services->set('App\Analysing\Service\Http\AnalyticsIdempotencyRequestSubscriber')
         ->arg('$enabled', param('analytics.idempotency.enabled'))
         ->arg('$required', param('analytics.idempotency.required'));
 
-    $services->set('App\Service\Http\AnalyticsIdempotencyResponseSubscriber')
+    $services->set('App\Analysing\Service\Http\AnalyticsIdempotencyResponseSubscriber')
         ->arg('$enabled', param('analytics.idempotency.enabled'));
 
-    $services->set('App\Service\Http\AnalyticsWriteRateLimitSubscriber');
+    $services->set('App\Analysing\Service\Http\AnalyticsWriteRateLimitSubscriber');
 
-    $services->set('App\Service\Http\AnalyticsRateLimitResponseSubscriber');
+    $services->set('App\Analysing\Service\Http\AnalyticsRateLimitResponseSubscriber');
 
     $services->set(NullLogger::class);
     $services->alias(LoggerInterface::class, NullLogger::class);

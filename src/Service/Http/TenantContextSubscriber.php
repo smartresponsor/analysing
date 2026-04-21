@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace App\Service\Http;
+namespace App\Analysing\Service\Http;
 
-use App\ServiceInterface\Http\TenantContextInterface;
-use App\ServiceInterface\Http\TenantContextResolverInterface;
-use App\ServiceInterface\Http\TenantContextSubscriberInterface;
+use App\Analysing\ServiceInterface\Http\TenantContextInterface;
+use App\Analysing\ServiceInterface\Http\TenantContextResolverInterface;
+use App\Analysing\ServiceInterface\Http\TenantContextSubscriberInterface;
 use Symfony\Component\HttpKernel\Event\RequestEvent;
 use Symfony\Component\HttpKernel\KernelEvents;
 

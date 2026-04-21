@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace App\ServiceInterface\Alerts;
+namespace App\Analysing\ServiceInterface\Alerts;
 
-use App\Entity\Alerts\AlertRule;
-use App\Entity\Analytics\MetricSnapshot;
+use App\Analysing\Entity\Alerts\AlertRule;
+use App\Analysing\Entity\Analytics\MetricSnapshot;
 
 interface AlertEvaluatorInterface
 {

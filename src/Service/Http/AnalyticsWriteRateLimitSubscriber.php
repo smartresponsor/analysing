@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace App\Service\Http;
+namespace App\Analysing\Service\Http;
 
-use App\ServiceInterface\Http\AnalyticsErrorResponseFactoryInterface;
-use App\ServiceInterface\Http\AnalyticsRouteRateLimiterInterface;
-use App\ServiceInterface\Http\AnalyticsWriteRateLimitSubscriberInterface;
-use App\ServiceInterface\Http\TenantContextInterface;
-use App\ValueObject\Http\AnalyticsRateLimitDecision;
+use App\Analysing\ServiceInterface\Http\AnalyticsErrorResponseFactoryInterface;
+use App\Analysing\ServiceInterface\Http\AnalyticsRouteRateLimiterInterface;
+use App\Analysing\ServiceInterface\Http\AnalyticsWriteRateLimitSubscriberInterface;
+use App\Analysing\ServiceInterface\Http\TenantContextInterface;
+use App\Analysing\ValueObject\Http\AnalyticsRateLimitDecision;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;

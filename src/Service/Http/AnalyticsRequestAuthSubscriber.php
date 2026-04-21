@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace App\Service\Http;
+namespace App\Analysing\Service\Http;
 
-use App\ServiceInterface\Analytics\TokenServiceInterface;
-use App\ServiceInterface\Http\AnalyticsErrorResponseFactoryInterface;
-use App\ServiceInterface\Http\AnalyticsRequestAuthSubscriberInterface;
+use App\Analysing\ServiceInterface\Analytics\TokenServiceInterface;
+use App\Analysing\ServiceInterface\Http\AnalyticsErrorResponseFactoryInterface;
+use App\Analysing\ServiceInterface\Http\AnalyticsRequestAuthSubscriberInterface;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;

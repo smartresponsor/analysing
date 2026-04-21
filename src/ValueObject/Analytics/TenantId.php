@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\ValueObject\Analytics;
+namespace App\Analysing\ValueObject\Analytics;
 
 final class TenantId
 {

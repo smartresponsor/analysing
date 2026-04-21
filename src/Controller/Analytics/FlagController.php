@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace App\Controller\Analytics;
+namespace App\Analysing\Controller\Analytics;
 
-use App\ControllerInterface\Analytics\FlagControllerInterface;
-use App\DomainInterface\Analytics\FlagInterface;
-use App\Service\Http\AnalyticsErrorResponseFactory;
-use App\Service\Http\AnalyticsSuccessResponseFactory;
-use App\Service\Http\JsonRequestBodyDecoder;
+use App\Analysing\ControllerInterface\Analytics\FlagControllerInterface;
+use App\Analysing\DomainInterface\Analytics\FlagInterface;
+use App\Analysing\Service\Http\AnalyticsErrorResponseFactory;
+use App\Analysing\Service\Http\AnalyticsSuccessResponseFactory;
+use App\Analysing\Service\Http\JsonRequestBodyDecoder;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;

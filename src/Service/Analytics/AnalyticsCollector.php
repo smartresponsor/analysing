@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace App\Service\Analytics;
+namespace App\Analysing\Service\Analytics;
 
-use App\Entity\Analytics\MetricSnapshot;
-use App\ServiceInterface\Analytics\AnalyticsCollectorInterface;
+use App\Analysing\Entity\Analytics\MetricSnapshot;
+use App\Analysing\ServiceInterface\Analytics\AnalyticsCollectorInterface;
 use Doctrine\ORM\EntityManagerInterface;
 use Psr\Log\LoggerInterface;
 

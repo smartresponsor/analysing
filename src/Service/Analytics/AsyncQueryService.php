@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\Service\Analytics;
+namespace App\Analysing\Service\Analytics;
 
-use App\ServiceInterface\Analytics\AsyncQueryServiceInterface;
+use App\Analysing\ServiceInterface\Analytics\AsyncQueryServiceInterface;
 use Psr\Log\LoggerInterface;
 use Random\RandomException;
 

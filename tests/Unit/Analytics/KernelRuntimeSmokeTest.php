@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\Unit\Analytics;
+namespace App\Analysing\Tests\Unit\Analytics;
 
-use App\Kernel;
+use App\Analysing\Tests\Support\TestKernel;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\HttpFoundation\Request;
 
@@ -15,7 +15,7 @@ final class KernelRuntimeSmokeTest extends TestCase
         require_once __DIR__.'/../../../vendor/autoload.php';
         require_once __DIR__.'/../../../config/bootstrap.php';
 
-        $kernel = new Kernel('test', true);
+        $kernel = new TestKernel('test', true);
         $response = $kernel->handle(Request::create('/status', 'GET'));
 
         self::assertSame(200, $response->getStatusCode());

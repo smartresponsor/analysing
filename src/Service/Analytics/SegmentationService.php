@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace App\Service\Analytics;
+namespace App\Analysing\Service\Analytics;
 
-use App\ServiceInterface\Analytics\SegmentationServiceInterface;
-use App\ValueObject\Analytics\Dimension;
-use App\ValueObject\Analytics\Segment;
+use App\Analysing\ServiceInterface\Analytics\SegmentationServiceInterface;
+use App\Analysing\ValueObject\Analytics\Dimension;
+use App\Analysing\ValueObject\Analytics\Segment;
 use Psr\Log\LoggerInterface;
 
 final class SegmentationService implements SegmentationServiceInterface

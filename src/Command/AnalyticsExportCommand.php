@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace App\Command;
+namespace App\Analysing\Command;
 
-use App\DTO\Analytics\KpiRequest;
-use App\ServiceInterface\Analytics\DashboardServiceInterface;
-use App\ServiceInterface\Analytics\ReportExporterServiceInterface;
+use App\Analysing\DTO\Analytics\KpiRequest;
+use App\Analysing\ServiceInterface\Analytics\DashboardServiceInterface;
+use App\Analysing\ServiceInterface\Analytics\ReportExporterServiceInterface;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command as BaseCommand;

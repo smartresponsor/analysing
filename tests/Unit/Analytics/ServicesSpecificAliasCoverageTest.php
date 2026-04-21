@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\Unit\Analytics;
+namespace App\Analysing\Tests\Unit\Analytics;
 
 use PHPUnit\Framework\TestCase;
 
@@ -10,27 +10,27 @@ final class ServicesSpecificAliasCoverageTest extends TestCase
 {
     public function testSpecificAnalyticsServiceInterfacesAreAliasedInServicesYaml(): void
     {
-        $yaml = (string) file_get_contents(__DIR__.'/../../../config/services.yaml');
+        $yaml = (string) file_get_contents(__DIR__.'/../../../config/component/services.yaml');
 
         $expected = [
-            "App\\ServiceInterface\\Alerts\\AlertEvaluatorInterface: '@App\\Service\\Alerts\\AlertEvaluator'",
-            "App\\ServiceInterface\\Alerts\\NotificationDispatcherInterface: '@App\\Service\\Alerts\\NotificationDispatcher'",
-            "App\\ServiceInterface\\Analytics\\AnalyticsCollectorInterface: '@App\\Service\\Analytics\\AnalyticsCollector'",
-            "App\\ServiceInterface\\Analytics\\ExperimentServiceInterface: '@App\\Service\\Analytics\\ExperimentService'",
-            "App\\ServiceInterface\\Analytics\\MetricIngestServiceInterface: '@App\\Service\\Analytics\\MetricIngestService'",
-            "App\\ServiceInterface\\Analytics\\RollupServiceInterface: '@App\\Service\\Analytics\\RollupService'",
-            "App\\ServiceInterface\\Analytics\\SegmentationServiceInterface: '@App\\Service\\Analytics\\SegmentationService'",
-            "App\\ServiceInterface\\Analytics\\CsvImporterInterface: '@App\\Service\\Analytics\\CsvImporter'",
-            "App\\ServiceInterface\\Analytics\\FileNotifierInterface: '@App\\Service\\Analytics\\FileNotifier'",
-            "App\\ServiceInterface\\Analytics\\GzipWriterInterface: '@App\\Service\\Analytics\\GzipWriter'",
-            "App\\ServiceInterface\\Analytics\\LocalCacheInterface: '@App\\Service\\Analytics\\LocalCache'",
-            "App\\ServiceInterface\\Analytics\\WebhookNotifierInterface: '@App\\Service\\Analytics\\WebhookNotifier'",
-            "App\\ServiceInterface\\Analytics\\AsyncQueryServiceInterface: '@App\\Service\\Analytics\\AsyncQueryService'",
-            "App\\ServiceInterface\\Analytics\\BackfillServiceInterface: '@App\\Service\\Analytics\\BackfillService'",
-            "App\\ServiceInterface\\Analytics\\ReportExporterServiceInterface: '@App\\Service\\Analytics\\ReportExporterService'",
-            "App\\ServiceInterface\\Analytics\\ReportGeneratorServiceInterface: '@App\\Service\\Analytics\\ReportGeneratorService'",
-            "App\\ServiceInterface\\Analytics\\RetentionServiceInterface: '@App\\Service\\Analytics\\RetentionService'",
-            "App\\ServiceInterface\\Analytics\\TokenServiceInterface: '@App\\Service\\Analytics\\TokenService'",
+            "App\Analysing\\ServiceInterface\\Alerts\\AlertEvaluatorInterface: '@App\Analysing\\Service\\Alerts\\AlertEvaluator'",
+            "App\Analysing\\ServiceInterface\\Alerts\\NotificationDispatcherInterface: '@App\Analysing\\Service\\Alerts\\NotificationDispatcher'",
+            "App\Analysing\\ServiceInterface\\Analytics\\AnalyticsCollectorInterface: '@App\Analysing\\Service\\Analytics\\AnalyticsCollector'",
+            "App\Analysing\\ServiceInterface\\Analytics\\ExperimentServiceInterface: '@App\Analysing\\Service\\Analytics\\ExperimentService'",
+            "App\Analysing\\ServiceInterface\\Analytics\\MetricIngestServiceInterface: '@App\Analysing\\Service\\Analytics\\MetricIngestService'",
+            "App\Analysing\\ServiceInterface\\Analytics\\RollupServiceInterface: '@App\Analysing\\Service\\Analytics\\RollupService'",
+            "App\Analysing\\ServiceInterface\\Analytics\\SegmentationServiceInterface: '@App\Analysing\\Service\\Analytics\\SegmentationService'",
+            "App\Analysing\\ServiceInterface\\Analytics\\CsvImporterInterface: '@App\Analysing\\Service\\Analytics\\CsvImporter'",
+            "App\Analysing\\ServiceInterface\\Analytics\\FileNotifierInterface: '@App\Analysing\\Service\\Analytics\\FileNotifier'",
+            "App\Analysing\\ServiceInterface\\Analytics\\GzipWriterInterface: '@App\Analysing\\Service\\Analytics\\GzipWriter'",
+            "App\Analysing\\ServiceInterface\\Analytics\\LocalCacheInterface: '@App\Analysing\\Service\\Analytics\\LocalCache'",
+            "App\Analysing\\ServiceInterface\\Analytics\\WebhookNotifierInterface: '@App\Analysing\\Service\\Analytics\\WebhookNotifier'",
+            "App\Analysing\\ServiceInterface\\Analytics\\AsyncQueryServiceInterface: '@App\Analysing\\Service\\Analytics\\AsyncQueryService'",
+            "App\Analysing\\ServiceInterface\\Analytics\\BackfillServiceInterface: '@App\Analysing\\Service\\Analytics\\BackfillService'",
+            "App\Analysing\\ServiceInterface\\Analytics\\ReportExporterServiceInterface: '@App\Analysing\\Service\\Analytics\\ReportExporterService'",
+            "App\Analysing\\ServiceInterface\\Analytics\\ReportGeneratorServiceInterface: '@App\Analysing\\Service\\Analytics\\ReportGeneratorService'",
+            "App\Analysing\\ServiceInterface\\Analytics\\RetentionServiceInterface: '@App\Analysing\\Service\\Analytics\\RetentionService'",
+            "App\Analysing\\ServiceInterface\\Analytics\\TokenServiceInterface: '@App\Analysing\\Service\\Analytics\\TokenService'",
         ];
 
         foreach ($expected as $alias) {

@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\Unit\Analytics;
+namespace App\Analysing\Tests\Unit\Analytics;
 
-use App\Service\Analytics\HealthService;
-use App\Service\Http\TenantContext;
-use App\ServiceInterface\Analytics\KpiRegistryInterface;
+use App\Analysing\Service\Analytics\HealthService;
+use App\Analysing\Service\Http\TenantContext;
+use App\Analysing\ServiceInterface\Analytics\KpiRegistryInterface;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;

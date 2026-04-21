@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\ServiceInterface\Analytics;
+namespace App\Analysing\ServiceInterface\Analytics;
 
-use App\ValueObject\Analytics\TenantId;
+use App\Analysing\ValueObject\Analytics\TenantId;
 
 interface TenantScopeInterface
 {

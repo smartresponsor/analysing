@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace App\Service\Http;
+namespace App\Analysing\Service\Http;
 
-use App\ServiceInterface\Http\RequestCorrelationIdProviderInterface;
-use App\ServiceInterface\Http\RequestCorrelationIdSubscriberInterface;
+use App\Analysing\ServiceInterface\Http\RequestCorrelationIdProviderInterface;
+use App\Analysing\ServiceInterface\Http\RequestCorrelationIdSubscriberInterface;
 use Symfony\Component\HttpKernel\Event\RequestEvent;
 use Symfony\Component\HttpKernel\Event\ResponseEvent;
 use Symfony\Component\HttpKernel\KernelEvents;

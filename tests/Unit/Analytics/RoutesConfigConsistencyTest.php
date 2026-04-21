@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\Unit\Analytics;
+namespace App\Analysing\Tests\Unit\Analytics;
 
 use PHPUnit\Framework\TestCase;
 
@@ -10,7 +10,7 @@ final class RoutesConfigConsistencyTest extends TestCase
 {
     public function testRoutesYamlContainsLiveAnalyticsEndpoints(): void
     {
-        $yaml = (string) file_get_contents(__DIR__.'/../../../config/routes.yaml');
+        $yaml = (string) file_get_contents(__DIR__.'/../../../config/component/routes.yaml');
 
         $expectedRoutes = [
             'analytics_funnel:' => '/analytics/funnel',

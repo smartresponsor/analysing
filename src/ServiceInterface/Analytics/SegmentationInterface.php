@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace App\ServiceInterface\Analytics;
+namespace App\Analysing\ServiceInterface\Analytics;
 
-use App\ValueObject\Analytics\Dimension;
-use App\ValueObject\Analytics\Segment;
+use App\Analysing\ValueObject\Analytics\Dimension;
+use App\Analysing\ValueObject\Analytics\Segment;
 
 interface SegmentationInterface
 {

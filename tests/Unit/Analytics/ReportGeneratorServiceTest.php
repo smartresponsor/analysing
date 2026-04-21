@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\Unit\Analytics;
+namespace App\Analysing\Tests\Unit\Analytics;
 
-use App\Entity\Analytics\ExportJob;
-use App\Service\Analytics\ReportGeneratorService;
-use App\ServiceInterface\Analytics\DashboardServiceInterface;
-use App\ServiceInterface\Analytics\ReportExporterServiceInterface;
+use App\Analysing\Entity\Analytics\ExportJob;
+use App\Analysing\Service\Analytics\ReportGeneratorService;
+use App\Analysing\ServiceInterface\Analytics\DashboardServiceInterface;
+use App\Analysing\ServiceInterface\Analytics\ReportExporterServiceInterface;
 use Doctrine\ORM\EntityManagerInterface;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;

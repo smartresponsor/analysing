@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\ServiceInterface\Alerts;
+namespace App\Analysing\ServiceInterface\Alerts;
 
-use App\Entity\Alerts\AlertRule;
+use App\Analysing\Entity\Alerts\AlertRule;
 
 interface NotificationDispatcherInterface
 {

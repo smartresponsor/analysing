@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\Unit\Analytics;
+namespace App\Analysing\Tests\Unit\Analytics;
 
-use App\Command\AnalyticsRefreshCommand;
-use App\ServiceInterface\Analytics\AnalyticsCollectorInterface;
+use App\Analysing\Command\AnalyticsRefreshCommand;
+use App\Analysing\ServiceInterface\Analytics\AnalyticsCollectorInterface;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\Console\Tester\CommandTester;

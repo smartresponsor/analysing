@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace App\Service\Alerts;
+namespace App\Analysing\Service\Alerts;
 
-use App\Entity\Alerts\AlertRule;
-use App\Entity\Analytics\MetricSnapshot;
-use App\ServiceInterface\Alerts\AlertEvaluatorInterface;
+use App\Analysing\Entity\Alerts\AlertRule;
+use App\Analysing\Entity\Analytics\MetricSnapshot;
+use App\Analysing\ServiceInterface\Alerts\AlertEvaluatorInterface;
 use Doctrine\ORM\EntityManagerInterface;
 use Psr\Log\LoggerInterface;
 

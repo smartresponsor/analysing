@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\Unit\Analytics;
+namespace App\Analysing\Tests\Unit\Analytics;
 
-use App\Entity\Alerts\AlertLog;
+use App\Analysing\Entity\Alerts\AlertLog;
 use PHPUnit\Framework\TestCase;
 
 final class AlertLogEntityTest extends TestCase

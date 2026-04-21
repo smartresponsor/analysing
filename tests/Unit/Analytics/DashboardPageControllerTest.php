@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\Unit\Analytics;
+namespace App\Analysing\Tests\Unit\Analytics;
 
-use App\Controller\Analytics\DashboardPageController;
-use App\Service\Analytics\DashboardHtmlRenderer;
-use App\Service\Http\AnalyticsErrorResponseFactory;
-use App\Service\Http\AnalyticsSuccessResponseFactory;
-use App\Service\Http\RequestCorrelationIdProvider;
-use App\Service\Http\TenantContext;
-use App\ServiceInterface\Analytics\DashboardServiceInterface;
-use App\Tests\Support\JsonPayloadAssertionsTrait;
+use App\Analysing\Controller\Analytics\DashboardPageController;
+use App\Analysing\Service\Analytics\DashboardHtmlRenderer;
+use App\Analysing\Service\Http\AnalyticsErrorResponseFactory;
+use App\Analysing\Service\Http\AnalyticsSuccessResponseFactory;
+use App\Analysing\Service\Http\RequestCorrelationIdProvider;
+use App\Analysing\Service\Http\TenantContext;
+use App\Analysing\ServiceInterface\Analytics\DashboardServiceInterface;
+use App\Analysing\Tests\Support\JsonPayloadAssertionsTrait;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\HttpFoundation\Request;
