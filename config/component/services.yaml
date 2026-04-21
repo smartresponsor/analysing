@@ -1,0 +1,21 @@
+parameters:
+  analytics.idempotency_directory: '%kernel.project_dir%/var/analytics/idempotency'
+
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    bind:
+      string $directory: '%analytics.idempotency_directory%'
+
+  # Symfony-native component export surface.
+  # The host application may import this file from the component root.
+  App\:
+    resource: '../../src/'
+    exclude:
+      - '../../src/Kernel.php'
+      - '../../src/DependencyInjection/'
+      - '../../src/Entity/'
+      - '../../src/Tests/'
+  App\ServiceInterface\Analytics\DashboardServiceInterface:
+    alias: App\Service\Analytics\DashboardService

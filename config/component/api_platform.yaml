@@ -1,0 +1,6 @@
+# Import this file from the host only when the component exposes API Platform resources.
+# Keep API resources / DTOs separate from Doctrine entities.
+api_platform:
+  mapping:
+    paths:
+      - '%kernel.project_dir%/vendor/analysing/analytics/src/ApiResource'

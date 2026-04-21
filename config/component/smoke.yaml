@@ -1,0 +1,6 @@
+smoke:
+  component: analysing
+  console: []
+  http: []
+  evidence:
+    path: var/evidence/analysing/

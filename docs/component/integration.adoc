@@ -1,0 +1,38 @@
+= Analysing Symfony Bundle Integration
+:component-name: analysing
+:package-name: analysing/analytics
+
+== Purpose
+
+This RC component exposes a Symfony-native bundle facade for host applications.
+The component owns its business logic, service definitions, DTO/API surface, persistence mapping, and operational contracts.
+The host application should only enable the bundle and import route configuration where Symfony requires host-level route registration.
+
+== Runtime entry points
+
+* Bundle class: `App\AnalysingBundle`
+* Extension class: `App\DependencyInjection\AnalysingExtension`
+* Service export: `config/component/services.yaml`
+* Route export: `config/component/routes.yaml`
+
+== Host application responsibilities
+
+[source,php]
+----
+// config/bundles.php
+App\AnalysingBundle::class => ['all' => true],
+----
+
+If the component exports HTTP routes, the host imports the route file using the bundle resource path or the package path agreed for the installation mode.
+
+[source,yaml]
+----
+# config/routes/analysing.yaml
+analysing_component:
+  resource: '@AnalysingBundle/config/component/routes.yaml'
+----
+
+== Boundary rule
+
+Do not move component business logic into the central App.
+The App composes enabled bundles; each RC component remains responsible for its own implementation and export contract.

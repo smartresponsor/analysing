@@ -1,0 +1,6 @@
+component_security:
+  component: analysing
+  voters: auto_discovered_by_services
+  roles: []
+  public_routes: []
+  host_security_owner: true

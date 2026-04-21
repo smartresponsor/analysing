@@ -1,0 +1,5 @@
+# Component messenger contract.
+# Add concrete message routing only after the component declares stable async commands/events.
+framework:
+  messenger:
+    routing: { }

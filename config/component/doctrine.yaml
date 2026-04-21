@@ -1,0 +1,11 @@
+# Import this file from the host only when the component owns Doctrine entities.
+# Entity classes remain component-owned and must not be used as external API contracts.
+doctrine:
+  orm:
+    mappings:
+      Analysing:
+        type: attribute
+        is_bundle: false
+        dir: '%kernel.project_dir%/vendor/analysing/analytics/src/Entity'
+        prefix: 'App\Entity'
+        alias: Analysing

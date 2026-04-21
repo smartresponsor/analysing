@@ -1,0 +1,19 @@
+rc:
+  schema_version: 1
+  component: analysing
+  package: analysing/analytics
+  status: rc
+  export_contract:
+    manifest: config/component/component.yaml
+    services: config/component/services.yaml
+    routes: config/component/routes.yaml
+    api_platform: config/component/api_platform.yaml
+    doctrine: config/component/doctrine.yaml
+    messenger: config/component/messenger.yaml
+    security: config/component/security.yaml
+    env: config/component/env.yaml
+    smoke: config/component/smoke.yaml
+  application_consumption:
+    overlay_root: component_repository_root
+    vendor_overlay_root: vendor/analysing/analytics
+    expected_glue_layer: declarative_imports_only
