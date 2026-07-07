@@ -16,6 +16,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Resolve Automater script path
+        id: automater
         shell: pwsh
         run: |
           $candidates = @(
@@ -29,12 +30,16 @@ jobs:
           if (-not $found) {
             Write-Host "pwd:"; pwd
             Write-Host "ls root:"; Get-ChildItem -Force $env:GITHUB_WORKSPACE | Format-Table -AutoSize
-            Write-Error "automater-pack-sync.ps1 not found"
+            Write-Host "automater-pack-sync.ps1 not found; skipping automate-kit sync."
+            "configured=false" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf8 -Append
+            return
           }
+          "configured=true" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf8 -Append
           "AUTOMATER_SCRIPT=$found" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
           Write-Host "AUTOMATER_SCRIPT=$found"
 
       - name: Automater pack sync
+        if: steps.automater.outputs.configured == 'true'
         shell: pwsh
         env:
           GITHUB_TOKEN: ${{ github.token }}
