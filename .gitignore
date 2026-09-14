@@ -166,3 +166,4 @@ Thumbs.db
 /tool/cmcp-playwright-diagnose.ps1
 /tool/cmcp-git-identity.ps1
 /test-results/
+/.console-mcp/
