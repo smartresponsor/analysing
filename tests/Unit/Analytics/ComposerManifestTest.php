@@ -4,12 +4,12 @@ declare(strict_types=1);
 
 namespace App\Analysing\Tests\Unit\Analytics;
 
-use App\Analysing\Tests\Support\JsonPayloadAssertionsTrait;
+use App\Analysing\Tests\Support\AnalyticsJsonPayloadAssertionsTrait;
 use PHPUnit\Framework\TestCase;
 
 final class ComposerManifestTest extends TestCase
 {
-    use JsonPayloadAssertionsTrait;
+    use AnalyticsJsonPayloadAssertionsTrait;
 
     public function testComposerManifestKeepsCanonicalAutoloadAndCorePackages(): void
     {

@@ -20,7 +20,7 @@ Docs
 - docs/analytics-core-doc-rwe-sketch9.md
 
 Applied fixes in sketch9 snapshots
-- Fixed string concatenation and placeholder binding in src/Domain/Analytics/ClickhouseClient.php.
+- Fixed string concatenation and placeholder binding in src/Domain/Analytics/AnalyticsClickhouseClient.php.
 - Fixed URL signing concatenation and formatting in src/Domain/Analytics/LocalSignedUrlAdapter.php.
 - Normalized PHP file headers ("<?php" must be first) across controllers, domains, and domain interfaces.
 
@@ -55,7 +55,7 @@ Reports
 
 Analytics sketch11-02 deliverables
 - Removed banned namespace prefixes (SmartResponsor\\Http\\..., Analytics\\Bootstrap...) by migrating:
-  - src/Controller/Analytics/AggregateController.php
+  - src/Controller/Analytics/AnalyticsAggregateController.php
   - src/Controller/Analytics/App.php
 - Updated bannedPrefix matching in config/guard/analytics-namespace-guard.json.
 

@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace App\Analysing\Command;
 
-use App\Analysing\Entity\Analytics\ExportJob;
-use App\Analysing\Service\Analytics\ExportJobLockManager;
-use App\Analysing\Service\Analytics\ExportJobRunner;
+use App\Analysing\Entity\Analytics\AnalyticsExportJobEntity;
+use App\Analysing\Service\AnalyticsExportJobLockManager;
+use App\Analysing\Service\AnalyticsExportJobRunner;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
@@ -25,14 +25,14 @@ final class AnalyticsRunPendingExportJobsCommand extends Command
     private const int MAX_JOBS_PER_RUN = 10;
 
     /**
-     * @param EntityManagerInterface $em          entity manager used to query export jobs
-     * @param ExportJobRunner        $runner      runner that executes the actual export workflow
-     * @param ExportJobLockManager   $lockManager lock manager that prevents duplicate job execution
+     * @param EntityManagerInterface        $em          entity manager used to query export jobs
+     * @param AnalyticsExportJobRunner      $runner      runner that executes the actual export workflow
+     * @param AnalyticsExportJobLockManager $lockManager lock manager that prevents duplicate job execution
      */
     public function __construct(
         private readonly EntityManagerInterface $em,
-        private readonly ExportJobRunner $runner,
-        private readonly ExportJobLockManager $lockManager,
+        private readonly AnalyticsExportJobRunner $runner,
+        private readonly AnalyticsExportJobLockManager $lockManager,
     ) {
         parent::__construct();
     }
@@ -44,8 +44,8 @@ final class AnalyticsRunPendingExportJobsCommand extends Command
      */
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
-        $jobs = $this->em->getRepository(ExportJob::class)->findBy(
-            ['status' => ExportJob::STATUS_PENDING],
+        $jobs = $this->em->getRepository(AnalyticsExportJobEntity::class)->findBy(
+            ['status' => AnalyticsExportJobEntity::STATUS_PENDING],
             ['created_at' => 'ASC'],
             self::MAX_JOBS_PER_RUN
         );
@@ -63,8 +63,8 @@ final class AnalyticsRunPendingExportJobsCommand extends Command
             }
         }
 
-        $failedJobs = $this->em->getRepository(ExportJob::class)->findBy(
-            ['status' => ExportJob::STATUS_FAILED],
+        $failedJobs = $this->em->getRepository(AnalyticsExportJobEntity::class)->findBy(
+            ['status' => AnalyticsExportJobEntity::STATUS_FAILED],
             ['created_at' => 'ASC'],
             self::MAX_JOBS_PER_RUN
         );

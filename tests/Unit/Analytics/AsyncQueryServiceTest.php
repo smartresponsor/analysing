@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Analysing\Tests\Unit\Analytics;
 
-use App\Analysing\Service\Analytics\AsyncQueryService;
+use App\Analysing\Service\AnalyticsAsyncQueryService;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 
@@ -12,7 +12,7 @@ final class AsyncQueryServiceTest extends TestCase
 {
     public function testSubmitAndStatusReturnNormalizedJob(): void
     {
-        $service = new AsyncQueryService(new NullLogger());
+        $service = new AnalyticsAsyncQueryService(new NullLogger());
 
         $id = $service->submit([
             'metric' => 'orders',
@@ -38,7 +38,7 @@ final class AsyncQueryServiceTest extends TestCase
 
     public function testSubmitRejectsEmptyPayload(): void
     {
-        $service = new AsyncQueryService(new NullLogger());
+        $service = new AnalyticsAsyncQueryService(new NullLogger());
 
         $this->expectException(\InvalidArgumentException::class);
         $service->submit([]);

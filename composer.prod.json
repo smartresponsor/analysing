@@ -1,0 +1,42 @@
+{
+  "name": "analysing/analytics",
+  "description": "Analysing process package",
+  "type": "library",
+  "license": "proprietary",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "php": "^8.4",
+    "administering/administration": "dev-master",
+    "collectioning/collection": "dev-master",
+    "cruding/crud": "dev-master",
+    "tabling/table": "dev-master",
+    "interfacing/interface": "dev-master",
+    "objecting/object": "dev-master",
+    "viewing/view": "dev-master",
+    "easycorp/easyadmin-bundle": "^5.0",
+    "symfony/framework-bundle": "^8.1",
+    "symfony/console": "^8.1",
+    "symfony/http-foundation": "^8.1",
+    "symfony/http-client": "^8.1",
+    "symfony/dependency-injection": "^8.1",
+    "symfony/form": "^8.1",
+    "symfony/options-resolver": "^8.1",
+    "symfony/yaml": "^8.1",
+    "doctrine/orm": "^3.3",
+    "doctrine/dbal": "^4.3",
+    "doctrine/doctrine-bundle": "^3.2",
+    "doctrine/doctrine-migrations-bundle": "^4.0",
+    "psr/log": "^3.0",
+    "ext-zlib": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\Analysing\\": "src/"
+    }
+  },
+  "config": {
+    "sort-packages": true,
+    "optimize-autoloader": true
+  }
+}

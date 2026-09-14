@@ -10,7 +10,7 @@ final class KernelStructureTest extends TestCase
 {
     public function testTestKernelLoadsComponentServicesAndRoutes(): void
     {
-        $php = (string) file_get_contents(__DIR__.'/../../Support/TestKernel.php');
+        $php = (string) file_get_contents(__DIR__.'/../../Support/AnalyticsTestKernel.php');
 
         self::assertStringContainsString('yield new FrameworkBundle();', $php);
         self::assertStringContainsString('yield new AnalysingBundle();', $php);

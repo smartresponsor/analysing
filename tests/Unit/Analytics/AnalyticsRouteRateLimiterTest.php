@@ -15,13 +15,13 @@ final class AnalyticsRouteRateLimiterTest extends TestCase
         $directory = sys_get_temp_dir().'/analytics-rate-limit-'.bin2hex(random_bytes(4));
         $limiter = new AnalyticsRouteRateLimiter(new NullLogger(), $directory, 60, 1, true);
 
-        $first = $limiter->consume('analytics_flag_evaluate', 'tenant:acme');
+        $first = $limiter->consume('analytics_flag_evaluate', 'vendor:acme');
         self::assertTrue($first->allowed);
         self::assertSame(1, $first->limit);
         self::assertSame(0, $first->remaining);
         self::assertSame('local_file', $first->mode);
 
-        $second = $limiter->consume('analytics_flag_evaluate', 'tenant:acme');
+        $second = $limiter->consume('analytics_flag_evaluate', 'vendor:acme');
         self::assertFalse($second->allowed);
         self::assertSame(1, $second->limit);
         self::assertSame(0, $second->remaining);

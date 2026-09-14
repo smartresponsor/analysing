@@ -324,9 +324,9 @@ layer_policy:
   mirror_interfaces:
     mandatory: true
     symmetry_rule:
-      - src/Domain -> src/DomainInterface
+      - src/Controller -> src/ControllerInterface
       - src/Service -> src/ServiceInterface
-      - src/Infra -> src/InfraInterface
+      - src/Repository -> src/RepositoryInterface
     missing_interface: canon_violation
   interface_rules:
     - no_logic
@@ -334,13 +334,12 @@ layer_policy:
 
 dependency_direction:
   allowed:
-    Domain: [ ]
-    DomainInterface: [ ]
-    Service: [ Domain, DomainInterface ]
-    ServiceInterface: [ DomainInterface ]
-    Http: [ Service, ServiceInterface ]
-    Console: [ Service, ServiceInterface ]
-    Infra: [ Domain, Service, DomainInterface ]
+    Controller: [ ServiceInterface ]
+    Service: [ ServiceInterface, RepositoryInterface, Entity, ValueObject, Dto ]
+    Repository: [ RepositoryInterface, Entity ]
+    ServiceInterface: [ Entity, ValueObject, Dto ]
+    RepositoryInterface: [ Entity ]
+    Command: [ ServiceInterface ]
   forbidden_inversion: canon_violation
 
 contract_policy:

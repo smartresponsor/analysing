@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace App\Analysing\Command;
 
-use App\Analysing\DTO\Analytics\KpiRequest;
-use App\Analysing\ServiceInterface\Analytics\DashboardServiceInterface;
-use App\Analysing\ServiceInterface\Analytics\ReportExporterServiceInterface;
+use App\Analysing\DTO\AnalyticsKpiRequestDTO;
+use App\Analysing\ServiceInterface\AnalyticsDashboardServiceInterface;
+use App\Analysing\ServiceInterface\AnalyticsReportExporterServiceInterface;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command as BaseCommand;
@@ -20,8 +20,8 @@ final class AnalyticsExportCommand extends BaseCommand
     private const int MAX_TARGET_PATH_LENGTH = 4096;
 
     public function __construct(
-        private readonly DashboardServiceInterface $dashboard,
-        private readonly ReportExporterServiceInterface $exporter,
+        private readonly AnalyticsDashboardServiceInterface $dashboard,
+        private readonly AnalyticsReportExporterServiceInterface $exporter,
         private readonly LoggerInterface $logger,
     ) {
         parent::__construct();
@@ -42,7 +42,7 @@ final class AnalyticsExportCommand extends BaseCommand
         $path = trim((string) $pathArgument);
         $from = new \DateTimeImmutable('first day of this month 00:00:00');
         $to = new \DateTimeImmutable('last day of this month 23:59:59');
-        $request = new KpiRequest(
+        $request = new AnalyticsKpiRequestDTO(
             vendorId: null,
             currency: null,
             from: $from->format('Y-m-d H:i:s'),

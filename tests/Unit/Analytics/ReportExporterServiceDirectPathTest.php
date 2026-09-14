@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Analysing\Tests\Unit\Analytics;
 
-use App\Analysing\Service\Analytics\ReportExporterService;
+use App\Analysing\Service\AnalyticsReportExporterService;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 
@@ -12,7 +12,7 @@ final class ReportExporterServiceDirectPathTest extends TestCase
 {
     public function testExportToPathWritesExactlyToRequestedTarget(): void
     {
-        $service = new ReportExporterService(new NullLogger());
+        $service = new AnalyticsReportExporterService(new NullLogger());
         $dir = sys_get_temp_dir().'/analytics_export_to_path_'.bin2hex(random_bytes(4));
         mkdir($dir, 0777, true);
         $targetPath = $dir.'/report.csv';

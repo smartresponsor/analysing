@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace App\Analysing\Tests\Unit\Analytics;
 
-use App\Analysing\Controller\Analytics\IngestController;
-use App\Analysing\DomainInterface\Analytics\ClickhouseClientInterface;
+use App\Analysing\Controller\AnalyticsIngestController;
+use App\Analysing\ServiceInterface\AnalyticsClickhouseClientInterface;
 use App\Analysing\Tests\Support\AnalyticsHttpFactoriesTrait;
-use App\Analysing\Tests\Support\JsonPayloadAssertionsTrait;
+use App\Analysing\Tests\Support\AnalyticsJsonPayloadAssertionsTrait;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\HttpFoundation\Request;
@@ -15,7 +15,7 @@ use Symfony\Component\HttpFoundation\Request;
 final class IngestControllerTest extends TestCase
 {
     use AnalyticsHttpFactoriesTrait;
-    use JsonPayloadAssertionsTrait;
+    use AnalyticsJsonPayloadAssertionsTrait;
 
     public function testIngestRudderReturnsAcceptedCounts(): void
     {
@@ -25,11 +25,11 @@ final class IngestControllerTest extends TestCase
                 'skip-me',
             ],
         ], JSON_THROW_ON_ERROR));
-        $request->headers->set('X-SR-TENANT', 'tenant-1');
-        $client = $this->createMock(ClickhouseClientInterface::class);
+        $request->headers->set('X-SR-VENDOR', 'vendor-1');
+        $client = $this->createMock(AnalyticsClickhouseClientInterface::class);
         $client->expects(self::once())->method('insertJsonEachRow');
 
-        $controller = new IngestController(
+        $controller = new AnalyticsIngestController(
             $client,
             $this->createMock(LoggerInterface::class),
             $this->createSuccessFactory($request),
@@ -49,8 +49,8 @@ final class IngestControllerTest extends TestCase
     public function testIngestSegmentReturnsBadRequestForInvalidJson(): void
     {
         $request = new Request([], [], [], [], [], [], '{bad');
-        $client = $this->createMock(ClickhouseClientInterface::class);
-        $controller = new IngestController(
+        $client = $this->createMock(AnalyticsClickhouseClientInterface::class);
+        $controller = new AnalyticsIngestController(
             $client,
             $this->createMock(LoggerInterface::class),
             $this->createSuccessFactory($request),

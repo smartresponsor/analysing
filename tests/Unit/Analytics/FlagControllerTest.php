@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace App\Analysing\Tests\Unit\Analytics;
 
-use App\Analysing\Controller\Analytics\FlagController;
-use App\Analysing\DomainInterface\Analytics\FlagInterface;
+use App\Analysing\Controller\AnalyticsFlagController;
+use App\Analysing\ServiceInterface\AnalyticsFlagInterface;
 use App\Analysing\Tests\Support\AnalyticsHttpFactoriesTrait;
-use App\Analysing\Tests\Support\JsonPayloadAssertionsTrait;
+use App\Analysing\Tests\Support\AnalyticsJsonPayloadAssertionsTrait;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\HttpFoundation\Request;
@@ -15,12 +15,12 @@ use Symfony\Component\HttpFoundation\Request;
 final class FlagControllerTest extends TestCase
 {
     use AnalyticsHttpFactoriesTrait;
-    use JsonPayloadAssertionsTrait;
+    use AnalyticsJsonPayloadAssertionsTrait;
 
     public function testEvaluateReturnsDomainPayload(): void
     {
         $request = new Request([], [], [], [], [], [], json_encode(['flag_key' => 'checkout', 'user_id' => 'u1'], JSON_THROW_ON_ERROR));
-        $domain = $this->createMock(FlagInterface::class);
+        $domain = $this->createMock(AnalyticsFlagInterface::class);
         $domain->method('evaluate')->willReturn([
             'flag_key' => 'checkout',
             'user_id' => 'u1',
@@ -30,7 +30,7 @@ final class FlagControllerTest extends TestCase
             'rollout' => 100,
         ]);
 
-        $controller = new FlagController(
+        $controller = new AnalyticsFlagController(
             $domain,
             $this->createMock(LoggerInterface::class),
             $this->createSuccessFactory($request),

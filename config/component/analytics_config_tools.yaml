@@ -1,0 +1,27 @@
+config_tools:
+  - application_code: Analysing
+    tool_code: analysing.environment
+    label: Analysing Environment
+    description: Safe runtime and connection flags stored in the Analysing component runtime manifest.
+    form_class: App\Analysing\Form\Config\AnalyticsAnalysingEnvironmentConfigFormType
+    service_class: App\Analysing\Service\Config\AnalyticsAnalysingEnvironmentConfigService
+    required_permission: administration.config.update
+    editable_fields:
+      - clickhouseBase
+      - clickhouseUser
+      - idempotencyEnabled
+      - idempotencyRequired
+      - authRequired
+      - authPublicRead
+      - rateLimitEnabled
+      - rateLimitWindowSeconds
+      - rateLimitDefaultWriteLimit
+    sensitive_fields: []
+    readable_files:
+      - config/component/analytics_runtime.yaml
+    writable_files:
+      - config/component/analytics_runtime.yaml
+    apply_strategy: component_runtime_yaml
+    metadata:
+      section: Configuration
+      kind: environment

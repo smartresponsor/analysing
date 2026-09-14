@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Analysing\Tests\Unit\Analytics;
 
-use App\Analysing\Service\Analytics\BackfillService;
+use App\Analysing\Service\AnalyticsBackfillService;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 
@@ -12,14 +12,14 @@ final class BackfillServiceTest extends TestCase
 {
     public function testRunReturnsWindowInMinutes(): void
     {
-        $service = new BackfillService(new NullLogger());
+        $service = new AnalyticsBackfillService(new NullLogger());
 
         self::assertSame(2, $service->run(100, 220));
     }
 
     public function testRunRejectsInvertedRange(): void
     {
-        $service = new BackfillService(new NullLogger());
+        $service = new AnalyticsBackfillService(new NullLogger());
 
         $this->expectException(\InvalidArgumentException::class);
         $service->run(200, 100);

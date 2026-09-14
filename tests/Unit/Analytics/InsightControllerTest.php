@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace App\Analysing\Tests\Unit\Analytics;
 
-use App\Analysing\Controller\Analytics\InsightController;
-use App\Analysing\DomainInterface\Analytics\InsightInterface;
+use App\Analysing\Controller\AnalyticsInsightController;
+use App\Analysing\ServiceInterface\AnalyticsInsightInterface;
 use App\Analysing\Tests\Support\AnalyticsHttpFactoriesTrait;
-use App\Analysing\Tests\Support\JsonPayloadAssertionsTrait;
+use App\Analysing\Tests\Support\AnalyticsJsonPayloadAssertionsTrait;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\HttpFoundation\Request;
@@ -15,13 +15,13 @@ use Symfony\Component\HttpFoundation\Request;
 final class InsightControllerTest extends TestCase
 {
     use AnalyticsHttpFactoriesTrait;
-    use JsonPayloadAssertionsTrait;
+    use AnalyticsJsonPayloadAssertionsTrait;
 
     public function testAnomalyReturnsBadRequestForInvalidJson(): void
     {
         $request = new Request([], [], [], [], [], [], '{bad');
-        $domain = $this->createMock(InsightInterface::class);
-        $controller = new InsightController(
+        $domain = $this->createMock(AnalyticsInsightInterface::class);
+        $controller = new AnalyticsInsightController(
             $domain,
             $this->createMock(LoggerInterface::class),
             $this->createSuccessFactory($request),
@@ -38,10 +38,10 @@ final class InsightControllerTest extends TestCase
     public function testMetricTreeReturnsServiceUnavailableForRuntimeFailure(): void
     {
         $request = new Request([], [], [], [], [], [], json_encode(['name' => 'revenue'], JSON_THROW_ON_ERROR));
-        $domain = $this->createMock(InsightInterface::class);
+        $domain = $this->createMock(AnalyticsInsightInterface::class);
         $domain->method('computeMetricTree')->willThrowException(new \RuntimeException('broken'));
 
-        $controller = new InsightController(
+        $controller = new AnalyticsInsightController(
             $domain,
             $this->createMock(LoggerInterface::class),
             $this->createSuccessFactory($request),
@@ -51,6 +51,6 @@ final class InsightControllerTest extends TestCase
         $payload = $this->decodeJsonResponse($response);
 
         self::assertSame(503, $response->getStatusCode());
-        self::assertSame('Insight data unavailable.', $payload['error']);
+        self::assertSame('AnalyticsInsight data unavailable.', $payload['error']);
     }
 }

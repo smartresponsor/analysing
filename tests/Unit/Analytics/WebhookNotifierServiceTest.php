@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Analysing\Tests\Unit\Analytics;
 
-use App\Analysing\Service\Analytics\WebhookNotifier;
+use App\Analysing\Service\AnalyticsWebhookNotifier;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 
@@ -19,7 +19,7 @@ final class WebhookNotifierServiceTest extends TestCase
             }
         }
 
-        $service = new WebhookNotifier(new NullLogger());
+        $service = new AnalyticsWebhookNotifier(new NullLogger());
 
         self::assertTrue($service->send('https://example.test/hook', ['status' => 'ok']));
         self::assertNotEmpty(glob($dir.'/*.json') ?: []);
@@ -27,7 +27,7 @@ final class WebhookNotifierServiceTest extends TestCase
 
     public function testSendRejectsEmptyEndpoint(): void
     {
-        $service = new WebhookNotifier(new NullLogger());
+        $service = new AnalyticsWebhookNotifier(new NullLogger());
 
         self::assertFalse($service->send('', ['status' => 'ok']));
     }

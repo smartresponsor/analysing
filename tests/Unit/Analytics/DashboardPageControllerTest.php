@@ -4,14 +4,14 @@ declare(strict_types=1);
 
 namespace App\Analysing\Tests\Unit\Analytics;
 
-use App\Analysing\Controller\Analytics\DashboardPageController;
-use App\Analysing\Service\Analytics\DashboardHtmlRenderer;
-use App\Analysing\Service\Http\AnalyticsErrorResponseFactory;
-use App\Analysing\Service\Http\AnalyticsSuccessResponseFactory;
-use App\Analysing\Service\Http\RequestCorrelationIdProvider;
-use App\Analysing\Service\Http\TenantContext;
-use App\Analysing\ServiceInterface\Analytics\DashboardServiceInterface;
-use App\Analysing\Tests\Support\JsonPayloadAssertionsTrait;
+use App\Analysing\Controller\AnalyticsDashboardPageController;
+use App\Analysing\Factory\Http\AnalyticsErrorResponseFactory;
+use App\Analysing\Factory\Http\AnalyticsSuccessResponseFactory;
+use App\Analysing\Provider\Http\AnalyticsRequestCorrelationIdProvider;
+use App\Analysing\Service\AnalyticsDashboardHtmlRenderer;
+use App\Analysing\Service\Http\AnalyticsVendorContext;
+use App\Analysing\ServiceInterface\AnalyticsDashboardServiceInterface;
+use App\Analysing\Tests\Support\AnalyticsJsonPayloadAssertionsTrait;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\HttpFoundation\Request;
@@ -19,11 +19,11 @@ use Symfony\Component\HttpFoundation\RequestStack;
 
 final class DashboardPageControllerTest extends TestCase
 {
-    use JsonPayloadAssertionsTrait;
+    use AnalyticsJsonPayloadAssertionsTrait;
 
     public function testIndexReturnsBadRequestForInvalidCurrencyInJsonMode(): void
     {
-        $service = $this->createMock(DashboardServiceInterface::class);
+        $service = $this->createMock(AnalyticsDashboardServiceInterface::class);
         $controller = $this->createController($service);
 
         $response = $controller->index(new Request(['currency' => 'toolong', 'format' => 'json']));
@@ -36,7 +36,7 @@ final class DashboardPageControllerTest extends TestCase
 
     public function testIndexReturnsServiceUnavailableWhenDashboardFailsInHtmlMode(): void
     {
-        $service = $this->createMock(DashboardServiceInterface::class);
+        $service = $this->createMock(AnalyticsDashboardServiceInterface::class);
         $service->method('kpi')->willThrowException(new \RuntimeException('broken'));
 
         $controller = $this->createController($service);
@@ -49,7 +49,7 @@ final class DashboardPageControllerTest extends TestCase
 
     public function testIndexReturnsHtmlPageByDefault(): void
     {
-        $service = $this->createMock(DashboardServiceInterface::class);
+        $service = $this->createMock(AnalyticsDashboardServiceInterface::class);
         $service->method('kpi')->willReturn([
             'gross_minor' => 182500,
             'net_minor' => 124100,
@@ -75,7 +75,7 @@ final class DashboardPageControllerTest extends TestCase
 
     public function testIndexReturnsJsonWhenRequestedByAcceptHeader(): void
     {
-        $service = $this->createMock(DashboardServiceInterface::class);
+        $service = $this->createMock(AnalyticsDashboardServiceInterface::class);
         $service->method('kpi')->willReturn([
             'gross_minor' => 182500,
             'net_minor' => 124100,
@@ -96,15 +96,15 @@ final class DashboardPageControllerTest extends TestCase
         self::assertSame('analytics', $payload['component']);
     }
 
-    private function createController(DashboardServiceInterface $service): DashboardPageController
+    private function createController(AnalyticsDashboardServiceInterface $service): AnalyticsDashboardPageController
     {
         $requestStack = new RequestStack();
-        $tenantContext = new TenantContext();
-        $renderer = new DashboardHtmlRenderer(new RequestCorrelationIdProvider($requestStack), $tenantContext);
-        $successResponses = new AnalyticsSuccessResponseFactory(new RequestCorrelationIdProvider($requestStack), $tenantContext);
-        $errorResponses = new AnalyticsErrorResponseFactory(new RequestCorrelationIdProvider($requestStack), $tenantContext);
+        $vendorContext = new AnalyticsVendorContext();
+        $renderer = new AnalyticsDashboardHtmlRenderer(new AnalyticsRequestCorrelationIdProvider($requestStack), $vendorContext);
+        $successResponses = new AnalyticsSuccessResponseFactory(new AnalyticsRequestCorrelationIdProvider($requestStack), $vendorContext);
+        $errorResponses = new AnalyticsErrorResponseFactory(new AnalyticsRequestCorrelationIdProvider($requestStack), $vendorContext);
 
-        return new DashboardPageController(
+        return new AnalyticsDashboardPageController(
             $service,
             $this->createMock(LoggerInterface::class),
             $renderer,

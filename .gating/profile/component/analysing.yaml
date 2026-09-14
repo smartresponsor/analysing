@@ -1,0 +1,24 @@
+component:
+  name: Analysing
+  nameEntity: analytics
+  namespace: App\Analysing
+  business_prefix: Analytics
+  subject_prefix: Analytics
+  subject_tokens:
+    - Analytics
+  database_prefix: analytics_
+  typed_layers_required: true
+  service_interface_mirror: false
+
+  route_owner_root: analytics
+  route_owner_roots:
+    - analytics
+    - status
+  mutation_mode: explicit
+
+  secret_scan: enabled
+  docblock_preservation: enabled
+  release:
+    evidence_required: false
+    required_files:
+      - composer.json

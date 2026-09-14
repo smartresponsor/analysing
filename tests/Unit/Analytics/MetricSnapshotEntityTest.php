@@ -4,14 +4,14 @@ declare(strict_types=1);
 
 namespace App\Analysing\Tests\Unit\Analytics;
 
-use App\Analysing\Entity\Analytics\MetricSnapshot;
+use App\Analysing\Entity\Analytics\AnalyticsMetricSnapshotEntity;
 use PHPUnit\Framework\TestCase;
 
 final class MetricSnapshotEntityTest extends TestCase
 {
     public function testConstructsWithNormalizedDimensions(): void
     {
-        $snapshot = new MetricSnapshot(
+        $snapshot = new AnalyticsMetricSnapshotEntity(
             'gross_revenue',
             12.5,
             new \DateTimeImmutable('2026-01-01 00:00:00'),
@@ -28,7 +28,7 @@ final class MetricSnapshotEntityTest extends TestCase
     {
         $this->expectException(\InvalidArgumentException::class);
 
-        new MetricSnapshot(
+        new AnalyticsMetricSnapshotEntity(
             'gross_revenue',
             12.5,
             new \DateTimeImmutable('2026-01-02 00:00:00'),

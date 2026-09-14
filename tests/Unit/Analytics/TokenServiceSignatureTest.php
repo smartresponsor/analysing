@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Analysing\Tests\Unit\Analytics;
 
-use App\Analysing\Service\Analytics\TokenService;
+use App\Analysing\Service\AnalyticsTokenService;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 
@@ -12,10 +12,10 @@ final class TokenServiceSignatureTest extends TestCase
 {
     public function testSignedTokenRoundTrip(): void
     {
-        $service = new TokenService(new NullLogger(), 'test-salt');
+        $service = new AnalyticsTokenService(new NullLogger(), 'test-salt');
         $token = $service->issue([
             'routes' => ['analytics_flag_evaluate'],
-            'tenant' => 'acme',
+            'vendor' => 'acme',
         ], 300);
 
         self::assertNotSame('', $token);
@@ -26,13 +26,13 @@ final class TokenServiceSignatureTest extends TestCase
         self::assertArrayHasKey('scope', $claims);
         $scope = $claims['scope'];
         self::assertIsArray($scope);
-        self::assertSame('acme', $scope['tenant'] ?? null);
+        self::assertSame('acme', $scope['vendor'] ?? null);
         self::assertSame(['analytics_flag_evaluate'], $scope['routes'] ?? null);
     }
 
     public function testTamperedSignatureIsRejected(): void
     {
-        $service = new TokenService(new NullLogger(), 'test-salt');
+        $service = new AnalyticsTokenService(new NullLogger(), 'test-salt');
         $token = $service->issue(['admin' => true], 300);
         [$payload, $signature] = explode('.', $token, 2);
         $last = substr($signature, -1);

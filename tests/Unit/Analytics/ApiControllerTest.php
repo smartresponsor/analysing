@@ -4,24 +4,24 @@ declare(strict_types=1);
 
 namespace App\Analysing\Tests\Unit\Analytics;
 
-use App\Analysing\Controller\Analytics\ApiController;
-use App\Analysing\ServiceInterface\Analytics\KpiRegistryInterface;
+use App\Analysing\Controller\AnalyticsApiController;
+use App\Analysing\ServiceInterface\AnalyticsKpiRegistryInterface;
 use App\Analysing\Tests\Support\AnalyticsHttpFactoriesTrait;
-use App\Analysing\Tests\Support\JsonPayloadAssertionsTrait;
+use App\Analysing\Tests\Support\AnalyticsJsonPayloadAssertionsTrait;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 
 final class ApiControllerTest extends TestCase
 {
     use AnalyticsHttpFactoriesTrait;
-    use JsonPayloadAssertionsTrait;
+    use AnalyticsJsonPayloadAssertionsTrait;
 
     public function testMetricsReturnsCatalogPayload(): void
     {
-        $registry = $this->createMock(KpiRegistryInterface::class);
+        $registry = $this->createMock(AnalyticsKpiRegistryInterface::class);
         $registry->method('list')->willReturn(['orders' => 'Orders', 'revenue' => 'Revenue']);
 
-        $controller = new ApiController(
+        $controller = new AnalyticsApiController(
             $registry,
             $this->createMock(LoggerInterface::class),
             $this->createSuccessFactory(),
@@ -43,10 +43,10 @@ final class ApiControllerTest extends TestCase
 
     public function testMetricsReturnsServiceUnavailableWhenRegistryFails(): void
     {
-        $registry = $this->createMock(KpiRegistryInterface::class);
+        $registry = $this->createMock(AnalyticsKpiRegistryInterface::class);
         $registry->method('list')->willThrowException(new \RuntimeException('broken'));
 
-        $controller = new ApiController(
+        $controller = new AnalyticsApiController(
             $registry,
             $this->createMock(LoggerInterface::class),
             $this->createSuccessFactory(),

@@ -4,16 +4,16 @@ declare(strict_types=1);
 
 namespace App\Analysing\Tests\Unit\Analytics;
 
-use App\Analysing\DTO\Analytics\KpiRequest;
-use App\Analysing\Service\Analytics\ReportRowBuilder;
+use App\Analysing\Builder\AnalyticsReportRowBuilder;
+use App\Analysing\DTO\AnalyticsKpiRequestDTO;
 use PHPUnit\Framework\TestCase;
 
 final class ReportRowBuilderTest extends TestCase
 {
     public function testBuildIncludesStableColumnsForTotalsAndTimeseriesRows(): void
     {
-        $builder = new ReportRowBuilder();
-        $request = new KpiRequest(vendorId: 42, currency: 'usd', from: '2026-03-01 00:00:00', to: '2026-03-31 23:59:59');
+        $builder = new AnalyticsReportRowBuilder();
+        $request = new AnalyticsKpiRequestDTO(vendorId: 42, currency: 'usd', from: '2026-03-01 00:00:00', to: '2026-03-31 23:59:59');
 
         $rows = $builder->build(
             $request,

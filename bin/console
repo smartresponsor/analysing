@@ -3,7 +3,7 @@
 
 declare(strict_types=1);
 
-use App\Kernel;
+use App\Analysing\Kernel;
 use Symfony\Bundle\FrameworkBundle\Console\Application;
 
 if (!is_file(dirname(__DIR__).'/vendor/autoload.php')) {
@@ -15,6 +15,16 @@ require_once dirname(__DIR__).'/vendor/autoload.php';
 require_once dirname(__DIR__).'/config/bootstrap.php';
 
 $env = (string) ($_SERVER['APP_ENV'] ?? $_ENV['APP_ENV'] ?? 'dev');
+$arguments = is_array($_SERVER['argv'] ?? null) ? $_SERVER['argv'] : [];
+foreach ($arguments as $argument) {
+    if (is_string($argument) && str_starts_with($argument, '--env=')) {
+        $requestedEnv = substr($argument, 6);
+        if ('' !== $requestedEnv) {
+            $env = $requestedEnv;
+        }
+    }
+}
+$_SERVER['APP_ENV'] = $_ENV['APP_ENV'] = $env;
 $debugValue = (string) ($_SERVER['APP_DEBUG'] ?? $_ENV['APP_DEBUG'] ?? ('prod' !== $env ? '1' : '0'));
 $debug = '0' !== $debugValue && '' !== $debugValue;
 

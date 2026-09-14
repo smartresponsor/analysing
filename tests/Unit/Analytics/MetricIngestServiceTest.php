@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Analysing\Tests\Unit\Analytics;
 
-use App\Analysing\Service\Analytics\MetricIngestService;
+use App\Analysing\Service\AnalyticsMetricIngestService;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 
@@ -12,12 +12,12 @@ final class MetricIngestServiceTest extends TestCase
 {
     public function testIngestAddsMetadataToBufferedPayload(): void
     {
-        $service = new MetricIngestService(new NullLogger());
+        $service = new AnalyticsMetricIngestService(new NullLogger());
 
         /** @var array<string,mixed> $payload */
         $payload = [
             'metric' => 'orders',
-            'dimensions' => ['tenant' => 'acme'],
+            'dimensions' => ['vendor' => 'acme'],
         ];
         $service->ingest($payload);
 
@@ -31,7 +31,7 @@ final class MetricIngestServiceTest extends TestCase
 
     public function testIngestRejectsEmptyNestedArray(): void
     {
-        $service = new MetricIngestService(new NullLogger());
+        $service = new AnalyticsMetricIngestService(new NullLogger());
 
         $this->expectException(\InvalidArgumentException::class);
         $service->ingest([

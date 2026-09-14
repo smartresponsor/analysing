@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Analysing\Tests\Unit\Analytics;
 
-use App\Analysing\Service\Analytics\GzipWriter;
+use App\Analysing\Service\AnalyticsGzipWriter;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 
@@ -16,7 +16,7 @@ final class GzipWriterTest extends TestCase
         mkdir($dir, 0777, true);
         $path = $dir.'/events.jsonl';
 
-        $writer = new GzipWriter(new NullLogger());
+        $writer = new AnalyticsGzipWriter(new NullLogger());
         $gzPath = $writer->write($path, [['event' => 'purchase']]);
 
         self::assertFileExists($gzPath);
@@ -32,7 +32,7 @@ final class GzipWriterTest extends TestCase
         mkdir($dir, 0777, true);
         $path = $dir.'/events.jsonl';
 
-        $writer = new GzipWriter(new NullLogger());
+        $writer = new AnalyticsGzipWriter(new NullLogger());
 
         $this->expectException(\RuntimeException::class);
         try {

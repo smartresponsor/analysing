@@ -1,0 +1,10 @@
+analytics:
+  clickhouse_base: 'http://127.0.0.1:8123'
+  clickhouse_user: 'default'
+  idempotency_enabled: true
+  idempotency_required: false
+  auth_required: false
+  auth_public_read: true
+  rate_limit_enabled: true
+  rate_limit_window_seconds: 60
+  rate_limit_default_write_limit: 60

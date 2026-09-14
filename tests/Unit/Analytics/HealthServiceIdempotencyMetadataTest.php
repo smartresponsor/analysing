@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace App\Analysing\Tests\Unit\Analytics;
 
-use App\Analysing\Service\Analytics\HealthService;
-use App\Analysing\ServiceInterface\Analytics\KpiRegistryInterface;
+use App\Analysing\Service\AnalyticsHealthService;
+use App\Analysing\ServiceInterface\AnalyticsKpiRegistryInterface;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 
@@ -13,10 +13,10 @@ final class HealthServiceIdempotencyMetadataTest extends TestCase
 {
     public function testStatusIncludesIdempotencyMetadata(): void
     {
-        $registry = $this->createMock(KpiRegistryInterface::class);
+        $registry = $this->createMock(AnalyticsKpiRegistryInterface::class);
         $registry->method('list')->willReturn([]);
 
-        $service = new HealthService(
+        $service = new AnalyticsHealthService(
             new NullLogger(),
             $registry,
             'embedded_sample',

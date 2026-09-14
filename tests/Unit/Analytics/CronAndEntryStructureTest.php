@@ -16,7 +16,8 @@ final class CronAndEntryStructureTest extends TestCase
         $compose = (string) file_get_contents(__DIR__.'/../../../docker/docker-compose.yml');
 
         self::assertStringContainsString('analytics:tick', $cron);
-        self::assertStringContainsString('analytics-oct30-final-winners', $publicIndex);
+        self::assertStringContainsString('use App\\Analysing\\Kernel;', $publicIndex);
+        self::assertStringContainsString("require dirname(__DIR__).'/config/bootstrap.php';", $publicIndex);
         self::assertStringContainsString('php', strtolower($dockerfile));
         self::assertStringContainsString('services', strtolower($compose));
     }

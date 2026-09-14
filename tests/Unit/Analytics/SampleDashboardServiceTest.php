@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace App\Analysing\Tests\Unit\Analytics;
 
-use App\Analysing\DTO\Analytics\KpiRequest;
-use App\Analysing\Service\Analytics\SampleAnalyticsDataset;
-use App\Analysing\Service\Analytics\SampleDashboardService;
+use App\Analysing\DTO\AnalyticsKpiRequestDTO;
+use App\Analysing\Service\AnalyticsSampleAnalyticsDataset;
+use App\Analysing\Service\AnalyticsSampleDashboardService;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 
@@ -14,9 +14,9 @@ final class SampleDashboardServiceTest extends TestCase
 {
     public function testKpiReturnsStableSamplePayload(): void
     {
-        $service = new SampleDashboardService(new SampleAnalyticsDataset(), new NullLogger());
+        $service = new AnalyticsSampleDashboardService(new AnalyticsSampleAnalyticsDataset(), new NullLogger());
 
-        $payload = $service->kpi(new KpiRequest(vendorId: 101, currency: 'USD', from: '2026-01-01 00:00:00', to: '2026-01-07 23:59:59'));
+        $payload = $service->kpi(new AnalyticsKpiRequestDTO(vendorId: 101, currency: 'USD', from: '2026-01-01 00:00:00', to: '2026-01-07 23:59:59'));
 
         self::assertSame(76650, $payload['gross_minor']);
         self::assertSame(52122, $payload['net_minor']);
@@ -26,9 +26,9 @@ final class SampleDashboardServiceTest extends TestCase
 
     public function testTimeseriesReturnsSevenRows(): void
     {
-        $service = new SampleDashboardService(new SampleAnalyticsDataset(), new NullLogger());
+        $service = new AnalyticsSampleDashboardService(new AnalyticsSampleAnalyticsDataset(), new NullLogger());
 
-        $rows = $service->timeseries(new KpiRequest());
+        $rows = $service->timeseries(new AnalyticsKpiRequestDTO());
 
         self::assertCount(7, $rows);
         self::assertSame('2026-01-01', $rows[0]['date']);

@@ -1,0 +1,14 @@
+doctrine:
+  dbal:
+    default_connection: data
+    connections:
+      data:
+        driver: pdo_pgsql
+        url: '%env(resolve:ANALYTICS_DATABASE_URL)%'
+  orm:
+    mappings:
+      Analysing:
+        is_bundle: false
+        type: attribute
+        dir: '%kernel.project_dir%/src/Entity'
+        prefix: 'App\Analysing\Entity'

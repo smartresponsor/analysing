@@ -4,14 +4,14 @@ declare(strict_types=1);
 
 namespace App\Analysing\Tests\Unit\Analytics;
 
-use App\Analysing\DTO\Analytics\KpiRequest;
+use App\Analysing\DTO\AnalyticsKpiRequestDTO;
 use PHPUnit\Framework\TestCase;
 
 final class KpiRequestTest extends TestCase
 {
     public function testNormalizesCurrencyAndDateRange(): void
     {
-        $request = new KpiRequest(42, ' usd ', '2026-01-01T12:00:00+00:00', '2026-01-31 23:59:59');
+        $request = new AnalyticsKpiRequestDTO(42, ' usd ', '2026-01-01T12:00:00+00:00', '2026-01-31 23:59:59');
 
         self::assertSame(42, $request->vendorId);
         self::assertSame('USD', $request->currency);
@@ -23,6 +23,6 @@ final class KpiRequestTest extends TestCase
     {
         $this->expectException(\InvalidArgumentException::class);
 
-        new KpiRequest(1, 'USD', '2026-02-01 00:00:00', '2026-01-01 00:00:00');
+        new AnalyticsKpiRequestDTO(1, 'USD', '2026-02-01 00:00:00', '2026-01-01 00:00:00');
     }
 }

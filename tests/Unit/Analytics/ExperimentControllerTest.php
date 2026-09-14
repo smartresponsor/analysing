@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace App\Analysing\Tests\Unit\Analytics;
 
-use App\Analysing\Controller\Analytics\ExperimentController;
-use App\Analysing\DomainInterface\Analytics\ExperimentInterface;
+use App\Analysing\Controller\AnalyticsExperimentController;
+use App\Analysing\ServiceInterface\AnalyticsExperimentInterface;
 use App\Analysing\Tests\Support\AnalyticsHttpFactoriesTrait;
-use App\Analysing\Tests\Support\JsonPayloadAssertionsTrait;
+use App\Analysing\Tests\Support\AnalyticsJsonPayloadAssertionsTrait;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\HttpFoundation\Request;
@@ -15,13 +15,13 @@ use Symfony\Component\HttpFoundation\Request;
 final class ExperimentControllerTest extends TestCase
 {
     use AnalyticsHttpFactoriesTrait;
-    use JsonPayloadAssertionsTrait;
+    use AnalyticsJsonPayloadAssertionsTrait;
 
     public function testAllocateReturnsBadRequestForInvalidJson(): void
     {
         $request = new Request([], [], [], [], [], [], '{bad');
-        $domain = $this->createMock(ExperimentInterface::class);
-        $controller = new ExperimentController(
+        $domain = $this->createMock(AnalyticsExperimentInterface::class);
+        $controller = new AnalyticsExperimentController(
             $domain,
             $this->createMock(LoggerInterface::class),
             $this->createSuccessFactory($request),
@@ -38,10 +38,10 @@ final class ExperimentControllerTest extends TestCase
     public function testAllocateReturnsServiceUnavailableForRuntimeFailure(): void
     {
         $request = new Request([], [], [], [], [], [], json_encode(['experiment_id' => 'exp', 'user_id' => 'u1'], JSON_THROW_ON_ERROR));
-        $domain = $this->createMock(ExperimentInterface::class);
+        $domain = $this->createMock(AnalyticsExperimentInterface::class);
         $domain->method('assign')->willThrowException(new \RuntimeException('broken'));
 
-        $controller = new ExperimentController(
+        $controller = new AnalyticsExperimentController(
             $domain,
             $this->createMock(LoggerInterface::class),
             $this->createSuccessFactory($request),
@@ -51,6 +51,6 @@ final class ExperimentControllerTest extends TestCase
         $payload = $this->decodeJsonResponse($response);
 
         self::assertSame(503, $response->getStatusCode());
-        self::assertSame('Experiment allocation unavailable.', $payload['error']);
+        self::assertSame('AnalyticsExperiment allocation unavailable.', $payload['error']);
     }
 }

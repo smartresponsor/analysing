@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace App\Analysing\Tests\Unit\Analytics;
 
 use App\Analysing\Command\AnalyticsExportCommand;
-use App\Analysing\ServiceInterface\Analytics\DashboardServiceInterface;
-use App\Analysing\ServiceInterface\Analytics\ReportExporterServiceInterface;
+use App\Analysing\ServiceInterface\AnalyticsDashboardServiceInterface;
+use App\Analysing\ServiceInterface\AnalyticsReportExporterServiceInterface;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\Console\Tester\CommandTester;
@@ -15,7 +15,7 @@ final class AnalyticsExportCommandTest extends TestCase
 {
     public function testExecuteExportsCsvToTargetPath(): void
     {
-        $dashboard = $this->createMock(DashboardServiceInterface::class);
+        $dashboard = $this->createMock(AnalyticsDashboardServiceInterface::class);
         $dashboard->method('kpi')->willReturn([
             'gross_minor' => 100,
             'net_minor' => 80,
@@ -30,7 +30,7 @@ final class AnalyticsExportCommandTest extends TestCase
         self::assertNotFalse($generatedPath);
         file_put_contents($generatedPath, "section,date\n");
 
-        $exporter = $this->createMock(ReportExporterServiceInterface::class);
+        $exporter = $this->createMock(AnalyticsReportExporterServiceInterface::class);
         $exporter->method('export')->willReturn($generatedPath);
 
         $command = new AnalyticsExportCommand($dashboard, $exporter, $this->createMock(LoggerInterface::class));

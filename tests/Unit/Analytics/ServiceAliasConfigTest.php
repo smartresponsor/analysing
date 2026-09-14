@@ -13,11 +13,11 @@ final class ServiceAliasConfigTest extends TestCase
         $yaml = (string) file_get_contents(__DIR__.'/../../../config/component/services.yaml');
 
         $expectedAliases = [
-            "App\Analysing\\DomainInterface\\Analytics\\AnalyticsInterface: '@App\Analysing\\Domain\\Analytics\\Analytics'",
-            "App\Analysing\\DomainInterface\\Analytics\\ClickhouseClientInterface: '@App\Analysing\\Domain\\Analytics\\ClickhouseClient'",
-            "App\Analysing\\RepositoryInterface\\Analytics\\InfraRepositoryInterface: '@App\Analysing\\Repository\\Analytics\\InfraRepository'",
-            "App\Analysing\\ServiceInterface\\Analytics\\DashboardServiceInterface: '@App\Analysing\\Service\\Analytics\\DashboardService'",
-            "App\Analysing\\ServiceInterface\\Analytics\\ReportGeneratorServiceInterface: '@App\Analysing\\Service\\Analytics\\ReportGeneratorService'",
+            "App\Analysing\\ServiceInterface\\AnalyticsInterface: '@App\Analysing\\Service\\Analytics'",
+            "App\Analysing\\ServiceInterface\\AnalyticsClickhouseClientInterface: '@App\Analysing\\Service\\AnalyticsClickhouseClient'",
+            "App\Analysing\RepositoryInterface\AnalyticsRepositoryInterface: '@App\Analysing\Repository\AnalyticsRepository'",
+            "App\Analysing\ServiceInterface\AnalyticsDashboardServiceInterface: '@App\Analysing\Service\AnalyticsDashboardService'",
+            "App\Analysing\ServiceInterface\AnalyticsReportGeneratorServiceInterface: '@App\Analysing\Service\AnalyticsReportGeneratorService'",
             "Psr\\Log\\LoggerInterface: '@Psr\\Log\\NullLogger'",
         ];
 

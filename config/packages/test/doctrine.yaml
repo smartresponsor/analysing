@@ -1,0 +1,7 @@
+doctrine:
+  dbal:
+    connections:
+      data:
+        driver: pdo_sqlite
+        path: '%kernel.cache_dir%/analytics.sqlite'
+        url: null

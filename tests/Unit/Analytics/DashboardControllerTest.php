@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace App\Analysing\Tests\Unit\Analytics;
 
-use App\Analysing\Controller\Analytics\DashboardController;
-use App\Analysing\ServiceInterface\Analytics\DashboardServiceInterface;
+use App\Analysing\Controller\AnalyticsDashboardController;
+use App\Analysing\ServiceInterface\AnalyticsDashboardServiceInterface;
 use App\Analysing\Tests\Support\AnalyticsHttpFactoriesTrait;
-use App\Analysing\Tests\Support\JsonPayloadAssertionsTrait;
+use App\Analysing\Tests\Support\AnalyticsJsonPayloadAssertionsTrait;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\HttpFoundation\Request;
@@ -15,13 +15,13 @@ use Symfony\Component\HttpFoundation\Request;
 final class DashboardControllerTest extends TestCase
 {
     use AnalyticsHttpFactoriesTrait;
-    use JsonPayloadAssertionsTrait;
+    use AnalyticsJsonPayloadAssertionsTrait;
 
     public function testKpiReturnsBadRequestForInvalidVendorId(): void
     {
         $request = new Request(['vendorId' => 'abc']);
-        $service = $this->createMock(DashboardServiceInterface::class);
-        $controller = new DashboardController(
+        $service = $this->createMock(AnalyticsDashboardServiceInterface::class);
+        $controller = new AnalyticsDashboardController(
             $service,
             $this->createMock(LoggerInterface::class),
             $this->createSuccessFactory($request),
@@ -39,10 +39,10 @@ final class DashboardControllerTest extends TestCase
     public function testTimeseriesReturnsServiceUnavailableWhenServiceFails(): void
     {
         $request = new Request(['currency' => 'usd']);
-        $service = $this->createMock(DashboardServiceInterface::class);
+        $service = $this->createMock(AnalyticsDashboardServiceInterface::class);
         $service->method('timeseries')->willThrowException(new \RuntimeException('db down'));
 
-        $controller = new DashboardController(
+        $controller = new AnalyticsDashboardController(
             $service,
             $this->createMock(LoggerInterface::class),
             $this->createSuccessFactory($request),

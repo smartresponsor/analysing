@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Analysing\Tests\Unit\Analytics;
 
-use App\Analysing\Service\Analytics\ReportBundle;
+use App\Analysing\Service\AnalyticsReportBundle;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 
@@ -12,7 +12,7 @@ final class ReportBundleTest extends TestCase
 {
     public function testPackBuildsDeterministicManifest(): void
     {
-        $bundle = new ReportBundle(new NullLogger());
+        $bundle = new AnalyticsReportBundle(new NullLogger());
 
         $manifest = $bundle->pack([
             'orders' => [
@@ -31,7 +31,7 @@ final class ReportBundleTest extends TestCase
 
     public function testPackRejectsDuplicateDatasetNamesAfterNormalization(): void
     {
-        $bundle = new ReportBundle(new NullLogger());
+        $bundle = new AnalyticsReportBundle(new NullLogger());
 
         $this->expectException(\InvalidArgumentException::class);
         $bundle->pack([

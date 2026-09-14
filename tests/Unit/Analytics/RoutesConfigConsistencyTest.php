@@ -21,7 +21,7 @@ final class RoutesConfigConsistencyTest extends TestCase
             'analytics_ingest_segment:' => '/analytics/ingest/segment',
             'analytics_experiment_allocate:' => '/analytics/experiment/allocate',
             'analytics_flag_evaluate:' => '/analytics/flag/evaluate',
-            'analytics_insight_metric_tree:' => '/analytics/insight/metric-tree',
+            'analytics_insight_metric_tree:' => '/analytics/insight/metric/tree',
         ];
 
         foreach ($expectedRoutes as $routeName => $path) {

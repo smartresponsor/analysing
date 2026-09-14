@@ -1,94 +1,94 @@
 analytics_status:
   path: /status
-  controller: App\Analysing\Controller\Analytics\AnalyticsController::status
+  controller: App\Analysing\Controller\AnalyticsController::status
   methods: [GET]
 
 analytics_funnel:
   path: /analytics/funnel
-  controller: App\Analysing\Controller\Analytics\AnalyticsController::funnel
+  controller: App\Analysing\Controller\AnalyticsController::funnel
   methods: [POST]
 
 analytics_retention:
   path: /analytics/retention
-  controller: App\Analysing\Controller\Analytics\AnalyticsController::retention
+  controller: App\Analysing\Controller\AnalyticsController::retention
   methods: [POST]
 
 analytics_cohort:
   path: /analytics/cohort
-  controller: App\Analysing\Controller\Analytics\AnalyticsController::cohort
+  controller: App\Analysing\Controller\AnalyticsController::cohort
   methods: [POST]
 
 analytics_health:
   path: /analytics/health
-  controller: App\Analysing\Controller\Analytics\HealthController::ping
+  controller: App\Analysing\Controller\AnalyticsHealthController::ping
   methods: [GET]
 
 analytics_metrics:
   path: /analytics/metrics
-  controller: App\Analysing\Controller\Analytics\ApiController::metrics
+  controller: App\Analysing\Controller\AnalyticsApiController::metrics
   methods: [GET]
 
 analytics_dashboard_kpi:
   path: /analytics/dashboard/kpi
-  controller: App\Analysing\Controller\Analytics\DashboardController::kpi
+  controller: App\Analysing\Controller\AnalyticsDashboardController::kpi
   methods: [GET]
 
 analytics_dashboard_timeseries:
   path: /analytics/dashboard/timeseries
-  controller: App\Analysing\Controller\Analytics\DashboardController::timeseries
+  controller: App\Analysing\Controller\AnalyticsDashboardController::timeseries
   methods: [GET]
 
 analytics_dashboard_top_vendors:
-  path: /analytics/dashboard/top-vendors
-  controller: App\Analysing\Controller\Analytics\DashboardController::topVendors
+  path: /analytics/dashboard/top/vendors
+  controller: App\Analysing\Controller\AnalyticsDashboardController::topVendors
   methods: [GET]
 
 analytics_dashboard_page:
   path: /analytics/dashboard
-  controller: App\Analysing\Controller\Analytics\DashboardPageController::index
+  controller: App\Analysing\Controller\AnalyticsDashboardPageController::index
   methods: [GET]
 
 analytics_aggregate_funnel:
   path: /analytics/aggregate/funnel
-  controller: App\Analysing\Controller\Analytics\AggregateController::funnel
+  controller: App\Analysing\Controller\AnalyticsAggregateController::funnel
   methods: [POST]
 
 analytics_aggregate_retention:
   path: /analytics/aggregate/retention
-  controller: App\Analysing\Controller\Analytics\AggregateController::retention
+  controller: App\Analysing\Controller\AnalyticsAggregateController::retention
   methods: [POST]
 
 analytics_aggregate_path:
   path: /analytics/aggregate/path
-  controller: App\Analysing\Controller\Analytics\AggregateController::path
+  controller: App\Analysing\Controller\AnalyticsAggregateController::path
   methods: [POST]
 
 analytics_ingest_rudder:
   path: /analytics/ingest/rudder
-  controller: App\Analysing\Controller\Analytics\IngestController::ingestRudder
+  controller: App\Analysing\Controller\AnalyticsIngestController::ingestRudder
   methods: [POST]
 
 analytics_ingest_segment:
   path: /analytics/ingest/segment
-  controller: App\Analysing\Controller\Analytics\IngestController::ingestSegment
+  controller: App\Analysing\Controller\AnalyticsIngestController::ingestSegment
   methods: [POST]
 
 analytics_experiment_allocate:
   path: /analytics/experiment/allocate
-  controller: App\Analysing\Controller\Analytics\ExperimentController::allocate
+  controller: App\Analysing\Controller\AnalyticsExperimentController::allocate
   methods: [POST]
 
 analytics_flag_evaluate:
   path: /analytics/flag/evaluate
-  controller: App\Analysing\Controller\Analytics\FlagController::evaluate
+  controller: App\Analysing\Controller\AnalyticsFlagController::evaluate
   methods: [POST]
 
 analytics_insight_anomaly:
   path: /analytics/insight/anomaly
-  controller: App\Analysing\Controller\Analytics\InsightController::anomaly
+  controller: App\Analysing\Controller\AnalyticsInsightController::anomaly
   methods: [POST]
 
 analytics_insight_metric_tree:
-  path: /analytics/insight/metric-tree
-  controller: App\Analysing\Controller\Analytics\InsightController::metricTree
+  path: /analytics/insight/metric/tree
+  controller: App\Analysing\Controller\AnalyticsInsightController::metricTree
   methods: [POST]
