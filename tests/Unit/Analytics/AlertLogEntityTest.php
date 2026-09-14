@@ -4,14 +4,14 @@ declare(strict_types=1);
 
 namespace App\Analysing\Tests\Unit\Analytics;
 
-use App\Analysing\Entity\Alerts\AlertLog;
+use App\Analysing\Entity\Alerts\AnalyticsAlertLogEntity;
 use PHPUnit\Framework\TestCase;
 
 final class AlertLogEntityTest extends TestCase
 {
     public function testConstructsWithNormalizedContext(): void
     {
-        $log = new AlertLog(7, 'delivery', 'sent', ['channel' => 'email', 'meta' => ['attempt' => 1]]);
+        $log = new AnalyticsAlertLogEntity(7, 'delivery', 'sent', ['channel' => 'email', 'meta' => ['attempt' => 1]]);
 
         self::assertSame(7, $log->getVendorId());
         self::assertSame('delivery', $log->getType());
@@ -23,6 +23,6 @@ final class AlertLogEntityTest extends TestCase
     {
         $this->expectException(\InvalidArgumentException::class);
 
-        new AlertLog(0, 'delivery', 'sent');
+        new AnalyticsAlertLogEntity(0, 'delivery', 'sent');
     }
 }

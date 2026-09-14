@@ -13,16 +13,16 @@ final class ServicesControllerAliasCoverageTest extends TestCase
         $yaml = (string) file_get_contents(__DIR__.'/../../../config/component/services.yaml');
 
         $expected = [
-            "App\Analysing\\ControllerInterface\\Analytics\\AggregateControllerInterface: '@App\Analysing\\Controller\\Analytics\\AggregateController'",
-            "App\Analysing\\ControllerInterface\\Analytics\\AnalyticsControllerInterface: '@App\Analysing\\Controller\\Analytics\\AnalyticsController'",
-            "App\Analysing\\ControllerInterface\\Analytics\\ApiControllerInterface: '@App\Analysing\\Controller\\Analytics\\ApiController'",
-            "App\Analysing\\ControllerInterface\\Analytics\\DashboardControllerInterface: '@App\Analysing\\Controller\\Analytics\\DashboardController'",
-            "App\Analysing\\ControllerInterface\\Analytics\\DashboardPageControllerInterface: '@App\Analysing\\Controller\\Analytics\\DashboardPageController'",
-            "App\Analysing\\ControllerInterface\\Analytics\\ExperimentControllerInterface: '@App\Analysing\\Controller\\Analytics\\ExperimentController'",
-            "App\Analysing\\ControllerInterface\\Analytics\\FlagControllerInterface: '@App\Analysing\\Controller\\Analytics\\FlagController'",
-            "App\Analysing\\ControllerInterface\\Analytics\\HealthControllerInterface: '@App\Analysing\\Controller\\Analytics\\HealthController'",
-            "App\Analysing\\ControllerInterface\\Analytics\\IngestControllerInterface: '@App\Analysing\\Controller\\Analytics\\IngestController'",
-            "App\Analysing\\ControllerInterface\\Analytics\\InsightControllerInterface: '@App\Analysing\\Controller\\Analytics\\InsightController'",
+            "App\Analysing\Controller\AnalyticsAggregateControllerInterface: '@App\Analysing\Controller\AnalyticsAggregateController'",
+            "App\Analysing\Controller\AnalyticsControllerInterface: '@App\Analysing\Controller\AnalyticsController'",
+            "App\Analysing\Controller\AnalyticsApiControllerInterface: '@App\Analysing\Controller\AnalyticsApiController'",
+            "App\Analysing\Controller\AnalyticsDashboardControllerInterface: '@App\Analysing\Controller\AnalyticsDashboardController'",
+            "App\Analysing\Controller\AnalyticsDashboardPageControllerInterface: '@App\Analysing\Controller\AnalyticsDashboardPageController'",
+            "App\Analysing\Controller\AnalyticsExperimentControllerInterface: '@App\Analysing\Controller\AnalyticsExperimentController'",
+            "App\Analysing\Controller\AnalyticsFlagControllerInterface: '@App\Analysing\Controller\AnalyticsFlagController'",
+            "App\Analysing\Controller\AnalyticsHealthControllerInterface: '@App\Analysing\Controller\AnalyticsHealthController'",
+            "App\Analysing\Controller\AnalyticsIngestControllerInterface: '@App\Analysing\Controller\AnalyticsIngestController'",
+            "App\Analysing\Controller\AnalyticsInsightControllerInterface: '@App\Analysing\Controller\AnalyticsInsightController'",
         ];
 
         foreach ($expected as $alias) {

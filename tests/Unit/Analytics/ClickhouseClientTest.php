@@ -4,14 +4,14 @@ declare(strict_types=1);
 
 namespace App\Analysing\Tests\Unit\Analytics;
 
-use App\Analysing\Domain\Analytics\ClickhouseClient;
+use App\Analysing\Service\AnalyticsClickhouseClient;
 use PHPUnit\Framework\TestCase;
 
 final class ClickhouseClientTest extends TestCase
 {
     public function testQueryRejectsNonScalarParameterValues(): void
     {
-        $client = new ClickhouseClient('http://clickhouse.test', 'user', 'pass');
+        $client = new AnalyticsClickhouseClient('http://clickhouse.test', 'user', 'pass');
 
         $this->expectException(\InvalidArgumentException::class);
         $reflection = new \ReflectionMethod($client, 'bind');
@@ -23,7 +23,7 @@ final class ClickhouseClientTest extends TestCase
 
     public function testInsertRejectsEmptyRow(): void
     {
-        $client = new ClickhouseClient('http://clickhouse.test', 'user', 'pass');
+        $client = new AnalyticsClickhouseClient('http://clickhouse.test', 'user', 'pass');
 
         $this->expectException(\InvalidArgumentException::class);
         $client->insertJsonEachRow('events', [[]]);

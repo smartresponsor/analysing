@@ -148,3 +148,21 @@ Thumbs.db
 /var/analytics_rate_limit_smoke/
 /var/*.sqlite
 /var/.php-cs-fixer.cache
+/var/coverage/
+*.bak-*
+
+# Local materialized Gating pack; track only the component-owned profile.
+/.gating/*
+!/.gating/profile/
+!/.gating/profile/component/
+!/.gating/profile/component/analysing.yaml
+
+# One-off CMCP migration utilities retained locally as execution evidence only.
+/tools/analytics-canonical-role-first-migrate.php
+/tools/analytics-canonical-reference-reconcile.php
+/tools/analytics-canonical-reference-recover.php
+/tools/analytics-remove-empty-legacy-roots.php
+/tool/cmcp-unstage-noise.ps1
+/tool/cmcp-playwright-diagnose.ps1
+/tool/cmcp-git-identity.ps1
+/test-results/

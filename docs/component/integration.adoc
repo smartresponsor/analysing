@@ -11,7 +11,7 @@ The host application should only enable the bundle and import route configuratio
 == Runtime entry points
 
 * Bundle class: `App\Analysing\AnalysingBundle`
-* Extension class: `App\Analysing\DependencyInjection\AnalysingExtension`
+* Extension class: `App\Analysing\DependencyInjection\AnalyticsExtension`
 * Service export: `config/component/services.yaml`
 * Route export: `config/component/routes.yaml`
 

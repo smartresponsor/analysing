@@ -8,7 +8,7 @@
         <server name="APP_ENV" value="test" force="true"/>
         <server name="APP_DEBUG" value="1" force="true"/>
         <server name="SHELL_VERBOSITY" value="-1"/>
-        <server name="KERNEL_CLASS" value="App\Analysing\Tests\Support\TestKernel"/>
+        <server name="KERNEL_CLASS" value="App\Analysing\Tests\Support\AnalyticsTestKernel"/>
     </php>
 
     <testsuites>
@@ -16,6 +16,8 @@
             <directory>tests</directory>
         </testsuite>
     </testsuites>
+
+    <coverage pathCoverage="true"/>
 
     <source>
         <include>

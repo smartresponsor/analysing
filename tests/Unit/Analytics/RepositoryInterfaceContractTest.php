@@ -8,15 +8,15 @@ use PHPUnit\Framework\TestCase;
 
 final class RepositoryInterfaceContractTest extends TestCase
 {
-    public function testInfraRepositoryImplementsItsInterface(): void
+    public function testAnalyticsRepositoryImplementsItsInterface(): void
     {
-        $repositoryReflection = new \ReflectionClass('App\Analysing\\Repository\\Analytics\\InfraRepository');
-        $interfaceReflection = new \ReflectionClass('App\Analysing\\RepositoryInterface\\Analytics\\InfraRepositoryInterface');
+        $repositoryReflection = new \ReflectionClass('App\Analysing\Repository\AnalyticsRepository');
+        $interfaceReflection = new \ReflectionClass('App\Analysing\RepositoryInterface\AnalyticsRepositoryInterface');
 
-        self::assertTrue($repositoryReflection->implementsInterface('App\Analysing\\RepositoryInterface\\Analytics\\InfraRepositoryInterface'));
+        self::assertTrue($repositoryReflection->implementsInterface('App\Analysing\RepositoryInterface\AnalyticsRepositoryInterface'));
 
         foreach ($interfaceReflection->getMethods() as $method) {
-            self::assertTrue($repositoryReflection->hasMethod($method->getName()), sprintf('InfraRepository::%s is missing.', $method->getName()));
+            self::assertTrue($repositoryReflection->hasMethod($method->getName()), sprintf('AnalyticsRepository::%s is missing.', $method->getName()));
         }
     }
 }

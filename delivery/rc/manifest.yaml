@@ -4,7 +4,7 @@ rc:
   package: analysing/analytics
   status: rc
   export_contract:
-    manifest: config/component/component.yaml
+    manifest: config/component/analytics_component.yaml
     services: config/component/services.yaml
     routes: config/component/routes.yaml
     api_platform: config/component/api_platform.yaml

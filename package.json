@@ -1,0 +1,12 @@
+{
+  "name": "analysing-browser-tests",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test",
+    "test:behavioral-coverage": "playwright test && node tools/qa/write-behavioral-ui-coverage.js"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0"
+  }
+}

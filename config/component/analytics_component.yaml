@@ -1,0 +1,29 @@
+component:
+  schema_version: 1
+  name: analysing
+  title: Analysing
+  package: analysing/analytics
+  status: rc
+  namespace: App\Analysing
+  responsibility: "analytics and decision-support application surfaces"
+  export_contract:
+    services: config/component/services.yaml
+    routes: config/component/routes.yaml
+    api_platform: config/component/api_platform.yaml
+    doctrine: config/component/doctrine.yaml
+    messenger: config/component/messenger.yaml
+    security: config/component/security.yaml
+    env: config/component/analytics_env.yaml
+    smoke: config/component/analytics_smoke.yaml
+  host_policy:
+    business_logic_owner: component
+    composition_owner: host_application
+    glue_layer_goal: near_zero
+    transport_contracts: dto_api_resource_first
+    entities_as_transport_contracts: false
+
+  symfony_bundle:
+    class: App\Analysing\AnalysingBundle
+    extension: App\Analysing\DependencyInjection\AnalyticsExtension
+    services_loaded_by_extension: config/component/services.yaml
+    routes_import_required_by_host: config/component/routes.yaml

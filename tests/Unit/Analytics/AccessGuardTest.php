@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Analysing\Tests\Unit\Analytics;
 
-use App\Analysing\Service\Analytics\AccessGuard;
+use App\Analysing\Service\AnalyticsAccessGuard;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 
@@ -14,7 +14,7 @@ final class AccessGuardTest extends TestCase
     {
         /** @var list<bool|float|int|string> $allow */
         $allow = ['  alpha  ', '', 'beta', 0, false];
-        $guard = new AccessGuard(new NullLogger(), $allow);
+        $guard = new AnalyticsAccessGuard(new NullLogger(), $allow);
 
         self::assertTrue($guard->allow('alpha'));
         self::assertTrue($guard->allow('beta'));
@@ -24,7 +24,7 @@ final class AccessGuardTest extends TestCase
 
     public function testOverlongSubjectIsRejected(): void
     {
-        $guard = new AccessGuard(new NullLogger(), []);
+        $guard = new AnalyticsAccessGuard(new NullLogger(), []);
 
         $this->expectException(\InvalidArgumentException::class);
         $guard->allow(str_repeat('x', 256));

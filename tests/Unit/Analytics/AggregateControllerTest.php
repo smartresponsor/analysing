@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace App\Analysing\Tests\Unit\Analytics;
 
-use App\Analysing\Controller\Analytics\AggregateController;
-use App\Analysing\ServiceInterface\Analytics\AggregateServiceInterface;
+use App\Analysing\Controller\AnalyticsAggregateController;
+use App\Analysing\ServiceInterface\AnalyticsAggregateServiceInterface;
 use App\Analysing\Tests\Support\AnalyticsHttpFactoriesTrait;
-use App\Analysing\Tests\Support\JsonPayloadAssertionsTrait;
+use App\Analysing\Tests\Support\AnalyticsJsonPayloadAssertionsTrait;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\HttpFoundation\Request;
@@ -15,7 +15,7 @@ use Symfony\Component\HttpFoundation\Request;
 final class AggregateControllerTest extends TestCase
 {
     use AnalyticsHttpFactoriesTrait;
-    use JsonPayloadAssertionsTrait;
+    use AnalyticsJsonPayloadAssertionsTrait;
 
     public function testFunnelReturnsBadRequestWhenAppMissing(): void
     {
@@ -25,8 +25,8 @@ final class AggregateControllerTest extends TestCase
             'from' => '2026-01-01 00:00:00',
             'to' => '2026-01-02 00:00:00',
         ], JSON_THROW_ON_ERROR));
-        $service = $this->createMock(AggregateServiceInterface::class);
-        $controller = new AggregateController(
+        $service = $this->createMock(AnalyticsAggregateServiceInterface::class);
+        $controller = new AnalyticsAggregateController(
             $service,
             $this->createMock(LoggerInterface::class),
             $this->createSuccessFactory($request),
@@ -49,10 +49,10 @@ final class AggregateControllerTest extends TestCase
             'day' => '2026-01-10 00:00:00',
             'top' => 5,
         ], JSON_THROW_ON_ERROR));
-        $service = $this->createMock(AggregateServiceInterface::class);
+        $service = $this->createMock(AnalyticsAggregateServiceInterface::class);
         $service->method('computePath')->willThrowException(new \RuntimeException('broken'));
 
-        $controller = new AggregateController(
+        $controller = new AnalyticsAggregateController(
             $service,
             $this->createMock(LoggerInterface::class),
             $this->createSuccessFactory($request),

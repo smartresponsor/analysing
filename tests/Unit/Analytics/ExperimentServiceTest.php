@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Analysing\Tests\Unit\Analytics;
 
-use App\Analysing\Service\Analytics\ExperimentService;
+use App\Analysing\Service\AnalyticsExperimentService;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 
@@ -12,7 +12,7 @@ final class ExperimentServiceTest extends TestCase
 {
     public function testChooseIsDeterministicForSameSubject(): void
     {
-        $service = new ExperimentService(new NullLogger(), [
+        $service = new AnalyticsExperimentService(new NullLogger(), [
             'checkout-banner' => ['A' => 1, 'B' => 2],
         ]);
 
@@ -25,7 +25,7 @@ final class ExperimentServiceTest extends TestCase
 
     public function testRecordRejectsNonFiniteValue(): void
     {
-        $service = new ExperimentService(new NullLogger());
+        $service = new AnalyticsExperimentService(new NullLogger());
 
         $this->expectException(\InvalidArgumentException::class);
         $service->record('exp-1', 'A', 'conversion', INF);
@@ -33,7 +33,7 @@ final class ExperimentServiceTest extends TestCase
 
     public function testRecordBufferIsBounded(): void
     {
-        $service = new ExperimentService(new NullLogger());
+        $service = new AnalyticsExperimentService(new NullLogger());
 
         for ($i = 0; $i < 1005; ++$i) {
             $service->record('exp-1', 'A', 'metric', (float) $i);

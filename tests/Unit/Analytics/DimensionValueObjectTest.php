@@ -4,14 +4,14 @@ declare(strict_types=1);
 
 namespace App\Analysing\Tests\Unit\Analytics;
 
-use App\Analysing\ValueObject\Analytics\Dimension;
+use App\Analysing\ValueObject\AnalyticsDimension;
 use PHPUnit\Framework\TestCase;
 
 final class DimensionValueObjectTest extends TestCase
 {
     public function testTrimsAndStringifiesName(): void
     {
-        $dimension = new Dimension(' vendor ');
+        $dimension = new AnalyticsDimension(' vendor ');
 
         self::assertSame('vendor', $dimension->name());
         self::assertSame('vendor', (string) $dimension);
@@ -21,6 +21,6 @@ final class DimensionValueObjectTest extends TestCase
     {
         $this->expectException(\InvalidArgumentException::class);
 
-        new Dimension('   ');
+        new AnalyticsDimension('   ');
     }
 }

@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Analysing\Tests\Unit\Analytics;
 
-use App\Analysing\Service\Analytics\RetentionService;
+use App\Analysing\Service\AnalyticsRetentionService;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 
@@ -13,7 +13,7 @@ final class RetentionServiceTest extends TestCase
     public function testPruneKeepsRowsWithinThreshold(): void
     {
         $now = time();
-        $service = new RetentionService(new NullLogger());
+        $service = new AnalyticsRetentionService(new NullLogger());
 
         $rows = $service->prune([
             ['ts' => $now],
@@ -26,7 +26,7 @@ final class RetentionServiceTest extends TestCase
 
     public function testPruneRejectsNonPositiveMaxDays(): void
     {
-        $service = new RetentionService(new NullLogger());
+        $service = new AnalyticsRetentionService(new NullLogger());
 
         $this->expectException(\InvalidArgumentException::class);
         $service->prune([], 0);

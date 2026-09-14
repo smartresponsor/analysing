@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Analysing\Tests\Unit\Analytics;
 
 use App\Analysing\Command\AnalyticsRefreshCommand;
-use App\Analysing\ServiceInterface\Analytics\AnalyticsCollectorInterface;
+use App\Analysing\ServiceInterface\AnalyticsCollectorInterface;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\Console\Tester\CommandTester;

@@ -4,24 +4,24 @@ declare(strict_types=1);
 
 namespace App\Analysing\Tests\Unit\Analytics;
 
-use App\Analysing\Controller\Analytics\HealthController;
-use App\Analysing\ServiceInterface\Analytics\HealthServiceInterface;
+use App\Analysing\Controller\AnalyticsHealthController;
+use App\Analysing\ServiceInterface\AnalyticsHealthServiceInterface;
 use App\Analysing\Tests\Support\AnalyticsHttpFactoriesTrait;
-use App\Analysing\Tests\Support\JsonPayloadAssertionsTrait;
+use App\Analysing\Tests\Support\AnalyticsJsonPayloadAssertionsTrait;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 
 final class HealthControllerTest extends TestCase
 {
     use AnalyticsHttpFactoriesTrait;
-    use JsonPayloadAssertionsTrait;
+    use AnalyticsJsonPayloadAssertionsTrait;
 
     public function testPingReturnsHealthPayload(): void
     {
-        $service = $this->createMock(HealthServiceInterface::class);
+        $service = $this->createMock(AnalyticsHealthServiceInterface::class);
         $service->method('status')->willReturn(['ok' => true, 'component' => 'analytics']);
 
-        $controller = new HealthController(
+        $controller = new AnalyticsHealthController(
             $service,
             $this->createMock(LoggerInterface::class),
             $this->createSuccessFactory(),
@@ -38,10 +38,10 @@ final class HealthControllerTest extends TestCase
 
     public function testPingReturnsServiceUnavailableOnRuntimeFailure(): void
     {
-        $service = $this->createMock(HealthServiceInterface::class);
+        $service = $this->createMock(AnalyticsHealthServiceInterface::class);
         $service->method('status')->willThrowException(new \RuntimeException('broken'));
 
-        $controller = new HealthController(
+        $controller = new AnalyticsHealthController(
             $service,
             $this->createMock(LoggerInterface::class),
             $this->createSuccessFactory(),

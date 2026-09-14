@@ -17,6 +17,13 @@ final class AnalyticsDomainHygieneGuard
 
     public function run(): int
     {
+        $domainRoot = $this->root . '/src/Domain';
+        $domainInterfaceRoot = $this->root . '/src/DomainInterface';
+        if (!is_dir($domainRoot)) {
+            echo "OK: forbidden src/Domain root is absent.\n";
+            return 0;
+        }
+
         $domainDir = $this->root . '/src/Domain/Analytics';
         $domainInterfaceDir = $this->root . '/src/DomainInterface/Analytics';
         if (!is_dir($domainDir)) {

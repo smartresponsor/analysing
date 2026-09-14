@@ -4,14 +4,14 @@ declare(strict_types=1);
 
 namespace App\Analysing\Tests\Unit\Analytics;
 
-use App\Analysing\Entity\Analytics\ExportJob;
+use App\Analysing\Entity\Analytics\AnalyticsExportJobEntity;
 use PHPUnit\Framework\TestCase;
 
 final class ExportJobPayloadTest extends TestCase
 {
     public function testMergePayloadAddsRuntimeMetadata(): void
     {
-        $job = new ExportJob('csv', ['from' => '2026-01-01']);
+        $job = new AnalyticsExportJobEntity('csv', ['from' => '2026-01-01']);
 
         $job->mergePayload(['export_path' => '/tmp/file.csv']);
 

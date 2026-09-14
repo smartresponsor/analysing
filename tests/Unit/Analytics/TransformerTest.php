@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Analysing\Tests\Unit\Analytics;
 
-use App\Analysing\Service\Analytics\Transformer;
+use App\Analysing\Service\AnalyticsTransformer;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 
@@ -12,7 +12,7 @@ final class TransformerTest extends TestCase
 {
     public function testMapAppliesCallableAcrossRows(): void
     {
-        $service = new Transformer(new NullLogger());
+        $service = new AnalyticsTransformer(new NullLogger());
         $mapped = $service->map([
             ['value' => 1],
             ['value' => 2],
@@ -23,7 +23,7 @@ final class TransformerTest extends TestCase
 
     public function testMapWrapsCallableFailure(): void
     {
-        $service = new Transformer(new NullLogger());
+        $service = new AnalyticsTransformer(new NullLogger());
 
         $this->expectException(\RuntimeException::class);
         $service->map([

@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Analysing\Tests\Unit\Analytics;
 
-use App\Analysing\Service\Analytics\WindowQuery;
+use App\Analysing\Service\AnalyticsWindowQuery;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 
@@ -12,7 +12,7 @@ final class WindowQueryTest extends TestCase
 {
     public function testWindowSplitsRowsIntoFixedSizeChunks(): void
     {
-        $service = new WindowQuery(new NullLogger());
+        $service = new AnalyticsWindowQuery(new NullLogger());
 
         self::assertSame([
             [1, 2],
@@ -23,7 +23,7 @@ final class WindowQueryTest extends TestCase
 
     public function testWindowRejectsNonPositiveSize(): void
     {
-        $service = new WindowQuery(new NullLogger());
+        $service = new AnalyticsWindowQuery(new NullLogger());
 
         $this->expectException(\InvalidArgumentException::class);
         $service->window([1, 2, 3], 0);

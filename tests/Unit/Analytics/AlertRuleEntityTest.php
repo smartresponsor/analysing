@@ -4,14 +4,14 @@ declare(strict_types=1);
 
 namespace App\Analysing\Tests\Unit\Analytics;
 
-use App\Analysing\Entity\Alerts\AlertRule;
+use App\Analysing\Entity\Alerts\AnalyticsAlertRuleEntity;
 use PHPUnit\Framework\TestCase;
 
 final class AlertRuleEntityTest extends TestCase
 {
     public function testConstructsWithNormalizedChannelsAndCondition(): void
     {
-        $rule = new AlertRule(
+        $rule = new AnalyticsAlertRuleEntity(
             'order-drop',
             'Order drop',
             ['metric' => 'orders', 'threshold' => 10],
@@ -29,6 +29,6 @@ final class AlertRuleEntityTest extends TestCase
     {
         $this->expectException(\InvalidArgumentException::class);
 
-        new AlertRule('code', 'Name', []);
+        new AnalyticsAlertRuleEntity('code', 'Name', []);
     }
 }

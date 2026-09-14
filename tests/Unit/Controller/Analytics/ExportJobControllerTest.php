@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace App\Analysing\Tests\Unit\Controller\Analytics;
 
-use App\Analysing\Controller\Analytics\ExportJobController;
-use App\Analysing\Entity\Analytics\ExportJob;
-use App\Analysing\Service\Analytics\ExportJobMetricsService;
+use App\Analysing\Controller\AnalyticsExportJobController;
+use App\Analysing\Entity\Analytics\AnalyticsExportJobEntity;
+use App\Analysing\Service\AnalyticsExportJobMetricsService;
 use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\ORM\EntityRepository;
 use PHPUnit\Framework\TestCase;
@@ -22,9 +22,9 @@ final class ExportJobControllerTest extends TestCase
         $em = $this->createMock(EntityManagerInterface::class);
         $em->method('getRepository')->willReturn($repo);
 
-        $metrics = new ExportJobMetricsService($em);
+        $metrics = new AnalyticsExportJobMetricsService($em);
 
-        $controller = new ExportJobController($em, $metrics);
+        $controller = new AnalyticsExportJobController($em, $metrics);
         $response = $controller->status(1);
 
         self::assertInstanceOf(JsonResponse::class, $response);
@@ -33,7 +33,7 @@ final class ExportJobControllerTest extends TestCase
 
     public function testStatusReturnsJobData(): void
     {
-        $job = new ExportJob('csv', ['export_path' => '/tmp/file.csv']);
+        $job = new AnalyticsExportJobEntity('csv', ['export_path' => '/tmp/file.csv']);
 
         $repo = $this->createMock(EntityRepository::class);
         $repo->method('find')->willReturn($job);
@@ -41,9 +41,9 @@ final class ExportJobControllerTest extends TestCase
         $em = $this->createMock(EntityManagerInterface::class);
         $em->method('getRepository')->willReturn($repo);
 
-        $metrics = new ExportJobMetricsService($em);
+        $metrics = new AnalyticsExportJobMetricsService($em);
 
-        $controller = new ExportJobController($em, $metrics);
+        $controller = new AnalyticsExportJobController($em, $metrics);
         $response = $controller->status(1);
 
         self::assertSame(200, $response->getStatusCode());
@@ -57,9 +57,9 @@ final class ExportJobControllerTest extends TestCase
         $em = $this->createMock(EntityManagerInterface::class);
         $em->method('getRepository')->willReturn($repo);
 
-        $metrics = new ExportJobMetricsService($em);
+        $metrics = new AnalyticsExportJobMetricsService($em);
 
-        $controller = new ExportJobController($em, $metrics);
+        $controller = new AnalyticsExportJobController($em, $metrics);
         $response = $controller->metrics();
 
         self::assertSame(200, $response->getStatusCode());

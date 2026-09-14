@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace App\Analysing\Tests\Unit\Analytics;
 
-use App\Analysing\Controller\Analytics\AnalyticsController;
-use App\Analysing\DomainInterface\Analytics\AnalyticsInterface;
+use App\Analysing\Controller\AnalyticsController;
+use App\Analysing\ServiceInterface\AnalyticsInterface;
 use App\Analysing\Tests\Support\AnalyticsHttpFactoriesTrait;
-use App\Analysing\Tests\Support\JsonPayloadAssertionsTrait;
+use App\Analysing\Tests\Support\AnalyticsJsonPayloadAssertionsTrait;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\HttpFoundation\Request;
@@ -15,7 +15,7 @@ use Symfony\Component\HttpFoundation\Request;
 final class AnalyticsControllerTest extends TestCase
 {
     use AnalyticsHttpFactoriesTrait;
-    use JsonPayloadAssertionsTrait;
+    use AnalyticsJsonPayloadAssertionsTrait;
 
     public function testStatusReturnsOkPayload(): void
     {
@@ -60,7 +60,7 @@ final class AnalyticsControllerTest extends TestCase
     public function testRetentionReturnsServiceUnavailableForRuntimeFailure(): void
     {
         $request = new Request([], [], [], [], [], [], json_encode([
-            'tenant_id' => 'tenant',
+            'vendor_id' => 'vendor',
             'app' => 'shop',
             'env' => 'prod',
             'from' => '2026-01-01 00:00:00',

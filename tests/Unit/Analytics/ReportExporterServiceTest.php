@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Analysing\Tests\Unit\Analytics;
 
-use App\Analysing\Service\Analytics\ReportExporterService;
+use App\Analysing\Service\AnalyticsReportExporterService;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 
@@ -15,7 +15,7 @@ final class ReportExporterServiceTest extends TestCase
         $dir = sys_get_temp_dir().'/analytics_export_'.uniqid('', true);
         mkdir($dir, 0777, true);
 
-        $service = new ReportExporterService(new NullLogger());
+        $service = new AnalyticsReportExporterService(new NullLogger());
         $path = $service->export([
             ['metric' => 'sales', 'value' => 10],
             ['metric' => 'refunds', 'value' => 2],
@@ -30,7 +30,7 @@ final class ReportExporterServiceTest extends TestCase
 
     public function testExportRejectsUnsupportedFormat(): void
     {
-        $service = new ReportExporterService(new NullLogger());
+        $service = new AnalyticsReportExporterService(new NullLogger());
 
         $this->expectException(\InvalidArgumentException::class);
         $service->export([], 'xlsx');

@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace App\Analysing\Tests\Unit\Command;
 
 use App\Analysing\Command\AnalyticsExportCommand;
-use App\Analysing\ServiceInterface\Analytics\DashboardServiceInterface;
-use App\Analysing\ServiceInterface\Analytics\ReportExporterServiceInterface;
+use App\Analysing\ServiceInterface\AnalyticsDashboardServiceInterface;
+use App\Analysing\ServiceInterface\AnalyticsReportExporterServiceInterface;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 use Symfony\Component\Console\Tester\CommandTester;
@@ -15,7 +15,7 @@ final class AnalyticsExportCommandTest extends TestCase
 {
     public function testCommandUsesExportToPath(): void
     {
-        $dashboard = $this->createMock(DashboardServiceInterface::class);
+        $dashboard = $this->createMock(AnalyticsDashboardServiceInterface::class);
         $dashboard->method('kpi')->willReturn(['gross_minor' => 0, 'net_minor' => 0, 'margin_pct' => 0.0, 'days' => 0]);
         $dashboard->method('timeseries')->willReturn([]);
 
@@ -24,7 +24,7 @@ final class AnalyticsExportCommandTest extends TestCase
         $generatedPath = $tmpDir.'/generated.csv';
         file_put_contents($generatedPath, "section,date\n");
 
-        $exporter = $this->createMock(ReportExporterServiceInterface::class);
+        $exporter = $this->createMock(AnalyticsReportExporterServiceInterface::class);
         $exporter
             ->expects(self::once())
             ->method('export')

@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Analysing\Command;
 
-use App\Analysing\ServiceInterface\Analytics\AnalyticsCollectorInterface;
+use App\Analysing\ServiceInterface\AnalyticsCollectorInterface;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command as BaseCommand;
