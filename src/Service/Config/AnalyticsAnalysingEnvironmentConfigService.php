@@ -6,7 +6,7 @@ namespace App\Analysing\Service\Config;
 
 use App\Administering\Service\Config\AdministrationConfigApplyService;
 use App\Administering\Service\Config\AdministrationConfigFileWriterService;
-use App\Administering\Value\Config\ConfigToolDescriptor;
+use App\Administering\Value\Config\AdministrationConfigToolDescriptor;
 use App\Analysing\DTO\Config\AnalyticsEnvironmentConfigDataDTO;
 use App\Analysing\Form\Config\AnalyticsAnalysingEnvironmentConfigFormType;
 use App\Analysing\ServiceInterface\Config\AnalyticsAnalysingEnvironmentConfigServiceInterface;
@@ -21,9 +21,9 @@ final readonly class AnalyticsAnalysingEnvironmentConfigService implements Analy
     ) {
     }
 
-    public function descriptor(): ConfigToolDescriptor
+    public function descriptor(): AdministrationConfigToolDescriptor
     {
-        return new ConfigToolDescriptor(
+        return new AdministrationConfigToolDescriptor(
             applicationCode: 'Analysing',
             toolCode: 'analysing.environment',
             label: 'Analysing Environment',
