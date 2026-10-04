@@ -24,6 +24,19 @@ final class AnalyticsAnalysingDemoFixtures extends Fixture
         $apps = ['billing', 'catalog', 'vendoring'];
         $envs = ['dev', 'stage', 'prod'];
 
+        $this->persistJourneyFixtures($manager, $faker, $apps, $envs);
+        $this->persistMetricFixtures($manager, $faker, $apps, $envs);
+        $this->persistAlertFixtures($manager, $faker, $apps);
+        $this->persistExportJobFixtures($manager, $faker, $apps, $envs);
+        $manager->flush();
+    }
+
+    /**
+     * @param list<string> $apps
+     * @param list<string> $envs
+     */
+    private function persistJourneyFixtures(ObjectManager $manager, \Faker\Generator $faker, array $apps, array $envs): void
+    {
         foreach ($apps as $appIndex => $app) {
             $env = $envs[$appIndex % \count($envs)];
 
@@ -56,7 +69,14 @@ final class AnalyticsAnalysingDemoFixtures extends Fixture
                 ));
             }
         }
+    }
 
+    /**
+     * @param list<string> $apps
+     * @param list<string> $envs
+     */
+    private function persistMetricFixtures(ObjectManager $manager, \Faker\Generator $faker, array $apps, array $envs): void
+    {
         for ($index = 1; $index <= 6; ++$index) {
             $metric = sprintf('%s.%s', $this->scalarString($faker->randomElement(['pageviews', 'signups', 'revenue', 'conversion'])), $this->scalarString($faker->randomElement(['daily', 'weekly'])));
             $start = new \DateTimeImmutable(sprintf('-%d day', 7 + $index));
@@ -82,7 +102,13 @@ final class AnalyticsAnalysingDemoFixtures extends Fixture
                 40000 + ($index * 1000),
             ));
         }
+    }
 
+    /**
+     * @param list<string> $apps
+     */
+    private function persistAlertFixtures(ObjectManager $manager, \Faker\Generator $faker, array $apps): void
+    {
         foreach (range(1, 4) as $index) {
             $rule = new AnalyticsAlertRuleEntity(
                 sprintf('alert.%02d', $index),
@@ -110,7 +136,14 @@ final class AnalyticsAnalysingDemoFixtures extends Fixture
                 ],
             ));
         }
+    }
 
+    /**
+     * @param list<string> $apps
+     * @param list<string> $envs
+     */
+    private function persistExportJobFixtures(ObjectManager $manager, \Faker\Generator $faker, array $apps, array $envs): void
+    {
         for ($index = 1; $index <= 3; ++$index) {
             $job = new AnalyticsExportJobEntity(
                 $this->scalarString($faker->randomElement(['vendor_export', 'dashboard_export', 'path_export'])),
@@ -131,8 +164,6 @@ final class AnalyticsAnalysingDemoFixtures extends Fixture
 
             $manager->persist($job);
         }
-
-        $manager->flush();
     }
 
     /**
