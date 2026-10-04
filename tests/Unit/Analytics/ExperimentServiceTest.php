@@ -23,6 +23,18 @@ final class ExperimentServiceTest extends TestCase
         self::assertContains($first, ['A', 'B']);
     }
 
+    public function testChooseFallsBackWhenConfiguredWeightsAreInvalid(): void
+    {
+        $service = new AnalyticsExperimentService(new NullLogger(), [
+            'checkout-banner' => [
+                '' => 1,
+                'B' => 0,
+            ],
+        ]);
+
+        self::assertSame('A', $service->choose('checkout-banner', 'user-42'));
+    }
+
     public function testRecordRejectsNonFiniteValue(): void
     {
         $service = new AnalyticsExperimentService(new NullLogger());
