@@ -37,52 +37,8 @@ final readonly class AnalyticsHealthService implements AnalyticsHealthServiceInt
     public function status(): array
     {
         $startedAt = microtime(true);
-        $requiredExtensions = ['json', 'pdo'];
-        $optionalExtensions = ['mbstring', 'curl', 'zlib'];
-        $missingRequiredExtensions = [];
-        $missingOptionalExtensions = [];
-
-        foreach ($requiredExtensions as $extension) {
-            if (!extension_loaded($extension)) {
-                $missingRequiredExtensions[] = $extension;
-            }
-        }
-
-        foreach ($optionalExtensions as $extension) {
-            if (!extension_loaded($extension)) {
-                $missingOptionalExtensions[] = $extension;
-            }
-        }
-
-        if ([] !== $missingRequiredExtensions) {
-            $this->logger->warning('Analytics health service detected missing required PHP extensions.', [
-                'missing_extensions' => $missingRequiredExtensions,
-            ]);
-        }
-
-        if ([] !== $missingOptionalExtensions) {
-            $this->logger->info('Analytics health service detected missing optional PHP extensions.', [
-                'missing_extensions' => $missingOptionalExtensions,
-            ]);
-        }
-
-        $catalogCount = 0;
-        $catalogChecksum = null;
-        try {
-            $catalog = $this->registry->list();
-            $catalogCount = count($catalog);
-            if ([] !== $catalog) {
-                $catalogChecksum = hash('sha256', json_encode($catalog, JSON_THROW_ON_ERROR));
-            }
-        } catch (\Throwable $exception) {
-            $this->logger->error('Analytics health service could not inspect the KPI catalog.', [
-                'exception' => $exception,
-            ]);
-        }
-
-        if (0 === $catalogCount) {
-            $this->logger->warning('Analytics health service detected an empty KPI catalog.');
-        }
+        [$missingRequiredExtensions, $missingOptionalExtensions] = $this->inspectExtensions();
+        [$catalogCount, $catalogChecksum] = $this->inspectCatalog();
 
         return [
             'ok' => [] === $missingRequiredExtensions && $catalogCount > 0,
@@ -112,5 +68,68 @@ final readonly class AnalyticsHealthService implements AnalyticsHealthServiceInt
             'storage_required_tables' => $this->storageRequiredTables,
             'duration_ms' => (int) round((microtime(true) - $startedAt) * 1000),
         ];
+    }
+
+    /**
+     * @return array{0:list<string>,1:list<string>}
+     */
+    private function inspectExtensions(): array
+    {
+        $missingRequiredExtensions = $this->missingExtensions(['json', 'pdo']);
+        $missingOptionalExtensions = $this->missingExtensions(['mbstring', 'curl', 'zlib']);
+
+        if ([] !== $missingRequiredExtensions) {
+            $this->logger->warning('Analytics health service detected missing required PHP extensions.', [
+                'missing_extensions' => $missingRequiredExtensions,
+            ]);
+        }
+
+        if ([] !== $missingOptionalExtensions) {
+            $this->logger->info('Analytics health service detected missing optional PHP extensions.', [
+                'missing_extensions' => $missingOptionalExtensions,
+            ]);
+        }
+
+        return [$missingRequiredExtensions, $missingOptionalExtensions];
+    }
+
+    /**
+     * @param list<string> $extensions
+     *
+     * @return list<string>
+     */
+    private function missingExtensions(array $extensions): array
+    {
+        return array_values(array_filter(
+            $extensions,
+            static fn (string $extension): bool => !extension_loaded($extension),
+        ));
+    }
+
+    /**
+     * @return array{0:int,1:?string}
+     */
+    private function inspectCatalog(): array
+    {
+        $catalogCount = 0;
+        $catalogChecksum = null;
+
+        try {
+            $catalog = $this->registry->list();
+            $catalogCount = count($catalog);
+            if ([] !== $catalog) {
+                $catalogChecksum = hash('sha256', json_encode($catalog, JSON_THROW_ON_ERROR));
+            }
+        } catch (\Throwable $exception) {
+            $this->logger->error('Analytics health service could not inspect the KPI catalog.', [
+                'exception' => $exception,
+            ]);
+        }
+
+        if (0 === $catalogCount) {
+            $this->logger->warning('Analytics health service detected an empty KPI catalog.');
+        }
+
+        return [$catalogCount, $catalogChecksum];
     }
 }
