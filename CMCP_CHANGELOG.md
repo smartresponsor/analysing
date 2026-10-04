@@ -85,3 +85,68 @@
 - Playwright now uses an isolated loopback port and the QA router. Fresh `npm test` passes 1/1 Chromium `/status` smoke, and Canon042 remains green at functional 1/1, behavioral 1/1, UI 0/0, critical 1/1.
 - Final verification after all repairs: Composer/PHPStan/schema gates green; PHPUnit 172 tests / 564 assertions green with 4 non-blocking deprecations; fresh coverage evidence regenerated; Gating 61 rules, 0 failed, 3 warnings, 9 skipped.
 - Final remaining warnings are explicitly non-blocking RC debt: the legacy namespaced tooling type, semantic PHPDoc coverage, and PHP test coverage thresholds. No authorized in-scope hard failure remains.
+
+## 2026-10-04 — autonomous RC reconnaissance and remediation baseline
+
+### Reconnaissance
+
+- Read the current Analysing `AGENTS.md`, `README.md`, Composer manifests, bundle/Doctrine configuration, CMCP journal, repository-facing Markdown/AsciiDoc relevant to the current RED contour, and the supplied CanonScanning/Inspecting evidence.
+- Inspected the current Git state before new writes: branch `rc/analysing-canon-vendor-20260913`, existing dirty paths preserved and classified before reuse; no reset, clean, stash, or destructive reconciliation is permitted.
+- Read the mandatory Objecting, Cruding, Viewing, and Interfacing contracts available in their repositories; Interfacing has no `MANIFEST.json`, which was confirmed by Console MCP rather than inferred.
+- Read Gating owner contracts and the Failing Composer package identity; Failing is `failing/failure` and exposes the `App\\Failing\\` Symfony bundle namespace.
+- Consumed the supplied Inspecting report for fingerprint `e843024f8976da74197b585d3c5743262b56b46ef9a24aaa622eecbf443e80a1`: 33 medium observational maintainability/design findings and no autofixable findings. It is baseline evidence, not an automatic RC blocker.
+
+### Canon mapping consulted
+
+- Canon022 `Canon022StandaloneApplicationDependencyBaselineRule.md` -> Analysing has `bin/console` plus `config/bundles.php`, so the standalone baseline applies. Current RED evidence requires direct `failing/failure` in development and production manifests and `App\\Failing\\FailingBundle` registration.
+- Canon045 `Canon045DevelopmentComposerRepositoryClosureRule.md` -> the root development manifest must expose the reachable local `../Failing` repository required through Viewing.
+- Canon047 `Canon047RepositoryOwnsDoctrineManagerRule.md` -> direct `EntityManagerInterface` access outside `src/Repository/` must be replaced by repository contracts.
+- Canon052 `Canon052GatingIntegrationRule.md` -> `gating/gate` remains a development dependency, `composer gate` is the standard entry point, `quality` includes `@gate`, and consumer `.gating/` is artifact-only; a non-executable README is permitted.
+- Canon054 `Canon054DoctrinePhysicalIdentifierNamingRule.md` -> standalone ORM configuration must use `doctrine.orm.naming_strategy.underscore_number_aware`.
+- Canon055 `Canon055PlatformIdentityTerminologyRule.md` -> current human-facing shared-platform prose must use neutral platform vocabulary; historical/consumer identity references must be explicitly framed as such.
+- Canon056/057/058/059/060/061/062/063 -> the two external analytics API GET operations need a canonical YAML OpenAPI source under `config/openapi/`, method/path parity, canonical version placement if versioned, and a direct Nelmio runtime dependency once Analysing owns OpenAPI.
+
+### Selected RC-critical workstream
+
+- Close the supplied hard Canon RED backlog without expanding Analysing beyond analytics query/metric/report responsibility: dependency closure, persistence ownership, Gating integration, Doctrine naming strategy, neutral platform terminology, and API/OpenAPI parity.
+- Preserve generic CRUD ownership in Cruding, presentation ownership in Viewing/Interfacing, and Objecting system-field ownership; do not introduce `src/Domain`, Ports/Adapters, or alternative namespaces.
+
+### Growth workstream (post-RC, non-blocking)
+
+- Product-analytics maturity may later add richer self-service exploration, experimentation/statistics, diagnostics, and DX around funnels/retention/path analysis, while session replay UI, stream-processing infrastructure, storage-engine ownership, and shell presentation remain outside Analysing.
+
+### Material risks and gates
+
+- Existing dirty changes include partial canon remediation and must not be overwritten blindly; the duplicate development Gating repository entry is specifically non-canonical duplication to reconcile.
+- Required deterministic acceptance includes current Gating, Composer validation/lock parity, PHP syntax/static analysis, PHPUnit, Symfony container/YAML, Doctrine schema parity, and a post-mutation Inspecting run because the supplied Inspecting fingerprint becomes stale after remediation.
+- The first current `composer gate` start attempt was capacity-admitted as light-only by Console MCP and did not start a process; this is a transient orchestration capacity condition, not a repository blocker.
+
+### Current execution verification checkpoint
+
+- `composer validate --strict --check-lock`: GREEN.
+- `composer analyse`: GREEN at PHPStan max over 194 source files.
+- `composer test`: GREEN, 172 tests / 566 assertions; 4 existing deprecations remain non-blocking.
+- `composer gate`: GREEN for the currently selected automatic Gating surface (10 rules, 0 failed, 0 warnings, 3 skipped); because no component profile was selected by this invocation, this is supporting evidence rather than a substitute for the supplied CanonScanning contour.
+- `composer standalone:smoke`: GREEN on Symfony 8.1.8 / PHP 8.4.13 in `test`.
+- `composer lint:canon`: GREEN for structural hard criteria: 194 files, zero duplicate basenames, zero Domain candidates, zero InterfaceInterface anomalies. The scanner reports 68 missing mirrors as inventory, not a command failure.
+- `composer guard:namespace`: GREEN/report-only with 194 `App\\Analysing` PHP files, zero banned roots and zero unknown roots; only the root `AnalysingBundle` and `Kernel` bootstrap declarations are reported as non-canonical by the legacy report heuristic.
+- Existing managed PHP runtime on `127.0.0.1:8099` was probed before browser verification and was not running. `npm test` then started the repository QA server and passed the Chromium `/status` behavioral smoke 1/1.
+- `playwright.config.ts` now sets `reuseExistingServer: true`, so subsequent browser verification obeys the engine `REUSE_EXISTING_FIRST` contract instead of forcing a duplicate server when a healthy runtime already exists.
+- `composer schema:parity`: GREEN using a disposable in-memory SQLite database; both repository migrations replay cleanly and converge exactly to current Doctrine metadata (9 tables / 2 migrations). The existing working test database is not mutated to obtain acceptance evidence.
+- Changed runtime/browser verification remains GREEN: the managed `127.0.0.1:8099` runtime was probed first and was absent, then `npm test` started the repository QA server and passed the Chromium `/status` behavioral smoke 1/1 with `reuseExistingServer: true` preserved for healthy-runtime reuse.
+- Fresh post-mutation Inspecting completed successfully at `D:\\PhpstormProjects\\www\\Inspecting\\.inspecting\\reports\\D--PhpstormProjects-www-Analysing-20261004-082629.json`: PHPStan errors 0, 33 medium observational maintainability/design findings, 0 autofixable findings. These remain non-blocking technical-debt evidence rather than a hard Canon failure.
+- Current-window deterministic re-verification is GREEN: `composer validate --strict --check-lock`, `composer analyse`, `composer test` (172 tests / 566 assertions, 4 non-blocking deprecations), `composer schema:parity`, and the standard `composer gate` surface (10 rules, 0 failed, 0 warnings, 3 profile-dependent skips).
+
+### 2026-10-04 — material verification continuation
+
+- Re-ran the current repository gates through Console MCP. `composer validate --strict --check-lock`, changed/untracked PHP syntax lint, Symfony `lint:container`, Symfony `lint:yaml config`, standalone Symfony smoke, and the explicit API router inventory were GREEN.
+- Applied the guarded pending test-environment migration only after a Doctrine migrations dry-run plan fingerprint proved the change was the two canonical snake_case column renames. The resulting Doctrine schema/migration parity was GREEN.
+- Strengthened the persistent `composer analyse` gate so it follows `phpstan.neon` and covers both `src` and `tests`; the resulting PHPStan max run covered 295 files with zero errors.
+- A fresh Inspecting pass initially found one high `class.notFound` in `MigrationPlatformCompatibilityTest`; the test was changed to reflect the explicitly loaded migration by string class name rather than requiring Composer to resolve a non-autoloaded symbol. PHPUnit remained GREEN at 172 tests / 566 assertions.
+- Fresh post-fix Inspecting report `D:\\PhpstormProjects\\www\\Inspecting\\.inspecting\\reports\\D--PhpstormProjects-www-Analysing-20261004-081917.json` completed with zero PHPStan errors/file errors and 33 medium observational structural findings, matching the previous non-blocking maintainability/design contour; no high finding and no autofixable finding remains in that report.
+- Before final commit, the live workspace began receiving concurrent writes from other active Analysing engine tasks. The observed drift alternated the Composer migration autoload mapping and its manifest-test expectation, causing `composer quality` to fail on opposite sides of the same two-file contract across consecutive runs. This is an active concurrent-writer integration blocker, not a stable repository failure.
+- No Git commit, push, reset, stash, clean, or overwrite was performed after the concurrent-writer condition was confirmed. The current task must re-establish a stable live snapshot and re-run aggregate acceptance before publication.
+- A later stable acceptance snapshot passed aggregate `composer quality`: PHPStan max over 295 files, PHPUnit 172 tests / 566 assertions with 4 existing deprecations, isolated migration/schema parity across 9 tables / 2 migrations, and Gating with 0 failures / 0 warnings on its current automatic surface.
+- Fresh Inspecting report `D:\\PhpstormProjects\\www\\Inspecting\\.inspecting\\reports\\D--PhpstormProjects-www-Analysing-20261004-082312.json` completed with zero PHPStan errors/file errors, zero high findings, 33 medium observational findings, and zero autofixable findings.
+- Repository-local Playwright verification passed the Chromium `/status` smoke 1/1 after probing the managed runtime first; no user-observable visual UI surface is eligible for screenshot evidence in this canon/persistence/API remediation.
+- Git integration remains intentionally unperformed while the worktree contains mixed pre-existing/concurrent modifications whose path-level ownership cannot be separated safely from the in-scope Composer/config remediation without commingling protected work.

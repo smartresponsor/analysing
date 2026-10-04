@@ -47,14 +47,14 @@ Docs
 - docs/analytics-core-doc-namespace-target.md
 
 Composer
-- composer.json autoload now maps App\Analysing\\, SmartResponsor\\ and Analytics\\ to src/ for temporary compatibility.
+- Historical consumer/domain migration temporarily mapped App\Analysing\\, SmartResponsor\\ and Analytics\\ to src/.
 - Added composer script: composer run guard:namespace.
 
 Reports
 - report/namespace-guard.txt
 
 Analytics sketch11-02 deliverables
-- Removed banned namespace prefixes (SmartResponsor\\Http\\..., Analytics\\Bootstrap...) by migrating:
+- Historical consumer/domain migration removed banned namespace prefixes (SmartResponsor\\Http\\..., Analytics\\Bootstrap...) by migrating:
   - src/Controller/Analytics/AnalyticsAggregateController.php
   - src/Controller/Analytics/App.php
 - Updated bannedPrefix matching in config/guard/analytics-namespace-guard.json.
@@ -62,5 +62,5 @@ Analytics sketch11-02 deliverables
 Analytics sketch11-02 deliverables
 
 Applied fixes
-- Removed banned namespaces: SmartResponsor\\Http\\* and Analytics\\Bootstrap.
+- Historical consumer/domain migration removed banned namespaces: SmartResponsor\\Http\\* and Analytics\\Bootstrap.
 - Updated report/namespace-guard.txt: banned=0.
