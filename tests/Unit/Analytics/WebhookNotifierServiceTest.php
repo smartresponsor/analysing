@@ -31,4 +31,12 @@ final class WebhookNotifierServiceTest extends TestCase
 
         self::assertFalse($service->send('', ['status' => 'ok']));
     }
+
+    public function testSendRejectsOverlongEndpoint(): void
+    {
+        $service = new AnalyticsWebhookNotifier(new NullLogger());
+        $endpoint = 'https://example.test/'.str_repeat('a', 1100);
+
+        self::assertFalse($service->send($endpoint, ['status' => 'ok']));
+    }
 }

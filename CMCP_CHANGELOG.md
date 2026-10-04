@@ -1,5 +1,27 @@
 # CMCP execution journal
 
+## 2026-10-04 — task engine-20261004191907-analysing-0c7a01 report-bundle maintainability checkpoint
+
+- Re-established the live Console-MCP baseline on `rc/analysing-canon-vendor-20260913`, consumed the supplied CanonScanning RED evidence, and confirmed the historical hard Canon failures are already remediated in the current tree.
+- Read the current Analysing contracts plus Objecting, Cruding, Interfacing, Gating, and normative Canonization Canon014. Viewing contract reads were attempted through Console MCP but returned repeated upstream 502 responses; no assumptions from that unavailable read were used to expand scope.
+- Current market maturity keeps RC-critical work on deterministic analytics/report behavior, bounded input handling, observability, and reproducible verification; richer self-service/AI exploration and dashboard UX remain post-RC growth. Generic CRUD, shared presentation/shell, streaming infrastructure, and storage-engine ownership remain outside Analysing.
+- Fresh pre-change Inspecting report `D:\\PhpstormProjects\\www\\Inspecting\\.inspecting\\reports\\D--PhpstormProjects-www-Analysing-20261004-192032.json` reported 14 medium observational findings, zero PHPStan/file errors, and zero autofixable findings. Selected `AnalyticsReportBundle::pack()` (63 lines) as a bounded Canon014 maintainability hotspot.
+- Refactored dataset-count validation, dataset-name normalization, and per-dataset row-limit validation into focused private helpers while preserving the public bundle contract, normalization semantics, limits, logging, manifest shape, and exception messages.
+- Concurrent work from task `engine-20261004191246-analysing-2247b6` is present in `AnalyticsWebhookNotifier`, its focused test, and this journal; those changes are preserved and are not claimed by this task.
+- Verification target: changed PHP syntax/static analysis, PHPUnit, Gating, schema/runtime applicability checks, fresh post-mutation Inspecting, and coherent Git integration without commingling unrelated concurrent work. No user-observable UI changed, so screenshots are not applicable.
+
+## 2026-10-04 — task engine-20261004191246-analysing-2247b6 webhook notifier maintainability baseline
+
+- Baseline: clean synchronized `rc/analysing-canon-vendor-20260913` at `e9e23b2b5bb545eb1f1a8aa1717a93fca7b500af`; supplied 2026-09-29 Canon RED was consumed and its historical hard failures are already remediated in the live tree.
+- Contracts consulted: Analysing `AGENTS.md`/README/Composer, mandatory Objecting/Cruding/Viewing/Interfacing boundaries, and Canonization Canon014. Fresh Inspecting evidence identifies `AnalyticsWebhookNotifier::send()` as a 70-line medium maintainability hotspot.
+- RC-critical work: reliable bounded webhook spooling, deterministic validation/failure semantics, and observability. Post-RC growth: connector-management/replay UX and richer analytics UI. Generic CRUD, shared shell/rendering, streaming infrastructure, and storage-engine ownership remain outside Analysing.
+- Canon014 mapping: keep `send()` as orchestration while delegating endpoint normalization, payload encoding/size enforcement, spool-directory preparation, and file persistence to cohesive private helpers without adding a new architecture layer.
+- Implementation: refactored `AnalyticsWebhookNotifier` without changing its public interface, endpoint/payload limits, hash/path behavior, JSON flags, log messages, or boolean contract; added an overlong-endpoint regression test.
+- Verification target: changed PHP lint, Composer validation, PHPStan max, PHPUnit, Gating, schema/runtime applicability checks, fresh post-mutation Inspecting, then coherent Git integration. No user-observable UI changed, so screenshots are not applicable.
+- Acceptance: changed PHP lint GREEN; `composer validate --strict --check-lock` GREEN; PHPStan max GREEN across 297 files; PHPUnit GREEN at 185 tests / 632 assertions with 4 existing non-blocking deprecations; Gating GREEN at 10 rules / 0 failed / 0 warnings / 3 profile-dependent skips; schema parity GREEN across 9 tables / 2 migrations; Symfony test-container and 18-file YAML lint GREEN; standalone smoke GREEN on PHP 8.4.13 / Symfony 8.1.8.
+- Fresh post-mutation Inspecting report `D:\\PhpstormProjects\\www\\Inspecting\\.inspecting\\reports\\D--PhpstormProjects-www-Analysing-20261004-192424.json` has zero PHPStan/file errors, zero autofixable findings, and 12 medium observations. `AnalyticsWebhookNotifier::send()` is absent from the remaining long-method contour; the prior report had 14 medium observations.
+- One generic Console allowed-check named `phpstan` is misaligned with this repository because it invokes a nonexistent Composer script named `phpstan`; the repository-native `composer analyse` command is the authoritative static-analysis gate and passed. Initial heavy-worker admission was also temporarily restricted by shared runtime pressure, but direct repository-native gates subsequently executed successfully.
+
 ## 2026-10-04 — task engine-20261004092338-analysing-bffc1b acceptance checkpoint
 
 ### Reconnaissance and canon mapping
