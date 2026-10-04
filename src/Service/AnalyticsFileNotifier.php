@@ -21,18 +21,7 @@ final class AnalyticsFileNotifier implements AnalyticsFileNotifierInterface
     public function send(string $endpoint, array $payload): bool
     {
         $endpoint = trim($endpoint);
-        if ('' === $endpoint) {
-            $this->logger->warning('Analytics file notifier rejected an empty endpoint.');
-
-            return false;
-        }
-
-        if (mb_strlen($endpoint) > self::MAX_ENDPOINT_LENGTH) {
-            $this->logger->warning('Analytics file notifier rejected an overlong endpoint.', [
-                'length' => mb_strlen($endpoint),
-                'max_length' => self::MAX_ENDPOINT_LENGTH,
-            ]);
-
+        if (!$this->isEndpointValid($endpoint)) {
             return false;
         }
 
@@ -85,6 +74,27 @@ final class AnalyticsFileNotifier implements AnalyticsFileNotifierInterface
         ]);
 
         return true;
+    }
+
+    private function isEndpointValid(string $endpoint): bool
+    {
+        if ('' === $endpoint) {
+            $this->logger->warning('Analytics file notifier rejected an empty endpoint.');
+
+            return false;
+        }
+
+        $length = mb_strlen($endpoint);
+        if ($length <= self::MAX_ENDPOINT_LENGTH) {
+            return true;
+        }
+
+        $this->logger->warning('Analytics file notifier rejected an overlong endpoint.', [
+            'length' => $length,
+            'max_length' => self::MAX_ENDPOINT_LENGTH,
+        ]);
+
+        return false;
     }
 
     private function resolvePath(): string
