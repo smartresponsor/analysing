@@ -7,6 +7,7 @@ namespace App\Analysing\EventSubscriber\Http;
 use App\Analysing\FactoryInterface\Http\AnalyticsErrorResponseFactoryInterface;
 use App\Analysing\Resolver\Http\AnalyticsVendorContextResolverInterface;
 use App\Analysing\ServiceInterface\Http\AnalyticsIdempotencyStoreInterface;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Event\RequestEvent;
 use Symfony\Component\HttpKernel\KernelEvents;
@@ -46,54 +47,98 @@ final class AnalyticsIdempotencyRequestSubscriber implements AnalyticsIdempotenc
 
         $startedAt = microtime(true);
         $key = trim((string) $request->headers->get('X-Idempotency-Key', ''));
-        if ('' === $key) {
-            if ($this->required) {
-                $event->setResponse($this->errors->create(
-                    $route,
-                    'Analytics idempotency key is required.',
-                    'analytics.idempotency.required',
-                    Response::HTTP_BAD_REQUEST,
-                    $startedAt,
-                ));
-            }
-
+        if ($this->handleMissingKey($event, $route, $key, $startedAt)) {
             return;
         }
 
-        if (!$this->store->isValidKey($key)) {
-            $response = $this->errors->create(
-                $route,
-                'Analytics idempotency key is invalid.',
-                'analytics.idempotency.invalid_key',
-                Response::HTTP_BAD_REQUEST,
-                $startedAt,
-                false,
-                ['vendor' => $this->vendorResolver->resolve($request)],
-            );
-            $response->headers->set('X-Idempotency-Key', $key);
-            $event->setResponse($response);
-
+        if ($this->handleInvalidKey($event, $route, $key, $startedAt)) {
             return;
         }
 
         $vendor = $this->vendorResolver->resolve($request);
-        $requestFingerprint = hash('sha256', implode('|', [
+        $requestFingerprint = $this->fingerprint($request, $route, $vendor);
+        $decision = $this->store->begin($route, $vendor, $key, $requestFingerprint);
+
+        $this->attachRequestContext($request, $route, $vendor, $key, $requestFingerprint);
+        $this->applyDecision($event, $decision, $route, $vendor, $key, $startedAt);
+    }
+
+    private function handleMissingKey(RequestEvent $event, string $route, string $key, float $startedAt): bool
+    {
+        if ('' !== $key) {
+            return false;
+        }
+
+        if ($this->required) {
+            $event->setResponse($this->errors->create(
+                $route,
+                'Analytics idempotency key is required.',
+                'analytics.idempotency.required',
+                Response::HTTP_BAD_REQUEST,
+                $startedAt,
+            ));
+        }
+
+        return true;
+    }
+
+    private function handleInvalidKey(RequestEvent $event, string $route, string $key, float $startedAt): bool
+    {
+        if ($this->store->isValidKey($key)) {
+            return false;
+        }
+
+        $response = $this->errors->create(
+            $route,
+            'Analytics idempotency key is invalid.',
+            'analytics.idempotency.invalid_key',
+            Response::HTTP_BAD_REQUEST,
+            $startedAt,
+            false,
+            ['vendor' => $this->vendorResolver->resolve($event->getRequest())],
+        );
+        $response->headers->set('X-Idempotency-Key', $key);
+        $event->setResponse($response);
+
+        return true;
+    }
+
+    private function fingerprint(Request $request, string $route, string $vendor): string
+    {
+        return hash('sha256', implode('|', [
             $request->getMethod(),
             $route,
             $vendor,
             $request->getQueryString() ?? '',
             (string) $request->getContent(),
         ]));
+    }
 
-        $decision = $this->store->begin($route, $vendor, $key, $requestFingerprint);
+    private function attachRequestContext(
+        Request $request,
+        string $route,
+        string $vendor,
+        string $key,
+        string $requestFingerprint,
+    ): void {
         $request->attributes->set('_analytics_idempotency_key', $key);
         $request->attributes->set('_analytics_idempotency_vendor', $vendor);
         $request->attributes->set('_analytics_idempotency_route', $route);
         $request->attributes->set('_analytics_idempotency_fingerprint', $requestFingerprint);
+    }
 
+    /** @param array{status: 'new'|'replay'|'conflict'|'pending', record?: array<string,mixed>} $decision */
+    private function applyDecision(
+        RequestEvent $event,
+        array $decision,
+        string $route,
+        string $vendor,
+        string $key,
+        float $startedAt,
+    ): void {
         switch ($decision['status']) {
             case 'new':
-                $request->attributes->set('_analytics_idempotency_active', true);
+                $event->getRequest()->attributes->set('_analytics_idempotency_active', true);
 
                 return;
 
