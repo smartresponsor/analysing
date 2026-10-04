@@ -1,5 +1,20 @@
 # CMCP execution journal
 
+## 2026-10-04 — task engine-20261004193855-analysing-3abed8 report-generation maintainability baseline
+
+- Re-established a clean synchronized Console-MCP baseline on `rc/analysing-canon-vendor-20260913` at HEAD `c89c9b5b70aefdcc6440ff2215d3e378b39f37d6`, ahead 0 / behind 0.
+- Consumed the supplied 2026-09-29 CanonScanning RED/Inspecting evidence and reconciled it against the live tree. Current `composer gate` is GREEN with 10 rules / 0 failures / 0 warnings / 3 profile-dependent skips; historical hard-Canon findings are already remediated where current evidence is green.
+- Read the current Analysing contracts and the mandatory Objecting, Cruding, Viewing, Interfacing, Gating, and Canonization contours. Normative Canonization rules consulted include Canon022, Canon045, Canon047, Canon052, Canon054, Canon055, and Canon056-063.
+- Reused the fresh current-fingerprint Inspecting report `D:\\PhpstormProjects\\www\\Inspecting\\.inspecting\\reports\\D--PhpstormProjects-www-Analysing-20261004-193553.json`: zero PHPStan/file errors, zero autofixable findings, and 12 medium observational findings.
+- Market/maturity split: RC-critical work remains deterministic analytics calculations/report generation, bounded inputs, stable API/report contracts, observability, failure safety, and reproducible verification. Richer self-service exploration, AI-assisted analysis, experimentation UX/statistics, and dashboard ergonomics remain post-RC growth; generic CRUD, shared shell/presentation, streaming infrastructure, and storage-engine ownership remain outside Analysing.
+- Selected `AnalyticsReportGeneratorService::generate()` (96 lines) as the bounded RC-critical maintainability target because report generation is an Analysing-owned backend responsibility and the finding can be addressed without changing HTTP/UI contracts.
+- Planned acceptance: behavior-preserving private-helper decomposition with focused regression evidence as needed; changed PHP lint; Composer validation; PHPStan max; PHPUnit; schema parity; Gating; applicable Symfony config/container checks; fresh post-mutation Inspecting; then coherent signed Git integration and publication.
+- No user-observable UI, navigation, form, or browser/mobile flow is intended to change, so screenshot evidence is not expected to apply.
+- Implementation: decomposed `AnalyticsReportGeneratorService::generate()` into lifecycle orchestration plus focused bootstrap, generation, final-flush, row-building, and duration helpers while preserving public input/output, normalized parameters, job state transitions, logging vocabulary, exporter/dashboard contracts, and exception behavior.
+- Deterministic acceptance is GREEN: changed PHP syntax; `composer validate --strict --check-lock`; PHPStan max across 297 files; PHPUnit 185 tests / 632 assertions with 4 existing non-blocking deprecations; schema parity across 9 tables / 2 migrations; Gating 10 rules / 0 failed / 0 warnings / 3 profile-dependent skips; Symfony test-container lint; and YAML lint across 18 configuration files.
+- Fresh post-mutation Inspecting report `D:\\PhpstormProjects\\www\\Inspecting\\.inspecting\\reports\\D--PhpstormProjects-www-Analysing-20261004-194808.json` has zero PHPStan/file errors, zero autofixable findings, and reduces the medium observational contour from 12 to 11. `AnalyticsReportGeneratorService::generate()` is absent from the remaining long-method findings; repository maximum measured complexity remains 12.
+- Visual verification is not applicable because this pass changes backend report-generation structure only and does not alter browser/mobile UI, navigation, forms, or user-visible flows.
+
 ## 2026-10-04 — task engine-20261004191907-analysing-0c7a01 report-bundle maintainability checkpoint
 
 - Re-established the live Console-MCP baseline on `rc/analysing-canon-vendor-20260913`, consumed the supplied CanonScanning RED evidence, and confirmed the historical hard Canon failures are already remediated in the current tree.

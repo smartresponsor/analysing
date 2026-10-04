@@ -33,77 +33,82 @@ final readonly class AnalyticsReportGeneratorService implements AnalyticsReportG
         $job = new AnalyticsExportJobEntity($format, $normalizedParams);
         $job->incAttempts();
 
+        $this->startJob($job, $normalizedParams, $format, $startedAt);
+        $this->generateReport($job, $normalizedParams, $format, $startedAt);
+        $this->flushJob($job, $normalizedParams, $format, $startedAt);
+
+        return $job;
+    }
+
+    /**
+     * @param array{from:string,to:string,vendorId?:int,currency?:string,format?:string} $params
+     */
+    private function startJob(AnalyticsExportJobEntity $job, array $params, string $format, float $startedAt): void
+    {
         try {
             $job->start();
             $this->jobs->save($job);
         } catch (\Throwable $exception) {
             $this->logger->error('Analytics report job bootstrap failed.', [
                 'exception' => $exception,
-                'params' => $normalizedParams,
+                'params' => $params,
                 'format' => $format,
-                'duration_ms' => max(0, (int) round((microtime(true) - $startedAt) * 1000)),
+                'duration_ms' => $this->durationMs($startedAt),
             ]);
 
             throw new \RuntimeException('Analytics report job bootstrap failed.', 0, $exception);
         }
+    }
 
+    /**
+     * @param array{from:string,to:string,vendorId?:int,currency?:string,format?:string} $params
+     */
+    private function generateReport(AnalyticsExportJobEntity $job, array $params, string $format, float $startedAt): void
+    {
         try {
             $dto = new AnalyticsKpiRequestDTO(
-                vendorId: $normalizedParams['vendorId'] ?? null,
-                currency: $normalizedParams['currency'] ?? null,
-                from: $normalizedParams['from'],
-                to: $normalizedParams['to'],
+                vendorId: $params['vendorId'] ?? null,
+                currency: $params['currency'] ?? null,
+                from: $params['from'],
+                to: $params['to'],
             );
-
             $kpi = $this->dashboard->kpi($dto);
             $series = $this->dashboard->timeseries($dto);
-            $rows = [[
-                'section' => 'totals',
-                'from' => $normalizedParams['from'],
-                'to' => $normalizedParams['to'],
-                'vendor_id' => $normalizedParams['vendorId'] ?? '',
-                'currency' => $normalizedParams['currency'] ?? '',
-                'gross_minor' => $kpi['gross_minor'],
-                'net_minor' => $kpi['net_minor'],
-                'margin_pct' => $kpi['margin_pct'],
-                'days' => $kpi['days'],
-            ]];
-
-            foreach ($series as $point) {
-                $rows[] = [
-                    'section' => 'timeseries',
-                    'date' => $point['date'],
-                    'gross_minor' => $point['gross_minor'],
-                    'net_minor' => $point['net_minor'],
-                ];
-            }
-
+            $rows = $this->buildRows($params, $kpi, $series);
             $exportPath = $this->exporter->export($rows, $format);
+
             if (!is_file($exportPath)) {
                 throw new \RuntimeException('Analytics report export path is missing after export.');
             }
+
             $job->done();
             $this->logger->info('Analytics report generation completed.', [
                 'format' => $format,
                 'rows' => count($rows),
-                'params' => $normalizedParams,
+                'params' => $params,
                 'export_path' => $exportPath,
                 'job_status' => $job->getStatus(),
                 'attempts' => $job->getAttempts(),
-                'duration_ms' => max(0, (int) round((microtime(true) - $startedAt) * 1000)),
+                'duration_ms' => $this->durationMs($startedAt),
             ]);
         } catch (\Throwable $exception) {
             $this->logger->error('Analytics report generation failed.', [
                 'exception' => $exception,
-                'params' => $normalizedParams,
+                'params' => $params,
                 'format' => $format,
                 'job_status' => $job->getStatus(),
                 'attempts' => $job->getAttempts(),
-                'duration_ms' => max(0, (int) round((microtime(true) - $startedAt) * 1000)),
+                'duration_ms' => $this->durationMs($startedAt),
             ]);
             $job->fail($exception->getMessage());
         }
+    }
 
+    /**
+     * @param array{from:string,to:string,vendorId?:int,currency?:string,format?:string} $params
+     */
+    private function flushJob(AnalyticsExportJobEntity $job, array $params, string $format, float $startedAt): void
+    {
         try {
             $this->jobs->flush();
         } catch (\Throwable $exception) {
@@ -111,15 +116,51 @@ final readonly class AnalyticsReportGeneratorService implements AnalyticsReportG
                 'exception' => $exception,
                 'job_status' => $job->getStatus(),
                 'attempts' => $job->getAttempts(),
-                'duration_ms' => max(0, (int) round((microtime(true) - $startedAt) * 1000)),
-                'params' => $normalizedParams,
+                'duration_ms' => $this->durationMs($startedAt),
+                'params' => $params,
                 'format' => $format,
             ]);
 
             throw new \RuntimeException('Analytics report job final flush failed.', 0, $exception);
         }
+    }
 
-        return $job;
+    /**
+     * @param array{from:string,to:string,vendorId?:int,currency?:string,format?:string} $params
+     * @param array{gross_minor:int,net_minor:int,margin_pct:int|float,days:int}         $kpi
+     * @param list<array{date:string,gross_minor:int,net_minor:int}>                     $series
+     *
+     * @return list<array<string, int|float|string>>
+     */
+    private function buildRows(array $params, array $kpi, array $series): array
+    {
+        $rows = [[
+            'section' => 'totals',
+            'from' => $params['from'],
+            'to' => $params['to'],
+            'vendor_id' => $params['vendorId'] ?? '',
+            'currency' => $params['currency'] ?? '',
+            'gross_minor' => $kpi['gross_minor'],
+            'net_minor' => $kpi['net_minor'],
+            'margin_pct' => $kpi['margin_pct'],
+            'days' => $kpi['days'],
+        ]];
+
+        foreach ($series as $point) {
+            $rows[] = [
+                'section' => 'timeseries',
+                'date' => $point['date'],
+                'gross_minor' => $point['gross_minor'],
+                'net_minor' => $point['net_minor'],
+            ];
+        }
+
+        return $rows;
+    }
+
+    private function durationMs(float $startedAt): int
+    {
+        return max(0, (int) round((microtime(true) - $startedAt) * 1000));
     }
 
     /**
