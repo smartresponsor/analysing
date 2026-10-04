@@ -1,5 +1,16 @@
 # CMCP execution journal
 
+## 2026-10-04 — task engine-20261004225401-analysing-2f441e renderer RC acceptance
+
+- Re-established the Analysing scope through Console MCP and consumed the authoritative task specification, historical CanonScanning RED evidence, current repository instructions/manifests, mandatory Objecting/Cruding/Viewing/Interfacing contracts, Canonization Canon014 textual rule, and its executable Gating mirror.
+- Historical Canon022/045/047/052/054/055/056/063 RED causes remain remediated in the current tree. The live branch already contains the bounded `AnalyticsDashboardHtmlRenderer` decomposition as commit `d8d67e0` (`refactor: decompose dashboard renderer`), so this execution preserved that integrated work instead of applying a competing patch.
+- Canon014 mapping: `renderDashboard()` now orchestrates focused private HTML section builders while preserving the existing dashboard content, formatting, payload, escaping, route/controller contract, and renderer interface. No new architecture layer or cross-component responsibility was introduced.
+- RC-critical scope remains deterministic analytics/report rendering, contract safety, observability, maintainability, and reproducible verification. Richer self-service/AI analytics, experimentation/statistics UX, and broader dashboard ergonomics remain non-blocking growth work; generic CRUD, system fields, shared shell ownership, streaming, and storage-engine responsibility remain outside Analysing.
+- Deterministic acceptance on the current integrated tree is GREEN: Composer validation; repository-native `composer analyse` at PHPStan max across 297 files; PHPUnit 189 tests / 658 assertions with 4 existing non-blocking deprecations; schema parity across 9 tables / 2 migrations; and Gating 10 rules / 0 failed / 0 warnings / 3 profile-dependent skips.
+- Fresh Inspecting evidence after the renderer integration reports zero PHPStan/file errors and no renderer long-method finding; the remaining three medium observations are separate Entity/subscriber/repository maintainability review signals with zero autofixable findings.
+- Behavioral/UI acceptance is GREEN: repository Playwright passes 2/2, including `dashboard renderer QA route renders deterministic analytics content`. Browser inspection of `/qa/dashboard-renderer` returned HTTP 200 with no console/page/request errors and produced central visual evidence at `D:\\PhpstormProjects\\www\\var\\Analysing\\2026-10-04\\run-23-51-54\\screenshots\\web\\unspecified\\page.png`.
+- Git integration for the renderer is already published on the configured RC branch. Concurrent authorization/repository work observed during this execution is preserved and excluded from this task's ownership.
+
 ## 2026-10-04 — task engine-20261004224813-analysing-5d71a4 verification and RC acceptance
 
 - Re-established Console-MCP execution after the transient upstream 502 condition. The live branch advanced concurrently to `c13dc0837455db46b1158c95005cc1b22172a9db` and remains synchronized with origin.
