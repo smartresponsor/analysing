@@ -19,6 +19,17 @@ final class AnomalyDetectorTest extends TestCase
         self::assertEqualsWithDelta(0.0, array_sum($scores), 0.00001);
     }
 
+    public function testZscoreSkipsUnusableValuesAndKeepsFiniteNumericValues(): void
+    {
+        $service = new AnalyticsAnomalyDetector(new NullLogger());
+
+        $scores = $service->zscore([1, 'invalid', INF, '3']);
+
+        self::assertCount(2, $scores);
+        self::assertEqualsWithDelta(-1.0, $scores[0], 0.00001);
+        self::assertEqualsWithDelta(1.0, $scores[1], 0.00001);
+    }
+
     public function testZscoreRejectsTooManyValues(): void
     {
         $service = new AnalyticsAnomalyDetector(new NullLogger());
