@@ -36,62 +36,63 @@ final class AnalyticsExperimentController implements AnalyticsExperimentControll
         $startedAt = microtime(true);
 
         try {
-            $result = $this->domain->assign($this->decodeBody($request));
-
-            $this->logger->info('AnalyticsExperiment allocation completed.', [
-                'operation' => 'allocate',
-                'component' => self::COMPONENT,
-                'has_variant' => array_key_exists('variant', $result),
-                'duration_ms' => $this->durationMs($startedAt),
-            ]);
-
-            return $this->successResponses->create('allocate', $result, $startedAt);
+            return $this->completeAllocation($this->domain->assign($this->decodeBody($request)), $startedAt);
         } catch (\InvalidArgumentException $exception) {
-            $this->logger->warning('AnalyticsExperiment allocation request is invalid.', [
-                'component' => self::COMPONENT,
-                'duration_ms' => $this->durationMs($startedAt),
-                'exception' => $exception,
-            ]);
-
-            return $this->errorResponses->create(
-                'allocate',
-                'Invalid experiment request.',
-                'analytics.experiment.invalid_request',
-                Response::HTTP_BAD_REQUEST,
-                $startedAt,
-            );
+            return $this->rejectAllocation($exception, $startedAt);
         } catch (\RuntimeException $exception) {
-            $this->logger->error('AnalyticsExperiment allocation failed.', [
-                'component' => self::COMPONENT,
-                'duration_ms' => $this->durationMs($startedAt),
-                'exception' => $exception,
-            ]);
-
-            return $this->errorResponses->create(
-                'allocate',
-                'AnalyticsExperiment allocation unavailable.',
-                'analytics.experiment.unavailable',
-                Response::HTTP_SERVICE_UNAVAILABLE,
-                $startedAt,
-                true,
-            );
+            return $this->failUnavailableAllocation($exception, $startedAt);
         } catch (\Throwable $exception) {
-            $this->logger->error('AnalyticsExperiment allocation failed unexpectedly.', [
-                'operation' => 'allocate',
-                'component' => self::COMPONENT,
-                'duration_ms' => $this->durationMs($startedAt),
-                'exception' => $exception,
-            ]);
-
-            return $this->errorResponses->create(
-                'allocate',
-                'AnalyticsExperiment allocation unavailable.',
-                'analytics.experiment.failed',
-                Response::HTTP_INTERNAL_SERVER_ERROR,
-                $startedAt,
-                true,
-            );
+            return $this->failUnexpectedAllocation($exception, $startedAt);
         }
+    }
+
+    /**
+     * @param array<string, mixed> $result
+     */
+    private function completeAllocation(array $result, float $startedAt): JsonResponse
+    {
+        $this->logger->info('AnalyticsExperiment allocation completed.', [
+            'operation' => 'allocate',
+            'component' => self::COMPONENT,
+            'has_variant' => array_key_exists('variant', $result),
+            'duration_ms' => $this->durationMs($startedAt),
+        ]);
+
+        return $this->successResponses->create('allocate', $result, $startedAt);
+    }
+
+    private function rejectAllocation(\InvalidArgumentException $exception, float $startedAt): JsonResponse
+    {
+        $this->logger->warning('AnalyticsExperiment allocation request is invalid.', [
+            'component' => self::COMPONENT,
+            'duration_ms' => $this->durationMs($startedAt),
+            'exception' => $exception,
+        ]);
+
+        return $this->errorResponses->create('allocate', 'Invalid experiment request.', 'analytics.experiment.invalid_request', Response::HTTP_BAD_REQUEST, $startedAt);
+    }
+
+    private function failUnavailableAllocation(\RuntimeException $exception, float $startedAt): JsonResponse
+    {
+        $this->logger->error('AnalyticsExperiment allocation failed.', [
+            'component' => self::COMPONENT,
+            'duration_ms' => $this->durationMs($startedAt),
+            'exception' => $exception,
+        ]);
+
+        return $this->errorResponses->create('allocate', 'AnalyticsExperiment allocation unavailable.', 'analytics.experiment.unavailable', Response::HTTP_SERVICE_UNAVAILABLE, $startedAt, true);
+    }
+
+    private function failUnexpectedAllocation(\Throwable $exception, float $startedAt): JsonResponse
+    {
+        $this->logger->error('AnalyticsExperiment allocation failed unexpectedly.', [
+            'operation' => 'allocate',
+            'component' => self::COMPONENT,
+            'duration_ms' => $this->durationMs($startedAt),
+            'exception' => $exception,
+        ]);
+
+        return $this->errorResponses->create('allocate', 'AnalyticsExperiment allocation unavailable.', 'analytics.experiment.failed', Response::HTTP_INTERNAL_SERVER_ERROR, $startedAt, true);
     }
 
     /**
