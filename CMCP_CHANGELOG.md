@@ -1,5 +1,21 @@
 # CMCP execution journal
 
+## 2026-10-04 — task engine-20261004092338-analysing-bffc1b acceptance checkpoint
+
+### Reconnaissance and canon mapping
+
+- Re-established the live Console-MCP baseline on `rc/analysing-canon-vendor-20260913`, consumed the supplied 2026-09-29 CanonScanning RED and Inspecting evidence, and read the current Analysing instructions, README, Composer/configuration surfaces, mandatory Objecting/Cruding/Viewing/Interfacing/Gating owner contracts, and Canonization textual rules Canon014, Canon022, Canon045, Canon047, Canon052, Canon054, Canon055, Canon056, and Canon063.
+- Historical hard Canon RED causes remain remediated in the current tree: standalone Failing/Nelmio dependencies and bundle registration, local Composer repository closure, repository-only Doctrine manager ownership, artifact-only Gating integration, underscore-number-aware Doctrine naming, neutral platform terminology, and canonical OpenAPI path/method parity.
+- RC-critical work remains deterministic analytics behavior, boundary safety, observability, diagnostics, lifecycle/error handling, and executable verification. Richer self-service exploration, experimentation UX/statistics, and dashboard ergonomics remain post-RC growth; generic CRUD, shared presentation/shell, system-field ownership, streaming, and storage-engine ownership remain outside Analysing.
+
+### Material implementation and verification
+
+- Preserved and verified the coherent current `AnalyticsSegmentationService` decomposition plus focused regression coverage. The public segmentation contract, limits, logging semantics, trimming behavior, malformed-row handling, and matching semantics remain stable while `apply()` delegates bounded validation/normalization/matching responsibilities.
+- Deterministic acceptance on the live snapshot is GREEN: `composer validate --strict --check-lock`; changed PHP syntax lint; PHPStan max across 297 files; PHPUnit 184 tests / 631 assertions with 4 existing non-blocking deprecations; Gating 10 rules / 0 failed / 0 warnings / 3 profile-dependent skips; and isolated Doctrine migration/schema parity across 9 tables / 2 migrations.
+- Fresh post-mutation Inspecting report `D:\\PhpstormProjects\\www\\Inspecting\\.inspecting\\reports\\D--PhpstormProjects-www-Analysing-20261004-184048.json` has zero PHPStan/file errors, zero high/autofixable findings, and 14 medium observational findings. `AnalyticsSegmentationService::apply()` is absent from the remaining long-method contour.
+- No user-observable UI, navigation, form, browser, or mobile flow changed in this backend service/test pass; fresh screenshot evidence is not applicable. The central Visual Gallery remains the canonical visual artifact surface.
+- During verification, the coherent segmentation change was integrated concurrently as commit `738d6fc` (`Refine analytics segmentation service`). Final repository state was clean and synchronized at HEAD `867d30bcb5b5aa6b242a7fd76e553888d5552eea`, ahead 0 / behind 0; no destructive reconciliation or duplicate implementation commit was needed.
+
 ## 2026-10-04 — task engine-20261004183649-analysing-4ddccc segmentation maintainability acceptance
 
 ### Reconnaissance and canon mapping
