@@ -18,27 +18,8 @@ final class AnalyticsRollupService implements AnalyticsRollupServiceInterface
 
     public function sum(array $rows, string $field): float|int
     {
-        $normalizedField = trim($field);
-        if ('' === $normalizedField) {
-            $this->logger->warning('Analytics rollup rejected an empty field name.');
-            throw new \InvalidArgumentException('Rollup field must not be empty.');
-        }
-
-        if (strlen($normalizedField) > self::MAX_FIELD_LENGTH) {
-            $this->logger->warning('Analytics rollup rejected an overlong field name.', [
-                'field' => $normalizedField,
-                'max_length' => self::MAX_FIELD_LENGTH,
-            ]);
-            throw new \InvalidArgumentException('Rollup field exceeds the maximum allowed length.');
-        }
-
-        if (count($rows) > self::MAX_ROWS) {
-            $this->logger->warning('Analytics rollup rejected too many rows.', [
-                'rows' => count($rows),
-                'max_rows' => self::MAX_ROWS,
-            ]);
-            throw new \InvalidArgumentException('Rollup rows exceed the maximum allowed size.');
-        }
+        $normalizedField = $this->normalizeField($field);
+        $this->assertRowLimit(count($rows));
 
         $total = 0.0;
         $included = 0;
@@ -52,36 +33,8 @@ final class AnalyticsRollupService implements AnalyticsRollupServiceInterface
                 continue;
             }
 
-            $value = $row[$normalizedField] ?? 0;
-            if (is_array($value) || is_object($value)) {
-                $this->logger->warning('Analytics rollup ignored a non-scalar field value.', [
-                    'row_index' => $index,
-                    'field' => $normalizedField,
-                    'value_type' => get_debug_type($value),
-                ]);
-                continue;
-            }
-
-            if ('' === $value) {
-                continue;
-            }
-
-            if (!is_numeric($value)) {
-                $this->logger->warning('Analytics rollup ignored a non-numeric field value.', [
-                    'row_index' => $index,
-                    'field' => $normalizedField,
-                    'value' => $value,
-                ]);
-                continue;
-            }
-
-            $numericValue = (float) $value;
-            if (!is_finite($numericValue)) {
-                $this->logger->warning('Analytics rollup ignored a non-finite field value.', [
-                    'row_index' => $index,
-                    'field' => $normalizedField,
-                    'value' => $value,
-                ]);
+            $numericValue = $this->numericValue($row[$normalizedField] ?? 0, $normalizedField, $index);
+            if (null === $numericValue) {
                 continue;
             }
 
@@ -110,5 +63,77 @@ final class AnalyticsRollupService implements AnalyticsRollupServiceInterface
         }
 
         return $total;
+    }
+
+    private function normalizeField(string $field): string
+    {
+        $normalizedField = trim($field);
+        if ('' === $normalizedField) {
+            $this->logger->warning('Analytics rollup rejected an empty field name.');
+            throw new \InvalidArgumentException('Rollup field must not be empty.');
+        }
+
+        if (strlen($normalizedField) > self::MAX_FIELD_LENGTH) {
+            $this->logger->warning('Analytics rollup rejected an overlong field name.', [
+                'field' => $normalizedField,
+                'max_length' => self::MAX_FIELD_LENGTH,
+            ]);
+            throw new \InvalidArgumentException('Rollup field exceeds the maximum allowed length.');
+        }
+
+        return $normalizedField;
+    }
+
+    private function assertRowLimit(int $rowCount): void
+    {
+        if ($rowCount <= self::MAX_ROWS) {
+            return;
+        }
+
+        $this->logger->warning('Analytics rollup rejected too many rows.', [
+            'rows' => $rowCount,
+            'max_rows' => self::MAX_ROWS,
+        ]);
+        throw new \InvalidArgumentException('Rollup rows exceed the maximum allowed size.');
+    }
+
+    private function numericValue(mixed $value, string $field, int|string $rowIndex): ?float
+    {
+        if (is_array($value) || is_object($value)) {
+            $this->logger->warning('Analytics rollup ignored a non-scalar field value.', [
+                'row_index' => $rowIndex,
+                'field' => $field,
+                'value_type' => get_debug_type($value),
+            ]);
+
+            return null;
+        }
+
+        if ('' === $value) {
+            return null;
+        }
+
+        if (!is_numeric($value)) {
+            $this->logger->warning('Analytics rollup ignored a non-numeric field value.', [
+                'row_index' => $rowIndex,
+                'field' => $field,
+                'value' => $value,
+            ]);
+
+            return null;
+        }
+
+        $numericValue = (float) $value;
+        if (is_finite($numericValue)) {
+            return $numericValue;
+        }
+
+        $this->logger->warning('Analytics rollup ignored a non-finite field value.', [
+            'row_index' => $rowIndex,
+            'field' => $field,
+            'value' => $value,
+        ]);
+
+        return null;
     }
 }
