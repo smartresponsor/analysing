@@ -60,69 +60,73 @@ final class AnalyticsController implements AnalyticsControllerInterface
         return $this->runDomainOperation('cohort', fn (): array => $this->domain->runCohort($this->decodeBody($request)));
     }
 
+    /**
+     * @param callable(): array<mixed> $callback
+     */
     private function runDomainOperation(string $operation, callable $callback): JsonResponse
     {
         $startedAt = microtime(true);
 
         try {
-            $result = $callback();
-
-            $this->logger->info('Analytics domain operation completed.', [
-                'operation' => $operation,
-                'component' => self::COMPONENT,
-                'result_count' => is_countable($result) ? count($result) : null,
-                'duration_ms' => $this->durationMs($startedAt),
-            ]);
-
-            return $this->successResponses->create($operation, $result, $startedAt);
+            return $this->completeDomainOperation($operation, $callback(), $startedAt);
         } catch (\InvalidArgumentException $exception) {
-            $this->logger->warning('Analytics domain rejected request.', [
-                'operation' => $operation,
-                'component' => self::COMPONENT,
-                'duration_ms' => $this->durationMs($startedAt),
-                'exception' => $exception,
-            ]);
-
-            return $this->errorResponses->create(
-                $operation,
-                'Invalid analytics request.',
-                'analytics.request.invalid',
-                Response::HTTP_BAD_REQUEST,
-                $startedAt,
-            );
+            return $this->rejectDomainOperation($operation, $exception, $startedAt);
         } catch (\RuntimeException $exception) {
-            $this->logger->error('Analytics domain failed.', [
-                'operation' => $operation,
-                'component' => self::COMPONENT,
-                'duration_ms' => $this->durationMs($startedAt),
-                'exception' => $exception,
-            ]);
-
-            return $this->errorResponses->create(
-                $operation,
-                'Analytics data unavailable.',
-                'analytics.request.unavailable',
-                Response::HTTP_SERVICE_UNAVAILABLE,
-                $startedAt,
-                true,
-            );
+            return $this->failUnavailableDomainOperation($operation, $exception, $startedAt);
         } catch (\Throwable $exception) {
-            $this->logger->error('Analytics domain failed unexpectedly.', [
-                'operation' => $operation,
-                'component' => self::COMPONENT,
-                'duration_ms' => $this->durationMs($startedAt),
-                'exception' => $exception,
-            ]);
-
-            return $this->errorResponses->create(
-                $operation,
-                'Analytics request failed.',
-                'analytics.request.failed',
-                Response::HTTP_INTERNAL_SERVER_ERROR,
-                $startedAt,
-                true,
-            );
+            return $this->failUnexpectedDomainOperation($operation, $exception, $startedAt);
         }
+    }
+
+    /**
+     * @param array<mixed> $result
+     */
+    private function completeDomainOperation(string $operation, array $result, float $startedAt): JsonResponse
+    {
+        $this->logger->info('Analytics domain operation completed.', [
+            'operation' => $operation,
+            'component' => self::COMPONENT,
+            'result_count' => count($result),
+            'duration_ms' => $this->durationMs($startedAt),
+        ]);
+
+        return $this->successResponses->create($operation, $result, $startedAt);
+    }
+
+    private function rejectDomainOperation(string $operation, \InvalidArgumentException $exception, float $startedAt): JsonResponse
+    {
+        $this->logger->warning('Analytics domain rejected request.', [
+            'operation' => $operation,
+            'component' => self::COMPONENT,
+            'duration_ms' => $this->durationMs($startedAt),
+            'exception' => $exception,
+        ]);
+
+        return $this->errorResponses->create($operation, 'Invalid analytics request.', 'analytics.request.invalid', Response::HTTP_BAD_REQUEST, $startedAt);
+    }
+
+    private function failUnavailableDomainOperation(string $operation, \RuntimeException $exception, float $startedAt): JsonResponse
+    {
+        $this->logger->error('Analytics domain failed.', [
+            'operation' => $operation,
+            'component' => self::COMPONENT,
+            'duration_ms' => $this->durationMs($startedAt),
+            'exception' => $exception,
+        ]);
+
+        return $this->errorResponses->create($operation, 'Analytics data unavailable.', 'analytics.request.unavailable', Response::HTTP_SERVICE_UNAVAILABLE, $startedAt, true);
+    }
+
+    private function failUnexpectedDomainOperation(string $operation, \Throwable $exception, float $startedAt): JsonResponse
+    {
+        $this->logger->error('Analytics domain failed unexpectedly.', [
+            'operation' => $operation,
+            'component' => self::COMPONENT,
+            'duration_ms' => $this->durationMs($startedAt),
+            'exception' => $exception,
+        ]);
+
+        return $this->errorResponses->create($operation, 'Analytics request failed.', 'analytics.request.failed', Response::HTTP_INTERNAL_SERVER_ERROR, $startedAt, true);
     }
 
     /**
