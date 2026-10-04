@@ -6,6 +6,7 @@ namespace App\Analysing\Tests\Unit\Analytics;
 
 use App\Analysing\DTO\AnalyticsKpiRequestDTO;
 use App\Analysing\Entity\Analytics\AnalyticsDashboardMetricSnapshotEntity;
+use App\Analysing\Repository\AnalyticsDashboardRepository;
 use App\Analysing\Service\AnalyticsDashboardService;
 use Doctrine\DBAL\Configuration;
 use Doctrine\DBAL\DriverManager;
@@ -25,7 +26,7 @@ final class DashboardServiceTest extends TestCase
         $em->persist(new AnalyticsDashboardMetricSnapshotEntity(1, 'USD', new \DateTimeImmutable('2026-01-03 00:00:00'), 300, 250));
         $em->flush();
 
-        $service = new AnalyticsDashboardService($em, new NullLogger());
+        $service = new AnalyticsDashboardService(new AnalyticsDashboardRepository($em, new NullLogger()));
         $result = $service->kpi(new AnalyticsKpiRequestDTO(1, 'usd', '2026-01-01 00:00:00', '2026-01-03 23:59:59'));
 
         self::assertSame(1200, $result['gross_minor']);
@@ -41,7 +42,7 @@ final class DashboardServiceTest extends TestCase
         $em->persist(new AnalyticsDashboardMetricSnapshotEntity(1, 'USD', new \DateTimeImmutable('2026-01-01 00:00:00'), 50, 40));
         $em->flush();
 
-        $service = new AnalyticsDashboardService($em, new NullLogger());
+        $service = new AnalyticsDashboardService(new AnalyticsDashboardRepository($em, new NullLogger()));
         $rows = $service->timeseries(new AnalyticsKpiRequestDTO(1, 'USD', '2026-01-01 00:00:00', '2026-01-01 23:59:59'));
 
         self::assertSame([

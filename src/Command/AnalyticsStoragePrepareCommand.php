@@ -44,6 +44,10 @@ final class AnalyticsStoragePrepareCommand extends BaseCommand
                 $output->writeln('path: '.($inspection['path'] ?? 'n/a'));
                 $output->writeln('ready: '.($inspection['ready'] ? 'yes' : 'no'));
                 $output->writeln('missing_tables: '.([] === $inspection['missing_tables'] ? 'none' : implode(', ', $inspection['missing_tables'])));
+                $output->writeln('schema_update_sql_count: '.count($inspection['schema_update_sql']));
+                foreach ($inspection['schema_update_sql'] as $sql) {
+                    $output->writeln('pending_sql: '.$sql);
+                }
 
                 return $inspection['ready'] ? self::SUCCESS : self::FAILURE;
             }

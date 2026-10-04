@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace App\Analysing\Service;
 
 use App\Analysing\Entity\Analytics\AnalyticsMetricSnapshotEntity;
+use App\Analysing\RepositoryInterface\AnalyticsMetricSnapshotRepositoryInterface;
 use App\Analysing\ServiceInterface\AnalyticsCollectorInterface;
-use Doctrine\ORM\EntityManagerInterface;
 use Psr\Log\LoggerInterface;
 
 final class AnalyticsCollector implements AnalyticsCollectorInterface
@@ -18,7 +18,7 @@ final class AnalyticsCollector implements AnalyticsCollectorInterface
     private const int MAX_RANGE_SECONDS = 31536000;
 
     public function __construct(
-        private readonly EntityManagerInterface $em,
+        private readonly AnalyticsMetricSnapshotRepositoryInterface $snapshots,
         private readonly LoggerInterface $logger,
     ) {
     }
@@ -55,8 +55,7 @@ final class AnalyticsCollector implements AnalyticsCollectorInterface
 
         try {
             $snapshot = new AnalyticsMetricSnapshotEntity($normalizedMetric, $value, $from, $to, $normalizedDimensions);
-            $this->em->persist($snapshot);
-            $this->em->flush();
+            $this->snapshots->save($snapshot);
             $this->logger->info('Analytics collector persisted metric snapshot.', [
                 'metric' => $normalizedMetric,
                 'from' => $from->format(DATE_ATOM),

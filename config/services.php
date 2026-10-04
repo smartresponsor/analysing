@@ -143,6 +143,9 @@ return static function (ContainerConfigurator $container): void {
         ->arg('$salt', param('analytics.runtime.salt'));
 
     $services->alias('App\Analysing\RepositoryInterface\AnalyticsRepositoryInterface', $sampleRuntime ? AnalyticsSampleAnalyticsRepository::class : 'App\Analysing\Repository\AnalyticsRepository');
+    $services->alias('App\Analysing\RepositoryInterface\AnalyticsDashboardRepositoryInterface', 'App\Analysing\Repository\AnalyticsDashboardRepository');
+    $services->alias('App\Analysing\RepositoryInterface\AnalyticsExportJobRepositoryInterface', 'App\Analysing\Repository\AnalyticsExportJobRepository');
+    $services->alias('App\Analysing\RepositoryInterface\AnalyticsMetricSnapshotRepositoryInterface', 'App\Analysing\Repository\AnalyticsMetricSnapshotRepository');
 
     $services->alias('App\Analysing\\ServiceInterface\\Alerts\\AnalyticsAlertEvaluatorInterface', 'App\Analysing\\Service\\Alerts\\AnalyticsAlertEvaluator');
     $services->alias('App\Analysing\\ServiceInterface\\Alerts\\AnalyticsNotificationDispatcherInterface', 'App\Analysing\\Service\\Alerts\\AnalyticsNotificationDispatcher');

@@ -1,3 +1,13 @@
+analytics_export_job_metrics:
+  path: /api/analytics/export/jobs/metrics
+  controller: App\Analysing\Controller\AnalyticsExportJobController::metrics
+  methods: [GET]
+
+analytics_export_job_status:
+  path: /api/analytics/export/jobs/{id}
+  controller: App\Analysing\Controller\AnalyticsExportJobController::status
+  methods: [GET]
+
 analytics_status:
   path: /status
   controller: App\Analysing\Controller\AnalyticsController::status

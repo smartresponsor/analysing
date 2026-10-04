@@ -14,7 +14,7 @@ final class MigrationPlatformCompatibilityTest extends TestCase
     {
         require_once __DIR__.'/../../../migrations/Version20260914083153.php';
 
-        $method = new \ReflectionMethod(\App\Analysing\Migrations\Version20260914083153::class, 'definition');
+        $method = new \ReflectionMethod('App\\Analysing\\Migrations\\Version20260914083153', 'definition');
         $schema = $method->invoke(null);
 
         self::assertInstanceOf(Schema::class, $schema);

@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace App\Analysing\Tests\Unit\Analytics;
 
 use App\Analysing\Entity\Analytics\AnalyticsMetricSnapshotEntity;
+use App\Analysing\RepositoryInterface\AnalyticsMetricSnapshotRepositoryInterface;
 use App\Analysing\Service\AnalyticsCollector;
-use Doctrine\ORM\EntityManagerInterface;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 
@@ -14,13 +14,12 @@ final class AnalyticsCollectorTest extends TestCase
 {
     public function testRecordPersistsAnalyticsMetricSnapshotEntity(): void
     {
-        $em = $this->createMock(EntityManagerInterface::class);
-        $em->expects(self::once())
-            ->method('persist')
+        $snapshots = $this->createMock(AnalyticsMetricSnapshotRepositoryInterface::class);
+        $snapshots->expects(self::once())
+            ->method('save')
             ->with(self::isInstanceOf(AnalyticsMetricSnapshotEntity::class));
-        $em->expects(self::once())->method('flush');
 
-        $collector = new AnalyticsCollector($em, new NullLogger());
+        $collector = new AnalyticsCollector($snapshots, new NullLogger());
         $collector->record(
             'sales',
             10.5,
@@ -32,8 +31,8 @@ final class AnalyticsCollectorTest extends TestCase
 
     public function testRecordRejectsInvalidMetricName(): void
     {
-        $em = $this->createMock(EntityManagerInterface::class);
-        $collector = new AnalyticsCollector($em, new NullLogger());
+        $snapshots = $this->createMock(AnalyticsMetricSnapshotRepositoryInterface::class);
+        $collector = new AnalyticsCollector($snapshots, new NullLogger());
 
         $this->expectException(\InvalidArgumentException::class);
         $collector->record(

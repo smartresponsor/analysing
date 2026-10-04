@@ -6,14 +6,14 @@ namespace App\Analysing\Service\Alerts;
 
 use App\Analysing\Entity\Alerts\AnalyticsAlertRuleEntity;
 use App\Analysing\Entity\Analytics\AnalyticsMetricSnapshotEntity;
+use App\Analysing\RepositoryInterface\AnalyticsMetricSnapshotRepositoryInterface;
 use App\Analysing\ServiceInterface\Alerts\AnalyticsAlertEvaluatorInterface;
-use Doctrine\ORM\EntityManagerInterface;
 use Psr\Log\LoggerInterface;
 
 final readonly class AnalyticsAlertEvaluator implements AnalyticsAlertEvaluatorInterface
 {
     public function __construct(
-        private EntityManagerInterface $em,
+        private AnalyticsMetricSnapshotRepositoryInterface $snapshots,
         private LoggerInterface $logger,
     ) {
     }
@@ -26,7 +26,7 @@ final readonly class AnalyticsAlertEvaluator implements AnalyticsAlertEvaluatorI
         }
 
         try {
-            $rules = $this->em->getRepository(AnalyticsAlertRuleEntity::class)->findBy(['is_active' => true]);
+            $rules = $this->snapshots->findActiveAlertRules();
         } catch (\Throwable $exception) {
             $this->logger->error('Analytics alert rules could not be loaded.', [
                 'exception' => $exception,
@@ -112,23 +112,7 @@ final readonly class AnalyticsAlertEvaluator implements AnalyticsAlertEvaluatorI
     private function findLatestSnapshotInRange(string $metric, \DateTimeImmutable $from, \DateTimeImmutable $to, string $ruleCode): ?AnalyticsMetricSnapshotEntity
     {
         try {
-            $qb = $this->em->createQueryBuilder();
-
-            $query = $qb
-                ->select('snapshot')
-                ->from(AnalyticsMetricSnapshotEntity::class, 'snapshot')
-                ->andWhere('snapshot.metric = :metric')
-                ->andWhere('snapshot.period_start >= :from')
-                ->andWhere('snapshot.period_end <= :to')
-                ->orderBy('snapshot.period_end', 'DESC')
-                ->addOrderBy('snapshot.period_start', 'DESC')
-                ->setMaxResults(1)
-                ->setParameter('metric', $metric)
-                ->setParameter('from', $from)
-                ->setParameter('to', $to)
-                ->getQuery();
-
-            $result = $query->getOneOrNullResult();
+            $result = $this->snapshots->findLatestInRange($metric, $from, $to);
         } catch (\Throwable $exception) {
             $this->logger->error('Analytics alert snapshot lookup failed.', [
                 'exception' => $exception,

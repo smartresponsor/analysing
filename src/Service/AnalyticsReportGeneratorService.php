@@ -6,10 +6,10 @@ namespace App\Analysing\Service;
 
 use App\Analysing\DTO\AnalyticsKpiRequestDTO;
 use App\Analysing\Entity\Analytics\AnalyticsExportJobEntity;
+use App\Analysing\RepositoryInterface\AnalyticsExportJobRepositoryInterface;
 use App\Analysing\ServiceInterface\AnalyticsDashboardServiceInterface;
 use App\Analysing\ServiceInterface\AnalyticsReportExporterServiceInterface;
 use App\Analysing\ServiceInterface\AnalyticsReportGeneratorServiceInterface;
-use Doctrine\ORM\EntityManagerInterface;
 use Psr\Log\LoggerInterface;
 
 final readonly class AnalyticsReportGeneratorService implements AnalyticsReportGeneratorServiceInterface
@@ -17,7 +17,7 @@ final readonly class AnalyticsReportGeneratorService implements AnalyticsReportG
     public function __construct(
         private AnalyticsDashboardServiceInterface $dashboard,
         private AnalyticsReportExporterServiceInterface $exporter,
-        private EntityManagerInterface $em,
+        private AnalyticsExportJobRepositoryInterface $jobs,
         private LoggerInterface $logger,
     ) {
     }
@@ -35,8 +35,7 @@ final readonly class AnalyticsReportGeneratorService implements AnalyticsReportG
 
         try {
             $job->start();
-            $this->em->persist($job);
-            $this->em->flush();
+            $this->jobs->save($job);
         } catch (\Throwable $exception) {
             $this->logger->error('Analytics report job bootstrap failed.', [
                 'exception' => $exception,
@@ -106,7 +105,7 @@ final readonly class AnalyticsReportGeneratorService implements AnalyticsReportG
         }
 
         try {
-            $this->em->flush();
+            $this->jobs->flush();
         } catch (\Throwable $exception) {
             $this->logger->error('Analytics report job final flush failed.', [
                 'exception' => $exception,

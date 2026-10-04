@@ -7,10 +7,10 @@ namespace App\Analysing\Service;
 use App\Analysing\BuilderInterface\AnalyticsReportRowBuilderInterface;
 use App\Analysing\DTO\AnalyticsKpiRequestDTO;
 use App\Analysing\Entity\Analytics\AnalyticsExportJobEntity;
+use App\Analysing\RepositoryInterface\AnalyticsExportJobRepositoryInterface;
 use App\Analysing\ServiceInterface\AnalyticsDashboardServiceInterface;
 use App\Analysing\ServiceInterface\AnalyticsExportJobRunnerInterface;
 use App\Analysing\ServiceInterface\AnalyticsReportExporterServiceInterface;
-use Doctrine\ORM\EntityManagerInterface;
 use Psr\Log\LoggerInterface;
 
 /**
@@ -22,17 +22,17 @@ use Psr\Log\LoggerInterface;
 final readonly class AnalyticsExportJobRunner implements AnalyticsExportJobRunnerInterface
 {
     /**
-     * @param AnalyticsDashboardServiceInterface      $dashboard     service used to compute KPI aggregates
-     * @param AnalyticsReportExporterServiceInterface $exporter      service used to write the final export file
-     * @param AnalyticsReportRowBuilderInterface      $rowBuilder    builder that normalizes export rows
-     * @param EntityManagerInterface                  $entityManager entity manager used to persist job state transitions
-     * @param LoggerInterface                         $logger        logger used for execution failures
+     * @param AnalyticsDashboardServiceInterface      $dashboard  service used to compute KPI aggregates
+     * @param AnalyticsReportExporterServiceInterface $exporter   service used to write the final export file
+     * @param AnalyticsReportRowBuilderInterface      $rowBuilder builder that normalizes export rows
+     * @param AnalyticsExportJobRepositoryInterface   $jobs       repository used to persist job state transitions
+     * @param LoggerInterface                         $logger     logger used for execution failures
      */
     public function __construct(
         private AnalyticsDashboardServiceInterface $dashboard,
         private AnalyticsReportExporterServiceInterface $exporter,
         private AnalyticsReportRowBuilderInterface $rowBuilder,
-        private EntityManagerInterface $entityManager,
+        private AnalyticsExportJobRepositoryInterface $jobs,
         private LoggerInterface $logger,
     ) {
     }
@@ -59,7 +59,7 @@ final readonly class AnalyticsExportJobRunner implements AnalyticsExportJobRunne
 
         $job->incAttempts();
         $job->start();
-        $this->entityManager->flush();
+        $this->jobs->flush();
 
         try {
             $dto = new AnalyticsKpiRequestDTO(
@@ -94,7 +94,7 @@ final readonly class AnalyticsExportJobRunner implements AnalyticsExportJobRunne
             ]);
         }
 
-        $this->entityManager->flush();
+        $this->jobs->flush();
 
         return $job;
     }
