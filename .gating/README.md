@@ -1,7 +1,7 @@
-# Gating artifacts
+# Analysing Gating artifacts
 
-This directory is a repository-local output surface for Gating artifacts only.
+This directory is generated artifact state only.
 
-Generated reports, evidence, cache data, checksums, and verification artifacts may live here.
-Executable rules and policy come from the `gating/gate` Composer package.
-Repository-specific Gating configuration belongs under Symfony `config/`.
+- Source-of-truth policy, schema, profile and executable checks live in the `Gating` package/repository.
+- Any reports, cache, checksums or evidence emitted here are disposable runtime artifacts.
+- Do not copy `Gating/policy`, `Gating/schema`, executable PHP checks, or owner quality configuration into this consumer repository.
