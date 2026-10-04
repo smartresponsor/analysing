@@ -72,71 +72,122 @@ final class AnalyticsRequestAuthSubscriber implements AnalyticsRequestAuthSubscr
         }
 
         $startedAt = microtime(true);
+        $claims = $this->resolveClaims($request, $route, $startedAt);
+        if ($claims instanceof Response) {
+            $event->setResponse($claims);
+
+            return;
+        }
+
+        $scope = $this->resolveScope($claims, $route, $startedAt);
+        if ($scope instanceof Response) {
+            $event->setResponse($scope);
+
+            return;
+        }
+
+        $scopeFailure = $this->validateScope($request, $route, $scope, $startedAt);
+        if ($scopeFailure instanceof Response) {
+            $event->setResponse($scopeFailure);
+
+            return;
+        }
+
+        $this->applyClaims($request, $claims, $scope);
+    }
+
+    /** @return array<string, mixed>|Response */
+    private function resolveClaims(Request $request, string $route, float $startedAt): array|Response
+    {
         $token = $this->extractToken($request);
         if (null === $token) {
-            $event->setResponse($this->reject(
+            return $this->reject(
                 'Analytics authorization token is required.',
                 'analytics.auth.missing_token',
                 Response::HTTP_UNAUTHORIZED,
                 $route,
                 $startedAt,
-            ));
-
-            return;
+            );
         }
 
         $claims = $this->tokens->verify($token);
         if ([] === $claims) {
-            $event->setResponse($this->reject(
+            return $this->reject(
                 'Analytics authorization token is invalid or expired.',
                 'analytics.auth.invalid_token',
                 Response::HTTP_UNAUTHORIZED,
                 $route,
                 $startedAt,
-            ));
-
-            return;
+            );
         }
 
+        return $claims;
+    }
+
+    /**
+     * @param array<string, mixed> $claims
+     *
+     * @return array<string, mixed>|Response
+     */
+    private function resolveScope(array $claims, string $route, float $startedAt): array|Response
+    {
         $scope = $claims['scope'] ?? [];
         if (!is_array($scope)) {
-            $event->setResponse($this->reject(
+            return $this->reject(
                 'Analytics authorization scope is invalid.',
                 'analytics.auth.invalid_scope',
                 Response::HTTP_FORBIDDEN,
                 $route,
                 $startedAt,
-            ));
-
-            return;
+            );
         }
 
-        $scope = $this->normalizeAssociativeArray($scope);
+        $normalizedScope = $this->normalizeAssociativeArray($scope);
+        if (null === $normalizedScope) {
+            return $this->reject(
+                'Analytics authorization scope is invalid.',
+                'analytics.auth.invalid_scope',
+                Response::HTTP_FORBIDDEN,
+                $route,
+                $startedAt,
+            );
+        }
 
+        return $normalizedScope;
+    }
+
+    /** @param array<string, mixed> $scope */
+    private function validateScope(Request $request, string $route, array $scope, float $startedAt): ?Response
+    {
         if (!$this->isRouteAllowed($route, $scope)) {
-            $event->setResponse($this->reject(
+            return $this->reject(
                 'Analytics authorization scope does not allow this route.',
                 'analytics.auth.route_denied',
                 Response::HTTP_FORBIDDEN,
                 $route,
                 $startedAt,
-            ));
-
-            return;
+            );
         }
 
         if (!$this->isVendorAllowed($request, $scope)) {
-            $event->setResponse($this->reject(
+            return $this->reject(
                 'Analytics authorization vendor does not match the request.',
                 'analytics.auth.vendor_mismatch',
                 Response::HTTP_FORBIDDEN,
                 $route,
                 $startedAt,
-            ));
-
-            return;
+            );
         }
 
+        return null;
+    }
+
+    /**
+     * @param array<string, mixed> $claims
+     * @param array<string, mixed> $scope
+     */
+    private function applyClaims(Request $request, array $claims, array $scope): void
+    {
         $request->attributes->set('_analytics_token_claims', $claims);
         if (isset($scope['vendor']) && is_scalar($scope['vendor'])) {
             $request->attributes->set('_analytics_token_vendor', trim((string) $scope['vendor']));
@@ -218,14 +269,14 @@ final class AnalyticsRequestAuthSubscriber implements AnalyticsRequestAuthSubscr
     /**
      * @param array<array-key, mixed> $scope
      *
-     * @return array<string, mixed>
+     * @return array<string, mixed>|null
      */
-    private function normalizeAssociativeArray(array $scope): array
+    private function normalizeAssociativeArray(array $scope): ?array
     {
         $normalized = [];
         foreach ($scope as $key => $value) {
             if (!is_string($key)) {
-                throw new \InvalidArgumentException('Analytics authorization scope is invalid.');
+                return null;
             }
 
             $normalized[$key] = $value;
