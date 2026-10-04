@@ -71,36 +71,65 @@ final readonly class AnalyticsInsight implements AnalyticsInsightInterface
      */
     public function computeMetricTree(array $param): array
     {
-        $treeJson = $this->loadMetricTreeCatalog();
+        $name = $this->normalizeNonEmptyString($param, 'name');
+        $vendor = $this->normalizeNonEmptyString($param, 'vendor_id');
+        $configuration = $this->resolveMetricTreeConfiguration($name);
+        $nodes = $this->buildMetricTreeNodes($configuration['nodes'], $name);
+        $edges = $this->buildMetricTreeEdges($configuration['edges'], $name);
+
+        $this->logger->info('AnalyticsInsight metric tree computed.', [
+            'vendor_id' => $vendor,
+            'name' => $name,
+            'nodes' => count($nodes),
+            'edges' => count($edges),
+        ]);
+
+        return ['name' => $name, 'nodes' => $nodes, 'edges' => $edges];
+    }
+
+    /**
+     * @return array{nodes:list<mixed>,edges:list<mixed>}
+     */
+    private function resolveMetricTreeConfiguration(string $name): array
+    {
         try {
-            $tree = json_decode($treeJson, true, 512, JSON_THROW_ON_ERROR);
+            $catalog = json_decode($this->loadMetricTreeCatalog(), true, 512, JSON_THROW_ON_ERROR);
         } catch (\JsonException $exception) {
             $this->logger->error('Metric tree catalog is invalid JSON.', ['path' => __DIR__.'/../metric_tree/catalog.json', 'exception' => $exception]);
             throw new \RuntimeException('Metric tree catalog is invalid.', 0, $exception);
         }
 
-        if (!is_array($tree) || !isset($tree['trees']) || !is_array($tree['trees'])) {
+        if (!is_array($catalog) || !isset($catalog['trees']) || !is_array($catalog['trees'])) {
             $this->logger->error('Metric tree catalog is invalid JSON.', ['path' => __DIR__.'/../metric_tree/catalog.json']);
             throw new \RuntimeException('Metric tree catalog is invalid.');
         }
 
-        $name = $this->normalizeNonEmptyString($param, 'name');
-        $vendor = $this->normalizeNonEmptyString($param, 'vendor_id');
-        $conf = $tree['trees'][$name] ?? null;
-        if (!is_array($conf)) {
+        $configuration = $catalog['trees'][$name] ?? null;
+        if (!is_array($configuration)) {
             throw new \InvalidArgumentException(sprintf('Unknown metric tree: %s', $name));
         }
 
-        if (!isset($conf['nodes']) || !is_array($conf['nodes'])) {
+        $nodes = $configuration['nodes'] ?? null;
+        $edges = $configuration['edges'] ?? null;
+        if (!is_array($nodes)) {
             throw new \RuntimeException(sprintf('Metric tree %s has invalid nodes definition.', $name));
         }
-
-        if (!isset($conf['edges']) || !is_array($conf['edges'])) {
+        if (!is_array($edges)) {
             throw new \RuntimeException(sprintf('Metric tree %s has invalid edges definition.', $name));
         }
 
+        return ['nodes' => array_values($nodes), 'edges' => array_values($edges)];
+    }
+
+    /**
+     * @param list<mixed> $definitions
+     *
+     * @return list<array{id:string,title:string,value:int}>
+     */
+    private function buildMetricTreeNodes(array $definitions, string $name): array
+    {
         $nodes = [];
-        foreach ($conf['nodes'] as $node) {
+        foreach ($definitions as $node) {
             if (!is_array($node)) {
                 throw new \RuntimeException(sprintf('Metric tree %s contains an invalid node definition.', $name));
             }
@@ -120,8 +149,18 @@ final readonly class AnalyticsInsight implements AnalyticsInsightInterface
             ];
         }
 
+        return $nodes;
+    }
+
+    /**
+     * @param list<mixed> $definitions
+     *
+     * @return list<array{from:string,to:string}>
+     */
+    private function buildMetricTreeEdges(array $definitions, string $name): array
+    {
         $edges = [];
-        foreach ($conf['edges'] as $edge) {
+        foreach ($definitions as $edge) {
             if (!is_array($edge)) {
                 throw new \RuntimeException(sprintf('Metric tree %s contains an invalid edge definition.', $name));
             }
@@ -135,14 +174,7 @@ final readonly class AnalyticsInsight implements AnalyticsInsightInterface
             $edges[] = ['from' => $from, 'to' => $to];
         }
 
-        $this->logger->info('AnalyticsInsight metric tree computed.', [
-            'vendor_id' => $vendor,
-            'name' => $name,
-            'nodes' => count($nodes),
-            'edges' => count($edges),
-        ]);
-
-        return ['name' => $name, 'nodes' => $nodes, 'edges' => $edges];
+        return $edges;
     }
 
     /**
