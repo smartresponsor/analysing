@@ -1,5 +1,15 @@
 # CMCP execution journal
 
+## 2026-10-04 — task engine-20261004213819-analysing-363724 repository normalization responsibility pass
+
+- Re-established Console MCP after a transient timeout/502 window and resumed only from the live repository state. The RC branch had advanced concurrently to `c13dc0837455db46b1158c95005cc1b22172a9db`; concurrent authorization-test/journal work was preserved until its owner integrated it.
+- Reused fresh Inspecting evidence `D:\\PhpstormProjects\\www\\Inspecting\\.inspecting\\reports\\D--PhpstormProjects-www-Analysing-20261004-234509.json`, which contained three medium review findings and zero PHPStan/file errors. The remaining large-class finding identified `AnalyticsRepository` at 489 lines.
+- Canon014 semantic review found a stable subordinate responsibility rather than arbitrary class splitting: Doctrine query ownership remains in `AnalyticsRepository`, while scalar-row normalization, typed row-shape conversion, and required-field validation now live in `AnalyticsRepositoryRowNormalizer`.
+- The repository public interface is unchanged. Direct two-argument construction remains compatible via an optional normalizer constructor parameter; Symfony autowiring can supply the collaborator normally. Query semantics, logging messages, exception messages, ordering, and result shapes remain unchanged.
+- Deterministic acceptance is GREEN: changed PHP syntax lint; `composer validate --strict --check-lock`; `composer analyse` at PHPStan max with zero errors; PHPUnit 189 tests / 658 assertions with four existing non-blocking deprecations; `composer gate` with 0 failed / 0 warnings / 3 profile-dependent skips; and schema parity across 9 tables / 2 migrations.
+- Fresh post-change Inspecting report `D:\\PhpstormProjects\\www\\Inspecting\\.inspecting\\reports\\D--PhpstormProjects-www-Analysing-20261004-235509.json` has zero PHPStan/file errors and reduces the medium structural contour from three findings to two. The `AnalyticsRepository` large-class finding is gone; only the existing `AnalyticsExportJobEntity` and `AnalyticsRequestAuthSubscriber` low-property-cohesion review signals remain.
+- No browser/mobile UI, navigation, form, or user-visible visual behavior changed in this backend repository refactor; fresh screenshot evidence is not applicable.
+
 ## 2026-10-04 — task engine-20261004225401-analysing-2f441e renderer RC acceptance
 
 - Re-established the Analysing scope through Console MCP and consumed the authoritative task specification, historical CanonScanning RED evidence, current repository instructions/manifests, mandatory Objecting/Cruding/Viewing/Interfacing contracts, Canonization Canon014 textual rule, and its executable Gating mirror.
