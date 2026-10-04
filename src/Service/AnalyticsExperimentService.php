@@ -110,50 +110,8 @@ final class AnalyticsExperimentService implements AnalyticsExperimentServiceInte
                 continue;
             }
 
-            if (!is_array($rawVariants)) {
-                $this->logger->warning('Analytics experiment service ignored a non-array variant weight map.', [
-                    'experiment_key' => $normalizedExperimentKey,
-                    'value_type' => get_debug_type($rawVariants),
-                ]);
-                continue;
-            }
-
-            $variants = [];
-            foreach ($rawVariants as $variantKey => $rawWeight) {
-                if (count($variants) >= self::MAX_VARIANTS_PER_EXPERIMENT) {
-                    $this->logger->warning('Analytics experiment service truncated variants because the maximum count was reached.', [
-                        'experiment_key' => $normalizedExperimentKey,
-                        'max_variants' => self::MAX_VARIANTS_PER_EXPERIMENT,
-                    ]);
-                    break;
-                }
-
-                $normalizedVariantKey = trim((string) $variantKey);
-                if ('' !== $normalizedVariantKey && strlen($normalizedVariantKey) > self::MAX_IDENTIFIER_LENGTH) {
-                    $this->logger->warning('Analytics experiment service ignored an overlong variant key.', [
-                        'experiment_key' => $normalizedExperimentKey,
-                        'variant_key' => $normalizedVariantKey,
-                        'max_length' => self::MAX_IDENTIFIER_LENGTH,
-                    ]);
-                    continue;
-                }
-                $weight = filter_var($rawWeight, FILTER_VALIDATE_INT, ['options' => ['min_range' => 1]]);
-                if ('' === $normalizedVariantKey || !is_int($weight)) {
-                    $this->logger->warning('Analytics experiment service ignored an invalid variant weight entry.', [
-                        'experiment_key' => $normalizedExperimentKey,
-                        'variant_key' => $normalizedVariantKey,
-                        'raw_weight' => $rawWeight,
-                    ]);
-                    continue;
-                }
-
-                $variants[$normalizedVariantKey] = $weight;
-            }
-
-            if ([] === $variants) {
-                $this->logger->warning('Analytics experiment service ignored an empty normalized variant map.', [
-                    'experiment_key' => $normalizedExperimentKey,
-                ]);
+            $variants = $this->normalizeVariants($normalizedExperimentKey, $rawVariants);
+            if (null === $variants) {
                 continue;
             }
 
@@ -161,6 +119,75 @@ final class AnalyticsExperimentService implements AnalyticsExperimentServiceInte
         }
 
         return $normalized;
+    }
+
+    /** @return array<string, int>|null */
+    private function normalizeVariants(string $experimentKey, mixed $rawVariants): ?array
+    {
+        if (!is_array($rawVariants)) {
+            $this->logger->warning('Analytics experiment service ignored a non-array variant weight map.', [
+                'experiment_key' => $experimentKey,
+                'value_type' => get_debug_type($rawVariants),
+            ]);
+
+            return null;
+        }
+
+        $variants = [];
+        foreach ($rawVariants as $variantKey => $rawWeight) {
+            if (count($variants) >= self::MAX_VARIANTS_PER_EXPERIMENT) {
+                $this->logger->warning('Analytics experiment service truncated variants because the maximum count was reached.', [
+                    'experiment_key' => $experimentKey,
+                    'max_variants' => self::MAX_VARIANTS_PER_EXPERIMENT,
+                ]);
+                break;
+            }
+
+            $entry = $this->normalizeVariantEntry($experimentKey, $variantKey, $rawWeight);
+            if (null === $entry) {
+                continue;
+            }
+
+            $variants[$entry['key']] = $entry['weight'];
+        }
+
+        if ([] !== $variants) {
+            return $variants;
+        }
+
+        $this->logger->warning('Analytics experiment service ignored an empty normalized variant map.', [
+            'experiment_key' => $experimentKey,
+        ]);
+
+        return null;
+    }
+
+    /** @return array{key:string,weight:int}|null */
+    private function normalizeVariantEntry(string $experimentKey, int|string $variantKey, mixed $rawWeight): ?array
+    {
+        $normalizedVariantKey = trim((string) $variantKey);
+        if ('' !== $normalizedVariantKey && strlen($normalizedVariantKey) > self::MAX_IDENTIFIER_LENGTH) {
+            $this->logger->warning('Analytics experiment service ignored an overlong variant key.', [
+                'experiment_key' => $experimentKey,
+                'variant_key' => $normalizedVariantKey,
+                'max_length' => self::MAX_IDENTIFIER_LENGTH,
+            ]);
+
+            return null;
+        }
+
+        $weight = filter_var($rawWeight, FILTER_VALIDATE_INT, ['options' => ['min_range' => 1]]);
+        if ('' === $normalizedVariantKey || !is_int($weight)) {
+            $this->logger->warning('Analytics experiment service ignored an invalid variant weight entry.', [
+                'experiment_key' => $experimentKey,
+                'variant_key' => $normalizedVariantKey,
+                'raw_weight' => $rawWeight,
+            ]);
+
+            return null;
+        }
+
+        return ['key' => $normalizedVariantKey, 'weight' => $weight];
     }
 
     private function normalizeNonEmptyString(string $value, string $field): string
