@@ -1,0 +1,25 @@
+openapi: 3.0.3
+info:
+  title: Analysing API
+  version: 1.0.0
+paths:
+  /api/analytics/export/jobs/{id}:
+    get:
+      operationId: getAnalyticsExportJob
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Export job status.
+        '404':
+          description: Export job not found.
+  /api/analytics/export/jobs/metrics:
+    get:
+      operationId: getAnalyticsExportJobMetrics
+      responses:
+        '200':
+          description: Export job metrics snapshot.

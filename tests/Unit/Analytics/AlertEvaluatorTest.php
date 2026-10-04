@@ -6,11 +6,8 @@ namespace App\Analysing\Tests\Unit\Analytics;
 
 use App\Analysing\Entity\Alerts\AnalyticsAlertRuleEntity;
 use App\Analysing\Entity\Analytics\AnalyticsMetricSnapshotEntity;
+use App\Analysing\RepositoryInterface\AnalyticsMetricSnapshotRepositoryInterface;
 use App\Analysing\Service\Alerts\AnalyticsAlertEvaluator;
-use Doctrine\ORM\EntityManagerInterface;
-use Doctrine\ORM\EntityRepository;
-use Doctrine\ORM\Query;
-use Doctrine\ORM\QueryBuilder;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 
@@ -27,27 +24,11 @@ final class AlertEvaluatorTest extends TestCase
         ]);
         $snapshot = new AnalyticsMetricSnapshotEntity('sales', 15.0, $from, $to);
 
-        $repository = $this->createMock(EntityRepository::class);
-        $repository->method('findBy')->with(['is_active' => true])->willReturn([$rule]);
+        $snapshots = $this->createMock(AnalyticsMetricSnapshotRepositoryInterface::class);
+        $snapshots->method('findActiveAlertRules')->willReturn([$rule]);
+        $snapshots->method('findLatestInRange')->with('sales', $from, $to)->willReturn($snapshot);
 
-        $query = $this->createMock(Query::class);
-        $query->method('getOneOrNullResult')->willReturn($snapshot);
-
-        $qb = $this->createMock(QueryBuilder::class);
-        $qb->method('select')->willReturnSelf();
-        $qb->method('from')->willReturnSelf();
-        $qb->method('andWhere')->willReturnSelf();
-        $qb->method('orderBy')->willReturnSelf();
-        $qb->method('addOrderBy')->willReturnSelf();
-        $qb->method('setMaxResults')->willReturnSelf();
-        $qb->method('setParameter')->willReturnSelf();
-        $qb->method('getQuery')->willReturn($query);
-
-        $em = $this->createMock(EntityManagerInterface::class);
-        $em->method('getRepository')->willReturn($repository);
-        $em->method('createQueryBuilder')->willReturn($qb);
-
-        $service = new AnalyticsAlertEvaluator($em, new NullLogger());
+        $service = new AnalyticsAlertEvaluator($snapshots, new NullLogger());
         $result = $service->evaluate($from, $to);
 
         self::assertCount(1, $result);
@@ -60,8 +41,8 @@ final class AlertEvaluatorTest extends TestCase
 
     public function testEvaluateRejectsInvalidRange(): void
     {
-        $em = $this->createMock(EntityManagerInterface::class);
-        $service = new AnalyticsAlertEvaluator($em, new NullLogger());
+        $snapshots = $this->createMock(AnalyticsMetricSnapshotRepositoryInterface::class);
+        $service = new AnalyticsAlertEvaluator($snapshots, new NullLogger());
 
         $this->expectException(\InvalidArgumentException::class);
         $service->evaluate(new \DateTimeImmutable('2026-02-01'), new \DateTimeImmutable('2026-01-01'));

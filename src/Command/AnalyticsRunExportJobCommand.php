@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace App\Analysing\Command;
 
 use App\Analysing\Entity\Analytics\AnalyticsExportJobEntity;
+use App\Analysing\RepositoryInterface\AnalyticsExportJobRepositoryInterface;
 use App\Analysing\Service\AnalyticsExportJobLockManager;
 use App\Analysing\Service\AnalyticsExportJobRunner;
-use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
@@ -18,7 +18,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 final class AnalyticsRunExportJobCommand extends Command
 {
     public function __construct(
-        private readonly EntityManagerInterface $em,
+        private readonly AnalyticsExportJobRepositoryInterface $jobs,
         private readonly AnalyticsExportJobRunner $runner,
         private readonly AnalyticsExportJobLockManager $lockManager,
     ) {
@@ -37,7 +37,7 @@ final class AnalyticsRunExportJobCommand extends Command
             throw new \InvalidArgumentException('Export job id must be scalar.');
         }
         $id = (int) $idArgument;
-        $job = $this->em->getRepository(AnalyticsExportJobEntity::class)->find($id);
+        $job = $this->jobs->find($id);
 
         if (!$job instanceof AnalyticsExportJobEntity) {
             $output->writeln('Job not found');

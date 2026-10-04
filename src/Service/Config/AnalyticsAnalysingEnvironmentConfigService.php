@@ -89,7 +89,10 @@ final readonly class AnalyticsAnalysingEnvironmentConfigService implements Analy
             'analytics_rate_limit_default_write_limit' => $payload->rateLimitDefaultWriteLimit,
         ];
 
-        return $this->applyService->save($this->descriptor(), $this->actorIdentifier($context), $values, $masked, []);
+        /** @var array{status:string,messages:list<string>,masked_changes:array<string,string>,file_changes:list<array<string,mixed>>,secret_changes:list<array<string,mixed>>} $result */
+        $result = $this->applyService->save($this->descriptor(), $this->actorIdentifier($context), $values, $masked, []);
+
+        return $result;
     }
 
     public function apply(object $data, array $context = []): array
@@ -106,7 +109,8 @@ final readonly class AnalyticsAnalysingEnvironmentConfigService implements Analy
         $status = 'applied' === $write['status'] ? 'applied' : 'failed';
         $values = $this->stateRows($payload, $status);
 
-        return $this->applyService->apply(
+        /** @var array{status:string,messages:list<string>,masked_changes:array<string,string>,file_changes:list<array<string,mixed>>,secret_changes:list<array<string,mixed>>} $result */
+        $result = $this->applyService->apply(
             $this->descriptor(),
             $this->actorIdentifier($context),
             $values,
@@ -122,6 +126,8 @@ final readonly class AnalyticsAnalysingEnvironmentConfigService implements Analy
             'applied' === $write['status'] ? null : $write['message'],
             $status,
         );
+
+        return $result;
     }
 
     private function assertData(object $data): AnalyticsEnvironmentConfigDataDTO

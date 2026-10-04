@@ -14,7 +14,7 @@ export default defineConfig({
   webServer: {
     command: 'php -S 127.0.0.1:8099 -t public tools/qa/playwright-router.php',
     url: 'http://127.0.0.1:8099/status',
-    reuseExistingServer: false,
+    reuseExistingServer: true,
     timeout: 30_000,
     env: {
       APP_ENV: 'test',

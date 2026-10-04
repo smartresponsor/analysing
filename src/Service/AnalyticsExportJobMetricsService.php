@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace App\Analysing\Service;
 
 use App\Analysing\Entity\Analytics\AnalyticsExportJobEntity;
+use App\Analysing\RepositoryInterface\AnalyticsExportJobRepositoryInterface;
 use App\Analysing\ServiceInterface\AnalyticsExportJobMetricsServiceInterface;
-use Doctrine\ORM\EntityManagerInterface;
 
 /**
  * Aggregates export job metrics for operational monitoring.
@@ -16,10 +16,7 @@ use Doctrine\ORM\EntityManagerInterface;
  */
 final readonly class AnalyticsExportJobMetricsService implements AnalyticsExportJobMetricsServiceInterface
 {
-    /**
-     * @param EntityManagerInterface $entityManager doctrine entity manager used to read export jobs
-     */
-    public function __construct(private EntityManagerInterface $entityManager)
+    public function __construct(private AnalyticsExportJobRepositoryInterface $jobs)
     {
     }
 
@@ -39,8 +36,7 @@ final readonly class AnalyticsExportJobMetricsService implements AnalyticsExport
      */
     public function snapshot(): array
     {
-        $repository = $this->entityManager->getRepository(AnalyticsExportJobEntity::class);
-        $jobs = $repository->findBy([], ['created_at' => 'DESC'], 200);
+        $jobs = $this->jobs->findRecent(200);
 
         $statusCounts = [
             AnalyticsExportJobEntity::STATUS_PENDING => 0,

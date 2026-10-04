@@ -50,6 +50,9 @@ services:
 
 
   App\Analysing\RepositoryInterface\AnalyticsRepositoryInterface: '@App\Analysing\Repository\AnalyticsRepository'
+  App\Analysing\RepositoryInterface\AnalyticsDashboardRepositoryInterface: '@App\Analysing\Repository\AnalyticsDashboardRepository'
+  App\Analysing\RepositoryInterface\AnalyticsExportJobRepositoryInterface: '@App\Analysing\Repository\AnalyticsExportJobRepository'
+  App\Analysing\RepositoryInterface\AnalyticsMetricSnapshotRepositoryInterface: '@App\Analysing\Repository\AnalyticsMetricSnapshotRepository'
 
   App\Analysing\ServiceInterface\Alerts\AnalyticsAlertEvaluatorInterface: '@App\Analysing\Service\Alerts\AnalyticsAlertEvaluator'
   App\Analysing\ServiceInterface\Alerts\AnalyticsNotificationDispatcherInterface: '@App\Analysing\Service\Alerts\AnalyticsNotificationDispatcher'
