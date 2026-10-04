@@ -35,62 +35,22 @@ final class AnalyticsExportCommand extends BaseCommand
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $startedAt = microtime(true);
-        $pathArgument = $input->getArgument('path');
-        if (!is_string($pathArgument) && !is_int($pathArgument) && !is_float($pathArgument) && !is_bool($pathArgument) && null !== $pathArgument) {
-            throw new \InvalidArgumentException('Export path argument must be scalar.');
-        }
-        $path = trim((string) $pathArgument);
-        $from = new \DateTimeImmutable('first day of this month 00:00:00');
-        $to = new \DateTimeImmutable('last day of this month 23:59:59');
-        $request = new AnalyticsKpiRequestDTO(
-            vendorId: null,
-            currency: null,
-            from: $from->format('Y-m-d H:i:s'),
-            to: $to->format('Y-m-d H:i:s'),
-        );
+        $path = $this->readTargetPath($input);
+        $request = $this->createCurrentMonthRequest();
 
         try {
             $normalizedPath = $this->normalizeTargetPath($path);
+            [$rows, $seriesCount] = $this->buildExportRows($request);
+            $targetDir = $this->prepareTargetDirectory($normalizedPath);
 
-            $kpi = $this->dashboard->kpi($request);
-            $series = $this->dashboard->timeseries($request);
-            $rows = [[
-                'section' => 'totals',
-                'from' => $request->from,
-                'to' => $request->to,
-                'vendor_id' => '',
-                'currency' => '',
-                'gross_minor' => $kpi['gross_minor'],
-                'net_minor' => $kpi['net_minor'],
-                'margin_pct' => $kpi['margin_pct'],
-                'days' => $kpi['days'],
-            ]];
-
-            foreach ($series as $point) {
-                $rows[] = [
-                    'section' => 'timeseries',
-                    'date' => $point['date'],
-                    'gross_minor' => $point['gross_minor'],
-                    'net_minor' => $point['net_minor'],
-                ];
-            }
-
-            $targetDir = dirname($normalizedPath);
-            if ('' !== $targetDir && '.' !== $targetDir && !is_dir($targetDir) && !mkdir($targetDir, 0777, true) && !is_dir($targetDir)) {
-                throw new \RuntimeException('Cannot create export directory: '.$targetDir);
-            }
-            if ('' !== $targetDir && '.' !== $targetDir && is_dir($targetDir) && !is_writable($targetDir)) {
-                throw new \RuntimeException('Export directory is not writable: '.$targetDir);
-            }
-
-            $generatedPath = $this->exporter->export($rows, 'csv', '' === $targetDir ? null : $targetDir);
+            $generatedPath = $this->exporter->export($rows, 'csv', $targetDir);
             $this->moveExportToTarget($generatedPath, $normalizedPath);
 
             $this->logger->info('Analytics CSV export completed.', [
                 'path' => $normalizedPath,
                 'rows' => count($rows),
-                'series_rows' => count($series),
-                'duration_ms' => max(0, (int) round((microtime(true) - $startedAt) * 1000)),
+                'series_rows' => $seriesCount,
+                'duration_ms' => $this->durationMilliseconds($startedAt),
             ]);
             $output->writeln('<info>CSV exported to '.$normalizedPath.'</info>');
 
@@ -99,12 +59,87 @@ final class AnalyticsExportCommand extends BaseCommand
             $this->logger->error('Analytics CSV export failed.', [
                 'exception' => $exception,
                 'path' => $path,
-                'duration_ms' => max(0, (int) round((microtime(true) - $startedAt) * 1000)),
+                'duration_ms' => $this->durationMilliseconds($startedAt),
             ]);
             $output->writeln('<error>CSV export failed: '.$exception->getMessage().'</error>');
 
             return self::FAILURE;
         }
+    }
+
+    private function readTargetPath(InputInterface $input): string
+    {
+        $pathArgument = $input->getArgument('path');
+        if (!is_string($pathArgument) && !is_int($pathArgument) && !is_float($pathArgument) && !is_bool($pathArgument) && null !== $pathArgument) {
+            throw new \InvalidArgumentException('Export path argument must be scalar.');
+        }
+
+        return trim((string) $pathArgument);
+    }
+
+    private function createCurrentMonthRequest(): AnalyticsKpiRequestDTO
+    {
+        $from = new \DateTimeImmutable('first day of this month 00:00:00');
+        $to = new \DateTimeImmutable('last day of this month 23:59:59');
+
+        return new AnalyticsKpiRequestDTO(
+            vendorId: null,
+            currency: null,
+            from: $from->format('Y-m-d H:i:s'),
+            to: $to->format('Y-m-d H:i:s'),
+        );
+    }
+
+    /**
+     * @return array{0: list<array<string, int|float|string|null>>, 1: int}
+     */
+    private function buildExportRows(AnalyticsKpiRequestDTO $request): array
+    {
+        $kpi = $this->dashboard->kpi($request);
+        $series = $this->dashboard->timeseries($request);
+        $rows = [[
+            'section' => 'totals',
+            'from' => $request->from,
+            'to' => $request->to,
+            'vendor_id' => '',
+            'currency' => '',
+            'gross_minor' => $kpi['gross_minor'],
+            'net_minor' => $kpi['net_minor'],
+            'margin_pct' => $kpi['margin_pct'],
+            'days' => $kpi['days'],
+        ]];
+
+        foreach ($series as $point) {
+            $rows[] = [
+                'section' => 'timeseries',
+                'date' => $point['date'],
+                'gross_minor' => $point['gross_minor'],
+                'net_minor' => $point['net_minor'],
+            ];
+        }
+
+        return [$rows, count($series)];
+    }
+
+    private function prepareTargetDirectory(string $normalizedPath): ?string
+    {
+        $targetDir = dirname($normalizedPath);
+        if ('' === $targetDir || '.' === $targetDir) {
+            return null;
+        }
+        if (!is_dir($targetDir) && !mkdir($targetDir, 0777, true) && !is_dir($targetDir)) {
+            throw new \RuntimeException('Cannot create export directory: '.$targetDir);
+        }
+        if (!is_writable($targetDir)) {
+            throw new \RuntimeException('Export directory is not writable: '.$targetDir);
+        }
+
+        return $targetDir;
+    }
+
+    private function durationMilliseconds(float $startedAt): int
+    {
+        return max(0, (int) round((microtime(true) - $startedAt) * 1000));
     }
 
     private function normalizeTargetPath(string $path): string
