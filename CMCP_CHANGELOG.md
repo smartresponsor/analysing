@@ -1,5 +1,22 @@
 # CMCP execution journal
 
+## 2026-10-04 — task engine-20261004183649-analysing-4ddccc segmentation maintainability acceptance
+
+### Reconnaissance and canon mapping
+
+- Re-established the live Console-MCP repository scope for `Analysing` and read the authoritative execution specification before repository conclusions.
+- Re-read the mandatory Objecting, Cruding, Viewing, Interfacing, Gating, and Canonization owner contracts. Canon014 `Executable Objects Orchestrate Instead of Accumulating Roles` is the normative rule applied to the current segmentation-service maintainability change; no new architecture layer, generic CRUD, shared presentation ownership, or Objecting system-field ownership is introduced.
+- Current product-analytics maturity framing remains split: RC-critical work is deterministic analytics behavior, malformed-input safety, observability, lifecycle correctness, and reproducible verification; richer self-service exploration, experimentation UX/statistics, and dashboard ergonomics remain post-RC growth. Streaming/storage-engine ownership and shared shell/presentation remain outside Analysing.
+
+### Material implementation and verification
+
+- Preserved and verified the coherent live-tree refactor of `AnalyticsSegmentationService`: row-limit validation, dimension/segment normalization, and per-row matching are decomposed into focused private helpers while the public `apply()` contract, warning/info logging, malformed-row skipping, trimming semantics, and result shape remain stable.
+- Regression coverage verifies whitespace-normalized dimension/segment matching and safe skipping of malformed non-scalar dimension values.
+- Deterministic acceptance is GREEN: `composer validate --strict --check-lock`; PHPStan max across 297 files; PHPUnit 184 tests / 631 assertions with 4 existing non-blocking deprecations; Gating 10 rules / 0 failed / 0 warnings / 3 profile-dependent skips; isolated schema parity 9 tables / 2 migrations.
+- Fresh post-mutation Inspecting report `D:\PhpstormProjects\www\Inspecting\.inspecting\reports\D--PhpstormProjects-www-Analysing-20261004-183920.json` has zero PHPStan/file errors, zero autofixable findings, and 14 medium observational design/maintainability findings. `AnalyticsSegmentationService` is absent from the remaining hotspot list.
+- No user-observable UI, navigation, form, or browser/mobile flow changed, so fresh screenshot evidence is not applicable; the central Visual Gallery remains the canonical visual artifact surface.
+
+
 ## 2026-10-04 — task engine-20261004183030-analysing-e073b5 baseline
 
 ### Reconnaissance
