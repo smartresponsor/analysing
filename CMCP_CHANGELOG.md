@@ -1,5 +1,34 @@
 # CMCP execution journal
 
+## 2026-10-04 — task engine-20261004183030-analysing-e073b5 baseline
+
+### Reconnaissance
+
+- Re-established a clean synchronized Console-MCP baseline on `rc/analysing-canon-vendor-20260913` at HEAD `9bccbb0109b7895f2e498b32464efeb008752fd6` before mutation.
+- Read the authoritative task specification and supplied CanonScanning/Inspecting evidence, current Analysing instructions, README, Composer manifests, runtime/configuration, architecture/QA documentation, and CMCP journal.
+- Re-read mandatory Objecting, Cruding, Viewing, Interfacing, and Gating owner contracts. Responsibility remains bounded: Analysing owns analytics calculations/query/report behavior; Cruding owns generic CRUD; Viewing/Interfacing own shared rendering/shell; Objecting owns reusable system fields.
+- Read normative Canonization rules Canon022, Canon045, Canon047, Canon052, Canon054, Canon055, Canon056-061, and Canon063. The supplied 2026-09-29 hard RED causes are already materially remediated in the live tree: Failing/Nelmio dependencies and FailingBundle registration, root local dependency closure, underscore-number-aware Doctrine naming, neutral platform terminology, and canonical OpenAPI ownership/parity surfaces are present.
+
+### Market / maturity split
+
+- Current product-analytics peers such as PostHog and Matomo establish dashboards, funnels/retention/path analysis, stable report APIs, exportability, filters, and repeatable metric views as baseline expectations. RC-critical work therefore stays on deterministic analytics behavior, lifecycle/error safety, API/report contracts, observability, and reproducible verification.
+- Richer self-service exploration, AI-assisted analysis, experimentation UX/statistics, and broader dashboard ergonomics remain post-RC growth. Streaming infrastructure, storage-engine ownership, generic CRUD, and shared presentation remain outside Analysing.
+
+### Selected execution direction
+
+- Obtain fresh Inspecting evidence for the current repository fingerprint, select one bounded remaining backend hotspot inside Analysing responsibility, implement a behavior-preserving decomposition with focused regression coverage, then run Composer validation, PHP syntax/static analysis, PHPUnit, Gating, schema/runtime applicability gates, and fresh post-mutation Inspecting.
+- No user-observable UI change is planned; screenshot evidence is therefore expected to be non-applicable unless implementation scope changes.
+
+### Material implementation and verification
+
+- Fresh pre-change Inspecting report `D:\\PhpstormProjects\\www\\Inspecting\\.inspecting\\reports\\D--PhpstormProjects-www-Analysing-20261004-183306.json` had 15 medium observations, zero PHPStan/file errors, and zero autofixable findings. Selected `AnalyticsSegmentationService::apply()` (92 lines) as a bounded backend analytics hotspot.
+- Refactored segmentation row-limit validation, dimension/segment normalization, and row matching into focused private helpers while preserving trimming, invalid-input exceptions, skipped-row logging, matched-row semantics, and the public service contract.
+- Added focused regression coverage for trimmed comparable values plus missing/non-scalar dimension values. The first PHPStan pass exposed only a local generic-array narrowing proof gap; an explicit `array<string, mixed>` assertion after runtime `is_array()` narrowing closed it without changing behavior.
+- Deterministic acceptance is GREEN: changed PHP syntax lint; Composer strict/lock validation; PHPStan max across 297 files; PHPUnit 184 tests / 631 assertions with 4 existing non-blocking deprecations; schema parity across 9 tables / 2 migrations; Gating 10 rules / 0 failed / 0 warnings / 3 profile-dependent skips; standalone Symfony smoke on PHP 8.4.13 / Symfony 8.1.8; and aggregate `composer quality`.
+- Fresh post-mutation Inspecting report `D:\\PhpstormProjects\\www\\Inspecting\\.inspecting\\reports\\D--PhpstormProjects-www-Analysing-20261004-183728.json` has zero PHPStan/file errors, zero autofixable findings, and reduces the medium structural contour from 15 to 14. `AnalyticsSegmentationService::apply()` is absent from the remaining long-method findings.
+- No browser/mobile UI, navigation, form, or user-observable flow changed; fresh screenshot evidence is not applicable. Remaining Inspecting findings are medium observational maintainability/design debt and do not reopen the historical hard Canon backlog.
+
+
 ## 2026-09-13 — repository implementation baseline
 
 ### Reconnaissance
