@@ -141,32 +141,13 @@ final readonly class AnalyticsReportGeneratorService implements AnalyticsReportG
             'to' => $to->format('Y-m-d H:i:s'),
         ];
 
-        if (array_key_exists('vendorId', $params) && null !== $params['vendorId'] && '' != $params['vendorId']) {
-            if (is_int($params['vendorId'])) {
-                $vendorId = $params['vendorId'];
-            } elseif (is_string($params['vendorId']) && 1 === preg_match('/^\d+$/', $params['vendorId'])) {
-                $vendorId = (int) $params['vendorId'];
-            } else {
-                throw new \InvalidArgumentException('Report parameter "vendorId" must be a positive integer.');
-            }
-
-            if ($vendorId <= 0) {
-                throw new \InvalidArgumentException('Report parameter "vendorId" must be a positive integer.');
-            }
-
+        $vendorId = $this->normalizeVendorId($params['vendorId'] ?? null);
+        if (null !== $vendorId) {
             $normalized['vendorId'] = $vendorId;
         }
 
-        if (array_key_exists('currency', $params) && null !== $params['currency'] && '' !== $params['currency']) {
-            if (!is_string($params['currency'])) {
-                throw new \InvalidArgumentException('Report parameter "currency" must be a string.');
-            }
-
-            $currency = strtoupper(trim($params['currency']));
-            if (1 !== preg_match('/^[A-Z]{3}$/', $currency)) {
-                throw new \InvalidArgumentException('Report parameter "currency" must be a 3-letter ISO code.');
-            }
-
+        $currency = $this->normalizeCurrency($params['currency'] ?? null);
+        if (null !== $currency) {
             $normalized['currency'] = $currency;
         }
 
@@ -175,6 +156,45 @@ final readonly class AnalyticsReportGeneratorService implements AnalyticsReportG
         }
 
         return $normalized;
+    }
+
+    private function normalizeVendorId(mixed $value): ?int
+    {
+        if (null === $value || '' === $value) {
+            return null;
+        }
+
+        if (is_int($value)) {
+            $vendorId = $value;
+        } elseif (is_string($value) && 1 === preg_match('/^\d+$/', $value)) {
+            $vendorId = (int) $value;
+        } else {
+            throw new \InvalidArgumentException('Report parameter "vendorId" must be a positive integer.');
+        }
+
+        if ($vendorId <= 0) {
+            throw new \InvalidArgumentException('Report parameter "vendorId" must be a positive integer.');
+        }
+
+        return $vendorId;
+    }
+
+    private function normalizeCurrency(mixed $value): ?string
+    {
+        if (null === $value || '' === $value) {
+            return null;
+        }
+
+        if (!is_string($value)) {
+            throw new \InvalidArgumentException('Report parameter "currency" must be a string.');
+        }
+
+        $currency = strtoupper(trim($value));
+        if (1 !== preg_match('/^[A-Z]{3}$/', $currency)) {
+            throw new \InvalidArgumentException('Report parameter "currency" must be a 3-letter ISO code.');
+        }
+
+        return $currency;
     }
 
     /**
