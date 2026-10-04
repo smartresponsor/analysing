@@ -294,6 +294,17 @@
 - Aggregate `composer quality` was not admitted as a single heavy worker because Console MCP was in `RUNTIME_CAPACITY_ADMIT_LIGHT_ONLY`; its directly relevant deterministic constituents were executed individually and passed. This is orchestration-capacity evidence, not a repository failure.
 - No browser/mobile UI, navigation, form, or user flow changed in this service/test-only pass, so fresh screenshot evidence is not applicable; the central Visual Gallery remains the canonical inspection surface.
 
+### 2026-10-04 — task engine-20261004090757-analysing-992e39 report-parameter complexity checkpoint
+
+- Re-established a clean live baseline on `rc/analysing-canon-vendor-20260913` through Console MCP and consumed the supplied CanonScanning evidence before mutation. The historical hard Canon failures remain remediated in the current tree.
+- Opening maturity reconnaissance compared current product-analytics reporting expectations with PostHog and Amplitude: recurring dashboards/reports, filters, exports, refreshability, and reproducible metric views are baseline product expectations; richer AI analysis, self-service exploration, and dashboard UX remain growth work rather than blockers for this backend-only RC pass.
+- Re-read the current Analysing instructions/README/Composer contract, the mandatory Objecting, Cruding, Viewing, Interfacing, and Gating owner contracts, and Canonization Canon014. This pass stays inside Analysing report-generation responsibility and does not absorb CRUD, shared presentation, system-field, or shell ownership.
+- Fresh pre-change Inspecting reported 17 medium observations, zero PHPStan errors, and zero autofixable findings. `AnalyticsReportGeneratorService::normalizeParams()` was the only high-complexity hotspot, at cyclomatic complexity 17.
+- Extracted Vendor identifier and currency normalization into focused private helpers while preserving accepted values, validation messages, normalized output shape, public service interface, persistence flow, exporter behavior, and report lifecycle.
+- Deterministic post-change verification is GREEN: changed PHP syntax lint; Composer strict/lock validation; PHPStan max over 297 files; PHPUnit 182 tests / 629 assertions with 4 existing non-blocking deprecations; and Gating 10 rules / 0 failed / 0 warnings / 3 profile-dependent skips.
+- Fresh post-mutation Inspecting report `D:\\PhpstormProjects\\www\\Inspecting\\.inspecting\\reports\\D--PhpstormProjects-www-Analysing-20261004-133807.json` has zero PHPStan/file errors, zero autofixable findings, and reduces the structural contour from 17 to 16 medium observations. The `normalizeParams()` complexity finding is gone and maximum measured complexity fell from 17 to 13.
+- No browser/mobile UI, navigation, form, or user flow changed in this backend service refactor, so fresh screenshot evidence is not applicable; the central Visual Gallery remains the canonical inspection surface.
+
 ### 2026-10-04 — task engine-20261004122534-analysing-e98aea Vendor-scope maintainability checkpoint
 
 - Re-established the live Analysing baseline through Console MCP and consumed the supplied 2026-09-29 CanonScanning RED/Inspecting evidence plus the current 2026-10-04 Inspecting report. The historical hard Canon022/045/047/052/054/055/056-063 backlog remains remediated; current work stays inside Analysing analytics boundary enforcement.
