@@ -9,29 +9,29 @@ interface AnalyticsRepositoryInterface
     /**
      * @param list<string> $steps
      *
-     * @return list<array{day:mixed,user_count:mixed}>
+     * @return list<array{day:string,user_count:int}>
      */
     public function fetchFunnel(string $app, string $env, array $steps, \DateTimeImmutable $from, \DateTimeImmutable $to): array;
 
     /**
-     * @return list<array{day_offset:mixed,active_user:mixed}>
+     * @return list<array{day_offset:int,active_user:int}>
      */
     public function fetchRetention(string $app, string $env, \DateTimeImmutable $cohort, int $days): array;
 
     /**
      * @param list<string> $steps
      *
-     * @return list<array{cohort_date:mixed,user_count:mixed}>
+     * @return list<array{cohort_date:string,user_count:int}>
      */
     public function fetchCohort(string $app, string $env, array $steps, \DateTimeImmutable $from, \DateTimeImmutable $to): array;
 
     /**
-     * @return list<array{from_event:mixed,to_event:mixed,transition_count:mixed}>
+     * @return list<array{from_event:string,to_event:string,transition_count:int}>
      */
     public function fetchPath(string $app, string $env, \DateTimeImmutable $day, int $top): array;
 
     /**
-     * @return list<array{user_count:mixed}>
+     * @return list<array{user_count:int}>
      */
     public function fetchAnomalySeries(string $metric, int $days): array;
 
