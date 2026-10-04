@@ -69,69 +69,102 @@ final class AnalyticsAggregateController implements AnalyticsAggregateController
         });
     }
 
+    /**
+     * @param callable(): array<mixed> $callback
+     */
     private function runOperation(string $operation, callable $callback): JsonResponse
     {
         $startedAt = microtime(true);
 
         try {
-            $result = $callback();
-
-            $this->logger->info('Analytics aggregate operation completed.', [
-                'operation' => $operation,
-                'component' => self::COMPONENT,
-                'result_count' => is_countable($result) ? count($result) : null,
-                'duration_ms' => $this->durationMs($startedAt),
-            ]);
-
-            return $this->successResponses->create($operation, $result, $startedAt);
+            return $this->completeOperation($operation, $callback(), $startedAt);
         } catch (BadRequestHttpException|\InvalidArgumentException $exception) {
-            $this->logger->warning('Analytics aggregate request rejected.', [
-                'operation' => $operation,
-                'component' => self::COMPONENT,
-                'duration_ms' => $this->durationMs($startedAt),
-                'exception' => $exception,
-            ]);
-
-            return $this->errorResponses->create(
-                $operation,
-                'Invalid aggregate request.',
-                'analytics.aggregate.invalid_request',
-                Response::HTTP_BAD_REQUEST,
-                $startedAt,
-            );
+            return $this->rejectOperation($operation, $exception, $startedAt);
         } catch (\RuntimeException $exception) {
-            $this->logger->error('Analytics aggregate operation failed.', [
-                'operation' => $operation,
-                'component' => self::COMPONENT,
-                'duration_ms' => $this->durationMs($startedAt),
-                'exception' => $exception,
-            ]);
-
-            return $this->errorResponses->create(
-                $operation,
-                'Aggregate data unavailable.',
-                'analytics.aggregate.unavailable',
-                Response::HTTP_SERVICE_UNAVAILABLE,
-                $startedAt,
-                true,
-            );
+            return $this->failUnavailableOperation($operation, $exception, $startedAt);
         } catch (\Throwable $exception) {
-            $this->logger->error('Analytics aggregate operation failed unexpectedly.', [
-                'operation' => $operation,
-                'component' => self::COMPONENT,
-                'duration_ms' => $this->durationMs($startedAt),
-                'exception' => $exception,
-            ]);
-
-            return $this->errorResponses->create(
-                $operation,
-                'Aggregate data unavailable.',
-                'analytics.aggregate.failed',
-                Response::HTTP_INTERNAL_SERVER_ERROR,
-                $startedAt,
-                true,
-            );
+            return $this->failUnexpectedOperation($operation, $exception, $startedAt);
         }
+    }
+
+    /**
+     * @param array<mixed> $result
+     */
+    private function completeOperation(string $operation, array $result, float $startedAt): JsonResponse
+    {
+        $this->logger->info('Analytics aggregate operation completed.', [
+            'operation' => $operation,
+            'component' => self::COMPONENT,
+            'result_count' => count($result),
+            'duration_ms' => $this->durationMs($startedAt),
+        ]);
+
+        return $this->successResponses->create($operation, $result, $startedAt);
+    }
+
+    private function rejectOperation(
+        string $operation,
+        \Throwable $exception,
+        float $startedAt,
+    ): JsonResponse {
+        $this->logger->warning('Analytics aggregate request rejected.', [
+            'operation' => $operation,
+            'component' => self::COMPONENT,
+            'duration_ms' => $this->durationMs($startedAt),
+            'exception' => $exception,
+        ]);
+
+        return $this->errorResponses->create(
+            $operation,
+            'Invalid aggregate request.',
+            'analytics.aggregate.invalid_request',
+            Response::HTTP_BAD_REQUEST,
+            $startedAt,
+        );
+    }
+
+    private function failUnavailableOperation(
+        string $operation,
+        \RuntimeException $exception,
+        float $startedAt,
+    ): JsonResponse {
+        $this->logger->error('Analytics aggregate operation failed.', [
+            'operation' => $operation,
+            'component' => self::COMPONENT,
+            'duration_ms' => $this->durationMs($startedAt),
+            'exception' => $exception,
+        ]);
+
+        return $this->errorResponses->create(
+            $operation,
+            'Aggregate data unavailable.',
+            'analytics.aggregate.unavailable',
+            Response::HTTP_SERVICE_UNAVAILABLE,
+            $startedAt,
+            true,
+        );
+    }
+
+    private function failUnexpectedOperation(
+        string $operation,
+        \Throwable $exception,
+        float $startedAt,
+    ): JsonResponse {
+        $this->logger->error('Analytics aggregate operation failed unexpectedly.', [
+            'operation' => $operation,
+            'component' => self::COMPONENT,
+            'duration_ms' => $this->durationMs($startedAt),
+            'exception' => $exception,
+        ]);
+
+        return $this->errorResponses->create(
+            $operation,
+            'Aggregate data unavailable.',
+            'analytics.aggregate.failed',
+            Response::HTTP_INTERNAL_SERVER_ERROR,
+            $startedAt,
+            true,
+        );
     }
 
     /**
