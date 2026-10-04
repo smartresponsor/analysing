@@ -36,68 +36,83 @@ final class AnalyticsApiController implements AnalyticsApiControllerInterface
         try {
             $catalog = $this->registry->list();
             if ([] === $catalog) {
-                $this->logger->error('Analytics API metrics endpoint detected an empty KPI catalog.', [
-                    'component' => self::COMPONENT,
-                    'operation' => self::OPERATION,
-                    'duration_ms' => $this->durationMs($startedAt),
-                ]);
-
-                return $this->errorResponses->create(
-                    self::OPERATION,
-                    'Metrics catalog unavailable.',
-                    'analytics.metrics.unavailable',
-                    Response::HTTP_SERVICE_UNAVAILABLE,
-                    $startedAt,
-                    true,
-                );
+                return $this->catalogUnavailable($startedAt, 'Analytics API metrics endpoint detected an empty KPI catalog.');
             }
 
-            $metrics = [];
-            foreach ($catalog as $key => $label) {
-                $metrics[] = [
-                    'key' => $key,
-                    'label' => $label,
-                ];
-            }
-
-            try {
-                $catalogChecksum = hash('sha256', json_encode($metrics, JSON_THROW_ON_ERROR));
-            } catch (\JsonException $exception) {
-                throw new \RuntimeException('Unable to encode metrics catalog checksum.', 0, $exception);
-            }
-
+            $metrics = $this->buildMetrics($catalog);
+            $catalogChecksum = $this->catalogChecksum($metrics);
             $response = [
                 'metric_count' => count($metrics),
                 'catalog_checksum' => $catalogChecksum,
                 'metrics' => $metrics,
             ];
 
-            $this->logger->info('Analytics API metrics endpoint completed.', [
-                'component' => self::COMPONENT,
-                'operation' => self::OPERATION,
-                'metric_count' => $response['metric_count'],
-                'catalog_checksum' => $catalogChecksum,
-                'duration_ms' => $this->durationMs($startedAt),
-            ]);
+            $this->logSuccess($response['metric_count'], $catalogChecksum, $startedAt);
 
             return $this->successResponses->create(self::OPERATION, $response, $startedAt);
         } catch (\InvalidArgumentException|\RuntimeException $exception) {
-            $this->logger->error('Analytics API metrics endpoint failed.', [
-                'component' => self::COMPONENT,
-                'operation' => self::OPERATION,
-                'duration_ms' => $this->durationMs($startedAt),
-                'exception' => $exception,
-            ]);
-
-            return $this->errorResponses->create(
-                self::OPERATION,
-                'Metrics catalog unavailable.',
-                'analytics.metrics.unavailable',
-                Response::HTTP_SERVICE_UNAVAILABLE,
-                $startedAt,
-                true,
-            );
+            return $this->catalogUnavailable($startedAt, 'Analytics API metrics endpoint failed.', $exception);
         }
+    }
+
+    /**
+     * @param array<string, string> $catalog
+     *
+     * @return list<array{key:string,label:string}>
+     */
+    private function buildMetrics(array $catalog): array
+    {
+        $metrics = [];
+        foreach ($catalog as $key => $label) {
+            $metrics[] = ['key' => $key, 'label' => $label];
+        }
+
+        return $metrics;
+    }
+
+    /**
+     * @param list<array{key:string,label:string}> $metrics
+     */
+    private function catalogChecksum(array $metrics): string
+    {
+        try {
+            return hash('sha256', json_encode($metrics, JSON_THROW_ON_ERROR));
+        } catch (\JsonException $exception) {
+            throw new \RuntimeException('Unable to encode metrics catalog checksum.', 0, $exception);
+        }
+    }
+
+    private function logSuccess(int $metricCount, string $catalogChecksum, float $startedAt): void
+    {
+        $this->logger->info('Analytics API metrics endpoint completed.', [
+            'component' => self::COMPONENT,
+            'operation' => self::OPERATION,
+            'metric_count' => $metricCount,
+            'catalog_checksum' => $catalogChecksum,
+            'duration_ms' => $this->durationMs($startedAt),
+        ]);
+    }
+
+    private function catalogUnavailable(float $startedAt, string $message, ?\Throwable $exception = null): JsonResponse
+    {
+        $context = [
+            'component' => self::COMPONENT,
+            'operation' => self::OPERATION,
+            'duration_ms' => $this->durationMs($startedAt),
+        ];
+        if (null !== $exception) {
+            $context['exception'] = $exception;
+        }
+        $this->logger->error($message, $context);
+
+        return $this->errorResponses->create(
+            self::OPERATION,
+            'Metrics catalog unavailable.',
+            'analytics.metrics.unavailable',
+            Response::HTTP_SERVICE_UNAVAILABLE,
+            $startedAt,
+            true,
+        );
     }
 
     private function durationMs(float $startedAt): int
