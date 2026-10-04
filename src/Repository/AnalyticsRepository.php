@@ -19,10 +19,14 @@ use Psr\Log\LoggerInterface;
 
 final readonly class AnalyticsRepository implements AnalyticsRepositoryInterface
 {
+    private AnalyticsRepositoryRowNormalizer $rowNormalizer;
+
     public function __construct(
         private EntityManagerInterface $em,
         private LoggerInterface $logger,
+        ?AnalyticsRepositoryRowNormalizer $rowNormalizer = null,
     ) {
+        $this->rowNormalizer = $rowNormalizer ?? new AnalyticsRepositoryRowNormalizer($logger);
     }
 
     public function fetchFunnel(string $app, string $env, array $steps, \DateTimeImmutable $from, \DateTimeImmutable $to): array
@@ -59,7 +63,7 @@ final readonly class AnalyticsRepository implements AnalyticsRepositoryInterface
         }
 
         try {
-            return $this->normalizeFunnelRows($this->normalizeScalarRows($qb->getQuery()->getScalarResult()));
+            return $this->rowNormalizer->normalizeFunnelRows($this->rowNormalizer->normalizeScalarRows($qb->getQuery()->getScalarResult()));
         } catch (\Throwable $exception) {
             $this->logger->error('Analytics infra repository funnel query failed.', [
                 'exception' => $exception,
@@ -95,7 +99,7 @@ final readonly class AnalyticsRepository implements AnalyticsRepositoryInterface
             ->setParameter('days', $days);
 
         try {
-            return $this->normalizeRetentionRows($this->normalizeScalarRows($qb->getQuery()->getScalarResult()));
+            return $this->rowNormalizer->normalizeRetentionRows($this->rowNormalizer->normalizeScalarRows($qb->getQuery()->getScalarResult()));
         } catch (\Throwable $exception) {
             $this->logger->error('Analytics infra repository retention query failed.', [
                 'exception' => $exception,
@@ -137,7 +141,7 @@ final readonly class AnalyticsRepository implements AnalyticsRepositoryInterface
             ->setParameter('to', $to->format('Y-m-d'));
 
         try {
-            return $this->normalizeCohortRows($this->normalizeScalarRows($qb->getQuery()->getScalarResult()));
+            return $this->rowNormalizer->normalizeCohortRows($this->rowNormalizer->normalizeScalarRows($qb->getQuery()->getScalarResult()));
         } catch (\Throwable $exception) {
             $this->logger->error('Analytics infra repository cohort query failed.', [
                 'exception' => $exception,
@@ -172,7 +176,7 @@ final readonly class AnalyticsRepository implements AnalyticsRepositoryInterface
             ->setParameter('day', $day->format('Y-m-d'));
 
         try {
-            return $this->normalizePathRows($this->normalizeScalarRows($qb->getQuery()->getScalarResult()));
+            return $this->rowNormalizer->normalizePathRows($this->rowNormalizer->normalizeScalarRows($qb->getQuery()->getScalarResult()));
         } catch (\Throwable $exception) {
             $this->logger->error('Analytics infra repository path query failed.', [
                 'exception' => $exception,
@@ -204,7 +208,7 @@ final readonly class AnalyticsRepository implements AnalyticsRepositoryInterface
             ->setParameter('metric', $metric);
 
         try {
-            $rows = $this->normalizeSeriesRows($this->normalizeScalarRows($qb->getQuery()->getScalarResult()));
+            $rows = $this->rowNormalizer->normalizeSeriesRows($this->rowNormalizer->normalizeScalarRows($qb->getQuery()->getScalarResult()));
 
             return array_reverse($rows);
         } catch (\Throwable $exception) {
@@ -232,12 +236,12 @@ final readonly class AnalyticsRepository implements AnalyticsRepositoryInterface
             ->setParameter('metric', $metric);
 
         try {
-            $row = $this->normalizeScalarRows($qb->getQuery()->getScalarResult())[0] ?? null;
+            $row = $this->rowNormalizer->normalizeScalarRows($qb->getQuery()->getScalarResult())[0] ?? null;
             if (null === $row) {
                 return 0;
             }
 
-            return $this->readRequiredInt($row, 'value', 'metric_tree', 0);
+            return $this->rowNormalizer->readRequiredInt($row, 'value', 'metric_tree', 0);
         } catch (\Throwable $exception) {
             $this->logger->error('Analytics infra repository latest metric query failed.', [
                 'exception' => $exception,
@@ -298,159 +302,6 @@ final readonly class AnalyticsRepository implements AnalyticsRepositoryInterface
 
             throw new \RuntimeException('AnalyticsExperiment metric upsert failed.', 0, $exception);
         }
-    }
-
-    /**
-     * @param list<array<string,mixed>> $rows
-     *
-     * @return list<array{day:string,user_count:int}>
-     */
-    private function normalizeFunnelRows(array $rows): array
-    {
-        return array_map(function (mixed $row, int $index): array {
-            return [
-                'day' => $this->readRequiredString($row, 'day', 'funnel', $index),
-                'user_count' => $this->readRequiredInt($row, 'user_count', 'funnel', $index),
-            ];
-        }, $rows, array_keys($rows));
-    }
-
-    /**
-     * @param list<array<string,mixed>> $rows
-     *
-     * @return list<array{cohort_date:string,user_count:int}>
-     */
-    private function normalizeCohortRows(array $rows): array
-    {
-        return array_map(function (mixed $row, int $index): array {
-            return [
-                'cohort_date' => $this->readRequiredString($row, 'cohort_date', 'cohort', $index),
-                'user_count' => $this->readRequiredInt($row, 'user_count', 'cohort', $index),
-            ];
-        }, $rows, array_keys($rows));
-    }
-
-    /**
-     * @param list<array<string,mixed>> $rows
-     *
-     * @return list<array{user_count:int}>
-     */
-    private function normalizeSeriesRows(array $rows): array
-    {
-        return array_map(function (mixed $row, int $index): array {
-            return [
-                'user_count' => $this->readRequiredInt($row, 'user_count', 'series', $index),
-            ];
-        }, $rows, array_keys($rows));
-    }
-
-    /**
-     * @param array<mixed> $rows
-     *
-     * @return list<array<string,mixed>>
-     */
-    private function normalizeScalarRows(array $rows): array
-    {
-        $normalized = [];
-        foreach (array_values($rows) as $row) {
-            $normalized[] = $this->normalizeScalarRow($row);
-        }
-
-        return $normalized;
-    }
-
-    /**
-     * @param mixed $row
-     *
-     * @return array<string,mixed>
-     */
-    private function normalizeScalarRow(mixed $row): array
-    {
-        if (!is_array($row)) {
-            throw new \RuntimeException('Analytics query row must be an array.');
-        }
-
-        $normalized = [];
-        foreach ($row as $key => $value) {
-            $normalized[(string) $key] = $value;
-        }
-
-        return $normalized;
-    }
-
-    /**
-     * @param list<array<string,mixed>> $rows
-     *
-     * @return list<array{day_offset:int,active_user:int}>
-     */
-    private function normalizeRetentionRows(array $rows): array
-    {
-        return array_map(function (mixed $row, int $index): array {
-            return [
-                'day_offset' => $this->readRequiredInt($row, 'day_offset', 'retention', $index),
-                'active_user' => $this->readRequiredInt($row, 'active_user', 'retention', $index),
-            ];
-        }, $rows, array_keys($rows));
-    }
-
-    /**
-     * @param list<array<string,mixed>> $rows
-     *
-     * @return list<array{from_event:string,to_event:string,transition_count:int}>
-     */
-    private function normalizePathRows(array $rows): array
-    {
-        return array_map(function (mixed $row, int $index): array {
-            return [
-                'from_event' => $this->readRequiredString($row, 'from_event', 'path', $index),
-                'to_event' => $this->readRequiredString($row, 'to_event', 'path', $index),
-                'transition_count' => $this->readRequiredInt($row, 'transition_count', 'path', $index),
-            ];
-        }, $rows, array_keys($rows));
-    }
-
-    /**
-     * @param array<string,mixed> $row
-     */
-    private function readRequiredString(array $row, string $field, string $query, int $index): string
-    {
-        if (!array_key_exists($field, $row) || !is_scalar($row[$field])) {
-            $this->logger->error('Analytics infra repository row is missing a required scalar string field.', [
-                'query' => $query,
-                'row_index' => $index,
-                'field' => $field,
-            ]);
-            throw new \RuntimeException(sprintf('Aggregate %s repository row %d is missing field %s.', $query, $index, $field));
-        }
-
-        $value = trim((string) $row[$field]);
-        if ('' === $value) {
-            $this->logger->error('Analytics infra repository row contains an empty required string field.', [
-                'query' => $query,
-                'row_index' => $index,
-                'field' => $field,
-            ]);
-            throw new \RuntimeException(sprintf('Aggregate %s repository row %d contains an empty field %s.', $query, $index, $field));
-        }
-
-        return $value;
-    }
-
-    /**
-     * @param array<string,mixed> $row
-     */
-    private function readRequiredInt(array $row, string $field, string $query, int $index): int
-    {
-        if (!array_key_exists($field, $row) || (!is_scalar($row[$field]) && null !== $row[$field])) {
-            $this->logger->error('Analytics infra repository row is missing a required integer field.', [
-                'query' => $query,
-                'row_index' => $index,
-                'field' => $field,
-            ]);
-            throw new \RuntimeException(sprintf('Aggregate %s repository row %d is missing field %s.', $query, $index, $field));
-        }
-
-        return (int) $row[$field];
     }
 
     private function normalizeKey(string $value, string $field): string
