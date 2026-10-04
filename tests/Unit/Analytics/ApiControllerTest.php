@@ -59,4 +59,23 @@ final class ApiControllerTest extends TestCase
         self::assertFalse($payload['ok']);
         self::assertSame('Metrics catalog unavailable.', $payload['error']);
     }
+
+    public function testMetricsReturnsServiceUnavailableForEmptyCatalog(): void
+    {
+        $registry = $this->createMock(AnalyticsKpiRegistryInterface::class);
+        $registry->method('list')->willReturn([]);
+
+        $controller = new AnalyticsApiController(
+            $registry,
+            $this->createMock(LoggerInterface::class),
+            $this->createSuccessFactory(),
+            $this->createErrorFactory(),
+        );
+        $response = $controller->metrics();
+        $payload = $this->decodeJsonResponse($response);
+
+        self::assertSame(503, $response->getStatusCode());
+        self::assertFalse($payload['ok']);
+        self::assertSame('analytics.metrics.unavailable', $payload['error_code']);
+    }
 }
