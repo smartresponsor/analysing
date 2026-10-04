@@ -1,5 +1,15 @@
 # CMCP execution journal
 
+## 2026-10-04 — task engine-20261004224813-analysing-5d71a4 verification and RC acceptance
+
+- Re-established Console-MCP execution after the transient upstream 502 condition. The live branch advanced concurrently to `c13dc0837455db46b1158c95005cc1b22172a9db` and remains synchronized with origin.
+- Re-consumed the supplied historical CanonScanning RED backlog plus current Analysing, Objecting, Cruding, Viewing, Interfacing, Gating, and Canon014 responsibility contracts. Historical Canon022/045/047/052/054/055/056/063 hard failures remain remediated in the current tree.
+- Market/maturity split remains explicit: RC-critical Analysing scope is deterministic analytics behavior, Vendor/security boundaries, stable API/report contracts, observability, lifecycle/error safety, and reproducible verification. Richer self-service/AI analytics and dashboard UX remain post-RC growth; generic CRUD, shared presentation/shell, Objecting system-field ownership, streaming infrastructure, and storage-engine ownership remain outside Analysing.
+- Fresh Inspecting report `D:\\PhpstormProjects\\www\\Inspecting\\.inspecting\\reports\\D--PhpstormProjects-www-Analysing-20261004-234529.json` is clean for PHPStan/file errors, has zero high/autofixable findings, and only three medium observational reviews: `AnalyticsExportJobEntity` cohesion, `AnalyticsRequestAuthSubscriber` cohesion, and `AnalyticsRepository` size. None establishes a stable safe responsibility split from current evidence, so speculative production refactoring is not RC-required.
+- The only dirty path at this checkpoint is `tests/Unit/Analytics/RequestAuthSubscriberTest.php`. The current journal proves that path is owned by concurrent task `engine-20261004233012-analysing-71d440`; this task therefore preserves it without re-attribution or duplicate integration.
+- Deterministic acceptance on the live snapshot is GREEN: `composer validate --strict --check-lock`; aggregate `composer quality` with PHPStan max over 297 files, PHPUnit 189 tests / 658 assertions with four existing non-blocking deprecations, schema parity across 9 tables / 2 migrations, and Gating 10 rules / 0 failed / 0 warnings / 3 profile-context skips.
+- No user-observable UI, navigation, form, or browser/mobile behavior is changed by this verification-only acceptance pass; fresh screenshot evidence is not applicable.
+
 ## 2026-10-04 — task engine-20261004233012-analysing-71d440 authorization-boundary RC hardening
 
 - Re-established the live Console-MCP baseline on `rc/analysing-canon-vendor-20260913`; the branch converged during this run to HEAD `c13dc0837455db46b1158c95005cc1b22172a9db`, ahead/behind `0/0`. Concurrent renderer, repository-interface, Playwright and QA-router work was preserved while active and later integrated by its owner; this task did not overwrite or re-attribute those paths.
