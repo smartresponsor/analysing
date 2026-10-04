@@ -33,60 +33,83 @@ final class AnalyticsFlagController implements AnalyticsFlagControllerInterface
         try {
             $result = $this->domain->evaluate($this->decodeBody($request));
 
-            $this->logger->info('AnalyticsFlag evaluation completed.', [
-                'operation' => 'evaluate',
-                'component' => self::COMPONENT,
-                'enabled' => $result['enabled'],
-                'duration_ms' => $this->durationMs($startedAt),
-            ]);
-
-            return $this->successResponses->create('evaluate', $result, $startedAt);
+            return $this->completedResponse($result, $startedAt);
         } catch (\InvalidArgumentException $exception) {
-            $this->logger->warning('AnalyticsFlag evaluation request is invalid.', [
-                'component' => self::COMPONENT,
-                'duration_ms' => $this->durationMs($startedAt),
-                'exception' => $exception,
-            ]);
-
-            return $this->errorResponses->create(
-                'evaluate',
-                'Invalid flag request.',
-                'analytics.flag.invalid_request',
-                Response::HTTP_BAD_REQUEST,
-                $startedAt,
-            );
+            return $this->invalidRequestResponse($exception, $startedAt);
         } catch (\RuntimeException $exception) {
-            $this->logger->error('AnalyticsFlag evaluation failed.', [
-                'component' => self::COMPONENT,
-                'duration_ms' => $this->durationMs($startedAt),
-                'exception' => $exception,
-            ]);
-
-            return $this->errorResponses->create(
-                'evaluate',
-                'AnalyticsFlag evaluation unavailable.',
-                'analytics.flag.unavailable',
-                Response::HTTP_SERVICE_UNAVAILABLE,
-                $startedAt,
-                true,
-            );
+            return $this->unavailableResponse($exception, $startedAt);
         } catch (\Throwable $exception) {
-            $this->logger->error('AnalyticsFlag evaluation failed unexpectedly.', [
-                'operation' => 'evaluate',
-                'component' => self::COMPONENT,
-                'duration_ms' => $this->durationMs($startedAt),
-                'exception' => $exception,
-            ]);
-
-            return $this->errorResponses->create(
-                'evaluate',
-                'AnalyticsFlag evaluation unavailable.',
-                'analytics.flag.failed',
-                Response::HTTP_INTERNAL_SERVER_ERROR,
-                $startedAt,
-                true,
-            );
+            return $this->failedResponse($exception, $startedAt);
         }
+    }
+
+    /**
+     * @param array<string, mixed> $result
+     */
+    private function completedResponse(array $result, float $startedAt): JsonResponse
+    {
+        $this->logger->info('AnalyticsFlag evaluation completed.', [
+            'operation' => 'evaluate',
+            'component' => self::COMPONENT,
+            'enabled' => $result['enabled'],
+            'duration_ms' => $this->durationMs($startedAt),
+        ]);
+
+        return $this->successResponses->create('evaluate', $result, $startedAt);
+    }
+
+    private function invalidRequestResponse(\InvalidArgumentException $exception, float $startedAt): JsonResponse
+    {
+        $this->logger->warning('AnalyticsFlag evaluation request is invalid.', [
+            'component' => self::COMPONENT,
+            'duration_ms' => $this->durationMs($startedAt),
+            'exception' => $exception,
+        ]);
+
+        return $this->errorResponses->create(
+            'evaluate',
+            'Invalid flag request.',
+            'analytics.flag.invalid_request',
+            Response::HTTP_BAD_REQUEST,
+            $startedAt,
+        );
+    }
+
+    private function unavailableResponse(\RuntimeException $exception, float $startedAt): JsonResponse
+    {
+        $this->logger->error('AnalyticsFlag evaluation failed.', [
+            'component' => self::COMPONENT,
+            'duration_ms' => $this->durationMs($startedAt),
+            'exception' => $exception,
+        ]);
+
+        return $this->errorResponses->create(
+            'evaluate',
+            'AnalyticsFlag evaluation unavailable.',
+            'analytics.flag.unavailable',
+            Response::HTTP_SERVICE_UNAVAILABLE,
+            $startedAt,
+            true,
+        );
+    }
+
+    private function failedResponse(\Throwable $exception, float $startedAt): JsonResponse
+    {
+        $this->logger->error('AnalyticsFlag evaluation failed unexpectedly.', [
+            'operation' => 'evaluate',
+            'component' => self::COMPONENT,
+            'duration_ms' => $this->durationMs($startedAt),
+            'exception' => $exception,
+        ]);
+
+        return $this->errorResponses->create(
+            'evaluate',
+            'AnalyticsFlag evaluation unavailable.',
+            'analytics.flag.failed',
+            Response::HTTP_INTERNAL_SERVER_ERROR,
+            $startedAt,
+            true,
+        );
     }
 
     /**
