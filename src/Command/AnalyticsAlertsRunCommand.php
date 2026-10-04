@@ -37,59 +37,8 @@ final class AnalyticsAlertsRunCommand extends BaseCommand
             $fromLabel = $from->format(DATE_ATOM);
             $toLabel = $to->format(DATE_ATOM);
             $results = $this->evaluator->evaluate($from, $to);
-            $matchedCount = 0;
-            $dispatchedCount = 0;
-            $failedDispatchCount = 0;
-            $skippedMalformedCount = 0;
-
             $evaluatedCount = count($results);
-
-            foreach ($results as $index => $result) {
-                if (!is_array($result)) {
-                    ++$skippedMalformedCount;
-                    $this->logger->warning('Analytics alerts run skipped a malformed evaluator result.', [
-                        'result_index' => $index,
-                        'result_type' => get_debug_type($result),
-                    ]);
-                    continue;
-                }
-
-                if (true !== $result['matched']) {
-                    continue;
-                }
-
-                $rule = $result['rule'];
-                $snapshot = $result['snapshot'] ?? null;
-                if (!$rule instanceof AnalyticsAlertRuleEntity || !$snapshot instanceof AnalyticsMetricSnapshotEntity) {
-                    ++$skippedMalformedCount;
-                    $this->logger->warning('Analytics alerts run skipped a matched result with an invalid rule or snapshot.', [
-                        'result_index' => $index,
-                        'rule_type' => get_debug_type($rule),
-                        'snapshot_type' => get_debug_type($snapshot),
-                    ]);
-                    continue;
-                }
-
-                ++$matchedCount;
-                $message = sprintf(
-                    'Rule "%s" matched on %s=%s',
-                    $rule->getCode(),
-                    $snapshot->getMetric(),
-                    $snapshot->getValue(),
-                );
-
-                try {
-                    $this->dispatcher->dispatch($rule, $message);
-                    ++$dispatchedCount;
-                } catch (\Throwable $exception) {
-                    ++$failedDispatchCount;
-                    $this->logger->error('Analytics alert dispatch failed.', [
-                        'exception' => $exception,
-                        'rule' => $rule->getCode(),
-                        'message' => $message,
-                    ]);
-                }
-            }
+            [$matchedCount, $dispatchedCount, $failedDispatchCount, $skippedMalformedCount] = $this->processResults($results);
 
             $this->logger->info('Analytics alerts run completed.', [
                 'from' => $fromLabel,
@@ -121,5 +70,74 @@ final class AnalyticsAlertsRunCommand extends BaseCommand
 
             return self::FAILURE;
         }
+    }
+
+    /**
+     * @param array<mixed> $results
+     *
+     * @return array{int, int, int, int}
+     */
+    private function processResults(array $results): array
+    {
+        $matchedCount = 0;
+        $dispatchedCount = 0;
+        $failedDispatchCount = 0;
+        $skippedMalformedCount = 0;
+
+        foreach ($results as $index => $result) {
+            if (!is_array($result)) {
+                ++$skippedMalformedCount;
+                $this->logger->warning('Analytics alerts run skipped a malformed evaluator result.', [
+                    'result_index' => $index,
+                    'result_type' => get_debug_type($result),
+                ]);
+                continue;
+            }
+
+            if (true !== $result['matched']) {
+                continue;
+            }
+
+            $rule = $result['rule'];
+            $snapshot = $result['snapshot'] ?? null;
+            if (!$rule instanceof AnalyticsAlertRuleEntity || !$snapshot instanceof AnalyticsMetricSnapshotEntity) {
+                ++$skippedMalformedCount;
+                $this->logger->warning('Analytics alerts run skipped a matched result with an invalid rule or snapshot.', [
+                    'result_index' => $index,
+                    'rule_type' => get_debug_type($rule),
+                    'snapshot_type' => get_debug_type($snapshot),
+                ]);
+                continue;
+            }
+
+            ++$matchedCount;
+            $message = $this->buildMessage($rule, $snapshot);
+
+            try {
+                $this->dispatcher->dispatch($rule, $message);
+                ++$dispatchedCount;
+            } catch (\Throwable $exception) {
+                ++$failedDispatchCount;
+                $this->logger->error('Analytics alert dispatch failed.', [
+                    'exception' => $exception,
+                    'rule' => $rule->getCode(),
+                    'message' => $message,
+                ]);
+            }
+        }
+
+        return [$matchedCount, $dispatchedCount, $failedDispatchCount, $skippedMalformedCount];
+    }
+
+    private function buildMessage(
+        AnalyticsAlertRuleEntity $rule,
+        AnalyticsMetricSnapshotEntity $snapshot,
+    ): string {
+        return sprintf(
+            'Rule "%s" matched on %s=%s',
+            $rule->getCode(),
+            $snapshot->getMetric(),
+            $snapshot->getValue(),
+        );
     }
 }
