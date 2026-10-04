@@ -20,19 +20,51 @@ final class AnalyticsSegmentationService implements AnalyticsSegmentationService
 
     public function apply(array $rows, AnalyticsDimension $dim, AnalyticsSegment $seg): array
     {
-        if (count($rows) > self::MAX_ROWS) {
-            $this->logger->warning('Analytics segmentation rejected too many rows.', [
-                'rows' => count($rows),
-                'max_rows' => self::MAX_ROWS,
-            ]);
-            throw new \InvalidArgumentException('Segmentation rows exceed the maximum allowed size.');
-        }
+        $this->assertRowLimit($rows);
 
-        $key = trim($dim->name());
-        $code = trim($seg->code());
+        $key = $this->normalizeDimension($dim);
+        $code = $this->normalizeSegment($seg, $key);
         $matched = [];
         $skipped = 0;
 
+        foreach ($rows as $index => $row) {
+            $match = $this->matchingRow($row, $index, $key, $code, $skipped);
+            if (null !== $match) {
+                $matched[] = $match;
+            }
+        }
+
+        $this->logger->info('Analytics segmentation completed.', [
+            'dimension' => $key,
+            'segment' => $code,
+            'matched_rows' => count($matched),
+            'rows' => count($rows),
+            'skipped_rows' => $skipped,
+        ]);
+
+        return $matched;
+    }
+
+    /**
+     * @param list<array<string, mixed>> $rows
+     */
+    private function assertRowLimit(array $rows): void
+    {
+        if (count($rows) <= self::MAX_ROWS) {
+            return;
+        }
+
+        $this->logger->warning('Analytics segmentation rejected too many rows.', [
+            'rows' => count($rows),
+            'max_rows' => self::MAX_ROWS,
+        ]);
+
+        throw new \InvalidArgumentException('Segmentation rows exceed the maximum allowed size.');
+    }
+
+    private function normalizeDimension(AnalyticsDimension $dim): string
+    {
+        $key = trim($dim->name());
         if ('' === $key) {
             $this->logger->warning('Analytics segmentation rejected an empty dimension name.');
 
@@ -48,6 +80,12 @@ final class AnalyticsSegmentationService implements AnalyticsSegmentationService
             throw new \InvalidArgumentException('Segmentation dimension exceeds the maximum allowed length.');
         }
 
+        return $key;
+    }
+
+    private function normalizeSegment(AnalyticsSegment $seg, string $key): string
+    {
+        $code = trim($seg->code());
         if ('' === $code) {
             $this->logger->warning('Analytics segmentation rejected an empty segment code.', [
                 'dimension' => $key,
@@ -65,49 +103,47 @@ final class AnalyticsSegmentationService implements AnalyticsSegmentationService
             throw new \InvalidArgumentException('Segmentation code exceeds the maximum allowed length.');
         }
 
-        foreach ($rows as $index => $row) {
-            if (!is_array($row)) {
-                ++$skipped;
-                $this->logger->warning('Analytics segmentation ignored a non-array row.', [
-                    'row_index' => $index,
-                    'row_type' => get_debug_type($row),
-                ]);
-                continue;
-            }
+        return $code;
+    }
 
-            if (!array_key_exists($key, $row)) {
-                ++$skipped;
-                $this->logger->warning('Analytics segmentation ignored a row missing the requested dimension.', [
-                    'row_index' => $index,
-                    'dimension' => $key,
-                ]);
-                continue;
-            }
+    /**
+     * @return array<string, mixed>|null
+     */
+    private function matchingRow(mixed $row, int|string $index, string $key, string $code, int &$skipped): ?array
+    {
+        if (!is_array($row)) {
+            ++$skipped;
+            $this->logger->warning('Analytics segmentation ignored a non-array row.', [
+                'row_index' => $index,
+                'row_type' => get_debug_type($row),
+            ]);
 
-            $value = $row[$key];
-            if (!is_scalar($value) && null !== $value) {
-                ++$skipped;
-                $this->logger->warning('Analytics segmentation ignored a row with a non-scalar dimension value.', [
-                    'row_index' => $index,
-                    'dimension' => $key,
-                    'value_type' => get_debug_type($value),
-                ]);
-                continue;
-            }
-
-            if (trim((string) $value) === $code) {
-                $matched[] = $row;
-            }
+            return null;
         }
 
-        $this->logger->info('Analytics segmentation completed.', [
-            'dimension' => $key,
-            'segment' => $code,
-            'matched_rows' => count($matched),
-            'rows' => count($rows),
-            'skipped_rows' => $skipped,
-        ]);
+        /** @var array<string, mixed> $row */
+        if (!array_key_exists($key, $row)) {
+            ++$skipped;
+            $this->logger->warning('Analytics segmentation ignored a row missing the requested dimension.', [
+                'row_index' => $index,
+                'dimension' => $key,
+            ]);
 
-        return $matched;
+            return null;
+        }
+
+        $value = $row[$key];
+        if (!is_scalar($value) && null !== $value) {
+            ++$skipped;
+            $this->logger->warning('Analytics segmentation ignored a row with a non-scalar dimension value.', [
+                'row_index' => $index,
+                'dimension' => $key,
+                'value_type' => get_debug_type($value),
+            ]);
+
+            return null;
+        }
+
+        return trim((string) $value) === $code ? $row : null;
     }
 }
