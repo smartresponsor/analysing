@@ -1,5 +1,16 @@
 # CMCP execution journal
 
+## 2026-10-11 — engine-20261004100836-analysing-79b96b verified checkpoint
+
+- Current Windows Console MCP baseline: `rc/analysing-canon-vendor-20260913`, initially clean worktree; authoritative task specification and September 29 RED Gating/Inspecting reports read.
+- Reviewed current Analysing AGENTS, README, Composer manifests, Doctrine configuration, Symfony bundle registration, export-job controller, and existing CMCP journal; reviewed referenced Objecting, Cruding, Viewing, Interfacing, Gating and Canonization contracts.
+- Read normative Canonization rule files: `.canonization/Governance/Architecture/Rule/Canon022StandaloneApplicationDependencyBaselineRule.md`, `Canon047RepositoryOwnsDoctrineManagerRule.md`, `Canon054DoctrinePhysicalIdentifierNamingRule.md`. Actual mapping: direct Failing and other platform baseline dependencies declared in both manifests and FailingBundle registered; Doctrine persistence interface isolated behind analytics repository contract in observed export controller; standalone ORM underscore-number-aware naming is configured.
+- Historical September 29 RED evidence no longer describes current baseline. Current checks: `composer gate` PASS (10 checks, 0 errors, 0 warnings, 3 profile skips); `composer analyse` PASS (PHPStan max: 298 files, 0 errors); `composer test` PASS (189 tests, 658 assertions, 4 deprecations); `composer schema:parity` PASS (9 tables, 2 migrations).
+- RC workstream: preserve corrected runtime and deterministic verified behavior; do not replay stale code modifications. Product maturity workstream deferred: deeper anomaly analysis, query diagnostics, cohort/report ergonomics; no speculative growth changes in RC.
+- Risks: 4 existing PHPUnit deprecations, profile-skipped checks, and older Inspecting observations warrant targeted follow-up; no change to production PHP, UI, schemas, or managed runtime in this checkpoint.
+- Что имеем? Green current deterministic gates, preserved component responsibility boundary. Что осталось? Git integration and any evidence-specific acceptance work before task closure.
+
+
 ## 2026-10-11 — engine-20261004100428-analysing-69ad95 repository checkpoint
 
 - Console MCP live branch `rc/analysing-canon-vendor-20260913` at `04b3bf4a5f6fb734a0bb56e86a2cc8e0d38bdcda`: clean and synchronized (ahead 0, behind 0) before this journal update.
