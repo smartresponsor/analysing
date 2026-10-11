@@ -1,5 +1,14 @@
 # CMCP execution journal
 
+## 2026-10-11 — engine-20261004100237-analysing-3e2fb1 baseline and RC verification
+
+- Console MCP Windows repository at `D:\PhpstormProjects\www\Analysing`; branch `rc/analysing-canon-vendor-20260913`, HEAD `75600e61dd0eca7ef6fee9d87babb14b534e0cb7`, clean and synchronized at reconnaissance. No managed runtime restarted.
+- Read task specification, supplied 2026-09-29 RED Gating and Inspecting evidence, current `AGENTS.md`, `README.md`, Composer development/production manifests, bundle registration, existing journal, and relevant sibling Objecting/Cruding/Viewing/Interfacing/Gating/Canonization contracts. Consulted normative Canonization `.canonization/Governance/Architecture/Rule/Canon022StandaloneApplicationDependencyBaselineRule.md`, `Canon047RepositoryOwnsDoctrineManagerRule.md` and `GUARD_MATRIX.md`: direct baseline dependencies including Failing and repository-only Doctrine manager access map to current component; past RED observations are stale relative to present manifest/bundle surfaces. Inspecting is an external quality engine, not a runtime dependency.
+- RC priority: deterministic metric/report and export behavior, dependency correctness, repository ownership of persistence, tests and schema parity. Growth separately: richer segmentation, enterprise analysis workflows, explainable insights and product analytics UI; no speculative growth work in this RC pass.
+- Verified current gates: `composer validate` PASS; `composer gate` PASS (10 rules, zero failures or warnings, 3 skips); `composer test` PASS (189 tests, 658 assertions, 4 deprecations); `composer schema:parity` PASS (9 tables, 2 migrations). `composer analyse` PASS on retry (PHPStan max, 298/298 files, zero errors); initial Console MCP tool-internal failure was transient. Historical same-day journal records Playwright 2/2 GREEN on this branch; independent behavioral replay remains optional without UI source changes.
+- Risk: don't reapply historical CanonScanning patches or destructively scrub `.gating/` on an already-remediated worktree; classify Inspecting size/complexity heuristics semantically. No application code changed by this journal-only checkpoint.
+- Что имеем? Clean synchronized RC baseline and current green Composer/Gating/PHPUnit/schema checks. Что осталось? Recover PHPStan invocation, assess fresh Inspecting evidence if source changes, inspect any remaining actionable defects, and confirm final Git integration.
+
 ## 2026-10-11 — task engine-20261004095804-analysing-18602f RC acceptance
 
 - Console MCP read the live clean `rc/analysing-canon-vendor-20260913` workspace and reconciled the stale CanonScanning 2026-09-29 RED backlog with current `composer.json`, `composer.prod.json`, `config/bundles.php`, and `config/packages/doctrine.yaml`.
