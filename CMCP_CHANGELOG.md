@@ -1,5 +1,17 @@
 # CMCP execution journal
 
+## 2026-10-11 — task engine-20261004095804-analysing-18602f RC acceptance
+
+- Console MCP read the live clean `rc/analysing-canon-vendor-20260913` workspace and reconciled the stale CanonScanning 2026-09-29 RED backlog with current `composer.json`, `composer.prod.json`, `config/bundles.php`, and `config/packages/doctrine.yaml`.
+- Current verified runtime dependencies include Objecting, Cruding, Viewing, Interfacing, and Failing with local symlink Composer repositories; generic CRUD remains Cruding-owned. Canonization and Gating were treated as read-only design/enforcement references; Inspecting is not a runtime dependency.
+- Mature analytics RC scope: deterministic analytical calculations, safe data isolation, stable API/export contracts, lifecycle safety, and observability. Competitive growth (AI-assisted analysis, advanced UX and streaming) is deliberately separate from RC.
+- Actual October 11 deterministic acceptance: `composer gate` PASS (10 rules, 0 failed, 0 warnings, 3 profile skips), `composer analyse` PASS (PHPStan max, 298 files), `composer test` PASS (189 tests, 658 assertions, 4 deprecations), `composer schema:parity` PASS (9 tables, 2 migrations).
+- Previous CanonScanning findings on Failing bundle/dependencies, local package closure and Doctrine naming were already remediated in live files; no speculative replay of stale patches. Historical Inspecting structural findings require current-fingerprint evidence and semantic review rather than automatic code churn.
+- Risk: avoid destructive `.gating/` cleanup or repository-wide Doctrine refactors without current actionable failures and verified contracts.
+- Behavioral/UI acceptance: `npm test` Playwright GREEN (2/2 Chromium: status route and deterministic dashboard renderer QA). The Playwright harness used its own 127.0.0.1:8099 web server; no managed 127.0.0.1:8000 runtime was restarted. No UI source was changed and existing central gallery evidence remains reusable.
+- Что имеем? Stable RC gates and behavioral acceptance. Что осталось? Final Git integration verification.
+
+
 ## 2026-10-05 — task engine-20261004184934-analysing-f76b38 RC acceptance continuation
 
 - Re-established the mandatory Console-MCP execution plane through the Windows workspace scope and resumed from the live repository rather than container/GitHub substitution. Baseline before this journal mutation: clean synchronized `rc/analysing-canon-vendor-20260913` at HEAD `c005fcd6b3fc0f71cedd66e88ee7e19fe800a9dc`, ahead 0 / behind 0.
