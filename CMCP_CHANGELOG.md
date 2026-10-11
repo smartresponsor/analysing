@@ -1,5 +1,16 @@
 # CMCP execution journal
 
+## 2026-10-11 — engine-20261004100428-analysing-69ad95 repository checkpoint
+
+- Console MCP live branch `rc/analysing-canon-vendor-20260913` at `04b3bf4a5f6fb734a0bb56e86a2cc8e0d38bdcda`: clean and synchronized (ahead 0, behind 0) before this journal update.
+- Read authoritative task specification, upstream September 29 RED Gating and Inspecting reports, current repository documentation and Composer manifests, Symfony bundle and Doctrine configuration; consulted Objecting, Cruding, Viewing, Interfacing, Gating, Canonization reference contracts and normative Canon022/Canon054 rule texts.
+- Historical Canon022 and Canon054 RED examples are already corrected in the live working tree: Failing registered and required; Doctrine underscore-number-aware naming set. Earlier journal entries record subsequent fixes for the other RED categories and fresh green verification. Do not replay stale fixes.
+- Focus: confirm current acceptance without touching functioning implementation; grow analytics diagnostics and advanced product analytics after RC rather than inside this corrective scope.
+- New evidence on current source fingerprint: `composer-validate` PASS; `gate` PASS; `analyse` PASS (PHPStan max, 298 files, zero errors); `phpunit` PASS (189 tests, 658 assertions, 4 existing deprecations). `phpstan` was an invalid Composer script alias, not a PHPStan analysis failure. `schema-parity` was not an admitted named Console MCP check; previous same-branch journal records successful schema-parity verification. No production/UI source changes.
+- Risks: concurrent engine tasks share this branch; no destructive operation or unmanaged runtime restart permitted.
+- Что имеем? Clean RC branch, existing remediation and prior green gates. Что осталось? Revalidate acceptance where applicable, publish journal and inspect final integration state.
+
+
 ## 2026-10-11 — engine-20261004100237-analysing-3e2fb1 baseline and RC verification
 
 - Console MCP Windows repository at `D:\PhpstormProjects\www\Analysing`; branch `rc/analysing-canon-vendor-20260913`, HEAD `75600e61dd0eca7ef6fee9d87babb14b534e0cb7`, clean and synchronized at reconnaissance. No managed runtime restarted.
