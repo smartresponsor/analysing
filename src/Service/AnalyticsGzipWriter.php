@@ -214,6 +214,15 @@ final class AnalyticsGzipWriter implements AnalyticsGzipWriterInterface
                 throw new \RuntimeException('Unable to read temporary gzip file.');
             }
 
+            if ('' === $chunk && !feof($input)) {
+                $this->logger->error('Analytics gzip writer received no data before end of temporary file.', [
+                    'tmp' => $tmp,
+                    'path' => $gz,
+                ]);
+
+                throw new \RuntimeException('Unable to read temporary gzip file.');
+            }
+
             if ('' !== $chunk) {
                 $this->writeGzipFully($output, $chunk, $gz);
             }

@@ -1,5 +1,14 @@
 # CMCP execution journal
 
+## 2026-10-11 — engine-20261004101208-analysing-ce7081 gzip stream safety
+
+- Baseline: Windows Console MCP clean branch `rc/analysing-canon-vendor-20260913`; current AGENTS, README, development/production Composer, Doctrine and bundle configs read, with September 29 historical RED and Inspecting reports, CMCP journal, and helper owner contracts.
+- Canon mapping: normative Canon047RepositoryOwnsDoctrineManagerRule.md read; Doctrine manager remains repository-owned. Canon022/045 Failing baseline, Canon052 artifact-only Gating, Canon054 Doctrine naming, Canon055 terminology, Canon056/063 OpenAPI parity are already addressed in live tree.
+- RC implementation: `AnalyticsGzipWriter::copyToGzip()` now logs and fails when fread returns an empty string before EOF, avoiding a potentially unbounded export loop; no public signature or successful export format changed.
+- RC vs growth: safety, deterministic processing and diagnostic quality are RC; richer self-service analytics and report UX are post-RC. CRUD, object system fields and rendering remain with owning components.
+- Evidence: PHP syntax, Composer validation, PHPStan max GREEN; PHPUnit 189 tests / 658 assertions, 4 existing deprecations; Gating initial GREEN. No UI change, screenshots not applicable.
+- Tail: rerun Gating, inspect Git state, complete guarded signed Git integration and quality verification.
+
 ## 2026-10-11 — engine-20261004100836-analysing-79b96b verified checkpoint
 
 - Current Windows Console MCP baseline: `rc/analysing-canon-vendor-20260913`, initially clean worktree; authoritative task specification and September 29 RED Gating/Inspecting reports read.
