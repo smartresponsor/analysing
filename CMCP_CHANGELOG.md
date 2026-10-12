@@ -1,5 +1,22 @@
 # CMCP execution journal
 
+## 2026-10-12 — engine-20261004184133-analysing-2938d7 verified acceptance
+
+- Fresh Windows Console MCP gates on master: Composer validate PASS; Gating PASS (10 rules, 0 failed, 0 warnings, 3 skipped by profile); PHPStan max PASS (298 files, 0 errors); PHPUnit PASS (189 tests, 658 assertions, no reported deprecations).
+- No PHP application, database, route, or UI changes: current behavioral and visual rerun not triggered by this journal-only mutation. Schema-parity is not an admitted named gate check in this execution context; historic evidence is recorded separately, not represented as a fresh pass.
+- Verified old Canon047 example is fixed in the current command source. No new production changes justified by the available current deterministic results.
+- Что имеем? Current deterministic quality gates GREEN. Что осталось? Commit and publish this factual journal-only checkpoint, then confirm Git state.
+
+## 2026-10-12 — engine-20261004184133-analysing-2938d7 baseline
+
+- Inspected live clean, synchronized master HEAD `23cf4d1ac1b7d588afc86f2ac22279ab212ab68d` through Windows Console MCP; reviewed local docs, Composer manifests, bundle registration, upstream RED and Inspecting reports, existing journal and helper contracts.
+- Normative Canonization mapping: `.canonization/Governance/Architecture/Rule/Canon047RepositoryOwnsDoctrineManagerRule.md` requires direct Doctrine manager access to remain in `src/Repository/`; current `AnalyticsRunExportJobCommand` uses a repository interface. Gating is the executable companion, while Objecting/Cruding/Viewing/Interfacing are declared runtime dependencies. Inspecting stays external.
+- Archived September RED evidence is stale at least for Canon022/045 (Failing dependency, symlink and bundle registration are present) and sampled Canon047. Do not apply historical fixes blindly.
+- RC-critical: verify current gating, static analysis, tests, schema parity and live repository boundaries; remediate only current evidenced defects. Growth separated: richer analytics dashboards, observability and query performance outside RC.
+- Risks: concurrent orchestration, historical scan fingerprint divergence; no destructive operations or unnecessary runtime restart. No production/UI files changed at baseline.
+- Что имеем? Verified live master and previously repaired baseline. Что осталось? Fresh gates, any justified remediation, integration and final acceptance.
+
+
 ## 2026-10-11 — task engine-20261004100836-analysing-79b96b deprecation and master integration
 
 - Current Console MCP RC worktree clean at opening, branch `rc/analysing-canon-vendor-20260913`, then HEAD `2ea259439fb2b3e95142802dce2351e0dddf156d`.
