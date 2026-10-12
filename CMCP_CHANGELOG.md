@@ -1,5 +1,14 @@
 # CMCP execution journal
 
+## 2026-10-11 — engine-20261004082641-analysing-31ab4e current RC baseline
+
+- Windows Console MCP baseline: clean worktree on `rc/analysing-canon-vendor-20260913`. Read task specification and supplied September 29 Gating RED / Inspecting reports, current Composer manifests, bundle registration, Doctrine configuration, AGENTS instructions and existing journal; reviewed sibling component contracts.
+- Historical Canon022/045 Failing dependencies and repository closure, Canon054 Doctrine naming and Canon055 identity documentation are already corrected in live configuration. Preserve fixes rather than replay stale scanner remediation.
+- Canonization mapping: Canon022 requires Failing dependency and bundle; Canon045 requires local repository closure; Canon054 requires underscore-number-aware naming; Canon055 governs identity; Canon047 confines EntityManager use to repositories.
+- RC-critical scope: deterministic metrics, secure data boundaries, API/export stability and reproducible verification. Growth: richer segmentation, analytics exploration and dashboard UX; shared CRUD, system fields and presentation remain outside component ownership.
+- Current checks: composer validate PASS; composer gate PASS (10 rules, zero failures/warnings, 3 profile skips). No UI change or runtime restart.
+- Что имеем? Current dependency baseline and green Gating/Composer. Что осталось? Complete current verification and Git integration assessment.
+
 ## 2026-10-11 — task engine-20261004100836-analysing-79b96b follow-up acceptance
 
 - Resumed with current clean, synchronized branch at HEAD `866d872baa30d742e1d4806bb29860d394ef924d` via Windows Console MCP; no container workspace substitutions.
