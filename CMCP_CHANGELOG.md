@@ -31,6 +31,13 @@
 - Что имеем? Current deterministic gates GREEN. Что осталось? Preserve the verified state and confirm journal/Git integration.
 
 
+## 2026-10-12 — follow-up verification
+
+- Live master HEAD `880b74fe51dae5b8927e8e688706f9d8d973a4aa`, clean and synchronized at start.
+- Fresh external Inspecting: PHPStan 0 errors, maximum complexity 12; two medium non-autofixable property-cohesion observations (AnalyticsExportJobEntity and AnalyticsRequestAuthSubscriber). No high/critical findings.
+- Fresh `schema:parity` PASS (9 tables, 2 migrations) and `schema:validate` PASS (Doctrine mapping correct and test database schema synchronized).
+- No runtime, UI, or PHP source mutation; no screenshots needed for this documentation-only checkpoint. Outstanding: publish journal and check final Git state.
+
 ## 2026-10-12 — engine-20261004184133-analysing-2938d7 verified acceptance
 
 - Fresh Windows Console MCP gates on master: Composer validate PASS; Gating PASS (10 rules, 0 failed, 0 warnings, 3 skipped by profile); PHPStan max PASS (298 files, 0 errors); PHPUnit PASS (189 tests, 658 assertions, no reported deprecations).
