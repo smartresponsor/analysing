@@ -44,7 +44,7 @@ final class AnalyticsCsvImporter implements AnalyticsCsvImporterInterface
 
         try {
             $headers = $this->readHeaders($handle, $csvPath, $delimiter);
-            while (($data = fgetcsv($handle, 0, $delimiter)) !== false) {
+            while (($data = fgetcsv($handle, 0, $delimiter, '"', '\\')) !== false) {
                 if ($rowCount >= self::MAX_ROWS) {
                     $this->logger->warning('Analytics CSV import stopped at the maximum supported row count.', [
                         'path' => $csvPath,
@@ -85,7 +85,7 @@ final class AnalyticsCsvImporter implements AnalyticsCsvImporterInterface
      */
     private function readHeaders($handle, string $csvPath, string $delimiter): array
     {
-        $headers = fgetcsv($handle, 0, $delimiter);
+        $headers = fgetcsv($handle, 0, $delimiter, '"', '\\');
         if (false === $headers || $headers === [null]) {
             $this->logger->warning('Analytics CSV import file has no readable header row.', ['path' => $csvPath]);
 

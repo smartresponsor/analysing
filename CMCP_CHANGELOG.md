@@ -1,5 +1,16 @@
 # CMCP execution journal
 
+## 2026-10-11 — task engine-20261004100836-analysing-79b96b deprecation and master integration
+
+- Current Console MCP RC worktree clean at opening, branch `rc/analysing-canon-vendor-20260913`, then HEAD `2ea259439fb2b3e95142802dce2351e0dddf156d`.
+- Diagnosed all four PHPUnit 11.5/PHP 8.4 deprecations by enabling detailed output in `phpunit.xml.dist`. Root cause: two calls to `fgetcsv()` in `AnalyticsCsvImporter.php` and two calls to `fputcsv()` in `AnalyticsReportExporterService.php` omitted the PHP CSV escape argument.
+- Explicitly set escape argument to legacy default backslash, preserving current CSV representation; no silent warnings suppression or change to external CSV format.
+- Fresh acceptance: `composer test` PASS 189 tests/658 assertions/zero deprecations; `composer analyse` PASS 298 files/zero errors; `composer gate` PASS zero errors and zero warnings (three profile skips); `composer schema:parity` PASS (9 tables, 2 migrations).
+- Git integration discovered genuine divergence: 54 RC-only commits, 1 master-only commit at the comparison checkpoint. Created https://github.com/smartresponsor/analysing/pull/9, which GitHub reports CONFLICTING; protected master integration is **not complete**.
+- Next integration: reconcile histories without dropping the unique master commit or force-pushing; inspect conflicts and resolve using evidence-based semantics, then rerun master gates.
+- Что имеем? CSV deprecations repaired and green deterministic gates on RC. Что осталось? Conflict resolution and evidence-backed merge into master, verification of clean synchronized master.
+
+
 ## 2026-10-11 — engine-20261004082641-analysing-31ab4e current RC baseline
 
 - Windows Console MCP baseline: clean worktree on `rc/analysing-canon-vendor-20260913`. Read task specification and supplied September 29 Gating RED / Inspecting reports, current Composer manifests, bundle registration, Doctrine configuration, AGENTS instructions and existing journal; reviewed sibling component contracts.
