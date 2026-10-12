@@ -1,5 +1,15 @@
 # CMCP execution journal
 
+## 2026-10-12 — engine-20261004184552-analysing-6079d3
+
+- Current clean master baseline checked through Windows Console MCP; inspected supplied September 29 Gating/Inspecting reports, current Composer manifests, repository guidance, Symfony Doctrine and bundle configuration.
+- Read Canonization normative Canon022, Canon047, Canon054 and Canon056 documents and the root contracts of Gating, Objecting, Cruding, Viewing and Interfacing. Mapping: Failing dependency/registration and underscore naming strategy are present; archived failure examples must not be presumed current.
+- Current acceptance: composer validate PASS; composer gate PASS (10 rules, no failures/warnings, 3 profile skips); composer analyse PASS (298 files, zero errors); composer test PASS (189 tests, 658 assertions).
+- RC-critical outcome: no justified PHP production patch from presently passing deterministic checks. Growth roadmap stays separate: analytics observability, report UX, and API ergonomics.
+- Residual applicability: schema parity and UI/browser evidence not newly verified in this execution; no UI source changed. Avoid duplicate runtime start or speculative migrations.
+- Что имеем? Current deterministic gates GREEN. Что осталось? Preserve the verified state and confirm journal/Git integration.
+
+
 ## 2026-10-12 — engine-20261004184133-analysing-2938d7 verified acceptance
 
 - Fresh Windows Console MCP gates on master: Composer validate PASS; Gating PASS (10 rules, 0 failed, 0 warnings, 3 skipped by profile); PHPStan max PASS (298 files, 0 errors); PHPUnit PASS (189 tests, 658 assertions, no reported deprecations).
