@@ -1,5 +1,15 @@
 const { test, expect } = require('@playwright/test');
 
+test('cohort canary endpoints remain isolated from untrusted identity headers', async ({ request }) => {
+  for (const cohort of ['new', 'existing', 'virtual']) {
+    const response = await request.get('/status', {
+      headers: { 'X-Test-Cohort': cohort, 'X-Test-User': `${cohort}-user` },
+    });
+    expect(response.status()).toBe(200);
+    expect(await response.text()).toContain('analytics');
+  }
+});
+
 test('standalone status endpoint is healthy', async ({ request }) => {
   const response = await request.get('/status');
 
