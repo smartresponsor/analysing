@@ -6,6 +6,7 @@ parameters:
     - tests
   inferPrivatePropertyTypeFromConstructor: true
   scanFiles:
+    - tools/analytics/legacy/legacy-metrics.php
     - tools/phpstan/stubs/apiplatform.stub.php
     - tools/phpstan/stubs/graphql.stub.php
     - tools/phpstan/stubs/symfony_form.stub.php

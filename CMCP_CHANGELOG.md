@@ -1,5 +1,16 @@
 # CMCP execution journal
 
+## 2026-10-12 — engine-20261004092747-analysing-c037e8
+
+- Baseline: clean synchronized master 5f31f26687a569c4a143f0cabcc567e166276b09 before changes. Read current Analysing guidance, Composer manifests, Symfony bundle/Doctrine configuration, export job controller and legacy metrics utility; reviewed archived Gating/Inspecting evidence and Canonization/Gating root documents.
+- Archived RED items for Failing dependency, repository closure, bundle registration and Doctrine underscore naming are already corrected in current source. Do not reintroduce changes from stale reports.
+- RC fix: correct Prometheus histogram bucket label separator in tools/analytics/legacy/legacy-metrics.php; emitted bucket syntax previously contained a spurious comma before le, both with and without existing labels.
+- Canon mapping: preserve App\\Analysing namespace, typed Symfony structure and Cruding ownership; canon.015 tooling warning needs separate ownership review. Normative rule mapping and other historical findings remain follow-up, not claimed resolved.
+- Added two focused histogram output regression tests and declared the existing legacy metrics file to PHPStan scanFiles for type discovery. Final deterministic gates: PHP lint PASS, Composer validate PASS, Gating PASS (10 checks, 0 failed, 0 warnings, 3 skipped), PHPStan PASS (299 files, 0 errors), PHPUnit PASS (193 tests, 664 assertions). Fresh Inspecting PASS on PHPStan with two non-autofixable medium design observations.
+- Growth, separate from RC: enhanced analytics report/API experiences and advanced diagnostics. No user-observable UI changed in this workstream.
+- Что имеем? Local histogram separator fix and three green checks. Что осталось? Behavioral regression test, further acceptance checks and Git reconciliation/publication.
+
+
 ## 2026-10-12 — engine-20261004071621-analysing-efff59
 
 - Console MCP baseline: clean synchronized master HEAD f6de8fc0be4f76ecd2a2b33ca11824c1ace8c842. September 29 RED evidence is historical: Failing Composer declaration/path/bundle registration and Doctrine naming strategy are present currently.

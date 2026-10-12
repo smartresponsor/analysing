@@ -58,7 +58,7 @@ final class MetricRegistry
             $sum = number_format((float)$h['sum'], 6, '.', '');
             $count = $h['count'];
             foreach ($h['buckets'] as $le => $cnt) {
-                $out[] = sprintf('%s_bucket%s,le="%d"} %d', $name, $this->mergeLabel($lbl), $le, $cnt);
+                $out[] = sprintf('%s_bucket%sle="%d"} %d', $name, $this->mergeLabel($lbl), $le, $cnt);
             }
             $out[] = sprintf('%s_count%s %d', $name, $lbl, $count);
             $out[] = sprintf('%s_sum%s %s', $name, $lbl, $sum);
