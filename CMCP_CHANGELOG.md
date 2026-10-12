@@ -1,5 +1,15 @@
 # CMCP execution journal
 
+## 2026-10-11 — task engine-20261004100836-analysing-79b96b follow-up acceptance
+
+- Resumed with current clean, synchronized branch at HEAD `866d872baa30d742e1d4806bb29860d394ef924d` via Windows Console MCP; no container workspace substitutions.
+- Fresh external Inspecting completed: PHPStan 0 errors, PHP structure maximum cyclomatic complexity 12; exactly 2 medium design observations, zero autofixable findings (versus 33 historical September findings).
+- Reviewed `src/Entity/Analytics/AnalyticsExportJobEntity.php` and `src/EventSubscriber/Http/AnalyticsRequestAuthSubscriber.php` against Inspecting low-property-cohesion observations. Export job entity encapsulates one aggregate lifecycle, payload validation and retries; authentication subscriber orchestrates one authorization boundary via dedicated token/error/vendor collaborator contracts. Splitting solely on property-usage clustering is unjustified without demonstrated behavior or coupling failure.
+- Residual PHPUnit output from preceding task acceptance: 189 tests, 658 assertions, 4 deprecations, zero test failures. Exact deprecation sources are not identified in the normal PHPUnit summary; do not claim a fixed cause or suppress them without traced evidence.
+- No application/runtime/UI changes, no managed service restarts, no screenshots generated in this follow-up. RC functional gates remain green as last actually executed; growth features remain outside the corrective scope.
+- Что имеем? Independent Inspecting completed with no critical/high findings, two reviewed advisory design observations, green deterministic test baseline. Что осталось? Trace four deprecations if a supported diagnostic exposes their locations; no evidence-supported source patch currently justified, verify Git publication.
+
+
 ## 2026-10-11 — engine-20261004101208-analysing-ce7081 gzip stream safety
 
 - Baseline: Windows Console MCP clean branch `rc/analysing-canon-vendor-20260913`; current AGENTS, README, development/production Composer, Doctrine and bundle configs read, with September 29 historical RED and Inspecting reports, CMCP journal, and helper owner contracts.
