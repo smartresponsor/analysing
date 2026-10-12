@@ -54,13 +54,13 @@ final readonly class AnalyticsReportExporterService implements AnalyticsReportEx
         try {
             $headers = $this->collectHeaders($rows);
             if ([] !== $headers) {
-                fputcsv($handle, $headers);
+                fputcsv($handle, $headers, ',', '"', '\\');
                 foreach ($rows as $row) {
                     $record = [];
                     foreach ($headers as $header) {
                         $record[] = self::normalizeCell($row[$header] ?? null);
                     }
-                    fputcsv($handle, $record);
+                    fputcsv($handle, $record, ',', '"', '\\');
                 }
             }
         } finally {
