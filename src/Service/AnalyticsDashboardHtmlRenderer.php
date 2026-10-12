@@ -37,62 +37,117 @@ final readonly class AnalyticsDashboardHtmlRenderer implements AnalyticsDashboar
             'To' => $params['to'] ?? 'now',
         ];
 
-        $html = [];
-        $html[] = '<!DOCTYPE html>';
-        $html[] = '<html lang="en">';
-        $html[] = '<head>';
-        $html[] = '  <meta charset="UTF-8">';
-        $html[] = '  <meta name="viewport" content="width=device-width, initial-scale=1.0">';
-        $html[] = '  <title>Analytics Dashboard</title>';
-        $html[] = '  <style>';
-        $html[] = 'body{font-family:Arial,sans-serif;background:#0f172a;color:#e2e8f0;margin:0;padding:24px;}';
-        $html[] = '.shell{max-width:1200px;margin:0 auto;display:grid;gap:20px;}';
-        $html[] = '.hero,.panel,.card{background:#111827;border:1px solid #334155;border-radius:16px;box-shadow:0 12px 24px rgba(15,23,42,.25);}';
-        $html[] = '.hero{padding:24px;}';
-        $html[] = '.hero h1{margin:0 0 8px;font-size:28px;}';
-        $html[] = '.meta{display:flex;flex-wrap:wrap;gap:12px;font-size:13px;color:#94a3b8;margin-top:12px;}';
-        $html[] = '.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;}';
-        $html[] = '.card{padding:18px;}';
-        $html[] = '.label{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#94a3b8;}';
-        $html[] = '.value{font-size:30px;font-weight:700;margin-top:8px;}';
-        $html[] = '.panel{padding:20px;}';
-        $html[] = 'table{width:100%;border-collapse:collapse;margin-top:12px;}';
-        $html[] = 'th,td{text-align:left;padding:10px 12px;border-bottom:1px solid #1f2937;}';
-        $html[] = 'th{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:#94a3b8;}';
-        $html[] = 'caption{text-align:left;font-weight:700;margin-bottom:8px;font-size:18px;color:#f8fafc;}';
-        $html[] = 'code{background:#0b1220;border:1px solid #1e293b;border-radius:8px;padding:2px 6px;color:#93c5fd;}';
-        $html[] = 'pre{overflow:auto;background:#0b1220;border:1px solid #1e293b;border-radius:12px;padding:16px;color:#cbd5e1;}';
-        $html[] = 'a{color:#93c5fd;text-decoration:none;}';
-        $html[] = 'a:hover{text-decoration:underline;}';
-        $html[] = '  </style>';
-        $html[] = '</head>';
-        $html[] = '<body>';
-        $html[] = '  <main class="shell">';
-        $html[] = '    <section class="hero">';
-        $html[] = '      <h1>Analytics dashboard</h1>';
-        $html[] = '      <p>HTML-first operational view for the analytics component. Add <code>?format=json</code> or send <code>Accept: application/json</code> for machine-friendly output.</p>';
-        $html[] = '      <div class="meta">';
-        $html[] = '        <span>Vendor: <strong>'.$this->escape($vendor).'</strong></span>';
-        $html[] = '        <span>Correlation ID: <strong>'.$this->escape($correlationId).'</strong></span>';
-        $html[] = '        <span>Generated at: <strong>'.$this->escape($generatedAt).'</strong></span>';
+        $html = $this->dashboardDocumentStart();
+        array_push($html, ...$this->dashboardHero($vendor, $correlationId, $generatedAt, $filters));
+        array_push($html, ...$this->dashboardMetrics($kpi));
+
+        array_push($html, ...$this->dashboardSeries($series));
+
+        array_push($html, ...$this->dashboardTopVendors($top));
+
+        array_push($html, ...$this->dashboardParameters($params));
+
+        array_push($html, ...$this->dashboardPayload($kpi, $series, $top, $params, $vendor, $correlationId, $generatedAt));
+        $html[] = '  </main>';
+        $html[] = '</body>';
+        $html[] = '</html>';
+
+        return implode("\n", $html);
+    }
+
+    /** @return list<string> */
+    private function dashboardDocumentStart(): array
+    {
+        return [
+            '<!DOCTYPE html>',
+            '<html lang="en">',
+            '<head>',
+            '  <meta charset="UTF-8">',
+            '  <meta name="viewport" content="width=device-width, initial-scale=1.0">',
+            '  <title>Analytics Dashboard</title>',
+            '  <style>',
+            'body{font-family:Arial,sans-serif;background:#0f172a;color:#e2e8f0;margin:0;padding:24px;}',
+            '.shell{max-width:1200px;margin:0 auto;display:grid;gap:20px;}',
+            '.hero,.panel,.card{background:#111827;border:1px solid #334155;border-radius:16px;box-shadow:0 12px 24px rgba(15,23,42,.25);}',
+            '.hero{padding:24px;}',
+            '.hero h1{margin:0 0 8px;font-size:28px;}',
+            '.meta{display:flex;flex-wrap:wrap;gap:12px;font-size:13px;color:#94a3b8;margin-top:12px;}',
+            '.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;}',
+            '.card{padding:18px;}',
+            '.label{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#94a3b8;}',
+            '.value{font-size:30px;font-weight:700;margin-top:8px;}',
+            '.panel{padding:20px;}',
+            'table{width:100%;border-collapse:collapse;margin-top:12px;}',
+            'th,td{text-align:left;padding:10px 12px;border-bottom:1px solid #1f2937;}',
+            'th{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:#94a3b8;}',
+            'caption{text-align:left;font-weight:700;margin-bottom:8px;font-size:18px;color:#f8fafc;}',
+            'code{background:#0b1220;border:1px solid #1e293b;border-radius:8px;padding:2px 6px;color:#93c5fd;}',
+            'pre{overflow:auto;background:#0b1220;border:1px solid #1e293b;border-radius:12px;padding:16px;color:#cbd5e1;}',
+            'a{color:#93c5fd;text-decoration:none;}',
+            'a:hover{text-decoration:underline;}',
+            '  </style>',
+            '</head>',
+            '<body>',
+            '  <main class="shell">',
+        ];
+    }
+
+    /**
+     * @param array<string, int|string|null> $filters
+     *
+     * @return list<string>
+     */
+    private function dashboardHero(string $vendor, string $correlationId, string $generatedAt, array $filters): array
+    {
+        $html = [
+            '    <section class="hero">',
+            '      <h1>Analytics dashboard</h1>',
+            '      <p>HTML-first operational view for the analytics component. Add <code>?format=json</code> or send <code>Accept: application/json</code> for machine-friendly output.</p>',
+            '      <div class="meta">',
+            '        <span>Vendor: <strong>'.$this->escape($vendor).'</strong></span>',
+            '        <span>Correlation ID: <strong>'.$this->escape($correlationId).'</strong></span>',
+            '        <span>Generated at: <strong>'.$this->escape($generatedAt).'</strong></span>',
+        ];
         foreach ($filters as $label => $value) {
             $html[] = '        <span>'.$this->escape((string) $label).': <strong>'.$this->escape((string) $value).'</strong></span>';
         }
         $html[] = '      </div>';
         $html[] = '    </section>';
 
-        $html[] = '    <section class="grid">';
-        $html[] = $this->metricCard('Gross', $this->formatMinor($kpi['gross_minor']));
-        $html[] = $this->metricCard('Net', $this->formatMinor($kpi['net_minor']));
-        $html[] = $this->metricCard('Margin %', $this->formatPercent((float) $kpi['margin_pct']));
-        $html[] = $this->metricCard('Days', (string) $kpi['days']);
-        $html[] = '    </section>';
+        return $html;
+    }
 
-        $html[] = '    <section class="panel">';
-        $html[] = '      <table>';
-        $html[] = '        <caption>Timeseries</caption>';
-        $html[] = '        <thead><tr><th>Date</th><th>Gross</th><th>Net</th></tr></thead>';
-        $html[] = '        <tbody>';
+    /**
+     * @param array{gross_minor:int, net_minor:int, margin_pct:float|int, days:int} $kpi
+     *
+     * @return list<string>
+     */
+    private function dashboardMetrics(array $kpi): array
+    {
+        return [
+            '    <section class="grid">',
+            $this->metricCard('Gross', $this->formatMinor($kpi['gross_minor'])),
+            $this->metricCard('Net', $this->formatMinor($kpi['net_minor'])),
+            $this->metricCard('Margin %', $this->formatPercent((float) $kpi['margin_pct'])),
+            $this->metricCard('Days', (string) $kpi['days']),
+            '    </section>',
+        ];
+    }
+
+    /**
+     * @param list<array{date:string, gross_minor:int, net_minor:int}> $series
+     *
+     * @return list<string>
+     */
+    private function dashboardSeries(array $series): array
+    {
+        $html = [
+            '    <section class="panel">',
+            '      <table>',
+            '        <caption>Timeseries</caption>',
+            '        <thead><tr><th>Date</th><th>Gross</th><th>Net</th></tr></thead>',
+            '        <tbody>',
+        ];
         foreach ($series as $row) {
             $html[] = '          <tr><td>'.$this->escape($row['date']).'</td><td>'.$this->escape($this->formatMinor($row['gross_minor'])).'</td><td>'.$this->escape($this->formatMinor($row['net_minor'])).'</td></tr>';
         }
@@ -103,11 +158,23 @@ final readonly class AnalyticsDashboardHtmlRenderer implements AnalyticsDashboar
         $html[] = '      </table>';
         $html[] = '    </section>';
 
-        $html[] = '    <section class="panel">';
-        $html[] = '      <table>';
-        $html[] = '        <caption>Top vendors</caption>';
-        $html[] = '        <thead><tr><th>Vendor ID</th><th>Gross</th><th>Net</th><th>Margin %</th></tr></thead>';
-        $html[] = '        <tbody>';
+        return $html;
+    }
+
+    /**
+     * @param list<array{vendor_id:int, gross_minor:int, net_minor:int, margin_pct:float|int}> $top
+     *
+     * @return list<string>
+     */
+    private function dashboardTopVendors(array $top): array
+    {
+        $html = [
+            '    <section class="panel">',
+            '      <table>',
+            '        <caption>Top vendors</caption>',
+            '        <thead><tr><th>Vendor ID</th><th>Gross</th><th>Net</th><th>Margin %</th></tr></thead>',
+            '        <tbody>',
+        ];
         foreach ($top as $row) {
             $html[] = '          <tr><td>'.$this->escape((string) $row['vendor_id']).'</td><td>'.$this->escape($this->formatMinor($row['gross_minor'])).'</td><td>'.$this->escape($this->formatMinor($row['net_minor'])).'</td><td>'.$this->escape($this->formatPercent((float) $row['margin_pct'])).'</td></tr>';
         }
@@ -118,10 +185,22 @@ final readonly class AnalyticsDashboardHtmlRenderer implements AnalyticsDashboar
         $html[] = '      </table>';
         $html[] = '    </section>';
 
-        $html[] = '    <section class="panel">';
-        $html[] = '      <table>';
-        $html[] = '        <caption>Request parameters</caption>';
-        $html[] = '        <tbody>';
+        return $html;
+    }
+
+    /**
+     * @param array<string, int|string|null> $params
+     *
+     * @return list<string>
+     */
+    private function dashboardParameters(array $params): array
+    {
+        $html = [
+            '    <section class="panel">',
+            '      <table>',
+            '        <caption>Request parameters</caption>',
+            '        <tbody>',
+        ];
         foreach ($params as $key => $value) {
             $html[] = '          <tr><th>'.$this->escape($key).'</th><td>'.$this->escape(null !== $value ? (string) $value : 'null').'</td></tr>';
         }
@@ -129,6 +208,19 @@ final readonly class AnalyticsDashboardHtmlRenderer implements AnalyticsDashboar
         $html[] = '      </table>';
         $html[] = '    </section>';
 
+        return $html;
+    }
+
+    /**
+     * @param array{gross_minor:int, net_minor:int, margin_pct:float|int, days:int}            $kpi
+     * @param list<array{date:string, gross_minor:int, net_minor:int}>                         $series
+     * @param list<array{vendor_id:int, gross_minor:int, net_minor:int, margin_pct:float|int}> $top
+     * @param array<string, int|string|null>                                                   $params
+     *
+     * @return list<string>
+     */
+    private function dashboardPayload(array $kpi, array $series, array $top, array $params, string $vendor, string $correlationId, string $generatedAt): array
+    {
         try {
             $payloadJson = json_encode([
                 'kpi' => $kpi,
@@ -143,15 +235,12 @@ final readonly class AnalyticsDashboardHtmlRenderer implements AnalyticsDashboar
             $payloadJson = '{"error":"dashboard payload unavailable"}';
         }
 
-        $html[] = '    <section class="panel">';
-        $html[] = '      <caption style="display:block;font-weight:700;font-size:18px;color:#f8fafc;margin-bottom:8px;">Embedded payload</caption>';
-        $html[] = '      <pre>'.$this->escape($payloadJson).'</pre>';
-        $html[] = '    </section>';
-        $html[] = '  </main>';
-        $html[] = '</body>';
-        $html[] = '</html>';
-
-        return implode("\n", $html);
+        return [
+            '    <section class="panel">',
+            '      <caption style="display:block;font-weight:700;font-size:18px;color:#f8fafc;margin-bottom:8px;">Embedded payload</caption>',
+            '      <pre>'.$this->escape($payloadJson).'</pre>',
+            '    </section>',
+        ];
     }
 
     public function renderError(string $title, string $message, int $status): string

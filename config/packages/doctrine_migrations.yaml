@@ -1,4 +1,5 @@
 doctrine_migrations:
+  connection: migrations
   migrations_paths:
     'App\Analysing\Migrations': '%kernel.project_dir%/migrations'
   enable_profiler: false

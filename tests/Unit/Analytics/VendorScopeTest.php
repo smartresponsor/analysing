@@ -23,4 +23,27 @@ final class VendorScopeTest extends TestCase
         self::assertCount(1, $rows);
         self::assertSame('acme', $rows[0]['vendor']);
     }
+
+    public function testFilterSkipsMalformedVendorRows(): void
+    {
+        $service = new AnalyticsVendorScope(new NullLogger());
+        $rows = $service->filter([
+            ['vendor' => ['not-scalar']],
+            ['vendor' => str_repeat('v', 129)],
+            ['vendor' => ' acme ', 'metric' => 'sales'],
+        ], new AnalyticsVendorId('acme'));
+
+        self::assertCount(1, $rows);
+        self::assertSame(' acme ', $rows[0]['vendor']);
+    }
+
+    public function testFilterRejectsOverlongVendorIdentifier(): void
+    {
+        $service = new AnalyticsVendorScope(new NullLogger());
+
+        $this->expectException(\InvalidArgumentException::class);
+        $this->expectExceptionMessage('Vendor identifier exceeds the maximum allowed length.');
+
+        $service->filter([], new AnalyticsVendorId(str_repeat('v', 129)));
+    }
 }

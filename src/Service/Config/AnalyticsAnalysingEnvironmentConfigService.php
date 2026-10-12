@@ -6,7 +6,7 @@ namespace App\Analysing\Service\Config;
 
 use App\Administering\Service\Config\AdministrationConfigApplyService;
 use App\Administering\Service\Config\AdministrationConfigFileWriterService;
-use App\Administering\Value\Config\ConfigToolDescriptor;
+use App\Administering\Value\Config\AdministrationConfigToolDescriptor;
 use App\Analysing\DTO\Config\AnalyticsEnvironmentConfigDataDTO;
 use App\Analysing\Form\Config\AnalyticsAnalysingEnvironmentConfigFormType;
 use App\Analysing\ServiceInterface\Config\AnalyticsAnalysingEnvironmentConfigServiceInterface;
@@ -21,9 +21,9 @@ final readonly class AnalyticsAnalysingEnvironmentConfigService implements Analy
     ) {
     }
 
-    public function descriptor(): ConfigToolDescriptor
+    public function descriptor(): AdministrationConfigToolDescriptor
     {
-        return new ConfigToolDescriptor(
+        return new AdministrationConfigToolDescriptor(
             applicationCode: 'Analysing',
             toolCode: 'analysing.environment',
             label: 'Analysing Environment',
@@ -89,7 +89,10 @@ final readonly class AnalyticsAnalysingEnvironmentConfigService implements Analy
             'analytics_rate_limit_default_write_limit' => $payload->rateLimitDefaultWriteLimit,
         ];
 
-        return $this->applyService->save($this->descriptor(), $this->actorIdentifier($context), $values, $masked, []);
+        /** @var array{status:string,messages:list<string>,masked_changes:array<string,string>,file_changes:list<array<string,mixed>>,secret_changes:list<array<string,mixed>>} $result */
+        $result = $this->applyService->save($this->descriptor(), $this->actorIdentifier($context), $values, $masked, []);
+
+        return $result;
     }
 
     public function apply(object $data, array $context = []): array
@@ -106,7 +109,8 @@ final readonly class AnalyticsAnalysingEnvironmentConfigService implements Analy
         $status = 'applied' === $write['status'] ? 'applied' : 'failed';
         $values = $this->stateRows($payload, $status);
 
-        return $this->applyService->apply(
+        /** @var array{status:string,messages:list<string>,masked_changes:array<string,string>,file_changes:list<array<string,mixed>>,secret_changes:list<array<string,mixed>>} $result */
+        $result = $this->applyService->apply(
             $this->descriptor(),
             $this->actorIdentifier($context),
             $values,
@@ -122,6 +126,8 @@ final readonly class AnalyticsAnalysingEnvironmentConfigService implements Analy
             'applied' === $write['status'] ? null : $write['message'],
             $status,
         );
+
+        return $result;
     }
 
     private function assertData(object $data): AnalyticsEnvironmentConfigDataDTO

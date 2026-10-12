@@ -25,4 +25,20 @@ final class SegmentationServiceTest extends TestCase
         self::assertCount(1, $result);
         self::assertSame('acme', $result[0]['vendor']);
     }
+
+    public function testApplyTrimsComparableValuesAndSkipsMalformedDimensionValues(): void
+    {
+        $service = new AnalyticsSegmentationService(new NullLogger());
+
+        $result = $service->apply([
+            ['vendor' => ' acme ', 'value' => 1],
+            ['vendor' => ['acme'], 'value' => 2],
+            ['value' => 3],
+            ['vendor' => 'beta', 'value' => 4],
+        ], new AnalyticsDimension(' vendor '), new AnalyticsSegment(' acme '));
+
+        self::assertSame([
+            ['vendor' => ' acme ', 'value' => 1],
+        ], $result);
+    }
 }

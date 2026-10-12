@@ -25,36 +25,11 @@ final class AnalyticsReportBundle implements AnalyticsReportBundleInterface
      */
     public function pack(array $datasets): array
     {
-        if ([] === $datasets) {
-            $this->logger->warning('Analytics report bundle rejected an empty dataset list.');
-            throw new \InvalidArgumentException('Datasets must not be empty.');
-        }
-
-        if (count($datasets) > self::MAX_DATASETS) {
-            $this->logger->warning('Analytics report bundle rejected too many datasets.', [
-                'datasets' => count($datasets),
-                'max_datasets' => self::MAX_DATASETS,
-            ]);
-            throw new \InvalidArgumentException('Dataset count exceeds the maximum allowed value.');
-        }
-
+        $this->assertDatasetCount($datasets);
         $manifest = [];
 
         foreach ($datasets as $name => $rows) {
-            $datasetName = trim($name);
-            if ('' === $datasetName) {
-                $this->logger->warning('Analytics report bundle rejected a dataset with an empty name.');
-                throw new \InvalidArgumentException('Dataset name must not be empty.');
-            }
-
-            if (strlen($datasetName) > self::MAX_DATASET_NAME_LENGTH) {
-                $this->logger->warning('Analytics report bundle rejected an overlong dataset name.', [
-                    'dataset' => $datasetName,
-                    'max_length' => self::MAX_DATASET_NAME_LENGTH,
-                ]);
-                throw new \InvalidArgumentException('Dataset name exceeds the maximum allowed length.');
-            }
-
+            $datasetName = $this->normalizeDatasetName($name);
             if (isset($manifest[$datasetName])) {
                 $this->logger->warning('Analytics report bundle rejected duplicate dataset names after normalization.', [
                     'dataset' => $datasetName,
@@ -70,21 +45,64 @@ final class AnalyticsReportBundle implements AnalyticsReportBundleInterface
                 throw new \InvalidArgumentException('Dataset rows must be an array.');
             }
 
-            if (count($rows) > self::MAX_ROWS_PER_DATASET) {
-                $this->logger->warning('Analytics report bundle rejected a dataset with too many rows.', [
-                    'dataset' => $datasetName,
-                    'rows' => count($rows),
-                    'max_rows' => self::MAX_ROWS_PER_DATASET,
-                ]);
-                throw new \InvalidArgumentException(sprintf('Dataset %s exceeds the maximum number of rows.', $datasetName));
-            }
-
+            $this->assertDatasetRows($datasetName, $rows);
             $manifest[$datasetName] = $this->buildDatasetManifest($datasetName, $rows);
         }
 
         ksort($manifest);
 
         return $manifest;
+    }
+
+    /** @param array<string, list<array<string,mixed>>> $datasets */
+    private function assertDatasetCount(array $datasets): void
+    {
+        if ([] === $datasets) {
+            $this->logger->warning('Analytics report bundle rejected an empty dataset list.');
+            throw new \InvalidArgumentException('Datasets must not be empty.');
+        }
+
+        $datasetCount = count($datasets);
+        if ($datasetCount > self::MAX_DATASETS) {
+            $this->logger->warning('Analytics report bundle rejected too many datasets.', [
+                'datasets' => $datasetCount,
+                'max_datasets' => self::MAX_DATASETS,
+            ]);
+            throw new \InvalidArgumentException('Dataset count exceeds the maximum allowed value.');
+        }
+    }
+
+    private function normalizeDatasetName(string $name): string
+    {
+        $datasetName = trim($name);
+        if ('' === $datasetName) {
+            $this->logger->warning('Analytics report bundle rejected a dataset with an empty name.');
+            throw new \InvalidArgumentException('Dataset name must not be empty.');
+        }
+
+        if (strlen($datasetName) > self::MAX_DATASET_NAME_LENGTH) {
+            $this->logger->warning('Analytics report bundle rejected an overlong dataset name.', [
+                'dataset' => $datasetName,
+                'max_length' => self::MAX_DATASET_NAME_LENGTH,
+            ]);
+            throw new \InvalidArgumentException('Dataset name exceeds the maximum allowed length.');
+        }
+
+        return $datasetName;
+    }
+
+    /** @param list<array<string,mixed>> $rows */
+    private function assertDatasetRows(string $datasetName, array $rows): void
+    {
+        $rowCount = count($rows);
+        if ($rowCount > self::MAX_ROWS_PER_DATASET) {
+            $this->logger->warning('Analytics report bundle rejected a dataset with too many rows.', [
+                'dataset' => $datasetName,
+                'rows' => $rowCount,
+                'max_rows' => self::MAX_ROWS_PER_DATASET,
+            ]);
+            throw new \InvalidArgumentException(sprintf('Dataset %s exceeds the maximum number of rows.', $datasetName));
+        }
     }
 
     /**

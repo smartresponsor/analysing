@@ -56,4 +56,34 @@ final class InsightTest extends TestCase
             'name' => 'unknown-tree',
         ]);
     }
+
+    public function testComputeMetricTreeBuildsCatalogTreeWithRepositoryValues(): void
+    {
+        $repository = $this->createMock(AnalyticsRepositoryInterface::class);
+        $repository->expects(self::exactly(3))
+            ->method('fetchLatestMetricValue')
+            ->willReturnMap([
+                ['north_star', 42],
+                ['activation', 21],
+                ['revenue', 7],
+            ]);
+
+        $service = new AnalyticsInsight($repository, new NullLogger());
+
+        self::assertSame([
+            'name' => 'north_star',
+            'nodes' => [
+                ['id' => 'north_star', 'title' => 'North Star', 'value' => 42],
+                ['id' => 'activation', 'title' => 'Activation', 'value' => 21],
+                ['id' => 'revenue', 'title' => 'Revenue', 'value' => 7],
+            ],
+            'edges' => [
+                ['from' => 'north_star', 'to' => 'activation'],
+                ['from' => 'north_star', 'to' => 'revenue'],
+            ],
+        ], $service->computeMetricTree([
+            'vendor_id' => 'vendor-1',
+            'name' => 'north_star',
+        ]));
+    }
 }

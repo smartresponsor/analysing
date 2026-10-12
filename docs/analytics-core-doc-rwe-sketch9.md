@@ -4,7 +4,7 @@ Roadmap with Envelopes (RWE) for Analytics sketch9
 
 Context snapshot
 - PHP files total: 356
-- Namespace roots observed: App (214), SmartResponsor (113), Analytics (17)
+- Historical consumer/domain namespace roots observed: App (214), SmartResponsor (113), Analytics (17)
 - DomainInterface files: 165
 - InterfaceInterface anomalies: 103
 - Mirror missing (Service -> ServiceInterface): 7
@@ -66,7 +66,7 @@ Next envelopes (not yet applied)
   Inputs: composer.json + scan report
   Outputs: docs decision + composer autoload adjustment proposal
   Acceptance Criteria: decision documented; follow-up buckets become mechanical
-  Notes: recommend one root (App\Analysing\ or SmartResponsor\Analytics\) and migrate consistently
+  Notes: historical consumer/domain migration recommended one root (App\Analysing\ or SmartResponsor\Analytics\) and consistent rewiring
 
 - SK9-B3 namespace alignment for Controller layer
   Goal: align Controller namespaces with folder and composer autoload

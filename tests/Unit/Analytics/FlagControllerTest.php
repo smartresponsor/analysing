@@ -44,4 +44,24 @@ final class FlagControllerTest extends TestCase
         self::assertTrue((bool) $data['enabled']);
         self::assertSame('checkout', $data['flag_key']);
     }
+
+    public function testEvaluateMapsInvalidRequestToBadRequest(): void
+    {
+        $request = new Request([], [], [], [], [], [], json_encode(['flag_key' => 'checkout', 'user_id' => 'u1'], JSON_THROW_ON_ERROR));
+        $domain = $this->createMock(AnalyticsFlagInterface::class);
+        $domain->method('evaluate')->willThrowException(new \InvalidArgumentException('Invalid flag.'));
+
+        $controller = new AnalyticsFlagController(
+            $domain,
+            $this->createMock(LoggerInterface::class),
+            $this->createSuccessFactory($request),
+            $this->createErrorFactory($request),
+        );
+        $response = $controller->evaluate($request);
+        $payload = $this->decodeJsonResponse($response);
+
+        self::assertSame(400, $response->getStatusCode());
+        self::assertSame('analytics.flag.invalid_request', $payload['error_code']);
+        self::assertFalse((bool) $payload['retryable']);
+    }
 }

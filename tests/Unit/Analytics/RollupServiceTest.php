@@ -28,4 +28,17 @@ final class RollupServiceTest extends TestCase
         $this->expectException(\InvalidArgumentException::class);
         $service->sum([], '   ');
     }
+
+    public function testSumIgnoresMalformedAndNonFiniteValues(): void
+    {
+        $service = new AnalyticsRollupService(new NullLogger());
+
+        self::assertSame(4, $service->sum([
+            ['value' => []],
+            ['value' => INF],
+            ['value' => ''],
+            ['value' => 1],
+            ['value' => '3'],
+        ], ' value '));
+    }
 }
