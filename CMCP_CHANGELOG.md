@@ -1,5 +1,15 @@
 # CMCP execution journal
 
+## 2026-10-12 — engine-20261004071621-analysing-efff59
+
+- Console MCP baseline: clean synchronized master HEAD f6de8fc0be4f76ecd2a2b33ca11824c1ace8c842. September 29 RED evidence is historical: Failing Composer declaration/path/bundle registration and Doctrine naming strategy are present currently.
+- Read Analysing README, AGENTS, Composer, current service/tests; consulted Objecting, Cruding, Viewing, Interfacing, Gating owner contracts and normative Canonization Canon022 (standalone Failing dependency), Canon047 (repository-owned Doctrine manager), Canon055 (neutral platform naming).
+- Mature analytics expectations: deterministic numerical calculations, resilience to empty/invalid series, scope isolation, diagnostics, reproducible gate evidence. RC-critical: correctness, coverage, quality, API/security boundaries. Growth: richer dashboard/experimentation/self-service UX; streaming platform, generic CRUD, shared UI and Objecting lifecycle ownership remain outside Analysing.
+- Fresh Inspecting: zero PHPStan errors, no high/autofixable findings, two observational property-cohesion findings in export entity and request auth subscriber; neither warrants mechanical extraction.
+- Added two regression tests for all-invalid z-score inputs and constant numeric series, without changing production API.
+- GREEN: PHPUnit 191 tests / 660 assertions; PHPStan max 298 files / 0 errors; Gating 10 rules / 0 failures / 0 warnings / 3 profile skips. No user-visible UI change or screenshot applicability.
+- Что имеем? Analytics edge-case regressions protected, deterministic gates green. Что осталось? Git publication and downstream acceptance; speculative growth remains separate.
+
 ## 2026-10-12 — engine-20261004184552-analysing-6079d3
 
 - Current clean master baseline checked through Windows Console MCP; inspected supplied September 29 Gating/Inspecting reports, current Composer manifests, repository guidance, Symfony Doctrine and bundle configuration.

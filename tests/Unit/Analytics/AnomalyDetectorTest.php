@@ -37,4 +37,18 @@ final class AnomalyDetectorTest extends TestCase
         $this->expectException(\InvalidArgumentException::class);
         $service->zscore(array_fill(0, 10001, 1));
     }
+
+    public function testZscoreReturnsEmptyScoresWhenNoUsableMeasurementsRemain(): void
+    {
+        $service = new AnalyticsAnomalyDetector(new NullLogger());
+
+        self::assertSame([], $service->zscore(['invalid', null, INF, NAN]));
+    }
+
+    public function testZscoreReturnsZeroForConstantSeries(): void
+    {
+        $service = new AnalyticsAnomalyDetector(new NullLogger());
+
+        self::assertSame([0.0, 0.0, 0.0], $service->zscore([7, '7', 7.0]));
+    }
 }
