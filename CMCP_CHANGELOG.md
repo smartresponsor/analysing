@@ -1,5 +1,14 @@
 # CMCP execution journal
 
+## 2026-10-12 — engine-20261004111353-analysing-de5d40
+
+- Console MCP baseline: clean, synchronized `master` HEAD `5540769c7a18522accd7ecc677487870d30154d0`; local source is authoritative. Read current root guidance, README, Composer dev/prod, Failing bundle wiring, Doctrine naming, export-job controller, prior CMCP journal, historical CanonScanning RED evidence and Canonization root contracts.
+- Canon mapping: `App\\Analysing\\` namespace and typed Symfony roles apply; Cruding owns generic CRUD, Objecting owns system fields, Viewing/Interfacing own shared UI integration. Canon022 Failing dependency, Canon054 Doctrine naming, Canon055 naming context are fixed in live source despite archived RED evidence. Canon056/063 OpenAPI and Canon047 repository boundaries need current detailed independent review; old report is not a fresh failure.
+- Market baseline: mature analytics components prioritize deterministic aggregation, metric labeling correctness, schema parity and observable export jobs; RC stream is correctness, safety, regression tests and verified API contracts. Growth stream is dashboards, deeper diagnostics and richer reporting, without ingest/stream infrastructure or generic CRUD duplication.
+- Live checks: `composer validate` PASS; `composer gate` PASS (10 rules, 0 failed, 0 warnings, 3 skipped); `composer analyse` PASS (299 paths); `composer test` PASS (193 tests, 664 assertions); `composer schema:parity` PASS (9 tables, 2 migrations); `composer lint:canon` exits successfully but reports 69 missing mirror candidates; `composer guard:namespace` reports zero banned prefixes and two bundle/kernel root exceptions in report mode.
+- No production changes justified without inspecting the 69 scanner mirror candidates and current Canonization textual rules; do not mechanically synthesize interfaces or rewrite verified PHP on stale findings. No UI changed; visual evidence not applicable.
+- Что имеем? Deterministic baseline GREEN and concrete candidate review backlog. Что осталось? Assess mirror candidates and current OpenAPI/Inspecting contracts; publish factual journal and verify final Git state. 
+
 ## 2026-10-12 — engine-20261004092747-analysing-c037e8
 
 - Baseline: clean synchronized master 5f31f26687a569c4a143f0cabcc567e166276b09 before changes. Read current Analysing guidance, Composer manifests, Symfony bundle/Doctrine configuration, export job controller and legacy metrics utility; reviewed archived Gating/Inspecting evidence and Canonization/Gating root documents.
